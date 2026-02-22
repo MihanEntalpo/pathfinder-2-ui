@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Монстры — Pathfinder 2 Remaster</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="container">
+    <h1>Монстры</h1>
+    <nav class="nav">
+      <a href="index.html">Главная</a>
+      <a href="character.html">Персонажи</a>
+      <a class="active" href="monster.html">Монстры</a>
+      <a href="game.html">Игры</a>
+    </nav>
+  </header>
+
+  <main class="container grid" style="grid-template-columns: 2fr 1fr;">
+    <section class="panel">
+      <h2>Создание / редактирование</h2>
+      <form id="monsterForm" class="grid">
+        <input type="hidden" id="monsterId" />
+        <div class="form-grid">
+          <div><label>Название</label><input id="mName" required /></div>
+          <div><label>Уровень</label><input id="mLevel" type="number" min="-1" max="25" value="1" /></div>
+          <div><label>Роль</label><select id="mRole"><option>brute</option><option>skirmisher</option><option>controller</option><option>caster</option><option>soldier</option></select></div>
+          <div><label>Traits</label><input id="mTraits" placeholder="undead, fiend" /></div>
+          <div><label>AC</label><input id="mAc" type="number" value="17" /></div>
+          <div><label>HP</label><input id="mHp" type="number" value="25" /></div>
+          <div><label>Attack Bonus</label><input id="mAttack" type="number" value="8" /></div>
+          <div><label>Damage (средний)</label><input id="mDamage" type="number" value="8" /></div>
+        </div>
+        <label>Описание/способности</label>
+        <textarea id="mNotes" rows="5"></textarea>
+        <div class="row">
+          <button class="primary" type="submit">Сохранить монстра</button>
+          <button class="ghost" id="monsterResetBtn" type="button">Сбросить</button>
+        </div>
+      </form>
+    </section>
+
+    <aside class="panel small">
+      <h2>Ориентиры по уровню</h2>
+      <div id="monsterAdvice" class="muted"></div>
+    </aside>
+
+    <section class="panel" style="grid-column: 1 / -1;">
+      <h2>Список монстров</h2>
+      <div id="monsterList" class="list"></div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+  <script src="monsters.js"></script>
+</body>
+</html>

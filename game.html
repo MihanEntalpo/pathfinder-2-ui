@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Игры — Pathfinder 2 Remaster</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="container">
+    <h1>Игры / Сессии</h1>
+    <nav class="nav">
+      <a href="index.html">Главная</a>
+      <a href="character.html">Персонажи</a>
+      <a href="monster.html">Монстры</a>
+      <a class="active" href="game.html">Игры</a>
+    </nav>
+  </header>
+
+  <main class="container grid" style="grid-template-columns: 1fr 2fr;">
+    <section class="panel">
+      <h2>Новая игра</h2>
+      <form id="gameForm" class="grid">
+        <input type="hidden" id="gameId" />
+        <div><label>Название</label><input id="gName" required /></div>
+        <div><label>Описание</label><textarea id="gNotes" rows="4"></textarea></div>
+        <button class="primary" type="submit">Сохранить игру</button>
+      </form>
+      <hr />
+      <h3>Игры</h3>
+      <div id="gamesList" class="list"></div>
+    </section>
+
+    <section class="panel">
+      <h2>Трекер текущей игры</h2>
+      <p id="activeGameHint" class="muted">Выберите игру слева.</p>
+      <div id="tracker" class="grid"></div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+  <script src="games.js"></script>
+</body>
+</html>

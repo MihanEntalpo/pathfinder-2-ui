@@ -81,3 +81,6 @@ label { display: block; font-size: .9rem; color: var(--muted); margin-bottom: .2
 .warning { color: var(--warn); }
 .error { color: var(--bad); }
 @media (max-width: 700px) { .row { flex-direction: column; align-items: stretch; } }
+
+input[type="checkbox"] { width: auto; accent-color: var(--accent); }
+code { background: var(--panel-2); padding: .1rem .35rem; border-radius: 6px; }

@@ -1,2 +1,21 @@
-# pathfinder-2-ui
-UI for Pathfinder 2 game keeping and character/monster creation
+# Pathfinder 2 Remaster Toolkit (Static HTML/CSS/JS)
+
+Небольшой фронтенд-проект без сборки и компиляторов для ведения кампаний Pathfinder 2 Remaster.
+
+## Страницы
+- `index.html` — главная страница навигации.
+- `character.html` — CRUD персонажей + автоматический расчёт базовых derived-статов (HP, AC, спасброски, Perception) по модели proficiency PF2.
+- `monster.html` — CRUD монстров + базовый ориентир статов от уровня и роли.
+- `game.html` — список сессий и combat tracker (инициатива, HP, состояния, заметки) с участниками из персонажей и монстров.
+
+## Хранение данных
+Все данные сохраняются в `localStorage`:
+- `pf2_characters`
+- `pf2_monsters`
+- `pf2_games`
+
+## Как запустить
+Откройте `index.html` в браузере.
+
+## Важно по правилам
+Проект учитывает базовую математику Pathfinder 2 Remaster (уровень + proficiency rank, модификаторы характеристик, базовые защищённости), но не заменяет официальные книги и полные таблицы GM Core.

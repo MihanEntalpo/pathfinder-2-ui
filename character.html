@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Персонажи — Pathfinder 2 Remaster</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="container">
+    <h1>Персонажи</h1>
+    <nav class="nav">
+      <a href="index.html">Главная</a>
+      <a class="active" href="character.html">Персонажи</a>
+      <a href="monster.html">Монстры</a>
+      <a href="game.html">Игры</a>
+    </nav>
+  </header>
+
+  <main class="container grid" style="grid-template-columns: 2fr 1fr;">
+    <section class="panel">
+      <h2>Создание / редактирование</h2>
+      <form id="characterForm" class="grid">
+        <input type="hidden" id="characterId" />
+        <div class="form-grid">
+          <div><label>Имя</label><input id="name" required /></div>
+          <div><label>Ancestry</label><input id="ancestry" value="Human" /></div>
+          <div><label>Class</label><input id="className" value="Fighter" /></div>
+          <div><label>Уровень (1-20)</label><input id="level" type="number" min="1" max="20" value="1" /></div>
+          <div><label>Ancestry HP</label><input id="ancestryHp" type="number" value="8" /></div>
+          <div><label>Class HP</label><input id="classHp" type="number" value="10" /></div>
+          <div><label>Item Bonus AC</label><input id="itemBonusAc" type="number" value="0" /></div>
+          <div>
+            <label>Armor Proficiency</label>
+            <select id="armorProf">
+              <option>untrained</option><option selected>trained</option><option>expert</option><option>master</option><option>legendary</option>
+            </select>
+          </div>
+        </div>
+
+        <h3>Характеристики (после всех boost/flaw)</h3>
+        <div class="form-grid">
+          <div><label>STR</label><input id="str" type="number" value="16" /></div>
+          <div><label>DEX</label><input id="dex" type="number" value="14" /></div>
+          <div><label>CON</label><input id="con" type="number" value="14" /></div>
+          <div><label>INT</label><input id="int" type="number" value="10" /></div>
+          <div><label>WIS</label><input id="wis" type="number" value="12" /></div>
+          <div><label>CHA</label><input id="cha" type="number" value="10" /></div>
+        </div>
+
+        <h3>Ключевые proficiency</h3>
+        <div class="form-grid">
+          <div><label>Perception</label><select id="percProf"><option>untrained</option><option selected>trained</option><option>expert</option><option>master</option><option>legendary</option></select></div>
+          <div><label>Fortitude</label><select id="fortProf"><option>untrained</option><option selected>trained</option><option>expert</option><option>master</option><option>legendary</option></select></div>
+          <div><label>Reflex</label><select id="refProf"><option>untrained</option><option selected>trained</option><option>expert</option><option>master</option><option>legendary</option></select></div>
+          <div><label>Will</label><select id="willProf"><option>untrained</option><option selected>trained</option><option>expert</option><option>master</option><option>legendary</option></select></div>
+        </div>
+
+        <div class="row">
+          <button class="primary" type="submit">Сохранить персонажа</button>
+          <button class="ghost" id="resetBtn" type="button">Сбросить форму</button>
+        </div>
+      </form>
+    </section>
+
+    <aside class="panel">
+      <h2>Краткие расчёты PF2</h2>
+      <div id="preview" class="small muted">Заполните форму для расчётов.</div>
+    </aside>
+
+    <section class="panel" style="grid-column: 1 / -1;">
+      <h2>Список персонажей</h2>
+      <div id="characterList" class="list"></div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+  <script src="characters.js"></script>
+</body>
+</html>

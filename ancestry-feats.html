@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Черты происхождения — Pathfinder 2</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="container">
+    <h1>Справочник черт происхождения</h1>
+    <nav class="nav">
+      <a href="index.html">Главная</a>
+      <a href="character.html">Персонажи</a>
+      <a href="ancestries.html">Происхождения</a>
+      <a class="active" href="ancestry-feats.html">Черты происхождения</a>
+      <a href="monster.html">Монстры</a>
+      <a href="game.html">Игры</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="panel">
+      <h2>Черты происхождения</h2>
+      <form id="featForm" class="grid">
+        <input type="hidden" id="featId" />
+        <div class="form-grid">
+          <div><label>Код</label><input id="featCode" required /></div>
+          <div><label>Название</label><input id="featName" required /></div>
+          <div><label>Происхождение</label><select id="featAncestryId"></select></div>
+          <div><label>Мин. уровень</label><input id="featLevel" type="number" min="1" max="20" value="1" /></div>
+          <div style="grid-column: 1 / -1;"><label>Описание</label><textarea id="featDescription"></textarea></div>
+        </div>
+        <div class="row">
+          <button class="primary" type="submit">Сохранить черту</button>
+          <button class="ghost" id="featReset" type="button">Сброс</button>
+        </div>
+      </form>
+      <div id="featList" class="list"></div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+  <script src="rules-data.js"></script>
+  <script src="ancestry-feats.js"></script>
+</body>
+</html>

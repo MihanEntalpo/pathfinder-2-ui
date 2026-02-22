@@ -2,6 +2,8 @@ const STORAGE_KEYS = {
   characters: "pf2_characters",
   monsters: "pf2_monsters",
   games: "pf2_games",
+  ancestries: "pf2_ancestries",
+  ancestryFeats: "pf2_ancestry_feats",
 };
 
 const PROFICIENCY_RANKS = {

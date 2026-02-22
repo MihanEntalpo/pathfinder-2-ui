@@ -12,6 +12,7 @@
     <nav class="nav">
       <a href="index.html">Главная</a>
       <a class="active" href="character.html">Персонажи</a>
+      <a href="rules.html">Происхождения и черты</a>
       <a href="monster.html">Монстры</a>
       <a href="game.html">Игры</a>
     </nav>
@@ -24,11 +25,21 @@
         <input type="hidden" id="characterId" />
         <div class="form-grid">
           <div><label>Имя</label><input id="name" required /></div>
-          <div><label>Ancestry</label><input id="ancestry" value="Human" /></div>
+          <div>
+            <label>Ancestry</label>
+            <select id="ancestry"></select>
+          </div>
           <div><label>Class</label><input id="className" value="Fighter" /></div>
           <div><label>Уровень (1-20)</label><input id="level" type="number" min="1" max="20" value="1" /></div>
-          <div><label>Ancestry HP</label><input id="ancestryHp" type="number" value="8" /></div>
+          <div><label>Ancestry HP</label><input id="ancestryHp" type="number" value="8" readonly /></div>
           <div><label>Class HP</label><input id="classHp" type="number" value="10" /></div>
+          <div><label>Размер</label><input id="ancestrySize" readonly /></div>
+          <div><label>Скорость</label><input id="ancestrySpeed" type="number" readonly /></div>
+          <div><label>Улучшения атрибутов</label><input id="ancestryBoosts" readonly /></div>
+          <div><label>Ухудшения атрибутов</label><input id="ancestryFlaws" readonly /></div>
+          <div><label>Языки</label><input id="ancestryLanguages" readonly /></div>
+          <div><label>Черта происхождения</label><input id="ancestryTrait" readonly /></div>
+          <div><label>Наследие</label><input id="ancestryHeritage" readonly /></div>
           <div><label>Item Bonus AC</label><input id="itemBonusAc" type="number" value="0" /></div>
           <div>
             <label>Armor Proficiency</label>
@@ -37,6 +48,10 @@
             </select>
           </div>
         </div>
+
+        <h3>Черты происхождения</h3>
+        <p class="small muted" id="featLimitHint"></p>
+        <div id="ancestryFeatList" class="list"></div>
 
         <h3>Характеристики (после всех boost/flaw)</h3>
         <div class="form-grid">
@@ -75,6 +90,7 @@
   </main>
 
   <script src="app.js"></script>
+  <script src="rules-data.js"></script>
   <script src="characters.js"></script>
 </body>
 </html>

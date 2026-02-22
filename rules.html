@@ -2,70 +2,11 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
+  <meta http-equiv="refresh" content="0; url=ancestries.html" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Происхождения и черты — Pathfinder 2</title>
-  <link rel="stylesheet" href="styles.css" />
+  <title>Перенаправление</title>
 </head>
 <body>
-  <header class="container">
-    <h1>Справочник происхождений и черт</h1>
-    <nav class="nav">
-      <a href="index.html">Главная</a>
-      <a href="character.html">Персонажи</a>
-      <a class="active" href="rules.html">Происхождения и черты</a>
-      <a href="monster.html">Монстры</a>
-      <a href="game.html">Игры</a>
-    </nav>
-    <p class="small muted">Базовый набор загружается из локального файла <code>data/pf2_rules_reference.md</code> и сохраняется в LocalStorage для дальнейшего редактирования.</p>
-  </header>
-
-  <main class="container grid" style="grid-template-columns: 1fr 1fr;">
-    <section class="panel">
-      <h2>Происхождения</h2>
-      <form id="ancestryForm" class="grid">
-        <input type="hidden" id="ancestryId" />
-        <div class="form-grid">
-          <div><label>Код</label><input id="ancestryCode" required /></div>
-          <div><label>Название</label><input id="ancestryName" required /></div>
-          <div><label>HP</label><input id="ancestryHpInput" type="number" required /></div>
-          <div><label>Размер</label><input id="ancestrySizeInput" required /></div>
-          <div><label>Скорость</label><input id="ancestrySpeedInput" type="number" required /></div>
-          <div><label>Улучшения (через запятую)</label><input id="ancestryBoostsInput" /></div>
-          <div><label>Ухудшения (через запятую)</label><input id="ancestryFlawsInput" /></div>
-          <div><label>Языки (через запятую)</label><input id="ancestryLanguagesInput" /></div>
-          <div><label>Черта происхождения</label><input id="ancestryTraitInput" /></div>
-          <div><label>Наследие</label><input id="ancestryHeritageInput" /></div>
-        </div>
-        <div class="row">
-          <button class="primary" type="submit">Сохранить происхождение</button>
-          <button class="ghost" id="ancestryReset" type="button">Сброс</button>
-        </div>
-      </form>
-      <div id="ancestryList" class="list"></div>
-    </section>
-
-    <section class="panel">
-      <h2>Черты происхождения</h2>
-      <form id="featForm" class="grid">
-        <input type="hidden" id="featId" />
-        <div class="form-grid">
-          <div><label>Код</label><input id="featCode" required /></div>
-          <div><label>Название</label><input id="featName" required /></div>
-          <div><label>Происхождение</label><select id="featAncestryId"></select></div>
-          <div><label>Мин. уровень</label><input id="featLevel" type="number" min="1" max="20" value="1" /></div>
-          <div style="grid-column: 1 / -1;"><label>Описание</label><textarea id="featDescription"></textarea></div>
-        </div>
-        <div class="row">
-          <button class="primary" type="submit">Сохранить черту</button>
-          <button class="ghost" id="featReset" type="button">Сброс</button>
-        </div>
-      </form>
-      <div id="featList" class="list"></div>
-    </section>
-  </main>
-
-  <script src="app.js"></script>
-  <script src="rules-data.js"></script>
-  <script src="rules.js"></script>
+  <p>Страница перенесена. Перейдите в <a href="ancestries.html">Происхождения</a> или <a href="ancestry-feats.html">Черты происхождения</a>.</p>
 </body>
 </html>

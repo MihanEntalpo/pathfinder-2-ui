@@ -77,12 +77,59 @@ function ensureRulesData() {
   }
 }
 
+function toArray(value) {
+  if (Array.isArray(value)) return value.map((v) => String(v).trim()).filter(Boolean);
+  if (typeof value === "string") return value.split(",").map((v) => v.trim()).filter(Boolean);
+  return [];
+}
+
+function normalizeAncestry(item, idx) {
+  const id = String(item?.id || item?.code || `ancestry-${idx + 1}`).trim();
+  return {
+    id,
+    name: String(item?.name || item?.title || id).trim(),
+    hp: Number(item?.hp) || 6,
+    size: String(item?.size || "Средний").trim(),
+    speed: Number(item?.speed) || 25,
+    boosts: toArray(item?.boosts),
+    flaws: toArray(item?.flaws),
+    languages: toArray(item?.languages),
+    trait: String(item?.trait || "").trim(),
+    heritage: String(item?.heritage || "").trim(),
+  };
+}
+
+function normalizeFeat(item, idx) {
+  const id = String(item?.id || item?.code || `feat-${idx + 1}`).trim();
+  return {
+    id,
+    ancestryId: String(item?.ancestryId || item?.ancestry || "").trim(),
+    name: String(item?.name || item?.title || id).trim(),
+    level: Number(item?.level) || 1,
+    description: String(item?.description || item?.desc || "").trim(),
+  };
+}
+
 function loadAncestries() {
   ensureRulesData();
-  return readStorage(RULES_STORAGE_KEYS.ancestries, []);
+  const ancestries = readStorage(RULES_STORAGE_KEYS.ancestries, []);
+  const normalized = Array.isArray(ancestries) ? ancestries.map(normalizeAncestry) : DEFAULT_ANCESTRIES;
+  writeStorage(RULES_STORAGE_KEYS.ancestries, normalized);
+  return normalized;
 }
 
 function loadAncestryFeats() {
   ensureRulesData();
-  return readStorage(RULES_STORAGE_KEYS.ancestryFeats, []);
+  const feats = readStorage(RULES_STORAGE_KEYS.ancestryFeats, []);
+  const ancestries = loadAncestries();
+  const validIds = new Set(ancestries.map((a) => a.id));
+  const fallbackAncestryId = ancestries[0]?.id || "human";
+  const normalized = (Array.isArray(feats) ? feats : DEFAULT_ANCESTRY_FEATS)
+    .map(normalizeFeat)
+    .map((feat) => ({
+      ...feat,
+      ancestryId: validIds.has(feat.ancestryId) ? feat.ancestryId : fallbackAncestryId,
+    }));
+  writeStorage(RULES_STORAGE_KEYS.ancestryFeats, normalized);
+  return normalized;
 }

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Происхождения — Pathfinder 2</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="container">
+    <h1>Справочник происхождений</h1>
+    <nav class="nav">
+      <a href="index.html">Главная</a>
+      <a href="character.html">Персонажи</a>
+      <a class="active" href="ancestries.html">Происхождения</a>
+      <a href="ancestry-feats.html">Черты происхождения</a>
+      <a href="monster.html">Монстры</a>
+      <a href="game.html">Игры</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="panel">
+      <h2>Происхождения</h2>
+      <form id="ancestryForm" class="grid">
+        <input type="hidden" id="ancestryId" />
+        <div class="form-grid">
+          <div><label>Код</label><input id="ancestryCode" required /></div>
+          <div><label>Название</label><input id="ancestryName" required /></div>
+          <div><label>HP</label><input id="ancestryHpInput" type="number" required /></div>
+          <div><label>Размер</label><input id="ancestrySizeInput" required /></div>
+          <div><label>Скорость</label><input id="ancestrySpeedInput" type="number" required /></div>
+          <div><label>Улучшения (через запятую)</label><input id="ancestryBoostsInput" /></div>
+          <div><label>Ухудшения (через запятую)</label><input id="ancestryFlawsInput" /></div>
+          <div><label>Языки (через запятую)</label><input id="ancestryLanguagesInput" /></div>
+          <div><label>Черта происхождения</label><input id="ancestryTraitInput" /></div>
+          <div><label>Наследие</label><input id="ancestryHeritageInput" /></div>
+        </div>
+        <div class="row">
+          <button class="primary" type="submit">Сохранить происхождение</button>
+          <button class="ghost" id="ancestryReset" type="button">Сброс</button>
+        </div>
+      </form>
+      <div id="ancestryList" class="list"></div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+  <script src="rules-data.js"></script>
+  <script src="ancestries.js"></script>
+</body>
+</html>

@@ -30,7 +30,21 @@
             <label>Ancestry</label>
             <select id="ancestry"></select>
           </div>
-          <div><label>Class</label><input id="className" value="Fighter" /></div>
+          <div>
+            <label>Class</label>
+            <input id="className" list="classOptions" value="Воин" />
+            <datalist id="classOptions"></datalist>
+          </div>
+          <div>
+            <label>Background</label>
+            <input id="background" list="backgroundOptions" placeholder="Опционально" />
+            <datalist id="backgroundOptions"></datalist>
+          </div>
+          <div>
+            <label>Archetype</label>
+            <input id="archetype" list="archetypeOptions" placeholder="Опционально" />
+            <datalist id="archetypeOptions"></datalist>
+          </div>
           <div><label>Уровень (1-20)</label><input id="level" type="number" min="1" max="20" value="1" /></div>
           <div><label>Ancestry HP</label><input id="ancestryHp" type="number" value="8" readonly /></div>
           <div><label>Class HP</label><input id="classHp" type="number" value="10" /></div>
@@ -91,7 +105,12 @@
   </main>
 
   <script src="app.js"></script>
-  <script src="data/pf2-defaults.js"></script>
+  <script src="data/registry.js"></script>
+  <script src="data/ancestries/load-all.js"></script>
+  <script src="data/ancestry-feats/load-all.js"></script>
+  <script src="data/classes/load-all.js"></script>
+  <script src="data/backgrounds/load-all.js"></script>
+  <script src="data/archetypes/load-all.js"></script>
   <script src="rules-data.js"></script>
   <script src="characters.js"></script>
 </body>

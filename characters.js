@@ -5,7 +5,7 @@ const ancestrySelect = byId("ancestry");
 const ancestryFeatList = byId("ancestryFeatList");
 const featLimitHint = byId("featLimitHint");
 
-const charInputs = ["name","ancestry","className","level","ancestryHp","classHp","itemBonusAc","armorProf","str","dex","con","int","wis","cha","percProf","fortProf","refProf","willProf","characterId","ancestrySize","ancestrySpeed","ancestryBoosts","ancestryFlaws","ancestryLanguages","ancestryTrait","ancestryHeritage"];
+const charInputs = ["name","ancestry","className","background","archetype","level","ancestryHp","classHp","itemBonusAc","armorProf","str","dex","con","int","wis","cha","percProf","fortProf","refProf","willProf","characterId","ancestrySize","ancestrySpeed","ancestryBoosts","ancestryFlaws","ancestryLanguages","ancestryTrait","ancestryHeritage"];
 
 function featSlotsForLevel(level) {
   const base = 1;
@@ -29,8 +29,10 @@ function getCharacterFormData() {
 function renderPreview() {
   const c = getCharacterFormData();
   const s = deriveCharacterStats(c);
+  const extraIdentity = [c.background, c.archetype].filter(Boolean).join(" · ");
   preview.innerHTML = `
     <p><span class="badge">Lvl ${c.level}</span> <span class="badge">${escapeHtml(c.ancestry)} ${escapeHtml(c.className)}</span></p>
+    <p>${escapeHtml(extraIdentity || "Без background/archetype")}</p>
     <p>HP: <span class="stat">${s.hp}</span> | AC: <span class="stat">${s.ac}</span> | Perception: <span class="stat">${signed(s.perception)}</span></p>
     <p>Fort ${signed(s.fort)} | Ref ${signed(s.reflex)} | Will ${signed(s.will)}</p>
     <p>STR ${signed(s.mods.str)} DEX ${signed(s.mods.dex)} CON ${signed(s.mods.con)} INT ${signed(s.mods.int)} WIS ${signed(s.mods.wis)} CHA ${signed(s.mods.cha)}</p>
@@ -41,6 +43,20 @@ function renderPreview() {
 function renderAncestryOptions() {
   const ancestries = loadAncestries();
   ancestrySelect.innerHTML = ancestries.map((a) => `<option value="${escapeHtml(a.id)}">${escapeHtml(a.name)}</option>`).join("");
+}
+
+function renderCharacterBuildOptions() {
+  const classList = byId("classOptions");
+  const backgroundList = byId("backgroundOptions");
+  const archetypeList = byId("archetypeOptions");
+
+  const classes = loadCharacterClasses();
+  const backgrounds = loadCharacterBackgrounds();
+  const archetypes = loadCharacterArchetypes();
+
+  classList.innerHTML = classes.map((item) => `<option value="${escapeHtml(item.name)}"></option>`).join("");
+  backgroundList.innerHTML = backgrounds.map((item) => `<option value="${escapeHtml(item.name)}"></option>`).join("");
+  archetypeList.innerHTML = archetypes.map((item) => `<option value="${escapeHtml(item.name)}"></option>`).join("");
 }
 
 function applyAncestryData(ancestryId) {
@@ -148,12 +164,14 @@ function renderCharacters() {
     const s = deriveCharacterStats(c);
     const featNames = (c.selectedFeatIds || []).map((id) => feats.find((f) => f.id === id)?.name).filter(Boolean).join(", ") || "—";
     const ancestryName = loadAncestries().find((a) => a.id === c.ancestry)?.name || c.ancestry;
+    const identity = [c.background, c.archetype].filter(Boolean).join(" · ");
     return `
       <article class="list-item">
         <div class="row">
           <div>
             <strong>${escapeHtml(c.name)}</strong> <span class="badge">Lvl ${c.level}</span>
             <div class="small muted">${escapeHtml(ancestryName)} ${escapeHtml(c.className)} · HP ${s.hp} · AC ${s.ac}</div>
+            <div class="small muted">${escapeHtml(identity || "Без background/archetype")}</div>
             <div class="small muted">Черты: ${escapeHtml(featNames)}</div>
           </div>
           <div class="row" style="max-width: 260px;">
@@ -194,6 +212,7 @@ byId("level").addEventListener("input", () => {
   renderPreview();
 });
 
+renderCharacterBuildOptions();
 renderAncestryOptions();
 resetCharacterForm();
 renderCharacters();

@@ -26,6 +26,17 @@
 - При запуске используется набор default-данных происхождений и черт из `rules-data.js`.
 - На версии `RULES_DEFAULTS_VERSION` выполняется merge default-данных в хранилище (без удаления пользовательских записей).
 
+### 3.2 Baseline Data Files
+- Базовые данные организованы как “1 сущность = 1 JS-файл” в `data/*/entities/`.
+- Служебные регистраторы загружаются из `data/registry.js`:
+- `add_ancestry` / `addAncestry`
+- `add_ancestry_feat` / `addAncestryFeat`
+- `add_class` / `addClass`
+- `add_background` / `addBackground`
+- `add_archetype` / `addArchetype`
+- Категории подключаются через `data/*/load-all.js`, который загружает все entity-файлы.
+- Порядок обязателен: `data/registry.js` -> `data/*/load-all.js` -> `rules-data.js`.
+
 ## 4. Ancestry Requirements
 ### 4.1 Predetermined ancestry list
 Каждый ancestry содержит:

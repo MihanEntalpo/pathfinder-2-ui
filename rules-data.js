@@ -4,7 +4,8 @@ const RULES_STORAGE_KEYS = {
   dataMeta: "pf2_rules_data_meta",
 };
 
-const RULES_DEFAULTS_VERSION = 2;
+const RULES_DEFAULTS_VERSION = 3;
+const CHARACTER_DATA = globalThis.PF2_CHARACTER_DATA || {};
 
 const FALLBACK_ANCESTRIES = [
   {
@@ -68,13 +69,44 @@ const FALLBACK_ANCESTRY_FEATS = [
   { id: "burn-it", ancestryId: "goblin", name: "Жги!", level: 1, description: "Усиление огненных эффектов." }
 ];
 
-const DEFAULT_ANCESTRIES = Array.isArray(globalThis.PF2_DEFAULT_ANCESTRIES) && globalThis.PF2_DEFAULT_ANCESTRIES.length
+const FALLBACK_CLASSES = [
+  { id: "fighter", name: "Воин" },
+  { id: "wizard", name: "Волшебник" },
+];
+
+const FALLBACK_BACKGROUNDS = [
+  { id: "warrior", name: "Воин" },
+  { id: "scholar", name: "Учёный" },
+];
+
+const FALLBACK_ARCHETYPES = [
+  { id: "acrobat", name: "Акробат" },
+  { id: "medic", name: "Медик" },
+];
+
+const DEFAULT_ANCESTRIES = Array.isArray(CHARACTER_DATA.ancestries) && CHARACTER_DATA.ancestries.length
+  ? CHARACTER_DATA.ancestries
+  : Array.isArray(globalThis.PF2_DEFAULT_ANCESTRIES) && globalThis.PF2_DEFAULT_ANCESTRIES.length
   ? globalThis.PF2_DEFAULT_ANCESTRIES
   : FALLBACK_ANCESTRIES;
 
-const DEFAULT_ANCESTRY_FEATS = Array.isArray(globalThis.PF2_DEFAULT_ANCESTRY_FEATS) && globalThis.PF2_DEFAULT_ANCESTRY_FEATS.length
+const DEFAULT_ANCESTRY_FEATS = Array.isArray(CHARACTER_DATA.ancestryFeats) && CHARACTER_DATA.ancestryFeats.length
+  ? CHARACTER_DATA.ancestryFeats
+  : Array.isArray(globalThis.PF2_DEFAULT_ANCESTRY_FEATS) && globalThis.PF2_DEFAULT_ANCESTRY_FEATS.length
   ? globalThis.PF2_DEFAULT_ANCESTRY_FEATS
   : FALLBACK_ANCESTRY_FEATS;
+
+const DEFAULT_CLASSES = Array.isArray(CHARACTER_DATA.classes) && CHARACTER_DATA.classes.length
+  ? CHARACTER_DATA.classes
+  : FALLBACK_CLASSES;
+
+const DEFAULT_BACKGROUNDS = Array.isArray(CHARACTER_DATA.backgrounds) && CHARACTER_DATA.backgrounds.length
+  ? CHARACTER_DATA.backgrounds
+  : FALLBACK_BACKGROUNDS;
+
+const DEFAULT_ARCHETYPES = Array.isArray(CHARACTER_DATA.archetypes) && CHARACTER_DATA.archetypes.length
+  ? CHARACTER_DATA.archetypes
+  : FALLBACK_ARCHETYPES;
 
 function toArray(value) {
   if (Array.isArray(value)) return value.map((v) => String(v).trim()).filter(Boolean);
@@ -106,6 +138,14 @@ function normalizeFeat(item, idx) {
     name: String(item?.name || item?.title || id).trim(),
     level: Number(item?.level) || 1,
     description: String(item?.description || item?.desc || "").trim(),
+  };
+}
+
+function normalizeOption(item, idx, prefix) {
+  const id = String(item?.id || item?.code || `${prefix}-${idx + 1}`).trim();
+  return {
+    id,
+    name: String(item?.name || item?.title || id).trim(),
   };
 }
 
@@ -167,4 +207,16 @@ function loadAncestryFeats() {
     }));
   writeStorage(RULES_STORAGE_KEYS.ancestryFeats, normalized);
   return normalized;
+}
+
+function loadCharacterClasses() {
+  return DEFAULT_CLASSES.map((item, idx) => normalizeOption(item, idx, "class"));
+}
+
+function loadCharacterBackgrounds() {
+  return DEFAULT_BACKGROUNDS.map((item, idx) => normalizeOption(item, idx, "background"));
+}
+
+function loadCharacterArchetypes() {
+  return DEFAULT_ARCHETYPES.map((item, idx) => normalizeOption(item, idx, "archetype"));
 }

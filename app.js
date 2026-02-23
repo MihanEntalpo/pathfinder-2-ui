@@ -4,6 +4,8 @@ const STORAGE_KEYS = {
   games: "pf2_games",
   ancestries: "pf2_ancestries",
   ancestryFeats: "pf2_ancestry_feats",
+  backgrounds: "pf2_backgrounds",
+  classFeats: "pf2_class_feats",
 };
 
 const PROFICIENCY_RANKS = {

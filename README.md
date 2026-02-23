@@ -7,6 +7,8 @@
 - `character.html` — создание/редактирование/просмотр персонажей.
 - `ancestries.html` — CRUD-справочник происхождений (Ancestry).
 - `ancestry-feats.html` — CRUD-справочник черт происхождения.
+- `backgrounds.html` — CRUD-справочник background.
+- `class-feats.html` — CRUD-справочник классовых черт.
 - `monster.html` — создание/редактирование/просмотр монстров.
 - `game.html` — список игр и трекер боевых участников.
 - `rules.html` — страница подключения локальной документации правил.
@@ -18,6 +20,8 @@
 - `pf2_games`
 - `pf2_ancestries`
 - `pf2_ancestry_feats`
+- `pf2_backgrounds`
+- `pf2_class_feats`
 - `pf2_rules_data_meta`
 
 ## Базовые данные (JS)

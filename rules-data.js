@@ -176,10 +176,11 @@ function normalizeBackground(item, idx) {
   const boostOptions = toArray(item?.boostOptions || item?.abilityBoostOptions || item?.boosts)
     .map((value) => String(value).toUpperCase())
     .filter((value) => ABILITY_CODES.includes(value));
+  const freeBoostCount = Number(item?.freeBoostCount);
   return {
     ...normalized,
     boostOptions: boostOptions.length ? boostOptions : ABILITY_CODES.slice(),
-    freeBoostCount: Math.max(0, Number(item?.freeBoostCount) || 1),
+    freeBoostCount: Number.isFinite(freeBoostCount) ? Math.max(0, Math.trunc(freeBoostCount)) : 1,
     grantedFeatName: String(item?.grantedFeatName || item?.feat || "").trim(),
   };
 }

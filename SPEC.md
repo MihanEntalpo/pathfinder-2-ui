@@ -13,6 +13,8 @@
 - выбор boosts от background/class с применением к базовым характеристикам.
 - `ancestries.html`: CRUD происхождений.
 - `ancestry-feats.html`: CRUD черт происхождения.
+- `backgrounds.html`: CRUD background.
+- `class-feats.html`: CRUD class feats.
 - `monster.html`: CRUD монстров.
 - `game.html`: CRUD игр + трекер участников боя.
 - `rules.html`: точка подключения локальной документации правил.
@@ -24,6 +26,8 @@
 - `pf2_games`: список игр и боевых участников.
 - `pf2_ancestries`: список ancestry.
 - `pf2_ancestry_feats`: список ancestry feats.
+- `pf2_backgrounds`: список background.
+- `pf2_class_feats`: список class feats.
 - `pf2_rules_data_meta`: версия инициализации default-данных.
 
 ### 3.1 Initialization and Upgrade

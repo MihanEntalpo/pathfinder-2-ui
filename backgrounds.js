@@ -56,12 +56,13 @@ backgroundForm.addEventListener("submit", (e) => {
   const backgrounds = loadCharacterBackgrounds();
   const id = byId("backgroundCode").value.trim();
   if (!id) return;
+  const freeBoostRaw = Number(byId("backgroundFreeBoostCountInput").value);
 
   const payload = {
     id,
     name: byId("backgroundName").value.trim(),
     boostOptions: splitAbilityCsv(byId("backgroundBoostOptionsInput").value),
-    freeBoostCount: Math.max(0, Number(byId("backgroundFreeBoostCountInput").value) || 1),
+    freeBoostCount: Number.isFinite(freeBoostRaw) ? Math.max(0, Math.trunc(freeBoostRaw)) : 1,
     grantedFeatName: byId("backgroundFeatNameInput").value.trim(),
   };
 

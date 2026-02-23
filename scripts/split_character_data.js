@@ -99,6 +99,7 @@ PF2_CHARACTER_DATA.ancestryFeats = [];
 PF2_CHARACTER_DATA.classes = [];
 PF2_CHARACTER_DATA.backgrounds = [];
 PF2_CHARACTER_DATA.archetypes = [];
+PF2_CHARACTER_DATA.classFeats = [];
 
 function pushUnique(list, item) {
   const id = String(item?.id || "").trim();
@@ -128,6 +129,10 @@ function add_archetype(item) {
   pushUnique(PF2_CHARACTER_DATA.archetypes, item);
 }
 
+function add_class_feat(item) {
+  pushUnique(PF2_CHARACTER_DATA.classFeats, item);
+}
+
 globalThis.add_ancestry = add_ancestry;
 globalThis.addAncestry = add_ancestry;
 globalThis.add_ancestry_feat = add_ancestry_feat;
@@ -138,6 +143,8 @@ globalThis.add_background = add_background;
 globalThis.addBackground = add_background;
 globalThis.add_archetype = add_archetype;
 globalThis.addArchetype = add_archetype;
+globalThis.add_class_feat = add_class_feat;
+globalThis.addClassFeat = add_class_feat;
 `;
   fs.writeFileSync(registryPath, content, "utf8");
 }
@@ -198,6 +205,7 @@ function main() {
   const classes = Array.isArray(merged.classes) && merged.classes.length ? merged.classes : FALLBACK_CLASSES;
   const backgrounds = Array.isArray(merged.backgrounds) && merged.backgrounds.length ? merged.backgrounds : FALLBACK_BACKGROUNDS;
   const archetypes = Array.isArray(merged.archetypes) && merged.archetypes.length ? merged.archetypes : FALLBACK_ARCHETYPES;
+  const classFeats = Array.isArray(merged.classFeats) ? merged.classFeats : [];
 
   writeRegistry();
   writeCategoryFiles({ dir: "ancestries", addFn: "add_ancestry" }, ancestries);
@@ -205,9 +213,10 @@ function main() {
   writeCategoryFiles({ dir: "classes", addFn: "add_class" }, classes);
   writeCategoryFiles({ dir: "backgrounds", addFn: "add_background" }, backgrounds);
   writeCategoryFiles({ dir: "archetypes", addFn: "add_archetype" }, archetypes);
+  writeCategoryFiles({ dir: "class-feats", addFn: "add_class_feat" }, classFeats);
 
   console.log(
-    `Generated entities: ancestries=${ancestries.length}, ancestryFeats=${ancestryFeats.length}, classes=${classes.length}, backgrounds=${backgrounds.length}, archetypes=${archetypes.length}`
+    `Generated entities: ancestries=${ancestries.length}, ancestryFeats=${ancestryFeats.length}, classes=${classes.length}, backgrounds=${backgrounds.length}, archetypes=${archetypes.length}, classFeats=${classFeats.length}`
   );
 }
 

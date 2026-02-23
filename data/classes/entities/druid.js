@@ -1,6 +1,11 @@
 add_class(
 {
   "id": "druid",
-  "name": "Друид"
+  "name": "Друид",
+  "keyAttributeOptions": [
+    "WIS"
+  ],
+  "keyAttributeText": "WISDOM",
+  "classFeatStartLevel": 2
 }
 );

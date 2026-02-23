@@ -1,6 +1,11 @@
 add_class(
 {
   "id": "alchemist",
-  "name": "Алхимик"
+  "name": "Алхимик",
+  "keyAttributeOptions": [
+    "INT"
+  ],
+  "keyAttributeText": "INTELLIGENCE",
+  "classFeatStartLevel": 2
 }
 );

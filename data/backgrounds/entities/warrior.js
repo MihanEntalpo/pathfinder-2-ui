@@ -1,6 +1,12 @@
 add_background(
 {
   "id": "warrior",
-  "name": "Воин"
+  "name": "Воин",
+  "boostOptions": [
+    "STR",
+    "CON"
+  ],
+  "freeBoostCount": 1,
+  "grantedFeatName": "Intimidating Glare"
 }
 );

@@ -14,6 +14,8 @@
       <a class="active" href="character.html">Персонажи</a>
       <a href="ancestries.html">Происхождения</a>
       <a href="ancestry-feats.html">Черты происхождения</a>
+      <a href="backgrounds.html">Background</a>
+      <a href="class-feats.html">Class Feats</a>
       <a href="monster.html">Монстры</a>
       <a href="game.html">Игры</a>
     </nav>
@@ -32,13 +34,11 @@
           </div>
           <div>
             <label>Class</label>
-            <input id="className" list="classOptions" value="Воин" />
-            <datalist id="classOptions"></datalist>
+            <select id="classId"></select>
           </div>
           <div>
             <label>Background</label>
-            <input id="background" list="backgroundOptions" placeholder="Опционально" />
-            <datalist id="backgroundOptions"></datalist>
+            <select id="backgroundId"></select>
           </div>
           <div>
             <label>Archetype</label>
@@ -68,7 +68,33 @@
         <p class="small muted" id="featLimitHint"></p>
         <div id="ancestryFeatList" class="list"></div>
 
-        <h3>Характеристики (после всех boost/flaw)</h3>
+        <h3>Черта background</h3>
+        <p class="small muted" id="backgroundFeatSummary">Выберите background.</p>
+
+        <h3>Повышения атрибутов (background + class)</h3>
+        <div class="form-grid">
+          <div>
+            <label>Background boost (обязательный)</label>
+            <select id="backgroundBoostPrimary"></select>
+          </div>
+          <div>
+            <label>Background boost (свободный)</label>
+            <select id="backgroundBoostFree"></select>
+          </div>
+          <div>
+            <label>Class key attribute boost</label>
+            <select id="classKeyBoost"></select>
+          </div>
+          <div style="grid-column: 1 / -1;">
+            <p class="small muted" id="attributeBoostSummary"></p>
+          </div>
+        </div>
+
+        <h3>Классовые черты</h3>
+        <p class="small muted" id="classFeatLimitHint"></p>
+        <div id="classFeatList" class="list"></div>
+
+        <h3>Базовые характеристики (до boost от class/background)</h3>
         <div class="form-grid">
           <div><label>STR</label><input id="str" type="number" value="16" /></div>
           <div><label>DEX</label><input id="dex" type="number" value="14" /></div>
@@ -111,6 +137,7 @@
   <script src="data/classes/load-all.js"></script>
   <script src="data/backgrounds/load-all.js"></script>
   <script src="data/archetypes/load-all.js"></script>
+  <script src="data/class-feats/load-all.js"></script>
   <script src="rules-data.js"></script>
   <script src="characters.js"></script>
 </body>

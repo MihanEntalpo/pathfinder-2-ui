@@ -5,6 +5,7 @@ PF2_CHARACTER_DATA.ancestryFeats = [];
 PF2_CHARACTER_DATA.classes = [];
 PF2_CHARACTER_DATA.backgrounds = [];
 PF2_CHARACTER_DATA.archetypes = [];
+PF2_CHARACTER_DATA.classFeats = [];
 
 function pushUnique(list, item) {
   const id = String(item?.id || "").trim();
@@ -34,6 +35,10 @@ function add_archetype(item) {
   pushUnique(PF2_CHARACTER_DATA.archetypes, item);
 }
 
+function add_class_feat(item) {
+  pushUnique(PF2_CHARACTER_DATA.classFeats, item);
+}
+
 globalThis.add_ancestry = add_ancestry;
 globalThis.addAncestry = add_ancestry;
 globalThis.add_ancestry_feat = add_ancestry_feat;
@@ -44,3 +49,5 @@ globalThis.add_background = add_background;
 globalThis.addBackground = add_background;
 globalThis.add_archetype = add_archetype;
 globalThis.addArchetype = add_archetype;
+globalThis.add_class_feat = add_class_feat;
+globalThis.addClassFeat = add_class_feat;

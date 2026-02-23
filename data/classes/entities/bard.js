@@ -1,6 +1,11 @@
 add_class(
 {
   "id": "bard",
-  "name": "Бард"
+  "name": "Бард",
+  "keyAttributeOptions": [
+    "CHA"
+  ],
+  "keyAttributeText": "CHARISMA",
+  "classFeatStartLevel": 2
 }
 );

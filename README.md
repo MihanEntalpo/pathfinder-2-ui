@@ -22,16 +22,26 @@
 
 ## Базовые данные (JS)
 Каталог `data/` разделён на тематические папки и entity-файлы:
-- `data/registry.js` — служебные функции регистрации (`add_ancestry`, `add_ancestry_feat`, `add_class`, `add_background`, `add_archetype` и camelCase-алиасы).
+- `data/registry.js` — служебные функции регистрации (`add_ancestry`, `add_ancestry_feat`, `add_class`, `add_background`, `add_archetype`, `add_class_feat` и camelCase-алиасы).
 - `data/ancestries/entities/*.js` — каждый ancestry в отдельном файле.
 - `data/ancestry-feats/entities/*.js` — каждая ancestry-черта в отдельном файле.
 - `data/classes/entities/*.js` — каждый класс в отдельном файле.
 - `data/backgrounds/entities/*.js` — каждый background в отдельном файле.
 - `data/archetypes/entities/*.js` — каждый archetype в отдельном файле.
+- `data/class-feats/entities/*.js` — каждая class-черта в отдельном файле.
 - `data/*/load-all.js` — загрузчик файлов категории.
 
 Порядок подключения: сначала `data/registry.js`, затем `data/*/load-all.js`, и только потом `rules-data.js`.
 Файл `data/pf2-defaults.js` сохранён для обратной совместимости и как исходник для генерации.
+
+## Character Editor
+- Выбор `Ancestry`, `Class`, `Background`.
+- Выбор ancestry feats и class feats с ограничением по уровню.
+- Выбор повышений атрибутов от `background` и `class`:
+- обязательный boost background,
+- свободный boost background,
+- key attribute boost класса.
+- Данные для class/background/class-feats собираются из `knowledge/` скриптом `scripts/build_character_options_from_knowledge.js`.
 
 ## Реализованные требования по ancestry
 1. `Ancestry` выбирается из предзаданного списка.

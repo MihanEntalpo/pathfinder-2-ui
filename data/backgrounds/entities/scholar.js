@@ -1,6 +1,12 @@
 add_background(
 {
   "id": "scholar",
-  "name": "Учёный"
+  "name": "Учёный",
+  "boostOptions": [
+    "INT",
+    "WIS"
+  ],
+  "freeBoostCount": 1,
+  "grantedFeatName": "Assurance"
 }
 );

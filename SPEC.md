@@ -7,6 +7,10 @@
 ## 2. Pages
 - `index.html`: точка входа и навигация.
 - `character.html`: CRUD персонажей, расчёт базовых derived-статов, выбор ancestry/feats.
+- `character.html` включает:
+- выбор `ancestry`, `class`, `background`;
+- выбор ancestry feats и class feats по уровню;
+- выбор boosts от background/class с применением к базовым характеристикам.
 - `ancestries.html`: CRUD происхождений.
 - `ancestry-feats.html`: CRUD черт происхождения.
 - `monster.html`: CRUD монстров.
@@ -34,8 +38,10 @@
 - `add_class` / `addClass`
 - `add_background` / `addBackground`
 - `add_archetype` / `addArchetype`
+- `add_class_feat` / `addClassFeat`
 - Категории подключаются через `data/*/load-all.js`, который загружает все entity-файлы.
 - Порядок обязателен: `data/registry.js` -> `data/*/load-all.js` -> `rules-data.js`.
+- Данные `classes/backgrounds/class-feats` извлекаются из `knowledge/` скриптом `scripts/build_character_options_from_knowledge.js`.
 
 ## 4. Ancestry Requirements
 ### 4.1 Predetermined ancestry list

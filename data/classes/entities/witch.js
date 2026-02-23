@@ -1,6 +1,11 @@
 add_class(
 {
   "id": "witch",
-  "name": "Ведьма"
+  "name": "Ведьма",
+  "keyAttributeOptions": [
+    "INT"
+  ],
+  "keyAttributeText": "INTELLIGENCE",
+  "classFeatStartLevel": 2
 }
 );

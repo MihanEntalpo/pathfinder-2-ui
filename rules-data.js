@@ -1,11 +1,14 @@
 const RULES_STORAGE_KEYS = {
   ancestries: "pf2_ancestries",
   ancestryFeats: "pf2_ancestry_feats",
+  backgrounds: "pf2_backgrounds",
+  classFeats: "pf2_class_feats",
   dataMeta: "pf2_rules_data_meta",
 };
 
-const RULES_DEFAULTS_VERSION = 3;
+const RULES_DEFAULTS_VERSION = 5;
 const CHARACTER_DATA = globalThis.PF2_CHARACTER_DATA || {};
+const ABILITY_CODES = ["STR", "DEX", "CON", "INT", "WIS", "CHA"];
 
 const FALLBACK_ANCESTRIES = [
   {
@@ -84,6 +87,8 @@ const FALLBACK_ARCHETYPES = [
   { id: "medic", name: "Медик" },
 ];
 
+const FALLBACK_CLASS_FEATS = [];
+
 const DEFAULT_ANCESTRIES = Array.isArray(CHARACTER_DATA.ancestries) && CHARACTER_DATA.ancestries.length
   ? CHARACTER_DATA.ancestries
   : Array.isArray(globalThis.PF2_DEFAULT_ANCESTRIES) && globalThis.PF2_DEFAULT_ANCESTRIES.length
@@ -107,6 +112,10 @@ const DEFAULT_BACKGROUNDS = Array.isArray(CHARACTER_DATA.backgrounds) && CHARACT
 const DEFAULT_ARCHETYPES = Array.isArray(CHARACTER_DATA.archetypes) && CHARACTER_DATA.archetypes.length
   ? CHARACTER_DATA.archetypes
   : FALLBACK_ARCHETYPES;
+
+const DEFAULT_CLASS_FEATS = Array.isArray(CHARACTER_DATA.classFeats) && CHARACTER_DATA.classFeats.length
+  ? CHARACTER_DATA.classFeats
+  : FALLBACK_CLASS_FEATS;
 
 function toArray(value) {
   if (Array.isArray(value)) return value.map((v) => String(v).trim()).filter(Boolean);
@@ -149,6 +158,44 @@ function normalizeOption(item, idx, prefix) {
   };
 }
 
+function normalizeClass(item, idx) {
+  const normalized = normalizeOption(item, idx, "class");
+  const keyAttributeOptions = toArray(item?.keyAttributeOptions || item?.keyAttributes || item?.keyAttribute)
+    .map((value) => String(value).toUpperCase())
+    .filter((value) => ABILITY_CODES.includes(value));
+  return {
+    ...normalized,
+    keyAttributeOptions: keyAttributeOptions.length ? keyAttributeOptions : ABILITY_CODES.slice(),
+    keyAttributeText: String(item?.keyAttributeText || "").trim(),
+    classFeatStartLevel: Math.max(1, Number(item?.classFeatStartLevel) || 2),
+  };
+}
+
+function normalizeBackground(item, idx) {
+  const normalized = normalizeOption(item, idx, "background");
+  const boostOptions = toArray(item?.boostOptions || item?.abilityBoostOptions || item?.boosts)
+    .map((value) => String(value).toUpperCase())
+    .filter((value) => ABILITY_CODES.includes(value));
+  return {
+    ...normalized,
+    boostOptions: boostOptions.length ? boostOptions : ABILITY_CODES.slice(),
+    freeBoostCount: Math.max(0, Number(item?.freeBoostCount) || 1),
+    grantedFeatName: String(item?.grantedFeatName || item?.feat || "").trim(),
+  };
+}
+
+function normalizeClassFeat(item, idx) {
+  const id = String(item?.id || item?.code || `class-feat-${idx + 1}`).trim();
+  return {
+    id,
+    classId: String(item?.classId || item?.class || "").trim(),
+    name: String(item?.name || item?.title || id).trim(),
+    level: Math.max(1, Number(item?.level) || 1),
+    description: String(item?.description || item?.desc || "").trim(),
+    source: String(item?.source || "").trim(),
+  };
+}
+
 function mergeDefaults(defaults, existing, normalizeItem) {
   const merged = new Map(defaults.map((item, idx) => {
     const normalized = normalizeItem(item, idx);
@@ -165,22 +212,37 @@ function mergeDefaults(defaults, existing, normalizeItem) {
 function ensureRulesData() {
   const storedAncestries = readStorage(RULES_STORAGE_KEYS.ancestries, null);
   const storedFeats = readStorage(RULES_STORAGE_KEYS.ancestryFeats, null);
+  const storedBackgrounds = readStorage(RULES_STORAGE_KEYS.backgrounds, null);
+  const storedClassFeats = readStorage(RULES_STORAGE_KEYS.classFeats, null);
   const meta = readStorage(RULES_STORAGE_KEYS.dataMeta, { version: 0 });
 
   const hasData = Array.isArray(storedAncestries) && storedAncestries.length > 0 && Array.isArray(storedFeats) && storedFeats.length > 0;
   if (!hasData) {
     writeStorage(RULES_STORAGE_KEYS.ancestries, DEFAULT_ANCESTRIES.map(normalizeAncestry));
     writeStorage(RULES_STORAGE_KEYS.ancestryFeats, DEFAULT_ANCESTRY_FEATS.map(normalizeFeat));
+    writeStorage(RULES_STORAGE_KEYS.backgrounds, DEFAULT_BACKGROUNDS.map(normalizeBackground));
+    writeStorage(RULES_STORAGE_KEYS.classFeats, DEFAULT_CLASS_FEATS.map(normalizeClassFeat));
     writeStorage(RULES_STORAGE_KEYS.dataMeta, { version: RULES_DEFAULTS_VERSION });
     return;
+  }
+
+  if (!Array.isArray(storedBackgrounds)) {
+    writeStorage(RULES_STORAGE_KEYS.backgrounds, DEFAULT_BACKGROUNDS.map(normalizeBackground));
+  }
+  if (!Array.isArray(storedClassFeats)) {
+    writeStorage(RULES_STORAGE_KEYS.classFeats, DEFAULT_CLASS_FEATS.map(normalizeClassFeat));
   }
 
   const currentVersion = Number(meta?.version) || 0;
   if (currentVersion < RULES_DEFAULTS_VERSION) {
     const mergedAncestries = mergeDefaults(DEFAULT_ANCESTRIES, storedAncestries, normalizeAncestry);
     const mergedFeats = mergeDefaults(DEFAULT_ANCESTRY_FEATS, storedFeats, normalizeFeat);
+    const mergedBackgrounds = mergeDefaults(DEFAULT_BACKGROUNDS, Array.isArray(storedBackgrounds) ? storedBackgrounds : [], normalizeBackground);
+    const mergedClassFeats = mergeDefaults(DEFAULT_CLASS_FEATS, Array.isArray(storedClassFeats) ? storedClassFeats : [], normalizeClassFeat);
     writeStorage(RULES_STORAGE_KEYS.ancestries, mergedAncestries);
     writeStorage(RULES_STORAGE_KEYS.ancestryFeats, mergedFeats);
+    writeStorage(RULES_STORAGE_KEYS.backgrounds, mergedBackgrounds);
+    writeStorage(RULES_STORAGE_KEYS.classFeats, mergedClassFeats);
     writeStorage(RULES_STORAGE_KEYS.dataMeta, { version: RULES_DEFAULTS_VERSION });
   }
 }
@@ -210,13 +272,28 @@ function loadAncestryFeats() {
 }
 
 function loadCharacterClasses() {
-  return DEFAULT_CLASSES.map((item, idx) => normalizeOption(item, idx, "class"));
+  return DEFAULT_CLASSES.map((item, idx) => normalizeClass(item, idx));
 }
 
 function loadCharacterBackgrounds() {
-  return DEFAULT_BACKGROUNDS.map((item, idx) => normalizeOption(item, idx, "background"));
+  ensureRulesData();
+  const backgrounds = readStorage(RULES_STORAGE_KEYS.backgrounds, []);
+  const normalized = (Array.isArray(backgrounds) ? backgrounds : DEFAULT_BACKGROUNDS).map((item, idx) => normalizeBackground(item, idx));
+  writeStorage(RULES_STORAGE_KEYS.backgrounds, normalized);
+  return normalized;
 }
 
 function loadCharacterArchetypes() {
   return DEFAULT_ARCHETYPES.map((item, idx) => normalizeOption(item, idx, "archetype"));
+}
+
+function loadClassFeats() {
+  ensureRulesData();
+  const storedClassFeats = readStorage(RULES_STORAGE_KEYS.classFeats, []);
+  const validClassIds = new Set(loadCharacterClasses().map((item) => item.id));
+  const normalized = (Array.isArray(storedClassFeats) ? storedClassFeats : DEFAULT_CLASS_FEATS)
+    .map((item, idx) => normalizeClassFeat(item, idx))
+    .filter((item) => validClassIds.has(item.classId));
+  writeStorage(RULES_STORAGE_KEYS.classFeats, normalized);
+  return normalized;
 }

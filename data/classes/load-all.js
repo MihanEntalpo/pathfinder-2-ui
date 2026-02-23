@@ -9,6 +9,7 @@
   "cleric.js",
   "druid.js",
   "fighter.js",
+  "gunslinger.js",
   "inventor.js",
   "investigator.js",
   "kineticist.js",

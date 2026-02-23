@@ -1,0 +1,1641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script type="text/javascript" async src="js-id=UA-137805785-3.js" tppabs="https://www.googletagmanager.com/gtag/js?id=UA-137805785-3"></script>
+    <script type="text/javascript">
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-137805785-3');
+    </script>
+    <title>
+        Building Worlds - Rules - Archives of Nethys: Pathfinder 2nd Edition Database
+    </title>
+    
+
+    <link href="Layout.css-v=EB6PS6lfpX6G1uwFu7uHcEh6oScz15hZHsXHCNMHzLg.css" tppabs="https://2e.aonprd.com/Styles/Layout.css?v=EB6PS6lfpX6G1uwFu7uHcEh6oScz15hZHsXHCNMHzLg" rel="stylesheet" type="text/css" />
+    <link href="rpg-awesome.min.css" tppabs="https://2e.aonprd.com/Styles/rpg-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="Typography.css-v=3et3D84VeOgcsPaSRyGH6nF1FfjjYgVpcGBq4HyG5vg.css" tppabs="https://2e.aonprd.com/Styles/Typography.css?v=3et3D84VeOgcsPaSRyGH6nF1FfjjYgVpcGBq4HyG5vg" rel="stylesheet" type="text/css" />
+    <link href="themes.css" tppabs="https://2e.aonprd.com/themes" rel="stylesheet" type="text/css" />
+    <link href="SitePrint.css-v=8wGbZVsBHNUZjW78tbaeVtZ_Jlm0ss-wjdlzy_jKlOY.css" tppabs="https://2e.aonprd.com/Styles/SitePrint.css?v=8wGbZVsBHNUZjW78tbaeVtZ_Jlm0ss-wjdlzy_jKlOY" rel="stylesheet" type="text/css" media="print" />
+
+    <link href="css-family=Julee.css" tppabs="https://fonts.googleapis.com/css?family=Julee" rel="stylesheet" type="text/css" />
+    <link href="css-family=Andika.css" tppabs="https://fonts.googleapis.com/css?family=Andika" rel="stylesheet" type="text/css" />
+    <link href="css2-family=Lato-ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap.css" tppabs="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="search" type="application/opensearchdescription+xml" title="Search the Archives of Nethys" href="https://2e.aonprd.com/opensearch.xml" />
+
+
+    <script type="text/javascript">
+        window.elasticUrl = 'https://elasticsearch.aonprd.com/aon-test';
+    </script>
+
+        <script src="nethys-search-9f2620f2bfdf2014fd0b0c157f03248921d02563.js" tppabs="https://elasticsearch.aonprd.com/js/nethys-search-9f2620f2bfdf2014fd0b0c157f03248921d02563.js"></script>
+
+    <script
+      src="jquery-3.6.0.min.js" tppabs="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"></script>
+    <script src="semantic.min.js" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/semantic.min.js" integrity="sha512-5cguXwRllb+6bcc2pogwIeQmQPXEzn2ddsqAexIBhh7FO1z5Hkek1J9mrK2+rmZCTU6b6pERxI7acnp1MpAg4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="search.min.css" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/search.min.css" integrity="sha512-1xyHOORqcJ80bareQ2TWmQE+WZ/TlsqjqILbLHeM3Urtw720aiFXE/N+Xm4MAJpcn42e3k4Z8ZpqZfsA2VVyNw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="transition.min.css" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/transition.min.css" integrity="sha512-zsEyDFFD+yPxc7Kq8c3byp2H3tfx4GgT4wvCDzDGiOlkk2hl454XOHzHfN/OsPilopfPEbRzVJ0wxlIa/9BOyg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="transition.min.js" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/transition.min.js" integrity="sha512-zPx44KLp+BP6OKcCIPQibTiLz0WAc2s9syi+7wOT+Ql2D1/kAX8y7K1rz8vuTtrhRS2dMZ7zVS5dQoHTvkXJCA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="icon.min.css" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/icon.min.css" integrity="sha512-cKaYuptKrUbQ4/r0qmxhpQDjPWb7/SYN6gQRYMOQqPJ2+S4Bmb1zZ1/SAuszp+E6yoakjQFpM+rAzuw+EwR+xw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="input.min.css" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/input.min.css" integrity="sha512-6+BQOwPqqk5AianROXkI3LKgnLcjZbEV3KbhO++sKXemybg0FugrODki+nBsg9FipqlKSMd4ppnpkqC6VEpFiA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="button.min.css" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/button.min.css" integrity="sha512-XMrByQiBPJwH350YvTKR/XTY1fOQX4lSQqeft++WcyY39l0eKoPXOgx1OJHEODhHCW1FfvVl/Bdr90QE08FG+Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="dropdown.min.css" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/dropdown.min.css" integrity="sha512-hDsG55Tp5IgyWKbBbNhOo0+bLTdIVVAGW09a7IFvgIkKg/xrjOdOA2lEPFkkgJQ3NuB7DxDFlSHX7/JYvFLYfA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="dropdown.min.js" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/dropdown.min.js" integrity="sha512-1SzBIESNYM3Y8JkQrS1Mu2dPnPaAqeQkCV9KfDA2eYXBEzdkhHWyqTP6P0OAsh1RSC4cDvr8DmYVTmb/YWGYpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="showdown.min.js" tppabs="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js" integrity="sha512-LhccdVNGe2QMEfI3x4DVV3ckMRe36TfydKss6mJpdHjNFiV07dFpS2xzeZedptKZrwxfICJpez09iNioiSZ3hA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="lodash.min.js" tppabs="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="modernMenu.js" tppabs="https://2e.aonprd.com/Scripts/modernMenu.js"></script>
+
+    <script type="text/javascript" src="tableState.js" tppabs="https://2e.aonprd.com/Scripts/tableState.js"></script>
+    <script type="text/javascript" src="drawerHandlers.js" tppabs="https://2e.aonprd.com/Scripts/drawerHandlers.js"></script>
+    <script type="text/javascript" src="hideFilter.js" tppabs="https://2e.aonprd.com/Scripts/hideFilter.js"></script>
+    <script type="text/javascript" src="searchBar.js" tppabs="https://2e.aonprd.com/Scripts/searchBar.js"></script>
+
+    <script type="text/javascript" src="previewModal.js" tppabs="https://2e.aonprd.com/Scripts/previewModal.js"></script>
+    
+    
+    <meta name="keywords" content="Archives, Nethys, Wiki, Archives of Nethys, Pathfinder, Official, AoN, AoNPRD, PRD, PFSRD, 2E, 2nd Edition, Rules, Building Worlds" />
+    <meta name="description" content="As a Game Master, you control the details of the world your players explore. The Age of Lost Omens campaign setting is a lush world suitable for countless adventures, but you might prefer to adventure in entirely new worlds, where every aspect of the setting and story is yours to decide! Building your own campaign world can be a deeply fulfilling creative process, as it lets you bring to life the exact setting you envision. It gives you great flexibility, in that you can build only as much as you need for the next few adventures, and you can adapt the world on the fly to meet the demands of your story. It also gives you great control, allowing you to build precisely the setting you need for the story you want to tell. Finally, it bypasses some of the issues that can come with playing within an existing campaign setting, where you might create a narrative that contradicts published canon, or your players might stumble across major plot or setting spoilers. Whatever your world&#x2011;building goals, this chapter guides you through the design process step by step." />
+
+
+    <meta charset="utf-8"/>
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="darkreader-lock" />
+    <style type="text/css">        
+        .nav-parent > * {
+            display: block;
+        }
+        .mobile-menu-toggle{
+            display:none;
+        }
+        #main-menu .nav-parent > .brand > .title{
+            display: none;
+        }
+    </style>
+</head>
+<body class="dark aon_dark_theme classic_feel">
+    <div id="wrapper" class="clearfix">
+
+
+        <script type="text/javascript" src="toggle.js" tppabs="https://2e.aonprd.com/Scripts/toggle.js"></script>
+
+
+        <div class="page clearfix" id="page">
+            <div class="header">
+                <div class="clear hideSkiplink" id="main-menu" >
+                    <a class="mobile-menu-toggle" id="mobile-menu-toggle" href="javascript:void(0);" data-toggle="mobile">|||</a>
+                    <div class="splash"></div>
+                    <div class="nav-parent" id="nav-parent">
+                        <a href="index.htm" tppabs="https://2e.aonprd.com/" style="font-size:larger" class="brand">
+                            <span class="home">
+                                Home
+                            </span>
+                        </a>
+                        <a href="Actions.aspx.htm" tppabs="https://2e.aonprd.com/Actions.aspx">Actions/Activities</a>
+                        <a href="Afflictions.aspx.htm" tppabs="https://2e.aonprd.com/Afflictions.aspx">Afflictions</a>
+                        <a href="Ancestries.aspx.htm" tppabs="https://2e.aonprd.com/Ancestries.aspx">Ancestries</a>
+                        <a href="Archetypes.aspx.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx">Archetypes</a>
+                        <a href="Backgrounds.aspx.htm" tppabs="https://2e.aonprd.com/Backgrounds.aspx">Backgrounds</a>
+                        <a href="Classes.aspx.htm" tppabs="https://2e.aonprd.com/Classes.aspx">Classes</a>
+                        <a href="Conditions.aspx.htm" tppabs="https://2e.aonprd.com/Conditions.aspx">Conditions</a>
+                        <a href="Creatures.aspx.htm" tppabs="https://2e.aonprd.com/Creatures.aspx">Creatures</a>
+                        <a href="Equipment.aspx.htm" tppabs="https://2e.aonprd.com/Equipment.aspx">Equipment</a>
+                        <a href="Feats.aspx.htm" tppabs="https://2e.aonprd.com/Feats.aspx">Feats</a>
+                        <a href="Hazards.aspx.htm" tppabs="https://2e.aonprd.com/Hazards.aspx">Hazards</a>
+                        <a href="MythicCallings.aspx.htm" tppabs="https://2e.aonprd.com/MythicCallings.aspx">Mythic</a>
+                        <a href="Rules.aspx.htm" tppabs="https://2e.aonprd.com/Rules.aspx">Rules</a>
+                        <a href="Setting.aspx.htm" tppabs="https://2e.aonprd.com/Setting.aspx">Setting</a>
+                        <a href="Skills.aspx.htm" tppabs="https://2e.aonprd.com/Skills.aspx">Skills</a>
+                        <a href="Spells.aspx.htm" tppabs="https://2e.aonprd.com/Spells.aspx">Spells/Rituals</a>
+                        <a href="Traits.aspx.htm" tppabs="https://2e.aonprd.com/Traits.aspx">Traits</a>
+                        <img src="heading_flourish.png" tppabs="https://2e.aonprd.com/Images/heading_flourish.png" alt="flourish" class="flourish" />
+                        <a href="Licenses.aspx.htm" tppabs="https://2e.aonprd.com/Licenses.aspx">Licenses</a>
+                        <a href="Sources.aspx.htm" tppabs="https://2e.aonprd.com/Sources.aspx">Sources</a>
+                        <img src="heading_flourish.png" tppabs="https://2e.aonprd.com/Images/heading_flourish.png" alt="flourish" class="flourish" />
+                        <a href="ContactUs.aspx.htm" tppabs="https://2e.aonprd.com/ContactUs.aspx">Contact Us</a>
+                        <a href="Contributors.aspx.htm" tppabs="https://2e.aonprd.com/Contributors.aspx">Contributors</a>
+                        <a href="Support.aspx.htm" tppabs="https://2e.aonprd.com/Support.aspx">Support the Archives</a>
+                        <div id="classic-search" class="search">
+                            <input type="text" class="search-input" placeholder="Search" />
+                            <button type="button" class="search-button">
+                                <svg class="Icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="height: 24px; width: 24px; fill: "><path d="M0 0h512v512H0z" fill="transparent" fill-opacity="0"></path><g class="" transform="translate(0,0)" style="touch-action: none;"><path d="M333.78 20.188c-39.97 0-79.96 15.212-110.405 45.656-58.667 58.667-60.796 152.72-6.406 213.97l-15.782 15.748 13.25 13.25 15.75-15.78c61.248 54.39 155.3 52.26 213.968-6.407 60.887-60.886 60.888-159.894 0-220.78C413.713 35.4 373.753 20.187 333.78 20.187zm0 18.562c35.15 0 70.285 13.44 97.158 40.313 53.745 53.745 53.744 140.6 0 194.343-51.526 51.526-133.46 53.643-187.5 6.375l.218-.217c-2.35-2.05-4.668-4.17-6.906-6.407-2.207-2.206-4.288-4.496-6.313-6.812l-.218.22c-47.27-54.04-45.152-135.976 6.374-187.502C263.467 52.19 298.63 38.75 333.78 38.75zm0 18.813c-30.31 0-60.63 11.6-83.81 34.78-46.362 46.362-46.362 121.234 0 167.594 10.14 10.142 21.632 18.077 33.905 23.782-24.91-19.087-40.97-49.133-40.97-82.94 0-15.323 3.292-29.888 9.22-43-4.165 20.485.44 40.88 14.47 54.907 24.583 24.585 68.744 20.318 98.624-9.562 29.88-29.88 34.146-74.04 9.56-98.625-2.375-2.376-4.943-4.473-7.655-6.313 45.13 8.648 79.954 46.345 84.25 92.876 4.44-35.07-6.82-71.726-33.813-98.72-23.18-23.18-53.47-34.78-83.78-34.78zM176.907 297.688L42.094 432.5l34.562 34.563L211.47 332.25l-34.564-34.563zM40 456.813L24 472.78 37.22 486l15.968-16L40 456.812z" fill-opacity="1"></path></g></svg>
+                            </button>
+                        </div>       
+                            <a id="minMaxMenu" onclick='setMenuState("min")'>Maximize Menu</a>
+                    </div>
+                    
+                    <div class="nav-parent expand-collapse" id="mobile-nav-parent" data-target="mobile">
+                        <a href="index.htm" tppabs="https://2e.aonprd.com/" style="font-size:larger" class="brand">
+                            <span class="title">
+                                Archives of Nethys
+                            </span>
+                        </a>
+                        <a href="Afflictions.aspx.htm" tppabs="https://2e.aonprd.com/Afflictions.aspx">Afflictions</a>
+                        <a href="javascript:void(0);" data-toggle="cc">Character Creation +</a>
+                        <div class="expand-collapse expand-collapse-group hide-when-collapsed expanded" data-target="cc" data-group="menus">
+                            <a href="Ancestries.aspx.htm" tppabs="https://2e.aonprd.com/Ancestries.aspx">Ancestries</a>
+                            <a href="Archetypes.aspx.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx">Archetypes</a>
+                            <a href="Backgrounds.aspx.htm" tppabs="https://2e.aonprd.com/Backgrounds.aspx">Backgrounds</a>
+                            <a href="Classes.aspx.htm" tppabs="https://2e.aonprd.com/Classes.aspx">Classes</a>
+                            <a href="Feats.aspx.htm" tppabs="https://2e.aonprd.com/Feats.aspx">Feats</a>
+                            <a href="Skills.aspx.htm" tppabs="https://2e.aonprd.com/Skills.aspx">Skills</a>
+                        </div>
+                        <a href="Creatures.aspx.htm" tppabs="https://2e.aonprd.com/Creatures.aspx">Creatures</a>
+                        <a href="Equipment.aspx.htm" tppabs="https://2e.aonprd.com/Equipment.aspx">Equipment</a>
+                        <a href="Setting.aspx.htm" tppabs="https://2e.aonprd.com/Setting.aspx">Setting</a>
+                        <a href="Spells.aspx.htm" tppabs="https://2e.aonprd.com/Spells.aspx">Spells/Rituals</a>
+                        <a href="javascript:void(0);" data-toggle="rules">Rules +</a>
+                        <div class="expand-collapse expand-collapse-group hide-when-collapsed" data-target="rules" data-group="menus">
+                            <a href="Actions.aspx.htm" tppabs="https://2e.aonprd.com/Actions.aspx">Actions/Activities</a>
+                            <a href="Conditions.aspx.htm" tppabs="https://2e.aonprd.com/Conditions.aspx">Conditions</a>
+                            <a href="Rules.aspx.htm" tppabs="https://2e.aonprd.com/Rules.aspx">Rules</a>
+                            <a href="Traits.aspx.htm" tppabs="https://2e.aonprd.com/Traits.aspx">Traits</a>
+                        </div>
+                        <a href="Hazards.aspx.htm" tppabs="https://2e.aonprd.com/Hazards.aspx">Hazards</a>
+                        <a href="javascript:void(0);" data-toggle="mythic" data-group="">Mythic +</a>
+                        <div class="expand-collapse expand-collapse-group hide-when-collapsed" data-target="mythic" data-group="menus">
+                            <a href="Rules.aspx-ID=3320.htm" tppabs="https://2e.aonprd.com/Rules.aspx?ID=3320">Mythic Rules</a>
+                            <a href="MythicCallings.aspx.htm" tppabs="https://2e.aonprd.com/MythicCallings.aspx">Callings</a>
+                            <a href="MythicFeats.aspx.htm" tppabs="https://2e.aonprd.com/MythicFeats.aspx">Mythic Feats</a>
+                            <a href="MythicDestinies.aspx.htm" tppabs="https://2e.aonprd.com/MythicDestinies.aspx">Destinies</a>
+                            <a href="MythicSpells.aspx.htm" tppabs="https://2e.aonprd.com/MythicSpells.aspx">Mythic Spells</a>
+                            <a href="MythicRituals.aspx.htm" tppabs="https://2e.aonprd.com/MythicRituals.aspx">Mythic Rituals</a>
+                        </div>
+                        <a href="Sources.aspx.htm" tppabs="https://2e.aonprd.com/Sources.aspx">Sources</a>
+                        <a href="javascript:void(0);" data-toggle="about" data-group="">About the Archives +</a>
+                        <div class="expand-collapse expand-collapse-group hide-when-collapsed" data-target="about" data-group="menus">
+                            <a href="Licenses.aspx.htm" tppabs="https://2e.aonprd.com/Licenses.aspx">Licenses</a>
+                            <a href="ContactUs.aspx.htm" tppabs="https://2e.aonprd.com/ContactUs.aspx">Contact Us</a>
+                            <a href="Contributors.aspx.htm" tppabs="https://2e.aonprd.com/Contributors.aspx">Contributors</a>
+                            <a href="Support.aspx.htm" tppabs="https://2e.aonprd.com/Support.aspx">Support the Archives</a>
+                        </div>
+                        <div id="mobileSearch" class="ui fluid search">
+                            <div class="ui action icon input" style="width:90%;height:100%">
+                                <input class="prompt" type="text" placeholder="Search..."/>
+                                <button class="ui icon button" onclick="jumpToSearch('#mobileSearch')">
+                                    <i class="search icon"></i>
+                                </button>
+                            </div>
+                            <div class="results"></div>
+                        </div>
+                        <a href="index.htm" tppabs="https://2e.aonprd.com/">
+                                <img src="PF2Logo_Nethys_400_Selected.png" tppabs="https://2e.aonprd.com/Images/PF2Logo_Nethys_400_Selected.png" alt="Pathfinder RPG (2nd Edition)" />
+                            </a>
+                        <a href="https://www.aonprd.com/"  >
+                            <img src="PF1Logo_Nethys_200.png" tppabs="https://2e.aonprd.com/Images/PF1Logo_Nethys_200.png" alt="Pathfinder RPG (1st Edition)" />
+                        </a> 
+                        <a href="https://www.aonsrd.com/" >
+                            <img src="SFLogo_Nethys_200.png" tppabs="https://2e.aonprd.com/Images/SFLogo_Nethys_200.png" alt="Starfinder RPG (1st Edition)" />
+                        </a>
+                        <a href="https://2e.aonsrd.com/" >
+                            <img src="starfinder_2_logo_200.webp" tppabs="https://2e.aonprd.com/Images/starfinder_2_logo_200.webp" alt="Starfinder RPG (2nd Edition)" />
+                        </a>
+                    </div>
+                </div>
+                <div class="theme-toggle-wrapper" title="Toggle Theme">
+                    <div class="theme-open" title="Change Theme"><i class="ra ra-flowers"></i></div>
+                </div>
+            </div>
+
+            <div class="new-navbar">
+                <div class="drawer-toggle" title="Expand Sidebar" onclick="switchDrawer()">
+                    <img src="NethysMask.png" tppabs="https://2e.aonprd.com/Images/NethysMask.png" alt="&#xe030" /></div>
+                    <a class="title" href="index.htm" tppabs="https://2e.aonprd.com/">Archives of Nethys</a>
+                    <div class="searchBar">
+                        <div id="desktopSearch" class="ui fluid search">
+                            <div class="ui action icon input" style="width:100%;height:100%">
+                                <input class="prompt" type="text" placeholder="Search..."/>
+                                <button class="ui icon button" onclick="jumpToSearch('#desktopSearch')">
+                                        <i class="search icon"></i>
+                                    </button>
+                            </div>
+                            <div class="results"></div>
+                        </div>                   
+                    </div>
+                    <div class="game-selector">
+                        <div class="game-selector-options">
+                            <a class="game-selector-option" href="https://aonprd.com/" >
+                                <img src="PF1Logo_Nethys.png" tppabs="https://2e.aonprd.com/Images/PF1Logo_Nethys.png" alt="Pathfinder 1e" />
+                            </a>
+                            <a class="game-selector-option" href="https://aonsrd.com/" >
+                                <img src="SFLogo_Nethys.png" tppabs="https://2e.aonprd.com/Images/SFLogo_Nethys.png" alt="Starfinder 1e" />
+                            </a>
+                            <a class="game-selector-option" href="https://2e.aonsrd.com/" >
+                                <img src="starfinder_2_logo.webp" tppabs="https://2e.aonprd.com/Images/starfinder_2_logo.webp" alt="Starfinder 2e" />
+                            </a>
+                        </div>
+                        <img class="game-selector-current" src="PF2Logo_Nethys.png" tppabs="https://2e.aonprd.com/Images/PF2Logo_Nethys.png" alt="Pathfinder 2e" />
+                    </div>
+                    <div class="theme-open" title="Change Theme"><i class="ra ra-flowers"></i></div>
+            </div>
+
+            <div class="main-wrapper" id="main-wrapper">
+                <div class="menutitle">
+                    <h1>
+                        Archives of Nethys
+                    </h1>
+                    <h2 class="game-titles">
+                        <a href="https://www.aonprd.com/"  >
+                            <img src="PF1Logo_Nethys.png" tppabs="https://2e.aonprd.com/Images/PF1Logo_Nethys.png" alt="Pathfinder RPG (1st Edition)" />
+                        </a> 
+                        <a href="index.htm" tppabs="https://2e.aonprd.com/" class="selected">
+                            <img src="PF2Logo_Nethys-Selected.png" tppabs="https://2e.aonprd.com/Images/PF2Logo_Nethys-Selected.png" alt="Pathfinder RPG (2nd Edition)" />
+                        </a>
+                        <a href="https://www.aonsrd.com/" >
+                            <img src="SFLogo_Nethys.png" tppabs="https://2e.aonprd.com/Images/SFLogo_Nethys.png" alt="Starfinder RPG (1st Edition)" />
+                        </a>
+                        <a href="https://2e.aonsrd.com/" >
+                            <img src="starfinder_2_logo.webp" tppabs="https://2e.aonprd.com/Images/starfinder_2_logo.webp" alt="Starfinder RPG (2nd Edition)" />
+                        </a>
+                    </h2>
+                </div>
+                <div class="main" id="main">
+                    
+
+<h1 style="text-align:center" class="hide-on-print"><a href="Rules.aspx.htm" tppabs="https://2e.aonprd.com/Rules.aspx"><u>Rules Index</u></a> | <a href="GMScreen.aspx.htm" tppabs="https://2e.aonprd.com/GMScreen.aspx">GM Screen</a> | <a href="PlayersGuide.aspx.htm" tppabs="https://2e.aonprd.com/PlayersGuide.aspx">Player's Guide</a></h1>
+
+<hr class="hide-on-print" />
+
+    <div class="rule-ancestors hide-on-print">
+        <span class="rule-ancestor">Gamemastery Guide</span>
+
+            <span class="rule-ancestor">
+                <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=994  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=994%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=994" class="link">Chapter 2: Tools&#xD;&#xA;</a>
+            </span>
+    </div>
+
+<div class="sibling-navigation hide-on-print">
+    <div class="sibling-navigation-previous">
+            <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=1113  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=1113%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=1113" class="link">&lt;&lt; Afflictions</a>
+    </div>
+    <div class="sibling-navigation-next">
+            <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=1154  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=1154%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=1154" class="link">Nations &gt;&gt;</a>
+    </div>
+</div>
+
+
+<div class="rule">
+    <h1 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=1117  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=1117%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=1117">Building Worlds</a> 
+    </h1>
+
+    
+
+        <div class="sources"><strong>Source</strong> <a href="javascript:if(confirm(%27https://2e.aonprd.com/Sources.aspx?ID=22  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Sources.aspx?ID=22%27" tppabs="https://2e.aonprd.com/Sources.aspx?ID=22" class="link link-source" target="_blank">Gamemastery Guide pg. 122</a></div>
+
+    <div>
+        As a Game Master, you control the details of the world your players explore. The Age of Lost Omens campaign setting is a lush world suitable for countless adventures, but you might prefer to adventure in entirely new worlds, where every aspect of the setting and story is yours to decide!<br /><br /> Building your own campaign world can be a deeply fulfilling creative process, as it lets you bring to life the exact setting you envision. It gives you great flexibility, in that you can build only as much as you need for the next few adventures, and you can adapt the world on the fly to meet the demands of your story. It also gives you great control, allowing you to build precisely the setting you need for the story you want to tell. Finally, it bypasses some of the issues that can come with playing within an existing campaign setting, where you might create a narrative that contradicts published canon, or your players might stumble across major plot or setting spoilers. Whatever your world‑building goals, this chapter guides you through the design process step by step.
+    </div>
+
+    <div class="sidebars"><div class="sidebar-nofloat"><h2>Campaign Reference</h2><div class="sidebar-content">Before the campaign starts, you might want to begin the outline for a campaign reference: a living document that you can easily review and annotate during gameplay and that records the geography, factions, history, characters, and plots central to your campaign.</div></div></div>
+
+        
+<div class="rule">
+    <h2 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=1118  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=1118%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=1118">Design Approach</a> 
+    </h2>
+
+    
+
+
+    <div>
+        World building can be approached in many ways, but it fundamentally comes down to a simple preference. Do you start at a high level and zoom in, or do you start small and build up? This section outlines a largely top‑down approach, but you can design from the bottom up simply by starting at the end of this section and working backwards. Either way, you may find yourself skipping between sections as inspiration strikes—and that’s OK!<br /><br /> When building a world, there’s a risk of becoming overwhelmed by the sheer number of decisions to be made. Remember that you don’t need to make every decision for every aspect of your world all at once. Focus first on the elements you need for your story and the game, then add as much of the rest as you’d like. You’ll also want to allow room for input from your players— gaming sessions are more memorable and engaging when the storytelling experience is shared between everyone at the table (page 32 has more information on players contributing to the narrative).<br /><br /> Before you decide anything else, however, you should establish your concept and your goals. Do you envision a high‑magic steampunk setting where humans are a tiny minority? A world where the only magic derives from squabbling pantheons of gods whose followers are caught up in their wars for power? A quaint town isolated from an otherwise‑unknown world beyond a vast, impenetrable forest of mist‑choked, skeletal trees? Are you designing a world for a multi‑year campaign, or for a fast-paced one‑shot adventure? Having an idea in mind will help steer your choices as you build your world, and knowing your goals will help you focus on building what you need.
+    </div>
+
+    
+
+        
+<div class="rule">
+    <h3 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=1119  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=1119%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=1119">Top Down</a> 
+    </h3>
+
+    
+
+
+    <div>
+        The top‑down approach is great if you have a lot of time to dedicate to world building. When designing a setting from the top down, your initial focus is on the big picture. You may already have an idea of the big movers and shakers of your world or your multiverse. You may want to chronicle a thousand years or more of the setting’s history. You may have already sketched out a world map with continents, nations, and trade routes spanning the globe. This approach begins with broad generalities that get more detailed as you design and during play.
+    </div>
+
+    
+
+
+</div>
+
+        
+<div class="rule">
+    <h3 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=1120  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=1120%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=1120">Bottom Up</a> 
+    </h3>
+
+    
+
+
+    <div>
+        With a bottom‑up approach to world building, you start small and local. Focus on the starting location and immediate needs of your campaign, then expand outward as the story unfolds. This strategy works well for those with less time to devote to world building, as you need to prepare only the minimum detail necessary to entice your players toward adventure, fleshing out your world only as the campaign requires it.
+    </div>
+
+    
+
+
+</div>
+
+
+</div>
+
+        
+<div class="rule">
+    <h2 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=1121  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=1121%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=1121">The World</a> 
+    </h2>
+
+    
+
+
+    <div>
+        While world building might include building much more than a single planet, most adventures occur entirely on one world. It’s a good idea to have a broad understanding of that world as a whole.
+    </div>
+
+    
+
+        
+<div class="rule">
+    <h3 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=1122  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=1122%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=1122">Planetary Basics</a> 
+    </h3>
+
+    
+
+
+    <div>
+        When designing the physical features of a campaign world, you’ll want to determine its shape and the general distribution of landmasses. You can also establish the world’s size, though note the scale of a world generally has a fairly small impact on the adventures taking place there.
+    </div>
+
+    
+
+        
+<div class="rule">
+    <h4 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=1123  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=1123%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=1123">Shape</a> 
+    </h4>
+
+    
+
+
+    <div>
+        In a fantasy setting, the shape of your world need not be spherical as governed by the laws of physics. It could be any shape you desire, and it need not be a planet at all!<br /><br /> <b>Globe:</b> Barring some catastrophe, worlds in our reality are roughly spherical due to the influence of gravity.<br /><br /> <b>Hollow World:</b> What if the landmasses and civilizations of a world existed on the inner surface of a hollow sphere? In such a world, the horizon would climb upwards, permitting creatures to see landmarks at extraordinary distances. Light might emanate from a sun‑like orb in the world’s center, from various other natural or magical sources, or not at all.<br /><br /> <b>Irregular:</b> What if your world is flat, a toroid, or shaped into a cylinder, cube, or other polyhedron? What if it’s something even stranger? With such an unusual shape, you may need to decide how gravity, atmosphere, and other details function.
+    </div>
+
+    
+
+
+</div>
+
+        
+<div class="rule">
+    <h4 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=1124  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=1124%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=1124">Landmass</a> 
+    </h4>
+
+    
+
+
+    <div>
+        The next major step in world creation is to sketch out the planet’s oceans and major landmasses. On Earth, these geological features are the result of plate tectonics. In a fantasy world, however, the oceans might have been cleaved from the land by the actions of titans, or the continents shaped to suit a god’s whims. The following are some common landmass types.<br /><br /> <b>Archipelago:</b> A stretch of vast ocean, dotted by chains of small island groups, atolls, and islets.<br /><br /> <b>Major Islands:</b> A region of seas dominated by large islands, each several hundred miles across.<br /><br /> <b>Island‑Continent:</b> An enormous island nearly the size of a continent, surrounded by ocean.<br /><br /> <b>Continent:</b> A substantial landform that (usually) rests on a tectonic plate and gradually shifts in position over geologic timescales.<br /><br /> <b>Supercontinent:</b> An assembly of the world’s continental blocks into a single immense landmass.
+    </div>
+
+    
+
+
+</div>
+
+
+</div>
+
+        
+<div class="rule">
+    <h3 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=1125  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=1125%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=1125">Environment</a> 
+    </h3>
+
+    
+
+
+    <div>
+        The environment and terrain of a region can pose as much of a challenge to an adventuring party as any of the foes they face. The following section references the environment categories beginning on page 512 of the <i>Core Rulebook.</i>
+    </div>
+
+    
+
+        
+<div class="rule">
+    <h4 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=1126  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=1126%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=1126">Common Environments</a> 
+    </h4>
+
+    
+
+
+    <div>
+        The following environments are common enough that they might appear in nearly any adventure or world.<br /><br /> <b>Aquatic:</b> Oceans, seas, lakes, and other large waterways are aquatic environments.<br /><br /> <b>Arctic:</b> Arctic environments usually appear near the northern and southern extremes of a world, though extreme elevation, unusually shaped worlds, and supernatural forces could result in arctic terrain elsewhere.<br /><br /> <b>Desert:</b> Deserts can appear anywhere on a world where precipitation is scant, even along some oceans. Any large landmasses that entirely lack bodies of water are likely to be deserts.<br /><br /> <b>Forest:</b> The composition of a forest depends on the climate and the elevation, with thick jungles more common near an equator, hardwood forests in more temperate zones, and evergreens at higher latitudes and elevations. Most worlds have a tree line—an elevation above which trees can’t grow.<br /><br /> <b>Mountain:</b> A world’s highest peaks can stretch tens of thousands of feet above sea level. This category also includes hills, which are typically no more than 1,000 feet tall.<br /><br /> <b>Plains:</b> Mostly flat and unobstructed, plains are usually at lower elevations, but they can also be found at higher elevation on plateaus.<br /><br /> <b>Urban:</b> Cities and settlements are urban environments. These areas are detailed in Settlements, beginning on page 132.<br /><br /> <b>Swamp:</b> Wide floodplains, shallow lakes, and marshes can appear at most latitudes.
+    </div>
+
+    
+
+
+</div>
+
+        
+<div class="rule">
+    <h4 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=1127  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=1127%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=1127">Extreme Environments</a> 
+    </h4>
+
+    
+
+
+    <div>
+        Some adventures lead to fantastic reaches of the world or the multiverse that are seldom tread by mortals.<br /><br /> <b>Aerial:</b> A world might include windy realms of floating islands and castles in the clouds.<br /><br /> <b>Glacier:</b> Massive sheets of dense ice, constantly moving under their own immense weight, glaciers are frozen wastelands riddled with columns of jagged ice and snow‑covered crevasses.<br /><br /> <b>Volcanic:</b> Hellish landscapes of molten lava, burning ash, and scorching temperatures pose immediate danger.<br /><br /> <b>Undersea:</b> A subset of aquatic environments, undersea environments are those areas submerged beneath the waves.<br /><br /> <b>Underground:</b> Some worlds have deep natural caverns, while others have extensive winding tunnels and expansive realms below the surface.
+    </div>
+
+    
+
+
+</div>
+
+
+</div>
+
+        
+<div class="rule">
+    <h3 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=1128  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=1128%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=1128">Mapping a World</a> 
+    </h3>
+
+    
+
+
+    <div>
+        Many Game Masters like to have an overland map for their local region, nation, or even the whole world. The primary goal of this scale of map is to designate sites of import to the campaign; you need not detail every hamlet or woodland grove, but having a sense of the major features can help you and the other players visualize the world in which they’re playing.<br /><br /> <b>Step 1. Coastlines:</b> The easiest first step is to separate land from sea. Regional maps may only have a single shoreline, if any. At larger map scales, consider the placement of major islands, archipelago chains, atolls, and islets. A world map should consider the size and placement of continents.<br /><br /> <b>Step 2. Topography:</b> Pencil in a rough ridgeline for each mountain range in the region. Mountain ranges are common along coastlines where continental plates push together. If extended into the sea, mountain ranges typically result in a chain of offshore islands. Indicate hills in the regions adjacent to the mountains and elsewhere as necessary to demonstrate elevation. Unmarked terrain on an overland map is usually lowland plains.<br /><br /> <b>Step 3. Watercourses:</b> It’s important to keep in mind that rivers flow downstream, from high elevation toward the sea, always taking the path of least resistance. Powerful watercourses might carve canyons or gorges over millennia, but they should never cross through mountain ranges. On a similar note, watercourses don’t branch—tributaries join into rivers as they flow downstream.<br /><br /> <b>Step 4. Terrain and Environment:</b> Sketch in interesting terrain features such as forests, deserts, or tundra. You may want to differentiate these environs, separating coniferous and deciduous forests from tropical jungles or arctic taiga. Environs not specifically called out on an overland map are typically presumed to be some variety of grassland.<br /><br /> <b>Step 5. Civilization:</b> Now you’re ready to place the elements of civilization. Major cities should typically be located near fresh water and natural resources. Major roads connect larger settlements, circumventing forests and other difficult environs, but they may wind through mountain passes when lucrative commerce demands it. Add smaller settlements along your roads, further connected by smaller roads and trails. Finally, draw political boundaries and mark other sites of interest.
+    </div>
+
+    
+
+
+</div>
+
+
+</div>
+
+        
+<div class="rule">
+    <h2 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=1129  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=1129%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=1129">Civilization</a> 
+    </h2>
+
+    
+
+
+    <div>
+        With the major geographical features and terrain of your world decided, you’ll next want to establish significant nations and settlements.<br /><br /> When it comes to designing a world’s cultures, you might want to focus primarily on those areas the party is likely to explore first. This allows you to establish the details and depth of one region’s peoples before expanding out to address others. That’s not to say you shouldn’t have ideas about the cultures beyond your starting settlement—it just means you don’t need to decide every detail of every culture all at once.<br /><br /> As always, you don’t need to demarcate every realm on the globe or indicate every town, hamlet, and thorp. Keep your focus on what you need for your story and your adventure—leaving terra incognita can lead to stories down the road as the party ventures further from home.
+    </div>
+
+    
+
+        
+<div class="rule">
+    <h3 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=1130  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=1130%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=1130">Societal Benchmarks</a> 
+    </h3>
+
+    
+
+
+    <div>
+        The following sections can help you establish certain truths about your world as a whole. From there, you can decide the details of specific cultural groups, including whether they deviate from these global standards.
+    </div>
+
+    
+
+        
+<div class="rule">
+    <h4 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=1131  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=1131%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=1131">Technology</a> 
+    </h4>
+
+    
+
+
+    <div>
+        Throughout history, a major driver of world culture has been the continuous advancement of technology in warfare, agriculture, and industry. The following categories roughly approximate real‑world technological levels, but progress might vary on your world. What heights of technology have been achieved? Have any groups fallen behind or leaped ahead?<br /><br /> <b>Primeval:</b> Weapons and tools in this early era are crafted primarily from bone, wood, or stone. Knowledge of stonecutting allows early civilizations to raise stone walls and buildings.<br /><br /> <b>Ancient:</b> Advancements in mining and metallurgy lead to weapons and tools made from bronze. Crop rotation and storage in granaries ensure greater survival in times of famine. Trade between river and coastal settlements is aided by oar‑ and sail‑powered galleys. Chariots come into strong use during warfare.<br /><br /> <b>Classical:</b> Superior military tactics and engineered roads allow for rapid deployment of infantry wielding iron weapons and aided by mounted cavalry. Advances in complex irrigation and construction of aqueducts lead to an abundance of harvest foods and dramatic improvements to sanitation.<br /><br /> <b>Medieval:</b> Warfare in this era is defined by iron armor, crossbows, and weapons forged of fine steel.<br /><br /> <b>Enlightenment:</b> The development of black powder and muzzle‑loaded, single‑shot firearms greatly changes warfare, making plate armor mostly obsolete. Larger ships permit ocean crossings and long‑range trade to distant shores. The printing press speeds literacy and the dissemination of new ideas.<br /><br /> <b>Steam:</b> Steam engines replace conveyances drawn by animal power or sail, leading to a significant shift from wood fuel to coal. Further advances in science lead to dirigible airships and observation balloons. Simple firearms are replaced by repeating revolvers and bolt action rifles.
+    </div>
+
+    
+
+
+</div>
+
+        
+<div class="rule">
+    <h4 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=1132  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=1132%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=1132">Divine Involvement</a> 
+    </h4>
+
+    
+
+
+    <div>
+        What is the nature of the gods? Do they even exist? If so, are they omnipotent and omniscient? How does a follower request their divine favor? The answers to these questions will help you determine how strongly divine faith impacts the cultures of your world.<br /><br /> <b>None:</b> Deities do not exist in this world, or if they do, they are oblivious to or completely unconcerned with mortal affairs. If they exist, they don’t make their presence known, nor do they grant power to their worshippers.<br /><br /> <b>Limited:</b> Deities exist, though they remain aloof from the mortal world and make their divine presence known only to a chosen few.<br /><br /> <b>Accepted:</b> Divine influence is an accepted fact of everyday life. Their will is enacted through priests and organized religions. Divine avatars may appear in the world during extreme circumstances.<br /><br /> <b>Ubiquitous:</b> Deities live among mortals, exerting their divine will directly. Gods rule entire nations, commanding absolute obedience from their faithful followers.
+    </div>
+
+    
+
+
+</div>
+
+        
+<div class="rule">
+    <h4 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=1133  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=1133%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=1133">Magic</a> 
+    </h4>
+
+    
+
+
+    <div>
+        Does magic exist? If so, which traditions are available? What are the sources of a spellcaster’s power, and how do they gain and channel that magic?<br /><br /> <b>No Magic:</b> Magic of any kind does not exist in this world. Spells and magic effects do not function. Consider the variants on page 196 to handle the lack of magic items.<br /><br /> <b>Low Magic:</b> Magic is mysterious and taboo. The few practitioners of the mystical arts are feared or shunned. Again, consider the variants on page 196 to handle the relative scarcity of magic items.<br /><br /> <b>Common:</b> Magic is an accepted fact of everyday life, though its mysteries are beyond the reach of most people. Magic portals and gates can whisk travelers “in the know” halfway across the world or to the other side of the multiverse.<br /><br /> <b>High Magic:</b> Magic and magical items are commonplace in society. It may be as easy to learn spellcasting as it is to learn a new language. Magical objects simulate various modern technologies.
+    </div>
+
+    
+
+
+</div>
+
+
+</div>
+
+        
+<div class="rule">
+    <h3 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=1134  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=1134%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=1134">Designing Nations</a> 
+    </h3>
+
+    
+
+
+    <div>
+        For any nation you establish in your setting, you’ll want to provide at least a minimal description—the core concept of that nation. The amount of additional detail you provide depends on the needs of your story. You likely want to establish enough information to create a stat block (page 130) for the nation your adventurers are from, any nations they’re likely to spend significant time in, and those nations’ main allied and enemy nations, if they are likely to become part of the plot.<br /><br /> When building a nation, remember that the various elements connect to the history of the land and its people, its relationships with nearby nations, and the current residents. This interconnectedness will help you build a wealth of story hooks and provide immersive detail for your players.<br /><br /> Beyond those basic details, the following considerations can help flesh out the nations in your setting.
+    </div>
+
+    
+
+        
+<div class="rule">
+    <h4 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=1135  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=1135%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=1135">Location, Size, and Population</a> 
+    </h4>
+
+    
+
+
+    <div>
+        Major geographical boundaries, such as mountains, seas, and large rivers, often present natural borders for a realm. Depending on its leadership, culture, and the resources available, a country may be as small as a city‑state or as large as a continent‑sweeping empire. Barring widely available technological or magical travel and communication, most nations remain relatively small (only a few hundred miles across), simply because it becomes too difficult for a single governing entity to oversee and maintain the entirety of a larger state.<br /><br /> National populations ebb and flow due to a multitude of external factors. Advances in sanitation, medicine, and agriculture can spur dramatic population growth, while war, famine, or plague can devastate it. As a rule, smaller nation‑states have a population around a hundred thousand, while a continent‑spanning empire could swell to well over a hundred million.<br /><br /> Population size is only part of the equation. Figuring out the ancestry ratios of that population and brainstorming how the members of various ancestries interact can often lead to interesting story ideas, or at least give you some jumping‑off points when dreaming up how the nation was founded and its later history.
+    </div>
+
+    
+
+
+</div>
+
+        
+<div class="rule">
+    <h4 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=1136  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=1136%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=1136">Cultural Hallmarks</a> 
+    </h4>
+
+    
+
+
+    <div>
+        What elements of the nation’s predominant culture stand out? A nation might have an unusual stance on religion, a specific demographic, distinctive natural features, noteworthy political views, or any number of unique elements that differentiate it from other nations in your region. These hallmarks can inform your decisions about many other aspects of the nation.
+    </div>
+
+    <div class="sidebars"><div class="sidebar-nofloat"><h2>Conscientious Culture Design</h2><div class="sidebar-content">Creating fantasy cultures is a delicate topic, as it can be all too easy to create a culture or a group based on damaging stereotypes or simplistic reductions of real-world groups. Creating entire cultures out of harmful genre tropes such as “jungle savage” or “noble samurai” reduces real-world cultures to caricatures and perpetuates stereotypes about people from those cultures. Taking inspiration from the real world is wonderful—our world is filled with an incredible diversity of cultures and peoples—but you should do so with care and respect for those sources.</div></div></div>
+
+
+</div>
+
+        
+<div class="rule">
+    <h4 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=1137  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=1137%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=1137">History</a> 
+    </h4>
+
+    
+
+
+    <div>
+        How did the nation come to be? Has it stood since time immemorial, a bastion of stability while the rest of the world changes around it? Perhaps it was built over the ruins of another civilization, destroyed by some forgotten calamity. Or perhaps it is a young nation, born recently amid ongoing strife in your world. What remnants of the past can be found, or has the past been deliberately hidden? How have the residents of the nation adapted to change, and in what ways have they failed to do so?
+    </div>
+
+    
+
+
+</div>
+
+        
+<div class="rule">
+    <h4 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=1138  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=1138%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=1138">Economy and Political Stances</a> 
+    </h4>
+
+    
+
+
+    <div>
+        Determine the key resources and industries that drive the nation’s economy. The availability of natural resources can establish national boundaries, local industry, and other elements of the resident society. For example, an area with few resources might have a nomadic society, while a nation rich in resources might develop an opulent mercantile class.<br /><br /> These resources can also affect international relationships. An area poor in a specific resource might have a strong trade relationship with a nearby nation that has it, or they might be at war! Nations also disagree about political structures, public policy, religion, and any number of other factors.<br /><br /> You’ll also want to consider the significant NPCs of each nation. This includes the official ruler, but it also includes other major players, whether they act in an official capacity or entirely behind the scenes.
+    </div>
+
+    
+
+
+</div>
+
+
+</div>
+
+        
+<div class="rule">
+    <h3 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=1139  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=1139%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=1139">Building Settlements</a> 
+    </h3>
+
+    
+
+
+    <div>
+        In Pathfinder, settlements are where characters can rest, recharge, retrain, and dedicate themselves to other downtime activities all in relative peace. Traditionally, an adventuring band comes together in some kind of settlement, be it a small hamlet nestled on the border of some wild frontier or a bustling port city at the heart of a nation. Some adventures take place entirely within a single settlement, while in others the party visits settlements only briefly between their adventures in the wilderness.<br /><br /> The first thing you should consider when building a settlement is its role in your story. Is this a major metropolis the heroes will visit again and again during their adventurers? A backwater village where their adventures begin? The distant capital from which an evil tyrant issues cruel edicts? The settlement’s campaign role will inform many of the other decisions you make about the place.<br /><br /> Once you know why you need the settlement, consider why it would exist in the world. Settlements are typically founded near sources of fresh drinking water; most commonly along a riverbank or a place with access to adequate wells or springs. They additionally require some kind of transit to other places, either roads or waterways. While it may be easier to create a village or city merely to serve the characters’ needs, determining what function it has independent of the characters adds verisimilitude and can provide hooks for further stories.<br /><br /> Settlements, on page 132, describes the components of a settlement stat block, which you should create for any settlement you expect your characters to visit. The process of creating that stat block will help you further flesh out your community.
+    </div>
+
+    
+
+        
+<div class="rule">
+    <h4 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=1140  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=1140%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=1140">Mapping a Settlement</a> 
+    </h4>
+
+    
+
+
+    <div>
+        Don’t underestimate the usefulness of sketching a map of significant settlements, like the one where your adventure starts. This isn’t intended to be a picture‑perfect rendition drawn to scale, but rather to outline the rough shape and size of the settlement. Be sure to highlight a few key structures useful to the campaign. For more inspiration, see the section on Drawing Maps (page 52).<br /><br /> <b>Step 1. City Layout:</b> The layout of a settlement is as unique as the terrain upon which it is settled. First, decide the major trade route for the settlement. This is typically a river, which brings fresh water, fish, and fast transport to the populace. Larger cities can sustain additional growth with access to a deep‑water harbor or a major overland trade road. Even settlements conceived with a grid plan tend to stretch along established trade routes before expanding outwards.<br /><br /> <b>Step 2. Districts:</b> Towns with a population over a thousand typically have defensive walls. As a settlement grows further in size and population, additional stone fortifications are often constructed beyond the city center, which further segment the city into districts or boroughs. A metropolis, for example, might have several distinct neighborhoods: Castle Ward, Noble Quarter, Temple Hill, the Gardens, Scholars’ Court, Artisan Plaza, the docks, the slums, and so forth.<br /><br /> <b>Step 3. Markets and Shops:</b> Designate one or more open spaces in the settlement for a market square. This marketplace typically grows in the city center, along a major road intersecting the settlement’s primary trade route. Lining the perimeter of the temporary tents and stalls of a bazaar are permanent retail shops offering pricier goods and services. Here in the beating heart of city commerce, adventurers can arm themselves for upcoming expeditions or sell their ill‑gotten gains once making it back to the settlement.<br /><br /> <b>Step 4. Inns:</b> Heroes need a place to celebrate and recover between adventures. In addition to both public and private lodging, a settlement’s inns often serve food and drink. As with the town market, inns are commonly built in central locations where trade roads meet. In your campaign, inns are ideal locations to spread gossip, introduce notable NPCs, and initiate quests. For the right price, innkeepers might rent strongboxes to secure money and other valuables between adventures.<br /><br /> <b>Step 5. Landmarks:</b> To give your cities a sense of personality and local flavor, design a handful of iconic landmarks for the PCs to visit. Memorable names make these landmarks more interesting. A random observatory might be noteworthy, but the Celestial Watchtower has an air of intrigue that could lead to a fun adventure hook.
+    </div>
+
+    
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+        
+<div class="rule">
+    <h2 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=1141  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=1141%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=1141">Religion</a> 
+    </h2>
+
+    
+
+
+    <div>
+        The greatest stories from myth and legend speak of immortals with incredible powers of creation and destruction. Some meddle in the affairs of mortals, shaping heroes and history at a whim, while others remain aloof or oblivious to the mortal world. Regardless of the world you’re building, religion (or even the absence thereof) shapes the people and the stories you tell.
+    </div>
+
+    
+
+        
+<div class="rule">
+    <h3 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=1142  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=1142%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=1142">Theology</a> 
+    </h3>
+
+    
+
+
+    <div>
+        Religious traditions are commonly categorized by their belief in one or more divine entities.<br /><br /> <b>Polytheism:</b> This belief system posits the existence of many gods. Polytheistic gods typically espouse particular areas of concern and often reflect the appearance of their worshippers. The primary religious philosophy of the Age of Lost Omens is polytheistic.<br /><br /> <b>Dualism:</b> This philosophy espouses an enduring conflict between two diametrically opposed cosmic forces; most commonly good and evil or law and chaos. Acolytes of each faith almost always see themselves as righteous, and those of the contrasting belief as false.<br /><br /> <b>Monotheism:</b> A monotheistic doctrine recognizes the existence of only one true god. The supreme deity may exhibit more than one aspect yet remain a single entity, like Gozreh from the Age of Lost Omens.<br /><br /> <b>Pantheism:</b> Divine power arises from the universe itself, or as a byproduct of the collective power of many deities sharing some common facet, either way forming a vast, all‑encompassing divine entity. Worshippers sometimes appeal to or devote themselves to specific fundamental concepts or aspects of the universe.<br /><br /> <b>Animism:</b> Rather than worshipping gods associated with souls and spiritual essence from beyond, animism sees the life force in each part of the world, whether it be the trees of an old-growth forest or a towering waterfall. An example of animism in the Age of Lost Omens is the connection between the Shoanti people and their totems, which they forge a relationship with when they come of age.<br /><br /> <b>Atheism:</b> In some campaign worlds, the gods have all died, abandoned their worshippers, or never existed at all. Mortals of this world may still cling to belief and establish religions in the name of the divine, but there are no true deities to answer their prayers.
+    </div>
+
+    
+
+
+</div>
+
+        
+<div class="rule">
+    <h3 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=1143  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=1143%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=1143">Pantheons</a> 
+    </h3>
+
+    
+
+
+    <div>
+        In polytheistic traditions, a pantheon is a divine hierarchy of multiple (or even all) deities.<br /><br /> <b>Universal:</b> All deities in the setting belong to a single pantheon. Different cultures might have their own names for the god of magic, for instance, but only a single deity answers their prayers.<br /><br /> <b>Ancestral or Regional:</b> Each ancestry or region worships its own distinct pantheon. These pantheons coexist in the same cosmology but establish control in separate divine realms. Across the cosmos, several gods from disparate pantheons may share the same area of concern, but they seldom compete for worshippers from rival pantheons.<br /><br /> <b>Competitive:</b> The world contains smaller regional pantheons competing for mortal worship. Only one deity of a specific area of concern may ascend to greater power across all the pantheons. As such, deities typically have little loyalty to their own pantheons and may actually switch to another pantheon if it earns them additional worshippers.<br /><br /> <b>None:</b> The deities of this multiverse act as individuals with no familial ties or common agenda binding them to each other.
+    </div>
+
+    
+
+
+</div>
+
+        
+<div class="rule">
+    <h3 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=1144  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=1144%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=1144">Deities</a> 
+    </h3>
+
+    
+
+
+    <div>
+        These immortal beings command vast power and influence fueled by the faith and souls of mortal worshippers. In Pathfinder, deities also dictate some of the abilities of those champions and clerics who channel their power. When designing deities, you’ll need to include the divine statistics and devotee benefits described below.
+    </div>
+
+    
+
+        
+<div class="rule">
+    <h4 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=1145  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=1145%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=1145">Divine Rank</a> 
+    </h4>
+
+    
+
+
+    <div>
+        Gods are usually ranked in a divine hierarchy, from newly ascended godlings to almighty creator gods of unfathomable power.<br /><br /> <b>God:</b> Taking a position atop the divine pyramid, gods command near unlimited power and resources. Their mortal congregations are large and (usually) well funded.<br /><br /> <b>Demigod:</b> Demigods still possess a great deal of power, though often in subservience to another god or simply inferior to the power of a full god.<br /><br /> <b>Quasi Deity:</b> The weakest rank of divinity, many quasi deities are recently ascended mortals who attained their deific powers through ritual apotheosis, or planar natives who have amassed divine power of their own.
+    </div>
+
+    
+
+
+</div>
+
+        
+<div class="rule">
+    <h4 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=1146  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=1146%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=1146">Divine Statistics</a> 
+    </h4>
+
+    
+
+
+    <div>
+        In Pathfinder, deities are not only a narrative element of the world, but also a mechanical component of some classes.<br/ ><br /> <b>Alignment:</b> A deity’s alignment reflects their innate moral and ethical outlook. In the Lost Omens setting, most deities maintain realms tied to the Outer Plane that matches their alignment.<br/ ><br /> <b>Areas of Concern:</b> Each deity has one or more areas of concern they have divine influence over. These portfolios typically embrace universal concepts, such as honor, night, or tranquility. Deities with similar areas of concern may work in common cause or against each other, depending on their goals and divine rank.<br/ ><br /> <b>Edicts:</b> Every deity has edicts, which are those tenets they require their faithful—especially divinely empowered clergy like champions and clerics—to promote in the world. A deity usually has one to three simple and straightforward edicts.<br/ ><br /> <b>Anathema:</b> The opposite of edicts, anathema are those things a deity will not abide. Champions and clerics must avoid their deity’s anathema or risk losing their divine powers, and even lay worshippers usually feel guilty for performing such acts, as they will be weighed against them in the afterlife. Like edicts, a deity usually has two to three simple and straightforward elements to their anathema.<br/ ><br /> <b>Follower Alignments:</b> Champions and clerics can gain power from deities only if they share a compatible moral disposition. Usually these allowed alignments are chosen from those within one step of the deity’s alignments, with NG, LN, CN, or NE deities rarely allowing N champions and clerics. Less restrictive deities are rarer and occur most often when the deity has multiple aspects or a particularly wide view of things.
+    </div>
+
+    
+
+
+</div>
+
+        
+<div class="rule">
+    <h4 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=1147  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=1147%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=1147">Devotee Benefits</a> 
+    </h4>
+
+    
+
+
+    <div>
+        Deities grant favored status and special power to the most fervent and influential of their flock.<br /><br /> <b>Divine Font:</b> Clerics channel a deity’s divine power as a font of negative or positive energy. Most often, good‑aligned deities grant heal while evil deities grant harm, with neutral deities most often offering a choice between the two. However, there’s nothing inherently good about positive energy or evil about negative energy, so a specific deity’s divine font may vary based on their areas of concern.<br /><br /> <b>Divine Skill:</b> Champions and clerics automatically gain the trained proficiency rank in their deity’s divine skill. Assign the deity one skill that synergizes well with their areas of concern. For example, Intimidation would be appropriate for a god of tyranny, or Deception for a goddess of trickery.<br /><br /> <b>Favored Weapon:</b> Clerics gain access to their deity’s favored weapon as well as the trained proficiency rank with it; warpriest clerics gain additional benefits. Every deity has a favored weapon. Because the benefits of having an advanced favored weapon are very strong, you should assign simple or martial favored weapons unless a deity is so thematically linked with an advanced weapon that you need to give them one.<br /><br /> <b>Domains:</b> Each deity grants a number of domains that reflect their divine areas of concern. Champions and clerics can learn the domain spells from their deity’s domains. Pathfinder’s deities each have four domains, and many have one or more alternative domains. Though this number is usually enough to convey a deity’s portfolio and give players sufficient options, you can give your deities as many domains as you like.<br /><br /> <b>Cleric Spells:</b> When preparing spells, clerics can choose from specific spells granted by the deity, in addition to those available on the divine spell list. A deity always grants a 1st‑level spell and usually two others, all chosen from non‑divine spell lists. The exact number of spells a deity grants can vary—a magic-focused deity might grant one spell per level—though this shouldn’t exceed one spell per level.
+    </div>
+
+    
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+        
+<div class="rule">
+    <h2 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=1148  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=1148%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=1148">Cosmology</a> 
+    </h2>
+
+    
+
+
+    <div>
+        An enduring curiosity among many cultures is to ask what wonders lie beyond the night sky. Does anyone gaze back from the moon above? What realms do the gods call home, and what is it like to walk in their divine presence? Is the mortal world at the center of the universe, or is all life utterly insignificant? Spiritual ponderings like these are central to belief systems across the globe. As a world builder, you get to answer those enduring questions by designing the multiverse in all its inexplicable grandeur. The following are some aspects of your cosmology you might consider, but as you decide these, you should also consider how many of these details are known in your world—and by whom.
+    </div>
+
+    
+
+        
+<div class="rule">
+    <h3 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=1149  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=1149%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=1149">The Universe</a> 
+    </h3>
+
+    
+
+
+    <div>
+        The reality in which mortals live out their short existence is known to sages and scholars by many names—the universe, the Material Plane, or the mortal realm, among others. The structure of the physical universe might follow any of the following models, or it might be something completely different.<br /><br /> <b>Vast:</b> The universe is an unimaginably sparse void of infinite space, littered with stars, planets, and various bits of detritus.<br /><br /> <b>Limited:</b> The physical universe in your campaign world may be smaller in scope yet far more fanciful. For example, in Hinduism, the cosmos is supported on the backs of four elephants, themselves standing upon the shell of a world‑sized tortoise, whereas Norse cosmology describes nine worlds connected by an immense ash tree.<br /><br /> <b>Bizarre:</b> Sometimes the universe is more complex than the previous two categories, or possibly nested within multiple realities. What if the universe the PCs first know is in fact a magical or mechanical simulation of such complexity that its inhabitants are unaware that they themselves exist as an artificial consciousness?
+    </div>
+
+    
+
+
+</div>
+
+        
+<div class="rule">
+    <h3 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=1150  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=1150%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=1150">Composition of Outer Space</a> 
+    </h3>
+
+    
+
+
+    <div>
+        The spaces between the stars can also affect the stories told in that world.<br /><br /> <b>Vacuum:</b> In conventional astronomy, outer space is an immense void existing in a near‑perfect vacuum. In some settings—including the Age of Lost Omens, where it is known as the Dark Tapestry—the trackless firmament between the stars is an ominous expanse home only to terrible beings of incomprehensible malice.<br /><br /> <b>Endless Sky:</b> What if the blue sky overhead extended outward forever? One need only fly high enough and far enough to reach another world.<br /><br /> <b>Celestial Spheres:</b> The ancient Greeks posited that planets, stars, are more were embedded like jewels within celestial orbs of quintessence nested within one another.
+    </div>
+
+    
+
+
+</div>
+
+        
+<div class="rule">
+    <h3 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=1151  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=1151%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=1151">Solar System</a> 
+    </h3>
+
+    
+
+
+    <div>
+        What is the shape and structure of the solar system containing your game world?<br /><br /> <b>Heliocentric:</b> Physics dictate that all planets in a system orbit the sun.<br /><br /> <b>Geocentric:</b> What if your game world is in fact the center of the star system, or perhaps even the center of the known universe?<br /><br /> <b>Dyson Sphere:</b> Perhaps a solar system has been enclosed in an artificial structure designed to harness the power of the sun.
+    </div>
+
+    
+
+
+</div>
+
+        
+<div class="rule">
+    <h3 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=1152  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=1152%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=1152">Planets and Moons</a> 
+    </h3>
+
+    
+
+
+    <div>
+        In antiquity, astronomers noticed that some of the twinkling lights in the night sky moved differently than the others. In time, these celestial wanderers would come to be known as planets, many with their own complement of orbiting moons. Are there other planets orbiting your world’s sun? Are they terrestrial, gas giants, or something less common? How many moons are there? The characters may never venture there, but celestial bodies can have a strong influence on a culture and help you describe your world in an evocative and distinctive way.
+    </div>
+
+    
+
+
+</div>
+
+        
+<div class="rule">
+    <h3 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=1153  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=1153%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=1153">The Multiverse</a> 
+    </h3>
+
+    
+
+
+    <div>
+        In Pathfinder, the physical universe of your world is one plane within a much broader multiverse. The Planes, on page 136, details how planes work and the multiverse of the Age of Lost Omens, but you can fit planes to your story and world, or even build a new multiverse from scratch! Perhaps there are only two planes beyond the material universe, diametrically opposed and fighting over mortal souls, or the multiverse consists only of a series of infinite alternate realities. The options are truly infinite, limited only by your imagination and the story you want to tell.
+    </div>
+
+    
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+<div class="sibling-navigation hide-on-print">
+    <div class="sibling-navigation-previous">
+            <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=1113  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=1113%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=1113" class="link">&lt;&lt; Afflictions</a>
+    </div>
+    <div class="sibling-navigation-next">
+            <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=1154  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=1154%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=1154" class="link">Nations &gt;&gt;</a>
+    </div>
+</div>
+                </div>
+                <div class="clear">
+            </div>
+
+            <div class="footer" id="footer" >
+				<div id="et-al" >
+                    <a href="mailto:nethys@archivesofnethys.com">Site Owner: Rose-Winds LLC (Blake Davis)</a>
+                    <div id="footer-social"><a href="https://twitter.com/NethysArchives"  target="_blank"><span class="k-icon k-i-twitter" style="font-size:2.5rem"></span></a></div>
+				</div>
+                <div style="text-align:center"><script type="text/javascript" async="true" src="adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- Main Archives Page -->
+                    <ins class="adsbygoogle"
+                        style="display:inline-block;width:728px;height:90px"
+                        data-ad-client="ca-pub-4953734518316037"
+                        data-ad-slot="7738185508"></ins>
+                    <script type="text/javascript">
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                </script></div>
+			</div>
+            <nethys-search no-ui="true"></nethys-search>
+        </div>
+    </div>
+
+    <div class="modern-menu-container">
+        <div class="modern-menu">
+            <div class="modern-menu-nethys-logo"></div>
+            <div class="modern-menu-items">
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-player"></i></span>
+                    <span class="modern-menu-item-text">Character Creation +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Ancestries.aspx.htm" tppabs="https://2e.aonprd.com/Ancestries.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-hood"></i></span>
+                        <span class="modern-menu-item-text">Ancestries</span>
+                    </a>
+                    <a class="modern-menu-item" href="Archetypes.aspx.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-nodular"></i></span>
+                        <span class="modern-menu-item-text">Archetypes</span>
+                    </a>
+                    <a class="modern-menu-item" href="Backgrounds.aspx.htm" tppabs="https://2e.aonprd.com/Backgrounds.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-guarded-tower"></i></span>
+                        <span class="modern-menu-item-text">Backgrounds</span>
+                    </a>
+                    <a class="modern-menu-item" href="Classes.aspx.htm" tppabs="https://2e.aonprd.com/Classes.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-player-lift"></i></span>
+                        <span class="modern-menu-item-text">Classes</span>
+                    </a>
+                    <a class="modern-menu-item" href="Skills.aspx.htm" tppabs="https://2e.aonprd.com/Skills.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-hand"></i></span>
+                        <span class="modern-menu-item-text">Skills</span>
+                    </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-torch"></i></span>
+                    <span class="modern-menu-item-text">Equipment +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Equipment.aspx.htm" tppabs="https://2e.aonprd.com/Equipment.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-torch"></i></span>
+                        <span class="modern-menu-item-text">All Equipment</span>
+                    </a>
+                    <a class="modern-menu-item" href="Equipment.aspx-Category=1.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?Category=1">
+                        <span class="modern-menu-item-icon"><i class="ra ra-campfire"></i></span>
+                        <span class="modern-menu-item-text">Adventuring Gear</span>
+                    </a>
+                    <a class="modern-menu-item" href="Equipment.aspx-Category=6.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?Category=6">
+                        <span class="modern-menu-item-icon"><i class="ra ra-round-bottom-flask"></i></span>
+                        <span class="modern-menu-item-text">Alchemical Items</span>
+                    </a>
+                    <a class="modern-menu-item" href="Armor.aspx.htm" tppabs="https://2e.aonprd.com/Armor.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-helmet"></i></span>
+                        <span class="modern-menu-item-text">Armor</span>
+                    </a>
+                    <a class="modern-menu-item" href="Equipment.aspx-Category=21.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?Category=21">
+                        <span class="modern-menu-item-icon"><i class="ra ra-hand"></i></span>
+                        <span class="modern-menu-item-text">Held Items</span>
+                    </a>
+                    <a class="modern-menu-item" href="Equipment.aspx-Category=23.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?Category=23">
+                        <span class="modern-menu-item-icon"><i class="ra ra-rune-stone"></i></span>
+                        <span class="modern-menu-item-text">Runes</span>
+                    </a>
+                    <a class="modern-menu-item" href="Shields.aspx.htm" tppabs="https://2e.aonprd.com/Shields.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-shield"></i></span>
+                        <span class="modern-menu-item-text">Shields</span>
+                    </a>
+                    <a class="modern-menu-item" href="Weapons.aspx.htm" tppabs="https://2e.aonprd.com/Weapons.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-sword"></i></span>
+                        <span class="modern-menu-item-text">Weapons</span>
+                    </a>
+                    <a class="modern-menu-item" href="Equipment.aspx-Category=41.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?Category=41">
+                        <span class="modern-menu-item-icon"><i class="ra ra-crown-of-thorns"></i></span>
+                        <span class="modern-menu-item-text">Worn Items</span>
+                    </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-muscle-up"></i></span>
+                    <span class="modern-menu-item-text">Feats +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Feats.aspx.htm" tppabs="https://2e.aonprd.com/Feats.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-muscle-up"></i></span>
+                        <span class="modern-menu-item-text">All Feats</span>
+                    </a>
+                    <a class="modern-menu-item" href="Feats.aspx-Traits=78.htm" tppabs="https://2e.aonprd.com/Feats.aspx?Traits=78">
+                        <span class="modern-menu-item-icon"><i class="ra ra-aware"></i></span>
+                        <span class="modern-menu-item-text">General</span>
+                    </a>
+                    <a class="modern-menu-item" href="Feats.aspx-Traits=78&NoSkills=True.htm" tppabs="https://2e.aonprd.com/Feats.aspx?Traits=78&NoSkills=True">
+                        <span class="modern-menu-item-icon"><i class="ra ra-player-teleport"></i></span>
+                        <span class="modern-menu-item-text">General (No Skill)</span>
+                    </a>
+                    <a class="modern-menu-item" href="Feats.aspx-Traits=144.htm" tppabs="https://2e.aonprd.com/Feats.aspx?Traits=144">
+                        <span class="modern-menu-item-icon"><i class="ra ra-hand"></i></span>
+                        <span class="modern-menu-item-text">Skill</span>
+                    </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-emerald"></i></span>
+                    <span class="modern-menu-item-text">Game Mastery +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Afflictions.aspx.htm" tppabs="https://2e.aonprd.com/Afflictions.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-biohazard"></i></span>
+                        <span class="modern-menu-item-text">Afflictions</span>
+                    </a>
+                    <a class="modern-menu-item" href="Creatures.aspx.htm" tppabs="https://2e.aonprd.com/Creatures.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-dragon"></i></span>
+                        <span class="modern-menu-item-text">Creatures</span>
+                    </a>
+                    <a class="modern-menu-item" href="Hazards.aspx.htm" tppabs="https://2e.aonprd.com/Hazards.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-bear-trap"></i></span>
+                        <span class="modern-menu-item-text">Hazards</span>
+                    </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-book"></i></span>
+                    <span class="modern-menu-item-text">Rules +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Rules.aspx.htm" tppabs="https://2e.aonprd.com/Rules.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-book"></i></span>
+                        <span class="modern-menu-item-text">All Rules</span>
+                    </a>
+                    <a class="modern-menu-item" href="Actions.aspx.htm" tppabs="https://2e.aonprd.com/Actions.aspx">
+                        <span class="modern-menu-item-icon">
+                            <svg viewBox="0 0 30 30" preserveAspectRatio="xMidYMid meet" stroke="null" style="fill:inherit;">
+                                <path d="M21.55532 8.015l7.07107 7.07106-7.07107 7.07107-7.07107-7.07107zM6.47996 10.07526l4.94975 4.94975-4.94975 4.94974-4.94974-4.94974z"></path>
+                                <path d="M15.00246 1.46211l8.48528 8.48528-7.07107 7.07107L7.9314 8.53318z"></path>
+                                <path d="M16.45563 13.11469l7.07107 7.07107-8.48529 8.48528-7.07106-7.07107z"></path>
+                            </svg>
+                        </span>
+                        <span class="modern-menu-item-text">Actions/Activities</span>
+                    </a>
+                    <a class="modern-menu-item" href="Conditions.aspx.htm" tppabs="https://2e.aonprd.com/Conditions.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-player-pain"></i></span>
+                        <span class="modern-menu-item-text">Conditions</span>
+                    </a>
+                    <a class="modern-menu-item" href="GMScreen.aspx.htm" tppabs="https://2e.aonprd.com/GMScreen.aspx">
+                        <span class="modern-menu-item-icon">
+                            <svg viewBox="0 0 30 30" preserveAspectRatio="xMidYMid meet" stroke="null" style="fill:inherit;">
+                                <path d="M5.72648 12.93117h9.17646v9.50588l-4.58823 2.37647-4.58823-2.37647.00001-9.50588z"></path>
+                                <path d="M5.96178 12.93118h9.17646v9.50587l-4.58823 2.37648-4.58824-2.37648.00001-9.50587z"></path>
+                                <path d="M15.0206 12.93118h9.17646v9.50587l-4.58823 2.37648-4.58824-2.37648.00001-9.50587z"></path>
+                                <path d="M16.70221 8.57471l7.52941-3.38823v16.94117h-7.52941V8.57471zM15.11765 8.69235L5.94118 5.30412v16.94117h9.17647V8.69235z"></path>
+                                <path d="M19.60883 17.75465h-9.17646V8.24878L15.0206 5.8723l4.58824 2.37648-.00001 9.50587z"></path>
+                            </svg>
+                        </span>
+                        <span class="modern-menu-item-text">GM Screen</span>
+                    </a>
+                    <a class="modern-menu-item" href="PlayersGuide.aspx.htm" tppabs="https://2e.aonprd.com/PlayersGuide.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-uncertainty"></i></span>
+                        <span class="modern-menu-item-text">Player's Guide</span>
+                    </a>
+                    <a class="modern-menu-item" href="Traits.aspx.htm" tppabs="https://2e.aonprd.com/Traits.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-uncertainty"></i></span>
+                        <span class="modern-menu-item-text">Traits</span>
+                    </a>
+                    <a class="modern-menu-item" href="Sources.aspx.htm" tppabs="https://2e.aonprd.com/Sources.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-book"></i></span>
+                        <span class="modern-menu-item-text">Sources</span>
+                    </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-sun"></i></span>
+                    <span class="modern-menu-item-text">Setting +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Setting.aspx-Adventure=true.htm" tppabs="https://2e.aonprd.com/Setting.aspx?Adventure=true">
+                        <span class="modern-menu-item-icon"><i class="ra ra-all-for-one"></i></span>
+                        <span class="modern-menu-item-text">Adventures</span>
+                    </a>
+                    <a class="modern-menu-item" href="Articles.aspx.htm" tppabs="https://2e.aonprd.com/Articles.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-book"></i></span>
+                        <span class="modern-menu-item-text">Articles</span>
+                    </a>
+                    <a class="modern-menu-item" href="Deities.aspx.htm" tppabs="https://2e.aonprd.com/Deities.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-angel-wings"></i></span>
+                        <span class="modern-menu-item-text">Deities</span>
+                    </a>
+                    <a class="modern-menu-item" href="Domains.aspx.htm" tppabs="https://2e.aonprd.com/Domains.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-kaleidoscope"></i></span>
+                        <span class="modern-menu-item-text">Domains</span>
+                    </a>
+                    <a class="modern-menu-item" href="Languages.aspx.htm" tppabs="https://2e.aonprd.com/Languages.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-speech-bubbles"></i></span>
+                        <span class="modern-menu-item-text">Languages</span>
+                    </a>
+                    <a class="modern-menu-item" href="Planes.aspx.htm" tppabs="https://2e.aonprd.com/Planes.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-circle-of-circles"></i></span>
+                        <span class="modern-menu-item-text">Planes</span>
+                    </a>
+                        <a class="modern-menu-item" href="Setting.aspx-Group=40.htm" tppabs="https://2e.aonprd.com/Setting.aspx?Group=40">
+                            <span class="modern-menu-item-icon"><i class="ra ra-mountains"></i></span>
+                            <span class="modern-menu-item-text">Scenarios</span>
+                        </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-crystal-wand"></i></span>
+                    <span class="modern-menu-item-text">Spells/Rituals +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Spells.aspx.htm" tppabs="https://2e.aonprd.com/Spells.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-scroll-unfurled"></i></span>
+                        <span class="modern-menu-item-text">All Spells</span>
+                    </a>
+                    <a class="modern-menu-item" href="Spells.aspx-Tradition=1.htm" tppabs="https://2e.aonprd.com/Spells.aspx?Tradition=1">
+                        <span class="modern-menu-item-icon"><i class="ra ra-scroll-unfurled"></i></span>
+                        <span class="modern-menu-item-text">Arcane</span>
+                    </a>
+                    <a class="modern-menu-item" href="Spells.aspx-Tradition=2.htm" tppabs="https://2e.aonprd.com/Spells.aspx?Tradition=2">
+                        <span class="modern-menu-item-icon"><i class="ra ra-ankh"></i></span>
+                        <span class="modern-menu-item-text">Divine</span>
+                    </a>
+                    <a class="modern-menu-item" href="Spells.aspx-Tradition=3.htm" tppabs="https://2e.aonprd.com/Spells.aspx?Tradition=3">
+                        <span class="modern-menu-item-icon"><i class="ra ra-burning-eye"></i></span>
+                        <span class="modern-menu-item-text">Occult</span>
+                    </a>
+                    <a class="modern-menu-item" href="Spells.aspx-Tradition=4.htm" tppabs="https://2e.aonprd.com/Spells.aspx?Tradition=4">
+                        <span class="modern-menu-item-icon"><i class="ra ra-leaf"></i></span>
+                        <span class="modern-menu-item-text">Primal</span>
+                    </a>
+                    <a class="modern-menu-item" href="Spells.aspx-Focus=true.htm" tppabs="https://2e.aonprd.com/Spells.aspx?Focus=true">
+                        <span class="modern-menu-item-icon"><i class="ra ra-aura"></i></span>
+                        <span class="modern-menu-item-text">Focus Spells</span>
+                    </a>
+                    <a class="modern-menu-item" href="Rituals.aspx.htm" tppabs="https://2e.aonprd.com/Rituals.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-rune-stone"></i></span>
+                        <span class="modern-menu-item-text">Rituals</span>
+                    </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-player-thunder-struck"></i></span>
+                    <span class="modern-menu-item-text">Mythic +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Rules.aspx-ID=3320.htm" tppabs="https://2e.aonprd.com/Rules.aspx?ID=3320">
+                        <span class="modern-menu-item-icon"><i class="ra ra-book"></i></span>
+                        <span class="modern-menu-item-text">Mythic Rules</span>
+                    </a>
+                    <a class="modern-menu-item" href="MythicCallings.aspx.htm" tppabs="https://2e.aonprd.com/MythicCallings.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-aware"></i></span>
+                        <span class="modern-menu-item-text">Callings</span>
+                    </a>
+                    <a class="modern-menu-item" href="MythicFeats.aspx.htm" tppabs="https://2e.aonprd.com/MythicFeats.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-muscle-up"></i></span>
+                        <span class="modern-menu-item-text">Mythic Feats</span>
+                    </a>
+                    <a class="modern-menu-item" href="MythicDestinies.aspx.htm" tppabs="https://2e.aonprd.com/MythicDestinies.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-aura"></i></span>
+                        <span class="modern-menu-item-text">Destinies</span>
+                    </a>
+                    <a class="modern-menu-item" href="MythicSpells.aspx.htm" tppabs="https://2e.aonprd.com/MythicSpells.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-lightning-trio"></i></span>
+                        <span class="modern-menu-item-text">Mythic Spells</span>
+                    </a>
+                    <a class="modern-menu-item" href="MythicRituals.aspx.htm" tppabs="https://2e.aonprd.com/MythicRituals.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-fire-ring"></i></span>
+                        <span class="modern-menu-item-text">Mythic Rituals</span>
+                    </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-help"></i></span>
+                    <span class="modern-menu-item-text">About the Archives +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="ContactUs.aspx.htm" tppabs="https://2e.aonprd.com/ContactUs.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-quill-ink"></i></span>
+                        <span class="modern-menu-item-text">Contact Us</span>
+                    </a>
+                    <a class="modern-menu-item" href="Contributors.aspx.htm" tppabs="https://2e.aonprd.com/Contributors.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-double-team"></i></span>
+                        <span class="modern-menu-item-text">Contributors</span>
+                    </a>
+                    <a class="modern-menu-item" href="Licenses.aspx.htm" tppabs="https://2e.aonprd.com/Licenses.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-book"></i></span>
+                        <span class="modern-menu-item-text">Licenses</span>
+                    </a>
+                </div>
+                <a class="modern-menu-item" href="Support.aspx.htm" tppabs="https://2e.aonprd.com/Support.aspx">
+                    <span class="modern-menu-item-icon"><i class="ra ra-diamond"></i></span>
+                    <span class="modern-menu-item-text">Support the Archives</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="shelyns-corner-wrapper">
+        <div class="shelyns-corner-overlay"></div>
+        <div class="shelyns-corner">
+            <div class="shelyns-corner-header">
+                <h2>Shelyn's Corner</h2>
+                <a href="javascript:void(0)" class="close-shelyns-corner">&times;</a>
+            </div>
+            <div class="shelyns-corner-content">
+                <div class="shelyns-corner-settings">
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-remaster">Prefer Pathfinder Remastered Core?</label>
+                        <input type="checkbox" id="shelyns-corner-setting-remaster" checked/>
+                    </div>
+                    <hr />
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-dyslexia">Dyslexia friendly fonts</label>
+                        <input type="checkbox" id="shelyns-corner-setting-dyslexia"/>
+                    </div>
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-sidebar-hover">Expand sidebar on hover</label>
+                        <input type="checkbox" id="shelyns-corner-setting-sidebar-hover" checked/>
+                    </div>
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-sidebar-shrink">Sidebar can be shrunk</label>
+                        <input type="checkbox" id="shelyns-corner-setting-sidebar-shrink" checked/>
+                    </div>
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-page-compress">Reduce page width</label>
+                        <input type="checkbox" id="shelyns-corner-setting-page-compress"/>
+                    </div>
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-modern-menu">Modern menu</label>
+                        <input type="checkbox" id="shelyns-corner-setting-modern-menu" checked/>
+                    </div>
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-link-previews">Link previews</label>
+                        <input type="checkbox" id="shelyns-corner-setting-link-previews" checked/>
+                    </div>
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-link-previews-search">Link previews in search bar</label>
+                        <input type="checkbox" id="shelyns-corner-setting-link-previews-search"/>
+                    </div>
+                </div>
+                <hr />
+                <div class="theme-gallery-wrapper"></div>
+                <hr />
+                <div class="feel-gallery">
+                    <div class="feel-example classic_feel" onclick="setFeel('classic_feel')">
+                        <h1 class="feel-title">Classic Feel</h1>
+                        <h2 class="feel-title">Classic Feel <span class="output"></span></h2>
+                        <h3 class="feel-title">Classic Feel</h3>
+                        <p>The classic look for the Archives of Nethys.</p>
+                        <table>
+                            <thead><td>Table</td></thead>
+                            <tr><td>Data</td></tr>
+                            <tr><td>More Data</td></tr>
+                        </table>
+                    </div>
+                    <div class="feel-example book_feel" onclick="setFeel('book_feel')">
+                        <h1 class="feel-title">Book Feel</h1>
+                        <h2 class="feel-title">Book Feel <span class="output"></span></h2>
+                        <h3 class="feel-title">Book Feel</h3>
+                        <p>An alternative feel, based on the Rulebooks.</p>
+                        <table>
+                            <thead><td>Table</td></thead>
+                            <tr><td>Data</td></tr>
+                            <tr><td>More Data</td></tr>
+                        </table>
+                    </div>
+                    <div class="feel-example round_feel" onclick="setFeel('round_feel')">
+                        <h1 class="feel-title">Round Feel</h1>
+                        <h2 class="feel-title">Round Feel<span class="output"></span></h2>
+                        <h3 class="feel-title">Round Feel</h3>
+                        <p>A rounded, modern look for the archives.</p>
+                        <table>
+                            <thead><td>Table</td></thead>
+                            <tr><td>Data</td></tr>
+                            <tr><td>More Data</td></tr>
+                        </table>
+                    </div>
+                    <div class="feel-example slim_feel" onclick="setFeel('slim_feel')">
+                        <h1 class="feel-title">Slim Feel</h1>
+                        <h2 class="feel-title">Slim Feel<span class="output"></span></h2>
+                        <h3 class="feel-title">Slim Feel</h3>
+                        <p>A variant of the Round feel, more compact.</p>
+                        <table>
+                            <thead><td>Table</td></thead>
+                            <tr><td>Data</td></tr>
+                            <tr><td>More Data</td></tr>
+                        </table>
+                    </div>
+                </div>
+                <hr />
+                <div class="shelyns-corner-settings">
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-orc">More Orc?</label>
+                        <input type="checkbox" id="shelyns-corner-setting-orc" />
+                    </div>
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-boar"><b>BOAR?</b></label>
+                        <input type="checkbox" id="shelyns-corner-setting-boar" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+      var legacyMode = getCore();
+
+      initializeMenuToggle(document.getElementById('minMaxMenu'));
+      initShelynsCorner();
+
+      window.nethysModernMenu.init();
+
+      initializeElasticSearch()
+      var initializeSearch = function (search) {
+          var button;
+          var text;
+          if (search.firstElementChild.classList.contains('search-input'))
+              text = search.firstElementChild;
+          if (search.lastElementChild.classList.contains('search-input'))
+              text = search.lastElementChild;
+          if (search.firstElementChild.classList.contains('search-button'))
+              button = search.firstElementChild;
+          if (search.lastElementChild.classList.contains('search-button'))
+              button = search.lastElementChild;
+
+          if (search) {
+              search.addEventListener('keypress', function (e) {
+                  if (e.keyCode == 13) {
+                      e.preventDefault();
+                      if (text.value != null && text.value.length > 0)
+                          window.location = window.location.origin + "/Search.aspx?q=" + encodeURIComponent(text.value);
+                  }
+              })
+          }
+          if (button) {
+              button.addEventListener('click', function (e) {
+                  window.location = window.location.origin + "/Search.aspx?q=" + encodeURIComponent(text.value);
+              });
+          }
+      };
+      var initializeExpand = function (toggle) {
+          var targetAttrString = "[data-target='" + toggle.dataset.toggle + "']";
+          //target = menu to be collapsed
+          var target = document.querySelector(targetAttrString);
+          toggle.addEventListener('click', function () {
+              var expanded = target.classList.contains('expanded');
+              expanded = !expanded;
+              if (expanded) {
+                  //hide other in group if exists
+                  if (target.dataset.group) {
+                      var otherExpanded = document.querySelector('.expanded[data-group="' + target.dataset.group + '"]');
+                      if (otherExpanded) {
+                          otherExpanded.classList.remove('expanded');
+                      }
+                  }
+                  target.classList.add('expanded');
+              } else {
+                  target.classList.remove('expanded');
+              }
+          });
+      };
+      (function () {
+          //toggles = link that expands/collapses target
+          var toggles = document.querySelectorAll('[data-toggle]');
+          toggles.forEach(function (toggle) {
+              initializeExpand(toggle);
+          });
+          //searches
+          var classicSearch = document.getElementById('classic-search');
+          initializeSearch(classicSearch);
+          var searches = document.querySelectorAll('.search');
+          searches.forEach(function (search) {
+              //initializeSearch(search);
+          });
+      })();
+
+      class NethysSearch extends HTMLElement {
+          constructor() {
+              super();
+
+              this.attachShadow({ mode: 'open' });
+
+              let container = document.createElement('div');
+              this.shadowRoot.append(container);
+
+              let fixedParams = this.getAttribute('fixed-params');
+
+              if (window.location.search.includes('Redirected=1')) {
+                  fixedParams = (fixedParams ? fixedParams + '&' : '') + 'Redirected=1';
+              }
+
+              if (window.location.search.includes('NoRedirect=1')) {
+                  fixedParams = (fixedParams ? fixedParams + '&' : '') + 'NoRedirect=1';
+              }
+
+              let fixedQueryString = this.getAttribute('fixed-query-string') ?? '';
+
+              if (!fixedQueryString.includes('category:item-bonus')) {
+                  fixedQueryString += ' !category:item-bonus';
+              }
+
+              let dataUrl = new URL(elasticUrl);
+              dataUrl.pathname = '/json-data';
+              dataUrl = dataUrl.toString();
+
+              let app = Elm.NethysSearch.init({
+                  node: container,
+                  flags: {
+                      autofocus: (this.getAttribute('autofocus') ?? 'true') == 'true',
+                      browserDateFormat: (new Date(2020, 9, 30).toLocaleDateString(navigator.language))
+                          .replace('2020', 'yyyy')
+                          .replace('10', 'MM')
+                          .replace('30', 'dd'),
+                      currentUrl: location.href,
+                      dataUrl: dataUrl,
+                      defaultQuery: this.getAttribute('default-query'),
+                      elasticUrl: elasticUrl,
+                      fixedParams: fixedParams,
+                      fixedQueryString: fixedQueryString,
+                      loadAll: this.getAttribute('load-all') == 'true',
+                      legacyMode: legacyMode,
+                      localStorage: { ...localStorage },
+                      noUi: this.getAttribute('no-ui') === 'true',
+                      pageDefaultDisplays: localStorage.getItem('page-default-displays'),
+                      pageId: this.getAttribute('page-id'),
+                      randomSeed: Math.floor(Math.random() * 2147483647),
+                      removeFilters: this.getAttribute('remove-filters')?.split(',') ?? [],
+                      resultBaseUrl: "/",
+                      showHeader: false,
+                      showQueryControls: this.getAttribute('show-query-controls') != 'false',
+                      windowHeight: window.innerHeight,
+                      windowWidth: window.innerWidth,
+                  }
+              });
+
+              app.ports.document_focusElement.subscribe(id => {
+                  window.requestAnimationFrame(() => {
+                      let element = this.shadowRoot.getElementById(id);
+
+                      if (element) {
+                          element.focus();
+                      }
+                  });
+              });
+
+              app.ports.document_scrollElementIntoView.subscribe(id => {
+                  window.requestAnimationFrame(() => {
+                      let element = this.shadowRoot.getElementById(id);
+
+                      if (element) {
+                          element.scrollIntoView({block: 'nearest'});
+                      }
+                  });
+              });
+
+              app.ports.localStorage_get && app.ports.localStorage_get.subscribe(function (key) {
+                  let value = localStorage.getItem(key);
+                  app.ports.localStorage_receive.send({ key: key, value: value });
+              });
+
+              app.ports.localStorage_set.subscribe(function (data) {
+                  localStorage.setItem(data.key, data.value);
+              });
+
+              window.addEventListener('popstate', function () {
+                  app.ports.navigation_urlChanged.send(location.href);
+              });
+
+              app.ports.navigation_pushUrl.subscribe(function (url) {
+                  history.pushState([], '', url);
+                  app.ports.navigation_urlChanged.send(location.href);
+              });
+
+              app.ports.navigation_loadUrl.subscribe(function (url) {
+                  location.href = url;
+              });
+
+              document.addEventListener('theme-changed', e => {
+                  app.ports.localStorage_receive.send({ key: 'theme', value: e.detail });
+              });
+
+              document.addEventListener('link-previews-changed', e => {
+                  app.ports.localStorage_receive.send({ key: 'link-previews-enabled', value: e.detail });
+              });
+
+              window.addEventListener('hashchange', e => {
+                  let url = new URL(e.newURL);
+                  if (url.hash != "#results") {
+                      return;
+                  }
+
+                  let results = this.shadowRoot.getElementById("results");
+                  if (!results) {
+                      return;
+                  }
+
+                  results.focus();
+                  results.scrollIntoView();
+                  window.location.hash = '';
+              });
+
+              if (this.getAttribute('no-ui') === 'true') {
+                  let linkPreviewTarget = null;
+
+                  document.addEventListener('mouseover', e => {
+                      const target = e.target.closest('a');
+                      const isSearchBar = e.target.closest('.searchBar') !== null;
+                      if (target && target != linkPreviewTarget) {
+                          let parent = getParentOffset(target.offsetParent);
+                          let data = {
+                              url: target.href,
+                              x: target.offsetLeft + parent.x,
+                              y: target.offsetTop + parent.y,
+                              height: target.offsetHeight,
+                              width: target.offsetWidth,
+                          }
+                          if (isSearchBar) {
+                              if (getFeature('search-bar-previews-enabled', '0') == '0') {
+                                  return;
+                              }
+                              data.x += window.scrollX;
+                              data.y += window.scrollY;
+                          }
+                          app.ports.document_linkEntered.send(data);
+                      } else if (!target && linkPreviewTarget) {
+                          app.ports.document_linkLeft.send("");
+                      }
+
+                      linkPreviewTarget = target;
+                  });
+              }
+
+              function getParentOffset(node) {
+                  if (!node) {
+                      return {
+                          x: 0,
+                          y: 0,
+                      };
+                  }
+                  let parent = getParentOffset(node.offsetParent);
+                  return {
+                      x: node.offsetLeft - node.scrollLeft + parent.x,
+                      y: node.offsetTop - node.scrollTop + parent.y,
+                  };
+              }
+
+              const resizeObserver = new ResizeObserver(entries => {
+                  app.ports.document_receiveBodySize.send({
+                      width: Math.round(entries[0].contentRect.width),
+                      height: Math.round(entries[0].contentRect.height),
+                  });
+              });
+
+              let relativeElement = document.getElementById('page');
+              resizeObserver.observe(relativeElement);
+
+              document.addEventListener('visibilitychange', () => {
+                  if (document.visibilityState === 'visible') {
+                      let rect = relativeElement.getBoundingClientRect();
+
+                      app.ports.document_receiveBodySize.send({
+                          width: Math.round(rect.width),
+                          height: Math.round(rect.height),
+                      });
+                  }
+              });
+          }
+      }
+
+      customElements.define('nethys-search', NethysSearch);
+    </script>
+</body>
+</html>

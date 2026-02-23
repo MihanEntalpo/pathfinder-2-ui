@@ -1,0 +1,29 @@
+# Spell Reservoir - Equipment - Archives of Nethys: Pathfinder 2nd Edition Database
+
+Source HTML: `docs/aonprd/Equipment.aspx-ID=2849.htm`
+
+# [All Equipment](./Equipment.aspx.md) | [All Item Bonuses](../ItemBonuses/ItemBonuses.aspx.md)[Adjustments](./Equipment.aspx-Category=62.md) | [Adventuring Gear](./Equipment.aspx-Category=1.md) | [Alchemical Items](./Equipment.aspx-Category=6.md) | [Animals and Gear](./Equipment.aspx-Category=87.md) | [Apex Items](./Equipment.aspx-Category=42.md) | [Armor](../Armor/Armor.aspx.md) | [Artifacts](./Equipment.aspx-Category=45.md) | [Assistive Items](./Equipment.aspx-Category=72.md) | [Banners](./Equipment.aspx-Category=118.md) | [Blighted Boons](./Equipment.aspx-Category=104.md) | [Censer](./Equipment.aspx-Category=110.md) | [Consumables](./Equipment.aspx-Category=15.md) | [Contracts](./Equipment.aspx-Category=58.md) | [Cursed Items](./Equipment.aspx-Category=49.md) | [Customizations](./Equipment.aspx-Category=75.md) | [Figurehead](./Equipment.aspx-Category=111.md) | [Grafts](./Equipment.aspx-Category=114.md) | [Grimoires](./Equipment.aspx-Category=65.md) | [Held Items](./Equipment.aspx-Category=21.md) | [High-Tech](./Equipment.aspx-Category=90.md) | [Intelligent Items](./Equipment.aspx-Category=48.md) | [Materials](./Equipment.aspx-Category=22.md) | [Other](./Equipment.aspx-Category=53.md) | [Relics](./Equipment.aspx-Category=50.md) | [Runes](./Equipment.aspx-Category=23.md) | [Services](./Equipment.aspx-Category=2.md) | [Shields](../Shield/Shields.aspx.md) | [Siege Weapons](../SiegeWeapons/SiegeWeapons.aspx.md) | [Snares](./Equipment.aspx-Category=31.md) | [Spellhearts](./Equipment.aspx-Category=68.md) | [Staves](./Equipment.aspx-Category=32.md) | [Structures](./Equipment.aspx-Category=33.md) | [Tattoos](./Equipment.aspx-Category=46.md) | [Trade Goods](./Equipment.aspx-Category=91.md) | [Vehicles](../Vehicle/Vehicles.aspx.md) | [Wands](./Equipment.aspx-Category=34.md) | [Weapons](../Weapon/Weapons.aspx.md) | [Worn Items](./Equipment.aspx-Category=41.md)
+
+---
+
+## [Accessory Runes](./Equipment.aspx-Category=23&Subcategory=78.md) | [Armor Property Runes](./Equipment.aspx-Category=23&Subcategory=26.md) | [Clan Dagger Filigrees](./Equipment.aspx-Category=23&Subcategory=115.md) | [Fundamental Armor Runes](./Equipment.aspx-Category=23&Subcategory=24.md) | [Fundamental Weapon Runes](./Equipment.aspx-Category=23&Subcategory=25.md) | [Shield Runes](./Equipment.aspx-Category=23&Subcategory=112.md) | [Weapon Property Runes](./Equipment.aspx-Category=23&Subcategory=27.md)
+
+---
+
+There is a Legacy version here.
+
+# [PFS.aspx.htm](../PFS/PFS.aspx.md)Spell ReservoirItem 13
+
+[Uncommon](../Trait/Traits.aspx-ID=721.md) [Magical](../Trait/Traits.aspx-ID=644.md)
+Source [GM Core pg. 239](../Source/Sources.aspx-ID=218.md)
+Price 2,700 gp
+Usage etched onto a melee weapon; Bulk &mdash;
+
+---
+
+A spell reservoir rune creates a pool of eldritch energy within the etched weapon. A spellcaster can spend 1 minute to cast a spell of 3rd rank or lower into the weapon. The spell must require 2 actions or fewer to cast and must be able to target a creature other than the caster. The spell has no immediate effect—it is instead stored for later.
+When you wield a spell reservoir weapon, you immediately know the name and rank of the stored spell. A spell reservoir weapon found as treasure has a 50% chance of having a spell of the GM's choice stored in it.
+
+Activate—Channeled Release [two-actions] ([concentrate](../Trait/Traits.aspx-ID=561&Redirected=1.md)); Requirements A spell is stored in the weapon; Effect Make a Strike with the weapon. You expend the stored spell as part of this Strike; this empties the spell from the weapon and allows a spell to be cast into it again. If the Strike hits, the spell targets the target of the attack. If the spell requires a spell attack roll, the result of your attack roll with the weapon determines the degree of success of the spell, and if the spell requires a saving throw, the DC is 30.
+
+Activate—Safe Release [one-action] ([concentrate](../Trait/Traits.aspx-ID=561&Redirected=1.md)); Effect Harmlessly expend the stored spell. This frees the weapon to have a new spell cast into it.

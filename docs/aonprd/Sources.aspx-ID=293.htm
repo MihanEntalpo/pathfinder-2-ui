@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script type="text/javascript" async src="js-id=UA-137805785-3.js" tppabs="https://www.googletagmanager.com/gtag/js?id=UA-137805785-3"></script>
+    <script type="text/javascript">
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-137805785-3');
+    </script>
+    <title>
+        Dark Archives (Remastered) - Sources - Archives of Nethys: Pathfinder 2nd Edition Database
+    </title>
+    
+
+    <link href="Layout.css-v=EB6PS6lfpX6G1uwFu7uHcEh6oScz15hZHsXHCNMHzLg.css" tppabs="https://2e.aonprd.com/Styles/Layout.css?v=EB6PS6lfpX6G1uwFu7uHcEh6oScz15hZHsXHCNMHzLg" rel="stylesheet" type="text/css" />
+    <link href="rpg-awesome.min.css" tppabs="https://2e.aonprd.com/Styles/rpg-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="Typography.css-v=3et3D84VeOgcsPaSRyGH6nF1FfjjYgVpcGBq4HyG5vg.css" tppabs="https://2e.aonprd.com/Styles/Typography.css?v=3et3D84VeOgcsPaSRyGH6nF1FfjjYgVpcGBq4HyG5vg" rel="stylesheet" type="text/css" />
+    <link href="themes.css" tppabs="https://2e.aonprd.com/themes" rel="stylesheet" type="text/css" />
+    <link href="SitePrint.css-v=8wGbZVsBHNUZjW78tbaeVtZ_Jlm0ss-wjdlzy_jKlOY.css" tppabs="https://2e.aonprd.com/Styles/SitePrint.css?v=8wGbZVsBHNUZjW78tbaeVtZ_Jlm0ss-wjdlzy_jKlOY" rel="stylesheet" type="text/css" media="print" />
+
+    <link href="css-family=Julee.css" tppabs="https://fonts.googleapis.com/css?family=Julee" rel="stylesheet" type="text/css" />
+    <link href="css-family=Andika.css" tppabs="https://fonts.googleapis.com/css?family=Andika" rel="stylesheet" type="text/css" />
+    <link href="css2-family=Lato-ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap.css" tppabs="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="search" type="application/opensearchdescription+xml" title="Search the Archives of Nethys" href="https://2e.aonprd.com/opensearch.xml" />
+
+
+    <script type="text/javascript">
+        window.elasticUrl = 'https://elasticsearch.aonprd.com/aon-test';
+    </script>
+
+        <script src="nethys-search-9f2620f2bfdf2014fd0b0c157f03248921d02563.js" tppabs="https://elasticsearch.aonprd.com/js/nethys-search-9f2620f2bfdf2014fd0b0c157f03248921d02563.js"></script>
+
+    <script
+      src="jquery-3.6.0.min.js" tppabs="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"></script>
+    <script src="semantic.min.js" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/semantic.min.js" integrity="sha512-5cguXwRllb+6bcc2pogwIeQmQPXEzn2ddsqAexIBhh7FO1z5Hkek1J9mrK2+rmZCTU6b6pERxI7acnp1MpAg4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="search.min.css" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/search.min.css" integrity="sha512-1xyHOORqcJ80bareQ2TWmQE+WZ/TlsqjqILbLHeM3Urtw720aiFXE/N+Xm4MAJpcn42e3k4Z8ZpqZfsA2VVyNw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="transition.min.css" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/transition.min.css" integrity="sha512-zsEyDFFD+yPxc7Kq8c3byp2H3tfx4GgT4wvCDzDGiOlkk2hl454XOHzHfN/OsPilopfPEbRzVJ0wxlIa/9BOyg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="transition.min.js" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/transition.min.js" integrity="sha512-zPx44KLp+BP6OKcCIPQibTiLz0WAc2s9syi+7wOT+Ql2D1/kAX8y7K1rz8vuTtrhRS2dMZ7zVS5dQoHTvkXJCA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="icon.min.css" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/icon.min.css" integrity="sha512-cKaYuptKrUbQ4/r0qmxhpQDjPWb7/SYN6gQRYMOQqPJ2+S4Bmb1zZ1/SAuszp+E6yoakjQFpM+rAzuw+EwR+xw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="input.min.css" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/input.min.css" integrity="sha512-6+BQOwPqqk5AianROXkI3LKgnLcjZbEV3KbhO++sKXemybg0FugrODki+nBsg9FipqlKSMd4ppnpkqC6VEpFiA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="button.min.css" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/button.min.css" integrity="sha512-XMrByQiBPJwH350YvTKR/XTY1fOQX4lSQqeft++WcyY39l0eKoPXOgx1OJHEODhHCW1FfvVl/Bdr90QE08FG+Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="dropdown.min.css" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/dropdown.min.css" integrity="sha512-hDsG55Tp5IgyWKbBbNhOo0+bLTdIVVAGW09a7IFvgIkKg/xrjOdOA2lEPFkkgJQ3NuB7DxDFlSHX7/JYvFLYfA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="dropdown.min.js" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/dropdown.min.js" integrity="sha512-1SzBIESNYM3Y8JkQrS1Mu2dPnPaAqeQkCV9KfDA2eYXBEzdkhHWyqTP6P0OAsh1RSC4cDvr8DmYVTmb/YWGYpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="showdown.min.js" tppabs="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js" integrity="sha512-LhccdVNGe2QMEfI3x4DVV3ckMRe36TfydKss6mJpdHjNFiV07dFpS2xzeZedptKZrwxfICJpez09iNioiSZ3hA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="lodash.min.js" tppabs="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="modernMenu.js" tppabs="https://2e.aonprd.com/Scripts/modernMenu.js"></script>
+
+    <script type="text/javascript" src="tableState.js" tppabs="https://2e.aonprd.com/Scripts/tableState.js"></script>
+    <script type="text/javascript" src="drawerHandlers.js" tppabs="https://2e.aonprd.com/Scripts/drawerHandlers.js"></script>
+    <script type="text/javascript" src="hideFilter.js" tppabs="https://2e.aonprd.com/Scripts/hideFilter.js"></script>
+    <script type="text/javascript" src="searchBar.js" tppabs="https://2e.aonprd.com/Scripts/searchBar.js"></script>
+
+    <script type="text/javascript" src="previewModal.js" tppabs="https://2e.aonprd.com/Scripts/previewModal.js"></script>
+    
+    
+        <meta name="keywords" content="Archives, Nethys, Wiki, Archives of Nethys, Pathfinder, Official, AoN, AoNPRD, PRD, PFSRD, 2E, 2nd Edition, SourcesDark Archives (Remastered)" />
+
+
+    <meta charset="utf-8"/>
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="darkreader-lock" />
+    <style type="text/css">        
+        .nav-parent > * {
+            display: block;
+        }
+        .mobile-menu-toggle{
+            display:none;
+        }
+        #main-menu .nav-parent > .brand > .title{
+            display: none;
+        }
+    </style>
+</head>
+<body class="dark aon_dark_theme classic_feel">
+    <div id="wrapper" class="clearfix">
+
+
+        <script type="text/javascript" src="toggle.js" tppabs="https://2e.aonprd.com/Scripts/toggle.js"></script>
+
+
+        <div class="page clearfix" id="page">
+            <div class="header">
+                <div class="clear hideSkiplink" id="main-menu" >
+                    <a class="mobile-menu-toggle" id="mobile-menu-toggle" href="javascript:void(0);" data-toggle="mobile">|||</a>
+                    <div class="splash"></div>
+                    <div class="nav-parent" id="nav-parent">
+                        <a href="index.htm" tppabs="https://2e.aonprd.com/" style="font-size:larger" class="brand">
+                            <span class="home">
+                                Home
+                            </span>
+                        </a>
+                        <a href="Actions.aspx.htm" tppabs="https://2e.aonprd.com/Actions.aspx">Actions/Activities</a>
+                        <a href="Afflictions.aspx.htm" tppabs="https://2e.aonprd.com/Afflictions.aspx">Afflictions</a>
+                        <a href="Ancestries.aspx.htm" tppabs="https://2e.aonprd.com/Ancestries.aspx">Ancestries</a>
+                        <a href="Archetypes.aspx.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx">Archetypes</a>
+                        <a href="Backgrounds.aspx.htm" tppabs="https://2e.aonprd.com/Backgrounds.aspx">Backgrounds</a>
+                        <a href="Classes.aspx.htm" tppabs="https://2e.aonprd.com/Classes.aspx">Classes</a>
+                        <a href="Conditions.aspx.htm" tppabs="https://2e.aonprd.com/Conditions.aspx">Conditions</a>
+                        <a href="Creatures.aspx.htm" tppabs="https://2e.aonprd.com/Creatures.aspx">Creatures</a>
+                        <a href="Equipment.aspx.htm" tppabs="https://2e.aonprd.com/Equipment.aspx">Equipment</a>
+                        <a href="Feats.aspx.htm" tppabs="https://2e.aonprd.com/Feats.aspx">Feats</a>
+                        <a href="Hazards.aspx.htm" tppabs="https://2e.aonprd.com/Hazards.aspx">Hazards</a>
+                        <a href="MythicCallings.aspx.htm" tppabs="https://2e.aonprd.com/MythicCallings.aspx">Mythic</a>
+                        <a href="Rules.aspx.htm" tppabs="https://2e.aonprd.com/Rules.aspx">Rules</a>
+                        <a href="Setting.aspx.htm" tppabs="https://2e.aonprd.com/Setting.aspx">Setting</a>
+                        <a href="Skills.aspx.htm" tppabs="https://2e.aonprd.com/Skills.aspx">Skills</a>
+                        <a href="Spells.aspx.htm" tppabs="https://2e.aonprd.com/Spells.aspx">Spells/Rituals</a>
+                        <a href="Traits.aspx.htm" tppabs="https://2e.aonprd.com/Traits.aspx">Traits</a>
+                        <img src="heading_flourish.png" tppabs="https://2e.aonprd.com/Images/heading_flourish.png" alt="flourish" class="flourish" />
+                        <a href="Licenses.aspx.htm" tppabs="https://2e.aonprd.com/Licenses.aspx">Licenses</a>
+                        <a href="Sources.aspx.htm" tppabs="https://2e.aonprd.com/Sources.aspx">Sources</a>
+                        <img src="heading_flourish.png" tppabs="https://2e.aonprd.com/Images/heading_flourish.png" alt="flourish" class="flourish" />
+                        <a href="ContactUs.aspx.htm" tppabs="https://2e.aonprd.com/ContactUs.aspx">Contact Us</a>
+                        <a href="Contributors.aspx.htm" tppabs="https://2e.aonprd.com/Contributors.aspx">Contributors</a>
+                        <a href="Support.aspx.htm" tppabs="https://2e.aonprd.com/Support.aspx">Support the Archives</a>
+                        <div id="classic-search" class="search">
+                            <input type="text" class="search-input" placeholder="Search" />
+                            <button type="button" class="search-button">
+                                <svg class="Icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="height: 24px; width: 24px; fill: "><path d="M0 0h512v512H0z" fill="transparent" fill-opacity="0"></path><g class="" transform="translate(0,0)" style="touch-action: none;"><path d="M333.78 20.188c-39.97 0-79.96 15.212-110.405 45.656-58.667 58.667-60.796 152.72-6.406 213.97l-15.782 15.748 13.25 13.25 15.75-15.78c61.248 54.39 155.3 52.26 213.968-6.407 60.887-60.886 60.888-159.894 0-220.78C413.713 35.4 373.753 20.187 333.78 20.187zm0 18.562c35.15 0 70.285 13.44 97.158 40.313 53.745 53.745 53.744 140.6 0 194.343-51.526 51.526-133.46 53.643-187.5 6.375l.218-.217c-2.35-2.05-4.668-4.17-6.906-6.407-2.207-2.206-4.288-4.496-6.313-6.812l-.218.22c-47.27-54.04-45.152-135.976 6.374-187.502C263.467 52.19 298.63 38.75 333.78 38.75zm0 18.813c-30.31 0-60.63 11.6-83.81 34.78-46.362 46.362-46.362 121.234 0 167.594 10.14 10.142 21.632 18.077 33.905 23.782-24.91-19.087-40.97-49.133-40.97-82.94 0-15.323 3.292-29.888 9.22-43-4.165 20.485.44 40.88 14.47 54.907 24.583 24.585 68.744 20.318 98.624-9.562 29.88-29.88 34.146-74.04 9.56-98.625-2.375-2.376-4.943-4.473-7.655-6.313 45.13 8.648 79.954 46.345 84.25 92.876 4.44-35.07-6.82-71.726-33.813-98.72-23.18-23.18-53.47-34.78-83.78-34.78zM176.907 297.688L42.094 432.5l34.562 34.563L211.47 332.25l-34.564-34.563zM40 456.813L24 472.78 37.22 486l15.968-16L40 456.812z" fill-opacity="1"></path></g></svg>
+                            </button>
+                        </div>       
+                            <a id="minMaxMenu" onclick='setMenuState("min")'>Maximize Menu</a>
+                    </div>
+                    
+                    <div class="nav-parent expand-collapse" id="mobile-nav-parent" data-target="mobile">
+                        <a href="index.htm" tppabs="https://2e.aonprd.com/" style="font-size:larger" class="brand">
+                            <span class="title">
+                                Archives of Nethys
+                            </span>
+                        </a>
+                        <a href="Afflictions.aspx.htm" tppabs="https://2e.aonprd.com/Afflictions.aspx">Afflictions</a>
+                        <a href="javascript:void(0);" data-toggle="cc">Character Creation +</a>
+                        <div class="expand-collapse expand-collapse-group hide-when-collapsed expanded" data-target="cc" data-group="menus">
+                            <a href="Ancestries.aspx.htm" tppabs="https://2e.aonprd.com/Ancestries.aspx">Ancestries</a>
+                            <a href="Archetypes.aspx.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx">Archetypes</a>
+                            <a href="Backgrounds.aspx.htm" tppabs="https://2e.aonprd.com/Backgrounds.aspx">Backgrounds</a>
+                            <a href="Classes.aspx.htm" tppabs="https://2e.aonprd.com/Classes.aspx">Classes</a>
+                            <a href="Feats.aspx.htm" tppabs="https://2e.aonprd.com/Feats.aspx">Feats</a>
+                            <a href="Skills.aspx.htm" tppabs="https://2e.aonprd.com/Skills.aspx">Skills</a>
+                        </div>
+                        <a href="Creatures.aspx.htm" tppabs="https://2e.aonprd.com/Creatures.aspx">Creatures</a>
+                        <a href="Equipment.aspx.htm" tppabs="https://2e.aonprd.com/Equipment.aspx">Equipment</a>
+                        <a href="Setting.aspx.htm" tppabs="https://2e.aonprd.com/Setting.aspx">Setting</a>
+                        <a href="Spells.aspx.htm" tppabs="https://2e.aonprd.com/Spells.aspx">Spells/Rituals</a>
+                        <a href="javascript:void(0);" data-toggle="rules">Rules +</a>
+                        <div class="expand-collapse expand-collapse-group hide-when-collapsed" data-target="rules" data-group="menus">
+                            <a href="Actions.aspx.htm" tppabs="https://2e.aonprd.com/Actions.aspx">Actions/Activities</a>
+                            <a href="Conditions.aspx.htm" tppabs="https://2e.aonprd.com/Conditions.aspx">Conditions</a>
+                            <a href="Rules.aspx.htm" tppabs="https://2e.aonprd.com/Rules.aspx">Rules</a>
+                            <a href="Traits.aspx.htm" tppabs="https://2e.aonprd.com/Traits.aspx">Traits</a>
+                        </div>
+                        <a href="Hazards.aspx.htm" tppabs="https://2e.aonprd.com/Hazards.aspx">Hazards</a>
+                        <a href="javascript:void(0);" data-toggle="mythic" data-group="">Mythic +</a>
+                        <div class="expand-collapse expand-collapse-group hide-when-collapsed" data-target="mythic" data-group="menus">
+                            <a href="Rules.aspx-ID=3320.htm" tppabs="https://2e.aonprd.com/Rules.aspx?ID=3320">Mythic Rules</a>
+                            <a href="MythicCallings.aspx.htm" tppabs="https://2e.aonprd.com/MythicCallings.aspx">Callings</a>
+                            <a href="MythicFeats.aspx.htm" tppabs="https://2e.aonprd.com/MythicFeats.aspx">Mythic Feats</a>
+                            <a href="MythicDestinies.aspx.htm" tppabs="https://2e.aonprd.com/MythicDestinies.aspx">Destinies</a>
+                            <a href="MythicSpells.aspx.htm" tppabs="https://2e.aonprd.com/MythicSpells.aspx">Mythic Spells</a>
+                            <a href="MythicRituals.aspx.htm" tppabs="https://2e.aonprd.com/MythicRituals.aspx">Mythic Rituals</a>
+                        </div>
+                        <a href="Sources.aspx.htm" tppabs="https://2e.aonprd.com/Sources.aspx">Sources</a>
+                        <a href="javascript:void(0);" data-toggle="about" data-group="">About the Archives +</a>
+                        <div class="expand-collapse expand-collapse-group hide-when-collapsed" data-target="about" data-group="menus">
+                            <a href="Licenses.aspx.htm" tppabs="https://2e.aonprd.com/Licenses.aspx">Licenses</a>
+                            <a href="ContactUs.aspx.htm" tppabs="https://2e.aonprd.com/ContactUs.aspx">Contact Us</a>
+                            <a href="Contributors.aspx.htm" tppabs="https://2e.aonprd.com/Contributors.aspx">Contributors</a>
+                            <a href="Support.aspx.htm" tppabs="https://2e.aonprd.com/Support.aspx">Support the Archives</a>
+                        </div>
+                        <div id="mobileSearch" class="ui fluid search">
+                            <div class="ui action icon input" style="width:90%;height:100%">
+                                <input class="prompt" type="text" placeholder="Search..."/>
+                                <button class="ui icon button" onclick="jumpToSearch('#mobileSearch')">
+                                    <i class="search icon"></i>
+                                </button>
+                            </div>
+                            <div class="results"></div>
+                        </div>
+                        <a href="index.htm" tppabs="https://2e.aonprd.com/">
+                                <img src="PF2Logo_Nethys_400_Selected.png" tppabs="https://2e.aonprd.com/Images/PF2Logo_Nethys_400_Selected.png" alt="Pathfinder RPG (2nd Edition)" />
+                            </a>
+                        <a href="https://www.aonprd.com/"  >
+                            <img src="PF1Logo_Nethys_200.png" tppabs="https://2e.aonprd.com/Images/PF1Logo_Nethys_200.png" alt="Pathfinder RPG (1st Edition)" />
+                        </a> 
+                        <a href="https://www.aonsrd.com/" >
+                            <img src="SFLogo_Nethys_200.png" tppabs="https://2e.aonprd.com/Images/SFLogo_Nethys_200.png" alt="Starfinder RPG (1st Edition)" />
+                        </a>
+                        <a href="https://2e.aonsrd.com/" >
+                            <img src="starfinder_2_logo_200.webp" tppabs="https://2e.aonprd.com/Images/starfinder_2_logo_200.webp" alt="Starfinder RPG (2nd Edition)" />
+                        </a>
+                    </div>
+                </div>
+                <div class="theme-toggle-wrapper" title="Toggle Theme">
+                    <div class="theme-open" title="Change Theme"><i class="ra ra-flowers"></i></div>
+                </div>
+            </div>
+
+            <div class="new-navbar">
+                <div class="drawer-toggle" title="Expand Sidebar" onclick="switchDrawer()">
+                    <img src="NethysMask.png" tppabs="https://2e.aonprd.com/Images/NethysMask.png" alt="&#xe030" /></div>
+                    <a class="title" href="index.htm" tppabs="https://2e.aonprd.com/">Archives of Nethys</a>
+                    <div class="searchBar">
+                        <div id="desktopSearch" class="ui fluid search">
+                            <div class="ui action icon input" style="width:100%;height:100%">
+                                <input class="prompt" type="text" placeholder="Search..."/>
+                                <button class="ui icon button" onclick="jumpToSearch('#desktopSearch')">
+                                        <i class="search icon"></i>
+                                    </button>
+                            </div>
+                            <div class="results"></div>
+                        </div>                   
+                    </div>
+                    <div class="game-selector">
+                        <div class="game-selector-options">
+                            <a class="game-selector-option" href="https://aonprd.com/" >
+                                <img src="PF1Logo_Nethys.png" tppabs="https://2e.aonprd.com/Images/PF1Logo_Nethys.png" alt="Pathfinder 1e" />
+                            </a>
+                            <a class="game-selector-option" href="https://aonsrd.com/" >
+                                <img src="SFLogo_Nethys.png" tppabs="https://2e.aonprd.com/Images/SFLogo_Nethys.png" alt="Starfinder 1e" />
+                            </a>
+                            <a class="game-selector-option" href="https://2e.aonsrd.com/" >
+                                <img src="starfinder_2_logo.webp" tppabs="https://2e.aonprd.com/Images/starfinder_2_logo.webp" alt="Starfinder 2e" />
+                            </a>
+                        </div>
+                        <img class="game-selector-current" src="PF2Logo_Nethys.png" tppabs="https://2e.aonprd.com/Images/PF2Logo_Nethys.png" alt="Pathfinder 2e" />
+                    </div>
+                    <div class="theme-open" title="Change Theme"><i class="ra ra-flowers"></i></div>
+            </div>
+
+            <div class="main-wrapper" id="main-wrapper">
+                <div class="menutitle">
+                    <h1>
+                        Archives of Nethys
+                    </h1>
+                    <h2 class="game-titles">
+                        <a href="https://www.aonprd.com/"  >
+                            <img src="PF1Logo_Nethys.png" tppabs="https://2e.aonprd.com/Images/PF1Logo_Nethys.png" alt="Pathfinder RPG (1st Edition)" />
+                        </a> 
+                        <a href="index.htm" tppabs="https://2e.aonprd.com/" class="selected">
+                            <img src="PF2Logo_Nethys-Selected.png" tppabs="https://2e.aonprd.com/Images/PF2Logo_Nethys-Selected.png" alt="Pathfinder RPG (2nd Edition)" />
+                        </a>
+                        <a href="https://www.aonsrd.com/" >
+                            <img src="SFLogo_Nethys.png" tppabs="https://2e.aonprd.com/Images/SFLogo_Nethys.png" alt="Starfinder RPG (1st Edition)" />
+                        </a>
+                        <a href="https://2e.aonsrd.com/" >
+                            <img src="starfinder_2_logo.webp" tppabs="https://2e.aonprd.com/Images/starfinder_2_logo.webp" alt="Starfinder RPG (2nd Edition)" />
+                        </a>
+                    </h2>
+                </div>
+                <div class="main" id="main">
+                    
+
+<span class="hide-on-print"><h1 style="text-align:center"><a href="Sources.aspx-Group=3.htm" tppabs="https://2e.aonprd.com/Sources.aspx?Group=3">Adventure Paths</a> | <a href="Sources.aspx-Group=2.htm" tppabs="https://2e.aonprd.com/Sources.aspx?Group=2">Adventures</a> | <a href="Sources.aspx-Group=5.htm" tppabs="https://2e.aonprd.com/Sources.aspx?Group=5">Blog Posts</a> | <a href="Sources.aspx-Group=7.htm" tppabs="https://2e.aonprd.com/Sources.aspx?Group=7">Comics</a> | <a href="Sources.aspx-Group=6.htm" tppabs="https://2e.aonprd.com/Sources.aspx?Group=6">Lost Omens</a> | <u><a href="Sources.aspx-Group=1.htm" tppabs="https://2e.aonprd.com/Sources.aspx?Group=1">Rulebooks</a></u> | <a href="Sources.aspx-Group=4.htm" tppabs="https://2e.aonprd.com/Sources.aspx?Group=4">Society</a> </h1></span>
+<span class="hide-on-print"></span>
+
+    <hr class="hide-on-print" />
+
+<span></span>
+<span></span>
+<span><h1 class="title"><a href="Sources.aspx-ID=293.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=293">Dark Archives (Remastered)</a></h1><b>Product Page</b> <u><a href="javascript:if(confirm(%27https://store.paizo.com/pathfinder-dark-archive-remastered/  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27https://store.paizo.com/pathfinder-dark-archive-remastered/%27" tppabs="https://store.paizo.com/pathfinder-dark-archive-remastered/">Paizo Store</a></u><br /><b>Release Date</b> 2/4/2026<br /><b>Product Line</b> Rulebooks<br /><h2 class="title">Ancestries [1]</h2><u><a href="Ancestries.aspx-ID=97.htm" tppabs="https://2e.aonprd.com/Ancestries.aspx?ID=97">Reflection</a></u><h2 class="title">Ancestry Heritages [1]</h2><u><a href="Heritages.aspx-ID=428.htm" tppabs="https://2e.aonprd.com/Heritages.aspx?ID=428">Reflection</a></u><h2 class="title">Animal Companions - Advanced Options [1]</h2><u><a href="AnimalCompanions.aspx-ID=9&Advanced=true.htm" tppabs="https://2e.aonprd.com/AnimalCompanions.aspx?ID=9&Advanced=true">Unseen</a></u><h2 class="title">Archetypes [11]</h2><u><a href="Archetypes.aspx-ID=344.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=344">Alter Ego</a></u>, <u><a href="Archetypes.aspx-ID=349.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=349">Chronoskimmer</a></u>, <u><a href="Archetypes.aspx-ID=347.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=347">Curse Maelstrom</a></u>, <u><a href="Archetypes.aspx-ID=345.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=345">Living Vessel</a></u>, <u><a href="Archetypes.aspx-ID=351.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=351">Mind Smith</a></u>, <u><a href="Archetypes.aspx-ID=346.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=346">Pactbinder</a></u>, <u><a href="Archetypes.aspx-ID=342.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=342">Psychic</a></u>, <u><a href="Archetypes.aspx-ID=350.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=350">Psychic Duelist</a></u>, <u><a href="Archetypes.aspx-ID=352.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=352">Sleepwalker</a></u>, <u><a href="Archetypes.aspx-ID=343.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=343">Thaumaturge</a></u>, <u><a href="Archetypes.aspx-ID=348.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=348">Time Mage</a></u><h2 class="title">Backgrounds [4]</h2><u><a href="Backgrounds.aspx-ID=587.htm" tppabs="https://2e.aonprd.com/Backgrounds.aspx?ID=587">Child of the Twin Village</a></u>, <u><a href="Backgrounds.aspx-ID=588.htm" tppabs="https://2e.aonprd.com/Backgrounds.aspx?ID=588">Empty Whispers</a></u>, <u><a href="Backgrounds.aspx-ID=589.htm" tppabs="https://2e.aonprd.com/Backgrounds.aspx?ID=589">Legacy of the Hammer</a></u>, <u><a href="Backgrounds.aspx-ID=590.htm" tppabs="https://2e.aonprd.com/Backgrounds.aspx?ID=590">Reborn Soul</a></u><h2 class="title">Classes [2]</h2><u><a href="Classes.aspx-ID=68.htm" tppabs="https://2e.aonprd.com/Classes.aspx?ID=68">Psychic</a></u>, <u><a href="Classes.aspx-ID=69.htm" tppabs="https://2e.aonprd.com/Classes.aspx?ID=69">Thaumaturge</a></u><h2 class="title">Class Sample Builds [6]</h2><u><a href="ClassSamples.aspx-ID=100.htm" tppabs="https://2e.aonprd.com/ClassSamples.aspx?ID=100">Lorekeeper (Thaumaturge)</a></u>, <u><a href="ClassSamples.aspx-ID=105.htm" tppabs="https://2e.aonprd.com/ClassSamples.aspx?ID=105">Nomadic Visionary (Psychic)</a></u>, <u><a href="ClassSamples.aspx-ID=104.htm" tppabs="https://2e.aonprd.com/ClassSamples.aspx?ID=104">Pillar of Resolve (Psychic)</a></u>, <u><a href="ClassSamples.aspx-ID=102.htm" tppabs="https://2e.aonprd.com/ClassSamples.aspx?ID=102">Protector (Thaumaturge)</a></u>, <u><a href="ClassSamples.aspx-ID=103.htm" tppabs="https://2e.aonprd.com/ClassSamples.aspx?ID=103">Student of Thoughts (Psychic)</a></u>, <u><a href="ClassSamples.aspx-ID=101.htm" tppabs="https://2e.aonprd.com/ClassSamples.aspx?ID=101">Trickster (Thaumaturge)</a></u><h2 class="title">Conscious Minds [6]</h2><u><a href="ConsciousMinds.aspx-ID=7.htm" tppabs="https://2e.aonprd.com/ConsciousMinds.aspx?ID=7">The Distant Grasp</a></u>, <u><a href="ConsciousMinds.aspx-ID=8.htm" tppabs="https://2e.aonprd.com/ConsciousMinds.aspx?ID=8">The Infinite Eye</a></u>, <u><a href="ConsciousMinds.aspx-ID=9.htm" tppabs="https://2e.aonprd.com/ConsciousMinds.aspx?ID=9">The Oscillating Wave</a></u>, <u><a href="ConsciousMinds.aspx-ID=10.htm" tppabs="https://2e.aonprd.com/ConsciousMinds.aspx?ID=10">The Silent Whisper</a></u>, <u><a href="ConsciousMinds.aspx-ID=11.htm" tppabs="https://2e.aonprd.com/ConsciousMinds.aspx?ID=11">The Tangible Dream</a></u>, <u><a href="ConsciousMinds.aspx-ID=12.htm" tppabs="https://2e.aonprd.com/ConsciousMinds.aspx?ID=12">The Unbound Step</a></u><h2 class="title">Curses [8]</h2><u><a href="Curses.aspx-ID=100.htm" tppabs="https://2e.aonprd.com/Curses.aspx?ID=100">Boastful Prince's Scourge</a></u>, <u><a href="Curses.aspx-ID=105.htm" tppabs="https://2e.aonprd.com/Curses.aspx?ID=105">Enforced Hospitality</a></u>, <u><a href="Curses.aspx-ID=104.htm" tppabs="https://2e.aonprd.com/Curses.aspx?ID=104">Forbidding Knowledge</a></u>, <u><a href="Curses.aspx-ID=103.htm" tppabs="https://2e.aonprd.com/Curses.aspx?ID=103">Rage of the Excommunicant</a></u>, <u><a href="Curses.aspx-ID=101.htm" tppabs="https://2e.aonprd.com/Curses.aspx?ID=101">Sinful Tongue</a></u>, <u><a href="Curses.aspx-ID=102.htm" tppabs="https://2e.aonprd.com/Curses.aspx?ID=102">Swarming Words</a></u>, <u><a href="Curses.aspx-ID=98.htm" tppabs="https://2e.aonprd.com/Curses.aspx?ID=98">Thief's Burden</a></u>, <u><a href="Curses.aspx-ID=99.htm" tppabs="https://2e.aonprd.com/Curses.aspx?ID=99">Unraveling Skin</a></u><h2 class="title">Equipment [61]</h2><u><a href="Equipment.aspx-ID=4111.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=4111">Baleblood Draft</a></u>, <u><a href="Equipment.aspx-ID=4139.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=4139">Book of Lost Days</a></u>, <u><a href="Equipment.aspx-ID=4148.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=4148">Bottomless Purse</a></u>, <u><a href="Equipment.aspx-ID=4140.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=4140">Calamity Glass</a></u>, <u><a href="Equipment.aspx-ID=4112.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=4112">Chaos Collar</a></u>, <u><a href="Equipment.aspx-ID=4113.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=4113">Chimera Thread</a></u>, <u><a href="Equipment.aspx-ID=4114.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=4114">Cloak of the False Foe</a></u>, <u><a href="Equipment.aspx-ID=4130.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=4130">Coded Signal</a></u>, <u><a href="Equipment.aspx-ID=4130.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=4130">Coded Signal (Monument)</a></u>, <u><a href="Equipment.aspx-ID=4130.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=4130">Coded Signal (Permanent)</a></u>, <u><a href="Equipment.aspx-ID=4130.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=4130">Coded Signal (Temporary)</a></u>, <u><a href="Equipment.aspx-ID=4137.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=4137">Compass of Transpositional Awareness</a></u>, <u><a href="Equipment.aspx-ID=4138.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=4138">Conrasu Coin</a></u>, <u><a href="Equipment.aspx-ID=4138.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=4138">Conrasu Coin (Arbiter)</a></u>, <u><a href="Equipment.aspx-ID=4138.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=4138">Conrasu Coin (Bythos)</a></u>, <u><a href="Equipment.aspx-ID=4131.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=4131">Counterfeit Item</a></u>, <u><a href="Equipment.aspx-ID=4131.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=4131">Counterfeit Item (High-Grade)</a></u>, <u><a href="Equipment.aspx-ID=4131.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=4131">Counterfeit Item (Low-Grade)</a></u>, <u><a href="Equipment.aspx-ID=4131.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=4131">Counterfeit Item (Medium-Grade)</a></u>, <u><a href="Equipment.aspx-ID=4149.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=4149">Cryolite Eye</a></u>, <u><a href="Equipment.aspx-ID=4136.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=4136">Dog-Bone Knife</a></u>, <u><a href="Equipment.aspx-ID=4132.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=4132">False Witness</a></u>, <u><a href="Equipment.aspx-ID=4132.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=4132">False Witness (Disreputable)</a></u>, <u><a href="Equipment.aspx-ID=4132.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=4132">False Witness (Honorable)</a></u>, <u><a href="Equipment.aspx-ID=4132.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=4132">False Witness (Ordinary)</a></u>, <u><a href="Equipment.aspx-ID=4132.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=4132">False Witness (Respectable)</a></u>, <u><a href="Equipment.aspx-ID=4132.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=4132">False Witness (Unimpeachable)</a></u>, <u><a href="Equipment.aspx-ID=4119.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=4119">False-Bottomed Mug</a></u>, <u><a href="Equipment.aspx-ID=4120.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=4120">Forgetful Drops</a></u>, <u><a href="Equipment.aspx-ID=4141.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=4141">Gift of the Poisoned Heart</a></u>, <u><a href="Equipment.aspx-ID=4121.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=4121">Glittering Scarab</a></u>, <u><a href="Equipment.aspx-ID=4142.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=4142">Golden Goose</a></u>, <u><a href="Equipment.aspx-ID=4150.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=4150">Hand-Hewed Face</a></u>, <u><a href="Equipment.aspx-ID=4115.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=4115">Hoax-Hunter's Kit</a></u>, <u><a href="Equipment.aspx-ID=4135.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=4135">Horn of the Aoyin</a></u>, <u><a href="Equipment.aspx-ID=4151.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=4151">Key to the Stomach</a></u>, <u><a href="Equipment.aspx-ID=4152.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=4152">Lost Ember</a></u>, <u><a href="Equipment.aspx-ID=4122.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=4122">Membership Cords</a></u>, <u><a href="Equipment.aspx-ID=4143.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=4143">Mistranslator's Draft</a></u>, <u><a href="Equipment.aspx-ID=4123.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=4123">Moonlit Ink</a></u>, <u><a href="Equipment.aspx-ID=4116.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=4116">Old Tillimaquin</a></u>, <u><a href="Equipment.aspx-ID=4124.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=4124">Parchment of Secrets</a></u>, <u><a href="Equipment.aspx-ID=4133.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=4133">Political Favor</a></u>, <u><a href="Equipment.aspx-ID=4133.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=4133">Political Favor (Major)</a></u>, <u><a href="Equipment.aspx-ID=4133.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=4133">Political Favor (Minor)</a></u>, <u><a href="Equipment.aspx-ID=4133.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=4133">Political Favor (Moderate)</a></u>, <u><a href="Equipment.aspx-ID=4144.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=4144">Ring of Sneering Charity</a></u>, <u><a href="Equipment.aspx-ID=4145.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=4145">Rose of Loves Lost</a></u>, <u><a href="Equipment.aspx-ID=4117.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=4117">Sampling Ammunition</a></u>, <u><a href="Equipment.aspx-ID=4155.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=4155">Self-Emptying Pocket</a></u>, <u><a href="Equipment.aspx-ID=4125.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=4125">Self-Immolating Note</a></u>, <u><a href="Equipment.aspx-ID=4126.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=4126">Sibling's Coin</a></u>, <u><a href="Equipment.aspx-ID=4127.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=4127">Silent Bell</a></u>, <u><a href="Equipment.aspx-ID=4128.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=4128">Society Portrait</a></u>, <u><a href="Equipment.aspx-ID=4153.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=4153">Stone of Unrivaled Skill</a></u>, <u><a href="Equipment.aspx-ID=4118.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=4118">Swirling Sand</a></u>, <u><a href="Equipment.aspx-ID=4146.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=4146">Tablet of Chained Souls</a></u>, <u><a href="Equipment.aspx-ID=4147.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=4147">Taleteller's Ring</a></u>, <u><a href="Equipment.aspx-ID=4129.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=4129">Traitor's Ring</a></u>, <u><a href="Equipment.aspx-ID=4154.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=4154">Vial of the Immortal Wellspring</a></u>, <u><a href="Equipment.aspx-ID=4134.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=4134">Wine of the Blood</a></u><h2 class="title">Feats [231]</h2><u><a href="Feats.aspx-ID=8474.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8474">Accursed Magic</a></u>, <u><a href="Feats.aspx-ID=8514.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8514">Advanced Runic Mind-Smithing</a></u>, <u><a href="Feats.aspx-ID=8400.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8400">Advanced Thaumaturgy</a></u>, <u><a href="Feats.aspx-ID=8394.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8394">Advanced Thoughtform</a></u>, <u><a href="Feats.aspx-ID=8346.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8346">All in your Head</a></u>, <u><a href="Feats.aspx-ID=8448.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8448">Alter Ego Dedication</a></u>, <u><a href="Feats.aspx-ID=8353.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8353">Ammunition Thaumaturgy</a></u>, <u><a href="Feats.aspx-ID=8336.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8336">Amp Focus</a></u>, <u><a href="Feats.aspx-ID=8310.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8310">Ancestral Mind</a></u>, <u><a href="Feats.aspx-ID=8317.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8317">Astral Tether</a></u>, <u><a href="Feats.aspx-ID=8425.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8425">Aura Sight</a></u>, <u><a href="Feats.aspx-ID=8352.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8352">Automatic Psychic Action</a></u>, <u><a href="Feats.aspx-ID=8426.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8426">Automatic Writing</a></u>, <u><a href="Feats.aspx-ID=8024.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8024">Awakened Power</a></u>, <u><a href="Feats.aspx-ID=8393.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8393">Basic Psychic Spellcasting</a></u>, <u><a href="Feats.aspx-ID=8399.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8399">Basic Thaumaturgy</a></u>, <u><a href="Feats.aspx-ID=8392.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8392">Basic Thoughtform</a></u>, <u><a href="Feats.aspx-ID=8348.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8348">Become Thought</a></u>, <u><a href="Feats.aspx-ID=8424.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8424">Bizarre Transformation</a></u>, <u><a href="Feats.aspx-ID=8026.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8026">Blasting Beams</a></u>, <u><a href="Feats.aspx-ID=8038.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8038">Bone Spikes</a></u>, <u><a href="Feats.aspx-ID=8455.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8455">Borrow Memories</a></u>, <u><a href="Feats.aspx-ID=8494.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8494">Borrow Time</a></u>, <u><a href="Feats.aspx-ID=8326.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8326">Brain Drain</a></u>, <u><a href="Feats.aspx-ID=8363.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8363">Breached Defenses</a></u>, <u><a href="Feats.aspx-ID=8359.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8359">Call Implement</a></u>, <u><a href="Feats.aspx-ID=8418.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8418">Can't You See?</a></u>, <u><a href="Feats.aspx-ID=8449.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8449">Change of Face</a></u>, <u><a href="Feats.aspx-ID=8427.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8427">Chromotherapy</a></u>, <u><a href="Feats.aspx-ID=8481.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8481">Chronocognizance</a></u>, <u><a href="Feats.aspx-ID=8482.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8482">Chronomancer's Secrets</a></u>, <u><a href="Feats.aspx-ID=8489.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8489">Chronoskimmer Dedication</a></u>, <u><a href="Feats.aspx-ID=8433.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8433">Clone-Risen</a></u>, <u><a href="Feats.aspx-ID=8496.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8496">Combat Premonition</a></u>, <u><a href="Feats.aspx-ID=8340.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8340">Conscious Spell Specialization</a></u>, <u><a href="Feats.aspx-ID=8343.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8343">Constant Levitation</a></u>, <u><a href="Feats.aspx-ID=8027.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8027">Consume Energy</a></u>, <u><a href="Feats.aspx-ID=8475.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8475">Counter Curse</a></u>, <u><a href="Feats.aspx-ID=8311.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8311">Counter Thought</a></u>, <u><a href="Feats.aspx-ID=8347.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8347">Cranial Detonation</a></u>, <u><a href="Feats.aspx-ID=8416.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8416">Cryptic Spell</a></u>, <u><a href="Feats.aspx-ID=8428.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8428">Crystal Healing</a></u>, <u><a href="Feats.aspx-ID=8470.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8470">Curse Maelstrom Dedication</a></u>, <u><a href="Feats.aspx-ID=8370.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8370">Cursed Effigy</a></u>, <u><a href="Feats.aspx-ID=8327.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8327">Dark Persona's Presence</a></u>, <u><a href="Feats.aspx-ID=8341.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8341">Deep Roots</a></u>, <u><a href="Feats.aspx-ID=8404.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8404">Devil's Eye</a></u>, <u><a href="Feats.aspx-ID=8045.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8045">Distant Wandering</a></u>, <u><a href="Feats.aspx-ID=8354.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8354">Diverse Lore</a></u>, <u><a href="Feats.aspx-ID=8355.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8355">Divine Disharmony</a></u>, <u><a href="Feats.aspx-ID=8412.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8412">Dormant Eruption</a></u>, <u><a href="Feats.aspx-ID=8332.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8332">Dream Guise</a></u>, <u><a href="Feats.aspx-ID=8522.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8522">Dream Logic</a></u>, <u><a href="Feats.aspx-ID=8518.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8518">Dream Magic</a></u>, <u><a href="Feats.aspx-ID=8501.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8501">Duel Spell Advantage</a></u>, <u><a href="Feats.aspx-ID=8405.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8405">Echo of the Fallen</a></u>, <u><a href="Feats.aspx-ID=8419.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8419">Eerie Environs</a></u>, <u><a href="Feats.aspx-ID=8042.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8042">Eerie Flicker</a></u>, <u><a href="Feats.aspx-ID=8422.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8422">Eerie Proclamation</a></u>, <u><a href="Feats.aspx-ID=8420.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8420">Eerie Traces</a></u>, <u><a href="Feats.aspx-ID=8375.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8375">Elaborate Scroll Esoterica</a></u>, <u><a href="Feats.aspx-ID=8371.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8371">Elaborate Talisman Esoterica</a></u>, <u><a href="Feats.aspx-ID=8407.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8407">Elysium's Cadence</a></u>, <u><a href="Feats.aspx-ID=8333.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8333">Emotional Surge</a></u>, <u><a href="Feats.aspx-ID=8044.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8044">Enervating Wail</a></u>, <u><a href="Feats.aspx-ID=8457.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8457">Entity's Strike</a></u>, <u><a href="Feats.aspx-ID=8497.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8497">Escape Timeline</a></u>, <u><a href="Feats.aspx-ID=8379.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8379">Esoteric Reflexes</a></u>, <u><a href="Feats.aspx-ID=8360.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8360">Esoteric Warden</a></u>, <u><a href="Feats.aspx-ID=8524.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8524">Ever Dreaming</a></u>, <u><a href="Feats.aspx-ID=8396.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8396">Expert Psychic Spellcasting</a></u>, <u><a href="Feats.aspx-ID=8459.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8459">Exude Demonic Corruption</a></u>, <u><a href="Feats.aspx-ID=8450.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8450">Fake It Till You Make it</a></u>, <u><a href="Feats.aspx-ID=8471.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8471">Familiar Oddities</a></u>, <u><a href="Feats.aspx-ID=8414.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8414">Fey Life</a></u>, <u><a href="Feats.aspx-ID=8460.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8460">Fey's Trickery</a></u>, <u><a href="Feats.aspx-ID=8429.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8429">Folk Dowsing</a></u>, <u><a href="Feats.aspx-ID=8337.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8337">Foreseen Failure</a></u>, <u><a href="Feats.aspx-ID=8421.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8421">Forgotten Presence</a></u>, <u><a href="Feats.aspx-ID=8483.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8483">Future Spell Learning</a></u>, <u><a href="Feats.aspx-ID=8506.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8506">Ghost Blade</a></u>, <u><a href="Feats.aspx-ID=8043.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8043">Ghostly Grasp (Deviant)</a></u>, <u><a href="Feats.aspx-ID=8409.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8409">Gift of the Hoard</a></u>, <u><a href="Feats.aspx-ID=8385.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8385">Grand Scroll Esoterica</a></u>, <u><a href="Feats.aspx-ID=8380.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8380">Grand Talisman Esoterica</a></u>, <u><a href="Feats.aspx-ID=8025.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8025">Greater Awakened Power</a></u>, <u><a href="Feats.aspx-ID=8491.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8491">Guide the Timeline</a></u>, <u><a href="Feats.aspx-ID=8356.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8356">Haunt Ingenuity</a></u>, <u><a href="Feats.aspx-ID=8040.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8040">High-Speed Regeneration</a></u>, <u><a href="Feats.aspx-ID=8318.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8318">Homing Beacon</a></u>, <u><a href="Feats.aspx-ID=8401.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8401">Implement Initiate</a></u>, <u><a href="Feats.aspx-ID=8386.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8386">Implement's Assault</a></u>, <u><a href="Feats.aspx-ID=8382.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8382">Implement's Flight</a></u>, <u><a href="Feats.aspx-ID=8334.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8334">Impose Order (Psychic)</a></u>, <u><a href="Feats.aspx-ID=8451.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8451">In Plain Sight</a></u>, <u><a href="Feats.aspx-ID=8322.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8322">Inertial Barrier</a></u>, <u><a href="Feats.aspx-ID=8516.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8516">Infiltrate Dream</a></u>, <u><a href="Feats.aspx-ID=8503.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8503">Instigate Psychic Duel</a></u>, <u><a href="Feats.aspx-ID=8364.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8364">Instructive Strike</a></u>, <u><a href="Feats.aspx-ID=8387.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8387">Intense Implement</a></u>, <u><a href="Feats.aspx-ID=8376.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8376">Intensify Investiture</a></u>, <u><a href="Feats.aspx-ID=8485.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8485">Into the Future</a></u>, <u><a href="Feats.aspx-ID=8408.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8408">Jelly Body</a></u>, <u><a href="Feats.aspx-ID=8507.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8507">Just the Tool</a></u>, <u><a href="Feats.aspx-ID=8406.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8406">Lingering Chill</a></u>, <u><a href="Feats.aspx-ID=8456.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8456">Living Vessel Dedication</a></u>, <u><a href="Feats.aspx-ID=8402.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8402">Magical Knowledge</a></u>, <u><a href="Feats.aspx-ID=8445.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8445">Malleable Form</a></u>, <u><a href="Feats.aspx-ID=8510.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8510">Malleable Mental Forge</a></u>, <u><a href="Feats.aspx-ID=8505.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8505">Malleable Movement</a></u>, <u><a href="Feats.aspx-ID=8397.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8397">Master Psychic Spellcasting</a></u>, <u><a href="Feats.aspx-ID=8314.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8314">Mental Balm</a></u>, <u><a href="Feats.aspx-ID=8312.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8312">Mental Buffer</a></u>, <u><a href="Feats.aspx-ID=8508.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8508">Mental Forge</a></u>, <u><a href="Feats.aspx-ID=8328.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8328">Mental Static</a></u>, <u><a href="Feats.aspx-ID=8513.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8513">Metallic Envisionment</a></u>, <u><a href="Feats.aspx-ID=8349.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8349">Mind over Matter</a></u>, <u><a href="Feats.aspx-ID=8511.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8511">Mind Projectiles</a></u>, <u><a href="Feats.aspx-ID=8509.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8509">Mind Shards</a></u>, <u><a href="Feats.aspx-ID=8504.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8504">Mind Smith Dedication</a></u>, <u><a href="Feats.aspx-ID=8442.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8442">Mirror Refuge</a></u>, <u><a href="Feats.aspx-ID=8434.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8434">Mirror-Risen</a></u>, <u><a href="Feats.aspx-ID=8438.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8438">Mistaken Identity</a></u>, <u><a href="Feats.aspx-ID=8435.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8435">Morph-Risen</a></u>, <u><a href="Feats.aspx-ID=8430.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8430">Morphic Manipulation</a></u>, <u><a href="Feats.aspx-ID=8453.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8453">Muscle Mimicry</a></u>, <u><a href="Feats.aspx-ID=8338.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8338">No!!!</a></u>, <u><a href="Feats.aspx-ID=8423.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8423">Obscured Emergence</a></u>, <u><a href="Feats.aspx-ID=8527.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8527">On Borrowed Time</a></u>, <u><a href="Feats.aspx-ID=8367.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8367">One More Activation</a></u>, <u><a href="Feats.aspx-ID=8520.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8520">Oneiric Influence</a></u>, <u><a href="Feats.aspx-ID=8466.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8466">Pact of Draconic Fury</a></u>, <u><a href="Feats.aspx-ID=8469.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8469">Pact of Eldritch Eyes</a></u>, <u><a href="Feats.aspx-ID=8465.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8465">Pact of Fey Glamour</a></u>, <u><a href="Feats.aspx-ID=8467.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8467">Pact of Infernal Prowess</a></u>, <u><a href="Feats.aspx-ID=8468.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8468">Pact of the Final Breath</a></u>, <u><a href="Feats.aspx-ID=8463.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8463">Pactbinder Dedication</a></u>, <u><a href="Feats.aspx-ID=8365.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8365">Paired Link</a></u>, <u><a href="Feats.aspx-ID=8323.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8323">Parallel Breakthrough</a></u>, <u><a href="Feats.aspx-ID=8411.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8411">Petrified Skin</a></u>, <u><a href="Feats.aspx-ID=8436.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8436">Progenitor Lore</a></u>, <u><a href="Feats.aspx-ID=8029.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8029">Propulsive Leap</a></u>, <u><a href="Feats.aspx-ID=8315.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8315">Psi Burst</a></u>, <u><a href="Feats.aspx-ID=8339.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8339">Psi Catastrophe</a></u>, <u><a href="Feats.aspx-ID=8395.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8395">Psi Development</a></u>, <u><a href="Feats.aspx-ID=8319.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8319">Psi Strikes</a></u>, <u><a href="Feats.aspx-ID=8391.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8391">Psychic Dedication</a></u>, <u><a href="Feats.aspx-ID=8500.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8500">Psychic Duelist Dedication</a></u>, <u><a href="Feats.aspx-ID=8313.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8313">Psychic Rapport</a></u>, <u><a href="Feats.aspx-ID=8487.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8487">Purge of Moments</a></u>, <u><a href="Feats.aspx-ID=8431.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8431">Read Psychometric Resonance</a></u>, <u><a href="Feats.aspx-ID=8446.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8446">Redirect Attention</a></u>, <u><a href="Feats.aspx-ID=8447.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8447">Reflect Foe</a></u>, <u><a href="Feats.aspx-ID=8439.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8439">Reflective Pocket</a></u>, <u><a href="Feats.aspx-ID=8329.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8329">Remove Presence</a></u>, <u><a href="Feats.aspx-ID=8440.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8440">Replicate</a></u>, <u><a href="Feats.aspx-ID=8499.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8499">Reset the Past</a></u>, <u><a href="Feats.aspx-ID=8403.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8403">Resolute</a></u>, <u><a href="Feats.aspx-ID=8477.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8477">Reverse Curse</a></u>, <u><a href="Feats.aspx-ID=8492.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8492">Reversing Charge</a></u>, <u><a href="Feats.aspx-ID=8357.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8357">Root to Life</a></u>, <u><a href="Feats.aspx-ID=8512.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8512">Runic Mind Smithing</a></u>, <u><a href="Feats.aspx-ID=8478.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8478">Sacral Lord</a></u>, <u><a href="Feats.aspx-ID=8479.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8479">Sacral Monarch</a></u>, <u><a href="Feats.aspx-ID=8335.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8335">Scour the Library</a></u>, <u><a href="Feats.aspx-ID=8368.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8368">Scroll Esoterica</a></u>, <u><a href="Feats.aspx-ID=8358.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8358">Scroll Thaumaturgy</a></u>, <u><a href="Feats.aspx-ID=8383.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8383">Seven-Part Link</a></u>, <u><a href="Feats.aspx-ID=8384.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8384">Sever Magic</a></u>, <u><a href="Feats.aspx-ID=8473.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8473">Share Burden</a></u>, <u><a href="Feats.aspx-ID=8372.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8372">Share Weakness</a></u>, <u><a href="Feats.aspx-ID=8523.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8523">Shared Dream</a></u>, <u><a href="Feats.aspx-ID=8377.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8377">Shared Warding</a></u>, <u><a href="Feats.aspx-ID=8342.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8342">Shatter Space</a></u>, <u><a href="Feats.aspx-ID=8413.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8413">Sink and Swim</a></u>, <u><a href="Feats.aspx-ID=8410.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8410">Siphon Life</a></u>, <u><a href="Feats.aspx-ID=8324.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8324">Sixth Sense</a></u>, <u><a href="Feats.aspx-ID=8432.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8432">Skeptic's Defense</a></u>, <u><a href="Feats.aspx-ID=8515.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8515">Sleepwalker Dedication</a></u>, <u><a href="Feats.aspx-ID=8464.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8464">Sociable Vow</a></u>, <u><a href="Feats.aspx-ID=8452.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8452">Sound Mirror</a></u>, <u><a href="Feats.aspx-ID=8498.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8498">Space-Time Shift</a></u>, <u><a href="Feats.aspx-ID=8486.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8486">Spell Acceleration</a></u>, <u><a href="Feats.aspx-ID=8495.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8495">Steal Time</a></u>, <u><a href="Feats.aspx-ID=8028.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8028">Storming Breath</a></u>, <u><a href="Feats.aspx-ID=8325.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8325">Strain Mind</a></u>, <u><a href="Feats.aspx-ID=8493.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8493">Superimpose Time Duplicates</a></u>, <u><a href="Feats.aspx-ID=8502.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8502">Supreme Psychic Center</a></u>, <u><a href="Feats.aspx-ID=8454.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8454">Swap Reflections</a></u>, <u><a href="Feats.aspx-ID=8369.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8369">Sympathetic Vulnerabilities</a></u>, <u><a href="Feats.aspx-ID=8361.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8361">Talisman Esoterica</a></u>, <u><a href="Feats.aspx-ID=8458.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8458">Tap Vitality</a></u>, <u><a href="Feats.aspx-ID=8344.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8344">Target of Psychic Ire</a></u>, <u><a href="Feats.aspx-ID=8041.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8041">Tectonic Stomp</a></u>, <u><a href="Feats.aspx-ID=8398.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8398">Thaumaturge Dedication</a></u>, <u><a href="Feats.aspx-ID=8378.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8378">Thaumaturge's Demesne</a></u>, <u><a href="Feats.aspx-ID=8373.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8373">Thaumaturge's Investiture</a></u>, <u><a href="Feats.aspx-ID=8366.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8366">Thaumaturgic Ritualist</a></u>, <u><a href="Feats.aspx-ID=8320.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8320">Thoughtform Summoning</a></u>, <u><a href="Feats.aspx-ID=8330.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8330">Thoughtsense</a></u>, <u><a href="Feats.aspx-ID=8480.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8480">Time Mage Dedication</a></u>, <u><a href="Feats.aspx-ID=8488.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8488">Timeline-Splitting Spell</a></u>, <u><a href="Feats.aspx-ID=8039.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8039">Titan Swing</a></u>, <u><a href="Feats.aspx-ID=8476.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8476">Torrential Backlash</a></u>, <u><a href="Feats.aspx-ID=8526.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8526">Trance of Celerity</a></u>, <u><a href="Feats.aspx-ID=8381.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8381">Trespass Teleportation</a></u>, <u><a href="Feats.aspx-ID=8362.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8362">Turn Away Misfortune</a></u>, <u><a href="Feats.aspx-ID=8490.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8490">Turn Back the Clock</a></u>, <u><a href="Feats.aspx-ID=8350.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8350">Twin Psyche</a></u>, <u><a href="Feats.aspx-ID=8374.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8374">Twin Weakness</a></u>, <u><a href="Feats.aspx-ID=8443.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8443">Two-Truths</a></u>, <u><a href="Feats.aspx-ID=8388.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8388">Ubiquitous Weakness</a></u>, <u><a href="Feats.aspx-ID=8389.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8389">Unlimited Demesne</a></u>, <u><a href="Feats.aspx-ID=8351.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8351">Unlimited Potential</a></u>, <u><a href="Feats.aspx-ID=8472.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8472">Unnerving Expansion</a></u>, <u><a href="Feats.aspx-ID=8444.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8444">Unyielding Disguise</a></u>, <u><a href="Feats.aspx-ID=8462.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8462">Vessel's Form</a></u>, <u><a href="Feats.aspx-ID=8321.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8321">Violent Unleash</a></u>, <u><a href="Feats.aspx-ID=8517.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8517">Vision of Foresight</a></u>, <u><a href="Feats.aspx-ID=8519.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8519">Waking Dream</a></u>, <u><a href="Feats.aspx-ID=8415.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8415">Walk on the Wind</a></u>, <u><a href="Feats.aspx-ID=8345.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8345">Wandering Thoughts</a></u>, <u><a href="Feats.aspx-ID=8521.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8521">Ward Slumber</a></u>, <u><a href="Feats.aspx-ID=8441.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8441">Warp Likeness</a></u>, <u><a href="Feats.aspx-ID=8316.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8316">Warp Space</a></u>, <u><a href="Feats.aspx-ID=8461.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8461">Warped Constriction</a></u>, <u><a href="Feats.aspx-ID=8437.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8437">Warped Reflection</a></u>, <u><a href="Feats.aspx-ID=8484.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8484">What Could Have Been</a></u>, <u><a href="Feats.aspx-ID=8331.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8331">Whispering Steps</a></u>, <u><a href="Feats.aspx-ID=8417.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8417">Wolf in Sheep's Clothing</a></u>, <u><a href="Feats.aspx-ID=8390.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=8390">Wonder Worker</a></u><h2 class="title">Hazards [19]</h2><u><a href="Hazards.aspx-ID=644.htm" tppabs="https://2e.aonprd.com/Hazards.aspx?ID=644">Call of the Void</a></u>, <u><a href="Hazards.aspx-ID=638.htm" tppabs="https://2e.aonprd.com/Hazards.aspx?ID=638">Clone Mirrors</a></u>, <u><a href="Hazards.aspx-ID=628.htm" tppabs="https://2e.aonprd.com/Hazards.aspx?ID=628">Confounding Portal</a></u>, <u><a href="Hazards.aspx-ID=639.htm" tppabs="https://2e.aonprd.com/Hazards.aspx?ID=639">Constricting Hall</a></u>, <u><a href="Hazards.aspx-ID=641.htm" tppabs="https://2e.aonprd.com/Hazards.aspx?ID=641">Darkside Mirror</a></u>, <u><a href="Hazards.aspx-ID=629.htm" tppabs="https://2e.aonprd.com/Hazards.aspx?ID=629">Disorienting Illusions</a></u>, <u><a href="Hazards.aspx-ID=635.htm" tppabs="https://2e.aonprd.com/Hazards.aspx?ID=635">Distortion Mirror</a></u>, <u><a href="Hazards.aspx-ID=633.htm" tppabs="https://2e.aonprd.com/Hazards.aspx?ID=633">Entrapping Chair</a></u>, <u><a href="Hazards.aspx-ID=640.htm" tppabs="https://2e.aonprd.com/Hazards.aspx?ID=640">Exhaling Portal</a></u>, <u><a href="Hazards.aspx-ID=632.htm" tppabs="https://2e.aonprd.com/Hazards.aspx?ID=632">False Floor</a></u>, <u><a href="Hazards.aspx-ID=634.htm" tppabs="https://2e.aonprd.com/Hazards.aspx?ID=634">False Step Floor</a></u>, <u><a href="Hazards.aspx-ID=626.htm" tppabs="https://2e.aonprd.com/Hazards.aspx?ID=626">Mirror Door</a></u>, <u><a href="Hazards.aspx-ID=630.htm" tppabs="https://2e.aonprd.com/Hazards.aspx?ID=630">Reflected Desires</a></u>, <u><a href="Hazards.aspx-ID=631.htm" tppabs="https://2e.aonprd.com/Hazards.aspx?ID=631">Shrinking Hall</a></u>, <u><a href="Hazards.aspx-ID=642.htm" tppabs="https://2e.aonprd.com/Hazards.aspx?ID=642">Shrouded Assailant</a></u>, <u><a href="Hazards.aspx-ID=627.htm" tppabs="https://2e.aonprd.com/Hazards.aspx?ID=627">Shuffling Hall</a></u>, <u><a href="Hazards.aspx-ID=636.htm" tppabs="https://2e.aonprd.com/Hazards.aspx?ID=636">Sigil of Deepest Fears</a></u>, <u><a href="Hazards.aspx-ID=637.htm" tppabs="https://2e.aonprd.com/Hazards.aspx?ID=637">Spirit Window</a></u>, <u><a href="Hazards.aspx-ID=643.htm" tppabs="https://2e.aonprd.com/Hazards.aspx?ID=643">Thalassophobic Pool</a></u><h2 class="title">Implements [9]</h2><u><a href="Implements.aspx-ID=17.htm" tppabs="https://2e.aonprd.com/Implements.aspx?ID=17">Amulet</a></u>, <u><a href="Implements.aspx-ID=18.htm" tppabs="https://2e.aonprd.com/Implements.aspx?ID=18">Bell</a></u>, <u><a href="Implements.aspx-ID=19.htm" tppabs="https://2e.aonprd.com/Implements.aspx?ID=19">Chalice</a></u>, <u><a href="Implements.aspx-ID=20.htm" tppabs="https://2e.aonprd.com/Implements.aspx?ID=20">Lantern</a></u>, <u><a href="Implements.aspx-ID=21.htm" tppabs="https://2e.aonprd.com/Implements.aspx?ID=21">Mirror</a></u>, <u><a href="Implements.aspx-ID=22.htm" tppabs="https://2e.aonprd.com/Implements.aspx?ID=22">Regalia</a></u>, <u><a href="Implements.aspx-ID=23.htm" tppabs="https://2e.aonprd.com/Implements.aspx?ID=23">Tome</a></u>, <u><a href="Implements.aspx-ID=24.htm" tppabs="https://2e.aonprd.com/Implements.aspx?ID=24">Wand</a></u>, <u><a href="Implements.aspx-ID=25.htm" tppabs="https://2e.aonprd.com/Implements.aspx?ID=25">Weapon</a></u><h2 class="title">Lessons [2]</h2><u><a href="Lessons.aspx-ID=33.htm" tppabs="https://2e.aonprd.com/Lessons.aspx?ID=33">Less of Favors</a></u>, <u><a href="Lessons.aspx-ID=34.htm" tppabs="https://2e.aonprd.com/Lessons.aspx?ID=34">Lesson of Bargains</a></u><h2 class="title">Monsters [3]</h2> <u><a href="Monsters.aspx-include-sources=dark archives (remastered).htm" tppabs="https://2e.aonprd.com/Monsters.aspx?include-sources=dark%20archives%20%28remastered%29">+3 with potential spoilers, click here to view all</a></u>.<h2 class="title">Mysteries [1]</h2><u><a href="Mysteries.aspx-ID=23.htm" tppabs="https://2e.aonprd.com/Mysteries.aspx?ID=23">Time</a></u><h2 class="title">NPCs [1]</h2> <u><a href="NPCs.aspx-include-sources=dark archives (remastered).htm" tppabs="https://2e.aonprd.com/NPCs.aspx?include-sources=dark%20archives%20%28remastered%29">+1 with potential spoilers, click here to view all</a></u>.<h2 class="title">Patron Themes [1]</h2><u><a href="Patrons.aspx-ID=29.htm" tppabs="https://2e.aonprd.com/Patrons.aspx?ID=29">The Unseen Broker</a></u><h2 class="title">Rituals [8]</h2><u><a href="Rituals.aspx-ID=225.htm" tppabs="https://2e.aonprd.com/Rituals.aspx?ID=225">Bacchanalia</a></u>, <u><a href="Rituals.aspx-ID=231.htm" tppabs="https://2e.aonprd.com/Rituals.aspx?ID=231">Construct Mindscape</a></u>, <u><a href="Rituals.aspx-ID=226.htm" tppabs="https://2e.aonprd.com/Rituals.aspx?ID=226">Contact Friends</a></u>, <u><a href="Rituals.aspx-ID=232.htm" tppabs="https://2e.aonprd.com/Rituals.aspx?ID=232">Mindscape Door</a></u>, <u><a href="Rituals.aspx-ID=227.htm" tppabs="https://2e.aonprd.com/Rituals.aspx?ID=227">Oblivious Expulsion</a></u>, <u><a href="Rituals.aspx-ID=228.htm" tppabs="https://2e.aonprd.com/Rituals.aspx?ID=228">Recall Past Life</a></u>, <u><a href="Rituals.aspx-ID=229.htm" tppabs="https://2e.aonprd.com/Rituals.aspx?ID=229">Supreme Connection</a></u>, <u><a href="Rituals.aspx-ID=230.htm" tppabs="https://2e.aonprd.com/Rituals.aspx?ID=230">Vital Singularity</a></u><h2 class="title">Rules [10]</h2><u><a href="Rules.aspx-ID=3492.htm" tppabs="https://2e.aonprd.com/Rules.aspx?ID=3492">Aftermath Feats</a></u>, <u><a href="Rules.aspx-ID=3510.htm" tppabs="https://2e.aonprd.com/Rules.aspx?ID=3510">Apocryphal Domain Spells</a></u>, <u><a href="Rules.aspx-ID=3512.htm" tppabs="https://2e.aonprd.com/Rules.aspx?ID=3512">Bargained Contracts</a></u>, <u><a href="Rules.aspx-ID=3493.htm" tppabs="https://2e.aonprd.com/Rules.aspx?ID=3493">Cryptid Adjustments</a></u>, <u><a href="Rules.aspx-ID=3500.htm" tppabs="https://2e.aonprd.com/Rules.aspx?ID=3500">Deviant Abilities</a></u>, <u><a href="Rules.aspx-ID=3513.htm" tppabs="https://2e.aonprd.com/Rules.aspx?ID=3513">Mindscape Statistics</a></u>, <u><a href="Rules.aspx-ID=3514.htm" tppabs="https://2e.aonprd.com/Rules.aspx?ID=3514">Psychic Duels</a></u>, <u><a href="Rules.aspx-ID=3499.htm" tppabs="https://2e.aonprd.com/Rules.aspx?ID=3499">Secret Society Member</a></u>, <u><a href="Rules.aspx-ID=3511.htm" tppabs="https://2e.aonprd.com/Rules.aspx?ID=3511">Tempting Curses</a></u>, <u><a href="Rules.aspx-ID=3498.htm" tppabs="https://2e.aonprd.com/Rules.aspx?ID=3498">Unseen Animal Companion</a></u><h2 class="title">Spells [70]</h2><u><a href="Spells.aspx-ID=2560.htm" tppabs="https://2e.aonprd.com/Spells.aspx?ID=2560">Astral Rain</a></u>, <u><a href="Spells.aspx-ID=2600.htm" tppabs="https://2e.aonprd.com/Spells.aspx?ID=2600">Awaken Entropy</a></u>, <u><a href="Spells.aspx-ID=2601.htm" tppabs="https://2e.aonprd.com/Spells.aspx?ID=2601">Behold the Weave</a></u>, <u><a href="Spells.aspx-ID=2566.htm" tppabs="https://2e.aonprd.com/Spells.aspx?ID=2566">Bilocation</a></u>, <u><a href="Spells.aspx-ID=2567.htm" tppabs="https://2e.aonprd.com/Spells.aspx?ID=2567">Bracing Tendrils</a></u>, <u><a href="Spells.aspx-ID=2584.htm" tppabs="https://2e.aonprd.com/Spells.aspx?ID=2584">Cinder Gaze</a></u>, <u><a href="Spells.aspx-ID=2558.htm" tppabs="https://2e.aonprd.com/Spells.aspx?ID=2558">Contagious Idea</a></u>, <u><a href="Spells.aspx-ID=2549.htm" tppabs="https://2e.aonprd.com/Spells.aspx?ID=2549">Dancing Blade</a></u>, <u><a href="Spells.aspx-ID=2562.htm" tppabs="https://2e.aonprd.com/Spells.aspx?ID=2562">Distortion Lens</a></u>, <u><a href="Spells.aspx-ID=2568.htm" tppabs="https://2e.aonprd.com/Spells.aspx?ID=2568">Empty Pack</a></u>, <u><a href="Spells.aspx-ID=2554.htm" tppabs="https://2e.aonprd.com/Spells.aspx?ID=2554">Entropic Wheel</a></u>, <u><a href="Spells.aspx-ID=2569.htm" tppabs="https://2e.aonprd.com/Spells.aspx?ID=2569">Etheric Shards</a></u>, <u><a href="Spells.aspx-ID=2585.htm" tppabs="https://2e.aonprd.com/Spells.aspx?ID=2585">Euphoric Renewal</a></u>, <u><a href="Spells.aspx-ID=2570.htm" tppabs="https://2e.aonprd.com/Spells.aspx?ID=2570">Falling Sky</a></u>, <u><a href="Spells.aspx-ID=2565.htm" tppabs="https://2e.aonprd.com/Spells.aspx?ID=2565">False Nature</a></u>, <u><a href="Spells.aspx-ID=2571.htm" tppabs="https://2e.aonprd.com/Spells.aspx?ID=2571">Focusing Hum</a></u>, <u><a href="Spells.aspx-ID=2556.htm" tppabs="https://2e.aonprd.com/Spells.aspx?ID=2556">Forbidden Thought</a></u>, <u><a href="Spells.aspx-ID=2552.htm" tppabs="https://2e.aonprd.com/Spells.aspx?ID=2552">Foresee the Path</a></u>, <u><a href="Spells.aspx-ID=2586.htm" tppabs="https://2e.aonprd.com/Spells.aspx?ID=2586">Frenzied Revelry</a></u>, <u><a href="Spells.aspx-ID=2563.htm" tppabs="https://2e.aonprd.com/Spells.aspx?ID=2563">Ghostly Shift</a></u>, <u><a href="Spells.aspx-ID=2550.htm" tppabs="https://2e.aonprd.com/Spells.aspx?ID=2550">Glimpse Weakness</a></u>, <u><a href="Spells.aspx-ID=2587.htm" tppabs="https://2e.aonprd.com/Spells.aspx?ID=2587">Hollow Heart</a></u>, <u><a href="Spells.aspx-ID=2561.htm" tppabs="https://2e.aonprd.com/Spells.aspx?ID=2561">Hologram Cage</a></u>, <u><a href="Spells.aspx-ID=2559.htm" tppabs="https://2e.aonprd.com/Spells.aspx?ID=2559">Imaginary Weapon</a></u>, <u><a href="Spells.aspx-ID=2572.htm" tppabs="https://2e.aonprd.com/Spells.aspx?ID=2572">Implement of Destruction</a></u>, <u><a href="Spells.aspx-ID=2589.htm" tppabs="https://2e.aonprd.com/Spells.aspx?ID=2589">Inevitable Destination</a></u>, <u><a href="Spells.aspx-ID=2588.htm" tppabs="https://2e.aonprd.com/Spells.aspx?ID=2588">Isolation</a></u>, <u><a href="Spells.aspx-ID=2573.htm" tppabs="https://2e.aonprd.com/Spells.aspx?ID=2573">Kinetic Ram</a></u>, <u><a href="Spells.aspx-ID=2602.htm" tppabs="https://2e.aonprd.com/Spells.aspx?ID=2602">Loose Time's Arrow</a></u>, <u><a href="Spells.aspx-ID=2615.htm" tppabs="https://2e.aonprd.com/Spells.aspx?ID=2615">Manifold Lives</a></u>, <u><a href="Spells.aspx-ID=2574.htm" tppabs="https://2e.aonprd.com/Spells.aspx?ID=2574">Momentary Recovery</a></u>, <u><a href="Spells.aspx-ID=2603.htm" tppabs="https://2e.aonprd.com/Spells.aspx?ID=2603">Morass of Ages</a></u>, <u><a href="Spells.aspx-ID=2575.htm" tppabs="https://2e.aonprd.com/Spells.aspx?ID=2575">Moth's Supper</a></u>, <u><a href="Spells.aspx-ID=2551.htm" tppabs="https://2e.aonprd.com/Spells.aspx?ID=2551">Omnidirectional Scan</a></u>, <u><a href="Spells.aspx-ID=2599.htm" tppabs="https://2e.aonprd.com/Spells.aspx?ID=2599">Over the Coals</a></u>, <u><a href="Spells.aspx-ID=2597.htm" tppabs="https://2e.aonprd.com/Spells.aspx?ID=2597">Pact Broker</a></u>, <u><a href="Spells.aspx-ID=2612.htm" tppabs="https://2e.aonprd.com/Spells.aspx?ID=2612">Path of Least Resistance</a></u>, <u><a href="Spells.aspx-ID=2576.htm" tppabs="https://2e.aonprd.com/Spells.aspx?ID=2576">Phase Bolt</a></u>, <u><a href="Spells.aspx-ID=2577.htm" tppabs="https://2e.aonprd.com/Spells.aspx?ID=2577">Poltergeist's Fury</a></u>, <u><a href="Spells.aspx-ID=2590.htm" tppabs="https://2e.aonprd.com/Spells.aspx?ID=2590">Purifying Veil</a></u>, <u><a href="Spells.aspx-ID=2604.htm" tppabs="https://2e.aonprd.com/Spells.aspx?ID=2604">Quicken Time</a></u>, <u><a href="Spells.aspx-ID=2578.htm" tppabs="https://2e.aonprd.com/Spells.aspx?ID=2578">Rally Point</a></u>, <u><a href="Spells.aspx-ID=2555.htm" tppabs="https://2e.aonprd.com/Spells.aspx?ID=2555">Redistribute Potential</a></u>, <u><a href="Spells.aspx-ID=2598.htm" tppabs="https://2e.aonprd.com/Spells.aspx?ID=2598">Return the Favor</a></u>, <u><a href="Spells.aspx-ID=2579.htm" tppabs="https://2e.aonprd.com/Spells.aspx?ID=2579">Sea of Thought</a></u>, <u><a href="Spells.aspx-ID=2580.htm" tppabs="https://2e.aonprd.com/Spells.aspx?ID=2580">Shadow Spy</a></u>, <u><a href="Spells.aspx-ID=2591.htm" tppabs="https://2e.aonprd.com/Spells.aspx?ID=2591">Shaken Confidence</a></u>, <u><a href="Spells.aspx-ID=2557.htm" tppabs="https://2e.aonprd.com/Spells.aspx?ID=2557">Shatter Mind</a></u>, <u><a href="Spells.aspx-ID=2581.htm" tppabs="https://2e.aonprd.com/Spells.aspx?ID=2581">Soft Landing</a></u>, <u><a href="Spells.aspx-ID=2605.htm" tppabs="https://2e.aonprd.com/Spells.aspx?ID=2605">Stagnate Time</a></u>, <u><a href="Spells.aspx-ID=2592.htm" tppabs="https://2e.aonprd.com/Spells.aspx?ID=2592">String of Fate</a></u>, <u><a href="Spells.aspx-ID=2606.htm" tppabs="https://2e.aonprd.com/Spells.aspx?ID=2606">Summon Irii</a></u>, <u><a href="Spells.aspx-ID=2607.htm" tppabs="https://2e.aonprd.com/Spells.aspx?ID=2607">Suspended Retribution</a></u>, <u><a href="Spells.aspx-ID=2582.htm" tppabs="https://2e.aonprd.com/Spells.aspx?ID=2582">Telekinetic Bombardment</a></u>, <u><a href="Spells.aspx-ID=2547.htm" tppabs="https://2e.aonprd.com/Spells.aspx?ID=2547">Telekinetic Rend</a></u>, <u><a href="Spells.aspx-ID=2613.htm" tppabs="https://2e.aonprd.com/Spells.aspx?ID=2613">Temporal Distortion</a></u>, <u><a href="Spells.aspx-ID=2608.htm" tppabs="https://2e.aonprd.com/Spells.aspx?ID=2608">Temporal Twin</a></u>, <u><a href="Spells.aspx-ID=2564.htm" tppabs="https://2e.aonprd.com/Spells.aspx?ID=2564">Tesseract Tunnel</a></u>, <u><a href="Spells.aspx-ID=2553.htm" tppabs="https://2e.aonprd.com/Spells.aspx?ID=2553">Thermal Stasis</a></u>, <u><a href="Spells.aspx-ID=2609.htm" tppabs="https://2e.aonprd.com/Spells.aspx?ID=2609">Time Beacon</a></u>, <u><a href="Spells.aspx-ID=2610.htm" tppabs="https://2e.aonprd.com/Spells.aspx?ID=2610">Time Pocket</a></u>, <u><a href="Spells.aspx-ID=2611.htm" tppabs="https://2e.aonprd.com/Spells.aspx?ID=2611">Time Sense</a></u>, <u><a href="Spells.aspx-ID=2614.htm" tppabs="https://2e.aonprd.com/Spells.aspx?ID=2614">Time Skip</a></u>, <u><a href="Spells.aspx-ID=2548.htm" tppabs="https://2e.aonprd.com/Spells.aspx?ID=2548">Vector Screen</a></u>, <u><a href="Spells.aspx-ID=2593.htm" tppabs="https://2e.aonprd.com/Spells.aspx?ID=2593">Victory Cry</a></u>, <u><a href="Spells.aspx-ID=2616.htm" tppabs="https://2e.aonprd.com/Spells.aspx?ID=2616">Waking Dream</a></u>, <u><a href="Spells.aspx-ID=2583.htm" tppabs="https://2e.aonprd.com/Spells.aspx?ID=2583">Warp Step</a></u>, <u><a href="Spells.aspx-ID=2594.htm" tppabs="https://2e.aonprd.com/Spells.aspx?ID=2594">Weaponize Secret</a></u>, <u><a href="Spells.aspx-ID=2595.htm" tppabs="https://2e.aonprd.com/Spells.aspx?ID=2595">Wind Whispers</a></u>, <u><a href="Spells.aspx-ID=2596.htm" tppabs="https://2e.aonprd.com/Spells.aspx?ID=2596">Wordsmith</a></u><h2 class="title">Subconscious Minds [4]</h2><u><a href="SubconsciousMinds.aspx-ID=5.htm" tppabs="https://2e.aonprd.com/SubconsciousMinds.aspx?ID=5">Emotional Acceptance</a></u>, <u><a href="SubconsciousMinds.aspx-ID=6.htm" tppabs="https://2e.aonprd.com/SubconsciousMinds.aspx?ID=6">Gathered Lore</a></u>, <u><a href="SubconsciousMinds.aspx-ID=7.htm" tppabs="https://2e.aonprd.com/SubconsciousMinds.aspx?ID=7">Precise Discipline</a></u>, <u><a href="SubconsciousMinds.aspx-ID=8.htm" tppabs="https://2e.aonprd.com/SubconsciousMinds.aspx?ID=8">Wandering Reverie</a></u><h2 class="title">Traits [9]</h2><u><a href="Traits.aspx-ID=896.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=896">Aftermath</a></u>, <u><a href="Traits.aspx-ID=897.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=897">Amp</a></u>, <u><a href="Traits.aspx-ID=898.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=898">Deviant</a></u>, <u><a href="Traits.aspx-ID=899.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=899">Esoterica</a></u>, <u><a href="Traits.aspx-ID=900.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=900">Mindshift</a></u>, <u><a href="Traits.aspx-ID=901.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=901">Psyche</a></u>, <u><a href="Traits.aspx-ID=894.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=894">Psychic</a></u>, <u><a href="Traits.aspx-ID=902.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=902">Reflection</a></u>, <u><a href="Traits.aspx-ID=895.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=895">Thaumaturge</a></u></span>
+
+                </div>
+                <div class="clear">
+            </div>
+
+            <div class="footer" id="footer" >
+				<div id="et-al" >
+                    <a href="mailto:nethys@archivesofnethys.com">Site Owner: Rose-Winds LLC (Blake Davis)</a>
+                    <div id="footer-social"><a href="javascript:if(confirm(%27https://twitter.com/NethysArchives  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27https://twitter.com/NethysArchives%27" tppabs="https://twitter.com/NethysArchives" target="_blank"><span class="k-icon k-i-twitter" style="font-size:2.5rem"></span></a></div>
+				</div>
+                <div style="text-align:center"><script type="text/javascript" async="true" src="adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- Main Archives Page -->
+                    <ins class="adsbygoogle"
+                        style="display:inline-block;width:728px;height:90px"
+                        data-ad-client="ca-pub-4953734518316037"
+                        data-ad-slot="7738185508"></ins>
+                    <script type="text/javascript">
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                </script></div>
+			</div>
+            <nethys-search no-ui="true"></nethys-search>
+        </div>
+    </div>
+
+    <div class="modern-menu-container">
+        <div class="modern-menu">
+            <div class="modern-menu-nethys-logo"></div>
+            <div class="modern-menu-items">
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-player"></i></span>
+                    <span class="modern-menu-item-text">Character Creation +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Ancestries.aspx.htm" tppabs="https://2e.aonprd.com/Ancestries.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-hood"></i></span>
+                        <span class="modern-menu-item-text">Ancestries</span>
+                    </a>
+                    <a class="modern-menu-item" href="Archetypes.aspx.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-nodular"></i></span>
+                        <span class="modern-menu-item-text">Archetypes</span>
+                    </a>
+                    <a class="modern-menu-item" href="Backgrounds.aspx.htm" tppabs="https://2e.aonprd.com/Backgrounds.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-guarded-tower"></i></span>
+                        <span class="modern-menu-item-text">Backgrounds</span>
+                    </a>
+                    <a class="modern-menu-item" href="Classes.aspx.htm" tppabs="https://2e.aonprd.com/Classes.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-player-lift"></i></span>
+                        <span class="modern-menu-item-text">Classes</span>
+                    </a>
+                    <a class="modern-menu-item" href="Skills.aspx.htm" tppabs="https://2e.aonprd.com/Skills.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-hand"></i></span>
+                        <span class="modern-menu-item-text">Skills</span>
+                    </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-torch"></i></span>
+                    <span class="modern-menu-item-text">Equipment +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Equipment.aspx.htm" tppabs="https://2e.aonprd.com/Equipment.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-torch"></i></span>
+                        <span class="modern-menu-item-text">All Equipment</span>
+                    </a>
+                    <a class="modern-menu-item" href="Equipment.aspx-Category=1.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?Category=1">
+                        <span class="modern-menu-item-icon"><i class="ra ra-campfire"></i></span>
+                        <span class="modern-menu-item-text">Adventuring Gear</span>
+                    </a>
+                    <a class="modern-menu-item" href="Equipment.aspx-Category=6.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?Category=6">
+                        <span class="modern-menu-item-icon"><i class="ra ra-round-bottom-flask"></i></span>
+                        <span class="modern-menu-item-text">Alchemical Items</span>
+                    </a>
+                    <a class="modern-menu-item" href="Armor.aspx.htm" tppabs="https://2e.aonprd.com/Armor.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-helmet"></i></span>
+                        <span class="modern-menu-item-text">Armor</span>
+                    </a>
+                    <a class="modern-menu-item" href="Equipment.aspx-Category=21.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?Category=21">
+                        <span class="modern-menu-item-icon"><i class="ra ra-hand"></i></span>
+                        <span class="modern-menu-item-text">Held Items</span>
+                    </a>
+                    <a class="modern-menu-item" href="Equipment.aspx-Category=23.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?Category=23">
+                        <span class="modern-menu-item-icon"><i class="ra ra-rune-stone"></i></span>
+                        <span class="modern-menu-item-text">Runes</span>
+                    </a>
+                    <a class="modern-menu-item" href="Shields.aspx.htm" tppabs="https://2e.aonprd.com/Shields.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-shield"></i></span>
+                        <span class="modern-menu-item-text">Shields</span>
+                    </a>
+                    <a class="modern-menu-item" href="Weapons.aspx.htm" tppabs="https://2e.aonprd.com/Weapons.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-sword"></i></span>
+                        <span class="modern-menu-item-text">Weapons</span>
+                    </a>
+                    <a class="modern-menu-item" href="Equipment.aspx-Category=41.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?Category=41">
+                        <span class="modern-menu-item-icon"><i class="ra ra-crown-of-thorns"></i></span>
+                        <span class="modern-menu-item-text">Worn Items</span>
+                    </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-muscle-up"></i></span>
+                    <span class="modern-menu-item-text">Feats +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Feats.aspx.htm" tppabs="https://2e.aonprd.com/Feats.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-muscle-up"></i></span>
+                        <span class="modern-menu-item-text">All Feats</span>
+                    </a>
+                    <a class="modern-menu-item" href="Feats.aspx-Traits=78.htm" tppabs="https://2e.aonprd.com/Feats.aspx?Traits=78">
+                        <span class="modern-menu-item-icon"><i class="ra ra-aware"></i></span>
+                        <span class="modern-menu-item-text">General</span>
+                    </a>
+                    <a class="modern-menu-item" href="Feats.aspx-Traits=78&NoSkills=True.htm" tppabs="https://2e.aonprd.com/Feats.aspx?Traits=78&NoSkills=True">
+                        <span class="modern-menu-item-icon"><i class="ra ra-player-teleport"></i></span>
+                        <span class="modern-menu-item-text">General (No Skill)</span>
+                    </a>
+                    <a class="modern-menu-item" href="Feats.aspx-Traits=144.htm" tppabs="https://2e.aonprd.com/Feats.aspx?Traits=144">
+                        <span class="modern-menu-item-icon"><i class="ra ra-hand"></i></span>
+                        <span class="modern-menu-item-text">Skill</span>
+                    </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-emerald"></i></span>
+                    <span class="modern-menu-item-text">Game Mastery +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Afflictions.aspx.htm" tppabs="https://2e.aonprd.com/Afflictions.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-biohazard"></i></span>
+                        <span class="modern-menu-item-text">Afflictions</span>
+                    </a>
+                    <a class="modern-menu-item" href="Creatures.aspx.htm" tppabs="https://2e.aonprd.com/Creatures.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-dragon"></i></span>
+                        <span class="modern-menu-item-text">Creatures</span>
+                    </a>
+                    <a class="modern-menu-item" href="Hazards.aspx.htm" tppabs="https://2e.aonprd.com/Hazards.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-bear-trap"></i></span>
+                        <span class="modern-menu-item-text">Hazards</span>
+                    </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-book"></i></span>
+                    <span class="modern-menu-item-text">Rules +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Rules.aspx.htm" tppabs="https://2e.aonprd.com/Rules.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-book"></i></span>
+                        <span class="modern-menu-item-text">All Rules</span>
+                    </a>
+                    <a class="modern-menu-item" href="Actions.aspx.htm" tppabs="https://2e.aonprd.com/Actions.aspx">
+                        <span class="modern-menu-item-icon">
+                            <svg viewBox="0 0 30 30" preserveAspectRatio="xMidYMid meet" stroke="null" style="fill:inherit;">
+                                <path d="M21.55532 8.015l7.07107 7.07106-7.07107 7.07107-7.07107-7.07107zM6.47996 10.07526l4.94975 4.94975-4.94975 4.94974-4.94974-4.94974z"></path>
+                                <path d="M15.00246 1.46211l8.48528 8.48528-7.07107 7.07107L7.9314 8.53318z"></path>
+                                <path d="M16.45563 13.11469l7.07107 7.07107-8.48529 8.48528-7.07106-7.07107z"></path>
+                            </svg>
+                        </span>
+                        <span class="modern-menu-item-text">Actions/Activities</span>
+                    </a>
+                    <a class="modern-menu-item" href="Conditions.aspx.htm" tppabs="https://2e.aonprd.com/Conditions.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-player-pain"></i></span>
+                        <span class="modern-menu-item-text">Conditions</span>
+                    </a>
+                    <a class="modern-menu-item" href="GMScreen.aspx.htm" tppabs="https://2e.aonprd.com/GMScreen.aspx">
+                        <span class="modern-menu-item-icon">
+                            <svg viewBox="0 0 30 30" preserveAspectRatio="xMidYMid meet" stroke="null" style="fill:inherit;">
+                                <path d="M5.72648 12.93117h9.17646v9.50588l-4.58823 2.37647-4.58823-2.37647.00001-9.50588z"></path>
+                                <path d="M5.96178 12.93118h9.17646v9.50587l-4.58823 2.37648-4.58824-2.37648.00001-9.50587z"></path>
+                                <path d="M15.0206 12.93118h9.17646v9.50587l-4.58823 2.37648-4.58824-2.37648.00001-9.50587z"></path>
+                                <path d="M16.70221 8.57471l7.52941-3.38823v16.94117h-7.52941V8.57471zM15.11765 8.69235L5.94118 5.30412v16.94117h9.17647V8.69235z"></path>
+                                <path d="M19.60883 17.75465h-9.17646V8.24878L15.0206 5.8723l4.58824 2.37648-.00001 9.50587z"></path>
+                            </svg>
+                        </span>
+                        <span class="modern-menu-item-text">GM Screen</span>
+                    </a>
+                    <a class="modern-menu-item" href="PlayersGuide.aspx.htm" tppabs="https://2e.aonprd.com/PlayersGuide.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-uncertainty"></i></span>
+                        <span class="modern-menu-item-text">Player's Guide</span>
+                    </a>
+                    <a class="modern-menu-item" href="Traits.aspx.htm" tppabs="https://2e.aonprd.com/Traits.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-uncertainty"></i></span>
+                        <span class="modern-menu-item-text">Traits</span>
+                    </a>
+                    <a class="modern-menu-item" href="Sources.aspx.htm" tppabs="https://2e.aonprd.com/Sources.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-book"></i></span>
+                        <span class="modern-menu-item-text">Sources</span>
+                    </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-sun"></i></span>
+                    <span class="modern-menu-item-text">Setting +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Setting.aspx-Adventure=true.htm" tppabs="https://2e.aonprd.com/Setting.aspx?Adventure=true">
+                        <span class="modern-menu-item-icon"><i class="ra ra-all-for-one"></i></span>
+                        <span class="modern-menu-item-text">Adventures</span>
+                    </a>
+                    <a class="modern-menu-item" href="Articles.aspx.htm" tppabs="https://2e.aonprd.com/Articles.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-book"></i></span>
+                        <span class="modern-menu-item-text">Articles</span>
+                    </a>
+                    <a class="modern-menu-item" href="Deities.aspx.htm" tppabs="https://2e.aonprd.com/Deities.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-angel-wings"></i></span>
+                        <span class="modern-menu-item-text">Deities</span>
+                    </a>
+                    <a class="modern-menu-item" href="Domains.aspx.htm" tppabs="https://2e.aonprd.com/Domains.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-kaleidoscope"></i></span>
+                        <span class="modern-menu-item-text">Domains</span>
+                    </a>
+                    <a class="modern-menu-item" href="Languages.aspx.htm" tppabs="https://2e.aonprd.com/Languages.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-speech-bubbles"></i></span>
+                        <span class="modern-menu-item-text">Languages</span>
+                    </a>
+                    <a class="modern-menu-item" href="Planes.aspx.htm" tppabs="https://2e.aonprd.com/Planes.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-circle-of-circles"></i></span>
+                        <span class="modern-menu-item-text">Planes</span>
+                    </a>
+                        <a class="modern-menu-item" href="Setting.aspx-Group=40.htm" tppabs="https://2e.aonprd.com/Setting.aspx?Group=40">
+                            <span class="modern-menu-item-icon"><i class="ra ra-mountains"></i></span>
+                            <span class="modern-menu-item-text">Scenarios</span>
+                        </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-crystal-wand"></i></span>
+                    <span class="modern-menu-item-text">Spells/Rituals +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Spells.aspx.htm" tppabs="https://2e.aonprd.com/Spells.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-scroll-unfurled"></i></span>
+                        <span class="modern-menu-item-text">All Spells</span>
+                    </a>
+                    <a class="modern-menu-item" href="Spells.aspx-Tradition=1.htm" tppabs="https://2e.aonprd.com/Spells.aspx?Tradition=1">
+                        <span class="modern-menu-item-icon"><i class="ra ra-scroll-unfurled"></i></span>
+                        <span class="modern-menu-item-text">Arcane</span>
+                    </a>
+                    <a class="modern-menu-item" href="Spells.aspx-Tradition=2.htm" tppabs="https://2e.aonprd.com/Spells.aspx?Tradition=2">
+                        <span class="modern-menu-item-icon"><i class="ra ra-ankh"></i></span>
+                        <span class="modern-menu-item-text">Divine</span>
+                    </a>
+                    <a class="modern-menu-item" href="Spells.aspx-Tradition=3.htm" tppabs="https://2e.aonprd.com/Spells.aspx?Tradition=3">
+                        <span class="modern-menu-item-icon"><i class="ra ra-burning-eye"></i></span>
+                        <span class="modern-menu-item-text">Occult</span>
+                    </a>
+                    <a class="modern-menu-item" href="Spells.aspx-Tradition=4.htm" tppabs="https://2e.aonprd.com/Spells.aspx?Tradition=4">
+                        <span class="modern-menu-item-icon"><i class="ra ra-leaf"></i></span>
+                        <span class="modern-menu-item-text">Primal</span>
+                    </a>
+                    <a class="modern-menu-item" href="Spells.aspx-Focus=true.htm" tppabs="https://2e.aonprd.com/Spells.aspx?Focus=true">
+                        <span class="modern-menu-item-icon"><i class="ra ra-aura"></i></span>
+                        <span class="modern-menu-item-text">Focus Spells</span>
+                    </a>
+                    <a class="modern-menu-item" href="Rituals.aspx.htm" tppabs="https://2e.aonprd.com/Rituals.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-rune-stone"></i></span>
+                        <span class="modern-menu-item-text">Rituals</span>
+                    </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-player-thunder-struck"></i></span>
+                    <span class="modern-menu-item-text">Mythic +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Rules.aspx-ID=3320.htm" tppabs="https://2e.aonprd.com/Rules.aspx?ID=3320">
+                        <span class="modern-menu-item-icon"><i class="ra ra-book"></i></span>
+                        <span class="modern-menu-item-text">Mythic Rules</span>
+                    </a>
+                    <a class="modern-menu-item" href="MythicCallings.aspx.htm" tppabs="https://2e.aonprd.com/MythicCallings.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-aware"></i></span>
+                        <span class="modern-menu-item-text">Callings</span>
+                    </a>
+                    <a class="modern-menu-item" href="MythicFeats.aspx.htm" tppabs="https://2e.aonprd.com/MythicFeats.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-muscle-up"></i></span>
+                        <span class="modern-menu-item-text">Mythic Feats</span>
+                    </a>
+                    <a class="modern-menu-item" href="MythicDestinies.aspx.htm" tppabs="https://2e.aonprd.com/MythicDestinies.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-aura"></i></span>
+                        <span class="modern-menu-item-text">Destinies</span>
+                    </a>
+                    <a class="modern-menu-item" href="MythicSpells.aspx.htm" tppabs="https://2e.aonprd.com/MythicSpells.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-lightning-trio"></i></span>
+                        <span class="modern-menu-item-text">Mythic Spells</span>
+                    </a>
+                    <a class="modern-menu-item" href="MythicRituals.aspx.htm" tppabs="https://2e.aonprd.com/MythicRituals.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-fire-ring"></i></span>
+                        <span class="modern-menu-item-text">Mythic Rituals</span>
+                    </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-help"></i></span>
+                    <span class="modern-menu-item-text">About the Archives +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="ContactUs.aspx.htm" tppabs="https://2e.aonprd.com/ContactUs.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-quill-ink"></i></span>
+                        <span class="modern-menu-item-text">Contact Us</span>
+                    </a>
+                    <a class="modern-menu-item" href="Contributors.aspx.htm" tppabs="https://2e.aonprd.com/Contributors.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-double-team"></i></span>
+                        <span class="modern-menu-item-text">Contributors</span>
+                    </a>
+                    <a class="modern-menu-item" href="Licenses.aspx.htm" tppabs="https://2e.aonprd.com/Licenses.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-book"></i></span>
+                        <span class="modern-menu-item-text">Licenses</span>
+                    </a>
+                </div>
+                <a class="modern-menu-item" href="Support.aspx.htm" tppabs="https://2e.aonprd.com/Support.aspx">
+                    <span class="modern-menu-item-icon"><i class="ra ra-diamond"></i></span>
+                    <span class="modern-menu-item-text">Support the Archives</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="shelyns-corner-wrapper">
+        <div class="shelyns-corner-overlay"></div>
+        <div class="shelyns-corner">
+            <div class="shelyns-corner-header">
+                <h2>Shelyn's Corner</h2>
+                <a href="javascript:void(0)" class="close-shelyns-corner">&times;</a>
+            </div>
+            <div class="shelyns-corner-content">
+                <div class="shelyns-corner-settings">
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-remaster">Prefer Pathfinder Remastered Core?</label>
+                        <input type="checkbox" id="shelyns-corner-setting-remaster" checked/>
+                    </div>
+                    <hr />
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-dyslexia">Dyslexia friendly fonts</label>
+                        <input type="checkbox" id="shelyns-corner-setting-dyslexia"/>
+                    </div>
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-sidebar-hover">Expand sidebar on hover</label>
+                        <input type="checkbox" id="shelyns-corner-setting-sidebar-hover" checked/>
+                    </div>
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-sidebar-shrink">Sidebar can be shrunk</label>
+                        <input type="checkbox" id="shelyns-corner-setting-sidebar-shrink" checked/>
+                    </div>
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-page-compress">Reduce page width</label>
+                        <input type="checkbox" id="shelyns-corner-setting-page-compress"/>
+                    </div>
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-modern-menu">Modern menu</label>
+                        <input type="checkbox" id="shelyns-corner-setting-modern-menu" checked/>
+                    </div>
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-link-previews">Link previews</label>
+                        <input type="checkbox" id="shelyns-corner-setting-link-previews" checked/>
+                    </div>
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-link-previews-search">Link previews in search bar</label>
+                        <input type="checkbox" id="shelyns-corner-setting-link-previews-search"/>
+                    </div>
+                </div>
+                <hr />
+                <div class="theme-gallery-wrapper"></div>
+                <hr />
+                <div class="feel-gallery">
+                    <div class="feel-example classic_feel" onclick="setFeel('classic_feel')">
+                        <h1 class="feel-title">Classic Feel</h1>
+                        <h2 class="feel-title">Classic Feel <span class="output"></span></h2>
+                        <h3 class="feel-title">Classic Feel</h3>
+                        <p>The classic look for the Archives of Nethys.</p>
+                        <table>
+                            <thead><td>Table</td></thead>
+                            <tr><td>Data</td></tr>
+                            <tr><td>More Data</td></tr>
+                        </table>
+                    </div>
+                    <div class="feel-example book_feel" onclick="setFeel('book_feel')">
+                        <h1 class="feel-title">Book Feel</h1>
+                        <h2 class="feel-title">Book Feel <span class="output"></span></h2>
+                        <h3 class="feel-title">Book Feel</h3>
+                        <p>An alternative feel, based on the Rulebooks.</p>
+                        <table>
+                            <thead><td>Table</td></thead>
+                            <tr><td>Data</td></tr>
+                            <tr><td>More Data</td></tr>
+                        </table>
+                    </div>
+                    <div class="feel-example round_feel" onclick="setFeel('round_feel')">
+                        <h1 class="feel-title">Round Feel</h1>
+                        <h2 class="feel-title">Round Feel<span class="output"></span></h2>
+                        <h3 class="feel-title">Round Feel</h3>
+                        <p>A rounded, modern look for the archives.</p>
+                        <table>
+                            <thead><td>Table</td></thead>
+                            <tr><td>Data</td></tr>
+                            <tr><td>More Data</td></tr>
+                        </table>
+                    </div>
+                    <div class="feel-example slim_feel" onclick="setFeel('slim_feel')">
+                        <h1 class="feel-title">Slim Feel</h1>
+                        <h2 class="feel-title">Slim Feel<span class="output"></span></h2>
+                        <h3 class="feel-title">Slim Feel</h3>
+                        <p>A variant of the Round feel, more compact.</p>
+                        <table>
+                            <thead><td>Table</td></thead>
+                            <tr><td>Data</td></tr>
+                            <tr><td>More Data</td></tr>
+                        </table>
+                    </div>
+                </div>
+                <hr />
+                <div class="shelyns-corner-settings">
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-orc">More Orc?</label>
+                        <input type="checkbox" id="shelyns-corner-setting-orc" />
+                    </div>
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-boar"><b>BOAR?</b></label>
+                        <input type="checkbox" id="shelyns-corner-setting-boar" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+      var legacyMode = getCore();
+
+      initializeMenuToggle(document.getElementById('minMaxMenu'));
+      initShelynsCorner();
+
+      window.nethysModernMenu.init();
+
+      initializeElasticSearch()
+      var initializeSearch = function (search) {
+          var button;
+          var text;
+          if (search.firstElementChild.classList.contains('search-input'))
+              text = search.firstElementChild;
+          if (search.lastElementChild.classList.contains('search-input'))
+              text = search.lastElementChild;
+          if (search.firstElementChild.classList.contains('search-button'))
+              button = search.firstElementChild;
+          if (search.lastElementChild.classList.contains('search-button'))
+              button = search.lastElementChild;
+
+          if (search) {
+              search.addEventListener('keypress', function (e) {
+                  if (e.keyCode == 13) {
+                      e.preventDefault();
+                      if (text.value != null && text.value.length > 0)
+                          window.location = window.location.origin + "/Search.aspx?q=" + encodeURIComponent(text.value);
+                  }
+              })
+          }
+          if (button) {
+              button.addEventListener('click', function (e) {
+                  window.location = window.location.origin + "/Search.aspx?q=" + encodeURIComponent(text.value);
+              });
+          }
+      };
+      var initializeExpand = function (toggle) {
+          var targetAttrString = "[data-target='" + toggle.dataset.toggle + "']";
+          //target = menu to be collapsed
+          var target = document.querySelector(targetAttrString);
+          toggle.addEventListener('click', function () {
+              var expanded = target.classList.contains('expanded');
+              expanded = !expanded;
+              if (expanded) {
+                  //hide other in group if exists
+                  if (target.dataset.group) {
+                      var otherExpanded = document.querySelector('.expanded[data-group="' + target.dataset.group + '"]');
+                      if (otherExpanded) {
+                          otherExpanded.classList.remove('expanded');
+                      }
+                  }
+                  target.classList.add('expanded');
+              } else {
+                  target.classList.remove('expanded');
+              }
+          });
+      };
+      (function () {
+          //toggles = link that expands/collapses target
+          var toggles = document.querySelectorAll('[data-toggle]');
+          toggles.forEach(function (toggle) {
+              initializeExpand(toggle);
+          });
+          //searches
+          var classicSearch = document.getElementById('classic-search');
+          initializeSearch(classicSearch);
+          var searches = document.querySelectorAll('.search');
+          searches.forEach(function (search) {
+              //initializeSearch(search);
+          });
+      })();
+
+      class NethysSearch extends HTMLElement {
+          constructor() {
+              super();
+
+              this.attachShadow({ mode: 'open' });
+
+              let container = document.createElement('div');
+              this.shadowRoot.append(container);
+
+              let fixedParams = this.getAttribute('fixed-params');
+
+              if (window.location.search.includes('Redirected=1')) {
+                  fixedParams = (fixedParams ? fixedParams + '&' : '') + 'Redirected=1';
+              }
+
+              if (window.location.search.includes('NoRedirect=1')) {
+                  fixedParams = (fixedParams ? fixedParams + '&' : '') + 'NoRedirect=1';
+              }
+
+              let fixedQueryString = this.getAttribute('fixed-query-string') ?? '';
+
+              if (!fixedQueryString.includes('category:item-bonus')) {
+                  fixedQueryString += ' !category:item-bonus';
+              }
+
+              let dataUrl = new URL(elasticUrl);
+              dataUrl.pathname = '/json-data';
+              dataUrl = dataUrl.toString();
+
+              let app = Elm.NethysSearch.init({
+                  node: container,
+                  flags: {
+                      autofocus: (this.getAttribute('autofocus') ?? 'true') == 'true',
+                      browserDateFormat: (new Date(2020, 9, 30).toLocaleDateString(navigator.language))
+                          .replace('2020', 'yyyy')
+                          .replace('10', 'MM')
+                          .replace('30', 'dd'),
+                      currentUrl: location.href,
+                      dataUrl: dataUrl,
+                      defaultQuery: this.getAttribute('default-query'),
+                      elasticUrl: elasticUrl,
+                      fixedParams: fixedParams,
+                      fixedQueryString: fixedQueryString,
+                      loadAll: this.getAttribute('load-all') == 'true',
+                      legacyMode: legacyMode,
+                      localStorage: { ...localStorage },
+                      noUi: this.getAttribute('no-ui') === 'true',
+                      pageDefaultDisplays: localStorage.getItem('page-default-displays'),
+                      pageId: this.getAttribute('page-id'),
+                      randomSeed: Math.floor(Math.random() * 2147483647),
+                      removeFilters: this.getAttribute('remove-filters')?.split(',') ?? [],
+                      resultBaseUrl: "/",
+                      showHeader: false,
+                      showQueryControls: this.getAttribute('show-query-controls') != 'false',
+                      windowHeight: window.innerHeight,
+                      windowWidth: window.innerWidth,
+                  }
+              });
+
+              app.ports.document_focusElement.subscribe(id => {
+                  window.requestAnimationFrame(() => {
+                      let element = this.shadowRoot.getElementById(id);
+
+                      if (element) {
+                          element.focus();
+                      }
+                  });
+              });
+
+              app.ports.document_scrollElementIntoView.subscribe(id => {
+                  window.requestAnimationFrame(() => {
+                      let element = this.shadowRoot.getElementById(id);
+
+                      if (element) {
+                          element.scrollIntoView({block: 'nearest'});
+                      }
+                  });
+              });
+
+              app.ports.localStorage_get && app.ports.localStorage_get.subscribe(function (key) {
+                  let value = localStorage.getItem(key);
+                  app.ports.localStorage_receive.send({ key: key, value: value });
+              });
+
+              app.ports.localStorage_set.subscribe(function (data) {
+                  localStorage.setItem(data.key, data.value);
+              });
+
+              window.addEventListener('popstate', function () {
+                  app.ports.navigation_urlChanged.send(location.href);
+              });
+
+              app.ports.navigation_pushUrl.subscribe(function (url) {
+                  history.pushState([], '', url);
+                  app.ports.navigation_urlChanged.send(location.href);
+              });
+
+              app.ports.navigation_loadUrl.subscribe(function (url) {
+                  location.href = url;
+              });
+
+              document.addEventListener('theme-changed', e => {
+                  app.ports.localStorage_receive.send({ key: 'theme', value: e.detail });
+              });
+
+              document.addEventListener('link-previews-changed', e => {
+                  app.ports.localStorage_receive.send({ key: 'link-previews-enabled', value: e.detail });
+              });
+
+              window.addEventListener('hashchange', e => {
+                  let url = new URL(e.newURL);
+                  if (url.hash != "#results") {
+                      return;
+                  }
+
+                  let results = this.shadowRoot.getElementById("results");
+                  if (!results) {
+                      return;
+                  }
+
+                  results.focus();
+                  results.scrollIntoView();
+                  window.location.hash = '';
+              });
+
+              if (this.getAttribute('no-ui') === 'true') {
+                  let linkPreviewTarget = null;
+
+                  document.addEventListener('mouseover', e => {
+                      const target = e.target.closest('a');
+                      const isSearchBar = e.target.closest('.searchBar') !== null;
+                      if (target && target != linkPreviewTarget) {
+                          let parent = getParentOffset(target.offsetParent);
+                          let data = {
+                              url: target.href,
+                              x: target.offsetLeft + parent.x,
+                              y: target.offsetTop + parent.y,
+                              height: target.offsetHeight,
+                              width: target.offsetWidth,
+                          }
+                          if (isSearchBar) {
+                              if (getFeature('search-bar-previews-enabled', '0') == '0') {
+                                  return;
+                              }
+                              data.x += window.scrollX;
+                              data.y += window.scrollY;
+                          }
+                          app.ports.document_linkEntered.send(data);
+                      } else if (!target && linkPreviewTarget) {
+                          app.ports.document_linkLeft.send("");
+                      }
+
+                      linkPreviewTarget = target;
+                  });
+              }
+
+              function getParentOffset(node) {
+                  if (!node) {
+                      return {
+                          x: 0,
+                          y: 0,
+                      };
+                  }
+                  let parent = getParentOffset(node.offsetParent);
+                  return {
+                      x: node.offsetLeft - node.scrollLeft + parent.x,
+                      y: node.offsetTop - node.scrollTop + parent.y,
+                  };
+              }
+
+              const resizeObserver = new ResizeObserver(entries => {
+                  app.ports.document_receiveBodySize.send({
+                      width: Math.round(entries[0].contentRect.width),
+                      height: Math.round(entries[0].contentRect.height),
+                  });
+              });
+
+              let relativeElement = document.getElementById('page');
+              resizeObserver.observe(relativeElement);
+
+              document.addEventListener('visibilitychange', () => {
+                  if (document.visibilityState === 'visible') {
+                      let rect = relativeElement.getBoundingClientRect();
+
+                      app.ports.document_receiveBodySize.send({
+                          width: Math.round(rect.width),
+                          height: Math.round(rect.height),
+                      });
+                  }
+              });
+          }
+      }
+
+      customElements.define('nethys-search', NethysSearch);
+    </script>
+</body>
+</html>

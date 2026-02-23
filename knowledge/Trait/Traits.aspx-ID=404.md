@@ -1,0 +1,8 @@
+# Fatal Aim - Traits - Archives of Nethys: Pathfinder 2nd Edition Database
+
+Source HTML: `docs/aonprd/Traits.aspx-ID=404.htm`
+
+# [Fatal Aim](./Traits.aspx-ID=404.md)
+
+Source [Guns & Gears pg. 232](../Source/Sources.aspx-ID=98.md)
+It’s possible to hold the stock of this weapon under one arm so you can fire it with a single hand as long as the other hand isn’t holding a weapon, shield, or anything else you would need to move and position, to ensure the weapon doesn’t slip out from under your arm. However, if you use both hands, the weapon can make fatal attacks. When you wield the weapon in two hands, it gains the fatal trait with the listed damage die. Holding the weapon underarm stably enough to fire is significantly more complicated than just releasing one hand from the weapon, so to switch between the two grips, you must do so with an Interact action rather than Releasing or as part of reloading.

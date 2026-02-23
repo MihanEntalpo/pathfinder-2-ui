@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Снапшот правил — Pathfinder 2 Remaster</title>
+  <title>Правила — Pathfinder 2 Remaster</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="container">
-    <h1>Локальный снапшот правил PF2</h1>
+    <h1>Локальная документация правил</h1>
     <nav class="nav">
       <a href="index.html">Главная</a>
       <a href="character.html">Персонажи</a>
@@ -16,30 +16,19 @@
       <a href="ancestry-feats.html">Черты происхождения</a>
       <a href="monster.html">Монстры</a>
       <a href="game.html">Игры</a>
-      <a class="active" href="rules.html">Снапшот правил</a>
+      <a class="active" href="rules.html">Правила</a>
     </nav>
   </header>
 
-  <main class="container grid" style="grid-template-columns: 1fr 1fr;">
+  <main class="container">
     <section class="panel">
-      <h2>Основные ссылки</h2>
-      <div class="list">
-        <a class="list-item" href="data/pf2_ru/snapshots/rules/index.html">Оглавление правил (`/rules`)</a>
-        <a class="list-item" href="data/pf2_ru/snapshots/rules/player-core/ancestries-and-backgrounds.html">Player Core: Ancestries and Backgrounds</a>
-        <a class="list-item" href="data/pf2_ru/snapshots/ancestries/index.html">Справочник ancestry (index)</a>
-        <a class="list-item" href="data/pf2_ru/manifest.json">Manifest снапшота</a>
-      </div>
-    </section>
-
-    <section class="panel">
-      <h2>Обновление данных</h2>
+      <h2>Статус</h2>
+      <p>Локальная копия правил подключена.</p>
+      <p><a href="docs/aonprd/index.htm">Открыть офлайн HTML-базу (AONPRD)</a></p>
+      <p><a href="knowledge/">Открыть markdown-базу знаний (knowledge)</a></p>
       <p class="muted small">
-        Чтобы обновить локальную копию правил и встроенные ancestry/feats, запустите в корне проекта:
-      </p>
-      <pre><code>scripts/download_pf2_rules.sh
-node scripts/generate_pf2_defaults.js</code></pre>
-      <p class="muted small">
-        После этого при первом открытии страниц данные в `localStorage` дополняются новыми записями из снапшота.
+        Исходный офлайн-архив хранится в <code>docs/aonprd/</code>,
+        markdown-конверсия — в <code>knowledge/</code>.
       </p>
     </section>
   </main>

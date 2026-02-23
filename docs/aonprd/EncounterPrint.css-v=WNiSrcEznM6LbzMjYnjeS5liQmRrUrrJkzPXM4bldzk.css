@@ -1,0 +1,182 @@
+body {
+    background: white !important;
+    padding: 0 !important;
+    margin: 4px !important;
+    color: black !important;
+    font-size: 70% !important;
+}
+
+body.encounters-font-50 {
+    font-size: 50% !important;
+}
+
+body.encounters-font-60 {
+    font-size: 60% !important;
+}
+
+body.encounters-font-70 {
+    font-size: 70% !important;
+}
+
+body.encounters-font-80 {
+    font-size: 80% !important;
+}
+
+body.encounters-font-90 {
+    font-size: 90% !important;
+}
+
+body.encounters-font-100 {
+    font-size: 100% !important;
+}
+
+body * {
+    text-decoration: none !important;
+}
+
+.modern-menu-container {
+    display: none !important;
+}
+
+#page > .header,
+#page > .new-navbar {
+    display: none;
+}
+
+#main-wrapper {
+    padding: 0 !important;
+    margin: 0 !important;
+    background-color: white !important;
+}
+
+#main-wrapper > .menutitle {
+    display: none;
+}
+
+#main {
+    line-height: 1.4 !important;
+}
+
+body #wrapper {
+    width: auto !important;
+    max-width: unset;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+body:not(.old).fixedSidebar #wrapper {
+    width: auto !important;
+}
+
+hr {
+    margin: 0.1em 0;
+}
+
+#footer {
+    display: none;
+}
+
+.encounters-navigation {
+    display: none;
+}
+
+h1.title {
+    background: none !important;
+    color: black !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    font-variant: normal !important;
+    font-weight: normal !important;
+    font-size: 1.5em !important;
+    border: none !important;
+}
+
+.encounters:not(.is-print-columns) .encounter {
+    columns: unset !important;
+    column-fill: unset !important;
+}
+
+.encounters.is-print-columns .encounter {
+    columns: 2;
+    column-fill: auto !important;
+}
+
+.encounters h2 {
+    column-span: all;
+}
+
+.encounters .encounter-options {
+    display: none;
+}
+
+.encounters .encounter-level-range + .encounter-level-range {
+    break-before: page;
+}
+
+.encounters .encounter-set.is-shown ~ .encounter-set.is-shown > :first-child {
+    break-before: page;
+}
+
+.encounters .encounter-participant {
+    break-inside: unset;
+    text-align: justify;
+}
+
+.encounters .encounter-participant h3.title {
+    text-align: left;
+}
+
+.encounters.is-left-align .encounter-participant {
+    text-align: unset;
+}
+
+.encounters .encounter.is-shown .encounter-participant {
+    break-inside: avoid-page;
+}
+
+.encounters .encounter-participant .external-link {
+    color: inherit !important;
+}
+
+.encounters h2,
+.encounters h3 {
+    background: none !important;
+    color: black !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    font-variant: normal;
+}
+
+.encounters h3 {
+    font-size: 1.2em;
+    text-transform: uppercase;
+    border-bottom: 1px solid black;
+    border-radius: 0 !important;
+    margin-bottom: 3px !important;
+}
+
+.encounters h3 * {
+    text-transform: uppercase;
+}
+
+.trait,
+.traitsize,
+.traituncommon,
+.traitrare,
+.traitunique,
+.traitaon,
+.traitalignment {
+    print-color-adjust: exact;
+    font-size: 0.9em !important;
+    padding: 2px 5px !important;
+    line-height: 1.1;
+    margin: 0 0.2em 0 0 !important;
+}
+
+.encounters .EWChange * {
+    color: rgb(128, 0, 0) !important;
+}
+
+.encounters .title .EWChange * {
+    font-weight: bold !important;
+}

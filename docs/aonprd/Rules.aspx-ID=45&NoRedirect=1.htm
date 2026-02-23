@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script type="text/javascript" async src="js-id=UA-137805785-3.js" tppabs="https://www.googletagmanager.com/gtag/js?id=UA-137805785-3"></script>
+    <script type="text/javascript">
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-137805785-3');
+    </script>
+    <title>
+        Example of Play - Rules - Archives of Nethys: Pathfinder 2nd Edition Database
+    </title>
+    
+
+    <link href="Layout.css-v=EB6PS6lfpX6G1uwFu7uHcEh6oScz15hZHsXHCNMHzLg.css" tppabs="https://2e.aonprd.com/Styles/Layout.css?v=EB6PS6lfpX6G1uwFu7uHcEh6oScz15hZHsXHCNMHzLg" rel="stylesheet" type="text/css" />
+    <link href="rpg-awesome.min.css" tppabs="https://2e.aonprd.com/Styles/rpg-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="Typography.css-v=3et3D84VeOgcsPaSRyGH6nF1FfjjYgVpcGBq4HyG5vg.css" tppabs="https://2e.aonprd.com/Styles/Typography.css?v=3et3D84VeOgcsPaSRyGH6nF1FfjjYgVpcGBq4HyG5vg" rel="stylesheet" type="text/css" />
+    <link href="themes.css" tppabs="https://2e.aonprd.com/themes" rel="stylesheet" type="text/css" />
+    <link href="SitePrint.css-v=8wGbZVsBHNUZjW78tbaeVtZ_Jlm0ss-wjdlzy_jKlOY.css" tppabs="https://2e.aonprd.com/Styles/SitePrint.css?v=8wGbZVsBHNUZjW78tbaeVtZ_Jlm0ss-wjdlzy_jKlOY" rel="stylesheet" type="text/css" media="print" />
+
+    <link href="css-family=Julee.css" tppabs="https://fonts.googleapis.com/css?family=Julee" rel="stylesheet" type="text/css" />
+    <link href="css-family=Andika.css" tppabs="https://fonts.googleapis.com/css?family=Andika" rel="stylesheet" type="text/css" />
+    <link href="css2-family=Lato-ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap.css" tppabs="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="search" type="application/opensearchdescription+xml" title="Search the Archives of Nethys" href="https://2e.aonprd.com/opensearch.xml" />
+
+
+    <script type="text/javascript">
+        window.elasticUrl = 'https://elasticsearch.aonprd.com/aon-test';
+    </script>
+
+        <script src="nethys-search-9f2620f2bfdf2014fd0b0c157f03248921d02563.js" tppabs="https://elasticsearch.aonprd.com/js/nethys-search-9f2620f2bfdf2014fd0b0c157f03248921d02563.js"></script>
+
+    <script
+      src="jquery-3.6.0.min.js" tppabs="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"></script>
+    <script src="semantic.min.js" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/semantic.min.js" integrity="sha512-5cguXwRllb+6bcc2pogwIeQmQPXEzn2ddsqAexIBhh7FO1z5Hkek1J9mrK2+rmZCTU6b6pERxI7acnp1MpAg4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="search.min.css" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/search.min.css" integrity="sha512-1xyHOORqcJ80bareQ2TWmQE+WZ/TlsqjqILbLHeM3Urtw720aiFXE/N+Xm4MAJpcn42e3k4Z8ZpqZfsA2VVyNw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="transition.min.css" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/transition.min.css" integrity="sha512-zsEyDFFD+yPxc7Kq8c3byp2H3tfx4GgT4wvCDzDGiOlkk2hl454XOHzHfN/OsPilopfPEbRzVJ0wxlIa/9BOyg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="transition.min.js" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/transition.min.js" integrity="sha512-zPx44KLp+BP6OKcCIPQibTiLz0WAc2s9syi+7wOT+Ql2D1/kAX8y7K1rz8vuTtrhRS2dMZ7zVS5dQoHTvkXJCA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="icon.min.css" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/icon.min.css" integrity="sha512-cKaYuptKrUbQ4/r0qmxhpQDjPWb7/SYN6gQRYMOQqPJ2+S4Bmb1zZ1/SAuszp+E6yoakjQFpM+rAzuw+EwR+xw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="input.min.css" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/input.min.css" integrity="sha512-6+BQOwPqqk5AianROXkI3LKgnLcjZbEV3KbhO++sKXemybg0FugrODki+nBsg9FipqlKSMd4ppnpkqC6VEpFiA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="button.min.css" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/button.min.css" integrity="sha512-XMrByQiBPJwH350YvTKR/XTY1fOQX4lSQqeft++WcyY39l0eKoPXOgx1OJHEODhHCW1FfvVl/Bdr90QE08FG+Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="dropdown.min.css" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/dropdown.min.css" integrity="sha512-hDsG55Tp5IgyWKbBbNhOo0+bLTdIVVAGW09a7IFvgIkKg/xrjOdOA2lEPFkkgJQ3NuB7DxDFlSHX7/JYvFLYfA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="dropdown.min.js" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/dropdown.min.js" integrity="sha512-1SzBIESNYM3Y8JkQrS1Mu2dPnPaAqeQkCV9KfDA2eYXBEzdkhHWyqTP6P0OAsh1RSC4cDvr8DmYVTmb/YWGYpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="showdown.min.js" tppabs="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js" integrity="sha512-LhccdVNGe2QMEfI3x4DVV3ckMRe36TfydKss6mJpdHjNFiV07dFpS2xzeZedptKZrwxfICJpez09iNioiSZ3hA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="lodash.min.js" tppabs="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="modernMenu.js" tppabs="https://2e.aonprd.com/Scripts/modernMenu.js"></script>
+
+    <script type="text/javascript" src="tableState.js" tppabs="https://2e.aonprd.com/Scripts/tableState.js"></script>
+    <script type="text/javascript" src="drawerHandlers.js" tppabs="https://2e.aonprd.com/Scripts/drawerHandlers.js"></script>
+    <script type="text/javascript" src="hideFilter.js" tppabs="https://2e.aonprd.com/Scripts/hideFilter.js"></script>
+    <script type="text/javascript" src="searchBar.js" tppabs="https://2e.aonprd.com/Scripts/searchBar.js"></script>
+
+    <script type="text/javascript" src="previewModal.js" tppabs="https://2e.aonprd.com/Scripts/previewModal.js"></script>
+    
+    
+    <meta name="keywords" content="Archives, Nethys, Wiki, Archives of Nethys, Pathfinder, Official, AoN, AoNPRD, PRD, PFSRD, 2E, 2nd Edition, Rules, Example of Play" />
+    <meta name="description" content="The following example is presented to give you a better idea of how the game of Pathfinder is played. In this adventure, Erik is the GM. Lyz is playing Valeros, a daring human fighter, James is playing Merisiel, a deadly elven rogue, and Judy is taking on the role of Kyra, a fiery human cleric of Sarenrae. The group has just defeated a horde of undead and is making its way into an ancient mausoleum. Erik: The entrance to the crypt stands before you, a set of crumbling stairs leading down into darkness. A terrible smell issues forth from the doorway&#x2014;the stench of old, rotted flesh. Lyz: I&#x27;m not afraid of a foul stink! I draw my sword and ready my shield. Judy: The light of Sarenrae will guide us. I cast my light spell on my religious symbol. Erik: All right, a glowing radiance spills forth, illuminating the stairs. They appear to go down only about 10 feet before opening up into a chamber. Puddles of stagnant water fill the cracks between uneven stone tiles. James: I should go first to make sure it&#x27;s safe. I&#x27;m going to draw my rapier and carefully go down the stairs, looking for traps as I go. Erik: Sure, but looking for traps is a secret check, so I&#x27;ll roll for you. What&#x27;s your Perception modifier? James: I have a &#x2B;5. Erik rolls a d20 behind his GM screen, hidden from the players&#x27; view, and gets a 17 on the die for a total of 22, more than enough to find the trip wire on the third step. Erik: Your caution pays off! You spot a thin wire located at ankle height just above the third stair. James: I point it out to the others and head down. Lyz: I follow right behind Merisiel, avoiding the wire but otherwise keeping an eye out for danger. Judy: Me too. Erik: Okay! You make it down the stairs to find yourselves in a crypt. Ancient wood coffins are arranged around the room, covered in cobwebs and dust. Directly ahead, on a raised dais, is a stone casket adorned with wicked-looking symbols. You can tell that it was once wrapped in iron chains, but now twisted links are scattered around the room, along with chunks of what must have been the casket&#x27;s lid. From the damage, it looks like it was shattered from within! Judy: Sarenrae protect us. I draw my blade and advance&#x2014;I want a better look at those symbols. Lyz: I&#x27;ll keep pace with her. I don&#x27;t like the look of this. James: I think I&#x27;ll stay back here and hide behind one of the coffins. Erik: Merisiel takes cover while the two of you advance. As you draw near, the stench of rot grows stronger until it&#x27;s almost overpowering. Suddenly you see the source of the horrid odor. Rising up out of the casket is a nightmarish dead thing. It might have once been a human, but it&#x27;s hard to tell from its withered body. Its flesh is the color of a new bruise, pulled so tight across its bones that it has split in places. It&#x27;s hairless, with pointed ears, but worst of all, its mouth is lined with tiny, sharp teeth and its tongue is entirely too long. Lyz: So, not a friend? Erik: Most certainly not. It looks poised to leap at you and attack. Roll for initiative! Valeros and Kyra need to roll Perception, while Merisiel should roll Stealth. Everyone rolls for their initiative. Lyz rolls a 2 for Valeros, getting a total of 8. Judy rolls better for Kyra, getting a total of 14. James uses Stealth for Initiative, because Merisiel was hiding at the start of the fight, and rolls a 17 for a total of 25! Erik rolls for the undead creature, getting a 12. Erik records all these totals, putting the characters in order from highest to lowest. Erik: Looks like Merisiel gets to act first. Whatever that thing is, you&#x27;re pretty sure it doesn&#x27;t know you are there. James: Awesome! For my first action, I want to draw a dagger. For my second, I want to move closer. Erik: You can get to within 15 feet of it with one Stride action. James: Perfect. For my final action, I&#x27;m going to throw my dagger at it! James rolls a 13 and adds 8, due to Merisiel&#x27;s skill at thrown daggers, for a total of 21, but the range means he takes a &#x2013;2 penalty for a result of 19. Erik consults his notes to learn that the monster has an AC of 18. Erik: That&#x27;s a hit! Go ahead and roll damage. James: Okay, and I get to add extra damage due to sneak attack. Rogues have the ability to deal extra damage to foes that haven&#x27;t acted yet in an encounter. This extra damage also applies to attacks against enemies that are distracted. James rolls 1d4 for the dagger and 1d6 for the sneak attack, and he adds 4 for Merisiel&#x27;s Dexterity, getting a total of 9. Erik: It hisses as the blade sinks into its shoulder. That looks like it hurt, but the undead thing doesn&#x27;t appear to be slowing down. James, that was all three of your actions. Next up is Kyra! Judy: I think this is undead. What do I know about it? Erik: You use an action to recall your training about the living dead. Give me a Religion skill check. Judy rolls a 16, adding Kyra&#x27;s &#x2B;8 with Religion to get a total of 24. Erik: At first, you thought this thing might be a ghoul, which is a type of undead that feasts on the flesh of the dead, but the terrible smell reveals the truth. This thing is a ghast, a more powerful type of ghoul. You are pretty sure that its stench can make you sick and that its claws can paralyze you with a touch. Judy: This is bad. I am going to spend my last two actions to cast bless. It gives anyone next to me a &#x2B;1 bonus to attack rolls. Casting this spell is an activity that requires two actions to complete, and it has two components. The complex gestures needed to invoke the spell are the somatic component, and Kyra&#x27;s prayers to her deity are the verbal component. Erik: Okay! The ghast leaps from the casket straight toward Merisiel. The stench of its rotting body is absolutely horrific up close. Attempt a Fortitude save! James rolls an 8, for a total of 14. Erik: Not quite enough&#x2014;you gain the sickened 1 condition, which is going to give you a &#x2013;1 penalty to most of your d20 rolls. Next, it lunges at you, trying to bite you! James: Oh no! I use my reaction to nimbly dodge out of the way. Erik rolls an attack roll for the ghast, getting an 9 on the die. Looking at the monster&#x27;s statistics, he adds 11 for a total of 20. Merisiel&#x27;s AC is normally 19, but the Nimble Dodge feat lets her use her reaction to increase her AC by 2 against a single attack. In this case, it turns the ghast&#x27;s attack into a miss. Erik: Does a 20 hit you? James: Nope, just missed! Erik: You twist away from the ghast as its tongue leaves a slimy film on your armor. With its final action, the undead menace lashes out at you with its claw. Erik rolls a second attack with the ghast, this time with its claw. Normally this attack would take a &#x2013;5 multiple attack penalty, but since the claw has the agile trait, the penalty is only &#x2013;4. He rolls a 19 on the die, adds 11 for the ghoul&#x27;s attack modifier and subtracts 4, for a total of 26. Erik: You may have dodged the ghast&#x27;s bite, but the thing&#x27;s bony claw rakes across your face! Erik knows this is a hit and rolls the ghast&#x27;s claw damage, getting a total of 8. Erik: Take 8 points of damage, and I need you to attempt a Fortitude saving throw as a numbing sensation spreads from the wound. James rolls a Fortitude saving throw. He gets a 4 on the die, and after adding his bonus and the penalty from the sickened condition, it comes out to only a 9. James: This isn&#x27;t my day. I don&#x27;t suppose a 9 is good enough? Erik: I am afraid not. You are paralyzed! Erik notes that Merisiel is paralyzed, making her unable to act, but she will get a new saving throw at the end of each of her turns to shake off the effect. Erik: A dry, creaking laugh escapes the ghast&#x27;s curled lips, but that&#x27;s the end of its turn. Valeros, you are the last one to act this round. Lyz: About time, too! I raise my shield and use my final two actions to make a Sudden Charge! Sudden Charge is a fighter feat that lets Valeros move up to twice his Speed and attack at the end of his movement, all for only two actions. Erik: As you draw near, the smell is horrific. Attempt a Fortitude save. After rolling, Lyz gets a 19 on the Fortitude save. Erik: You fight off the nausea from this thing&#x27;s stench. Make your attack roll. Lyz rolls the die and it comes up a 20. Lyz: I got a 20! That must be a critical success! Erik: Your blade hits the vile creature right in the neck, dealing double damage! Lyz rolls a 5 on her d8, then adds 4 because of Valeros&#x27;s Strength modifier. Because it is a critical success, she then doubles the total. Lyz: A mighty 18 damage! That surely had to kill it! Erik: I&#x27;m afraid not. Black ichor runs from the deep wound on its neck, but it only turns to look at you. You can see burning hatred in its eyes! Lyz: Uh-oh. That is the end of the first round of combat. The second round begins immediately after this, using the same initiative order as before. The fight is far from over... " />
+
+
+    <meta charset="utf-8"/>
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="darkreader-lock" />
+    <style type="text/css">        
+        .nav-parent > * {
+            display: block;
+        }
+        .mobile-menu-toggle{
+            display:none;
+        }
+        #main-menu .nav-parent > .brand > .title{
+            display: none;
+        }
+    </style>
+</head>
+<body class="dark aon_dark_theme classic_feel">
+    <div id="wrapper" class="clearfix">
+
+
+        <script type="text/javascript" src="toggle.js" tppabs="https://2e.aonprd.com/Scripts/toggle.js"></script>
+
+
+        <div class="page clearfix" id="page">
+            <div class="header">
+                <div class="clear hideSkiplink" id="main-menu" >
+                    <a class="mobile-menu-toggle" id="mobile-menu-toggle" href="javascript:void(0);" data-toggle="mobile">|||</a>
+                    <div class="splash"></div>
+                    <div class="nav-parent" id="nav-parent">
+                        <a href="index.htm" tppabs="https://2e.aonprd.com/" style="font-size:larger" class="brand">
+                            <span class="home">
+                                Home
+                            </span>
+                        </a>
+                        <a href="Actions.aspx.htm" tppabs="https://2e.aonprd.com/Actions.aspx">Actions/Activities</a>
+                        <a href="Afflictions.aspx.htm" tppabs="https://2e.aonprd.com/Afflictions.aspx">Afflictions</a>
+                        <a href="Ancestries.aspx.htm" tppabs="https://2e.aonprd.com/Ancestries.aspx">Ancestries</a>
+                        <a href="Archetypes.aspx.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx">Archetypes</a>
+                        <a href="Backgrounds.aspx.htm" tppabs="https://2e.aonprd.com/Backgrounds.aspx">Backgrounds</a>
+                        <a href="Classes.aspx.htm" tppabs="https://2e.aonprd.com/Classes.aspx">Classes</a>
+                        <a href="Conditions.aspx.htm" tppabs="https://2e.aonprd.com/Conditions.aspx">Conditions</a>
+                        <a href="Creatures.aspx.htm" tppabs="https://2e.aonprd.com/Creatures.aspx">Creatures</a>
+                        <a href="Equipment.aspx.htm" tppabs="https://2e.aonprd.com/Equipment.aspx">Equipment</a>
+                        <a href="Feats.aspx.htm" tppabs="https://2e.aonprd.com/Feats.aspx">Feats</a>
+                        <a href="Hazards.aspx.htm" tppabs="https://2e.aonprd.com/Hazards.aspx">Hazards</a>
+                        <a href="MythicCallings.aspx.htm" tppabs="https://2e.aonprd.com/MythicCallings.aspx">Mythic</a>
+                        <a href="Rules.aspx.htm" tppabs="https://2e.aonprd.com/Rules.aspx">Rules</a>
+                        <a href="Setting.aspx.htm" tppabs="https://2e.aonprd.com/Setting.aspx">Setting</a>
+                        <a href="Skills.aspx.htm" tppabs="https://2e.aonprd.com/Skills.aspx">Skills</a>
+                        <a href="Spells.aspx.htm" tppabs="https://2e.aonprd.com/Spells.aspx">Spells/Rituals</a>
+                        <a href="Traits.aspx.htm" tppabs="https://2e.aonprd.com/Traits.aspx">Traits</a>
+                        <img src="heading_flourish.png" tppabs="https://2e.aonprd.com/Images/heading_flourish.png" alt="flourish" class="flourish" />
+                        <a href="Licenses.aspx.htm" tppabs="https://2e.aonprd.com/Licenses.aspx">Licenses</a>
+                        <a href="Sources.aspx.htm" tppabs="https://2e.aonprd.com/Sources.aspx">Sources</a>
+                        <img src="heading_flourish.png" tppabs="https://2e.aonprd.com/Images/heading_flourish.png" alt="flourish" class="flourish" />
+                        <a href="ContactUs.aspx.htm" tppabs="https://2e.aonprd.com/ContactUs.aspx">Contact Us</a>
+                        <a href="Contributors.aspx.htm" tppabs="https://2e.aonprd.com/Contributors.aspx">Contributors</a>
+                        <a href="Support.aspx.htm" tppabs="https://2e.aonprd.com/Support.aspx">Support the Archives</a>
+                        <div id="classic-search" class="search">
+                            <input type="text" class="search-input" placeholder="Search" />
+                            <button type="button" class="search-button">
+                                <svg class="Icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="height: 24px; width: 24px; fill: "><path d="M0 0h512v512H0z" fill="transparent" fill-opacity="0"></path><g class="" transform="translate(0,0)" style="touch-action: none;"><path d="M333.78 20.188c-39.97 0-79.96 15.212-110.405 45.656-58.667 58.667-60.796 152.72-6.406 213.97l-15.782 15.748 13.25 13.25 15.75-15.78c61.248 54.39 155.3 52.26 213.968-6.407 60.887-60.886 60.888-159.894 0-220.78C413.713 35.4 373.753 20.187 333.78 20.187zm0 18.562c35.15 0 70.285 13.44 97.158 40.313 53.745 53.745 53.744 140.6 0 194.343-51.526 51.526-133.46 53.643-187.5 6.375l.218-.217c-2.35-2.05-4.668-4.17-6.906-6.407-2.207-2.206-4.288-4.496-6.313-6.812l-.218.22c-47.27-54.04-45.152-135.976 6.374-187.502C263.467 52.19 298.63 38.75 333.78 38.75zm0 18.813c-30.31 0-60.63 11.6-83.81 34.78-46.362 46.362-46.362 121.234 0 167.594 10.14 10.142 21.632 18.077 33.905 23.782-24.91-19.087-40.97-49.133-40.97-82.94 0-15.323 3.292-29.888 9.22-43-4.165 20.485.44 40.88 14.47 54.907 24.583 24.585 68.744 20.318 98.624-9.562 29.88-29.88 34.146-74.04 9.56-98.625-2.375-2.376-4.943-4.473-7.655-6.313 45.13 8.648 79.954 46.345 84.25 92.876 4.44-35.07-6.82-71.726-33.813-98.72-23.18-23.18-53.47-34.78-83.78-34.78zM176.907 297.688L42.094 432.5l34.562 34.563L211.47 332.25l-34.564-34.563zM40 456.813L24 472.78 37.22 486l15.968-16L40 456.812z" fill-opacity="1"></path></g></svg>
+                            </button>
+                        </div>       
+                            <a id="minMaxMenu" onclick='setMenuState("min")'>Maximize Menu</a>
+                    </div>
+                    
+                    <div class="nav-parent expand-collapse" id="mobile-nav-parent" data-target="mobile">
+                        <a href="index.htm" tppabs="https://2e.aonprd.com/" style="font-size:larger" class="brand">
+                            <span class="title">
+                                Archives of Nethys
+                            </span>
+                        </a>
+                        <a href="Afflictions.aspx.htm" tppabs="https://2e.aonprd.com/Afflictions.aspx">Afflictions</a>
+                        <a href="javascript:void(0);" data-toggle="cc">Character Creation +</a>
+                        <div class="expand-collapse expand-collapse-group hide-when-collapsed expanded" data-target="cc" data-group="menus">
+                            <a href="Ancestries.aspx.htm" tppabs="https://2e.aonprd.com/Ancestries.aspx">Ancestries</a>
+                            <a href="Archetypes.aspx.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx">Archetypes</a>
+                            <a href="Backgrounds.aspx.htm" tppabs="https://2e.aonprd.com/Backgrounds.aspx">Backgrounds</a>
+                            <a href="Classes.aspx.htm" tppabs="https://2e.aonprd.com/Classes.aspx">Classes</a>
+                            <a href="Feats.aspx.htm" tppabs="https://2e.aonprd.com/Feats.aspx">Feats</a>
+                            <a href="Skills.aspx.htm" tppabs="https://2e.aonprd.com/Skills.aspx">Skills</a>
+                        </div>
+                        <a href="Creatures.aspx.htm" tppabs="https://2e.aonprd.com/Creatures.aspx">Creatures</a>
+                        <a href="Equipment.aspx.htm" tppabs="https://2e.aonprd.com/Equipment.aspx">Equipment</a>
+                        <a href="Setting.aspx.htm" tppabs="https://2e.aonprd.com/Setting.aspx">Setting</a>
+                        <a href="Spells.aspx.htm" tppabs="https://2e.aonprd.com/Spells.aspx">Spells/Rituals</a>
+                        <a href="javascript:void(0);" data-toggle="rules">Rules +</a>
+                        <div class="expand-collapse expand-collapse-group hide-when-collapsed" data-target="rules" data-group="menus">
+                            <a href="Actions.aspx.htm" tppabs="https://2e.aonprd.com/Actions.aspx">Actions/Activities</a>
+                            <a href="Conditions.aspx.htm" tppabs="https://2e.aonprd.com/Conditions.aspx">Conditions</a>
+                            <a href="Rules.aspx.htm" tppabs="https://2e.aonprd.com/Rules.aspx">Rules</a>
+                            <a href="Traits.aspx.htm" tppabs="https://2e.aonprd.com/Traits.aspx">Traits</a>
+                        </div>
+                        <a href="Hazards.aspx.htm" tppabs="https://2e.aonprd.com/Hazards.aspx">Hazards</a>
+                        <a href="javascript:void(0);" data-toggle="mythic" data-group="">Mythic +</a>
+                        <div class="expand-collapse expand-collapse-group hide-when-collapsed" data-target="mythic" data-group="menus">
+                            <a href="Rules.aspx-ID=3320.htm" tppabs="https://2e.aonprd.com/Rules.aspx?ID=3320">Mythic Rules</a>
+                            <a href="MythicCallings.aspx.htm" tppabs="https://2e.aonprd.com/MythicCallings.aspx">Callings</a>
+                            <a href="MythicFeats.aspx.htm" tppabs="https://2e.aonprd.com/MythicFeats.aspx">Mythic Feats</a>
+                            <a href="MythicDestinies.aspx.htm" tppabs="https://2e.aonprd.com/MythicDestinies.aspx">Destinies</a>
+                            <a href="MythicSpells.aspx.htm" tppabs="https://2e.aonprd.com/MythicSpells.aspx">Mythic Spells</a>
+                            <a href="MythicRituals.aspx.htm" tppabs="https://2e.aonprd.com/MythicRituals.aspx">Mythic Rituals</a>
+                        </div>
+                        <a href="Sources.aspx.htm" tppabs="https://2e.aonprd.com/Sources.aspx">Sources</a>
+                        <a href="javascript:void(0);" data-toggle="about" data-group="">About the Archives +</a>
+                        <div class="expand-collapse expand-collapse-group hide-when-collapsed" data-target="about" data-group="menus">
+                            <a href="Licenses.aspx.htm" tppabs="https://2e.aonprd.com/Licenses.aspx">Licenses</a>
+                            <a href="ContactUs.aspx.htm" tppabs="https://2e.aonprd.com/ContactUs.aspx">Contact Us</a>
+                            <a href="Contributors.aspx.htm" tppabs="https://2e.aonprd.com/Contributors.aspx">Contributors</a>
+                            <a href="Support.aspx.htm" tppabs="https://2e.aonprd.com/Support.aspx">Support the Archives</a>
+                        </div>
+                        <div id="mobileSearch" class="ui fluid search">
+                            <div class="ui action icon input" style="width:90%;height:100%">
+                                <input class="prompt" type="text" placeholder="Search..."/>
+                                <button class="ui icon button" onclick="jumpToSearch('#mobileSearch')">
+                                    <i class="search icon"></i>
+                                </button>
+                            </div>
+                            <div class="results"></div>
+                        </div>
+                        <a href="index.htm" tppabs="https://2e.aonprd.com/">
+                                <img src="PF2Logo_Nethys_400_Selected.png" tppabs="https://2e.aonprd.com/Images/PF2Logo_Nethys_400_Selected.png" alt="Pathfinder RPG (2nd Edition)" />
+                            </a>
+                        <a href="https://www.aonprd.com/"  >
+                            <img src="PF1Logo_Nethys_200.png" tppabs="https://2e.aonprd.com/Images/PF1Logo_Nethys_200.png" alt="Pathfinder RPG (1st Edition)" />
+                        </a> 
+                        <a href="https://www.aonsrd.com/" >
+                            <img src="SFLogo_Nethys_200.png" tppabs="https://2e.aonprd.com/Images/SFLogo_Nethys_200.png" alt="Starfinder RPG (1st Edition)" />
+                        </a>
+                        <a href="https://2e.aonsrd.com/" >
+                            <img src="starfinder_2_logo_200.webp" tppabs="https://2e.aonprd.com/Images/starfinder_2_logo_200.webp" alt="Starfinder RPG (2nd Edition)" />
+                        </a>
+                    </div>
+                </div>
+                <div class="theme-toggle-wrapper" title="Toggle Theme">
+                    <div class="theme-open" title="Change Theme"><i class="ra ra-flowers"></i></div>
+                </div>
+            </div>
+
+            <div class="new-navbar">
+                <div class="drawer-toggle" title="Expand Sidebar" onclick="switchDrawer()">
+                    <img src="NethysMask.png" tppabs="https://2e.aonprd.com/Images/NethysMask.png" alt="&#xe030" /></div>
+                    <a class="title" href="index.htm" tppabs="https://2e.aonprd.com/">Archives of Nethys</a>
+                    <div class="searchBar">
+                        <div id="desktopSearch" class="ui fluid search">
+                            <div class="ui action icon input" style="width:100%;height:100%">
+                                <input class="prompt" type="text" placeholder="Search..."/>
+                                <button class="ui icon button" onclick="jumpToSearch('#desktopSearch')">
+                                        <i class="search icon"></i>
+                                    </button>
+                            </div>
+                            <div class="results"></div>
+                        </div>                   
+                    </div>
+                    <div class="game-selector">
+                        <div class="game-selector-options">
+                            <a class="game-selector-option" href="https://aonprd.com/" >
+                                <img src="PF1Logo_Nethys.png" tppabs="https://2e.aonprd.com/Images/PF1Logo_Nethys.png" alt="Pathfinder 1e" />
+                            </a>
+                            <a class="game-selector-option" href="https://aonsrd.com/" >
+                                <img src="SFLogo_Nethys.png" tppabs="https://2e.aonprd.com/Images/SFLogo_Nethys.png" alt="Starfinder 1e" />
+                            </a>
+                            <a class="game-selector-option" href="https://2e.aonsrd.com/" >
+                                <img src="starfinder_2_logo.webp" tppabs="https://2e.aonprd.com/Images/starfinder_2_logo.webp" alt="Starfinder 2e" />
+                            </a>
+                        </div>
+                        <img class="game-selector-current" src="PF2Logo_Nethys.png" tppabs="https://2e.aonprd.com/Images/PF2Logo_Nethys.png" alt="Pathfinder 2e" />
+                    </div>
+                    <div class="theme-open" title="Change Theme"><i class="ra ra-flowers"></i></div>
+            </div>
+
+            <div class="main-wrapper" id="main-wrapper">
+                <div class="menutitle">
+                    <h1>
+                        Archives of Nethys
+                    </h1>
+                    <h2 class="game-titles">
+                        <a href="https://www.aonprd.com/"  >
+                            <img src="PF1Logo_Nethys.png" tppabs="https://2e.aonprd.com/Images/PF1Logo_Nethys.png" alt="Pathfinder RPG (1st Edition)" />
+                        </a> 
+                        <a href="index.htm" tppabs="https://2e.aonprd.com/" class="selected">
+                            <img src="PF2Logo_Nethys-Selected.png" tppabs="https://2e.aonprd.com/Images/PF2Logo_Nethys-Selected.png" alt="Pathfinder RPG (2nd Edition)" />
+                        </a>
+                        <a href="https://www.aonsrd.com/" >
+                            <img src="SFLogo_Nethys.png" tppabs="https://2e.aonprd.com/Images/SFLogo_Nethys.png" alt="Starfinder RPG (1st Edition)" />
+                        </a>
+                        <a href="https://2e.aonsrd.com/" >
+                            <img src="starfinder_2_logo.webp" tppabs="https://2e.aonprd.com/Images/starfinder_2_logo.webp" alt="Starfinder RPG (2nd Edition)" />
+                        </a>
+                    </h2>
+                </div>
+                <div class="main" id="main">
+                    
+
+<h1 style="text-align:center" class="hide-on-print"><a href="Rules.aspx.htm" tppabs="https://2e.aonprd.com/Rules.aspx"><u>Rules Index</u></a> | <a href="GMScreen.aspx.htm" tppabs="https://2e.aonprd.com/GMScreen.aspx">GM Screen</a> | <a href="PlayersGuide.aspx.htm" tppabs="https://2e.aonprd.com/PlayersGuide.aspx">Player's Guide</a></h1>
+
+<hr class="hide-on-print" />
+
+    <div class="rule-ancestors hide-on-print">
+        <span class="rule-ancestor">Core Rulebook</span>
+
+            <span class="rule-ancestor">
+                <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=1995&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=1995&Redirected=1%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=1" class="link">Chapter 1: Introduction</a>
+            </span>
+    </div>
+
+<div class="sibling-navigation hide-on-print">
+    <div class="sibling-navigation-previous">
+            <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=11  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=11%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=11" class="link">&lt;&lt; Playing the Game</a>
+    </div>
+    <div class="sibling-navigation-next">
+            <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=46  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=46%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=46" class="link">Using This Book &gt;&gt;</a>
+    </div>
+</div>
+
+
+<div class="rule">
+    <h1 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=45  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=45%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=45">Example of Play</a> 
+    </h1>
+
+    
+
+        <div class="sources"><strong>Source</strong> <a href="Sources.aspx-ID=1.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=1" class="link link-source" target="_blank">Core Rulebook pg. 14</a></div>
+
+    <div>
+        The following example is presented to give you a better idea of how the game of Pathfinder is played. In this adventure, Erik is the GM. Lyz is playing Valeros, a daring human fighter, James is playing Merisiel, a deadly elven rogue, and Judy is taking on the role of Kyra, a fiery human cleric of Sarenrae. The group has just defeated a horde of undead and is making its way into an ancient mausoleum.<br /><br />  <b>Erik:</b> The entrance to the crypt stands before you, a set of crumbling stairs leading down into darkness. A terrible smell issues forth from the doorway—the stench of old, rotted flesh.<br /> <b>Lyz:</b> I'm not afraid of a foul stink! I draw my sword and ready my shield.<br /> <b>Judy:</b> The light of Sarenrae will guide us. I cast my light spell on my religious symbol.<br /> <b>Erik:</b> All right, a glowing radiance spills forth, illuminating the stairs. They appear to go down only about 10 feet before opening up into a chamber. Puddles of stagnant water fill the cracks between uneven stone tiles.<br /> <b>James:</b> I should go first to make sure it's safe. I'm going to draw my rapier and carefully go down the stairs, looking for traps as I go.<br /> <b>Erik:</b> Sure, but looking for traps is a secret check, so I'll roll for you. What's your Perception modifier?<br /> <b>James:</b> I have a +5.<br /><br />  <i>Erik rolls a d20 behind his GM screen, hidden from the players' view, and gets a 17 on the die for a total of 22, more than enough to find the trip wire on the third step.</i><br /><br />  <b>Erik:</b> Your caution pays off! You spot a thin wire located at ankle height just above the third stair.<br /> <b>James:</b> I point it out to the others and head down.<br /> <b>Lyz:</b> I follow right behind Merisiel, avoiding the wire but otherwise keeping an eye out for danger.<br /> <b>Judy:</b> Me too.<br /> <b>Erik:</b> Okay! You make it down the stairs to find yourselves in a crypt. Ancient wood coffins are arranged around the room, covered in cobwebs and dust. Directly ahead, on a raised dais, is a stone casket adorned with wicked-looking symbols. You can tell that it was once wrapped in iron chains, but now twisted links are scattered around the room, along with chunks of what must have been the casket's lid. From the damage, it looks like it was shattered from within!<br /> <b>Judy:</b> Sarenrae protect us. I draw my blade and advance—I want a better look at those symbols.<br /> <b>Lyz:</b> I'll keep pace with her. I don't like the look of this.<br /> <b>James:</b> I think I'll stay back here and hide behind one of the coffins.<br /> <b>Erik:</b> Merisiel takes cover while the two of you advance. As you draw near, the stench of rot grows stronger until it's almost overpowering. Suddenly you see the source of the horrid odor. Rising up out of the casket is a nightmarish dead thing. It might have once been a human, but it's hard to tell from its withered body. Its flesh is the color of a new bruise, pulled so tight across its bones that it has split in places. It's hairless, with pointed ears, but worst of all, its mouth is lined with tiny, sharp teeth and its tongue is entirely too long.<br /> <b>Lyz:</b> So, not a friend?<br /> <b>Erik:</b> Most certainly not. It looks poised to leap at you and attack. Roll for initiative! Valeros and Kyra need to roll Perception, while Merisiel should roll Stealth.<br /><br />  <i>Everyone rolls for their initiative. Lyz rolls a 2 for Valeros, getting a total of 8. Judy rolls better for Kyra, getting a total of 14. James uses Stealth for Initiative, because Merisiel was hiding at the start of the fight, and rolls a 17 for a total of 25! Erik rolls for the undead creature, getting a 12. Erik records all these totals, putting the characters in order from highest to lowest.</i><br /><br />  <b>Erik:</b> Looks like Merisiel gets to act first. Whatever that thing is, you're pretty sure it doesn't know you are there.<br /> <b>James:</b> Awesome! For my first action, I want to draw a dagger. For my second, I want to move closer.<br /> <b>Erik:</b> You can get to within 15 feet of it with one Stride action.<br /> <b>James:</b> Perfect. For my final action, I'm going to throw my dagger at it!<br /><br />  <i>James rolls a 13 and adds 8, due to Merisiel's skill at thrown daggers, for a total of 21, but the range means he takes a –2 penalty for a result of 19. Erik consults his notes to learn that the monster has an AC of 18.</i><br /><br />  <b>Erik:</b> That's a hit! Go ahead and roll damage.<br /> <b>James:</b> Okay, and I get to add extra damage due to sneak attack.<br /><br />  <i>Rogues have the ability to deal extra damage to foes that haven't acted yet in an encounter. This extra damage also applies to attacks against enemies that are distracted. James rolls 1d4 for the dagger and 1d6 for the sneak attack, and he adds 4 for Merisiel's Dexterity, getting a total of 9.</i><br /><br />  <b>Erik:</b> It hisses as the blade sinks into its shoulder. That looks like it hurt, but the undead thing doesn't appear to be slowing down. James, that was all three of your actions. Next up is Kyra!<br /> <b>Judy:</b> I think this is undead. What do I know about it?<br /> <b>Erik:</b> You use an action to recall your training about the living dead. Give me a Religion skill check.<br /><br />  <i>Judy rolls a 16, adding Kyra's +8 with Religion to get a total of 24.</i><br /><br />  <b>Erik:</b> At first, you thought this thing might be a ghoul, which is a type of undead that feasts on the flesh of the dead, but the terrible smell reveals the truth. This thing is a ghast, a more powerful type of ghoul. You are pretty sure that its stench can make you sick and that its claws can paralyze you with a touch.<br /> <b>Judy:</b> This is bad. I am going to spend my last two actions to cast bless. It gives anyone next to me a +1 bonus to attack rolls.<br /><br />  <i>Casting this spell is an activity that requires two actions to complete, and it has two components. The complex gestures needed to invoke the spell are the somatic component, and Kyra's prayers to her deity are the verbal component.</i><br /><br />  <b>Erik:</b> Okay! The ghast leaps from the casket straight toward Merisiel. The stench of its rotting body is absolutely horrific up close. Attempt a Fortitude save!<br /><br />  <i>James rolls an 8, for a total of 14.</i><br /><br />  <b>Erik:</b> Not quite enough—you gain the sickened 1 condition, which is going to give you a –1 penalty to most of your d20 rolls. Next, it lunges at you, trying to bite you!<br /> <b>James:</b> Oh no! I use my reaction to nimbly dodge out of the way.<br /><br />  <i>Erik rolls an attack roll for the ghast, getting an 9 on the die. Looking at the monster's statistics, he adds 11 for a total of 20. Merisiel's AC is normally 19, but the Nimble Dodge feat lets her use her reaction to increase her AC by 2 against a single attack. In this case, it turns the ghast's attack into a miss.</i><br /><br />  <b>Erik:</b> Does a 20 hit you?<br /> <b>James:</b> Nope, just missed!<br /> <b>Erik:</b> You twist away from the ghast as its tongue leaves a slimy film on your armor. With its final action, the undead menace lashes out at you with its claw.<br /><br />  <i>Erik rolls a second attack with the ghast, this time with its claw. Normally this attack would take a –5 multiple attack penalty, but since the claw has the agile trait, the penalty is only –4. He rolls a 19 on the die, adds 11 for the ghoul's attack modifier and subtracts 4, for a total of 26.</i><br /><br />  <b>Erik:</b> You may have dodged the ghast's bite, but the thing's bony claw rakes across your face!<br /><br />  <i>Erik knows this is a hit and rolls the ghast's claw damage, getting a total of 8.</i><br /><br />  <b>Erik:</b> Take 8 points of damage, and I need you to attempt a Fortitude saving throw as a numbing sensation spreads from the wound.<br /><br />  <i>James rolls a Fortitude saving throw. He gets a 4 on the die, and after adding his bonus and the penalty from the sickened condition, it comes out to only a 9.</i><br /><br />  <b>James:</b> This isn't my day. I don't suppose a 9 is good enough?<br /> <b>Erik:</b> I am afraid not. You are paralyzed!<br /><br />  <i>Erik notes that Merisiel is paralyzed, making her unable to act, but she will get a new saving throw at the end of each of her turns to shake off the effect.</i><br /><br />  <b>Erik:</b> A dry, creaking laugh escapes the ghast's curled lips, but that's the end of its turn. Valeros, you are the last one to act this round.<br /> <b>Lyz:</b> About time, too! I raise my shield and use my final two actions to make a Sudden Charge!<br /><br />  <i>Sudden Charge is a fighter feat that lets Valeros move up to twice his Speed and attack at the end of his movement, all for only two actions.</i><br /><br />  <b>Erik:</b> As you draw near, the smell is horrific. Attempt a Fortitude save.<br /><br />  <i>After rolling, Lyz gets a 19 on the Fortitude save.</i><br /><br />  <b>Erik:</b> You fight off the nausea from this thing's stench. Make your attack roll.<br /><br />  <i>Lyz rolls the die and it comes up a 20.</i><br /><br />  <b>Lyz:</b> I got a 20! That must be a critical success!<br /> <b>Erik:</b> Your blade hits the vile creature right in the neck, dealing double damage!<br /><br />  <i>Lyz rolls a 5 on her d8, then adds 4 because of Valeros's Strength modifier. Because it is a critical success, she then doubles the total.</i><br /><br />  <b>Lyz:</b> A mighty 18 damage! That surely had to kill it!<br /> <b>Erik:</b> I'm afraid not. Black ichor runs from the deep wound on its neck, but it only turns to look at you. You can see burning hatred in its eyes!<br /> <b>Lyz:</b> Uh-oh.<br /><br />  <i>That is the end of the first round of combat. The second round begins immediately after this, using the same initiative order as before. The fight is far from over...</i>
+    </div>
+
+    
+
+
+</div>
+
+
+<div class="sibling-navigation hide-on-print">
+    <div class="sibling-navigation-previous">
+            <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=11  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=11%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=11" class="link">&lt;&lt; Playing the Game</a>
+    </div>
+    <div class="sibling-navigation-next">
+            <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=46  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=46%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=46" class="link">Using This Book &gt;&gt;</a>
+    </div>
+</div>
+                </div>
+                <div class="clear">
+            </div>
+
+            <div class="footer" id="footer" >
+				<div id="et-al" >
+                    <a href="mailto:nethys@archivesofnethys.com">Site Owner: Rose-Winds LLC (Blake Davis)</a>
+                    <div id="footer-social"><a href="https://twitter.com/NethysArchives"  target="_blank"><span class="k-icon k-i-twitter" style="font-size:2.5rem"></span></a></div>
+				</div>
+                <div style="text-align:center"><script type="text/javascript" async="true" src="adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- Main Archives Page -->
+                    <ins class="adsbygoogle"
+                        style="display:inline-block;width:728px;height:90px"
+                        data-ad-client="ca-pub-4953734518316037"
+                        data-ad-slot="7738185508"></ins>
+                    <script type="text/javascript">
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                </script></div>
+			</div>
+            <nethys-search no-ui="true"></nethys-search>
+        </div>
+    </div>
+
+    <div class="modern-menu-container">
+        <div class="modern-menu">
+            <div class="modern-menu-nethys-logo"></div>
+            <div class="modern-menu-items">
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-player"></i></span>
+                    <span class="modern-menu-item-text">Character Creation +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Ancestries.aspx.htm" tppabs="https://2e.aonprd.com/Ancestries.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-hood"></i></span>
+                        <span class="modern-menu-item-text">Ancestries</span>
+                    </a>
+                    <a class="modern-menu-item" href="Archetypes.aspx.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-nodular"></i></span>
+                        <span class="modern-menu-item-text">Archetypes</span>
+                    </a>
+                    <a class="modern-menu-item" href="Backgrounds.aspx.htm" tppabs="https://2e.aonprd.com/Backgrounds.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-guarded-tower"></i></span>
+                        <span class="modern-menu-item-text">Backgrounds</span>
+                    </a>
+                    <a class="modern-menu-item" href="Classes.aspx.htm" tppabs="https://2e.aonprd.com/Classes.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-player-lift"></i></span>
+                        <span class="modern-menu-item-text">Classes</span>
+                    </a>
+                    <a class="modern-menu-item" href="Skills.aspx.htm" tppabs="https://2e.aonprd.com/Skills.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-hand"></i></span>
+                        <span class="modern-menu-item-text">Skills</span>
+                    </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-torch"></i></span>
+                    <span class="modern-menu-item-text">Equipment +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Equipment.aspx.htm" tppabs="https://2e.aonprd.com/Equipment.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-torch"></i></span>
+                        <span class="modern-menu-item-text">All Equipment</span>
+                    </a>
+                    <a class="modern-menu-item" href="Equipment.aspx-Category=1.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?Category=1">
+                        <span class="modern-menu-item-icon"><i class="ra ra-campfire"></i></span>
+                        <span class="modern-menu-item-text">Adventuring Gear</span>
+                    </a>
+                    <a class="modern-menu-item" href="Equipment.aspx-Category=6.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?Category=6">
+                        <span class="modern-menu-item-icon"><i class="ra ra-round-bottom-flask"></i></span>
+                        <span class="modern-menu-item-text">Alchemical Items</span>
+                    </a>
+                    <a class="modern-menu-item" href="Armor.aspx.htm" tppabs="https://2e.aonprd.com/Armor.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-helmet"></i></span>
+                        <span class="modern-menu-item-text">Armor</span>
+                    </a>
+                    <a class="modern-menu-item" href="Equipment.aspx-Category=21.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?Category=21">
+                        <span class="modern-menu-item-icon"><i class="ra ra-hand"></i></span>
+                        <span class="modern-menu-item-text">Held Items</span>
+                    </a>
+                    <a class="modern-menu-item" href="Equipment.aspx-Category=23.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?Category=23">
+                        <span class="modern-menu-item-icon"><i class="ra ra-rune-stone"></i></span>
+                        <span class="modern-menu-item-text">Runes</span>
+                    </a>
+                    <a class="modern-menu-item" href="Shields.aspx.htm" tppabs="https://2e.aonprd.com/Shields.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-shield"></i></span>
+                        <span class="modern-menu-item-text">Shields</span>
+                    </a>
+                    <a class="modern-menu-item" href="Weapons.aspx.htm" tppabs="https://2e.aonprd.com/Weapons.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-sword"></i></span>
+                        <span class="modern-menu-item-text">Weapons</span>
+                    </a>
+                    <a class="modern-menu-item" href="Equipment.aspx-Category=41.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?Category=41">
+                        <span class="modern-menu-item-icon"><i class="ra ra-crown-of-thorns"></i></span>
+                        <span class="modern-menu-item-text">Worn Items</span>
+                    </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-muscle-up"></i></span>
+                    <span class="modern-menu-item-text">Feats +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Feats.aspx.htm" tppabs="https://2e.aonprd.com/Feats.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-muscle-up"></i></span>
+                        <span class="modern-menu-item-text">All Feats</span>
+                    </a>
+                    <a class="modern-menu-item" href="Feats.aspx-Traits=78.htm" tppabs="https://2e.aonprd.com/Feats.aspx?Traits=78">
+                        <span class="modern-menu-item-icon"><i class="ra ra-aware"></i></span>
+                        <span class="modern-menu-item-text">General</span>
+                    </a>
+                    <a class="modern-menu-item" href="Feats.aspx-Traits=78&NoSkills=True.htm" tppabs="https://2e.aonprd.com/Feats.aspx?Traits=78&NoSkills=True">
+                        <span class="modern-menu-item-icon"><i class="ra ra-player-teleport"></i></span>
+                        <span class="modern-menu-item-text">General (No Skill)</span>
+                    </a>
+                    <a class="modern-menu-item" href="Feats.aspx-Traits=144.htm" tppabs="https://2e.aonprd.com/Feats.aspx?Traits=144">
+                        <span class="modern-menu-item-icon"><i class="ra ra-hand"></i></span>
+                        <span class="modern-menu-item-text">Skill</span>
+                    </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-emerald"></i></span>
+                    <span class="modern-menu-item-text">Game Mastery +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Afflictions.aspx.htm" tppabs="https://2e.aonprd.com/Afflictions.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-biohazard"></i></span>
+                        <span class="modern-menu-item-text">Afflictions</span>
+                    </a>
+                    <a class="modern-menu-item" href="Creatures.aspx.htm" tppabs="https://2e.aonprd.com/Creatures.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-dragon"></i></span>
+                        <span class="modern-menu-item-text">Creatures</span>
+                    </a>
+                    <a class="modern-menu-item" href="Hazards.aspx.htm" tppabs="https://2e.aonprd.com/Hazards.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-bear-trap"></i></span>
+                        <span class="modern-menu-item-text">Hazards</span>
+                    </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-book"></i></span>
+                    <span class="modern-menu-item-text">Rules +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Rules.aspx.htm" tppabs="https://2e.aonprd.com/Rules.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-book"></i></span>
+                        <span class="modern-menu-item-text">All Rules</span>
+                    </a>
+                    <a class="modern-menu-item" href="Actions.aspx.htm" tppabs="https://2e.aonprd.com/Actions.aspx">
+                        <span class="modern-menu-item-icon">
+                            <svg viewBox="0 0 30 30" preserveAspectRatio="xMidYMid meet" stroke="null" style="fill:inherit;">
+                                <path d="M21.55532 8.015l7.07107 7.07106-7.07107 7.07107-7.07107-7.07107zM6.47996 10.07526l4.94975 4.94975-4.94975 4.94974-4.94974-4.94974z"></path>
+                                <path d="M15.00246 1.46211l8.48528 8.48528-7.07107 7.07107L7.9314 8.53318z"></path>
+                                <path d="M16.45563 13.11469l7.07107 7.07107-8.48529 8.48528-7.07106-7.07107z"></path>
+                            </svg>
+                        </span>
+                        <span class="modern-menu-item-text">Actions/Activities</span>
+                    </a>
+                    <a class="modern-menu-item" href="Conditions.aspx.htm" tppabs="https://2e.aonprd.com/Conditions.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-player-pain"></i></span>
+                        <span class="modern-menu-item-text">Conditions</span>
+                    </a>
+                    <a class="modern-menu-item" href="GMScreen.aspx.htm" tppabs="https://2e.aonprd.com/GMScreen.aspx">
+                        <span class="modern-menu-item-icon">
+                            <svg viewBox="0 0 30 30" preserveAspectRatio="xMidYMid meet" stroke="null" style="fill:inherit;">
+                                <path d="M5.72648 12.93117h9.17646v9.50588l-4.58823 2.37647-4.58823-2.37647.00001-9.50588z"></path>
+                                <path d="M5.96178 12.93118h9.17646v9.50587l-4.58823 2.37648-4.58824-2.37648.00001-9.50587z"></path>
+                                <path d="M15.0206 12.93118h9.17646v9.50587l-4.58823 2.37648-4.58824-2.37648.00001-9.50587z"></path>
+                                <path d="M16.70221 8.57471l7.52941-3.38823v16.94117h-7.52941V8.57471zM15.11765 8.69235L5.94118 5.30412v16.94117h9.17647V8.69235z"></path>
+                                <path d="M19.60883 17.75465h-9.17646V8.24878L15.0206 5.8723l4.58824 2.37648-.00001 9.50587z"></path>
+                            </svg>
+                        </span>
+                        <span class="modern-menu-item-text">GM Screen</span>
+                    </a>
+                    <a class="modern-menu-item" href="PlayersGuide.aspx.htm" tppabs="https://2e.aonprd.com/PlayersGuide.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-uncertainty"></i></span>
+                        <span class="modern-menu-item-text">Player's Guide</span>
+                    </a>
+                    <a class="modern-menu-item" href="Traits.aspx.htm" tppabs="https://2e.aonprd.com/Traits.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-uncertainty"></i></span>
+                        <span class="modern-menu-item-text">Traits</span>
+                    </a>
+                    <a class="modern-menu-item" href="Sources.aspx.htm" tppabs="https://2e.aonprd.com/Sources.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-book"></i></span>
+                        <span class="modern-menu-item-text">Sources</span>
+                    </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-sun"></i></span>
+                    <span class="modern-menu-item-text">Setting +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Setting.aspx-Adventure=true.htm" tppabs="https://2e.aonprd.com/Setting.aspx?Adventure=true">
+                        <span class="modern-menu-item-icon"><i class="ra ra-all-for-one"></i></span>
+                        <span class="modern-menu-item-text">Adventures</span>
+                    </a>
+                    <a class="modern-menu-item" href="Articles.aspx.htm" tppabs="https://2e.aonprd.com/Articles.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-book"></i></span>
+                        <span class="modern-menu-item-text">Articles</span>
+                    </a>
+                    <a class="modern-menu-item" href="Deities.aspx.htm" tppabs="https://2e.aonprd.com/Deities.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-angel-wings"></i></span>
+                        <span class="modern-menu-item-text">Deities</span>
+                    </a>
+                    <a class="modern-menu-item" href="Domains.aspx.htm" tppabs="https://2e.aonprd.com/Domains.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-kaleidoscope"></i></span>
+                        <span class="modern-menu-item-text">Domains</span>
+                    </a>
+                    <a class="modern-menu-item" href="Languages.aspx.htm" tppabs="https://2e.aonprd.com/Languages.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-speech-bubbles"></i></span>
+                        <span class="modern-menu-item-text">Languages</span>
+                    </a>
+                    <a class="modern-menu-item" href="Planes.aspx.htm" tppabs="https://2e.aonprd.com/Planes.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-circle-of-circles"></i></span>
+                        <span class="modern-menu-item-text">Planes</span>
+                    </a>
+                        <a class="modern-menu-item" href="Setting.aspx-Group=40.htm" tppabs="https://2e.aonprd.com/Setting.aspx?Group=40">
+                            <span class="modern-menu-item-icon"><i class="ra ra-mountains"></i></span>
+                            <span class="modern-menu-item-text">Scenarios</span>
+                        </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-crystal-wand"></i></span>
+                    <span class="modern-menu-item-text">Spells/Rituals +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Spells.aspx.htm" tppabs="https://2e.aonprd.com/Spells.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-scroll-unfurled"></i></span>
+                        <span class="modern-menu-item-text">All Spells</span>
+                    </a>
+                    <a class="modern-menu-item" href="Spells.aspx-Tradition=1.htm" tppabs="https://2e.aonprd.com/Spells.aspx?Tradition=1">
+                        <span class="modern-menu-item-icon"><i class="ra ra-scroll-unfurled"></i></span>
+                        <span class="modern-menu-item-text">Arcane</span>
+                    </a>
+                    <a class="modern-menu-item" href="Spells.aspx-Tradition=2.htm" tppabs="https://2e.aonprd.com/Spells.aspx?Tradition=2">
+                        <span class="modern-menu-item-icon"><i class="ra ra-ankh"></i></span>
+                        <span class="modern-menu-item-text">Divine</span>
+                    </a>
+                    <a class="modern-menu-item" href="Spells.aspx-Tradition=3.htm" tppabs="https://2e.aonprd.com/Spells.aspx?Tradition=3">
+                        <span class="modern-menu-item-icon"><i class="ra ra-burning-eye"></i></span>
+                        <span class="modern-menu-item-text">Occult</span>
+                    </a>
+                    <a class="modern-menu-item" href="Spells.aspx-Tradition=4.htm" tppabs="https://2e.aonprd.com/Spells.aspx?Tradition=4">
+                        <span class="modern-menu-item-icon"><i class="ra ra-leaf"></i></span>
+                        <span class="modern-menu-item-text">Primal</span>
+                    </a>
+                    <a class="modern-menu-item" href="Spells.aspx-Focus=true.htm" tppabs="https://2e.aonprd.com/Spells.aspx?Focus=true">
+                        <span class="modern-menu-item-icon"><i class="ra ra-aura"></i></span>
+                        <span class="modern-menu-item-text">Focus Spells</span>
+                    </a>
+                    <a class="modern-menu-item" href="Rituals.aspx.htm" tppabs="https://2e.aonprd.com/Rituals.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-rune-stone"></i></span>
+                        <span class="modern-menu-item-text">Rituals</span>
+                    </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-player-thunder-struck"></i></span>
+                    <span class="modern-menu-item-text">Mythic +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Rules.aspx-ID=3320.htm" tppabs="https://2e.aonprd.com/Rules.aspx?ID=3320">
+                        <span class="modern-menu-item-icon"><i class="ra ra-book"></i></span>
+                        <span class="modern-menu-item-text">Mythic Rules</span>
+                    </a>
+                    <a class="modern-menu-item" href="MythicCallings.aspx.htm" tppabs="https://2e.aonprd.com/MythicCallings.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-aware"></i></span>
+                        <span class="modern-menu-item-text">Callings</span>
+                    </a>
+                    <a class="modern-menu-item" href="MythicFeats.aspx.htm" tppabs="https://2e.aonprd.com/MythicFeats.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-muscle-up"></i></span>
+                        <span class="modern-menu-item-text">Mythic Feats</span>
+                    </a>
+                    <a class="modern-menu-item" href="MythicDestinies.aspx.htm" tppabs="https://2e.aonprd.com/MythicDestinies.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-aura"></i></span>
+                        <span class="modern-menu-item-text">Destinies</span>
+                    </a>
+                    <a class="modern-menu-item" href="MythicSpells.aspx.htm" tppabs="https://2e.aonprd.com/MythicSpells.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-lightning-trio"></i></span>
+                        <span class="modern-menu-item-text">Mythic Spells</span>
+                    </a>
+                    <a class="modern-menu-item" href="MythicRituals.aspx.htm" tppabs="https://2e.aonprd.com/MythicRituals.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-fire-ring"></i></span>
+                        <span class="modern-menu-item-text">Mythic Rituals</span>
+                    </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-help"></i></span>
+                    <span class="modern-menu-item-text">About the Archives +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="ContactUs.aspx.htm" tppabs="https://2e.aonprd.com/ContactUs.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-quill-ink"></i></span>
+                        <span class="modern-menu-item-text">Contact Us</span>
+                    </a>
+                    <a class="modern-menu-item" href="Contributors.aspx.htm" tppabs="https://2e.aonprd.com/Contributors.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-double-team"></i></span>
+                        <span class="modern-menu-item-text">Contributors</span>
+                    </a>
+                    <a class="modern-menu-item" href="Licenses.aspx.htm" tppabs="https://2e.aonprd.com/Licenses.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-book"></i></span>
+                        <span class="modern-menu-item-text">Licenses</span>
+                    </a>
+                </div>
+                <a class="modern-menu-item" href="Support.aspx.htm" tppabs="https://2e.aonprd.com/Support.aspx">
+                    <span class="modern-menu-item-icon"><i class="ra ra-diamond"></i></span>
+                    <span class="modern-menu-item-text">Support the Archives</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="shelyns-corner-wrapper">
+        <div class="shelyns-corner-overlay"></div>
+        <div class="shelyns-corner">
+            <div class="shelyns-corner-header">
+                <h2>Shelyn's Corner</h2>
+                <a href="javascript:void(0)" class="close-shelyns-corner">&times;</a>
+            </div>
+            <div class="shelyns-corner-content">
+                <div class="shelyns-corner-settings">
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-remaster">Prefer Pathfinder Remastered Core?</label>
+                        <input type="checkbox" id="shelyns-corner-setting-remaster" checked/>
+                    </div>
+                    <hr />
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-dyslexia">Dyslexia friendly fonts</label>
+                        <input type="checkbox" id="shelyns-corner-setting-dyslexia"/>
+                    </div>
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-sidebar-hover">Expand sidebar on hover</label>
+                        <input type="checkbox" id="shelyns-corner-setting-sidebar-hover" checked/>
+                    </div>
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-sidebar-shrink">Sidebar can be shrunk</label>
+                        <input type="checkbox" id="shelyns-corner-setting-sidebar-shrink" checked/>
+                    </div>
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-page-compress">Reduce page width</label>
+                        <input type="checkbox" id="shelyns-corner-setting-page-compress"/>
+                    </div>
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-modern-menu">Modern menu</label>
+                        <input type="checkbox" id="shelyns-corner-setting-modern-menu" checked/>
+                    </div>
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-link-previews">Link previews</label>
+                        <input type="checkbox" id="shelyns-corner-setting-link-previews" checked/>
+                    </div>
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-link-previews-search">Link previews in search bar</label>
+                        <input type="checkbox" id="shelyns-corner-setting-link-previews-search"/>
+                    </div>
+                </div>
+                <hr />
+                <div class="theme-gallery-wrapper"></div>
+                <hr />
+                <div class="feel-gallery">
+                    <div class="feel-example classic_feel" onclick="setFeel('classic_feel')">
+                        <h1 class="feel-title">Classic Feel</h1>
+                        <h2 class="feel-title">Classic Feel <span class="output"></span></h2>
+                        <h3 class="feel-title">Classic Feel</h3>
+                        <p>The classic look for the Archives of Nethys.</p>
+                        <table>
+                            <thead><td>Table</td></thead>
+                            <tr><td>Data</td></tr>
+                            <tr><td>More Data</td></tr>
+                        </table>
+                    </div>
+                    <div class="feel-example book_feel" onclick="setFeel('book_feel')">
+                        <h1 class="feel-title">Book Feel</h1>
+                        <h2 class="feel-title">Book Feel <span class="output"></span></h2>
+                        <h3 class="feel-title">Book Feel</h3>
+                        <p>An alternative feel, based on the Rulebooks.</p>
+                        <table>
+                            <thead><td>Table</td></thead>
+                            <tr><td>Data</td></tr>
+                            <tr><td>More Data</td></tr>
+                        </table>
+                    </div>
+                    <div class="feel-example round_feel" onclick="setFeel('round_feel')">
+                        <h1 class="feel-title">Round Feel</h1>
+                        <h2 class="feel-title">Round Feel<span class="output"></span></h2>
+                        <h3 class="feel-title">Round Feel</h3>
+                        <p>A rounded, modern look for the archives.</p>
+                        <table>
+                            <thead><td>Table</td></thead>
+                            <tr><td>Data</td></tr>
+                            <tr><td>More Data</td></tr>
+                        </table>
+                    </div>
+                    <div class="feel-example slim_feel" onclick="setFeel('slim_feel')">
+                        <h1 class="feel-title">Slim Feel</h1>
+                        <h2 class="feel-title">Slim Feel<span class="output"></span></h2>
+                        <h3 class="feel-title">Slim Feel</h3>
+                        <p>A variant of the Round feel, more compact.</p>
+                        <table>
+                            <thead><td>Table</td></thead>
+                            <tr><td>Data</td></tr>
+                            <tr><td>More Data</td></tr>
+                        </table>
+                    </div>
+                </div>
+                <hr />
+                <div class="shelyns-corner-settings">
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-orc">More Orc?</label>
+                        <input type="checkbox" id="shelyns-corner-setting-orc" />
+                    </div>
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-boar"><b>BOAR?</b></label>
+                        <input type="checkbox" id="shelyns-corner-setting-boar" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+      var legacyMode = getCore();
+
+      initializeMenuToggle(document.getElementById('minMaxMenu'));
+      initShelynsCorner();
+
+      window.nethysModernMenu.init();
+
+      initializeElasticSearch()
+      var initializeSearch = function (search) {
+          var button;
+          var text;
+          if (search.firstElementChild.classList.contains('search-input'))
+              text = search.firstElementChild;
+          if (search.lastElementChild.classList.contains('search-input'))
+              text = search.lastElementChild;
+          if (search.firstElementChild.classList.contains('search-button'))
+              button = search.firstElementChild;
+          if (search.lastElementChild.classList.contains('search-button'))
+              button = search.lastElementChild;
+
+          if (search) {
+              search.addEventListener('keypress', function (e) {
+                  if (e.keyCode == 13) {
+                      e.preventDefault();
+                      if (text.value != null && text.value.length > 0)
+                          window.location = window.location.origin + "/Search.aspx?q=" + encodeURIComponent(text.value);
+                  }
+              })
+          }
+          if (button) {
+              button.addEventListener('click', function (e) {
+                  window.location = window.location.origin + "/Search.aspx?q=" + encodeURIComponent(text.value);
+              });
+          }
+      };
+      var initializeExpand = function (toggle) {
+          var targetAttrString = "[data-target='" + toggle.dataset.toggle + "']";
+          //target = menu to be collapsed
+          var target = document.querySelector(targetAttrString);
+          toggle.addEventListener('click', function () {
+              var expanded = target.classList.contains('expanded');
+              expanded = !expanded;
+              if (expanded) {
+                  //hide other in group if exists
+                  if (target.dataset.group) {
+                      var otherExpanded = document.querySelector('.expanded[data-group="' + target.dataset.group + '"]');
+                      if (otherExpanded) {
+                          otherExpanded.classList.remove('expanded');
+                      }
+                  }
+                  target.classList.add('expanded');
+              } else {
+                  target.classList.remove('expanded');
+              }
+          });
+      };
+      (function () {
+          //toggles = link that expands/collapses target
+          var toggles = document.querySelectorAll('[data-toggle]');
+          toggles.forEach(function (toggle) {
+              initializeExpand(toggle);
+          });
+          //searches
+          var classicSearch = document.getElementById('classic-search');
+          initializeSearch(classicSearch);
+          var searches = document.querySelectorAll('.search');
+          searches.forEach(function (search) {
+              //initializeSearch(search);
+          });
+      })();
+
+      class NethysSearch extends HTMLElement {
+          constructor() {
+              super();
+
+              this.attachShadow({ mode: 'open' });
+
+              let container = document.createElement('div');
+              this.shadowRoot.append(container);
+
+              let fixedParams = this.getAttribute('fixed-params');
+
+              if (window.location.search.includes('Redirected=1')) {
+                  fixedParams = (fixedParams ? fixedParams + '&' : '') + 'Redirected=1';
+              }
+
+              if (window.location.search.includes('NoRedirect=1')) {
+                  fixedParams = (fixedParams ? fixedParams + '&' : '') + 'NoRedirect=1';
+              }
+
+              let fixedQueryString = this.getAttribute('fixed-query-string') ?? '';
+
+              if (!fixedQueryString.includes('category:item-bonus')) {
+                  fixedQueryString += ' !category:item-bonus';
+              }
+
+              let dataUrl = new URL(elasticUrl);
+              dataUrl.pathname = '/json-data';
+              dataUrl = dataUrl.toString();
+
+              let app = Elm.NethysSearch.init({
+                  node: container,
+                  flags: {
+                      autofocus: (this.getAttribute('autofocus') ?? 'true') == 'true',
+                      browserDateFormat: (new Date(2020, 9, 30).toLocaleDateString(navigator.language))
+                          .replace('2020', 'yyyy')
+                          .replace('10', 'MM')
+                          .replace('30', 'dd'),
+                      currentUrl: location.href,
+                      dataUrl: dataUrl,
+                      defaultQuery: this.getAttribute('default-query'),
+                      elasticUrl: elasticUrl,
+                      fixedParams: fixedParams,
+                      fixedQueryString: fixedQueryString,
+                      loadAll: this.getAttribute('load-all') == 'true',
+                      legacyMode: legacyMode,
+                      localStorage: { ...localStorage },
+                      noUi: this.getAttribute('no-ui') === 'true',
+                      pageDefaultDisplays: localStorage.getItem('page-default-displays'),
+                      pageId: this.getAttribute('page-id'),
+                      randomSeed: Math.floor(Math.random() * 2147483647),
+                      removeFilters: this.getAttribute('remove-filters')?.split(',') ?? [],
+                      resultBaseUrl: "/",
+                      showHeader: false,
+                      showQueryControls: this.getAttribute('show-query-controls') != 'false',
+                      windowHeight: window.innerHeight,
+                      windowWidth: window.innerWidth,
+                  }
+              });
+
+              app.ports.document_focusElement.subscribe(id => {
+                  window.requestAnimationFrame(() => {
+                      let element = this.shadowRoot.getElementById(id);
+
+                      if (element) {
+                          element.focus();
+                      }
+                  });
+              });
+
+              app.ports.document_scrollElementIntoView.subscribe(id => {
+                  window.requestAnimationFrame(() => {
+                      let element = this.shadowRoot.getElementById(id);
+
+                      if (element) {
+                          element.scrollIntoView({block: 'nearest'});
+                      }
+                  });
+              });
+
+              app.ports.localStorage_get && app.ports.localStorage_get.subscribe(function (key) {
+                  let value = localStorage.getItem(key);
+                  app.ports.localStorage_receive.send({ key: key, value: value });
+              });
+
+              app.ports.localStorage_set.subscribe(function (data) {
+                  localStorage.setItem(data.key, data.value);
+              });
+
+              window.addEventListener('popstate', function () {
+                  app.ports.navigation_urlChanged.send(location.href);
+              });
+
+              app.ports.navigation_pushUrl.subscribe(function (url) {
+                  history.pushState([], '', url);
+                  app.ports.navigation_urlChanged.send(location.href);
+              });
+
+              app.ports.navigation_loadUrl.subscribe(function (url) {
+                  location.href = url;
+              });
+
+              document.addEventListener('theme-changed', e => {
+                  app.ports.localStorage_receive.send({ key: 'theme', value: e.detail });
+              });
+
+              document.addEventListener('link-previews-changed', e => {
+                  app.ports.localStorage_receive.send({ key: 'link-previews-enabled', value: e.detail });
+              });
+
+              window.addEventListener('hashchange', e => {
+                  let url = new URL(e.newURL);
+                  if (url.hash != "#results") {
+                      return;
+                  }
+
+                  let results = this.shadowRoot.getElementById("results");
+                  if (!results) {
+                      return;
+                  }
+
+                  results.focus();
+                  results.scrollIntoView();
+                  window.location.hash = '';
+              });
+
+              if (this.getAttribute('no-ui') === 'true') {
+                  let linkPreviewTarget = null;
+
+                  document.addEventListener('mouseover', e => {
+                      const target = e.target.closest('a');
+                      const isSearchBar = e.target.closest('.searchBar') !== null;
+                      if (target && target != linkPreviewTarget) {
+                          let parent = getParentOffset(target.offsetParent);
+                          let data = {
+                              url: target.href,
+                              x: target.offsetLeft + parent.x,
+                              y: target.offsetTop + parent.y,
+                              height: target.offsetHeight,
+                              width: target.offsetWidth,
+                          }
+                          if (isSearchBar) {
+                              if (getFeature('search-bar-previews-enabled', '0') == '0') {
+                                  return;
+                              }
+                              data.x += window.scrollX;
+                              data.y += window.scrollY;
+                          }
+                          app.ports.document_linkEntered.send(data);
+                      } else if (!target && linkPreviewTarget) {
+                          app.ports.document_linkLeft.send("");
+                      }
+
+                      linkPreviewTarget = target;
+                  });
+              }
+
+              function getParentOffset(node) {
+                  if (!node) {
+                      return {
+                          x: 0,
+                          y: 0,
+                      };
+                  }
+                  let parent = getParentOffset(node.offsetParent);
+                  return {
+                      x: node.offsetLeft - node.scrollLeft + parent.x,
+                      y: node.offsetTop - node.scrollTop + parent.y,
+                  };
+              }
+
+              const resizeObserver = new ResizeObserver(entries => {
+                  app.ports.document_receiveBodySize.send({
+                      width: Math.round(entries[0].contentRect.width),
+                      height: Math.round(entries[0].contentRect.height),
+                  });
+              });
+
+              let relativeElement = document.getElementById('page');
+              resizeObserver.observe(relativeElement);
+
+              document.addEventListener('visibilitychange', () => {
+                  if (document.visibilityState === 'visible') {
+                      let rect = relativeElement.getBoundingClientRect();
+
+                      app.ports.document_receiveBodySize.send({
+                          width: Math.round(rect.width),
+                          height: Math.round(rect.height),
+                      });
+                  }
+              });
+          }
+      }
+
+      customElements.define('nethys-search', NethysSearch);
+    </script>
+</body>
+</html>

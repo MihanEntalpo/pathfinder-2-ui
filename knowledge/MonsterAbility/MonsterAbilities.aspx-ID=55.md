@@ -1,0 +1,12 @@
+# Change Shape - Creature Abilities - Archives of Nethys: Pathfinder 2nd Edition Database
+
+Source HTML: `docs/aonprd/MonsterAbilities.aspx-ID=55.htm`
+
+# [All Creatures](../Creature/Creatures.aspx.md)[Abilities](./MonsterAbilities.aspx.md) | [Monsters](../Monster/Monsters.aspx.md) | [NPCs](../NPC/NPCs.aspx.md)
+
+---
+
+# [Change Shape](./MonsterAbilities.aspx-ID=55.md) [one-action]
+
+Source [Monster Core pg. 358](../Source/Sources.aspx-ID=221.md)
+([concentrate](../Trait/Traits.aspx-ID=561.md), magical tradition, [polymorph](../Trait/Traits.aspx-ID=670.md)) The monster changes its shape indefinitely. It can use this action again to return to its natural shape or adopt a new shape. Unless otherwise noted, a monster cannot use Change Shape to appear as a specific individual. Using Change Shape counts as creating a disguise for the [Impersonate](../Action/Actions.aspx-ID=2388.md) use of [Deception](../Skill/Skills.aspx-ID=38.md). The monster's transformation automatically defeats Perception DCs to determine whether the creature is a member of the ancestry or creature type into which it transformed, and it gains a +4 status bonus to its Deception DC to prevent others from seeing through its disguise. Change Shape abilities specify what shapes the monster can adopt. The monster doesn't gain any special abilities of the new shape, only its physical form. For example, in each shape, it replaces its normal Speeds and Strikes, and might potentially change its senses or size. Any changes are listed in its stat block.

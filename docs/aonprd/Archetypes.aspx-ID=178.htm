@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script type="text/javascript" async src="js-id=UA-137805785-3.js" tppabs="https://www.googletagmanager.com/gtag/js?id=UA-137805785-3"></script>
+    <script type="text/javascript">
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-137805785-3');
+    </script>
+    <title>
+        Ghoul - Archetypes - Archives of Nethys: Pathfinder 2nd Edition Database
+    </title>
+    
+
+    <link href="Layout.css-v=EB6PS6lfpX6G1uwFu7uHcEh6oScz15hZHsXHCNMHzLg.css" tppabs="https://2e.aonprd.com/Styles/Layout.css?v=EB6PS6lfpX6G1uwFu7uHcEh6oScz15hZHsXHCNMHzLg" rel="stylesheet" type="text/css" />
+    <link href="rpg-awesome.min.css" tppabs="https://2e.aonprd.com/Styles/rpg-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="Typography.css-v=3et3D84VeOgcsPaSRyGH6nF1FfjjYgVpcGBq4HyG5vg.css" tppabs="https://2e.aonprd.com/Styles/Typography.css?v=3et3D84VeOgcsPaSRyGH6nF1FfjjYgVpcGBq4HyG5vg" rel="stylesheet" type="text/css" />
+    <link href="themes.css" tppabs="https://2e.aonprd.com/themes" rel="stylesheet" type="text/css" />
+    <link href="SitePrint.css-v=8wGbZVsBHNUZjW78tbaeVtZ_Jlm0ss-wjdlzy_jKlOY.css" tppabs="https://2e.aonprd.com/Styles/SitePrint.css?v=8wGbZVsBHNUZjW78tbaeVtZ_Jlm0ss-wjdlzy_jKlOY" rel="stylesheet" type="text/css" media="print" />
+
+    <link href="css-family=Julee.css" tppabs="https://fonts.googleapis.com/css?family=Julee" rel="stylesheet" type="text/css" />
+    <link href="css-family=Andika.css" tppabs="https://fonts.googleapis.com/css?family=Andika" rel="stylesheet" type="text/css" />
+    <link href="css2-family=Lato-ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap.css" tppabs="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="search" type="application/opensearchdescription+xml" title="Search the Archives of Nethys" href="https://2e.aonprd.com/opensearch.xml" />
+
+
+    <script type="text/javascript">
+        window.elasticUrl = 'https://elasticsearch.aonprd.com/aon-test';
+    </script>
+
+        <script src="nethys-search-9f2620f2bfdf2014fd0b0c157f03248921d02563.js" tppabs="https://elasticsearch.aonprd.com/js/nethys-search-9f2620f2bfdf2014fd0b0c157f03248921d02563.js"></script>
+
+    <script
+      src="jquery-3.6.0.min.js" tppabs="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"></script>
+    <script src="semantic.min.js" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/semantic.min.js" integrity="sha512-5cguXwRllb+6bcc2pogwIeQmQPXEzn2ddsqAexIBhh7FO1z5Hkek1J9mrK2+rmZCTU6b6pERxI7acnp1MpAg4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="search.min.css" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/search.min.css" integrity="sha512-1xyHOORqcJ80bareQ2TWmQE+WZ/TlsqjqILbLHeM3Urtw720aiFXE/N+Xm4MAJpcn42e3k4Z8ZpqZfsA2VVyNw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="transition.min.css" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/transition.min.css" integrity="sha512-zsEyDFFD+yPxc7Kq8c3byp2H3tfx4GgT4wvCDzDGiOlkk2hl454XOHzHfN/OsPilopfPEbRzVJ0wxlIa/9BOyg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="transition.min.js" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/transition.min.js" integrity="sha512-zPx44KLp+BP6OKcCIPQibTiLz0WAc2s9syi+7wOT+Ql2D1/kAX8y7K1rz8vuTtrhRS2dMZ7zVS5dQoHTvkXJCA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="icon.min.css" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/icon.min.css" integrity="sha512-cKaYuptKrUbQ4/r0qmxhpQDjPWb7/SYN6gQRYMOQqPJ2+S4Bmb1zZ1/SAuszp+E6yoakjQFpM+rAzuw+EwR+xw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="input.min.css" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/input.min.css" integrity="sha512-6+BQOwPqqk5AianROXkI3LKgnLcjZbEV3KbhO++sKXemybg0FugrODki+nBsg9FipqlKSMd4ppnpkqC6VEpFiA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="button.min.css" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/button.min.css" integrity="sha512-XMrByQiBPJwH350YvTKR/XTY1fOQX4lSQqeft++WcyY39l0eKoPXOgx1OJHEODhHCW1FfvVl/Bdr90QE08FG+Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="dropdown.min.css" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/dropdown.min.css" integrity="sha512-hDsG55Tp5IgyWKbBbNhOo0+bLTdIVVAGW09a7IFvgIkKg/xrjOdOA2lEPFkkgJQ3NuB7DxDFlSHX7/JYvFLYfA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="dropdown.min.js" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/dropdown.min.js" integrity="sha512-1SzBIESNYM3Y8JkQrS1Mu2dPnPaAqeQkCV9KfDA2eYXBEzdkhHWyqTP6P0OAsh1RSC4cDvr8DmYVTmb/YWGYpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="showdown.min.js" tppabs="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js" integrity="sha512-LhccdVNGe2QMEfI3x4DVV3ckMRe36TfydKss6mJpdHjNFiV07dFpS2xzeZedptKZrwxfICJpez09iNioiSZ3hA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="lodash.min.js" tppabs="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="modernMenu.js" tppabs="https://2e.aonprd.com/Scripts/modernMenu.js"></script>
+
+    <script type="text/javascript" src="tableState.js" tppabs="https://2e.aonprd.com/Scripts/tableState.js"></script>
+    <script type="text/javascript" src="drawerHandlers.js" tppabs="https://2e.aonprd.com/Scripts/drawerHandlers.js"></script>
+    <script type="text/javascript" src="hideFilter.js" tppabs="https://2e.aonprd.com/Scripts/hideFilter.js"></script>
+    <script type="text/javascript" src="searchBar.js" tppabs="https://2e.aonprd.com/Scripts/searchBar.js"></script>
+
+    <script type="text/javascript" src="previewModal.js" tppabs="https://2e.aonprd.com/Scripts/previewModal.js"></script>
+    
+    
+        <meta name="keywords" content="Archives, Nethys, Wiki, Archives of Nethys, Pathfinder, Official, AoN, AoNPRD, PRD, PFSRD, 2E, 2nd Edition, Archetypes, Ghoul" />
+        <meta name="description" content="You died from the necrotic disease known as ghoul fever and rose anew as a ravenous ghoul , forever craving the flesh of sapient creatures. While you can temper your hunger with long-dead flesh stolen from ancient graves, you much prefer devouring those who are freshly dead, whether as a scavenger or because you killed the creature yourself to ensure a fresh meal. Whether they stalk through the graveyards and crypts of Golarion or work together with other ghouls to build empires in the Darklands, ghouls care most about the consumption of dead flesh. The moment you become a ghoul, your existence focuses upon satisfying this endless craving. Ghouls who go more than a few days without feeding on freshly dead humanoid flesh find themselves in constant pain; those who go for more than a week might be driven to the edge of delirium, becoming bestial in their craving. When you succumb to ghoul fever and become a ghoul, you don&#x27;t lose your mind or memories. You keep your personality only to have it warped by the never-ending need to consume flesh. A brave warrior remains brave, but under the curse of the fever, that brave warrior&#x27;s prime directive is to consume flesh. A rogue might go from finding clever ways to pick pockets to finding ways to waylay opponents and devour them. Since most societies don&#x27;t allow cannibalism, ghouls who wish to continue their old lives must satisfy their cravings in secret, finding a way to balance society&#x27;s rules while feeding the constant gnawing hunger inside them. Some take up professions that allow them to secretly eat dead flesh or create dead bodies to feed upon. There are tales told of ghoul mercenary troops who satisfy their cravings and profit, while ghoul spellcasters can use their magic to procure and preserve flesh. Ghouls who won&#x27;t restrain themselves with rules of the living may join or establish ghoul societies. These caste systems base their hierarchy on how much flesh one has consumed and can provide for other ghouls. Hunger and ambition drive ghouls to rise through the ranks, which allows them to feed their hunger even more." />
+
+
+    <meta charset="utf-8"/>
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="darkreader-lock" />
+    <style type="text/css">        
+        .nav-parent > * {
+            display: block;
+        }
+        .mobile-menu-toggle{
+            display:none;
+        }
+        #main-menu .nav-parent > .brand > .title{
+            display: none;
+        }
+    </style>
+</head>
+<body class="dark aon_dark_theme classic_feel">
+    <div id="wrapper" class="clearfix">
+
+
+        <script type="text/javascript" src="toggle.js" tppabs="https://2e.aonprd.com/Scripts/toggle.js"></script>
+
+
+        <div class="page clearfix" id="page">
+            <div class="header">
+                <div class="clear hideSkiplink" id="main-menu" >
+                    <a class="mobile-menu-toggle" id="mobile-menu-toggle" href="javascript:void(0);" data-toggle="mobile">|||</a>
+                    <div class="splash"></div>
+                    <div class="nav-parent" id="nav-parent">
+                        <a href="index.htm" tppabs="https://2e.aonprd.com/" style="font-size:larger" class="brand">
+                            <span class="home">
+                                Home
+                            </span>
+                        </a>
+                        <a href="Actions.aspx.htm" tppabs="https://2e.aonprd.com/Actions.aspx">Actions/Activities</a>
+                        <a href="Afflictions.aspx.htm" tppabs="https://2e.aonprd.com/Afflictions.aspx">Afflictions</a>
+                        <a href="Ancestries.aspx.htm" tppabs="https://2e.aonprd.com/Ancestries.aspx">Ancestries</a>
+                        <a href="Archetypes.aspx.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx">Archetypes</a>
+                        <a href="Backgrounds.aspx.htm" tppabs="https://2e.aonprd.com/Backgrounds.aspx">Backgrounds</a>
+                        <a href="Classes.aspx.htm" tppabs="https://2e.aonprd.com/Classes.aspx">Classes</a>
+                        <a href="Conditions.aspx.htm" tppabs="https://2e.aonprd.com/Conditions.aspx">Conditions</a>
+                        <a href="Creatures.aspx.htm" tppabs="https://2e.aonprd.com/Creatures.aspx">Creatures</a>
+                        <a href="Equipment.aspx.htm" tppabs="https://2e.aonprd.com/Equipment.aspx">Equipment</a>
+                        <a href="Feats.aspx.htm" tppabs="https://2e.aonprd.com/Feats.aspx">Feats</a>
+                        <a href="Hazards.aspx.htm" tppabs="https://2e.aonprd.com/Hazards.aspx">Hazards</a>
+                        <a href="MythicCallings.aspx.htm" tppabs="https://2e.aonprd.com/MythicCallings.aspx">Mythic</a>
+                        <a href="Rules.aspx.htm" tppabs="https://2e.aonprd.com/Rules.aspx">Rules</a>
+                        <a href="Setting.aspx.htm" tppabs="https://2e.aonprd.com/Setting.aspx">Setting</a>
+                        <a href="Skills.aspx.htm" tppabs="https://2e.aonprd.com/Skills.aspx">Skills</a>
+                        <a href="Spells.aspx.htm" tppabs="https://2e.aonprd.com/Spells.aspx">Spells/Rituals</a>
+                        <a href="Traits.aspx.htm" tppabs="https://2e.aonprd.com/Traits.aspx">Traits</a>
+                        <img src="heading_flourish.png" tppabs="https://2e.aonprd.com/Images/heading_flourish.png" alt="flourish" class="flourish" />
+                        <a href="Licenses.aspx.htm" tppabs="https://2e.aonprd.com/Licenses.aspx">Licenses</a>
+                        <a href="Sources.aspx.htm" tppabs="https://2e.aonprd.com/Sources.aspx">Sources</a>
+                        <img src="heading_flourish.png" tppabs="https://2e.aonprd.com/Images/heading_flourish.png" alt="flourish" class="flourish" />
+                        <a href="ContactUs.aspx.htm" tppabs="https://2e.aonprd.com/ContactUs.aspx">Contact Us</a>
+                        <a href="Contributors.aspx.htm" tppabs="https://2e.aonprd.com/Contributors.aspx">Contributors</a>
+                        <a href="Support.aspx.htm" tppabs="https://2e.aonprd.com/Support.aspx">Support the Archives</a>
+                        <div id="classic-search" class="search">
+                            <input type="text" class="search-input" placeholder="Search" />
+                            <button type="button" class="search-button">
+                                <svg class="Icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="height: 24px; width: 24px; fill: "><path d="M0 0h512v512H0z" fill="transparent" fill-opacity="0"></path><g class="" transform="translate(0,0)" style="touch-action: none;"><path d="M333.78 20.188c-39.97 0-79.96 15.212-110.405 45.656-58.667 58.667-60.796 152.72-6.406 213.97l-15.782 15.748 13.25 13.25 15.75-15.78c61.248 54.39 155.3 52.26 213.968-6.407 60.887-60.886 60.888-159.894 0-220.78C413.713 35.4 373.753 20.187 333.78 20.187zm0 18.562c35.15 0 70.285 13.44 97.158 40.313 53.745 53.745 53.744 140.6 0 194.343-51.526 51.526-133.46 53.643-187.5 6.375l.218-.217c-2.35-2.05-4.668-4.17-6.906-6.407-2.207-2.206-4.288-4.496-6.313-6.812l-.218.22c-47.27-54.04-45.152-135.976 6.374-187.502C263.467 52.19 298.63 38.75 333.78 38.75zm0 18.813c-30.31 0-60.63 11.6-83.81 34.78-46.362 46.362-46.362 121.234 0 167.594 10.14 10.142 21.632 18.077 33.905 23.782-24.91-19.087-40.97-49.133-40.97-82.94 0-15.323 3.292-29.888 9.22-43-4.165 20.485.44 40.88 14.47 54.907 24.583 24.585 68.744 20.318 98.624-9.562 29.88-29.88 34.146-74.04 9.56-98.625-2.375-2.376-4.943-4.473-7.655-6.313 45.13 8.648 79.954 46.345 84.25 92.876 4.44-35.07-6.82-71.726-33.813-98.72-23.18-23.18-53.47-34.78-83.78-34.78zM176.907 297.688L42.094 432.5l34.562 34.563L211.47 332.25l-34.564-34.563zM40 456.813L24 472.78 37.22 486l15.968-16L40 456.812z" fill-opacity="1"></path></g></svg>
+                            </button>
+                        </div>       
+                            <a id="minMaxMenu" onclick='setMenuState("min")'>Maximize Menu</a>
+                    </div>
+                    
+                    <div class="nav-parent expand-collapse" id="mobile-nav-parent" data-target="mobile">
+                        <a href="index.htm" tppabs="https://2e.aonprd.com/" style="font-size:larger" class="brand">
+                            <span class="title">
+                                Archives of Nethys
+                            </span>
+                        </a>
+                        <a href="Afflictions.aspx.htm" tppabs="https://2e.aonprd.com/Afflictions.aspx">Afflictions</a>
+                        <a href="javascript:void(0);" data-toggle="cc">Character Creation +</a>
+                        <div class="expand-collapse expand-collapse-group hide-when-collapsed expanded" data-target="cc" data-group="menus">
+                            <a href="Ancestries.aspx.htm" tppabs="https://2e.aonprd.com/Ancestries.aspx">Ancestries</a>
+                            <a href="Archetypes.aspx.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx">Archetypes</a>
+                            <a href="Backgrounds.aspx.htm" tppabs="https://2e.aonprd.com/Backgrounds.aspx">Backgrounds</a>
+                            <a href="Classes.aspx.htm" tppabs="https://2e.aonprd.com/Classes.aspx">Classes</a>
+                            <a href="Feats.aspx.htm" tppabs="https://2e.aonprd.com/Feats.aspx">Feats</a>
+                            <a href="Skills.aspx.htm" tppabs="https://2e.aonprd.com/Skills.aspx">Skills</a>
+                        </div>
+                        <a href="Creatures.aspx.htm" tppabs="https://2e.aonprd.com/Creatures.aspx">Creatures</a>
+                        <a href="Equipment.aspx.htm" tppabs="https://2e.aonprd.com/Equipment.aspx">Equipment</a>
+                        <a href="Setting.aspx.htm" tppabs="https://2e.aonprd.com/Setting.aspx">Setting</a>
+                        <a href="Spells.aspx.htm" tppabs="https://2e.aonprd.com/Spells.aspx">Spells/Rituals</a>
+                        <a href="javascript:void(0);" data-toggle="rules">Rules +</a>
+                        <div class="expand-collapse expand-collapse-group hide-when-collapsed" data-target="rules" data-group="menus">
+                            <a href="Actions.aspx.htm" tppabs="https://2e.aonprd.com/Actions.aspx">Actions/Activities</a>
+                            <a href="Conditions.aspx.htm" tppabs="https://2e.aonprd.com/Conditions.aspx">Conditions</a>
+                            <a href="Rules.aspx.htm" tppabs="https://2e.aonprd.com/Rules.aspx">Rules</a>
+                            <a href="Traits.aspx.htm" tppabs="https://2e.aonprd.com/Traits.aspx">Traits</a>
+                        </div>
+                        <a href="Hazards.aspx.htm" tppabs="https://2e.aonprd.com/Hazards.aspx">Hazards</a>
+                        <a href="javascript:void(0);" data-toggle="mythic" data-group="">Mythic +</a>
+                        <div class="expand-collapse expand-collapse-group hide-when-collapsed" data-target="mythic" data-group="menus">
+                            <a href="Rules.aspx-ID=3320.htm" tppabs="https://2e.aonprd.com/Rules.aspx?ID=3320">Mythic Rules</a>
+                            <a href="MythicCallings.aspx.htm" tppabs="https://2e.aonprd.com/MythicCallings.aspx">Callings</a>
+                            <a href="MythicFeats.aspx.htm" tppabs="https://2e.aonprd.com/MythicFeats.aspx">Mythic Feats</a>
+                            <a href="MythicDestinies.aspx.htm" tppabs="https://2e.aonprd.com/MythicDestinies.aspx">Destinies</a>
+                            <a href="MythicSpells.aspx.htm" tppabs="https://2e.aonprd.com/MythicSpells.aspx">Mythic Spells</a>
+                            <a href="MythicRituals.aspx.htm" tppabs="https://2e.aonprd.com/MythicRituals.aspx">Mythic Rituals</a>
+                        </div>
+                        <a href="Sources.aspx.htm" tppabs="https://2e.aonprd.com/Sources.aspx">Sources</a>
+                        <a href="javascript:void(0);" data-toggle="about" data-group="">About the Archives +</a>
+                        <div class="expand-collapse expand-collapse-group hide-when-collapsed" data-target="about" data-group="menus">
+                            <a href="Licenses.aspx.htm" tppabs="https://2e.aonprd.com/Licenses.aspx">Licenses</a>
+                            <a href="ContactUs.aspx.htm" tppabs="https://2e.aonprd.com/ContactUs.aspx">Contact Us</a>
+                            <a href="Contributors.aspx.htm" tppabs="https://2e.aonprd.com/Contributors.aspx">Contributors</a>
+                            <a href="Support.aspx.htm" tppabs="https://2e.aonprd.com/Support.aspx">Support the Archives</a>
+                        </div>
+                        <div id="mobileSearch" class="ui fluid search">
+                            <div class="ui action icon input" style="width:90%;height:100%">
+                                <input class="prompt" type="text" placeholder="Search..."/>
+                                <button class="ui icon button" onclick="jumpToSearch('#mobileSearch')">
+                                    <i class="search icon"></i>
+                                </button>
+                            </div>
+                            <div class="results"></div>
+                        </div>
+                        <a href="index.htm" tppabs="https://2e.aonprd.com/">
+                                <img src="PF2Logo_Nethys_400_Selected.png" tppabs="https://2e.aonprd.com/Images/PF2Logo_Nethys_400_Selected.png" alt="Pathfinder RPG (2nd Edition)" />
+                            </a>
+                        <a href="https://www.aonprd.com/"  >
+                            <img src="PF1Logo_Nethys_200.png" tppabs="https://2e.aonprd.com/Images/PF1Logo_Nethys_200.png" alt="Pathfinder RPG (1st Edition)" />
+                        </a> 
+                        <a href="https://www.aonsrd.com/" >
+                            <img src="SFLogo_Nethys_200.png" tppabs="https://2e.aonprd.com/Images/SFLogo_Nethys_200.png" alt="Starfinder RPG (1st Edition)" />
+                        </a>
+                        <a href="https://2e.aonsrd.com/" >
+                            <img src="starfinder_2_logo_200.webp" tppabs="https://2e.aonprd.com/Images/starfinder_2_logo_200.webp" alt="Starfinder RPG (2nd Edition)" />
+                        </a>
+                    </div>
+                </div>
+                <div class="theme-toggle-wrapper" title="Toggle Theme">
+                    <div class="theme-open" title="Change Theme"><i class="ra ra-flowers"></i></div>
+                </div>
+            </div>
+
+            <div class="new-navbar">
+                <div class="drawer-toggle" title="Expand Sidebar" onclick="switchDrawer()">
+                    <img src="NethysMask.png" tppabs="https://2e.aonprd.com/Images/NethysMask.png" alt="&#xe030" /></div>
+                    <a class="title" href="index.htm" tppabs="https://2e.aonprd.com/">Archives of Nethys</a>
+                    <div class="searchBar">
+                        <div id="desktopSearch" class="ui fluid search">
+                            <div class="ui action icon input" style="width:100%;height:100%">
+                                <input class="prompt" type="text" placeholder="Search..."/>
+                                <button class="ui icon button" onclick="jumpToSearch('#desktopSearch')">
+                                        <i class="search icon"></i>
+                                    </button>
+                            </div>
+                            <div class="results"></div>
+                        </div>                   
+                    </div>
+                    <div class="game-selector">
+                        <div class="game-selector-options">
+                            <a class="game-selector-option" href="https://aonprd.com/" >
+                                <img src="PF1Logo_Nethys.png" tppabs="https://2e.aonprd.com/Images/PF1Logo_Nethys.png" alt="Pathfinder 1e" />
+                            </a>
+                            <a class="game-selector-option" href="https://aonsrd.com/" >
+                                <img src="SFLogo_Nethys.png" tppabs="https://2e.aonprd.com/Images/SFLogo_Nethys.png" alt="Starfinder 1e" />
+                            </a>
+                            <a class="game-selector-option" href="https://2e.aonsrd.com/" >
+                                <img src="starfinder_2_logo.webp" tppabs="https://2e.aonprd.com/Images/starfinder_2_logo.webp" alt="Starfinder 2e" />
+                            </a>
+                        </div>
+                        <img class="game-selector-current" src="PF2Logo_Nethys.png" tppabs="https://2e.aonprd.com/Images/PF2Logo_Nethys.png" alt="Pathfinder 2e" />
+                    </div>
+                    <div class="theme-open" title="Change Theme"><i class="ra ra-flowers"></i></div>
+            </div>
+
+            <div class="main-wrapper" id="main-wrapper">
+                <div class="menutitle">
+                    <h1>
+                        Archives of Nethys
+                    </h1>
+                    <h2 class="game-titles">
+                        <a href="https://www.aonprd.com/"  >
+                            <img src="PF1Logo_Nethys.png" tppabs="https://2e.aonprd.com/Images/PF1Logo_Nethys.png" alt="Pathfinder RPG (1st Edition)" />
+                        </a> 
+                        <a href="index.htm" tppabs="https://2e.aonprd.com/" class="selected">
+                            <img src="PF2Logo_Nethys-Selected.png" tppabs="https://2e.aonprd.com/Images/PF2Logo_Nethys-Selected.png" alt="Pathfinder RPG (2nd Edition)" />
+                        </a>
+                        <a href="https://www.aonsrd.com/" >
+                            <img src="SFLogo_Nethys.png" tppabs="https://2e.aonprd.com/Images/SFLogo_Nethys.png" alt="Starfinder RPG (1st Edition)" />
+                        </a>
+                        <a href="https://2e.aonsrd.com/" >
+                            <img src="starfinder_2_logo.webp" tppabs="https://2e.aonprd.com/Images/starfinder_2_logo.webp" alt="Starfinder RPG (2nd Edition)" />
+                        </a>
+                    </h2>
+                </div>
+                <div class="main" id="main">
+                    
+
+<span class="hide-on-print"><h1 style="text-align:center"><a href="Archetypes.aspx.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx">All Archetypes</a><br /><a href="Archetypes.aspx-Category=9.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?Category=9">Artifact</a> | <a href="Archetypes.aspx-Category=7.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?Category=7">Class</a> | <a href="Archetypes.aspx-Category=1.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?Category=1">Combat Style</a> | <a href="Archetypes.aspx-Category=2.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?Category=2">Core</a> | <a href="Archetypes.aspx-Category=3.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?Category=3">Faction</a> | <a href="Archetypes.aspx-Category=4.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?Category=4">Multiclass</a> | <a href="Archetypes.aspx-Category=5.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?Category=5">Mystical</a> | <a href="Archetypes.aspx-Category=10.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?Category=10">Mythic</a> | <a href="Archetypes.aspx-Category=6.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?Category=6">Profession</a> | <a href="Archetypes.aspx-Category=8.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?Category=8">Undead</a></h1></span>
+<span class="hide-on-print"></span>
+
+    <hr class="hide-on-print" />
+
+<span></span>
+<span></span>
+<span><h1 class="title"><a href ="PFS.aspx.htm" tppabs="https://2e.aonprd.com/PFS.aspx"><span style="float:left;"><img alt="PFS Standard" title="PFS Standard" style="height:25px; padding:2px 10px 0px 2px" src="PFS_Standard-2.png" tppabs="https://2e.aonprd.com/Images/Icons/PFS_Standard.png"></a></span><a href="Archetypes.aspx-ID=178.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=178">Ghoul</a></h1><h3 class="title legacy-content-warning">Legacy Content</h3> <div class="sidebar"> <div><h2>Roleplaying a Ghoul</h2>When playing a ghoul, think about how hunger will affect your personality. Perhaps keep your character's personality as close to its original intent as possible, but with a slight twist. The desires and cravings of a ghoul are certainly strange and inhuman, but if you start emphasizing that right away, you don't have room to grow your portrayal of the character's descent into this hunger.<br /><br /> As you get more ghoul feats, you can roleplay your character's diminishing aspects as ghoul-like characteristics emerge. As your character becomes more ghoulish, they loses old inhibitions and becomes more ambitious. Ambition, after all, is another sort of hunger. Adding these new ambitions gives you ways to portray the transformation besides just making your character a cannibal.</div></div> <b>Source</b> <a href="Sources.aspx-ID=118.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=118" target="_blank" class="external-link"><i>Book of the Dead pg. 48</i></a><br />You died from the necrotic disease known as ghoul fever and rose anew as a ravenous <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/MonsterFamilies.aspx?ID=419&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/MonsterFamilies.aspx?ID=419&Redirected=1%27" tppabs="https://2e.aonprd.com/MonsterFamilies.aspx?ID=52">ghoul</a>, forever craving the flesh of sapient creatures. While you can temper your hunger with long-dead flesh stolen from ancient graves, you much prefer devouring those who are freshly dead, whether as a scavenger or because you killed the creature yourself to ensure a fresh meal.<br /><br /> Whether they stalk through the graveyards and crypts of Golarion or work together with other ghouls to build empires in the Darklands, ghouls care most about the consumption of dead flesh. The moment you become a ghoul, your existence focuses upon satisfying this endless craving. Ghouls who go more than a few days without feeding on freshly dead humanoid flesh find themselves in constant pain; those who go for more than a week might be driven to the edge of delirium, becoming bestial in their craving.<br /><br /> When you succumb to ghoul fever and become a ghoul, you don't lose your mind or memories. You keep your personality only to have it warped by the never-ending need to consume flesh. A brave warrior remains brave, but under the curse of the fever, that brave warrior's prime directive is to consume flesh. A rogue might go from finding clever ways to pick pockets to finding ways to waylay opponents and devour them.<br /><br /> Since most societies don't allow cannibalism, ghouls who wish to continue their old lives must satisfy their cravings in secret, finding a way to balance society's rules while feeding the constant gnawing hunger inside them. Some take up professions that allow them to secretly eat dead flesh or create dead bodies to feed upon. There are tales told of ghoul mercenary troops who satisfy their cravings and profit, while ghoul spellcasters can use their magic to procure and preserve flesh.<br /><br /> Ghouls who won't restrain themselves with rules of the living may join or establish ghoul societies. These caste systems base their hierarchy on how much flesh one has consumed and can provide for other ghouls. Hunger and ambition drive ghouls to rise through the ranks, which allows them to feed their hunger even more.<h1 class="title">Additional Feats</h1><b>Source</b> <a href="Sources.aspx-ID=216.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=216" target="_blank" class="external-link"><i>Player Core pg. 215</i></a><br />Some archetypes include a list of “Additional Feats” that appear in other sources. The list includes each feat’s level, which might be different than normal when gained from the archetype. You can take the feat as an archetype feat of that level, meaning it counts toward the number of feats required by the archetype’s dedication feat. When selected this way, a feat that normally has a class’s trait (such as the fighter trait) doesn’t have that class trait.<br /><br /><a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=2130  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=2130%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=2130"><u>Click here for the full rules on Additional Feats</a></u>.<br /><br /><br /><h2 class="title"><a href ="PFS.aspx.htm" tppabs="https://2e.aonprd.com/PFS.aspx"><span style="float:left;"><img alt="PFS Standard" title="PFS Standard" style="height:18px; padding:2px 10px 0px 2px" src="PFS_Standard-2.png" tppabs="https://2e.aonprd.com/Images/Icons/PFS_Standard.png"></a></span><a href="javascript:if(confirm(%27https://2e.aonprd.com/Feats.aspx?ID=3504  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Feats.aspx?ID=3504%27" tppabs="https://2e.aonprd.com/Feats.aspx?ID=3504">Ghoul Dedication</a> <span style="margin-left:auto; margin-right:0">Feat 2</span></h2><h3 class="title legacy-content-warning">Legacy Content</h3><span class="traitrare"><a href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=683&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=683&Redirected=1%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=137">Rare</a></span><span style="letter-spacing: -.4em">&nbsp;</span><span class="trait"><a href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=12  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=12%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=12">Archetype</a></span><span style="letter-spacing: -.4em">&nbsp;</span><span class="trait"><a href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=41  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=41%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=41">Dedication</a></span><span style="letter-spacing: -.4em">&nbsp;</span><br /><b>Source</b> <a href="Sources.aspx-ID=118.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=118" target="_blank" class="external-link"><i>Book of the Dead pg. 48</i></a><br /><b>Archetype</b> <u><a href="Archetypes.aspx-ID=178.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=178">Ghoul</a></u><br /><b>Prerequisites</b> You were killed by ghoul fever.<br /><hr />You have succumbed to ghoul fever, dying and returning as a <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/MonsterFamilies.aspx?ID=419&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/MonsterFamilies.aspx?ID=419&Redirected=1%27" tppabs="https://2e.aonprd.com/MonsterFamilies.aspx?ID=52">ghoul</a>, an undead cursed with a never-ending hunger for dead flesh that slowly overrides your reason and willpower until you would do anything for the meal you crave. In addition to the personality changes, your body changes as well. Your ears become pointed, and your skin grows blueish and pale. Your fingernails sharpen into claws; your teeth become razor sharp, ready to tear flesh off the bone; and your tongue grows long and pointed.<br /><br /> You gain the <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=218  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=218%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=218">ghoul</a> and <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=722&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=722&Redirected=1%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=160">undead</a> traits and the <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=1694  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=1694%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=1694">basic undead benefits</a>. Your undead craving is for the flesh of dead creatures; freshly dead corpses from sapient creatures fulfill your cravings much more than non-sapient or rotted corpses, but any dead creature can stave off the hunger for at least a little while. You gain two <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=199  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=199%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=199">unarmed</a> attacks in the <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/WeaponGroups.aspx?ID=4  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/WeaponGroups.aspx?ID=4%27" tppabs="https://2e.aonprd.com/WeaponGroups.aspx?ID=4">brawling</a> weapon group. The first unarmed attack is a claw that deals 1d4 slashing damage with the <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=526&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=526&Redirected=1%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=170">agile</a> and <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=602&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=602&Redirected=1%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=179">finesse</a> traits, and the second unarmed attack is a set of jaws that deal 1d6 piercing damage and have the finesse trait.<br /><br /> You gain the Consume Flesh action. Satisfying your craving is difficult. Consuming Flesh temporarily satiates you. Many ghoul feats have extra abilities or functions that can be used when you are satiated, though using those abilities also causes you to lose your satiated status. You can always Consume Flesh, but eating more than a normal amount has no further effect; a ghoul's hunger is satiated, or it is not.<br /><br /> <b>Consume Flesh</b>  <span class='action' title='Single Action' role='img' aria-label='Single Action'>[one-action]</span>  (<a style="text-decoration:underline" href="Traits.aspx-ID=645&Redirected=1.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=104">manipulate</a>) <b>Requirements</b> You are adjacent to the corpse of a Small or larger creature that died in the last hour; <b>Effect</b> You devour a chunk of the corpse. You become satiated for 1 hour.<br /><br /><b>Special</b> You can't select another dedication feat until you have gained two other feats from the ghoul archetype<br /><h2 class="title"><a href ="PFS.aspx.htm" tppabs="https://2e.aonprd.com/PFS.aspx"><span style="float:left;"><img alt="PFS Standard" title="PFS Standard" style="height:18px; padding:2px 10px 0px 2px" src="PFS_Standard-2.png" tppabs="https://2e.aonprd.com/Images/Icons/PFS_Standard.png"></a></span><a href="javascript:if(confirm(%27https://2e.aonprd.com/Feats.aspx?ID=3505  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Feats.aspx?ID=3505%27" tppabs="https://2e.aonprd.com/Feats.aspx?ID=3505">Replenishing Consumption</a> <span style="margin-left:auto; margin-right:0">Feat 4</span></h2><h3 class="title legacy-content-warning">Legacy Content</h3><span class="trait"><a href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=12  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=12%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=12">Archetype</a></span><span style="letter-spacing: -.4em">&nbsp;</span><br /><b>Source</b> <a href="Sources.aspx-ID=118.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=118" target="_blank" class="external-link"><i>Book of the Dead pg. 48</i></a><br /><b>Archetype</b> <u><a href="Archetypes.aspx-ID=178.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=178">Ghoul</a></u><br /><b>Prerequisites</b> <u><a href="javascript:if(confirm(%27https://2e.aonprd.com/Feats.aspx?ID=3504  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Feats.aspx?ID=3504%27" tppabs="https://2e.aonprd.com/Feats.aspx?ID=3504">Ghoul Dedication</a></u><br /><hr />When you devour corpses and satiate your hunger, you also recover from some of your wounds, your necrotized blue flesh knitting back together almost immediately as soon as you begin shoveling the chunks of dead flesh down your throat. Once every 10 minutes, when you <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Feats.aspx?ID=3504  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Feats.aspx?ID=3504%27" tppabs="https://2e.aonprd.com/Feats.aspx?ID=3504">Consume Flesh</a>, you regain 1d6 Hit Points for every 2 levels you have, rounded up.<br /><h2 class="title"><a href ="PFS.aspx.htm" tppabs="https://2e.aonprd.com/PFS.aspx"><span style="float:left;"><img alt="PFS Standard" title="PFS Standard" style="height:18px; padding:2px 10px 0px 2px" src="PFS_Standard-2.png" tppabs="https://2e.aonprd.com/Images/Icons/PFS_Standard.png"></a></span><a href="javascript:if(confirm(%27https://2e.aonprd.com/Feats.aspx?ID=3506  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Feats.aspx?ID=3506%27" tppabs="https://2e.aonprd.com/Feats.aspx?ID=3506">Swift Leap</a>  <span class='action' title='Single Action' role='img' aria-label='Single Action'>[one-action]</span> <span style="margin-left:auto; margin-right:0">Feat 4</span></h2><h3 class="title legacy-content-warning">Legacy Content</h3><span class="trait"><a href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=12  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=12%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=12">Archetype</a></span><span style="letter-spacing: -.4em">&nbsp;</span><br /><b>Source</b> <a href="Sources.aspx-ID=118.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=118" target="_blank" class="external-link"><i>Book of the Dead pg. 49</i></a><br /><b>Archetype</b> <u><a href="Archetypes.aspx-ID=178.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=178">Ghoul</a></u><br /><b>Prerequisites</b> <u><a href="javascript:if(confirm(%27https://2e.aonprd.com/Feats.aspx?ID=3504  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Feats.aspx?ID=3504%27" tppabs="https://2e.aonprd.com/Feats.aspx?ID=3504">Ghoul Dedication</a></u><br /><hr />Your undead physiology allows you to leap quickly toward or away from your opponent. You <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Actions.aspx?ID=2298&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Actions.aspx?ID=2298&Redirected=1%27" tppabs="https://2e.aonprd.com/Actions.aspx?ID=81">Leap</a>. This movement doesn't trigger reactions.<br /><br /> If you are satiated, you can choose to end your satiation to instead <a style="text-decoration:underline" href="Actions.aspx-ID=2377&Redirected=1.htm" tppabs="https://2e.aonprd.com/Actions.aspx?ID=36">High Jump</a> or <a style="text-decoration:underline" href="Actions.aspx-ID=2378&Redirected=1.htm" tppabs="https://2e.aonprd.com/Actions.aspx?ID=37">Long Jump</a> without triggering reactions, as you take a quick, enormous jump before any foe can react to your movement.<br /><h2 class="title"><a href ="PFS.aspx.htm" tppabs="https://2e.aonprd.com/PFS.aspx"><span style="float:left;"><img alt="PFS Standard" title="PFS Standard" style="height:18px; padding:2px 10px 0px 2px" src="PFS_Standard-2.png" tppabs="https://2e.aonprd.com/Images/Icons/PFS_Standard.png"></a></span><a href="javascript:if(confirm(%27https://2e.aonprd.com/Feats.aspx?ID=3507  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Feats.aspx?ID=3507%27" tppabs="https://2e.aonprd.com/Feats.aspx?ID=3507">Feverish Enzymes</a>  <span class='action' title='Two Actions' role='img' aria-label='Two Actions'>[two-actions]</span> <span style="margin-left:auto; margin-right:0">Feat 6</span></h2><h3 class="title legacy-content-warning">Legacy Content</h3><span class="trait"><a href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=12  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=12%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=12">Archetype</a></span><span style="letter-spacing: -.4em">&nbsp;</span><br /><b>Source</b> <a href="Sources.aspx-ID=118.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=118" target="_blank" class="external-link"><i>Book of the Dead pg. 49</i></a><br /><b>Archetype</b> <u><a href="Archetypes.aspx-ID=178.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=178">Ghoul</a></u><br /><b>Prerequisites</b> <u><a href="javascript:if(confirm(%27https://2e.aonprd.com/Feats.aspx?ID=3504  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Feats.aspx?ID=3504%27" tppabs="https://2e.aonprd.com/Feats.aspx?ID=3504">Ghoul Dedication</a></u><br /><hr />Your claws and fangs exude an infectious enzyme, related to the necrotic effects of ghoul fever, that causes a creature's wounds to heal slowly. Strike with your claw or jaws. This attack deals negative damage instead of its normal type; on a hit, the target halves any healing it receives until the start of your next turn. The target or an adjacent ally can spend two Interact actions to squeeze the enzymes from the wound and remove the effect.<br /><br /> If you are satiated, when you hit you can choose to end your satiation and boost your enzymes, increasing the duration to 1 minute.<br /><h2 class="title"><a href ="PFS.aspx.htm" tppabs="https://2e.aonprd.com/PFS.aspx"><span style="float:left;"><img alt="PFS Standard" title="PFS Standard" style="height:18px; padding:2px 10px 0px 2px" src="PFS_Standard-2.png" tppabs="https://2e.aonprd.com/Images/Icons/PFS_Standard.png"></a></span><a href="javascript:if(confirm(%27https://2e.aonprd.com/Feats.aspx?ID=3508  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Feats.aspx?ID=3508%27" tppabs="https://2e.aonprd.com/Feats.aspx?ID=3508">Grave Strength</a> <span style="margin-left:auto; margin-right:0">Feat 6</span></h2><h3 class="title legacy-content-warning">Legacy Content</h3><span class="trait"><a href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=12  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=12%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=12">Archetype</a></span><span style="letter-spacing: -.4em">&nbsp;</span><br /><b>Source</b> <a href="Sources.aspx-ID=118.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=118" target="_blank" class="external-link"><i>Book of the Dead pg. 49</i></a><br /><b>Archetype</b> <u><a href="Archetypes.aspx-ID=178.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=178">Ghoul</a></u><br /><b>Prerequisites</b> <u><a href="javascript:if(confirm(%27https://2e.aonprd.com/Feats.aspx?ID=3504  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Feats.aspx?ID=3504%27" tppabs="https://2e.aonprd.com/Feats.aspx?ID=3504">Ghoul Dedication</a></u><br /><hr />The flesh you've consumed over the course of your existence as a ghoul has made you stronger, gifting you with strange insights from the minds of the sapient creatures you've devoured and bringing you closer to a state of undead perfection. You gain the <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=1695  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=1695%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=1695">advanced undead benefits</a>. In addition, you gain a +5-foot status bonus to your Speed while you're satiated.<br /><h2 class="title"><a href ="PFS.aspx.htm" tppabs="https://2e.aonprd.com/PFS.aspx"><span style="float:left;"><img alt="PFS Standard" title="PFS Standard" style="height:18px; padding:2px 10px 0px 2px" src="PFS_Standard-2.png" tppabs="https://2e.aonprd.com/Images/Icons/PFS_Standard.png"></a></span><a href="javascript:if(confirm(%27https://2e.aonprd.com/Feats.aspx?ID=446&ArchLevel=6  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Feats.aspx?ID=446&ArchLevel=6%27" tppabs="https://2e.aonprd.com/Feats.aspx?ID=446&ArchLevel=6">Guarded Movement</a> <span style="margin-left:auto; margin-right:0">Feat 6</span></h2><h3 class="title legacy-content-warning">Legacy Content</h3><span class="trait"><a href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=112  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=112%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=112">Monk</a></span><span style="letter-spacing: -.4em">&nbsp;</span><br /><b>Source</b> <a href="Sources.aspx-ID=1.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=1" target="_blank" class="external-link"><i>Core Rulebook pg. 160</i></a><br /><b>Archetype</b> <u><a href="Archetypes.aspx-ID=178.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=178">Ghoul</a></u><br /><hr />Your guard is up, even while moving. You gain a +4 circumstance bonus to AC against reactions triggered by your movement.<br /><h2 class="title"><a href ="PFS.aspx.htm" tppabs="https://2e.aonprd.com/PFS.aspx"><span style="float:left;"><img alt="PFS Standard" title="PFS Standard" style="height:18px; padding:2px 10px 0px 2px" src="PFS_Standard-2.png" tppabs="https://2e.aonprd.com/Images/Icons/PFS_Standard.png"></a></span><a href="javascript:if(confirm(%27https://2e.aonprd.com/Feats.aspx?ID=564&ArchLevel=6  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Feats.aspx?ID=564&ArchLevel=6%27" tppabs="https://2e.aonprd.com/Feats.aspx?ID=564&ArchLevel=6">Reactive Pursuit</a>  <span class='action' title='Reaction' role='img' aria-label='Reaction'>[reaction]</span> <span style="margin-left:auto; margin-right:0">Feat 6</span></h2><h3 class="title legacy-content-warning">Legacy Content</h3><span class="trait"><a href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=139  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=139%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=139">Rogue</a></span><span style="letter-spacing: -.4em">&nbsp;</span><br /><b>Source</b> <a href="Sources.aspx-ID=1.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=1" target="_blank" class="external-link"><i>Core Rulebook pg. 185</i></a><br /><b>Archetypes</b> <u><a href="Archetypes.aspx-ID=183.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=183">Alkenstar Agent</a></u>, <u><a href="Archetypes.aspx-ID=178.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=178">Ghoul</a></u>, <u><a href="Archetypes.aspx-ID=28.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=28">Knight Reclaimant</a></u><br /><b>Trigger</b> An adjacent foe moves away from you, and you can reach at least one space adjacent to the foe with a Stride action.<br /><hr />You keep pace with a retreating foe. You Stride, but you must end your movement adjacent to the triggering enemy. Your move does not trigger reactions from the triggering enemy. You can use Reactive Pursuit to Burrow, Climb, Fly, or Swim instead of Stride if you have the corresponding movement type.<br /><h2 class="title"><a href ="PFS.aspx.htm" tppabs="https://2e.aonprd.com/PFS.aspx"><span style="float:left;"><img alt="PFS Standard" title="PFS Standard" style="height:18px; padding:2px 10px 0px 2px" src="PFS_Standard-2.png" tppabs="https://2e.aonprd.com/Images/Icons/PFS_Standard.png"></a></span><a href="javascript:if(confirm(%27https://2e.aonprd.com/Feats.aspx?ID=3509  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Feats.aspx?ID=3509%27" tppabs="https://2e.aonprd.com/Feats.aspx?ID=3509">Paralyzing Slash</a>  <span class='action' title='Two Actions' role='img' aria-label='Two Actions'>[two-actions]</span> <span style="margin-left:auto; margin-right:0">Feat 8</span></h2><h3 class="title legacy-content-warning">Legacy Content</h3><span class="trait"><a href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=12  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=12%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=12">Archetype</a></span><span style="letter-spacing: -.4em">&nbsp;</span><span class="trait"><a href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=93  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=93%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=93">Incapacitation</a></span><span style="letter-spacing: -.4em">&nbsp;</span><span class="trait"><a href="Traits.aspx-ID=117.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=117">Necromancy</a></span><span style="letter-spacing: -.4em">&nbsp;</span><span class="trait"><a href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=120  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=120%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=120">Occult</a></span><span style="letter-spacing: -.4em">&nbsp;</span><br /><b>Source</b> <a href="Sources.aspx-ID=118.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=118" target="_blank" class="external-link"><i>Book of the Dead pg. 49</i></a><br /><b>Archetype</b> <u><a href="Archetypes.aspx-ID=178.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=178">Ghoul</a></u><br /><b>Prerequisites</b> <u><a href="javascript:if(confirm(%27https://2e.aonprd.com/Feats.aspx?ID=3507  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Feats.aspx?ID=3507%27" tppabs="https://2e.aonprd.com/Feats.aspx?ID=3507">Feverish Enzymes</a></u><br /><hr />Your enzymes can paralyze your foes rather than merely making it harder for them to heal their wounds. Strike with your claw or jaws. If you hit a living non-<a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=58  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=58%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=58">elf</a> creature, it becomes <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Conditions.aspx?ID=85&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Conditions.aspx?ID=85&Redirected=1%27" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=28">paralyzed</a> unless it succeeds at a Fortitude save against your class DC or spell DC, whichever is higher. Regardless of the result of the save, the creature is temporarily immune to Paralyzing Slash for 24 hours. A creature that becomes paralyzed can attempt a new save to end the paralysis at the end of each of its turns, and the DC cumulatively decreases by 1 on each such save.<br /><h2 class="title"><a href ="PFS.aspx.htm" tppabs="https://2e.aonprd.com/PFS.aspx"><span style="float:left;"><img alt="PFS Standard" title="PFS Standard" style="height:18px; padding:2px 10px 0px 2px" src="PFS_Standard-2.png" tppabs="https://2e.aonprd.com/Images/Icons/PFS_Standard.png"></a></span><a href="javascript:if(confirm(%27https://2e.aonprd.com/Feats.aspx?ID=3510  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Feats.aspx?ID=3510%27" tppabs="https://2e.aonprd.com/Feats.aspx?ID=3510">Sickening Bite</a> <span style="margin-left:auto; margin-right:0">Feat 8</span></h2><h3 class="title legacy-content-warning">Legacy Content</h3><span class="trait"><a href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=12  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=12%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=12">Archetype</a></span><span style="letter-spacing: -.4em">&nbsp;</span><br /><b>Source</b> <a href="Sources.aspx-ID=118.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=118" target="_blank" class="external-link"><i>Book of the Dead pg. 49</i></a><br /><b>Archetype</b> <u><a href="Archetypes.aspx-ID=178.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=178">Ghoul</a></u><br /><b>Prerequisites</b> <u><a href="javascript:if(confirm(%27https://2e.aonprd.com/Feats.aspx?ID=3504  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Feats.aspx?ID=3504%27" tppabs="https://2e.aonprd.com/Feats.aspx?ID=3504">Ghoul Dedication</a></u><br /><hr />Your saliva causes severe nausea and mild fever in the living, weakening them so that you can more easily finish them off. When you critically hit a creature with your jaws, the creature is <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Conditions.aspx?ID=91&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Conditions.aspx?ID=91&Redirected=1%27" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=34">sickened 1</a>. This is a disease effect.<br /><br /> If you are satiated, you can end your satiation to make the target sickened 1 on a regular hit instead.<br /><h2 class="title"><a href="javascript:if(confirm(%27https://2e.aonprd.com/Feats.aspx?ID=3888  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Feats.aspx?ID=3888%27" tppabs="https://2e.aonprd.com/Feats.aspx?ID=3888">Flailtongue</a> <span style="margin-left:auto; margin-right:0">Feat 10</span></h2><h3 class="title legacy-content-warning">Legacy Content</h3><span class="trait"><a href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=12  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=12%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=12">Archetype</a></span><span style="letter-spacing: -.4em">&nbsp;</span><br /><b>Source</b> <a href="Sources.aspx-ID=147.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=147" target="_blank" class="external-link"><i>Pathfinder #184: The Ghouls Hunger pg. 79</i></a><br /><b>Archetype</b> <u><a href="Archetypes.aspx-ID=178.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=178">Ghoul</a></u><br /><b>Prerequisites</b> <u><a href="javascript:if(confirm(%27https://2e.aonprd.com/Feats.aspx?ID=3504  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Feats.aspx?ID=3504%27" tppabs="https://2e.aonprd.com/Feats.aspx?ID=3504">Ghoul Dedication</a></u><br /><hr />Your tongue has mutated into a lashing weapon reminiscent of <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Deities.aspx?ID=432&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Deities.aspx?ID=432&Redirected=1%27" tppabs="https://2e.aonprd.com/Deities.aspx?ID=76">Kabriri's</a> bone-laden <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Weapons.aspx?ID=19  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Weapons.aspx?ID=19%27" tppabs="https://2e.aonprd.com/Weapons.aspx?ID=19">flail</a>. You can use a free action to unhinge your lower jaw and sprout rigid bones from your tongue. You gain an <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=199  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=199%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=199">unarmed</a> attack that deals 1d6 bludgeoning damage. Until you use an Interact action to reset your jaw and retract your tongue, you can't make a jaws Strike. Your flailtongue is in the <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/WeaponGroups.aspx?ID=7  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/WeaponGroups.aspx?ID=7%27" tppabs="https://2e.aonprd.com/WeaponGroups.aspx?ID=7">flail</a> weapon group and has the <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=175  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=175%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=175">disarm</a>, <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=708&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=708&Redirected=1%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=194">sweep</a>, and <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=196  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=196%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=196">trip</a> traits.<br /><h2 class="title"><a href ="PFS.aspx.htm" tppabs="https://2e.aonprd.com/PFS.aspx"><span style="float:left;"><img alt="PFS Standard" title="PFS Standard" style="height:18px; padding:2px 10px 0px 2px" src="PFS_Standard-2.png" tppabs="https://2e.aonprd.com/Images/Icons/PFS_Standard.png"></a></span><a href="javascript:if(confirm(%27https://2e.aonprd.com/Feats.aspx?ID=3511  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Feats.aspx?ID=3511%27" tppabs="https://2e.aonprd.com/Feats.aspx?ID=3511">Glutton for Flesh</a> <span style="margin-left:auto; margin-right:0">Feat 10</span></h2><h3 class="title legacy-content-warning">Legacy Content</h3><span class="trait"><a href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=12  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=12%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=12">Archetype</a></span><span style="letter-spacing: -.4em">&nbsp;</span><br /><b>Source</b> <a href="Sources.aspx-ID=118.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=118" target="_blank" class="external-link"><i>Book of the Dead pg. 49</i></a><br /><b>Archetype</b> <u><a href="Archetypes.aspx-ID=178.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=178">Ghoul</a></u><br /><b>Prerequisites</b> <u><a href="javascript:if(confirm(%27https://2e.aonprd.com/Feats.aspx?ID=3504  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Feats.aspx?ID=3504%27" tppabs="https://2e.aonprd.com/Feats.aspx?ID=3504">Ghoul Dedication</a></u><br /><hr />You have developed a capacity to store more flesh within your gaunt body to leave yourself satiated longer. If you <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Feats.aspx?ID=3504  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Feats.aspx?ID=3504%27" tppabs="https://2e.aonprd.com/Feats.aspx?ID=3504">Consume Flesh</a> while satiated, you become fully satiated. You stay fully satiated for 3 hours, after which you become satiated for 1 hour. If you're fully satiated when an ability would end your satiation, you cease being fully satiated but remain satiated. If you have <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Feats.aspx?ID=3508  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Feats.aspx?ID=3508%27" tppabs="https://2e.aonprd.com/Feats.aspx?ID=3508">Grave Strength</a>, you gain a +10-foot status bonus to your Speed when fully satiated instead of a +5-foot status bonus for being satiated.<br /><h2 class="title"><a href ="PFS.aspx.htm" tppabs="https://2e.aonprd.com/PFS.aspx"><span style="float:left;"><img alt="PFS Standard" title="PFS Standard" style="height:18px; padding:2px 10px 0px 2px" src="PFS_Standard-2.png" tppabs="https://2e.aonprd.com/Images/Icons/PFS_Standard.png"></a></span><a href="javascript:if(confirm(%27https://2e.aonprd.com/Feats.aspx?ID=462&ArchLevel=10  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Feats.aspx?ID=462&ArchLevel=10%27" tppabs="https://2e.aonprd.com/Feats.aspx?ID=462&ArchLevel=10">Wall Run</a>  <span class='action' title='Single Action' role='img' aria-label='Single Action'>[one-action]</span> <span style="margin-left:auto; margin-right:0">Feat 10</span></h2><h3 class="title legacy-content-warning">Legacy Content</h3><span class="trait"><a href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=112  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=112%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=112">Monk</a></span><span style="letter-spacing: -.4em">&nbsp;</span><br /><b>Source</b> <a href="Sources.aspx-ID=1.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=1" target="_blank" class="external-link"><i>Core Rulebook pg. 163</i></a><br /><b>Archetype</b> <u><a href="Archetypes.aspx-ID=178.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=178">Ghoul</a></u><br /><hr />You defy gravity, traversing vertical planes as easily as the ground. Stride up to your Speed. You must start your movement on a horizontal surface. During this movement, you can run up vertical surfaces, like walls, at your full Speed. If you end the Stride off the ground, you fall after taking your next action or when your turn ends, whichever comes first (though you can Grab an Edge, if applicable). If you have Water Step or a similar ability, Wall Run lets you run along flimsy vertical surfaces, as well as vertical liquids, such as a waterfall.<br /><h2 class="title"><a href="javascript:if(confirm(%27https://2e.aonprd.com/Feats.aspx?ID=3889  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Feats.aspx?ID=3889%27" tppabs="https://2e.aonprd.com/Feats.aspx?ID=3889">Competitive Eater</a> <span style="margin-left:auto; margin-right:0">Feat 12</span></h2><h3 class="title legacy-content-warning">Legacy Content</h3><span class="trait"><a href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=12  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=12%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=12">Archetype</a></span><span style="letter-spacing: -.4em">&nbsp;</span><br /><b>Source</b> <a href="Sources.aspx-ID=147.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=147" target="_blank" class="external-link"><i>Pathfinder #184: The Ghouls Hunger pg. 79</i></a><br /><b>Archetype</b> <u><a href="Archetypes.aspx-ID=178.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=178">Ghoul</a></u><br /><b>Prerequisites</b> <u><a href="javascript:if(confirm(%27https://2e.aonprd.com/Feats.aspx?ID=3511  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Feats.aspx?ID=3511%27" tppabs="https://2e.aonprd.com/Feats.aspx?ID=3511">Glutton for Flesh</a></u><br /><hr />Gorging on flesh after your stomach is full fortifies you, making you hardy enough to withstand more punishment. When you become fully satiated, you gain an amount of temporary Hit Points equal to 10 + your level.<br /><h2 class="title"><a href ="PFS.aspx.htm" tppabs="https://2e.aonprd.com/PFS.aspx"><span style="float:left;"><img alt="PFS Standard" title="PFS Standard" style="height:18px; padding:2px 10px 0px 2px" src="PFS_Standard-2.png" tppabs="https://2e.aonprd.com/Images/Icons/PFS_Standard.png"></a></span><a href="javascript:if(confirm(%27https://2e.aonprd.com/Feats.aspx?ID=3512  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Feats.aspx?ID=3512%27" tppabs="https://2e.aonprd.com/Feats.aspx?ID=3512">Corpse Stench</a> <span style="margin-left:auto; margin-right:0">Feat 12</span></h2><h3 class="title legacy-content-warning">Legacy Content</h3><span class="trait"><a href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=12  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=12%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=12">Archetype</a></span><span style="letter-spacing: -.4em">&nbsp;</span><span class="trait"><a href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=206  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=206%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=206">Aura</a></span><span style="letter-spacing: -.4em">&nbsp;</span><span class="trait"><a href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=246  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=246%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=246">Olfactory</a></span><span style="letter-spacing: -.4em">&nbsp;</span><br /><b>Source</b> <a href="Sources.aspx-ID=118.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=118" target="_blank" class="external-link"><i>Book of the Dead pg. 49</i></a><br /><b>Archetypes</b> <u><a href="Archetypes.aspx-ID=178.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=178">Ghoul</a></u>, <u><a href="Archetypes.aspx-ID=182.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=182">Zombie</a></u>*<br /><b>Prerequisites</b> <u><a href="javascript:if(confirm(%27https://2e.aonprd.com/Feats.aspx?ID=3504  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Feats.aspx?ID=3504%27" tppabs="https://2e.aonprd.com/Feats.aspx?ID=3504">Ghoul Dedication</a></u><br />* This archetype offers Corpse Stench at a different level than displayed here.<br /><hr />Your body exudes an overwhelming scent of decay in a 10-foot emanation, so putrid that it nauseates creates within that range. Any creature that starts its turn in the aura must succeed at a Fortitude save against your class DC or spell DC, whichever is higher, or be <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Conditions.aspx?ID=91&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Conditions.aspx?ID=91&Redirected=1%27" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=34">sickened 1</a> (plus slowed 1 on a critical failure). While within the aura, the creature takes a –2 circumstance penalty to saves against disease and to recover from the sickened condition. A creature that succeeds at its save is temporarily immune to Corpse Stench for 1 minute.<br /><h2 class="title"><a href="javascript:if(confirm(%27https://2e.aonprd.com/Feats.aspx?ID=3890  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Feats.aspx?ID=3890%27" tppabs="https://2e.aonprd.com/Feats.aspx?ID=3890">Secret Eater</a> <span style="margin-left:auto; margin-right:0">Feat 12</span></h2><h3 class="title">This Feat may contain spoilers from the Blood Lords Adventure Path</h3><h3 class="title legacy-content-warning">Legacy Content</h3><span class="traitrare"><a href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=683&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=683&Redirected=1%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=137">Rare</a></span><span style="letter-spacing: -.4em">&nbsp;</span><span class="trait"><a href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=12  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=12%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=12">Archetype</a></span><span style="letter-spacing: -.4em">&nbsp;</span><span class="trait"><a href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=579&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=579&Redirected=1%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=48">Divine</a></span><span style="letter-spacing: -.4em">&nbsp;</span><span class="trait"><a href="Traits.aspx-ID=117.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=117">Necromancy</a></span><span style="letter-spacing: -.4em">&nbsp;</span><span class="trait"><a href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=120  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=120%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=120">Occult</a></span><span style="letter-spacing: -.4em">&nbsp;</span><br /><b>Source</b> <a href="Sources.aspx-ID=147.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=147" target="_blank" class="external-link"><i>Pathfinder #184: The Ghouls Hunger pg. 79</i></a><br /><b>Archetype</b> <u><a href="Archetypes.aspx-ID=178.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=178">Ghoul</a></u><br /><b>Prerequisites</b> <u><a href="javascript:if(confirm(%27https://2e.aonprd.com/Feats.aspx?ID=3504  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Feats.aspx?ID=3504%27" tppabs="https://2e.aonprd.com/Feats.aspx?ID=3504">Ghoul Dedication</a></u>; worshipper of <u><a href="javascript:if(confirm(%27https://2e.aonprd.com/Deities.aspx?ID=432&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Deities.aspx?ID=432&Redirected=1%27" tppabs="https://2e.aonprd.com/Deities.aspx?ID=76">Kabriri</a></u><br /><hr />You have discovered and found favor with the cult within the church of Kabriri known as the Secret Eaters. You have maggots that writhe under your skin with the power to wriggle out from between your teeth, glean secrets from those you devour, and whisper them telepathically into your mind. Once per hour when you <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Feats.aspx?ID=3504  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Feats.aspx?ID=3504%27" tppabs="https://2e.aonprd.com/Feats.aspx?ID=3504">Consume Flesh</a>, you can select a single Intelligence-, Wisdom-, or Charisma-based skill whose secrets you wish to uncover. You become subject to the effects of <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Rituals.aspx?ID=94  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rituals.aspx?ID=94%27" tppabs="https://2e.aonprd.com/Rituals.aspx?ID=94"><i>corpse communion</i></a> as if you had critically succeeded at casting the ritual: you learn a significant piece of lore, a forgotten secret, or some other tantalizing nugget of knowledge that is of immediate use to you.
+<br /><h2 class="title"><a href="javascript:if(confirm(%27https://2e.aonprd.com/Feats.aspx?ID=3891  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Feats.aspx?ID=3891%27" tppabs="https://2e.aonprd.com/Feats.aspx?ID=3891">Tunneling Claws</a> <span style="margin-left:auto; margin-right:0">Feat 12</span></h2><h3 class="title legacy-content-warning">Legacy Content</h3><span class="trait"><a href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=12  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=12%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=12">Archetype</a></span><span style="letter-spacing: -.4em">&nbsp;</span><br /><b>Source</b> <a href="Sources.aspx-ID=147.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=147" target="_blank" class="external-link"><i>Pathfinder #184: The Ghouls Hunger pg. 80</i></a><br /><b>Archetype</b> <u><a href="Archetypes.aspx-ID=178.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=178">Ghoul</a></u><br /><b>Prerequisites</b> <u><a href="javascript:if(confirm(%27https://2e.aonprd.com/Feats.aspx?ID=3504  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Feats.aspx?ID=3504%27" tppabs="https://2e.aonprd.com/Feats.aspx?ID=3504">Ghoul Dedication</a></u>; trained in <u><a href="Skills.aspx-ID=36&Redirected=1.htm" tppabs="https://2e.aonprd.com/Skills.aspx?ID=3">Athletics</a></u><br /><hr />You have elongated claws and enhanced senses, making you uncanny at digging the underground passageways needed to construct ghoul warrens and rob graves without arousing suspicion. You gain a burrow Speed of 15 feet and a <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/MonsterAbilities.aspx?ID=40  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/MonsterAbilities.aspx?ID=40%27" tppabs="https://2e.aonprd.com/MonsterAbilities.aspx?ID=40">tremorsense</a> (<a style="text-decoration:underline" href="Rules.aspx-ID=2407&Redirected=1.htm" tppabs="https://2e.aonprd.com/Rules.aspx?ID=412">imprecise</a>) of 60 feet. You can <a style="text-decoration:underline" href="Actions.aspx-ID=2310&Redirected=1.htm" tppabs="https://2e.aonprd.com/Actions.aspx?ID=93">Burrow</a> through any earthen matter, including rock, while moving at your full burrow Speed. When you move in this way, you can choose either to leave tunnels behind you that are large enough to allow creatures of your size or smaller to move through them or move through the ground while leaving no tunnels or signs of your passing.<br /><h2 class="title"><a href="javascript:if(confirm(%27https://2e.aonprd.com/Feats.aspx?ID=3892  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Feats.aspx?ID=3892%27" tppabs="https://2e.aonprd.com/Feats.aspx?ID=3892">Bodysnatcher</a> <span style="margin-left:auto; margin-right:0">Feat 14</span></h2><h3 class="title">This Feat may contain spoilers from the Blood Lords Adventure Path</h3><h3 class="title legacy-content-warning">Legacy Content</h3><span class="traitrare"><a href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=683&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=683&Redirected=1%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=137">Rare</a></span><span style="letter-spacing: -.4em">&nbsp;</span><span class="trait"><a href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=12  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=12%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=12">Archetype</a></span><span style="letter-spacing: -.4em">&nbsp;</span><span class="trait"><a href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=579&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=579&Redirected=1%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=48">Divine</a></span><span style="letter-spacing: -.4em">&nbsp;</span><span class="trait"><a href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=670&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=670&Redirected=1%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=127">Polymorph</a></span><span style="letter-spacing: -.4em">&nbsp;</span><span class="trait"><a href="Traits.aspx-ID=157.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=157">Transmutation</a></span><span style="letter-spacing: -.4em">&nbsp;</span><br /><b>Source</b> <a href="Sources.aspx-ID=147.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=147" target="_blank" class="external-link"><i>Pathfinder #184: The Ghouls Hunger pg. 80</i></a><br /><b>Archetype</b> <u><a href="Archetypes.aspx-ID=178.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=178">Ghoul</a></u><br /><b>Prerequisites</b> <u><a href="javascript:if(confirm(%27https://2e.aonprd.com/Feats.aspx?ID=3890  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Feats.aspx?ID=3890%27" tppabs="https://2e.aonprd.com/Feats.aspx?ID=3890">Secret Eater</a></u><br /><hr />Your secret-stealing maggots reveal how to devour more than just the flesh and secrets of a victim; you can ingest and assume their whole physical appearance. When you <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Feats.aspx?ID=3504  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Feats.aspx?ID=3504%27" tppabs="https://2e.aonprd.com/Feats.aspx?ID=3504">Consume Flesh</a> of a creature of your size or smaller, you can assume the physical form of the creature immediately after becoming satiated or fully satiated. Using Bodysnatcher counts as creating a disguise for the <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Actions.aspx?ID=46  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Actions.aspx?ID=46%27" tppabs="https://2e.aonprd.com/Actions.aspx?ID=46">Impersonate</a> use of <a style="text-decoration:underline" href="Skills.aspx-ID=38&Redirected=1.htm" tppabs="https://2e.aonprd.com/Skills.aspx?ID=5">Deception</a>. Your transformation automatically defeats Perception DCs to determine you are a member of the ancestry or creature type into which you transformed, and you gain a +4 circumstance bonus to your Deception DC to prevent others from seeing through your disguise. You do not gain the special abilities, skills, voice, memories, or other characteristics of the creature you consumed, only their physical form. Unlike <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/MonsterAbilities.aspx?ID=8  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/MonsterAbilities.aspx?ID=8%27" tppabs="https://2e.aonprd.com/MonsterAbilities.aspx?ID=8">Change Shape</a>, Bodysnatcher can be used to gain the appearance of a specific individual whose flesh you've consumed. This effect lasts until you are no longer satiated and can only be used once per individual creature.<br /><h2 class="title"><a href="javascript:if(confirm(%27https://2e.aonprd.com/Feats.aspx?ID=3893  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Feats.aspx?ID=3893%27" tppabs="https://2e.aonprd.com/Feats.aspx?ID=3893">Graveshift</a> <span style="margin-left:auto; margin-right:0">Feat 14</span></h2><h3 class="title">This Feat may contain spoilers from the Blood Lords Adventure Path</h3><h3 class="title legacy-content-warning">Legacy Content</h3><span class="traitrare"><a href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=683&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=683&Redirected=1%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=137">Rare</a></span><span style="letter-spacing: -.4em">&nbsp;</span><span class="trait"><a href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=12  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=12%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=12">Archetype</a></span><span style="letter-spacing: -.4em">&nbsp;</span><span class="trait"><a href="Traits.aspx-ID=33.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=33">Conjuration</a></span><span style="letter-spacing: -.4em">&nbsp;</span><span class="trait"><a href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=579&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=579&Redirected=1%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=48">Divine</a></span><span style="letter-spacing: -.4em">&nbsp;</span><span class="trait"><a href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=156  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=156%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=156">Teleportation</a></span><span style="letter-spacing: -.4em">&nbsp;</span><br /><b>Source</b> <a href="Sources.aspx-ID=147.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=147" target="_blank" class="external-link"><i>Pathfinder #184: The Ghouls Hunger pg. 80</i></a><br /><b>Archetype</b> <u><a href="Archetypes.aspx-ID=178.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=178">Ghoul</a></u><br /><b>Frequency</b> once per day<br /><b>Prerequisites</b> <u><a href="javascript:if(confirm(%27https://2e.aonprd.com/Feats.aspx?ID=3890  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Feats.aspx?ID=3890%27" tppabs="https://2e.aonprd.com/Feats.aspx?ID=3890">Secret Eater</a></u><br /><b>Requirements</b> You are standing at the bottom of an open grave adjacent to up to four willing target creatures or objects roughly the size of a creature.<br /><hr />The maggots inhabiting your body impart you with the knowledge to travel from grave to grave, drawing upon the mystical power of the labyrinthine network of magical warrens and tunnels that connect Everglut to the <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Planes.aspx?ID=26&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Planes.aspx?ID=26&Redirected=1%27" tppabs="https://2e.aonprd.com/Planes.aspx?ID=1">Material Plane</a>. You can spend 10 minutes channeling this power to transport you and all target creatures or objects that are inside the grave you are standing in to a chosen grave you are aware of (unoccupied or occupied) within 100 miles. When you target an occupied or filled grave, you and all transported creatures and objects appear scattered aboveground around the targeted grave (or belowground in adjacent tunnels or passageways if available).<br /><h2 class="title"><a href="javascript:if(confirm(%27https://2e.aonprd.com/Feats.aspx?ID=3894  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Feats.aspx?ID=3894%27" tppabs="https://2e.aonprd.com/Feats.aspx?ID=3894">Breath of Hungry Death</a>  <span class='action' title='Two Actions' role='img' aria-label='Two Actions'>[two-actions]</span> <span style="margin-left:auto; margin-right:0">Feat 16</span></h2><h3 class="title">This Feat may contain spoilers from the Blood Lords Adventure Path</h3><h3 class="title legacy-content-warning">Legacy Content</h3><span class="traitrare"><a href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=683&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=683&Redirected=1%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=137">Rare</a></span><span style="letter-spacing: -.4em">&nbsp;</span><span class="trait"><a href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=3  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=3%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=3">Acid</a></span><span style="letter-spacing: -.4em">&nbsp;</span><span class="trait"><a href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=12  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=12%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=12">Archetype</a></span><span style="letter-spacing: -.4em">&nbsp;</span><span class="trait"><a href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=579&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=579&Redirected=1%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=48">Divine</a></span><span style="letter-spacing: -.4em">&nbsp;</span><span class="trait"><a href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=93  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=93%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=93">Incapacitation</a></span><span style="letter-spacing: -.4em">&nbsp;</span><span class="trait"><a href="Traits.aspx-ID=117.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=117">Necromancy</a></span><span style="letter-spacing: -.4em">&nbsp;</span><span class="trait"><a href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=120  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=120%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=120">Occult</a></span><span style="letter-spacing: -.4em">&nbsp;</span><br /><b>Source</b> <a href="Sources.aspx-ID=147.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=147" target="_blank" class="external-link"><i>Pathfinder #184: The Ghouls Hunger pg. 80</i></a><br /><b>Archetype</b> <u><a href="Archetypes.aspx-ID=178.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=178">Ghoul</a></u><br /><b>Frequency</b> Once per hour<br /><b>Prerequisites</b> <u><a href="javascript:if(confirm(%27https://2e.aonprd.com/Feats.aspx?ID=3890  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Feats.aspx?ID=3890%27" tppabs="https://2e.aonprd.com/Feats.aspx?ID=3890">Secret Eater</a></u><br /><hr />You have uncovered occult mysteries that allow you to unleash the devastating hunger of Kabriri upon your foes with a single exhalation, releasing a massive cloud of flesh-eating gas that glows with a sickly green light. You deal 7d6 acid and 7d6 negative damage to all creatures within a 30-foot cone (<a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=2297&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=2297&Redirected=1%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=329">basic</a> Reflex save with a DC equal to your class DC or spell DC, whichever is higher). A creature that gets a critical failure on this Reflex save is also <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Conditions.aspx?ID=85&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Conditions.aspx?ID=85&Redirected=1%27" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=28">paralyzed</a> for 1 round. A creature that succeeds at this save becomes temporarily immune to Breath of Hungry Death for 24 hours. <br /> When a creature is killed using Breath of Hungry Death, its body is reduced to a smoldering pile of ash wafting with necrotic fumes. You can use a reaction to immediately inhale these fumes and become satiated or fully satiated as if you had used <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Feats.aspx?ID=3504  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Feats.aspx?ID=3504%27" tppabs="https://2e.aonprd.com/Feats.aspx?ID=3504">Consume Flesh</a>.<br /><h2 class="title"><a href="javascript:if(confirm(%27https://2e.aonprd.com/Feats.aspx?ID=3895  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Feats.aspx?ID=3895%27" tppabs="https://2e.aonprd.com/Feats.aspx?ID=3895">Wrath of the First Ghoul</a>  <span class='action' title='Two Actions' role='img' aria-label='Two Actions'>[two-actions]</span> <span style="margin-left:auto; margin-right:0">Feat 20</span></h2><h3 class="title">This Feat may contain spoilers from the Blood Lords Adventure Path</h3><h3 class="title legacy-content-warning">Legacy Content</h3><span class="traitrare"><a href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=683&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=683&Redirected=1%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=137">Rare</a></span><span style="letter-spacing: -.4em">&nbsp;</span><span class="trait"><a href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=12  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=12%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=12">Archetype</a></span><span style="letter-spacing: -.4em">&nbsp;</span><span class="trait"><a href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=40  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=40%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=40">Death</a></span><span style="letter-spacing: -.4em">&nbsp;</span><span class="trait"><a href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=579&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=579&Redirected=1%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=48">Divine</a></span><span style="letter-spacing: -.4em">&nbsp;</span><span class="trait"><a href="Traits.aspx-ID=61.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=61">Enchantment</a></span><span style="letter-spacing: -.4em">&nbsp;</span><span class="trait"><a href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=73  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=73%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=73">Flourish</a></span><span style="letter-spacing: -.4em">&nbsp;</span><span class="trait"><a href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=106  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=106%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=106">Mental</a></span><span style="letter-spacing: -.4em">&nbsp;</span><span class="trait"><a href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=120  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=120%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=120">Occult</a></span><span style="letter-spacing: -.4em">&nbsp;</span><br /><b>Source</b> <a href="Sources.aspx-ID=147.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=147" target="_blank" class="external-link"><i>Pathfinder #184: The Ghouls Hunger pg. 81</i></a><br /><b>Archetype</b> <u><a href="Archetypes.aspx-ID=178.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=178">Ghoul</a></u><br /><b>Frequency</b> Once per day<br /><b>Prerequisites</b> <u><a href="javascript:if(confirm(%27https://2e.aonprd.com/Feats.aspx?ID=3890  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Feats.aspx?ID=3890%27" tppabs="https://2e.aonprd.com/Feats.aspx?ID=3890">Secret Eater</a></u><br /><hr />The ravenous maggots inside you become capable of exploding forth from your attacks into the wounds of an opponent, whispering telepathic words of destruction that invoke horrific flashbacks of Kabriri's transformation from <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Ancestries.aspx?ID=371  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Ancestries.aspx?ID=371%27" tppabs="https://2e.aonprd.com/Ancestries.aspx?ID=371">elf</a> to <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/MonsterFamilies.aspx?ID=419&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/MonsterFamilies.aspx?ID=419&Redirected=1%27" tppabs="https://2e.aonprd.com/MonsterFamilies.aspx?ID=52">ghoul</a> or psychic images of hundreds of maggots bursting from the victim's flesh all at once. Make a melee Strike against a target creature. If it hits, in addition to taking damage from the Strike, the target is affected by a 10th-level casting of <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Spells.aspx?ID=227  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Spells.aspx?ID=227%27" tppabs="https://2e.aonprd.com/Spells.aspx?ID=227"><i>power word kill</i></a>. If Wrath of the First Ghoul is used against a target <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=58  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=58%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=58">elf</a>, <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Monsters.aspx?ID=1165  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Monsters.aspx?ID=1165%27" tppabs="https://2e.aonprd.com/Monsters.aspx?ID=1165">Leng ghoul</a>, or worshipper of <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Deities.aspx?ID=290&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Deities.aspx?ID=290&Redirected=1%27" tppabs="https://2e.aonprd.com/Deities.aspx?ID=14">Pharasma</a> and does not instantly kill the creature, the target takes double damage.</span>
+
+                </div>
+                <div class="clear">
+            </div>
+
+            <div class="footer" id="footer" >
+				<div id="et-al" >
+                    <a href="mailto:nethys@archivesofnethys.com">Site Owner: Rose-Winds LLC (Blake Davis)</a>
+                    <div id="footer-social"><a href="https://twitter.com/NethysArchives"  target="_blank"><span class="k-icon k-i-twitter" style="font-size:2.5rem"></span></a></div>
+				</div>
+                <div style="text-align:center"><script type="text/javascript" async="true" src="adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- Main Archives Page -->
+                    <ins class="adsbygoogle"
+                        style="display:inline-block;width:728px;height:90px"
+                        data-ad-client="ca-pub-4953734518316037"
+                        data-ad-slot="7738185508"></ins>
+                    <script type="text/javascript">
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                </script></div>
+			</div>
+            <nethys-search no-ui="true"></nethys-search>
+        </div>
+    </div>
+
+    <div class="modern-menu-container">
+        <div class="modern-menu">
+            <div class="modern-menu-nethys-logo"></div>
+            <div class="modern-menu-items">
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-player"></i></span>
+                    <span class="modern-menu-item-text">Character Creation +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Ancestries.aspx.htm" tppabs="https://2e.aonprd.com/Ancestries.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-hood"></i></span>
+                        <span class="modern-menu-item-text">Ancestries</span>
+                    </a>
+                    <a class="modern-menu-item" href="Archetypes.aspx.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-nodular"></i></span>
+                        <span class="modern-menu-item-text">Archetypes</span>
+                    </a>
+                    <a class="modern-menu-item" href="Backgrounds.aspx.htm" tppabs="https://2e.aonprd.com/Backgrounds.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-guarded-tower"></i></span>
+                        <span class="modern-menu-item-text">Backgrounds</span>
+                    </a>
+                    <a class="modern-menu-item" href="Classes.aspx.htm" tppabs="https://2e.aonprd.com/Classes.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-player-lift"></i></span>
+                        <span class="modern-menu-item-text">Classes</span>
+                    </a>
+                    <a class="modern-menu-item" href="Skills.aspx.htm" tppabs="https://2e.aonprd.com/Skills.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-hand"></i></span>
+                        <span class="modern-menu-item-text">Skills</span>
+                    </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-torch"></i></span>
+                    <span class="modern-menu-item-text">Equipment +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Equipment.aspx.htm" tppabs="https://2e.aonprd.com/Equipment.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-torch"></i></span>
+                        <span class="modern-menu-item-text">All Equipment</span>
+                    </a>
+                    <a class="modern-menu-item" href="Equipment.aspx-Category=1.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?Category=1">
+                        <span class="modern-menu-item-icon"><i class="ra ra-campfire"></i></span>
+                        <span class="modern-menu-item-text">Adventuring Gear</span>
+                    </a>
+                    <a class="modern-menu-item" href="Equipment.aspx-Category=6.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?Category=6">
+                        <span class="modern-menu-item-icon"><i class="ra ra-round-bottom-flask"></i></span>
+                        <span class="modern-menu-item-text">Alchemical Items</span>
+                    </a>
+                    <a class="modern-menu-item" href="Armor.aspx.htm" tppabs="https://2e.aonprd.com/Armor.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-helmet"></i></span>
+                        <span class="modern-menu-item-text">Armor</span>
+                    </a>
+                    <a class="modern-menu-item" href="Equipment.aspx-Category=21.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?Category=21">
+                        <span class="modern-menu-item-icon"><i class="ra ra-hand"></i></span>
+                        <span class="modern-menu-item-text">Held Items</span>
+                    </a>
+                    <a class="modern-menu-item" href="Equipment.aspx-Category=23.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?Category=23">
+                        <span class="modern-menu-item-icon"><i class="ra ra-rune-stone"></i></span>
+                        <span class="modern-menu-item-text">Runes</span>
+                    </a>
+                    <a class="modern-menu-item" href="Shields.aspx.htm" tppabs="https://2e.aonprd.com/Shields.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-shield"></i></span>
+                        <span class="modern-menu-item-text">Shields</span>
+                    </a>
+                    <a class="modern-menu-item" href="Weapons.aspx.htm" tppabs="https://2e.aonprd.com/Weapons.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-sword"></i></span>
+                        <span class="modern-menu-item-text">Weapons</span>
+                    </a>
+                    <a class="modern-menu-item" href="Equipment.aspx-Category=41.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?Category=41">
+                        <span class="modern-menu-item-icon"><i class="ra ra-crown-of-thorns"></i></span>
+                        <span class="modern-menu-item-text">Worn Items</span>
+                    </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-muscle-up"></i></span>
+                    <span class="modern-menu-item-text">Feats +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Feats.aspx.htm" tppabs="https://2e.aonprd.com/Feats.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-muscle-up"></i></span>
+                        <span class="modern-menu-item-text">All Feats</span>
+                    </a>
+                    <a class="modern-menu-item" href="Feats.aspx-Traits=78.htm" tppabs="https://2e.aonprd.com/Feats.aspx?Traits=78">
+                        <span class="modern-menu-item-icon"><i class="ra ra-aware"></i></span>
+                        <span class="modern-menu-item-text">General</span>
+                    </a>
+                    <a class="modern-menu-item" href="Feats.aspx-Traits=78&NoSkills=True.htm" tppabs="https://2e.aonprd.com/Feats.aspx?Traits=78&NoSkills=True">
+                        <span class="modern-menu-item-icon"><i class="ra ra-player-teleport"></i></span>
+                        <span class="modern-menu-item-text">General (No Skill)</span>
+                    </a>
+                    <a class="modern-menu-item" href="Feats.aspx-Traits=144.htm" tppabs="https://2e.aonprd.com/Feats.aspx?Traits=144">
+                        <span class="modern-menu-item-icon"><i class="ra ra-hand"></i></span>
+                        <span class="modern-menu-item-text">Skill</span>
+                    </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-emerald"></i></span>
+                    <span class="modern-menu-item-text">Game Mastery +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Afflictions.aspx.htm" tppabs="https://2e.aonprd.com/Afflictions.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-biohazard"></i></span>
+                        <span class="modern-menu-item-text">Afflictions</span>
+                    </a>
+                    <a class="modern-menu-item" href="Creatures.aspx.htm" tppabs="https://2e.aonprd.com/Creatures.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-dragon"></i></span>
+                        <span class="modern-menu-item-text">Creatures</span>
+                    </a>
+                    <a class="modern-menu-item" href="Hazards.aspx.htm" tppabs="https://2e.aonprd.com/Hazards.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-bear-trap"></i></span>
+                        <span class="modern-menu-item-text">Hazards</span>
+                    </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-book"></i></span>
+                    <span class="modern-menu-item-text">Rules +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Rules.aspx.htm" tppabs="https://2e.aonprd.com/Rules.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-book"></i></span>
+                        <span class="modern-menu-item-text">All Rules</span>
+                    </a>
+                    <a class="modern-menu-item" href="Actions.aspx.htm" tppabs="https://2e.aonprd.com/Actions.aspx">
+                        <span class="modern-menu-item-icon">
+                            <svg viewBox="0 0 30 30" preserveAspectRatio="xMidYMid meet" stroke="null" style="fill:inherit;">
+                                <path d="M21.55532 8.015l7.07107 7.07106-7.07107 7.07107-7.07107-7.07107zM6.47996 10.07526l4.94975 4.94975-4.94975 4.94974-4.94974-4.94974z"></path>
+                                <path d="M15.00246 1.46211l8.48528 8.48528-7.07107 7.07107L7.9314 8.53318z"></path>
+                                <path d="M16.45563 13.11469l7.07107 7.07107-8.48529 8.48528-7.07106-7.07107z"></path>
+                            </svg>
+                        </span>
+                        <span class="modern-menu-item-text">Actions/Activities</span>
+                    </a>
+                    <a class="modern-menu-item" href="Conditions.aspx.htm" tppabs="https://2e.aonprd.com/Conditions.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-player-pain"></i></span>
+                        <span class="modern-menu-item-text">Conditions</span>
+                    </a>
+                    <a class="modern-menu-item" href="GMScreen.aspx.htm" tppabs="https://2e.aonprd.com/GMScreen.aspx">
+                        <span class="modern-menu-item-icon">
+                            <svg viewBox="0 0 30 30" preserveAspectRatio="xMidYMid meet" stroke="null" style="fill:inherit;">
+                                <path d="M5.72648 12.93117h9.17646v9.50588l-4.58823 2.37647-4.58823-2.37647.00001-9.50588z"></path>
+                                <path d="M5.96178 12.93118h9.17646v9.50587l-4.58823 2.37648-4.58824-2.37648.00001-9.50587z"></path>
+                                <path d="M15.0206 12.93118h9.17646v9.50587l-4.58823 2.37648-4.58824-2.37648.00001-9.50587z"></path>
+                                <path d="M16.70221 8.57471l7.52941-3.38823v16.94117h-7.52941V8.57471zM15.11765 8.69235L5.94118 5.30412v16.94117h9.17647V8.69235z"></path>
+                                <path d="M19.60883 17.75465h-9.17646V8.24878L15.0206 5.8723l4.58824 2.37648-.00001 9.50587z"></path>
+                            </svg>
+                        </span>
+                        <span class="modern-menu-item-text">GM Screen</span>
+                    </a>
+                    <a class="modern-menu-item" href="PlayersGuide.aspx.htm" tppabs="https://2e.aonprd.com/PlayersGuide.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-uncertainty"></i></span>
+                        <span class="modern-menu-item-text">Player's Guide</span>
+                    </a>
+                    <a class="modern-menu-item" href="Traits.aspx.htm" tppabs="https://2e.aonprd.com/Traits.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-uncertainty"></i></span>
+                        <span class="modern-menu-item-text">Traits</span>
+                    </a>
+                    <a class="modern-menu-item" href="Sources.aspx.htm" tppabs="https://2e.aonprd.com/Sources.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-book"></i></span>
+                        <span class="modern-menu-item-text">Sources</span>
+                    </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-sun"></i></span>
+                    <span class="modern-menu-item-text">Setting +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Setting.aspx-Adventure=true.htm" tppabs="https://2e.aonprd.com/Setting.aspx?Adventure=true">
+                        <span class="modern-menu-item-icon"><i class="ra ra-all-for-one"></i></span>
+                        <span class="modern-menu-item-text">Adventures</span>
+                    </a>
+                    <a class="modern-menu-item" href="Articles.aspx.htm" tppabs="https://2e.aonprd.com/Articles.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-book"></i></span>
+                        <span class="modern-menu-item-text">Articles</span>
+                    </a>
+                    <a class="modern-menu-item" href="Deities.aspx.htm" tppabs="https://2e.aonprd.com/Deities.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-angel-wings"></i></span>
+                        <span class="modern-menu-item-text">Deities</span>
+                    </a>
+                    <a class="modern-menu-item" href="Domains.aspx.htm" tppabs="https://2e.aonprd.com/Domains.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-kaleidoscope"></i></span>
+                        <span class="modern-menu-item-text">Domains</span>
+                    </a>
+                    <a class="modern-menu-item" href="Languages.aspx.htm" tppabs="https://2e.aonprd.com/Languages.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-speech-bubbles"></i></span>
+                        <span class="modern-menu-item-text">Languages</span>
+                    </a>
+                    <a class="modern-menu-item" href="Planes.aspx.htm" tppabs="https://2e.aonprd.com/Planes.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-circle-of-circles"></i></span>
+                        <span class="modern-menu-item-text">Planes</span>
+                    </a>
+                        <a class="modern-menu-item" href="Setting.aspx-Group=40.htm" tppabs="https://2e.aonprd.com/Setting.aspx?Group=40">
+                            <span class="modern-menu-item-icon"><i class="ra ra-mountains"></i></span>
+                            <span class="modern-menu-item-text">Scenarios</span>
+                        </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-crystal-wand"></i></span>
+                    <span class="modern-menu-item-text">Spells/Rituals +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Spells.aspx.htm" tppabs="https://2e.aonprd.com/Spells.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-scroll-unfurled"></i></span>
+                        <span class="modern-menu-item-text">All Spells</span>
+                    </a>
+                    <a class="modern-menu-item" href="Spells.aspx-Tradition=1.htm" tppabs="https://2e.aonprd.com/Spells.aspx?Tradition=1">
+                        <span class="modern-menu-item-icon"><i class="ra ra-scroll-unfurled"></i></span>
+                        <span class="modern-menu-item-text">Arcane</span>
+                    </a>
+                    <a class="modern-menu-item" href="Spells.aspx-Tradition=2.htm" tppabs="https://2e.aonprd.com/Spells.aspx?Tradition=2">
+                        <span class="modern-menu-item-icon"><i class="ra ra-ankh"></i></span>
+                        <span class="modern-menu-item-text">Divine</span>
+                    </a>
+                    <a class="modern-menu-item" href="Spells.aspx-Tradition=3.htm" tppabs="https://2e.aonprd.com/Spells.aspx?Tradition=3">
+                        <span class="modern-menu-item-icon"><i class="ra ra-burning-eye"></i></span>
+                        <span class="modern-menu-item-text">Occult</span>
+                    </a>
+                    <a class="modern-menu-item" href="Spells.aspx-Tradition=4.htm" tppabs="https://2e.aonprd.com/Spells.aspx?Tradition=4">
+                        <span class="modern-menu-item-icon"><i class="ra ra-leaf"></i></span>
+                        <span class="modern-menu-item-text">Primal</span>
+                    </a>
+                    <a class="modern-menu-item" href="Spells.aspx-Focus=true.htm" tppabs="https://2e.aonprd.com/Spells.aspx?Focus=true">
+                        <span class="modern-menu-item-icon"><i class="ra ra-aura"></i></span>
+                        <span class="modern-menu-item-text">Focus Spells</span>
+                    </a>
+                    <a class="modern-menu-item" href="Rituals.aspx.htm" tppabs="https://2e.aonprd.com/Rituals.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-rune-stone"></i></span>
+                        <span class="modern-menu-item-text">Rituals</span>
+                    </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-player-thunder-struck"></i></span>
+                    <span class="modern-menu-item-text">Mythic +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Rules.aspx-ID=3320.htm" tppabs="https://2e.aonprd.com/Rules.aspx?ID=3320">
+                        <span class="modern-menu-item-icon"><i class="ra ra-book"></i></span>
+                        <span class="modern-menu-item-text">Mythic Rules</span>
+                    </a>
+                    <a class="modern-menu-item" href="MythicCallings.aspx.htm" tppabs="https://2e.aonprd.com/MythicCallings.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-aware"></i></span>
+                        <span class="modern-menu-item-text">Callings</span>
+                    </a>
+                    <a class="modern-menu-item" href="MythicFeats.aspx.htm" tppabs="https://2e.aonprd.com/MythicFeats.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-muscle-up"></i></span>
+                        <span class="modern-menu-item-text">Mythic Feats</span>
+                    </a>
+                    <a class="modern-menu-item" href="MythicDestinies.aspx.htm" tppabs="https://2e.aonprd.com/MythicDestinies.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-aura"></i></span>
+                        <span class="modern-menu-item-text">Destinies</span>
+                    </a>
+                    <a class="modern-menu-item" href="MythicSpells.aspx.htm" tppabs="https://2e.aonprd.com/MythicSpells.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-lightning-trio"></i></span>
+                        <span class="modern-menu-item-text">Mythic Spells</span>
+                    </a>
+                    <a class="modern-menu-item" href="MythicRituals.aspx.htm" tppabs="https://2e.aonprd.com/MythicRituals.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-fire-ring"></i></span>
+                        <span class="modern-menu-item-text">Mythic Rituals</span>
+                    </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-help"></i></span>
+                    <span class="modern-menu-item-text">About the Archives +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="ContactUs.aspx.htm" tppabs="https://2e.aonprd.com/ContactUs.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-quill-ink"></i></span>
+                        <span class="modern-menu-item-text">Contact Us</span>
+                    </a>
+                    <a class="modern-menu-item" href="Contributors.aspx.htm" tppabs="https://2e.aonprd.com/Contributors.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-double-team"></i></span>
+                        <span class="modern-menu-item-text">Contributors</span>
+                    </a>
+                    <a class="modern-menu-item" href="Licenses.aspx.htm" tppabs="https://2e.aonprd.com/Licenses.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-book"></i></span>
+                        <span class="modern-menu-item-text">Licenses</span>
+                    </a>
+                </div>
+                <a class="modern-menu-item" href="Support.aspx.htm" tppabs="https://2e.aonprd.com/Support.aspx">
+                    <span class="modern-menu-item-icon"><i class="ra ra-diamond"></i></span>
+                    <span class="modern-menu-item-text">Support the Archives</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="shelyns-corner-wrapper">
+        <div class="shelyns-corner-overlay"></div>
+        <div class="shelyns-corner">
+            <div class="shelyns-corner-header">
+                <h2>Shelyn's Corner</h2>
+                <a href="javascript:void(0)" class="close-shelyns-corner">&times;</a>
+            </div>
+            <div class="shelyns-corner-content">
+                <div class="shelyns-corner-settings">
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-remaster">Prefer Pathfinder Remastered Core?</label>
+                        <input type="checkbox" id="shelyns-corner-setting-remaster" checked/>
+                    </div>
+                    <hr />
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-dyslexia">Dyslexia friendly fonts</label>
+                        <input type="checkbox" id="shelyns-corner-setting-dyslexia"/>
+                    </div>
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-sidebar-hover">Expand sidebar on hover</label>
+                        <input type="checkbox" id="shelyns-corner-setting-sidebar-hover" checked/>
+                    </div>
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-sidebar-shrink">Sidebar can be shrunk</label>
+                        <input type="checkbox" id="shelyns-corner-setting-sidebar-shrink" checked/>
+                    </div>
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-page-compress">Reduce page width</label>
+                        <input type="checkbox" id="shelyns-corner-setting-page-compress"/>
+                    </div>
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-modern-menu">Modern menu</label>
+                        <input type="checkbox" id="shelyns-corner-setting-modern-menu" checked/>
+                    </div>
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-link-previews">Link previews</label>
+                        <input type="checkbox" id="shelyns-corner-setting-link-previews" checked/>
+                    </div>
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-link-previews-search">Link previews in search bar</label>
+                        <input type="checkbox" id="shelyns-corner-setting-link-previews-search"/>
+                    </div>
+                </div>
+                <hr />
+                <div class="theme-gallery-wrapper"></div>
+                <hr />
+                <div class="feel-gallery">
+                    <div class="feel-example classic_feel" onclick="setFeel('classic_feel')">
+                        <h1 class="feel-title">Classic Feel</h1>
+                        <h2 class="feel-title">Classic Feel <span class="output"></span></h2>
+                        <h3 class="feel-title">Classic Feel</h3>
+                        <p>The classic look for the Archives of Nethys.</p>
+                        <table>
+                            <thead><td>Table</td></thead>
+                            <tr><td>Data</td></tr>
+                            <tr><td>More Data</td></tr>
+                        </table>
+                    </div>
+                    <div class="feel-example book_feel" onclick="setFeel('book_feel')">
+                        <h1 class="feel-title">Book Feel</h1>
+                        <h2 class="feel-title">Book Feel <span class="output"></span></h2>
+                        <h3 class="feel-title">Book Feel</h3>
+                        <p>An alternative feel, based on the Rulebooks.</p>
+                        <table>
+                            <thead><td>Table</td></thead>
+                            <tr><td>Data</td></tr>
+                            <tr><td>More Data</td></tr>
+                        </table>
+                    </div>
+                    <div class="feel-example round_feel" onclick="setFeel('round_feel')">
+                        <h1 class="feel-title">Round Feel</h1>
+                        <h2 class="feel-title">Round Feel<span class="output"></span></h2>
+                        <h3 class="feel-title">Round Feel</h3>
+                        <p>A rounded, modern look for the archives.</p>
+                        <table>
+                            <thead><td>Table</td></thead>
+                            <tr><td>Data</td></tr>
+                            <tr><td>More Data</td></tr>
+                        </table>
+                    </div>
+                    <div class="feel-example slim_feel" onclick="setFeel('slim_feel')">
+                        <h1 class="feel-title">Slim Feel</h1>
+                        <h2 class="feel-title">Slim Feel<span class="output"></span></h2>
+                        <h3 class="feel-title">Slim Feel</h3>
+                        <p>A variant of the Round feel, more compact.</p>
+                        <table>
+                            <thead><td>Table</td></thead>
+                            <tr><td>Data</td></tr>
+                            <tr><td>More Data</td></tr>
+                        </table>
+                    </div>
+                </div>
+                <hr />
+                <div class="shelyns-corner-settings">
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-orc">More Orc?</label>
+                        <input type="checkbox" id="shelyns-corner-setting-orc" />
+                    </div>
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-boar"><b>BOAR?</b></label>
+                        <input type="checkbox" id="shelyns-corner-setting-boar" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+      var legacyMode = getCore();
+
+      initializeMenuToggle(document.getElementById('minMaxMenu'));
+      initShelynsCorner();
+
+      window.nethysModernMenu.init();
+
+      initializeElasticSearch()
+      var initializeSearch = function (search) {
+          var button;
+          var text;
+          if (search.firstElementChild.classList.contains('search-input'))
+              text = search.firstElementChild;
+          if (search.lastElementChild.classList.contains('search-input'))
+              text = search.lastElementChild;
+          if (search.firstElementChild.classList.contains('search-button'))
+              button = search.firstElementChild;
+          if (search.lastElementChild.classList.contains('search-button'))
+              button = search.lastElementChild;
+
+          if (search) {
+              search.addEventListener('keypress', function (e) {
+                  if (e.keyCode == 13) {
+                      e.preventDefault();
+                      if (text.value != null && text.value.length > 0)
+                          window.location = window.location.origin + "/Search.aspx?q=" + encodeURIComponent(text.value);
+                  }
+              })
+          }
+          if (button) {
+              button.addEventListener('click', function (e) {
+                  window.location = window.location.origin + "/Search.aspx?q=" + encodeURIComponent(text.value);
+              });
+          }
+      };
+      var initializeExpand = function (toggle) {
+          var targetAttrString = "[data-target='" + toggle.dataset.toggle + "']";
+          //target = menu to be collapsed
+          var target = document.querySelector(targetAttrString);
+          toggle.addEventListener('click', function () {
+              var expanded = target.classList.contains('expanded');
+              expanded = !expanded;
+              if (expanded) {
+                  //hide other in group if exists
+                  if (target.dataset.group) {
+                      var otherExpanded = document.querySelector('.expanded[data-group="' + target.dataset.group + '"]');
+                      if (otherExpanded) {
+                          otherExpanded.classList.remove('expanded');
+                      }
+                  }
+                  target.classList.add('expanded');
+              } else {
+                  target.classList.remove('expanded');
+              }
+          });
+      };
+      (function () {
+          //toggles = link that expands/collapses target
+          var toggles = document.querySelectorAll('[data-toggle]');
+          toggles.forEach(function (toggle) {
+              initializeExpand(toggle);
+          });
+          //searches
+          var classicSearch = document.getElementById('classic-search');
+          initializeSearch(classicSearch);
+          var searches = document.querySelectorAll('.search');
+          searches.forEach(function (search) {
+              //initializeSearch(search);
+          });
+      })();
+
+      class NethysSearch extends HTMLElement {
+          constructor() {
+              super();
+
+              this.attachShadow({ mode: 'open' });
+
+              let container = document.createElement('div');
+              this.shadowRoot.append(container);
+
+              let fixedParams = this.getAttribute('fixed-params');
+
+              if (window.location.search.includes('Redirected=1')) {
+                  fixedParams = (fixedParams ? fixedParams + '&' : '') + 'Redirected=1';
+              }
+
+              if (window.location.search.includes('NoRedirect=1')) {
+                  fixedParams = (fixedParams ? fixedParams + '&' : '') + 'NoRedirect=1';
+              }
+
+              let fixedQueryString = this.getAttribute('fixed-query-string') ?? '';
+
+              if (!fixedQueryString.includes('category:item-bonus')) {
+                  fixedQueryString += ' !category:item-bonus';
+              }
+
+              let dataUrl = new URL(elasticUrl);
+              dataUrl.pathname = '/json-data';
+              dataUrl = dataUrl.toString();
+
+              let app = Elm.NethysSearch.init({
+                  node: container,
+                  flags: {
+                      autofocus: (this.getAttribute('autofocus') ?? 'true') == 'true',
+                      browserDateFormat: (new Date(2020, 9, 30).toLocaleDateString(navigator.language))
+                          .replace('2020', 'yyyy')
+                          .replace('10', 'MM')
+                          .replace('30', 'dd'),
+                      currentUrl: location.href,
+                      dataUrl: dataUrl,
+                      defaultQuery: this.getAttribute('default-query'),
+                      elasticUrl: elasticUrl,
+                      fixedParams: fixedParams,
+                      fixedQueryString: fixedQueryString,
+                      loadAll: this.getAttribute('load-all') == 'true',
+                      legacyMode: legacyMode,
+                      localStorage: { ...localStorage },
+                      noUi: this.getAttribute('no-ui') === 'true',
+                      pageDefaultDisplays: localStorage.getItem('page-default-displays'),
+                      pageId: this.getAttribute('page-id'),
+                      randomSeed: Math.floor(Math.random() * 2147483647),
+                      removeFilters: this.getAttribute('remove-filters')?.split(',') ?? [],
+                      resultBaseUrl: "/",
+                      showHeader: false,
+                      showQueryControls: this.getAttribute('show-query-controls') != 'false',
+                      windowHeight: window.innerHeight,
+                      windowWidth: window.innerWidth,
+                  }
+              });
+
+              app.ports.document_focusElement.subscribe(id => {
+                  window.requestAnimationFrame(() => {
+                      let element = this.shadowRoot.getElementById(id);
+
+                      if (element) {
+                          element.focus();
+                      }
+                  });
+              });
+
+              app.ports.document_scrollElementIntoView.subscribe(id => {
+                  window.requestAnimationFrame(() => {
+                      let element = this.shadowRoot.getElementById(id);
+
+                      if (element) {
+                          element.scrollIntoView({block: 'nearest'});
+                      }
+                  });
+              });
+
+              app.ports.localStorage_get && app.ports.localStorage_get.subscribe(function (key) {
+                  let value = localStorage.getItem(key);
+                  app.ports.localStorage_receive.send({ key: key, value: value });
+              });
+
+              app.ports.localStorage_set.subscribe(function (data) {
+                  localStorage.setItem(data.key, data.value);
+              });
+
+              window.addEventListener('popstate', function () {
+                  app.ports.navigation_urlChanged.send(location.href);
+              });
+
+              app.ports.navigation_pushUrl.subscribe(function (url) {
+                  history.pushState([], '', url);
+                  app.ports.navigation_urlChanged.send(location.href);
+              });
+
+              app.ports.navigation_loadUrl.subscribe(function (url) {
+                  location.href = url;
+              });
+
+              document.addEventListener('theme-changed', e => {
+                  app.ports.localStorage_receive.send({ key: 'theme', value: e.detail });
+              });
+
+              document.addEventListener('link-previews-changed', e => {
+                  app.ports.localStorage_receive.send({ key: 'link-previews-enabled', value: e.detail });
+              });
+
+              window.addEventListener('hashchange', e => {
+                  let url = new URL(e.newURL);
+                  if (url.hash != "#results") {
+                      return;
+                  }
+
+                  let results = this.shadowRoot.getElementById("results");
+                  if (!results) {
+                      return;
+                  }
+
+                  results.focus();
+                  results.scrollIntoView();
+                  window.location.hash = '';
+              });
+
+              if (this.getAttribute('no-ui') === 'true') {
+                  let linkPreviewTarget = null;
+
+                  document.addEventListener('mouseover', e => {
+                      const target = e.target.closest('a');
+                      const isSearchBar = e.target.closest('.searchBar') !== null;
+                      if (target && target != linkPreviewTarget) {
+                          let parent = getParentOffset(target.offsetParent);
+                          let data = {
+                              url: target.href,
+                              x: target.offsetLeft + parent.x,
+                              y: target.offsetTop + parent.y,
+                              height: target.offsetHeight,
+                              width: target.offsetWidth,
+                          }
+                          if (isSearchBar) {
+                              if (getFeature('search-bar-previews-enabled', '0') == '0') {
+                                  return;
+                              }
+                              data.x += window.scrollX;
+                              data.y += window.scrollY;
+                          }
+                          app.ports.document_linkEntered.send(data);
+                      } else if (!target && linkPreviewTarget) {
+                          app.ports.document_linkLeft.send("");
+                      }
+
+                      linkPreviewTarget = target;
+                  });
+              }
+
+              function getParentOffset(node) {
+                  if (!node) {
+                      return {
+                          x: 0,
+                          y: 0,
+                      };
+                  }
+                  let parent = getParentOffset(node.offsetParent);
+                  return {
+                      x: node.offsetLeft - node.scrollLeft + parent.x,
+                      y: node.offsetTop - node.scrollTop + parent.y,
+                  };
+              }
+
+              const resizeObserver = new ResizeObserver(entries => {
+                  app.ports.document_receiveBodySize.send({
+                      width: Math.round(entries[0].contentRect.width),
+                      height: Math.round(entries[0].contentRect.height),
+                  });
+              });
+
+              let relativeElement = document.getElementById('page');
+              resizeObserver.observe(relativeElement);
+
+              document.addEventListener('visibilitychange', () => {
+                  if (document.visibilityState === 'visible') {
+                      let rect = relativeElement.getBoundingClientRect();
+
+                      app.ports.document_receiveBodySize.send({
+                          width: Math.round(rect.width),
+                          height: Math.round(rect.height),
+                      });
+                  }
+              });
+          }
+      }
+
+      customElements.define('nethys-search', NethysSearch);
+    </script>
+</body>
+</html>

@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script type="text/javascript" async src="js-id=UA-137805785-3.js" tppabs="https://www.googletagmanager.com/gtag/js?id=UA-137805785-3"></script>
+    <script type="text/javascript">
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-137805785-3');
+    </script>
+    <title>
+        Conditions - Archives of Nethys: Pathfinder 2nd Edition Database
+    </title>
+    
+
+    <link href="Layout.css-v=EB6PS6lfpX6G1uwFu7uHcEh6oScz15hZHsXHCNMHzLg.css" tppabs="https://2e.aonprd.com/Styles/Layout.css?v=EB6PS6lfpX6G1uwFu7uHcEh6oScz15hZHsXHCNMHzLg" rel="stylesheet" type="text/css" />
+    <link href="rpg-awesome.min.css" tppabs="https://2e.aonprd.com/Styles/rpg-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="Typography.css-v=3et3D84VeOgcsPaSRyGH6nF1FfjjYgVpcGBq4HyG5vg.css" tppabs="https://2e.aonprd.com/Styles/Typography.css?v=3et3D84VeOgcsPaSRyGH6nF1FfjjYgVpcGBq4HyG5vg" rel="stylesheet" type="text/css" />
+    <link href="themes.css" tppabs="https://2e.aonprd.com/themes" rel="stylesheet" type="text/css" />
+    <link href="SitePrint.css-v=8wGbZVsBHNUZjW78tbaeVtZ_Jlm0ss-wjdlzy_jKlOY.css" tppabs="https://2e.aonprd.com/Styles/SitePrint.css?v=8wGbZVsBHNUZjW78tbaeVtZ_Jlm0ss-wjdlzy_jKlOY" rel="stylesheet" type="text/css" media="print" />
+
+    <link href="css-family=Julee.css" tppabs="https://fonts.googleapis.com/css?family=Julee" rel="stylesheet" type="text/css" />
+    <link href="css-family=Andika.css" tppabs="https://fonts.googleapis.com/css?family=Andika" rel="stylesheet" type="text/css" />
+    <link href="css2-family=Lato-ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap.css" tppabs="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="search" type="application/opensearchdescription+xml" title="Search the Archives of Nethys" href="https://2e.aonprd.com/opensearch.xml" />
+
+
+    <script type="text/javascript">
+        window.elasticUrl = 'https://elasticsearch.aonprd.com/aon-test';
+    </script>
+
+        <script src="nethys-search-9f2620f2bfdf2014fd0b0c157f03248921d02563.js" tppabs="https://elasticsearch.aonprd.com/js/nethys-search-9f2620f2bfdf2014fd0b0c157f03248921d02563.js"></script>
+
+    <script
+      src="jquery-3.6.0.min.js" tppabs="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"></script>
+    <script src="semantic.min.js" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/semantic.min.js" integrity="sha512-5cguXwRllb+6bcc2pogwIeQmQPXEzn2ddsqAexIBhh7FO1z5Hkek1J9mrK2+rmZCTU6b6pERxI7acnp1MpAg4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="search.min.css" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/search.min.css" integrity="sha512-1xyHOORqcJ80bareQ2TWmQE+WZ/TlsqjqILbLHeM3Urtw720aiFXE/N+Xm4MAJpcn42e3k4Z8ZpqZfsA2VVyNw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="transition.min.css" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/transition.min.css" integrity="sha512-zsEyDFFD+yPxc7Kq8c3byp2H3tfx4GgT4wvCDzDGiOlkk2hl454XOHzHfN/OsPilopfPEbRzVJ0wxlIa/9BOyg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="transition.min.js" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/transition.min.js" integrity="sha512-zPx44KLp+BP6OKcCIPQibTiLz0WAc2s9syi+7wOT+Ql2D1/kAX8y7K1rz8vuTtrhRS2dMZ7zVS5dQoHTvkXJCA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="icon.min.css" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/icon.min.css" integrity="sha512-cKaYuptKrUbQ4/r0qmxhpQDjPWb7/SYN6gQRYMOQqPJ2+S4Bmb1zZ1/SAuszp+E6yoakjQFpM+rAzuw+EwR+xw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="input.min.css" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/input.min.css" integrity="sha512-6+BQOwPqqk5AianROXkI3LKgnLcjZbEV3KbhO++sKXemybg0FugrODki+nBsg9FipqlKSMd4ppnpkqC6VEpFiA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="button.min.css" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/button.min.css" integrity="sha512-XMrByQiBPJwH350YvTKR/XTY1fOQX4lSQqeft++WcyY39l0eKoPXOgx1OJHEODhHCW1FfvVl/Bdr90QE08FG+Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="dropdown.min.css" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/dropdown.min.css" integrity="sha512-hDsG55Tp5IgyWKbBbNhOo0+bLTdIVVAGW09a7IFvgIkKg/xrjOdOA2lEPFkkgJQ3NuB7DxDFlSHX7/JYvFLYfA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="dropdown.min.js" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/dropdown.min.js" integrity="sha512-1SzBIESNYM3Y8JkQrS1Mu2dPnPaAqeQkCV9KfDA2eYXBEzdkhHWyqTP6P0OAsh1RSC4cDvr8DmYVTmb/YWGYpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="showdown.min.js" tppabs="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js" integrity="sha512-LhccdVNGe2QMEfI3x4DVV3ckMRe36TfydKss6mJpdHjNFiV07dFpS2xzeZedptKZrwxfICJpez09iNioiSZ3hA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="lodash.min.js" tppabs="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="modernMenu.js" tppabs="https://2e.aonprd.com/Scripts/modernMenu.js"></script>
+
+    <script type="text/javascript" src="tableState.js" tppabs="https://2e.aonprd.com/Scripts/tableState.js"></script>
+    <script type="text/javascript" src="drawerHandlers.js" tppabs="https://2e.aonprd.com/Scripts/drawerHandlers.js"></script>
+    <script type="text/javascript" src="hideFilter.js" tppabs="https://2e.aonprd.com/Scripts/hideFilter.js"></script>
+    <script type="text/javascript" src="searchBar.js" tppabs="https://2e.aonprd.com/Scripts/searchBar.js"></script>
+
+    <script type="text/javascript" src="previewModal.js" tppabs="https://2e.aonprd.com/Scripts/previewModal.js"></script>
+    
+    
+        <meta name="keywords" content="Archives, Nethys, Wiki, Archives of Nethys, Pathfinder, Official, AoN, AoNPRD, PRD, PFSRD, 2E, 2nd Edition, Conditions" />
+
+
+    <meta charset="utf-8"/>
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="darkreader-lock" />
+    <style type="text/css">        
+        .nav-parent > * {
+            display: block;
+        }
+        .mobile-menu-toggle{
+            display:none;
+        }
+        #main-menu .nav-parent > .brand > .title{
+            display: none;
+        }
+    </style>
+</head>
+<body class="dark aon_dark_theme classic_feel">
+    <div id="wrapper" class="clearfix">
+
+
+        <script type="text/javascript" src="toggle.js" tppabs="https://2e.aonprd.com/Scripts/toggle.js"></script>
+
+
+        <div class="page clearfix" id="page">
+            <div class="header">
+                <div class="clear hideSkiplink" id="main-menu" >
+                    <a class="mobile-menu-toggle" id="mobile-menu-toggle" href="javascript:void(0);" data-toggle="mobile">|||</a>
+                    <div class="splash"></div>
+                    <div class="nav-parent" id="nav-parent">
+                        <a href="index.htm" tppabs="https://2e.aonprd.com/" style="font-size:larger" class="brand">
+                            <span class="home">
+                                Home
+                            </span>
+                        </a>
+                        <a href="Actions.aspx.htm" tppabs="https://2e.aonprd.com/Actions.aspx">Actions/Activities</a>
+                        <a href="Afflictions.aspx.htm" tppabs="https://2e.aonprd.com/Afflictions.aspx">Afflictions</a>
+                        <a href="Ancestries.aspx.htm" tppabs="https://2e.aonprd.com/Ancestries.aspx">Ancestries</a>
+                        <a href="Archetypes.aspx.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx">Archetypes</a>
+                        <a href="Backgrounds.aspx.htm" tppabs="https://2e.aonprd.com/Backgrounds.aspx">Backgrounds</a>
+                        <a href="Classes.aspx.htm" tppabs="https://2e.aonprd.com/Classes.aspx">Classes</a>
+                        <a href="Conditions.aspx.htm" tppabs="https://2e.aonprd.com/Conditions.aspx">Conditions</a>
+                        <a href="Creatures.aspx.htm" tppabs="https://2e.aonprd.com/Creatures.aspx">Creatures</a>
+                        <a href="Equipment.aspx.htm" tppabs="https://2e.aonprd.com/Equipment.aspx">Equipment</a>
+                        <a href="Feats.aspx.htm" tppabs="https://2e.aonprd.com/Feats.aspx">Feats</a>
+                        <a href="Hazards.aspx.htm" tppabs="https://2e.aonprd.com/Hazards.aspx">Hazards</a>
+                        <a href="MythicCallings.aspx.htm" tppabs="https://2e.aonprd.com/MythicCallings.aspx">Mythic</a>
+                        <a href="Rules.aspx.htm" tppabs="https://2e.aonprd.com/Rules.aspx">Rules</a>
+                        <a href="Setting.aspx.htm" tppabs="https://2e.aonprd.com/Setting.aspx">Setting</a>
+                        <a href="Skills.aspx.htm" tppabs="https://2e.aonprd.com/Skills.aspx">Skills</a>
+                        <a href="Spells.aspx.htm" tppabs="https://2e.aonprd.com/Spells.aspx">Spells/Rituals</a>
+                        <a href="Traits.aspx.htm" tppabs="https://2e.aonprd.com/Traits.aspx">Traits</a>
+                        <img src="heading_flourish.png" tppabs="https://2e.aonprd.com/Images/heading_flourish.png" alt="flourish" class="flourish" />
+                        <a href="Licenses.aspx.htm" tppabs="https://2e.aonprd.com/Licenses.aspx">Licenses</a>
+                        <a href="Sources.aspx.htm" tppabs="https://2e.aonprd.com/Sources.aspx">Sources</a>
+                        <img src="heading_flourish.png" tppabs="https://2e.aonprd.com/Images/heading_flourish.png" alt="flourish" class="flourish" />
+                        <a href="ContactUs.aspx.htm" tppabs="https://2e.aonprd.com/ContactUs.aspx">Contact Us</a>
+                        <a href="Contributors.aspx.htm" tppabs="https://2e.aonprd.com/Contributors.aspx">Contributors</a>
+                        <a href="Support.aspx.htm" tppabs="https://2e.aonprd.com/Support.aspx">Support the Archives</a>
+                        <div id="classic-search" class="search">
+                            <input type="text" class="search-input" placeholder="Search" />
+                            <button type="button" class="search-button">
+                                <svg class="Icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="height: 24px; width: 24px; fill: "><path d="M0 0h512v512H0z" fill="transparent" fill-opacity="0"></path><g class="" transform="translate(0,0)" style="touch-action: none;"><path d="M333.78 20.188c-39.97 0-79.96 15.212-110.405 45.656-58.667 58.667-60.796 152.72-6.406 213.97l-15.782 15.748 13.25 13.25 15.75-15.78c61.248 54.39 155.3 52.26 213.968-6.407 60.887-60.886 60.888-159.894 0-220.78C413.713 35.4 373.753 20.187 333.78 20.187zm0 18.562c35.15 0 70.285 13.44 97.158 40.313 53.745 53.745 53.744 140.6 0 194.343-51.526 51.526-133.46 53.643-187.5 6.375l.218-.217c-2.35-2.05-4.668-4.17-6.906-6.407-2.207-2.206-4.288-4.496-6.313-6.812l-.218.22c-47.27-54.04-45.152-135.976 6.374-187.502C263.467 52.19 298.63 38.75 333.78 38.75zm0 18.813c-30.31 0-60.63 11.6-83.81 34.78-46.362 46.362-46.362 121.234 0 167.594 10.14 10.142 21.632 18.077 33.905 23.782-24.91-19.087-40.97-49.133-40.97-82.94 0-15.323 3.292-29.888 9.22-43-4.165 20.485.44 40.88 14.47 54.907 24.583 24.585 68.744 20.318 98.624-9.562 29.88-29.88 34.146-74.04 9.56-98.625-2.375-2.376-4.943-4.473-7.655-6.313 45.13 8.648 79.954 46.345 84.25 92.876 4.44-35.07-6.82-71.726-33.813-98.72-23.18-23.18-53.47-34.78-83.78-34.78zM176.907 297.688L42.094 432.5l34.562 34.563L211.47 332.25l-34.564-34.563zM40 456.813L24 472.78 37.22 486l15.968-16L40 456.812z" fill-opacity="1"></path></g></svg>
+                            </button>
+                        </div>       
+                            <a id="minMaxMenu" onclick='setMenuState("min")'>Maximize Menu</a>
+                    </div>
+                    
+                    <div class="nav-parent expand-collapse" id="mobile-nav-parent" data-target="mobile">
+                        <a href="index.htm" tppabs="https://2e.aonprd.com/" style="font-size:larger" class="brand">
+                            <span class="title">
+                                Archives of Nethys
+                            </span>
+                        </a>
+                        <a href="Afflictions.aspx.htm" tppabs="https://2e.aonprd.com/Afflictions.aspx">Afflictions</a>
+                        <a href="javascript:void(0);" data-toggle="cc">Character Creation +</a>
+                        <div class="expand-collapse expand-collapse-group hide-when-collapsed expanded" data-target="cc" data-group="menus">
+                            <a href="Ancestries.aspx.htm" tppabs="https://2e.aonprd.com/Ancestries.aspx">Ancestries</a>
+                            <a href="Archetypes.aspx.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx">Archetypes</a>
+                            <a href="Backgrounds.aspx.htm" tppabs="https://2e.aonprd.com/Backgrounds.aspx">Backgrounds</a>
+                            <a href="Classes.aspx.htm" tppabs="https://2e.aonprd.com/Classes.aspx">Classes</a>
+                            <a href="Feats.aspx.htm" tppabs="https://2e.aonprd.com/Feats.aspx">Feats</a>
+                            <a href="Skills.aspx.htm" tppabs="https://2e.aonprd.com/Skills.aspx">Skills</a>
+                        </div>
+                        <a href="Creatures.aspx.htm" tppabs="https://2e.aonprd.com/Creatures.aspx">Creatures</a>
+                        <a href="Equipment.aspx.htm" tppabs="https://2e.aonprd.com/Equipment.aspx">Equipment</a>
+                        <a href="Setting.aspx.htm" tppabs="https://2e.aonprd.com/Setting.aspx">Setting</a>
+                        <a href="Spells.aspx.htm" tppabs="https://2e.aonprd.com/Spells.aspx">Spells/Rituals</a>
+                        <a href="javascript:void(0);" data-toggle="rules">Rules +</a>
+                        <div class="expand-collapse expand-collapse-group hide-when-collapsed" data-target="rules" data-group="menus">
+                            <a href="Actions.aspx.htm" tppabs="https://2e.aonprd.com/Actions.aspx">Actions/Activities</a>
+                            <a href="Conditions.aspx.htm" tppabs="https://2e.aonprd.com/Conditions.aspx">Conditions</a>
+                            <a href="Rules.aspx.htm" tppabs="https://2e.aonprd.com/Rules.aspx">Rules</a>
+                            <a href="Traits.aspx.htm" tppabs="https://2e.aonprd.com/Traits.aspx">Traits</a>
+                        </div>
+                        <a href="Hazards.aspx.htm" tppabs="https://2e.aonprd.com/Hazards.aspx">Hazards</a>
+                        <a href="javascript:void(0);" data-toggle="mythic" data-group="">Mythic +</a>
+                        <div class="expand-collapse expand-collapse-group hide-when-collapsed" data-target="mythic" data-group="menus">
+                            <a href="Rules.aspx-ID=3320.htm" tppabs="https://2e.aonprd.com/Rules.aspx?ID=3320">Mythic Rules</a>
+                            <a href="MythicCallings.aspx.htm" tppabs="https://2e.aonprd.com/MythicCallings.aspx">Callings</a>
+                            <a href="MythicFeats.aspx.htm" tppabs="https://2e.aonprd.com/MythicFeats.aspx">Mythic Feats</a>
+                            <a href="MythicDestinies.aspx.htm" tppabs="https://2e.aonprd.com/MythicDestinies.aspx">Destinies</a>
+                            <a href="MythicSpells.aspx.htm" tppabs="https://2e.aonprd.com/MythicSpells.aspx">Mythic Spells</a>
+                            <a href="MythicRituals.aspx.htm" tppabs="https://2e.aonprd.com/MythicRituals.aspx">Mythic Rituals</a>
+                        </div>
+                        <a href="Sources.aspx.htm" tppabs="https://2e.aonprd.com/Sources.aspx">Sources</a>
+                        <a href="javascript:void(0);" data-toggle="about" data-group="">About the Archives +</a>
+                        <div class="expand-collapse expand-collapse-group hide-when-collapsed" data-target="about" data-group="menus">
+                            <a href="Licenses.aspx.htm" tppabs="https://2e.aonprd.com/Licenses.aspx">Licenses</a>
+                            <a href="ContactUs.aspx.htm" tppabs="https://2e.aonprd.com/ContactUs.aspx">Contact Us</a>
+                            <a href="Contributors.aspx.htm" tppabs="https://2e.aonprd.com/Contributors.aspx">Contributors</a>
+                            <a href="Support.aspx.htm" tppabs="https://2e.aonprd.com/Support.aspx">Support the Archives</a>
+                        </div>
+                        <div id="mobileSearch" class="ui fluid search">
+                            <div class="ui action icon input" style="width:90%;height:100%">
+                                <input class="prompt" type="text" placeholder="Search..."/>
+                                <button class="ui icon button" onclick="jumpToSearch('#mobileSearch')">
+                                    <i class="search icon"></i>
+                                </button>
+                            </div>
+                            <div class="results"></div>
+                        </div>
+                        <a href="index.htm" tppabs="https://2e.aonprd.com/">
+                                <img src="PF2Logo_Nethys_400_Selected.png" tppabs="https://2e.aonprd.com/Images/PF2Logo_Nethys_400_Selected.png" alt="Pathfinder RPG (2nd Edition)" />
+                            </a>
+                        <a href="javascript:if(confirm(%27https://www.aonprd.com/  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27https://www.aonprd.com/%27" tppabs="https://www.aonprd.com/" >
+                            <img src="PF1Logo_Nethys_200.png" tppabs="https://2e.aonprd.com/Images/PF1Logo_Nethys_200.png" alt="Pathfinder RPG (1st Edition)" />
+                        </a> 
+                        <a href="javascript:if(confirm(%27https://www.aonsrd.com/  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27https://www.aonsrd.com/%27" tppabs="https://www.aonsrd.com/">
+                            <img src="SFLogo_Nethys_200.png" tppabs="https://2e.aonprd.com/Images/SFLogo_Nethys_200.png" alt="Starfinder RPG (1st Edition)" />
+                        </a>
+                        <a href="javascript:if(confirm(%27https://2e.aonsrd.com/  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonsrd.com/%27" tppabs="https://2e.aonsrd.com/">
+                            <img src="starfinder_2_logo_200.webp" tppabs="https://2e.aonprd.com/Images/starfinder_2_logo_200.webp" alt="Starfinder RPG (2nd Edition)" />
+                        </a>
+                    </div>
+                </div>
+                <div class="theme-toggle-wrapper" title="Toggle Theme">
+                    <div class="theme-open" title="Change Theme"><i class="ra ra-flowers"></i></div>
+                </div>
+            </div>
+
+            <div class="new-navbar">
+                <div class="drawer-toggle" title="Expand Sidebar" onclick="switchDrawer()">
+                    <img src="NethysMask.png" tppabs="https://2e.aonprd.com/Images/NethysMask.png" alt="&#xe030" /></div>
+                    <a class="title" href="index.htm" tppabs="https://2e.aonprd.com/">Archives of Nethys</a>
+                    <div class="searchBar">
+                        <div id="desktopSearch" class="ui fluid search">
+                            <div class="ui action icon input" style="width:100%;height:100%">
+                                <input class="prompt" type="text" placeholder="Search..."/>
+                                <button class="ui icon button" onclick="jumpToSearch('#desktopSearch')">
+                                        <i class="search icon"></i>
+                                    </button>
+                            </div>
+                            <div class="results"></div>
+                        </div>                   
+                    </div>
+                    <div class="game-selector">
+                        <div class="game-selector-options">
+                            <a class="game-selector-option" href="javascript:if(confirm(%27https://aonprd.com/  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27https://aonprd.com/%27" tppabs="https://aonprd.com/">
+                                <img src="PF1Logo_Nethys.png" tppabs="https://2e.aonprd.com/Images/PF1Logo_Nethys.png" alt="Pathfinder 1e" />
+                            </a>
+                            <a class="game-selector-option" href="javascript:if(confirm(%27https://aonsrd.com/  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27https://aonsrd.com/%27" tppabs="https://aonsrd.com/">
+                                <img src="SFLogo_Nethys.png" tppabs="https://2e.aonprd.com/Images/SFLogo_Nethys.png" alt="Starfinder 1e" />
+                            </a>
+                            <a class="game-selector-option" href="javascript:if(confirm(%27https://2e.aonsrd.com/  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonsrd.com/%27" tppabs="https://2e.aonsrd.com/">
+                                <img src="starfinder_2_logo.webp" tppabs="https://2e.aonprd.com/Images/starfinder_2_logo.webp" alt="Starfinder 2e" />
+                            </a>
+                        </div>
+                        <img class="game-selector-current" src="PF2Logo_Nethys.png" tppabs="https://2e.aonprd.com/Images/PF2Logo_Nethys.png" alt="Pathfinder 2e" />
+                    </div>
+                    <div class="theme-open" title="Change Theme"><i class="ra ra-flowers"></i></div>
+            </div>
+
+            <div class="main-wrapper" id="main-wrapper">
+                <div class="menutitle">
+                    <h1>
+                        Archives of Nethys
+                    </h1>
+                    <h2 class="game-titles">
+                        <a href="javascript:if(confirm(%27https://www.aonprd.com/  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27https://www.aonprd.com/%27" tppabs="https://www.aonprd.com/" >
+                            <img src="PF1Logo_Nethys.png" tppabs="https://2e.aonprd.com/Images/PF1Logo_Nethys.png" alt="Pathfinder RPG (1st Edition)" />
+                        </a> 
+                        <a href="index.htm" tppabs="https://2e.aonprd.com/" class="selected">
+                            <img src="PF2Logo_Nethys-Selected.png" tppabs="https://2e.aonprd.com/Images/PF2Logo_Nethys-Selected.png" alt="Pathfinder RPG (2nd Edition)" />
+                        </a>
+                        <a href="javascript:if(confirm(%27https://www.aonsrd.com/  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27https://www.aonsrd.com/%27" tppabs="https://www.aonsrd.com/">
+                            <img src="SFLogo_Nethys.png" tppabs="https://2e.aonprd.com/Images/SFLogo_Nethys.png" alt="Starfinder RPG (1st Edition)" />
+                        </a>
+                        <a href="javascript:if(confirm(%27https://2e.aonsrd.com/  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonsrd.com/%27" tppabs="https://2e.aonsrd.com/">
+                            <img src="starfinder_2_logo.webp" tppabs="https://2e.aonprd.com/Images/starfinder_2_logo.webp" alt="Starfinder RPG (2nd Edition)" />
+                        </a>
+                    </h2>
+                </div>
+                <div class="main" id="main">
+                    
+
+<span class="hide-on-print"><h1 style="text-align:center"><a href="Conditions.aspx.htm" tppabs="https://2e.aonprd.com/Conditions.aspx"><u>Conditions Index</u></a></h1></span>
+<span class="hide-on-print"></span>
+
+    <hr class="hide-on-print" />
+
+<span><h1 class="title">Conditions</h1><b>Source</b> <a href="Sources.aspx-ID=216.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=216" target="_blank" class="external-link"><i>Player Core pg. 442</i></a><br />While adventuring, characters (and sometimes their belongings) are affected by abilities and effects that apply conditions. For example, a spell or magic item might turn you invisible or cause you to be gripped by fear. Conditions change your state of being in some way, and they represent everything from the attitude other creatures have toward you and how they interact with you to what happens when a creature drains your blood or life essence.<br /><br /><a href="Rules.aspx-ID=2455.htm" tppabs="https://2e.aonprd.com/Rules.aspx?ID=2455"><u>Click here for the full rules on Conditions</a></u>.<br /><br /></span>
+<span></span>
+<span><h3 class="title">Groups of Conditions</h3><b>Source</b> <a href="Sources.aspx-ID=216.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=216" target="_blank" class="external-link"><i>Player Core pg. 443</i></a><br />Some conditions exist relative to one another or share a similar theme. It can be useful to look at these conditions together, rather than viewing them in isolation, to understand how they interact.<br /><br /><b>Attitudes</b>: <u><a href="Conditions.aspx-ID=75.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=75">Friendly</a></u>, <u><a href="Conditions.aspx-ID=78.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=78">Helpful</a></u>, <u><a href="Conditions.aspx-ID=80.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=80">Hostile</a></u>, <u><a href="Conditions.aspx-ID=82.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=82">Indifferent</a></u>, <u><a href="Conditions.aspx-ID=97.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=97">Unfriendly</a></u><br /><b>Death and Dying</b>: <u><a href="Conditions.aspx-ID=67.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=67">Doomed</a></u>, <u><a href="Conditions.aspx-ID=69.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=69">Dying</a></u>, <u><a href="Conditions.aspx-ID=95.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=95">Unconscious</a></u>, <u><a href="Conditions.aspx-ID=99.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=99">Wounded</a></u><br /><b>Degrees of Detection</b>: <u><a href="Conditions.aspx-ID=79.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=79">Hidden</a></u>, <u><a href="Conditions.aspx-ID=84.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=84">Observed</a></u>, <u><a href="Conditions.aspx-ID=96.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=96">Undetected</a></u>, <u><a href="Conditions.aspx-ID=98.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=98">Unnoticed</a></u><br /><b>Lowered Abilities</b>: <u><a href="Conditions.aspx-ID=61.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=61">Clumsy</a></u>, <u><a href="Conditions.aspx-ID=68.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=68">Drained</a></u>, <u><a href="Conditions.aspx-ID=71.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=71">Enfeebled</a></u>, <u><a href="Conditions.aspx-ID=94.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=94">Stupefied</a></u><br /><b>Senses</b>: <u><a href="Conditions.aspx-ID=59.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=59">Blinded</a></u>, <u><a href="Conditions.aspx-ID=62.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=62">Concealed</a></u>, <u><a href="Conditions.aspx-ID=65.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=65">Dazzled</a></u>, <u><a href="Conditions.aspx-ID=66.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=66">Deafened</a></u>, <u><a href="Conditions.aspx-ID=83.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=83">Invisible</a></u><h2 class="title"><a href="Conditions.aspx-ID=59.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=59">Blinded</a></h2><b>Source</b> <a href="Sources.aspx-ID=216.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=216" target="_blank" class="external-link"><i>Player Core pg. 442</i></a><br />You can't see. All normal terrain is <a style="text-decoration:underline" href="Rules.aspx-ID=2366&Redirected=1.htm" tppabs="https://2e.aonprd.com/Rules.aspx?ID=453">difficult terrain</a> to you. You can't detect anything using vision. You automatically critically fail Perception checks that require you to be able to see, and if vision is your only <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=2406&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=2406&Redirected=1%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=411">precise sense</a>, you take a –4 status penalty to Perception checks. You are immune to <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=727&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=727&Redirected=1%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=163">visual</a> effects. Blinded overrides <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Conditions.aspx?ID=65&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Conditions.aspx?ID=65&Redirected=1%27" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=7">dazzled</a>.<h2 class="title"><a href="Conditions.aspx-ID=60.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=60">Broken</a></h2><b>Source</b> <a href="Sources.aspx-ID=216.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=216" target="_blank" class="external-link"><i>Player Core pg. 442</i></a><br />Broken is a condition that affects only objects. An object is broken when damage has reduced its Hit Points to equal or less than its Broken Threshold. A broken object can't be used for its normal function, nor does it grant bonuses— with the exception of armor. Broken armor still grants its item bonus to AC, but it also imparts a status penalty to AC depending on its category: –1 for broken light armor, –2 for broken medium armor, or –3 for broken heavy armor.<br /><br /> A broken item still imposes penalties and limitations normally incurred by carrying, holding, or wearing it. For example, broken armor would still impose its Dexterity modifier cap, check penalty, and so forth. If an effect makes an item broken automatically and the item has more HP than its Broken Threshold, that effect also reduces the item's current HP to the Broken Threshold.<h2 class="title"><a href="Conditions.aspx-ID=61.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=61">Clumsy</a></h2><b>Source</b> <a href="Sources.aspx-ID=216.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=216" target="_blank" class="external-link"><i>Player Core pg. 442</i></a><br />Your movements become clumsy and inexact. Clumsy always includes a value. You take a status penalty equal to the condition value to Dexterity-based rolls and DCs, including AC, Reflex saves, ranged attack rolls, and skill checks using <a style="text-decoration:underline" href="Skills.aspx-ID=34&Redirected=1.htm" tppabs="https://2e.aonprd.com/Skills.aspx?ID=1">Acrobatics</a>, <a style="text-decoration:underline" href="Skills.aspx-ID=48&Redirected=1.htm" tppabs="https://2e.aonprd.com/Skills.aspx?ID=15">Stealth</a>, and <a style="text-decoration:underline" href="Skills.aspx-ID=50&Redirected=1.htm" tppabs="https://2e.aonprd.com/Skills.aspx?ID=17">Thievery</a>.<h2 class="title"><a href="Conditions.aspx-ID=62.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=62">Concealed</a></h2><b>Source</b> <a href="Sources.aspx-ID=216.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=216" target="_blank" class="external-link"><i>Player Core pg. 442</i></a><br />You are difficult for one or more creatures to see due to thick fog or some other obscuring feature. You can be concealed to some creatures but not others. While concealed, you can still be <a style="text-decoration:underline" href="Conditions.aspx-ID=84&Redirected=1.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=27">observed</a>, but you're tougher to target. A creature that you're concealed from must succeed at a DC 5 flat check when targeting you with an attack, spell, or other effect. If the check fails, you aren't affected. Area effects aren't subject to this flat check.<h2 class="title"><a href="Conditions.aspx-ID=63.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=63">Confused</a></h2><b>Source</b> <a href="Sources.aspx-ID=216.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=216" target="_blank" class="external-link"><i>Player Core pg. 442</i></a><br />You don't have your wits about you, and you attack wildly. You are <a style="text-decoration:underline" href="Conditions.aspx-ID=58.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=58">off-guard</a>, you don't treat anyone as your ally (though they might still treat you as theirs), and you can't <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Actions.aspx?ID=2294&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Actions.aspx?ID=2294&Redirected=1%27" tppabs="https://2e.aonprd.com/Actions.aspx?ID=77">Delay</a>, <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Equipment.aspx?ID=2792&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Equipment.aspx?ID=2792&Redirected=1%27" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=741">Ready</a>, or use reactions.<br /><br /> You use all your actions to Strike or cast offensive <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=550&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=550&Redirected=1%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=22">cantrips</a>, though the GM can have you use other actions to facilitate attack, such as draw a weapon, move so target is in reach, and so forth. Your targets are determined randomly by the GM. If you have no other viable targets, you target yourself, automatically hitting but not scoring a critical hit. If it's impossible for you to attack or cast spells, you babble incoherently, wasting your actions.<br /><br /> Each time you take damage from an attack or spell, you can attempt a DC 11 flat check to recover from your confusion and end the condition.<h2 class="title"><a href="Conditions.aspx-ID=64.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=64">Controlled</a></h2><b>Source</b> <a href="Sources.aspx-ID=216.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=216" target="_blank" class="external-link"><i>Player Core pg. 442</i></a><br />You have been commanded, magically dominated, or otherwise had your will subverted. The controller dictates how you act and can make you use any of your actions, including attacks, reactions, or even <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Actions.aspx?ID=2294&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Actions.aspx?ID=2294&Redirected=1%27" tppabs="https://2e.aonprd.com/Actions.aspx?ID=77">Delay</a>. The controller usually doesn't have to spend their own actions when controlling you.<h2 class="title"><a href="Conditions.aspx-ID=65.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=65">Dazzled</a></h2><b>Source</b> <a href="Sources.aspx-ID=216.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=216" target="_blank" class="external-link"><i>Player Core pg. 442</i></a><br />Your eyes are overstimulated or your vision is swimming. If vision is your only <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=2406&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=2406&Redirected=1%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=411">precise sense</a>, all creatures and objects are <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Conditions.aspx?ID=62&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Conditions.aspx?ID=62&Redirected=1%27" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=4">concealed</a> from you.<h2 class="title"><a href="Conditions.aspx-ID=66.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=66">Deafened</a></h2><b>Source</b> <a href="Sources.aspx-ID=216.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=216" target="_blank" class="external-link"><i>Player Core pg. 443</i></a><br />You can't hear. You automatically critically fail Perception checks that require you to be able to hear. You take a –2 status penalty to Perception checks for initiative and checks that involve sound but also rely on other senses. If you perform an action that has the <a style="text-decoration:underline" href="Traits.aspx-ID=541&Redirected=1.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=16">auditory</a> trait, you must succeed at a DC 5 flat check or the action is lost; attempt the check after spending the action but before any effects are applied. You are immune to auditory effects while deafened.<h2 class="title"><a href="Conditions.aspx-ID=67.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=67">Doomed</a></h2><b>Source</b> <a href="Sources.aspx-ID=216.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=216" target="_blank" class="external-link"><i>Player Core pg. 443</i></a><br />Your soul has been gripped by a powerful force that calls you closer to death. Doomed always includes a value. The <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Conditions.aspx?ID=69&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Conditions.aspx?ID=69&Redirected=1%27" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=11">dying</a> value at which you die is reduced by your doomed value. If your maximum dying value is reduced to 0, you instantly die. When you die, you're no longer doomed.<br /><br /> Your doomed value decreases by 1 each time you get a full night's rest.<h2 class="title"><a href="Conditions.aspx-ID=68.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=68">Drained</a></h2><b>Source</b> <a href="Sources.aspx-ID=216.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=216" target="_blank" class="external-link"><i>Player Core pg. 443</i></a><br />Your health and vitality have been depleted as you've lost blood, life force, or some other essence. Drained always includes a value. You take a status penalty equal to your drained value on Constitution-based rolls and DCs, such as Fortitude saves. You also lose a number of Hit Points equal to your level (minimum 1) times the drained value, and your maximum Hit Points are reduced by the same amount. For example, if you become drained 3 and you're a 3rd-level character, you lose 9 Hit Points and reduce your maximum Hit Points by 9. Losing these Hit Points doesn't count as taking damage.<br /><br /> Each time you get a full night's rest, your drained value decreases by 1. This increases your maximum Hit Points, but you don't immediately recover the lost Hit Points.<h2 class="title"><a href="Conditions.aspx-ID=69.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=69">Dying</a></h2><b>Source</b> <a href="Sources.aspx-ID=216.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=216" target="_blank" class="external-link"><i>Player Core pg. 443</i></a><br />You are bleeding out or otherwise at death's door. While you have this condition, you are <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Conditions.aspx?ID=95&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Conditions.aspx?ID=95&Redirected=1%27" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=38">unconscious</a>. Dying always includes a value, and if it ever reaches dying 4, you die. When you're dying, you must attempt a <a style="text-decoration:underline" href="Rules.aspx-ID=2326.htm" tppabs="https://2e.aonprd.com/Rules.aspx?ID=2326">recovery check</a> at the start of your turn each round to determine whether you get better or worse. Your dying condition increases by 1 if you take damage while dying, or by 2 if you take damage from an enemy's critical hit or a critical failure on your save.<br /><br /> If you lose the dying condition by succeeding at a recovery check and are still at 0 Hit Points, you remain unconscious, but you can wake up as described in that condition. You lose the dying condition automatically and wake up if you ever have 1 Hit Point or more. Any time you lose the dying condition, you gain the <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Conditions.aspx?ID=99&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Conditions.aspx?ID=99&Redirected=1%27" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=42">wounded 1</a> condition, or increase your wounded condition value by 1 if you already have that condition.<h2 class="title"><a href="Conditions.aspx-ID=70.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=70">Encumbered</a></h2><b>Source</b> <a href="Sources.aspx-ID=216.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=216" target="_blank" class="external-link"><i>Player Core pg. 443</i></a><br />You are carrying more weight than you can manage. While you're encumbered, you're <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Conditions.aspx?ID=61&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Conditions.aspx?ID=61&Redirected=1%27" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=3">clumsy 1</a> and take a 10-foot penalty to all your Speeds. As with all penalties to your Speed, this can't reduce your Speed below 5 feet.<h2 class="title"><a href="Conditions.aspx-ID=71.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=71">Enfeebled</a></h2><b>Source</b> <a href="Sources.aspx-ID=216.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=216" target="_blank" class="external-link"><i>Player Core pg. 443</i></a><br />You're physically weakened. Enfeebled always includes a value. When you are enfeebled, you take a status penalty equal to the condition value to Strength-based rolls and DCs, including Strength-based melee attack rolls, Strength-based damage rolls, and <a style="text-decoration:underline" href="Skills.aspx-ID=36&Redirected=1.htm" tppabs="https://2e.aonprd.com/Skills.aspx?ID=3">Athletics</a> checks.<h2 class="title"><a href="Conditions.aspx-ID=72.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=72">Fascinated</a></h2><b>Source</b> <a href="Sources.aspx-ID=216.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=216" target="_blank" class="external-link"><i>Player Core pg. 443</i></a><br />You're compelled to focus your attention on something, distracting you from whatever else is going on around you. You take a –2 status penalty to Perception and skill checks, and you can't use <a style="text-decoration:underline" href="Traits.aspx-ID=561&Redirected=1.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=32">concentrate</a> actions unless they (or their intended consequences) are related to the subject of your fascination, as determined by the GM. For instance, you might be able to <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Actions.aspx?ID=2301&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Actions.aspx?ID=2301&Redirected=1%27" tppabs="https://2e.aonprd.com/Actions.aspx?ID=84">Seek</a> and <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Actions.aspx?ID=2367&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Actions.aspx?ID=2367&Redirected=1%27" tppabs="https://2e.aonprd.com/Actions.aspx?ID=26">Recall Knowledge</a> about the subject, but you likely couldn't cast a spell targeting a different creature. This condition ends if a creature uses <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=2251&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=2251&Redirected=1%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=300">hostile actions</a> against you or any of your allies.<h2 class="title"><a href="Conditions.aspx-ID=73.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=73">Fatigued</a></h2><b>Source</b> <a href="Sources.aspx-ID=216.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=216" target="_blank" class="external-link"><i>Player Core pg. 444</i></a><br />You're tired and can't summon much energy. You take a –1 status penalty to AC and saving throws. You can't use <a style="text-decoration:underline" href="Rules.aspx-ID=2442.htm" tppabs="https://2e.aonprd.com/Rules.aspx?ID=2442">exploration activities</a> performed while traveling, such as those on pages 438–439.<br /><br /> You recover from fatigue after a full night's rest.<h2 class="title"><a href="Conditions.aspx-ID=74.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=74">Fleeing</a></h2><b>Source</b> <a href="Sources.aspx-ID=216.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=216" target="_blank" class="external-link"><i>Player Core pg. 444</i></a><br />You're forced to run away due to fear or some other compulsion. On your turn, you must spend each of your actions trying to escape the source of the fleeing condition as expediently as possible (such as by using move actions to flee, or opening doors barring your escape). The source is usually the effect or creature that gave you the condition, though some effects might define something else as the source. You can't <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Actions.aspx?ID=2294&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Actions.aspx?ID=2294&Redirected=1%27" tppabs="https://2e.aonprd.com/Actions.aspx?ID=77">Delay</a> or <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Equipment.aspx?ID=2792&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Equipment.aspx?ID=2792&Redirected=1%27" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=741">Ready</a> while fleeing.<h2 class="title"><a href="Conditions.aspx-ID=75.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=75">Friendly</a></h2><b>Source</b> <a href="Sources.aspx-ID=216.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=216" target="_blank" class="external-link"><i>Player Core pg. 444</i></a><br />This condition reflects a creature's disposition toward a particular character, and only supernatural effects (like a spell) can impose this condition on a PC. A creature that is friendly to a character likes that character. It is likely to agree to <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Actions.aspx?ID=2393&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Actions.aspx?ID=2393&Redirected=1%27" tppabs="https://2e.aonprd.com/Actions.aspx?ID=51">Requests</a> from that character as long as they are simple, safe, and don't cost too much to fulfill. If the character (or one of their allies) uses <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=2251&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=2251&Redirected=1%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=300">hostile actions</a> against the creature, the creature gains a worse attitude condition depending on the severity of the hostile action, as determined by the GM.<h2 class="title"><a href="Conditions.aspx-ID=76.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=76">Frightened</a></h2><b>Source</b> <a href="Sources.aspx-ID=216.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=216" target="_blank" class="external-link"><i>Player Core pg. 444</i></a><br />You're gripped by fear and struggle to control your nerves. The frightened condition always includes a value. You take a status penalty equal to this value to all your checks and DCs. Unless specified otherwise, at the end of each of your turns, the value of your frightened condition decreases by 1.<h2 class="title"><a href="Conditions.aspx-ID=77.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=77">Grabbed</a></h2><b>Source</b> <a href="Sources.aspx-ID=216.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=216" target="_blank" class="external-link"><i>Player Core pg. 444</i></a><br />You're held in place by another creature, giving you the <a style="text-decoration:underline" href="Conditions.aspx-ID=58.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=58">off-guard</a> and <a style="text-decoration:underline" href="Conditions.aspx-ID=81&Redirected=1.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=24">immobilized</a> conditions. If you attempt a <a style="text-decoration:underline" href="Traits.aspx-ID=645&Redirected=1.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=104">manipulate</a> action while grabbed, you must succeed at a DC 5 flat check or it is lost; roll the check after spending the action, but before any effects are applied.<h2 class="title"><a href="Conditions.aspx-ID=78.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=78">Helpful</a></h2><b>Source</b> <a href="Sources.aspx-ID=216.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=216" target="_blank" class="external-link"><i>Player Core pg. 444</i></a><br />This condition reflects a creature's disposition toward a particular character, and only supernatural effects (like a spell) can impose this condition on a PC. A creature that is helpful to a character wishes to actively aid that character. It will accept reasonable <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Actions.aspx?ID=2393&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Actions.aspx?ID=2393&Redirected=1%27" tppabs="https://2e.aonprd.com/Actions.aspx?ID=51">Requests</a> from that character, as long as such requests aren't at the expense of the helpful creature's goals or quality of life. If the character (or one of their allies) uses a <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=2251&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=2251&Redirected=1%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=300">hostile action</a> against the creature, the creature gains a worse attitude condition depending on the severity of the hostile action, as determined by the GM.<h2 class="title"><a href="Conditions.aspx-ID=79.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=79">Hidden</a></h2><b>Source</b> <a href="Sources.aspx-ID=216.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=216" target="_blank" class="external-link"><i>Player Core pg. 444</i></a><br />While you're hidden from a creature, that creature knows the space you're in but can't tell precisely where you are. You typically become hidden by using <a style="text-decoration:underline" href="Skills.aspx-ID=48&Redirected=1.htm" tppabs="https://2e.aonprd.com/Skills.aspx?ID=15">Stealth</a> to <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Actions.aspx?ID=2404&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Actions.aspx?ID=2404&Redirected=1%27" tppabs="https://2e.aonprd.com/Actions.aspx?ID=62">Hide</a>. When <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Actions.aspx?ID=2301&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Actions.aspx?ID=2301&Redirected=1%27" tppabs="https://2e.aonprd.com/Actions.aspx?ID=84">Seeking</a> a creature using only <a style="text-decoration:underline" href="Rules.aspx-ID=2407&Redirected=1.htm" tppabs="https://2e.aonprd.com/Rules.aspx?ID=412">imprecise</a> senses, it remains hidden, rather than <a style="text-decoration:underline" href="Conditions.aspx-ID=84&Redirected=1.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=27">observed</a>. A creature you're hidden from is <a style="text-decoration:underline" href="Conditions.aspx-ID=58.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=58">off-guard</a> to you, and it must succeed at a DC 11 flat check when targeting you with an attack, spell, or other effect or it fails to affect you. Area effects aren't subject to this flat check.<br /><br /> A creature might be able to use the Seek action to try to observe you.<h2 class="title"><a href="Conditions.aspx-ID=80.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=80">Hostile</a></h2><b>Source</b> <a href="Sources.aspx-ID=216.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=216" target="_blank" class="external-link"><i>Player Core pg. 444</i></a><br />This condition reflects a creature's disposition toward a particular character, and only supernatural effects (like a spell) can impose on a PC. A creature hostile to a character actively seeks to harm that character. It doesn't necessarily attack, but it won't accept <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Actions.aspx?ID=2393&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Actions.aspx?ID=2393&Redirected=1%27" tppabs="https://2e.aonprd.com/Actions.aspx?ID=51">Requests</a> from the character.<h2 class="title"><a href="Conditions.aspx-ID=81.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=81">Immobilized</a></h2><b>Source</b> <a href="Sources.aspx-ID=216.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=216" target="_blank" class="external-link"><i>Player Core pg. 444</i></a><br />You are incapable of movement. You can't use any actions that have the <a style="text-decoration:underline" href="Traits.aspx-ID=658&Redirected=1.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=114">move</a> trait. If you're immobilized by something holding you in place and an external force would move you out of your space, the force must succeed at a check against either the DC of the effect holding you in place or the relevant defense (usually Fortitude DC) of the monster holding you in place.<h2 class="title"><a href="Conditions.aspx-ID=82.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=82">Indifferent</a></h2><b>Source</b> <a href="Sources.aspx-ID=216.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=216" target="_blank" class="external-link"><i>Player Core pg. 444</i></a><br />This condition reflects a creature's disposition toward a particular character, and only supernatural effects (like a spell) can impose this condition on a PC. A creature that is indifferent to a character doesn't really care one way or the other about that character. Assume a creature's attitude to a given character is indifferent unless specified otherwise.<h2 class="title"><a href="Conditions.aspx-ID=83.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=83">Invisible</a></h2><b>Source</b> <a href="Sources.aspx-ID=216.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=216" target="_blank" class="external-link"><i>Player Core pg. 444</i></a><br />You can't be seen. You're <a style="text-decoration:underline" href="Conditions.aspx-ID=96&Redirected=1.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=39">undetected</a> to everyone. Creatures can <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Actions.aspx?ID=2301&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Actions.aspx?ID=2301&Redirected=1%27" tppabs="https://2e.aonprd.com/Actions.aspx?ID=84">Seek</a> to detect you; if a creature succeeds at its Perception check against your <a style="text-decoration:underline" href="Skills.aspx-ID=48&Redirected=1.htm" tppabs="https://2e.aonprd.com/Skills.aspx?ID=15">Stealth</a> DC, you become <a style="text-decoration:underline" href="Conditions.aspx-ID=79&Redirected=1.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=22">hidden</a> to that creature until you <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Actions.aspx?ID=2405&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Actions.aspx?ID=2405&Redirected=1%27" tppabs="https://2e.aonprd.com/Actions.aspx?ID=63">Sneak</a> to become undetected again. If you become invisible while someone can already see you, you start out hidden to them (instead of undetected) until you successfully Sneak. You can't become <a style="text-decoration:underline" href="Conditions.aspx-ID=84&Redirected=1.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=27">observed</a> while invisible except via special abilities or magic.<h2 class="title"><a href="Conditions.aspx-ID=84.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=84">Observed</a></h2><b>Source</b> <a href="Sources.aspx-ID=216.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=216" target="_blank" class="external-link"><i>Player Core pg. 444</i></a><br />Anything in plain view is observed by you. If a creature takes measures to avoid detection, such as by using <a style="text-decoration:underline" href="Skills.aspx-ID=48&Redirected=1.htm" tppabs="https://2e.aonprd.com/Skills.aspx?ID=15">Stealth</a> to <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Actions.aspx?ID=2404&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Actions.aspx?ID=2404&Redirected=1%27" tppabs="https://2e.aonprd.com/Actions.aspx?ID=62">Hide</a>, it can become <a style="text-decoration:underline" href="Conditions.aspx-ID=79&Redirected=1.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=22">hidden</a> or <a style="text-decoration:underline" href="Conditions.aspx-ID=96&Redirected=1.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=39">undetected</a> instead of observed. If you have another <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=2406&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=2406&Redirected=1%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=411">precise sense</a> besides sight, you might be able to observe a creature or object using that sense instead. You can observe a creature with only your precise senses. When <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Actions.aspx?ID=2301&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Actions.aspx?ID=2301&Redirected=1%27" tppabs="https://2e.aonprd.com/Actions.aspx?ID=84">Seeking</a> a creature using only imprecise senses, it remains hidden, rather than observed.<h2 class="title"><a href="Conditions.aspx-ID=58.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=58">Off-Guard</a></h2><b>Source</b> <a href="Sources.aspx-ID=216.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=216" target="_blank" class="external-link"><i>Player Core pg. 445</i></a><br />You're distracted or otherwise unable to focus your full attention on defense. You take a –2 circumstance penalty to AC. Some effects give you the off-guard condition only to certain creatures or against certain attacks. Others—especially conditions—can make you off-guard against everything. If a rule doesn't specify that the condition applies only to certain circumstances, it applies to all of them, such as “The target is off-guard.”<h2 class="title"><a href="Conditions.aspx-ID=85.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=85">Paralyzed</a></h2><b>Source</b> <a href="Sources.aspx-ID=216.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=216" target="_blank" class="external-link"><i>Player Core pg. 445</i></a><br />You're frozen in place. You have the <a style="text-decoration:underline" href="Conditions.aspx-ID=58.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=58">off-guard</a> condition and can't act except to <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Actions.aspx?ID=2367&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Actions.aspx?ID=2367&Redirected=1%27" tppabs="https://2e.aonprd.com/Actions.aspx?ID=26">Recall Knowledge</a> and use actions that require only your mind (as determined by the GM). Your senses still function, but only in the areas you can perceive without moving, so you can't <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Actions.aspx?ID=2301&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Actions.aspx?ID=2301&Redirected=1%27" tppabs="https://2e.aonprd.com/Actions.aspx?ID=84">Seek</a>.<h2 class="title"><a href="Conditions.aspx-ID=86.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=86">Persistent Damage</a></h2><b>Source</b> <a href="Sources.aspx-ID=216.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=216" target="_blank" class="external-link"><i>Player Core pg. 445</i></a><br />You are taking damage from an ongoing effect, such as from being lit on fire. This appears as “X persistent [type] damage,” where “X” is the amount of damage dealt and “[type]” is the damage type. Like normal damage, it can be doubled or halved based on the results of an attack roll or saving throw. Instead of taking persistent damage immediately, you take it at the end of each of your turns as long as you have the condition, rolling any damage dice anew each time. After you take persistent damage, roll a DC 15 flat check to see if you recover from the persistent damage. If you succeed, the condition ends.<div class="sidebar-nofloat"><h2>Persistent Damage Rules</h2>The additional rules presented below apply to persistent damage in certain cases.<br /><br />Persistent damage runs its course and automatically ends after a certain amount of time as fire burns out, blood clots, and the like. The GM determines when this occurs, but it usually takes 1 minute.<br /><h2 class="title">Assisted Recovery</h2>You can take steps to help yourself recover from persistent damage, or an ally can help you, allowing you to attempt an additional flat check before the end of your turn. This is usually an activity requiring 2 actions, and it must be something that would reasonably improve your chances (as determined by the GM). For example, you might try to smother a flame or wash off acid. This allows you to attempt an extra flat check immediately, but only once per round.<br /><br />The GM decides how your help works, using the following examples as guidelines when there's not a specific action that applies.<br /><ul><li>The action to help might require a skill check or another roll to determine its effectiveness.</li><li>Reduce the DC of the flat check to 10 for a particularly appropriate type of help, such as dousing you in water to put out flames.</li><li>Automatically end the condition due to the type of help, such as healing that restores you to your maximum HP to end persistent bleed damage, or submerging yourself in a lake to end persistent fire damage.</li><li>Alter the number of actions required to help you if the means the helper uses are especially efficient or remarkably inefficient.</li></ul><br /><h2 class="title">Immunities, Resistances, And Weaknesses</h2>Immunities, resistances, and weaknesses all apply to persistent damage. If an effect deals initial damage in addition to persistent damage, apply immunities, resistances, and weaknesses separately to the initial damage and to the persistent damage. Usually, if an effect negates the initial damage, it also negates the persistent damage, such as with a slashing weapon that also deals persistent bleed damage because it cut you. The GM might rule otherwise in some situations.<br /><h2 class="title">Multiple Persistent Damage Conditions</h2>You can be simultaneously affected by multiple persistent damage conditions so long as they have different damage types. If you would gain more than one persistent damage condition with the same damage type, the higher amount of damage overrides the lower amount. If it's unclear which damage would be higher, such as if you're already taking 2 persistent fire damage and then begin taking 1d4 persistent fire damage, the GM decides which source of damage would better fit the scene. The damage you take from persistent damage occurs all at once, so if something triggers when you take damage, it triggers only once; for example, if you're dying with several types of persistent damage, the persistent damage increases your dying condition only once.</div><h2 class="title"><a href="Conditions.aspx-ID=87.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=87">Petrified</a></h2><b>Source</b> <a href="Sources.aspx-ID=216.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=216" target="_blank" class="external-link"><i>Player Core pg. 445</i></a><br />You have been turned to stone. You can't act, nor can you sense anything. You become an object with a Bulk double your normal Bulk (typically 12 for a petrified Medium creature or 6 for a petrified Small creature), AC 9, Hardness 8, and the same current Hit Points you had when alive. You don't have a Broken Threshold. When the petrified condition ends, you have the same number of Hit Points you had as a statue. If the statue is destroyed, you immediately die. While petrified, your mind and body are in stasis, so you don't age or notice the passing of time.<h2 class="title"><a href="Conditions.aspx-ID=88.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=88">Prone</a></h2><b>Source</b> <a href="Sources.aspx-ID=216.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=216" target="_blank" class="external-link"><i>Player Core pg. 445</i></a><br />You're lying on the ground. You are <a style="text-decoration:underline" href="Conditions.aspx-ID=58.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=58">off-guard</a> and take a –2 circumstance penalty to attack rolls. The only <a style="text-decoration:underline" href="Traits.aspx-ID=658&Redirected=1.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=114">move</a> actions you can use while you're prone are <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Actions.aspx?ID=2293&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Actions.aspx?ID=2293&Redirected=1%27" tppabs="https://2e.aonprd.com/Actions.aspx?ID=76">Crawl</a> and <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Actions.aspx?ID=2303&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Actions.aspx?ID=2303&Redirected=1%27" tppabs="https://2e.aonprd.com/Actions.aspx?ID=86">Stand</a>. Standing up ends the prone condition. You can <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Actions.aspx?ID=2307&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Actions.aspx?ID=2307&Redirected=1%27" tppabs="https://2e.aonprd.com/Actions.aspx?ID=90">Take Cover</a> while prone to hunker down and gain <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=2372&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=2372&Redirected=1%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=459">greater cover</a> against ranged attacks, even if you don't have an object to get behind, which grants you a +4 circumstance bonus to AC against ranged attacks (but you remain off-guard).<br /><br /> If you would be knocked prone while you're <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Actions.aspx?ID=2374&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Actions.aspx?ID=2374&Redirected=1%27" tppabs="https://2e.aonprd.com/Actions.aspx?ID=33">Climbing</a> or <a style="text-decoration:underline" href="Actions.aspx-ID=2312&Redirected=1.htm" tppabs="https://2e.aonprd.com/Actions.aspx?ID=94">Flying</a>, you <a style="text-decoration:underline" href="Rules.aspx-ID=2352.htm" tppabs="https://2e.aonprd.com/Rules.aspx?ID=2352">fall</a>. You can't be knocked prone when <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Actions.aspx?ID=2381&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Actions.aspx?ID=2381&Redirected=1%27" tppabs="https://2e.aonprd.com/Actions.aspx?ID=39">Swimming</a>.<h2 class="title"><a href="Conditions.aspx-ID=89.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=89">Quickened</a></h2><b>Source</b> <a href="Sources.aspx-ID=216.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=216" target="_blank" class="external-link"><i>Player Core pg. 446</i></a><br />You're able to act more quickly. You gain 1 additional action at the start of your turn each round. Many effects that make you quickened require you use this extra action only in certain ways. If you become quickened from multiple sources, you can use the extra action you've been granted for any single action allowed by any of the effects that made you quickened. Because quickened has its effect at the start of your turn, you don't immediately gain actions if you become quickened during your turn.<h2 class="title"><a href="Conditions.aspx-ID=90.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=90">Restrained</a></h2><b>Source</b> <a href="Sources.aspx-ID=216.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=216" target="_blank" class="external-link"><i>Player Core pg. 446</i></a><br />You're tied up and can barely move, or a creature has you pinned. You have the <a style="text-decoration:underline" href="Conditions.aspx-ID=58.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=58">off-guard</a> and <a style="text-decoration:underline" href="Conditions.aspx-ID=81&Redirected=1.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=24">immobilized</a> conditions, and you can't use any <a style="text-decoration:underline" href="Traits.aspx-ID=540&Redirected=1.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=15">attack</a> or <a style="text-decoration:underline" href="Traits.aspx-ID=645&Redirected=1.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=104">manipulate</a> actions except to attempt to <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Actions.aspx?ID=2296&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Actions.aspx?ID=2296&Redirected=1%27" tppabs="https://2e.aonprd.com/Actions.aspx?ID=79">Escape</a> or <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Actions.aspx?ID=2375&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Actions.aspx?ID=2375&Redirected=1%27" tppabs="https://2e.aonprd.com/Actions.aspx?ID=34">Force Open</a> your bonds. Restrained overrides <a style="text-decoration:underline" href="Conditions.aspx-ID=77&Redirected=1.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=20">grabbed</a>.<h2 class="title"><a href="Conditions.aspx-ID=91.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=91">Sickened</a></h2><b>Source</b> <a href="Sources.aspx-ID=216.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=216" target="_blank" class="external-link"><i>Player Core pg. 446</i></a><br />You feel ill. Sickened always includes a value. You take a status penalty equal to this value on all your checks and DCs. You can't willingly ingest anything—including <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=589&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=589&Redirected=1%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=59">elixirs</a> and <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=672&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=672&Redirected=1%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=130">potions</a>—while sickened.<br /><br /> You can spend a single action retching in an attempt to recover, which lets you immediately attempt a Fortitude save against the DC of the effect that made you sickened. On a success, you reduce your sickened value by 1 (or by 2 on a critical success).<h2 class="title"><a href="Conditions.aspx-ID=92.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=92">Slowed</a></h2><b>Source</b> <a href="Sources.aspx-ID=216.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=216" target="_blank" class="external-link"><i>Player Core pg. 446</i></a><br />You have fewer actions. Slowed always includes a value. When you regain your actions, reduce the number of actions regained by your slowed value. Because you regain actions at the start of your turn, you don't immediately lose actions if you become slowed during your turn.<h2 class="title"><a href="Conditions.aspx-ID=93.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=93">Stunned</a></h2><b>Source</b> <a href="Sources.aspx-ID=216.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=216" target="_blank" class="external-link"><i>Player Core pg. 446</i></a><br />You've become senseless. You can't act. Stunned usually includes a value, which indicates how many total actions you lose, possibly over multiple turns, from being stunned. Each time you regain actions, reduce the number you regain by your stunned value, then reduce your stunned value by the number of actions you lost. For example, if you were stunned 4, you would lose all 3 of your actions on your turn, reducing you to stunned 1; on your next turn, you would lose 1 more action, and then be able to use your remaining 2 actions normally. Stunned might also have a duration instead, such as “stunned for 1 minute,” causing you to lose all your actions for the duration.<br /><br /> Stunned overrides <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Conditions.aspx?ID=92&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Conditions.aspx?ID=92&Redirected=1%27" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=35">slowed</a>. If the duration of your stunned condition ends while you are slowed, you count the actions lost to the stunned condition toward those lost to being slowed. So, if you were stunned 1 and slowed 2 at the beginning of your turn, you would lose 1 action from stunned, and then lose only 1 additional action by being slowed, so you would still have 1 action remaining to use that turn.<h2 class="title"><a href="Conditions.aspx-ID=94.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=94">Stupefied</a></h2><b>Source</b> <a href="Sources.aspx-ID=216.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=216" target="_blank" class="external-link"><i>Player Core pg. 446</i></a><br />Your thoughts and instincts are clouded. Stupefied always includes a value. You take a status penalty equal to this value on Intelligence-, Wisdom-, and Charisma-based rolls and DCs, including Will saving throws, spell attack modifiers, spell DCs, and skill checks that use these attribute modifiers. Any time you attempt to Cast a Spell while stupefied, the spell is disrupted unless you succeed at a flat check with a DC equal to 5 + your stupefied value.<h2 class="title"><a href="Conditions.aspx-ID=95.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=95">Unconscious</a></h2><b>Source</b> <a href="Sources.aspx-ID=216.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=216" target="_blank" class="external-link"><i>Player Core pg. 446</i></a><br />You're sleeping or have been knocked out. You can't act. You take a –4 status penalty to AC, Perception, and Reflex saves, and you have the <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Conditions.aspx?ID=59&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Conditions.aspx?ID=59&Redirected=1%27" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=1">blinded</a> and <a style="text-decoration:underline" href="Conditions.aspx-ID=58.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=58">off-guard</a> conditions. When you gain this condition, you fall <a style="text-decoration:underline" href="Conditions.aspx-ID=88&Redirected=1.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=31">prone</a> and drop items you're holding unless the effect states otherwise or the GM determines you're positioned so you wouldn't.<br /><br /> If you're unconscious because you're <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Conditions.aspx?ID=69&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Conditions.aspx?ID=69&Redirected=1%27" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=11">dying</a>, you can't wake up while you have 0 Hit Points. If you are restored to 1 Hit Point or more, you lose the dying and unconscious conditions and can act normally on your next turn.<br /><br /> If you are unconscious and at 0 Hit Points, but not dying, you return to 1 Hit Point and awaken after sufficient time passes. The GM determines how long you remain unconscious, from a minimum of 10 minutes to several hours. If you are healed, you lose the unconscious condition and can act normally on your next turn.<br /><br /> If you're unconscious and have more than 1 Hit Point (typically because you are asleep or unconscious due to an effect), you wake up in one of the following ways. <ul><li>You take damage, though if the damage reduces you to 0 Hit Points, you remain unconscious and gain the dying condition as normal.</li><li>You receive healing, other than the natural healing you get from resting.</li><li>Someone shakes you awake with an Interact action.</li><li>Loud noise around you might wake you. At the start of your turn, you automatically attempt a Perception check against the noise's DC (or the lowest DC if there is more than one noise), waking up if you succeed. If creatures are attempting to stay quiet around you, this Perception check uses their <a style="text-decoration:underline" href="Skills.aspx-ID=48&Redirected=1.htm" tppabs="https://2e.aonprd.com/Skills.aspx?ID=15">Stealth</a> DCs. Some effects make you sleep so deeply that they don't allow you this Perception check.</li><li>If you are simply asleep, the GM decides you wake up either because you have had a restful night's sleep or something disrupted that rest.</li></ul><h2 class="title"><a href="Conditions.aspx-ID=96.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=96">Undetected</a></h2><b>Source</b> <a href="Sources.aspx-ID=216.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=216" target="_blank" class="external-link"><i>Player Core pg. 447</i></a><br />When you are undetected by a creature, that creature can't see you at all, has no idea what space you occupy, and can't target you, though you still can be affected by abilities that target an area. When you're undetected by a creature, that creature is <a style="text-decoration:underline" href="Conditions.aspx-ID=58.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=58">off-guard</a> to you.<br /><br /> A creature you're undetected by can guess which square you're in to try targeting you. It must pick a square and attempt an attack. This works like targeting a <a style="text-decoration:underline" href="Conditions.aspx-ID=79&Redirected=1.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=22">hidden</a> creature (requiring a DC 11 flat check, as described under <a style="text-decoration:underline" href="Rules.aspx-ID=2414.htm" tppabs="https://2e.aonprd.com/Rules.aspx?ID=2414">Detecting Creatures</a>), but the flat check and attack roll are rolled in <a style="text-decoration:underline" href="Traits.aspx-ID=690&Redirected=1.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=142">secret</a> by the GM, who doesn't reveal whether the attack missed due to failing the flat check, failing the attack roll, or choosing the wrong square. They can <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Actions.aspx?ID=2301&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Actions.aspx?ID=2301&Redirected=1%27" tppabs="https://2e.aonprd.com/Actions.aspx?ID=84">Seek</a> to try to find you.<h2 class="title"><a href="Conditions.aspx-ID=97.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=97">Unfriendly</a></h2><b>Source</b> <a href="Sources.aspx-ID=216.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=216" target="_blank" class="external-link"><i>Player Core pg. 447</i></a><br />This condition reflects a creature's disposition toward a particular character, and only supernatural effects (like a spell) can impose this condition on a PC. A creature that is unfriendly to a character dislikes and distrusts that character. The unfriendly creature won't accept <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Actions.aspx?ID=2393&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Actions.aspx?ID=2393&Redirected=1%27" tppabs="https://2e.aonprd.com/Actions.aspx?ID=51">Requests</a> from the character.<h2 class="title"><a href="Conditions.aspx-ID=98.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=98">Unnoticed</a></h2><b>Source</b> <a href="Sources.aspx-ID=216.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=216" target="_blank" class="external-link"><i>Player Core pg. 447</i></a><br />If you're unnoticed by a creature, that creature has no idea you're present. When you're unnoticed, you're also <a style="text-decoration:underline" href="Conditions.aspx-ID=96&Redirected=1.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=39">undetected</a>. This matters for abilities that can be used only against targets totally unaware of your presence.<h2 class="title"><a href="Conditions.aspx-ID=99.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=99">Wounded</a></h2><b>Source</b> <a href="Sources.aspx-ID=216.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=216" target="_blank" class="external-link"><i>Player Core pg. 447</i></a><br />You have been seriously injured. If you lose the <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Conditions.aspx?ID=69&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Conditions.aspx?ID=69&Redirected=1%27" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=11">dying</a> condition and do not already have the wounded condition, you become wounded 1. If you already have the wounded condition when you lose the dying condition, your wounded condition value increases by 1. If you gain the dying condition while wounded, increase your dying condition value by your wounded value.<br /><br /> The wounded condition ends if someone successfully restores Hit Points to you using <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Actions.aspx?ID=2399&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Actions.aspx?ID=2399&Redirected=1%27" tppabs="https://2e.aonprd.com/Actions.aspx?ID=57">Treat Wounds</a>, or if you are restored to full Hit Points by any means and rest for 10 minutes. </span>
+
+                </div>
+                <div class="clear">
+            </div>
+
+            <div class="footer" id="footer" >
+				<div id="et-al" >
+                    <a href="mailto:nethys@archivesofnethys.com">Site Owner: Rose-Winds LLC (Blake Davis)</a>
+                    <div id="footer-social"><a href="javascript:if(confirm(%27https://twitter.com/NethysArchives  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27https://twitter.com/NethysArchives%27" tppabs="https://twitter.com/NethysArchives" target="_blank"><span class="k-icon k-i-twitter" style="font-size:2.5rem"></span></a></div>
+				</div>
+                <div style="text-align:center"><script type="text/javascript" async="true" src="adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- Main Archives Page -->
+                    <ins class="adsbygoogle"
+                        style="display:inline-block;width:728px;height:90px"
+                        data-ad-client="ca-pub-4953734518316037"
+                        data-ad-slot="7738185508"></ins>
+                    <script type="text/javascript">
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                </script></div>
+			</div>
+            <nethys-search no-ui="true"></nethys-search>
+        </div>
+    </div>
+
+    <div class="modern-menu-container">
+        <div class="modern-menu">
+            <div class="modern-menu-nethys-logo"></div>
+            <div class="modern-menu-items">
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-player"></i></span>
+                    <span class="modern-menu-item-text">Character Creation +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Ancestries.aspx.htm" tppabs="https://2e.aonprd.com/Ancestries.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-hood"></i></span>
+                        <span class="modern-menu-item-text">Ancestries</span>
+                    </a>
+                    <a class="modern-menu-item" href="Archetypes.aspx.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-nodular"></i></span>
+                        <span class="modern-menu-item-text">Archetypes</span>
+                    </a>
+                    <a class="modern-menu-item" href="Backgrounds.aspx.htm" tppabs="https://2e.aonprd.com/Backgrounds.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-guarded-tower"></i></span>
+                        <span class="modern-menu-item-text">Backgrounds</span>
+                    </a>
+                    <a class="modern-menu-item" href="Classes.aspx.htm" tppabs="https://2e.aonprd.com/Classes.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-player-lift"></i></span>
+                        <span class="modern-menu-item-text">Classes</span>
+                    </a>
+                    <a class="modern-menu-item" href="Skills.aspx.htm" tppabs="https://2e.aonprd.com/Skills.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-hand"></i></span>
+                        <span class="modern-menu-item-text">Skills</span>
+                    </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-torch"></i></span>
+                    <span class="modern-menu-item-text">Equipment +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Equipment.aspx.htm" tppabs="https://2e.aonprd.com/Equipment.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-torch"></i></span>
+                        <span class="modern-menu-item-text">All Equipment</span>
+                    </a>
+                    <a class="modern-menu-item" href="Equipment.aspx-Category=1.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?Category=1">
+                        <span class="modern-menu-item-icon"><i class="ra ra-campfire"></i></span>
+                        <span class="modern-menu-item-text">Adventuring Gear</span>
+                    </a>
+                    <a class="modern-menu-item" href="Equipment.aspx-Category=6.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?Category=6">
+                        <span class="modern-menu-item-icon"><i class="ra ra-round-bottom-flask"></i></span>
+                        <span class="modern-menu-item-text">Alchemical Items</span>
+                    </a>
+                    <a class="modern-menu-item" href="Armor.aspx.htm" tppabs="https://2e.aonprd.com/Armor.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-helmet"></i></span>
+                        <span class="modern-menu-item-text">Armor</span>
+                    </a>
+                    <a class="modern-menu-item" href="Equipment.aspx-Category=21.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?Category=21">
+                        <span class="modern-menu-item-icon"><i class="ra ra-hand"></i></span>
+                        <span class="modern-menu-item-text">Held Items</span>
+                    </a>
+                    <a class="modern-menu-item" href="Equipment.aspx-Category=23.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?Category=23">
+                        <span class="modern-menu-item-icon"><i class="ra ra-rune-stone"></i></span>
+                        <span class="modern-menu-item-text">Runes</span>
+                    </a>
+                    <a class="modern-menu-item" href="Shields.aspx.htm" tppabs="https://2e.aonprd.com/Shields.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-shield"></i></span>
+                        <span class="modern-menu-item-text">Shields</span>
+                    </a>
+                    <a class="modern-menu-item" href="Weapons.aspx.htm" tppabs="https://2e.aonprd.com/Weapons.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-sword"></i></span>
+                        <span class="modern-menu-item-text">Weapons</span>
+                    </a>
+                    <a class="modern-menu-item" href="Equipment.aspx-Category=41.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?Category=41">
+                        <span class="modern-menu-item-icon"><i class="ra ra-crown-of-thorns"></i></span>
+                        <span class="modern-menu-item-text">Worn Items</span>
+                    </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-muscle-up"></i></span>
+                    <span class="modern-menu-item-text">Feats +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Feats.aspx.htm" tppabs="https://2e.aonprd.com/Feats.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-muscle-up"></i></span>
+                        <span class="modern-menu-item-text">All Feats</span>
+                    </a>
+                    <a class="modern-menu-item" href="Feats.aspx-Traits=78.htm" tppabs="https://2e.aonprd.com/Feats.aspx?Traits=78">
+                        <span class="modern-menu-item-icon"><i class="ra ra-aware"></i></span>
+                        <span class="modern-menu-item-text">General</span>
+                    </a>
+                    <a class="modern-menu-item" href="Feats.aspx-Traits=78&NoSkills=True.htm" tppabs="https://2e.aonprd.com/Feats.aspx?Traits=78&NoSkills=True">
+                        <span class="modern-menu-item-icon"><i class="ra ra-player-teleport"></i></span>
+                        <span class="modern-menu-item-text">General (No Skill)</span>
+                    </a>
+                    <a class="modern-menu-item" href="Feats.aspx-Traits=144.htm" tppabs="https://2e.aonprd.com/Feats.aspx?Traits=144">
+                        <span class="modern-menu-item-icon"><i class="ra ra-hand"></i></span>
+                        <span class="modern-menu-item-text">Skill</span>
+                    </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-emerald"></i></span>
+                    <span class="modern-menu-item-text">Game Mastery +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Afflictions.aspx.htm" tppabs="https://2e.aonprd.com/Afflictions.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-biohazard"></i></span>
+                        <span class="modern-menu-item-text">Afflictions</span>
+                    </a>
+                    <a class="modern-menu-item" href="Creatures.aspx.htm" tppabs="https://2e.aonprd.com/Creatures.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-dragon"></i></span>
+                        <span class="modern-menu-item-text">Creatures</span>
+                    </a>
+                    <a class="modern-menu-item" href="Hazards.aspx.htm" tppabs="https://2e.aonprd.com/Hazards.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-bear-trap"></i></span>
+                        <span class="modern-menu-item-text">Hazards</span>
+                    </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-book"></i></span>
+                    <span class="modern-menu-item-text">Rules +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Rules.aspx.htm" tppabs="https://2e.aonprd.com/Rules.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-book"></i></span>
+                        <span class="modern-menu-item-text">All Rules</span>
+                    </a>
+                    <a class="modern-menu-item" href="Actions.aspx.htm" tppabs="https://2e.aonprd.com/Actions.aspx">
+                        <span class="modern-menu-item-icon">
+                            <svg viewBox="0 0 30 30" preserveAspectRatio="xMidYMid meet" stroke="null" style="fill:inherit;">
+                                <path d="M21.55532 8.015l7.07107 7.07106-7.07107 7.07107-7.07107-7.07107zM6.47996 10.07526l4.94975 4.94975-4.94975 4.94974-4.94974-4.94974z"></path>
+                                <path d="M15.00246 1.46211l8.48528 8.48528-7.07107 7.07107L7.9314 8.53318z"></path>
+                                <path d="M16.45563 13.11469l7.07107 7.07107-8.48529 8.48528-7.07106-7.07107z"></path>
+                            </svg>
+                        </span>
+                        <span class="modern-menu-item-text">Actions/Activities</span>
+                    </a>
+                    <a class="modern-menu-item" href="Conditions.aspx.htm" tppabs="https://2e.aonprd.com/Conditions.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-player-pain"></i></span>
+                        <span class="modern-menu-item-text">Conditions</span>
+                    </a>
+                    <a class="modern-menu-item" href="GMScreen.aspx.htm" tppabs="https://2e.aonprd.com/GMScreen.aspx">
+                        <span class="modern-menu-item-icon">
+                            <svg viewBox="0 0 30 30" preserveAspectRatio="xMidYMid meet" stroke="null" style="fill:inherit;">
+                                <path d="M5.72648 12.93117h9.17646v9.50588l-4.58823 2.37647-4.58823-2.37647.00001-9.50588z"></path>
+                                <path d="M5.96178 12.93118h9.17646v9.50587l-4.58823 2.37648-4.58824-2.37648.00001-9.50587z"></path>
+                                <path d="M15.0206 12.93118h9.17646v9.50587l-4.58823 2.37648-4.58824-2.37648.00001-9.50587z"></path>
+                                <path d="M16.70221 8.57471l7.52941-3.38823v16.94117h-7.52941V8.57471zM15.11765 8.69235L5.94118 5.30412v16.94117h9.17647V8.69235z"></path>
+                                <path d="M19.60883 17.75465h-9.17646V8.24878L15.0206 5.8723l4.58824 2.37648-.00001 9.50587z"></path>
+                            </svg>
+                        </span>
+                        <span class="modern-menu-item-text">GM Screen</span>
+                    </a>
+                    <a class="modern-menu-item" href="PlayersGuide.aspx.htm" tppabs="https://2e.aonprd.com/PlayersGuide.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-uncertainty"></i></span>
+                        <span class="modern-menu-item-text">Player's Guide</span>
+                    </a>
+                    <a class="modern-menu-item" href="Traits.aspx.htm" tppabs="https://2e.aonprd.com/Traits.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-uncertainty"></i></span>
+                        <span class="modern-menu-item-text">Traits</span>
+                    </a>
+                    <a class="modern-menu-item" href="Sources.aspx.htm" tppabs="https://2e.aonprd.com/Sources.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-book"></i></span>
+                        <span class="modern-menu-item-text">Sources</span>
+                    </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-sun"></i></span>
+                    <span class="modern-menu-item-text">Setting +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Setting.aspx-Adventure=true.htm" tppabs="https://2e.aonprd.com/Setting.aspx?Adventure=true">
+                        <span class="modern-menu-item-icon"><i class="ra ra-all-for-one"></i></span>
+                        <span class="modern-menu-item-text">Adventures</span>
+                    </a>
+                    <a class="modern-menu-item" href="Articles.aspx.htm" tppabs="https://2e.aonprd.com/Articles.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-book"></i></span>
+                        <span class="modern-menu-item-text">Articles</span>
+                    </a>
+                    <a class="modern-menu-item" href="Deities.aspx.htm" tppabs="https://2e.aonprd.com/Deities.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-angel-wings"></i></span>
+                        <span class="modern-menu-item-text">Deities</span>
+                    </a>
+                    <a class="modern-menu-item" href="Domains.aspx.htm" tppabs="https://2e.aonprd.com/Domains.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-kaleidoscope"></i></span>
+                        <span class="modern-menu-item-text">Domains</span>
+                    </a>
+                    <a class="modern-menu-item" href="Languages.aspx.htm" tppabs="https://2e.aonprd.com/Languages.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-speech-bubbles"></i></span>
+                        <span class="modern-menu-item-text">Languages</span>
+                    </a>
+                    <a class="modern-menu-item" href="Planes.aspx.htm" tppabs="https://2e.aonprd.com/Planes.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-circle-of-circles"></i></span>
+                        <span class="modern-menu-item-text">Planes</span>
+                    </a>
+                        <a class="modern-menu-item" href="Setting.aspx-Group=40.htm" tppabs="https://2e.aonprd.com/Setting.aspx?Group=40">
+                            <span class="modern-menu-item-icon"><i class="ra ra-mountains"></i></span>
+                            <span class="modern-menu-item-text">Scenarios</span>
+                        </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-crystal-wand"></i></span>
+                    <span class="modern-menu-item-text">Spells/Rituals +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Spells.aspx.htm" tppabs="https://2e.aonprd.com/Spells.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-scroll-unfurled"></i></span>
+                        <span class="modern-menu-item-text">All Spells</span>
+                    </a>
+                    <a class="modern-menu-item" href="Spells.aspx-Tradition=1.htm" tppabs="https://2e.aonprd.com/Spells.aspx?Tradition=1">
+                        <span class="modern-menu-item-icon"><i class="ra ra-scroll-unfurled"></i></span>
+                        <span class="modern-menu-item-text">Arcane</span>
+                    </a>
+                    <a class="modern-menu-item" href="Spells.aspx-Tradition=2.htm" tppabs="https://2e.aonprd.com/Spells.aspx?Tradition=2">
+                        <span class="modern-menu-item-icon"><i class="ra ra-ankh"></i></span>
+                        <span class="modern-menu-item-text">Divine</span>
+                    </a>
+                    <a class="modern-menu-item" href="Spells.aspx-Tradition=3.htm" tppabs="https://2e.aonprd.com/Spells.aspx?Tradition=3">
+                        <span class="modern-menu-item-icon"><i class="ra ra-burning-eye"></i></span>
+                        <span class="modern-menu-item-text">Occult</span>
+                    </a>
+                    <a class="modern-menu-item" href="Spells.aspx-Tradition=4.htm" tppabs="https://2e.aonprd.com/Spells.aspx?Tradition=4">
+                        <span class="modern-menu-item-icon"><i class="ra ra-leaf"></i></span>
+                        <span class="modern-menu-item-text">Primal</span>
+                    </a>
+                    <a class="modern-menu-item" href="Spells.aspx-Focus=true.htm" tppabs="https://2e.aonprd.com/Spells.aspx?Focus=true">
+                        <span class="modern-menu-item-icon"><i class="ra ra-aura"></i></span>
+                        <span class="modern-menu-item-text">Focus Spells</span>
+                    </a>
+                    <a class="modern-menu-item" href="Rituals.aspx.htm" tppabs="https://2e.aonprd.com/Rituals.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-rune-stone"></i></span>
+                        <span class="modern-menu-item-text">Rituals</span>
+                    </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-player-thunder-struck"></i></span>
+                    <span class="modern-menu-item-text">Mythic +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Rules.aspx-ID=3320.htm" tppabs="https://2e.aonprd.com/Rules.aspx?ID=3320">
+                        <span class="modern-menu-item-icon"><i class="ra ra-book"></i></span>
+                        <span class="modern-menu-item-text">Mythic Rules</span>
+                    </a>
+                    <a class="modern-menu-item" href="MythicCallings.aspx.htm" tppabs="https://2e.aonprd.com/MythicCallings.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-aware"></i></span>
+                        <span class="modern-menu-item-text">Callings</span>
+                    </a>
+                    <a class="modern-menu-item" href="MythicFeats.aspx.htm" tppabs="https://2e.aonprd.com/MythicFeats.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-muscle-up"></i></span>
+                        <span class="modern-menu-item-text">Mythic Feats</span>
+                    </a>
+                    <a class="modern-menu-item" href="MythicDestinies.aspx.htm" tppabs="https://2e.aonprd.com/MythicDestinies.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-aura"></i></span>
+                        <span class="modern-menu-item-text">Destinies</span>
+                    </a>
+                    <a class="modern-menu-item" href="MythicSpells.aspx.htm" tppabs="https://2e.aonprd.com/MythicSpells.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-lightning-trio"></i></span>
+                        <span class="modern-menu-item-text">Mythic Spells</span>
+                    </a>
+                    <a class="modern-menu-item" href="MythicRituals.aspx.htm" tppabs="https://2e.aonprd.com/MythicRituals.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-fire-ring"></i></span>
+                        <span class="modern-menu-item-text">Mythic Rituals</span>
+                    </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-help"></i></span>
+                    <span class="modern-menu-item-text">About the Archives +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="ContactUs.aspx.htm" tppabs="https://2e.aonprd.com/ContactUs.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-quill-ink"></i></span>
+                        <span class="modern-menu-item-text">Contact Us</span>
+                    </a>
+                    <a class="modern-menu-item" href="Contributors.aspx.htm" tppabs="https://2e.aonprd.com/Contributors.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-double-team"></i></span>
+                        <span class="modern-menu-item-text">Contributors</span>
+                    </a>
+                    <a class="modern-menu-item" href="Licenses.aspx.htm" tppabs="https://2e.aonprd.com/Licenses.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-book"></i></span>
+                        <span class="modern-menu-item-text">Licenses</span>
+                    </a>
+                </div>
+                <a class="modern-menu-item" href="Support.aspx.htm" tppabs="https://2e.aonprd.com/Support.aspx">
+                    <span class="modern-menu-item-icon"><i class="ra ra-diamond"></i></span>
+                    <span class="modern-menu-item-text">Support the Archives</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="shelyns-corner-wrapper">
+        <div class="shelyns-corner-overlay"></div>
+        <div class="shelyns-corner">
+            <div class="shelyns-corner-header">
+                <h2>Shelyn's Corner</h2>
+                <a href="javascript:void(0)" class="close-shelyns-corner">&times;</a>
+            </div>
+            <div class="shelyns-corner-content">
+                <div class="shelyns-corner-settings">
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-remaster">Prefer Pathfinder Remastered Core?</label>
+                        <input type="checkbox" id="shelyns-corner-setting-remaster" checked/>
+                    </div>
+                    <hr />
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-dyslexia">Dyslexia friendly fonts</label>
+                        <input type="checkbox" id="shelyns-corner-setting-dyslexia"/>
+                    </div>
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-sidebar-hover">Expand sidebar on hover</label>
+                        <input type="checkbox" id="shelyns-corner-setting-sidebar-hover" checked/>
+                    </div>
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-sidebar-shrink">Sidebar can be shrunk</label>
+                        <input type="checkbox" id="shelyns-corner-setting-sidebar-shrink" checked/>
+                    </div>
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-page-compress">Reduce page width</label>
+                        <input type="checkbox" id="shelyns-corner-setting-page-compress"/>
+                    </div>
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-modern-menu">Modern menu</label>
+                        <input type="checkbox" id="shelyns-corner-setting-modern-menu" checked/>
+                    </div>
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-link-previews">Link previews</label>
+                        <input type="checkbox" id="shelyns-corner-setting-link-previews" checked/>
+                    </div>
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-link-previews-search">Link previews in search bar</label>
+                        <input type="checkbox" id="shelyns-corner-setting-link-previews-search"/>
+                    </div>
+                </div>
+                <hr />
+                <div class="theme-gallery-wrapper"></div>
+                <hr />
+                <div class="feel-gallery">
+                    <div class="feel-example classic_feel" onclick="setFeel('classic_feel')">
+                        <h1 class="feel-title">Classic Feel</h1>
+                        <h2 class="feel-title">Classic Feel <span class="output"></span></h2>
+                        <h3 class="feel-title">Classic Feel</h3>
+                        <p>The classic look for the Archives of Nethys.</p>
+                        <table>
+                            <thead><td>Table</td></thead>
+                            <tr><td>Data</td></tr>
+                            <tr><td>More Data</td></tr>
+                        </table>
+                    </div>
+                    <div class="feel-example book_feel" onclick="setFeel('book_feel')">
+                        <h1 class="feel-title">Book Feel</h1>
+                        <h2 class="feel-title">Book Feel <span class="output"></span></h2>
+                        <h3 class="feel-title">Book Feel</h3>
+                        <p>An alternative feel, based on the Rulebooks.</p>
+                        <table>
+                            <thead><td>Table</td></thead>
+                            <tr><td>Data</td></tr>
+                            <tr><td>More Data</td></tr>
+                        </table>
+                    </div>
+                    <div class="feel-example round_feel" onclick="setFeel('round_feel')">
+                        <h1 class="feel-title">Round Feel</h1>
+                        <h2 class="feel-title">Round Feel<span class="output"></span></h2>
+                        <h3 class="feel-title">Round Feel</h3>
+                        <p>A rounded, modern look for the archives.</p>
+                        <table>
+                            <thead><td>Table</td></thead>
+                            <tr><td>Data</td></tr>
+                            <tr><td>More Data</td></tr>
+                        </table>
+                    </div>
+                    <div class="feel-example slim_feel" onclick="setFeel('slim_feel')">
+                        <h1 class="feel-title">Slim Feel</h1>
+                        <h2 class="feel-title">Slim Feel<span class="output"></span></h2>
+                        <h3 class="feel-title">Slim Feel</h3>
+                        <p>A variant of the Round feel, more compact.</p>
+                        <table>
+                            <thead><td>Table</td></thead>
+                            <tr><td>Data</td></tr>
+                            <tr><td>More Data</td></tr>
+                        </table>
+                    </div>
+                </div>
+                <hr />
+                <div class="shelyns-corner-settings">
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-orc">More Orc?</label>
+                        <input type="checkbox" id="shelyns-corner-setting-orc" />
+                    </div>
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-boar"><b>BOAR?</b></label>
+                        <input type="checkbox" id="shelyns-corner-setting-boar" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+      var legacyMode = getCore();
+
+      initializeMenuToggle(document.getElementById('minMaxMenu'));
+      initShelynsCorner();
+
+      window.nethysModernMenu.init();
+
+      initializeElasticSearch()
+      var initializeSearch = function (search) {
+          var button;
+          var text;
+          if (search.firstElementChild.classList.contains('search-input'))
+              text = search.firstElementChild;
+          if (search.lastElementChild.classList.contains('search-input'))
+              text = search.lastElementChild;
+          if (search.firstElementChild.classList.contains('search-button'))
+              button = search.firstElementChild;
+          if (search.lastElementChild.classList.contains('search-button'))
+              button = search.lastElementChild;
+
+          if (search) {
+              search.addEventListener('keypress', function (e) {
+                  if (e.keyCode == 13) {
+                      e.preventDefault();
+                      if (text.value != null && text.value.length > 0)
+                          window.location = window.location.origin + "/Search.aspx?q=" + encodeURIComponent(text.value);
+                  }
+              })
+          }
+          if (button) {
+              button.addEventListener('click', function (e) {
+                  window.location = window.location.origin + "/Search.aspx?q=" + encodeURIComponent(text.value);
+              });
+          }
+      };
+      var initializeExpand = function (toggle) {
+          var targetAttrString = "[data-target='" + toggle.dataset.toggle + "']";
+          //target = menu to be collapsed
+          var target = document.querySelector(targetAttrString);
+          toggle.addEventListener('click', function () {
+              var expanded = target.classList.contains('expanded');
+              expanded = !expanded;
+              if (expanded) {
+                  //hide other in group if exists
+                  if (target.dataset.group) {
+                      var otherExpanded = document.querySelector('.expanded[data-group="' + target.dataset.group + '"]');
+                      if (otherExpanded) {
+                          otherExpanded.classList.remove('expanded');
+                      }
+                  }
+                  target.classList.add('expanded');
+              } else {
+                  target.classList.remove('expanded');
+              }
+          });
+      };
+      (function () {
+          //toggles = link that expands/collapses target
+          var toggles = document.querySelectorAll('[data-toggle]');
+          toggles.forEach(function (toggle) {
+              initializeExpand(toggle);
+          });
+          //searches
+          var classicSearch = document.getElementById('classic-search');
+          initializeSearch(classicSearch);
+          var searches = document.querySelectorAll('.search');
+          searches.forEach(function (search) {
+              //initializeSearch(search);
+          });
+      })();
+
+      class NethysSearch extends HTMLElement {
+          constructor() {
+              super();
+
+              this.attachShadow({ mode: 'open' });
+
+              let container = document.createElement('div');
+              this.shadowRoot.append(container);
+
+              let fixedParams = this.getAttribute('fixed-params');
+
+              if (window.location.search.includes('Redirected=1')) {
+                  fixedParams = (fixedParams ? fixedParams + '&' : '') + 'Redirected=1';
+              }
+
+              if (window.location.search.includes('NoRedirect=1')) {
+                  fixedParams = (fixedParams ? fixedParams + '&' : '') + 'NoRedirect=1';
+              }
+
+              let fixedQueryString = this.getAttribute('fixed-query-string') ?? '';
+
+              if (!fixedQueryString.includes('category:item-bonus')) {
+                  fixedQueryString += ' !category:item-bonus';
+              }
+
+              let dataUrl = new URL(elasticUrl);
+              dataUrl.pathname = '/json-data';
+              dataUrl = dataUrl.toString();
+
+              let app = Elm.NethysSearch.init({
+                  node: container,
+                  flags: {
+                      autofocus: (this.getAttribute('autofocus') ?? 'true') == 'true',
+                      browserDateFormat: (new Date(2020, 9, 30).toLocaleDateString(navigator.language))
+                          .replace('2020', 'yyyy')
+                          .replace('10', 'MM')
+                          .replace('30', 'dd'),
+                      currentUrl: location.href,
+                      dataUrl: dataUrl,
+                      defaultQuery: this.getAttribute('default-query'),
+                      elasticUrl: elasticUrl,
+                      fixedParams: fixedParams,
+                      fixedQueryString: fixedQueryString,
+                      loadAll: this.getAttribute('load-all') == 'true',
+                      legacyMode: legacyMode,
+                      localStorage: { ...localStorage },
+                      noUi: this.getAttribute('no-ui') === 'true',
+                      pageDefaultDisplays: localStorage.getItem('page-default-displays'),
+                      pageId: this.getAttribute('page-id'),
+                      randomSeed: Math.floor(Math.random() * 2147483647),
+                      removeFilters: this.getAttribute('remove-filters')?.split(',') ?? [],
+                      resultBaseUrl: "/",
+                      showHeader: false,
+                      showQueryControls: this.getAttribute('show-query-controls') != 'false',
+                      windowHeight: window.innerHeight,
+                      windowWidth: window.innerWidth,
+                  }
+              });
+
+              app.ports.document_focusElement.subscribe(id => {
+                  window.requestAnimationFrame(() => {
+                      let element = this.shadowRoot.getElementById(id);
+
+                      if (element) {
+                          element.focus();
+                      }
+                  });
+              });
+
+              app.ports.document_scrollElementIntoView.subscribe(id => {
+                  window.requestAnimationFrame(() => {
+                      let element = this.shadowRoot.getElementById(id);
+
+                      if (element) {
+                          element.scrollIntoView({block: 'nearest'});
+                      }
+                  });
+              });
+
+              app.ports.localStorage_get && app.ports.localStorage_get.subscribe(function (key) {
+                  let value = localStorage.getItem(key);
+                  app.ports.localStorage_receive.send({ key: key, value: value });
+              });
+
+              app.ports.localStorage_set.subscribe(function (data) {
+                  localStorage.setItem(data.key, data.value);
+              });
+
+              window.addEventListener('popstate', function () {
+                  app.ports.navigation_urlChanged.send(location.href);
+              });
+
+              app.ports.navigation_pushUrl.subscribe(function (url) {
+                  history.pushState([], '', url);
+                  app.ports.navigation_urlChanged.send(location.href);
+              });
+
+              app.ports.navigation_loadUrl.subscribe(function (url) {
+                  location.href = url;
+              });
+
+              document.addEventListener('theme-changed', e => {
+                  app.ports.localStorage_receive.send({ key: 'theme', value: e.detail });
+              });
+
+              document.addEventListener('link-previews-changed', e => {
+                  app.ports.localStorage_receive.send({ key: 'link-previews-enabled', value: e.detail });
+              });
+
+              window.addEventListener('hashchange', e => {
+                  let url = new URL(e.newURL);
+                  if (url.hash != "#results") {
+                      return;
+                  }
+
+                  let results = this.shadowRoot.getElementById("results");
+                  if (!results) {
+                      return;
+                  }
+
+                  results.focus();
+                  results.scrollIntoView();
+                  window.location.hash = '';
+              });
+
+              if (this.getAttribute('no-ui') === 'true') {
+                  let linkPreviewTarget = null;
+
+                  document.addEventListener('mouseover', e => {
+                      const target = e.target.closest('a');
+                      const isSearchBar = e.target.closest('.searchBar') !== null;
+                      if (target && target != linkPreviewTarget) {
+                          let parent = getParentOffset(target.offsetParent);
+                          let data = {
+                              url: target.href,
+                              x: target.offsetLeft + parent.x,
+                              y: target.offsetTop + parent.y,
+                              height: target.offsetHeight,
+                              width: target.offsetWidth,
+                          }
+                          if (isSearchBar) {
+                              if (getFeature('search-bar-previews-enabled', '0') == '0') {
+                                  return;
+                              }
+                              data.x += window.scrollX;
+                              data.y += window.scrollY;
+                          }
+                          app.ports.document_linkEntered.send(data);
+                      } else if (!target && linkPreviewTarget) {
+                          app.ports.document_linkLeft.send("");
+                      }
+
+                      linkPreviewTarget = target;
+                  });
+              }
+
+              function getParentOffset(node) {
+                  if (!node) {
+                      return {
+                          x: 0,
+                          y: 0,
+                      };
+                  }
+                  let parent = getParentOffset(node.offsetParent);
+                  return {
+                      x: node.offsetLeft - node.scrollLeft + parent.x,
+                      y: node.offsetTop - node.scrollTop + parent.y,
+                  };
+              }
+
+              const resizeObserver = new ResizeObserver(entries => {
+                  app.ports.document_receiveBodySize.send({
+                      width: Math.round(entries[0].contentRect.width),
+                      height: Math.round(entries[0].contentRect.height),
+                  });
+              });
+
+              let relativeElement = document.getElementById('page');
+              resizeObserver.observe(relativeElement);
+
+              document.addEventListener('visibilitychange', () => {
+                  if (document.visibilityState === 'visible') {
+                      let rect = relativeElement.getBoundingClientRect();
+
+                      app.ports.document_receiveBodySize.send({
+                          width: Math.round(rect.width),
+                          height: Math.round(rect.height),
+                      });
+                  }
+              });
+          }
+      }
+
+      customElements.define('nethys-search', NethysSearch);
+    </script>
+</body>
+</html>

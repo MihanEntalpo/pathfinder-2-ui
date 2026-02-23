@@ -2,7 +2,7 @@
 
 ## 1. Scope
 Проект представляет собой набор статических страниц (`HTML + CSS + JS`) без сборщиков.
-Цель: локальное ведение сущностей кампании Pathfinder 2 Remaster и работа с ancestry-данными на базе снапшота правил.
+Цель: локальное ведение сущностей кампании Pathfinder 2 Remaster и работа с ancestry-данными.
 
 ## 2. Pages
 - `index.html`: точка входа и навигация.
@@ -11,7 +11,7 @@
 - `ancestry-feats.html`: CRUD черт происхождения.
 - `monster.html`: CRUD монстров.
 - `game.html`: CRUD игр + трекер участников боя.
-- `rules.html`: ссылки на локально скачанные правила.
+- `rules.html`: точка подключения локальной документации правил.
 
 ## 3. Data Storage
 Все данные в `localStorage`:
@@ -23,8 +23,7 @@
 - `pf2_rules_data_meta`: версия инициализации default-данных.
 
 ### 3.1 Initialization and Upgrade
-- Источник default-данных: `data/pf2-defaults.js` (глобальные массивы `PF2_DEFAULT_ANCESTRIES` и `PF2_DEFAULT_ANCESTRY_FEATS`).
-- Резервный fallback в `rules-data.js` используется только если `pf2-defaults.js` недоступен.
+- При запуске используется набор default-данных происхождений и черт из `rules-data.js`.
 - На версии `RULES_DEFAULTS_VERSION` выполняется merge default-данных в хранилище (без удаления пользовательских записей).
 
 ## 4. Ancestry Requirements
@@ -56,31 +55,15 @@
 
 Формула: `1 + count([5,9,13,17] <= level)`.
 
-## 5. Rules Snapshot
-Источник: `https://pf2.ru/rules`.
+## 5. External Rules Docs
+- Исходный офлайн-дамп `2e.aonprd.com` хранится в `docs/aonprd/` (HTML-страницы и ассеты).
+- Текстовое markdown-зеркало для обработки и поиска хранится в `knowledge/` и повторяет структуру разделов (например `knowledge/Ancestry/`, `knowledge/Action/`, `knowledge/Archetypes/`, `knowledge/Curses/` и т.д.).
+- Для просмотра офлайн-энциклопедии в браузере основной вход: `docs/aonprd/index.htm`.
 
-Локальные артефакты:
-- `data/pf2_ru/snapshots/rules/index.html`
-- `data/pf2_ru/snapshots/rules/**`
-- `data/pf2_ru/snapshots/ancestries/**`
-- `data/pf2_ru/manifest.json`
-
-## 6. Tooling Scripts
-- `scripts/download_pf2_rules.sh`
-  - решает PoW anti-bot challenge;
-  - скачивает `/rules` и связанные разделы;
-  - скачивает ancestry detail pages;
-  - обновляет `data/pf2_ru/manifest.json`.
-
-- `scripts/generate_pf2_defaults.js`
-  - парсит ancestry detail pages;
-  - генерирует `data/pf2-defaults.js`;
-  - собирает default-массивы ancestry и ancestry feats.
-
-## 7. Non-Goals
+## 6. Non-Goals
 - Нет серверной части и БД.
 - Нет полноценного rules-engine PF2 для всех подсистем.
-- Нет гарантии полноты переводов/формулировок относительно первоисточников.
+- Нет гарантии полного покрытия всех подсистем правил без внешнего справочника.
 
-## 8. Change Policy
-При изменениях структуры страниц, ключей хранения, форматов данных или скриптов синхронизации этот файл должен быть обновлён.
+## 7. Change Policy
+При изменениях структуры страниц, ключей хранения, форматов данных или flow интеграции внешней документации этот файл должен быть обновлён.

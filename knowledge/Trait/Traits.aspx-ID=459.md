@@ -1,0 +1,10 @@
+# Maneuver - Traits - Archives of Nethys: Pathfinder 2nd Edition Database
+
+Source HTML: `docs/aonprd/Traits.aspx-ID=459.htm`
+
+# [Maneuver](./Traits.aspx-ID=459.md)
+
+### Legacy Content
+
+Source Kingmaker Adventure Path pg. 570
+This modifier applies to all checks made by the army to maneuver, be it to execute a complex tactic or to minimize damage and effects from unusual physical dangers

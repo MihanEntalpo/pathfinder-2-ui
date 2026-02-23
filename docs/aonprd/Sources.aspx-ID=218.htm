@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script type="text/javascript" async src="js-id=UA-137805785-3.js" tppabs="https://www.googletagmanager.com/gtag/js?id=UA-137805785-3"></script>
+    <script type="text/javascript">
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-137805785-3');
+    </script>
+    <title>
+        GM Core - Sources - Archives of Nethys: Pathfinder 2nd Edition Database
+    </title>
+    
+
+    <link href="Layout.css-v=EB6PS6lfpX6G1uwFu7uHcEh6oScz15hZHsXHCNMHzLg.css" tppabs="https://2e.aonprd.com/Styles/Layout.css?v=EB6PS6lfpX6G1uwFu7uHcEh6oScz15hZHsXHCNMHzLg" rel="stylesheet" type="text/css" />
+    <link href="rpg-awesome.min.css" tppabs="https://2e.aonprd.com/Styles/rpg-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="Typography.css-v=3et3D84VeOgcsPaSRyGH6nF1FfjjYgVpcGBq4HyG5vg.css" tppabs="https://2e.aonprd.com/Styles/Typography.css?v=3et3D84VeOgcsPaSRyGH6nF1FfjjYgVpcGBq4HyG5vg" rel="stylesheet" type="text/css" />
+    <link href="themes.css" tppabs="https://2e.aonprd.com/themes" rel="stylesheet" type="text/css" />
+    <link href="SitePrint.css-v=8wGbZVsBHNUZjW78tbaeVtZ_Jlm0ss-wjdlzy_jKlOY.css" tppabs="https://2e.aonprd.com/Styles/SitePrint.css?v=8wGbZVsBHNUZjW78tbaeVtZ_Jlm0ss-wjdlzy_jKlOY" rel="stylesheet" type="text/css" media="print" />
+
+    <link href="css-family=Julee.css" tppabs="https://fonts.googleapis.com/css?family=Julee" rel="stylesheet" type="text/css" />
+    <link href="css-family=Andika.css" tppabs="https://fonts.googleapis.com/css?family=Andika" rel="stylesheet" type="text/css" />
+    <link href="css2-family=Lato-ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap.css" tppabs="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="search" type="application/opensearchdescription+xml" title="Search the Archives of Nethys" href="https://2e.aonprd.com/opensearch.xml" />
+
+
+    <script type="text/javascript">
+        window.elasticUrl = 'https://elasticsearch.aonprd.com/aon-test';
+    </script>
+
+        <script src="nethys-search-9f2620f2bfdf2014fd0b0c157f03248921d02563.js" tppabs="https://elasticsearch.aonprd.com/js/nethys-search-9f2620f2bfdf2014fd0b0c157f03248921d02563.js"></script>
+
+    <script
+      src="jquery-3.6.0.min.js" tppabs="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"></script>
+    <script src="semantic.min.js" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/semantic.min.js" integrity="sha512-5cguXwRllb+6bcc2pogwIeQmQPXEzn2ddsqAexIBhh7FO1z5Hkek1J9mrK2+rmZCTU6b6pERxI7acnp1MpAg4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="search.min.css" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/search.min.css" integrity="sha512-1xyHOORqcJ80bareQ2TWmQE+WZ/TlsqjqILbLHeM3Urtw720aiFXE/N+Xm4MAJpcn42e3k4Z8ZpqZfsA2VVyNw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="transition.min.css" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/transition.min.css" integrity="sha512-zsEyDFFD+yPxc7Kq8c3byp2H3tfx4GgT4wvCDzDGiOlkk2hl454XOHzHfN/OsPilopfPEbRzVJ0wxlIa/9BOyg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="transition.min.js" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/transition.min.js" integrity="sha512-zPx44KLp+BP6OKcCIPQibTiLz0WAc2s9syi+7wOT+Ql2D1/kAX8y7K1rz8vuTtrhRS2dMZ7zVS5dQoHTvkXJCA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="icon.min.css" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/icon.min.css" integrity="sha512-cKaYuptKrUbQ4/r0qmxhpQDjPWb7/SYN6gQRYMOQqPJ2+S4Bmb1zZ1/SAuszp+E6yoakjQFpM+rAzuw+EwR+xw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="input.min.css" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/input.min.css" integrity="sha512-6+BQOwPqqk5AianROXkI3LKgnLcjZbEV3KbhO++sKXemybg0FugrODki+nBsg9FipqlKSMd4ppnpkqC6VEpFiA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="button.min.css" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/button.min.css" integrity="sha512-XMrByQiBPJwH350YvTKR/XTY1fOQX4lSQqeft++WcyY39l0eKoPXOgx1OJHEODhHCW1FfvVl/Bdr90QE08FG+Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="dropdown.min.css" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/dropdown.min.css" integrity="sha512-hDsG55Tp5IgyWKbBbNhOo0+bLTdIVVAGW09a7IFvgIkKg/xrjOdOA2lEPFkkgJQ3NuB7DxDFlSHX7/JYvFLYfA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="dropdown.min.js" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/dropdown.min.js" integrity="sha512-1SzBIESNYM3Y8JkQrS1Mu2dPnPaAqeQkCV9KfDA2eYXBEzdkhHWyqTP6P0OAsh1RSC4cDvr8DmYVTmb/YWGYpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="showdown.min.js" tppabs="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js" integrity="sha512-LhccdVNGe2QMEfI3x4DVV3ckMRe36TfydKss6mJpdHjNFiV07dFpS2xzeZedptKZrwxfICJpez09iNioiSZ3hA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="lodash.min.js" tppabs="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="modernMenu.js" tppabs="https://2e.aonprd.com/Scripts/modernMenu.js"></script>
+
+    <script type="text/javascript" src="tableState.js" tppabs="https://2e.aonprd.com/Scripts/tableState.js"></script>
+    <script type="text/javascript" src="drawerHandlers.js" tppabs="https://2e.aonprd.com/Scripts/drawerHandlers.js"></script>
+    <script type="text/javascript" src="hideFilter.js" tppabs="https://2e.aonprd.com/Scripts/hideFilter.js"></script>
+    <script type="text/javascript" src="searchBar.js" tppabs="https://2e.aonprd.com/Scripts/searchBar.js"></script>
+
+    <script type="text/javascript" src="previewModal.js" tppabs="https://2e.aonprd.com/Scripts/previewModal.js"></script>
+    
+    
+        <meta name="keywords" content="Archives, Nethys, Wiki, Archives of Nethys, Pathfinder, Official, AoN, AoNPRD, PRD, PFSRD, 2E, 2nd Edition, SourcesGM Core" />
+
+
+    <meta charset="utf-8"/>
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="darkreader-lock" />
+    <style type="text/css">        
+        .nav-parent > * {
+            display: block;
+        }
+        .mobile-menu-toggle{
+            display:none;
+        }
+        #main-menu .nav-parent > .brand > .title{
+            display: none;
+        }
+    </style>
+</head>
+<body class="dark aon_dark_theme classic_feel">
+    <div id="wrapper" class="clearfix">
+
+
+        <script type="text/javascript" src="toggle.js" tppabs="https://2e.aonprd.com/Scripts/toggle.js"></script>
+
+
+        <div class="page clearfix" id="page">
+            <div class="header">
+                <div class="clear hideSkiplink" id="main-menu" >
+                    <a class="mobile-menu-toggle" id="mobile-menu-toggle" href="javascript:void(0);" data-toggle="mobile">|||</a>
+                    <div class="splash"></div>
+                    <div class="nav-parent" id="nav-parent">
+                        <a href="index.htm" tppabs="https://2e.aonprd.com/" style="font-size:larger" class="brand">
+                            <span class="home">
+                                Home
+                            </span>
+                        </a>
+                        <a href="Actions.aspx.htm" tppabs="https://2e.aonprd.com/Actions.aspx">Actions/Activities</a>
+                        <a href="Afflictions.aspx.htm" tppabs="https://2e.aonprd.com/Afflictions.aspx">Afflictions</a>
+                        <a href="Ancestries.aspx.htm" tppabs="https://2e.aonprd.com/Ancestries.aspx">Ancestries</a>
+                        <a href="Archetypes.aspx.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx">Archetypes</a>
+                        <a href="Backgrounds.aspx.htm" tppabs="https://2e.aonprd.com/Backgrounds.aspx">Backgrounds</a>
+                        <a href="Classes.aspx.htm" tppabs="https://2e.aonprd.com/Classes.aspx">Classes</a>
+                        <a href="Conditions.aspx.htm" tppabs="https://2e.aonprd.com/Conditions.aspx">Conditions</a>
+                        <a href="Creatures.aspx.htm" tppabs="https://2e.aonprd.com/Creatures.aspx">Creatures</a>
+                        <a href="Equipment.aspx.htm" tppabs="https://2e.aonprd.com/Equipment.aspx">Equipment</a>
+                        <a href="Feats.aspx.htm" tppabs="https://2e.aonprd.com/Feats.aspx">Feats</a>
+                        <a href="Hazards.aspx.htm" tppabs="https://2e.aonprd.com/Hazards.aspx">Hazards</a>
+                        <a href="MythicCallings.aspx.htm" tppabs="https://2e.aonprd.com/MythicCallings.aspx">Mythic</a>
+                        <a href="Rules.aspx.htm" tppabs="https://2e.aonprd.com/Rules.aspx">Rules</a>
+                        <a href="Setting.aspx.htm" tppabs="https://2e.aonprd.com/Setting.aspx">Setting</a>
+                        <a href="Skills.aspx.htm" tppabs="https://2e.aonprd.com/Skills.aspx">Skills</a>
+                        <a href="Spells.aspx.htm" tppabs="https://2e.aonprd.com/Spells.aspx">Spells/Rituals</a>
+                        <a href="Traits.aspx.htm" tppabs="https://2e.aonprd.com/Traits.aspx">Traits</a>
+                        <img src="heading_flourish.png" tppabs="https://2e.aonprd.com/Images/heading_flourish.png" alt="flourish" class="flourish" />
+                        <a href="Licenses.aspx.htm" tppabs="https://2e.aonprd.com/Licenses.aspx">Licenses</a>
+                        <a href="Sources.aspx.htm" tppabs="https://2e.aonprd.com/Sources.aspx">Sources</a>
+                        <img src="heading_flourish.png" tppabs="https://2e.aonprd.com/Images/heading_flourish.png" alt="flourish" class="flourish" />
+                        <a href="ContactUs.aspx.htm" tppabs="https://2e.aonprd.com/ContactUs.aspx">Contact Us</a>
+                        <a href="Contributors.aspx.htm" tppabs="https://2e.aonprd.com/Contributors.aspx">Contributors</a>
+                        <a href="Support.aspx.htm" tppabs="https://2e.aonprd.com/Support.aspx">Support the Archives</a>
+                        <div id="classic-search" class="search">
+                            <input type="text" class="search-input" placeholder="Search" />
+                            <button type="button" class="search-button">
+                                <svg class="Icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="height: 24px; width: 24px; fill: "><path d="M0 0h512v512H0z" fill="transparent" fill-opacity="0"></path><g class="" transform="translate(0,0)" style="touch-action: none;"><path d="M333.78 20.188c-39.97 0-79.96 15.212-110.405 45.656-58.667 58.667-60.796 152.72-6.406 213.97l-15.782 15.748 13.25 13.25 15.75-15.78c61.248 54.39 155.3 52.26 213.968-6.407 60.887-60.886 60.888-159.894 0-220.78C413.713 35.4 373.753 20.187 333.78 20.187zm0 18.562c35.15 0 70.285 13.44 97.158 40.313 53.745 53.745 53.744 140.6 0 194.343-51.526 51.526-133.46 53.643-187.5 6.375l.218-.217c-2.35-2.05-4.668-4.17-6.906-6.407-2.207-2.206-4.288-4.496-6.313-6.812l-.218.22c-47.27-54.04-45.152-135.976 6.374-187.502C263.467 52.19 298.63 38.75 333.78 38.75zm0 18.813c-30.31 0-60.63 11.6-83.81 34.78-46.362 46.362-46.362 121.234 0 167.594 10.14 10.142 21.632 18.077 33.905 23.782-24.91-19.087-40.97-49.133-40.97-82.94 0-15.323 3.292-29.888 9.22-43-4.165 20.485.44 40.88 14.47 54.907 24.583 24.585 68.744 20.318 98.624-9.562 29.88-29.88 34.146-74.04 9.56-98.625-2.375-2.376-4.943-4.473-7.655-6.313 45.13 8.648 79.954 46.345 84.25 92.876 4.44-35.07-6.82-71.726-33.813-98.72-23.18-23.18-53.47-34.78-83.78-34.78zM176.907 297.688L42.094 432.5l34.562 34.563L211.47 332.25l-34.564-34.563zM40 456.813L24 472.78 37.22 486l15.968-16L40 456.812z" fill-opacity="1"></path></g></svg>
+                            </button>
+                        </div>       
+                            <a id="minMaxMenu" onclick='setMenuState("min")'>Maximize Menu</a>
+                    </div>
+                    
+                    <div class="nav-parent expand-collapse" id="mobile-nav-parent" data-target="mobile">
+                        <a href="index.htm" tppabs="https://2e.aonprd.com/" style="font-size:larger" class="brand">
+                            <span class="title">
+                                Archives of Nethys
+                            </span>
+                        </a>
+                        <a href="Afflictions.aspx.htm" tppabs="https://2e.aonprd.com/Afflictions.aspx">Afflictions</a>
+                        <a href="javascript:void(0);" data-toggle="cc">Character Creation +</a>
+                        <div class="expand-collapse expand-collapse-group hide-when-collapsed expanded" data-target="cc" data-group="menus">
+                            <a href="Ancestries.aspx.htm" tppabs="https://2e.aonprd.com/Ancestries.aspx">Ancestries</a>
+                            <a href="Archetypes.aspx.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx">Archetypes</a>
+                            <a href="Backgrounds.aspx.htm" tppabs="https://2e.aonprd.com/Backgrounds.aspx">Backgrounds</a>
+                            <a href="Classes.aspx.htm" tppabs="https://2e.aonprd.com/Classes.aspx">Classes</a>
+                            <a href="Feats.aspx.htm" tppabs="https://2e.aonprd.com/Feats.aspx">Feats</a>
+                            <a href="Skills.aspx.htm" tppabs="https://2e.aonprd.com/Skills.aspx">Skills</a>
+                        </div>
+                        <a href="Creatures.aspx.htm" tppabs="https://2e.aonprd.com/Creatures.aspx">Creatures</a>
+                        <a href="Equipment.aspx.htm" tppabs="https://2e.aonprd.com/Equipment.aspx">Equipment</a>
+                        <a href="Setting.aspx.htm" tppabs="https://2e.aonprd.com/Setting.aspx">Setting</a>
+                        <a href="Spells.aspx.htm" tppabs="https://2e.aonprd.com/Spells.aspx">Spells/Rituals</a>
+                        <a href="javascript:void(0);" data-toggle="rules">Rules +</a>
+                        <div class="expand-collapse expand-collapse-group hide-when-collapsed" data-target="rules" data-group="menus">
+                            <a href="Actions.aspx.htm" tppabs="https://2e.aonprd.com/Actions.aspx">Actions/Activities</a>
+                            <a href="Conditions.aspx.htm" tppabs="https://2e.aonprd.com/Conditions.aspx">Conditions</a>
+                            <a href="Rules.aspx.htm" tppabs="https://2e.aonprd.com/Rules.aspx">Rules</a>
+                            <a href="Traits.aspx.htm" tppabs="https://2e.aonprd.com/Traits.aspx">Traits</a>
+                        </div>
+                        <a href="Hazards.aspx.htm" tppabs="https://2e.aonprd.com/Hazards.aspx">Hazards</a>
+                        <a href="javascript:void(0);" data-toggle="mythic" data-group="">Mythic +</a>
+                        <div class="expand-collapse expand-collapse-group hide-when-collapsed" data-target="mythic" data-group="menus">
+                            <a href="Rules.aspx-ID=3320.htm" tppabs="https://2e.aonprd.com/Rules.aspx?ID=3320">Mythic Rules</a>
+                            <a href="MythicCallings.aspx.htm" tppabs="https://2e.aonprd.com/MythicCallings.aspx">Callings</a>
+                            <a href="MythicFeats.aspx.htm" tppabs="https://2e.aonprd.com/MythicFeats.aspx">Mythic Feats</a>
+                            <a href="MythicDestinies.aspx.htm" tppabs="https://2e.aonprd.com/MythicDestinies.aspx">Destinies</a>
+                            <a href="MythicSpells.aspx.htm" tppabs="https://2e.aonprd.com/MythicSpells.aspx">Mythic Spells</a>
+                            <a href="MythicRituals.aspx.htm" tppabs="https://2e.aonprd.com/MythicRituals.aspx">Mythic Rituals</a>
+                        </div>
+                        <a href="Sources.aspx.htm" tppabs="https://2e.aonprd.com/Sources.aspx">Sources</a>
+                        <a href="javascript:void(0);" data-toggle="about" data-group="">About the Archives +</a>
+                        <div class="expand-collapse expand-collapse-group hide-when-collapsed" data-target="about" data-group="menus">
+                            <a href="Licenses.aspx.htm" tppabs="https://2e.aonprd.com/Licenses.aspx">Licenses</a>
+                            <a href="ContactUs.aspx.htm" tppabs="https://2e.aonprd.com/ContactUs.aspx">Contact Us</a>
+                            <a href="Contributors.aspx.htm" tppabs="https://2e.aonprd.com/Contributors.aspx">Contributors</a>
+                            <a href="Support.aspx.htm" tppabs="https://2e.aonprd.com/Support.aspx">Support the Archives</a>
+                        </div>
+                        <div id="mobileSearch" class="ui fluid search">
+                            <div class="ui action icon input" style="width:90%;height:100%">
+                                <input class="prompt" type="text" placeholder="Search..."/>
+                                <button class="ui icon button" onclick="jumpToSearch('#mobileSearch')">
+                                    <i class="search icon"></i>
+                                </button>
+                            </div>
+                            <div class="results"></div>
+                        </div>
+                        <a href="index.htm" tppabs="https://2e.aonprd.com/">
+                                <img src="PF2Logo_Nethys_400_Selected.png" tppabs="https://2e.aonprd.com/Images/PF2Logo_Nethys_400_Selected.png" alt="Pathfinder RPG (2nd Edition)" />
+                            </a>
+                        <a href="https://www.aonprd.com/"  >
+                            <img src="PF1Logo_Nethys_200.png" tppabs="https://2e.aonprd.com/Images/PF1Logo_Nethys_200.png" alt="Pathfinder RPG (1st Edition)" />
+                        </a> 
+                        <a href="https://www.aonsrd.com/" >
+                            <img src="SFLogo_Nethys_200.png" tppabs="https://2e.aonprd.com/Images/SFLogo_Nethys_200.png" alt="Starfinder RPG (1st Edition)" />
+                        </a>
+                        <a href="https://2e.aonsrd.com/" >
+                            <img src="starfinder_2_logo_200.webp" tppabs="https://2e.aonprd.com/Images/starfinder_2_logo_200.webp" alt="Starfinder RPG (2nd Edition)" />
+                        </a>
+                    </div>
+                </div>
+                <div class="theme-toggle-wrapper" title="Toggle Theme">
+                    <div class="theme-open" title="Change Theme"><i class="ra ra-flowers"></i></div>
+                </div>
+            </div>
+
+            <div class="new-navbar">
+                <div class="drawer-toggle" title="Expand Sidebar" onclick="switchDrawer()">
+                    <img src="NethysMask.png" tppabs="https://2e.aonprd.com/Images/NethysMask.png" alt="&#xe030" /></div>
+                    <a class="title" href="index.htm" tppabs="https://2e.aonprd.com/">Archives of Nethys</a>
+                    <div class="searchBar">
+                        <div id="desktopSearch" class="ui fluid search">
+                            <div class="ui action icon input" style="width:100%;height:100%">
+                                <input class="prompt" type="text" placeholder="Search..."/>
+                                <button class="ui icon button" onclick="jumpToSearch('#desktopSearch')">
+                                        <i class="search icon"></i>
+                                    </button>
+                            </div>
+                            <div class="results"></div>
+                        </div>                   
+                    </div>
+                    <div class="game-selector">
+                        <div class="game-selector-options">
+                            <a class="game-selector-option" href="https://aonprd.com/" >
+                                <img src="PF1Logo_Nethys.png" tppabs="https://2e.aonprd.com/Images/PF1Logo_Nethys.png" alt="Pathfinder 1e" />
+                            </a>
+                            <a class="game-selector-option" href="https://aonsrd.com/" >
+                                <img src="SFLogo_Nethys.png" tppabs="https://2e.aonprd.com/Images/SFLogo_Nethys.png" alt="Starfinder 1e" />
+                            </a>
+                            <a class="game-selector-option" href="https://2e.aonsrd.com/" >
+                                <img src="starfinder_2_logo.webp" tppabs="https://2e.aonprd.com/Images/starfinder_2_logo.webp" alt="Starfinder 2e" />
+                            </a>
+                        </div>
+                        <img class="game-selector-current" src="PF2Logo_Nethys.png" tppabs="https://2e.aonprd.com/Images/PF2Logo_Nethys.png" alt="Pathfinder 2e" />
+                    </div>
+                    <div class="theme-open" title="Change Theme"><i class="ra ra-flowers"></i></div>
+            </div>
+
+            <div class="main-wrapper" id="main-wrapper">
+                <div class="menutitle">
+                    <h1>
+                        Archives of Nethys
+                    </h1>
+                    <h2 class="game-titles">
+                        <a href="https://www.aonprd.com/"  >
+                            <img src="PF1Logo_Nethys.png" tppabs="https://2e.aonprd.com/Images/PF1Logo_Nethys.png" alt="Pathfinder RPG (1st Edition)" />
+                        </a> 
+                        <a href="index.htm" tppabs="https://2e.aonprd.com/" class="selected">
+                            <img src="PF2Logo_Nethys-Selected.png" tppabs="https://2e.aonprd.com/Images/PF2Logo_Nethys-Selected.png" alt="Pathfinder RPG (2nd Edition)" />
+                        </a>
+                        <a href="https://www.aonsrd.com/" >
+                            <img src="SFLogo_Nethys.png" tppabs="https://2e.aonprd.com/Images/SFLogo_Nethys.png" alt="Starfinder RPG (1st Edition)" />
+                        </a>
+                        <a href="https://2e.aonsrd.com/" >
+                            <img src="starfinder_2_logo.webp" tppabs="https://2e.aonprd.com/Images/starfinder_2_logo.webp" alt="Starfinder RPG (2nd Edition)" />
+                        </a>
+                    </h2>
+                </div>
+                <div class="main" id="main">
+                    
+
+<span class="hide-on-print"><h1 style="text-align:center"><a href="Sources.aspx-Group=3.htm" tppabs="https://2e.aonprd.com/Sources.aspx?Group=3">Adventure Paths</a> | <a href="Sources.aspx-Group=2.htm" tppabs="https://2e.aonprd.com/Sources.aspx?Group=2">Adventures</a> | <a href="Sources.aspx-Group=5.htm" tppabs="https://2e.aonprd.com/Sources.aspx?Group=5">Blog Posts</a> | <a href="Sources.aspx-Group=7.htm" tppabs="https://2e.aonprd.com/Sources.aspx?Group=7">Comics</a> | <a href="Sources.aspx-Group=6.htm" tppabs="https://2e.aonprd.com/Sources.aspx?Group=6">Lost Omens</a> | <u><a href="Sources.aspx-Group=1.htm" tppabs="https://2e.aonprd.com/Sources.aspx?Group=1">Rulebooks</a></u> | <a href="Sources.aspx-Group=4.htm" tppabs="https://2e.aonprd.com/Sources.aspx?Group=4">Society</a> </h1></span>
+<span class="hide-on-print"></span>
+
+    <hr class="hide-on-print" />
+
+<span></span>
+<span></span>
+<span><h1 class="title"><a href="Sources.aspx-ID=218.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=218">GM Core</a></h1><b>Product Page</b> <u><a href="javascript:if(confirm(%27https://paizo.com/products/btq02eok  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27https://paizo.com/products/btq02eok%27" tppabs="https://paizo.com/products/btq02eok">Paizo Store</a></u><br /><b>Latest Errata</b> Spring 2026, 1st Printing - 2/6/2026<br /><b>Release Date</b> 11/15/2023<br /><b>Product Line</b> Rulebooks<br /><i>These entries have been updated with errata released on 2/6/2026</i><h2 class="title">Curses [16]</h2><u><a href="Curses.aspx-ID=80.htm" tppabs="https://2e.aonprd.com/Curses.aspx?ID=80">Cowards's Roots</a></u>, <u><a href="Curses.aspx-ID=77.htm" tppabs="https://2e.aonprd.com/Curses.aspx?ID=77">Curse of Nightmares</a></u>, <u><a href="Curses.aspx-ID=85.htm" tppabs="https://2e.aonprd.com/Curses.aspx?ID=85">Curse of Slumber</a></u>, <u><a href="Curses.aspx-ID=81.htm" tppabs="https://2e.aonprd.com/Curses.aspx?ID=81">Curse of the Ravenous</a></u>, <u><a href="Curses.aspx-ID=92.htm" tppabs="https://2e.aonprd.com/Curses.aspx?ID=92">Grave Curse</a></u>, <u><a href="Curses.aspx-ID=83.htm" tppabs="https://2e.aonprd.com/Curses.aspx?ID=83">Oath of the Flesh</a></u>, <u><a href="Curses.aspx-ID=89.htm" tppabs="https://2e.aonprd.com/Curses.aspx?ID=89">Reviled of Nature</a></u>, <u><a href="Curses.aspx-ID=86.htm" tppabs="https://2e.aonprd.com/Curses.aspx?ID=86">Reviling Earth</a></u>, <u><a href="Curses.aspx-ID=84.htm" tppabs="https://2e.aonprd.com/Curses.aspx?ID=84">Sellswords's Folly</a></u>, <u><a href="Curses.aspx-ID=79.htm" tppabs="https://2e.aonprd.com/Curses.aspx?ID=79">Slayer's Haunt</a></u>, <u><a href="Curses.aspx-ID=87.htm" tppabs="https://2e.aonprd.com/Curses.aspx?ID=87">Spirit Anchor</a></u>, <u><a href="Curses.aspx-ID=91.htm" tppabs="https://2e.aonprd.com/Curses.aspx?ID=91">Sword of Anathema</a></u>, <u><a href="Curses.aspx-ID=78.htm" tppabs="https://2e.aonprd.com/Curses.aspx?ID=78">Theft of Thought</a></u>, <u><a href="Curses.aspx-ID=90.htm" tppabs="https://2e.aonprd.com/Curses.aspx?ID=90">Thief's Retribution</a></u>, <u><a href="Curses.aspx-ID=88.htm" tppabs="https://2e.aonprd.com/Curses.aspx?ID=88">Unending Thirst</a></u>, <u><a href="Curses.aspx-ID=82.htm" tppabs="https://2e.aonprd.com/Curses.aspx?ID=82">Wizard's Ward</a></u><h2 class="title">Diseases [14]</h2><u><a href="Diseases.aspx-ID=35.htm" tppabs="https://2e.aonprd.com/Diseases.aspx?ID=35">Blinding Sickness</a></u>, <u><a href="Diseases.aspx-ID=26.htm" tppabs="https://2e.aonprd.com/Diseases.aspx?ID=26">Bog Rot</a></u>, <u><a href="Diseases.aspx-ID=33.htm" tppabs="https://2e.aonprd.com/Diseases.aspx?ID=33">Bonechill</a></u>, <u><a href="Diseases.aspx-ID=38.htm" tppabs="https://2e.aonprd.com/Diseases.aspx?ID=38">Brain Worms</a></u>, <u><a href="Diseases.aspx-ID=31.htm" tppabs="https://2e.aonprd.com/Diseases.aspx?ID=31">Bubonic Plague</a></u>, <u><a href="Diseases.aspx-ID=34.htm" tppabs="https://2e.aonprd.com/Diseases.aspx?ID=34">Choking Death</a></u>, <u><a href="Diseases.aspx-ID=39.htm" tppabs="https://2e.aonprd.com/Diseases.aspx?ID=39">Crimson Ooze</a></u>, <u><a href="Diseases.aspx-ID=30.htm" tppabs="https://2e.aonprd.com/Diseases.aspx?ID=30">Malaria</a></u>, <u><a href="Diseases.aspx-ID=37.htm" tppabs="https://2e.aonprd.com/Diseases.aspx?ID=37">Nightmare Fever</a></u>, <u><a href="Diseases.aspx-ID=27.htm" tppabs="https://2e.aonprd.com/Diseases.aspx?ID=27">Scarlet Fever</a></u>, <u><a href="Diseases.aspx-ID=32.htm" tppabs="https://2e.aonprd.com/Diseases.aspx?ID=32">Scarlet Leprosy</a></u>, <u><a href="Diseases.aspx-ID=36.htm" tppabs="https://2e.aonprd.com/Diseases.aspx?ID=36">Sewer Haze</a></u>, <u><a href="Diseases.aspx-ID=28.htm" tppabs="https://2e.aonprd.com/Diseases.aspx?ID=28">Tetanus</a></u>, <u><a href="Diseases.aspx-ID=29.htm" tppabs="https://2e.aonprd.com/Diseases.aspx?ID=29">Tuberculosis</a></u><h2 class="title">Equipment [752]</h2><u><a href="Equipment.aspx-ID=2962.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2962">10th-rank Scroll</a></u>, <u><a href="Equipment.aspx-ID=2962.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2962">1st-rank Scroll</a></u>, <u><a href="Equipment.aspx-ID=2962.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2962">2nd-rank Scroll</a></u>, <u><a href="Equipment.aspx-ID=2962.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2962">3rd-rank Scroll</a></u>, <u><a href="Equipment.aspx-ID=2962.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2962">4th-rank Scroll</a></u>, <u><a href="Equipment.aspx-ID=2962.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2962">5th-rank Scroll</a></u>, <u><a href="Equipment.aspx-ID=2962.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2962">6th-rank Scroll</a></u>, <u><a href="Equipment.aspx-ID=2962.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2962">7th-rank Scroll</a></u>, <u><a href="Equipment.aspx-ID=2962.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2962">8th-rank Scroll</a></u>, <u><a href="Equipment.aspx-ID=2962.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2962">9th-rank Scroll</a></u>, <u><a href="Equipment.aspx-ID=3054.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3054">Accolade Robe</a></u>, <u><a href="Equipment.aspx-ID=3054.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3054">Accolade Robe (Greater)</a></u>, <u><a href="Equipment.aspx-ID=2875.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2875">Acid Flask</a></u>, <u><a href="Equipment.aspx-ID=2875.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2875">Acid Flask (Greater)</a></u>, <u><a href="Equipment.aspx-ID=2875.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2875">Acid Flask (Lesser)</a></u>, <u><a href="Equipment.aspx-ID=2875.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2875">Acid Flask (Major)</a></u>, <u><a href="Equipment.aspx-ID=2875.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2875">Acid Flask (Moderate)</a></u>, <u><a href="Equipment.aspx-ID=2915.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2915">Adamantine</a></u>, <u><a href="Equipment.aspx-ID=2797.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2797">Adamantine Armor</a></u>, <u><a href="Equipment.aspx-ID=2797.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2797">Adamantine Armor (High-Grade)</a></u>, <u><a href="Equipment.aspx-ID=2797.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2797">Adamantine Armor (Standard-Grade)</a></u>, <u><a href="Equipment.aspx-ID=2812.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2812">Adamantine Buckler (High-Grade)</a></u>, <u><a href="Equipment.aspx-ID=2812.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2812">Adamantine Buckler (Standard-Grade)</a></u>, <u><a href="Equipment.aspx-ID=2915.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2915">Adamantine Chunk</a></u>, <u><a href="Equipment.aspx-ID=2915.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2915">Adamantine Ingot</a></u>, <u><a href="Equipment.aspx-ID=2915.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2915">Adamantine Object (High-Grade)</a></u>, <u><a href="Equipment.aspx-ID=2915.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2915">Adamantine Object (Standard-Grade)</a></u>, <u><a href="Equipment.aspx-ID=2812.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2812">Adamantine Shield</a></u>, <u><a href="Equipment.aspx-ID=2812.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2812">Adamantine Shield (High-Grade)</a></u>, <u><a href="Equipment.aspx-ID=2812.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2812">Adamantine Shield (Standard-Grade)</a></u>, <u><a href="Equipment.aspx-ID=2855.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2855">Adamantine Weapon</a></u>, <u><a href="Equipment.aspx-ID=2855.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2855">Adamantine Weapon (High-Grade)</a></u>, <u><a href="Equipment.aspx-ID=2855.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2855">Adamantine Weapon (Standard-Grade)</a></u>, <u><a href="Equipment.aspx-ID=3055.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3055">Aeon Stone</a></u>, <u><a href="Equipment.aspx-ID=3055.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3055">Aeon Stone (Amplifying)</a></u>, <u><a href="Equipment.aspx-ID=3055.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3055">Aeon Stone (Consumed)</a></u>, <u><a href="Equipment.aspx-ID=3055.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3055">Aeon Stone (Delaying)</a></u>, <u><a href="Equipment.aspx-ID=3055.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3055">Aeon Stone (Envisioning)</a></u>, <u><a href="Equipment.aspx-ID=3055.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3055">Aeon Stone (Nourishing)</a></u>, <u><a href="Equipment.aspx-ID=3055.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3055">Aeon Stone (Peering)</a></u>, <u><a href="Equipment.aspx-ID=3055.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3055">Aeon Stone (Preserving)</a></u>, <u><a href="Equipment.aspx-ID=3055.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3055">Aeon Stone (Smoothing)</a></u>, <u><a href="Equipment.aspx-ID=3055.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3055">Aeon Stone (Sprouting)</a></u>, <u><a href="Equipment.aspx-ID=3013.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3013">Alacritous Horsehoes</a></u>, <u><a href="Equipment.aspx-ID=3013.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3013">Alacritous Horseshoes</a></u>, <u><a href="Equipment.aspx-ID=3013.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3013">Alacritous Horseshoes (Greater)</a></u>, <u><a href="Equipment.aspx-ID=2876.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2876">Alchemist's Fire</a></u>, <u><a href="Equipment.aspx-ID=2876.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2876">Alchemist's Fire (Greater)</a></u>, <u><a href="Equipment.aspx-ID=2876.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2876">Alchemist's Fire (Lesser)</a></u>, <u><a href="Equipment.aspx-ID=2876.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2876">Alchemist's Fire (Major)</a></u>, <u><a href="Equipment.aspx-ID=2876.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2876">Alchemist's Fire (Moderate)</a></u>, <u><a href="Equipment.aspx-ID=2963.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2963">Alloy Orb</a></u>, <u><a href="Equipment.aspx-ID=2963.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2963">Alloy Orb (High-Grade)</a></u>, <u><a href="Equipment.aspx-ID=2963.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2963">Alloy Orb (Low-Grade)</a></u>, <u><a href="Equipment.aspx-ID=2963.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2963">Alloy Orb (Standard-Grade)</a></u>, <u><a href="Equipment.aspx-ID=3035.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3035">Animal Staff</a></u>, <u><a href="Equipment.aspx-ID=3035.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3035">Animal Staff (Greater)</a></u>, <u><a href="Equipment.aspx-ID=3035.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3035">Animal Staff (Major)</a></u>, <u><a href="Equipment.aspx-ID=2831.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2831">Animated</a></u>, <u><a href="Equipment.aspx-ID=2879.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2879">Antidote</a></u>, <u><a href="Equipment.aspx-ID=2879.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2879">Antidote (Greater)</a></u>, <u><a href="Equipment.aspx-ID=2879.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2879">Antidote (Lesser)</a></u>, <u><a href="Equipment.aspx-ID=2879.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2879">Antidote (Major)</a></u>, <u><a href="Equipment.aspx-ID=2879.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2879">Antidote (Moderate)</a></u>, <u><a href="Equipment.aspx-ID=2787.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2787">Antimagic</a></u>, <u><a href="Equipment.aspx-ID=2930.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2930">Antimagic Oil</a></u>, <u><a href="Equipment.aspx-ID=2880.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2880">Antiplague</a></u>, <u><a href="Equipment.aspx-ID=2880.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2880">Antiplague (Greater)</a></u>, <u><a href="Equipment.aspx-ID=2880.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2880">Antiplague (Lesser)</a></u>, <u><a href="Equipment.aspx-ID=2880.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2880">Antiplague (Major)</a></u>, <u><a href="Equipment.aspx-ID=2880.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2880">Antiplague (Moderate)</a></u>, <u><a href="Equipment.aspx-ID=3056.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3056">Arboreal Boots</a></u>, <u><a href="Equipment.aspx-ID=3056.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3056">Arboreal Boots (Greater)</a></u>, <u><a href="Equipment.aspx-ID=3057.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3057">Armbands of Athleticism</a></u>, <u><a href="Equipment.aspx-ID=3057.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3057">Armbands of Athleticism (Greater)</a></u>, <u><a href="Equipment.aspx-ID=2785.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2785">Armor Potency</a></u>, <u><a href="Equipment.aspx-ID=2785.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2785">Armor Potency (+1)</a></u>, <u><a href="Equipment.aspx-ID=2785.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2785">Armor Potency (+2)</a></u>, <u><a href="Equipment.aspx-ID=2785.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2785">Armor Potency (+3)</a></u>, <u><a href="Equipment.aspx-ID=2891.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2891">Arsenic</a></u>, <u><a href="Equipment.aspx-ID=2832.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2832">Astral</a></u>, <u><a href="Equipment.aspx-ID=2832.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2832">Astral (Greater)</a></u>, <u><a href="Equipment.aspx-ID=3128.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3128">Bag of Weasels</a></u>, <u><a href="Equipment.aspx-ID=3058.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3058">Bands of Force</a></u>, <u><a href="Equipment.aspx-ID=3058.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3058">Bands of Force (Greater)</a></u>, <u><a href="Equipment.aspx-ID=3058.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3058">Bands of Force (Major)</a></u>, <u><a href="Equipment.aspx-ID=3014.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3014">Barding of the Zephyr</a></u>, <u><a href="Equipment.aspx-ID=2964.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2964">Basilisk Eye</a></u>, <u><a href="Equipment.aspx-ID=2921.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2921">Beacon Shot</a></u>, <u><a href="Equipment.aspx-ID=3007.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3007">Belt of Long Life</a></u>, <u><a href="Equipment.aspx-ID=2892.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2892">Black Adder Venom</a></u>, <u><a href="Equipment.aspx-ID=2893.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2893">Black Lotus Extract</a></u>, <u><a href="Equipment.aspx-ID=2894.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2894">Blightburn Resin</a></u>, <u><a href="Equipment.aspx-ID=2862.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2862">Bloodletting Kukri</a></u>, <u><a href="Equipment.aspx-ID=2965.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2965">Bloodseeker Beak</a></u>, <u><a href="Equipment.aspx-ID=2965.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2965">Bloodseeker Beak (Greater)</a></u>, <u><a href="Equipment.aspx-ID=2881.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2881">Bomber's Eye Elixir</a></u>, <u><a href="Equipment.aspx-ID=2881.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2881">Bomber's Eye Elixir (Greater)</a></u>, <u><a href="Equipment.aspx-ID=2881.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2881">Bomber's Eye Elixir (Lesser)</a></u>, <u><a href="Equipment.aspx-ID=3059.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3059">Boots of Bounding</a></u>, <u><a href="Equipment.aspx-ID=3059.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3059">Boots of Bounding (Greater)</a></u>, <u><a href="Equipment.aspx-ID=3017.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3017">Bottled Air</a></u>, <u><a href="Equipment.aspx-ID=3060.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3060">Bracelet of Dashing</a></u>, <u><a href="Equipment.aspx-ID=3061.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3061">Bracers of Missile Deflection</a></u>, <u><a href="Equipment.aspx-ID=3061.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3061">Bracers of Missile Deflection (Greater)</a></u>, <u><a href="Equipment.aspx-ID=3008.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3008">Bracers of Strength</a></u>, <u><a href="Equipment.aspx-ID=2882.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2882">Bravo's Brew</a></u>, <u><a href="Equipment.aspx-ID=2882.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2882">Bravo's Brew (Greater)</a></u>, <u><a href="Equipment.aspx-ID=2882.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2882">Bravo's Brew (Lesser)</a></u>, <u><a href="Equipment.aspx-ID=2882.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2882">Bravo's Brew (Moderate)</a></u>, <u><a href="Equipment.aspx-ID=2833.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2833">Brilliant</a></u>, <u><a href="Equipment.aspx-ID=2833.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2833">Brilliant (Greater)</a></u>, <u><a href="Equipment.aspx-ID=2895.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2895">Brimstone Fumes</a></u>, <u><a href="Equipment.aspx-ID=2966.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2966">Bronze Bull Pendant</a></u>, <u><a href="Equipment.aspx-ID=2999.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2999">Candle of Truth</a></u>, <u><a href="Equipment.aspx-ID=2883.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2883">Cat's Eye Elixir</a></u>, <u><a href="Equipment.aspx-ID=2863.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2863">Caterwaul Sling</a></u>, <u><a href="Equipment.aspx-ID=3062.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3062">Channel Protection Amulet</a></u>, <u><a href="Equipment.aspx-ID=2864.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2864">Chaplain's Cudgel</a></u>, <u><a href="Equipment.aspx-ID=3063.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3063">Charlatan's Cape</a></u>, <u><a href="Equipment.aspx-ID=3064.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3064">Charlatan's Gloves</a></u>, <u><a href="Equipment.aspx-ID=3064.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3064">Charlatan's Gloves (Greater)</a></u>, <u><a href="Equipment.aspx-ID=3065.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3065">Charm of Resistance</a></u>, <u><a href="Equipment.aspx-ID=3065.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3065">Charm of Resistance (Greater)</a></u>, <u><a href="Equipment.aspx-ID=3065.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3065">Charm of Resistance (Major)</a></u>, <u><a href="Equipment.aspx-ID=2884.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2884">Cheetah's Elixir</a></u>, <u><a href="Equipment.aspx-ID=2884.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2884">Cheetah's Elixir (Greater)</a></u>, <u><a href="Equipment.aspx-ID=2884.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2884">Cheetah's Elixir (Lesser)</a></u>, <u><a href="Equipment.aspx-ID=2884.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2884">Cheetah's Elixir (Moderate)</a></u>, <u><a href="Equipment.aspx-ID=3066.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3066">Choker of Elocution</a></u>, <u><a href="Equipment.aspx-ID=3066.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3066">Choker of Elocution (Greater)</a></u>, <u><a href="Equipment.aspx-ID=3067.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3067">Clandestine Cloak</a></u>, <u><a href="Equipment.aspx-ID=3067.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3067">Clandestine Cloak (Greater)</a></u>, <u><a href="Equipment.aspx-ID=3068.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3068">Clawed Bracers</a></u>, <u><a href="Equipment.aspx-ID=2922.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2922">Climbing Bolt</a></u>, <u><a href="Equipment.aspx-ID=3069.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3069">Cloak of Illusions</a></u>, <u><a href="Equipment.aspx-ID=3069.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3069">Cloak of Illusions (Greater)</a></u>, <u><a href="Equipment.aspx-ID=3129.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3129">Cloak of Immolation</a></u>, <u><a href="Equipment.aspx-ID=3009.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3009">Cloak of Swiftness</a></u>, <u><a href="Equipment.aspx-ID=3018.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3018">Cloud Pouch</a></u>, <u><a href="Equipment.aspx-ID=2916.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2916">Cold Iron</a></u>, <u><a href="Equipment.aspx-ID=2798.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2798">Cold Iron Armor</a></u>, <u><a href="Equipment.aspx-ID=2798.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2798">Cold Iron Armor (High-Grade)</a></u>, <u><a href="Equipment.aspx-ID=2798.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2798">Cold Iron Armor (Low-Grade)</a></u>, <u><a href="Equipment.aspx-ID=2798.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2798">Cold Iron Armor (Standard-Grade)</a></u>, <u><a href="Equipment.aspx-ID=2813.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2813">Cold Iron Buckler (High-Grade)</a></u>, <u><a href="Equipment.aspx-ID=2813.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2813">Cold Iron Buckler (Low-Grade)</a></u>, <u><a href="Equipment.aspx-ID=2813.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2813">Cold Iron Buckler (Standard-Grade)</a></u>, <u><a href="Equipment.aspx-ID=2916.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2916">Cold Iron Chunk</a></u>, <u><a href="Equipment.aspx-ID=2916.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2916">Cold Iron Ingot</a></u>, <u><a href="Equipment.aspx-ID=2916.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2916">Cold Iron Object (High-Grade)</a></u>, <u><a href="Equipment.aspx-ID=2916.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2916">Cold Iron Object (Low-Grade)</a></u>, <u><a href="Equipment.aspx-ID=2916.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2916">Cold Iron Object (Standard-Grade)</a></u>, <u><a href="Equipment.aspx-ID=2813.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2813">Cold Iron Shield</a></u>, <u><a href="Equipment.aspx-ID=2813.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2813">Cold Iron Shield (High-Grade)</a></u>, <u><a href="Equipment.aspx-ID=2813.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2813">Cold Iron Shield (Low-Grade)</a></u>, <u><a href="Equipment.aspx-ID=2813.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2813">Cold Iron Shield (Standard-Grade)</a></u>, <u><a href="Equipment.aspx-ID=2856.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2856">Cold Iron Weapon</a></u>, <u><a href="Equipment.aspx-ID=2856.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2856">Cold Iron Weapon (High-Grade)</a></u>, <u><a href="Equipment.aspx-ID=2856.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2856">Cold Iron Weapon (Low-Grade)</a></u>, <u><a href="Equipment.aspx-ID=2856.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2856">Cold Iron Weapon (Standard-Grade)</a></u>, <u><a href="Equipment.aspx-ID=3015.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3015">Collar of Empathy</a></u>, <u><a href="Equipment.aspx-ID=3016.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3016">Collar of Inconspicuousness</a></u>, <u><a href="Equipment.aspx-ID=2834.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2834">Corrosive</a></u>, <u><a href="Equipment.aspx-ID=2834.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2834">Corrosive (Greater)</a></u>, <u><a href="Equipment.aspx-ID=3070.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3070">Countering Charm</a></u>, <u><a href="Equipment.aspx-ID=3070.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3070">Countering Charm (Greater)</a></u>, <u><a href="Equipment.aspx-ID=3070.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3070">Countering Charm (Major)</a></u>, <u><a href="Equipment.aspx-ID=3071.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3071">Coyote Cloak</a></u>, <u><a href="Equipment.aspx-ID=3071.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3071">Coyote Cloak (Greater)</a></u>, <u><a href="Equipment.aspx-ID=3072.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3072">Crafter's Eyepiece</a></u>, <u><a href="Equipment.aspx-ID=3072.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3072">Crafter's Eyepiece (Greater)</a></u>, <u><a href="Equipment.aspx-ID=3010.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3010">Crown of Intellect</a></u>, <u><a href="Equipment.aspx-ID=3073.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3073">Crown of Witchcraft</a></u>, <u><a href="Equipment.aspx-ID=3073.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3073">Crown of Witchcraft (Greater)</a></u>, <u><a href="Equipment.aspx-ID=2967.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2967">Crying Angel Pendant</a></u>, <u><a href="Equipment.aspx-ID=3019.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3019">Crystal Ball</a></u>, <u><a href="Equipment.aspx-ID=3019.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3019">Crystal Ball (Clear Quartz)</a></u>, <u><a href="Equipment.aspx-ID=3019.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3019">Crystal Ball (Moonstone)</a></u>, <u><a href="Equipment.aspx-ID=3019.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3019">Crystal Ball (Obsidian)</a></u>, <u><a href="Equipment.aspx-ID=3019.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3019">Crystal Ball (Peridot)</a></u>, <u><a href="Equipment.aspx-ID=3019.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3019">Crystal Ball (Selenite)</a></u>, <u><a href="Equipment.aspx-ID=3074.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3074">Dancing Scarf</a></u>, <u><a href="Equipment.aspx-ID=3074.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3074">Dancing Scarf (Greater)</a></u>, <u><a href="Equipment.aspx-ID=3075.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3075">Daredevil Boots</a></u>, <u><a href="Equipment.aspx-ID=3075.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3075">Daredevil Boots (Greater)</a></u>, <u><a href="Equipment.aspx-ID=2885.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2885">Darkvision Elixir</a></u>, <u><a href="Equipment.aspx-ID=2885.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2885">Darkvision Elixir (Greater)</a></u>, <u><a href="Equipment.aspx-ID=2885.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2885">Darkvision Elixir (Lesser)</a></u>, <u><a href="Equipment.aspx-ID=2885.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2885">Darkvision Elixir (Moderate)</a></u>, <u><a href="Equipment.aspx-ID=2917.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2917">Dawnsilver</a></u>, <u><a href="Equipment.aspx-ID=2799.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2799">Dawnsilver Armor</a></u>, <u><a href="Equipment.aspx-ID=2799.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2799">Dawnsilver Armor (High-Grade)</a></u>, <u><a href="Equipment.aspx-ID=2799.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2799">Dawnsilver Armor (Standard-Grade)</a></u>, <u><a href="Equipment.aspx-ID=2814.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2814">Dawnsilver Buckler (High-Grade)</a></u>, <u><a href="Equipment.aspx-ID=2814.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2814">Dawnsilver Buckler (Standard-Grade)</a></u>, <u><a href="Equipment.aspx-ID=2917.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2917">Dawnsilver Chunk</a></u>, <u><a href="Equipment.aspx-ID=2917.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2917">Dawnsilver Ingot</a></u>, <u><a href="Equipment.aspx-ID=2917.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2917">Dawnsilver Object (High-Grade)</a></u>, <u><a href="Equipment.aspx-ID=2917.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2917">Dawnsilver Object (Standard-Grade)</a></u>, <u><a href="Equipment.aspx-ID=2814.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2814">Dawnsilver Shield</a></u>, <u><a href="Equipment.aspx-ID=2814.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2814">Dawnsilver Shield (High-Grade)</a></u>, <u><a href="Equipment.aspx-ID=2814.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2814">Dawnsilver Shield (Standard-Grade)</a></u>, <u><a href="Equipment.aspx-ID=2857.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2857">Dawnsilver Weapon</a></u>, <u><a href="Equipment.aspx-ID=2857.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2857">Dawnsilver Weapon (High-Grade)</a></u>, <u><a href="Equipment.aspx-ID=2857.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2857">Dawnsilver Weapon (Standard-Grade)</a></u>, <u><a href="Equipment.aspx-ID=2968.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2968">Dazing Coil</a></u>, <u><a href="Equipment.aspx-ID=2896.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2896">Deathcap Powder</a></u>, <u><a href="Equipment.aspx-ID=2835.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2835">Decaying</a></u>, <u><a href="Equipment.aspx-ID=2835.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2835">Decaying (Greater)</a></u>, <u><a href="Equipment.aspx-ID=3076.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3076">Demon Mask</a></u>, <u><a href="Equipment.aspx-ID=3076.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3076">Demon Mask (Greater)</a></u>, <u><a href="Equipment.aspx-ID=3077.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3077">Devoted Vestments</a></u>, <u><a href="Equipment.aspx-ID=3078.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3078">Diplomat's Badge</a></u>, <u><a href="Equipment.aspx-ID=2969.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2969">Dispelling Sliver</a></u>, <u><a href="Equipment.aspx-ID=3079.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3079">Doubling Rings</a></u>, <u><a href="Equipment.aspx-ID=3079.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3079">Doubling Rings (Greater)</a></u>, <u><a href="Equipment.aspx-ID=2970.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2970">Dragon Turtle Scale</a></u>, <u><a href="Equipment.aspx-ID=2970.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2970">Dragon Turtle Scale (Greater)</a></u>, <u><a href="Equipment.aspx-ID=2818.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2818">Dragonslayer's Shield</a></u>, <u><a href="Equipment.aspx-ID=2877.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2877">Dread Ampoule</a></u>, <u><a href="Equipment.aspx-ID=2877.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2877">Dread Ampoule (Greater)</a></u>, <u><a href="Equipment.aspx-ID=2877.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2877">Dread Ampoule (Lesser)</a></u>, <u><a href="Equipment.aspx-ID=2877.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2877">Dread Ampoule (Major)</a></u>, <u><a href="Equipment.aspx-ID=2877.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2877">Dread Ampoule (Moderate)</a></u>, <u><a href="Equipment.aspx-ID=3080.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3080">Dread Blindfold</a></u>, <u><a href="Equipment.aspx-ID=2918.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2918">Duskwood</a></u>, <u><a href="Equipment.aspx-ID=2800.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2800">Duskwood Armor</a></u>, <u><a href="Equipment.aspx-ID=2800.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2800">Duskwood Armor (High-Grade)</a></u>, <u><a href="Equipment.aspx-ID=2800.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2800">Duskwood Armor (Standard-Grade)</a></u>, <u><a href="Equipment.aspx-ID=2918.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2918">Duskwood Branch</a></u>, <u><a href="Equipment.aspx-ID=2815.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2815">Duskwood Buckler (High-Grade)</a></u>, <u><a href="Equipment.aspx-ID=2815.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2815">Duskwood Buckler (Standard-Grade)</a></u>, <u><a href="Equipment.aspx-ID=2918.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2918">Duskwood Lumber</a></u>, <u><a href="Equipment.aspx-ID=2918.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2918">Duskwood Object (High-Grade)</a></u>, <u><a href="Equipment.aspx-ID=2918.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2918">Duskwood Object (Standard-Grade)</a></u>, <u><a href="Equipment.aspx-ID=2815.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2815">Duskwood Shield</a></u>, <u><a href="Equipment.aspx-ID=2815.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2815">Duskwood Shield (High-Grade)</a></u>, <u><a href="Equipment.aspx-ID=2815.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2815">Duskwood Shield (Standard-Grade)</a></u>, <u><a href="Equipment.aspx-ID=2815.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2815">Duskwood Tower Shield (High-Grade)</a></u>, <u><a href="Equipment.aspx-ID=2815.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2815">Duskwood Tower Shield (Standard-Grade)</a></u>, <u><a href="Equipment.aspx-ID=2858.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2858">Duskwood Weapon</a></u>, <u><a href="Equipment.aspx-ID=2858.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2858">Duskwood Weapon (High-Grade)</a></u>, <u><a href="Equipment.aspx-ID=2858.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2858">Duskwood Weapon (Standard-Grade)</a></u>, <u><a href="Equipment.aspx-ID=2886.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2886">Eagle-Eye Elixir</a></u>, <u><a href="Equipment.aspx-ID=2886.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2886">Eagle-Eye Elixir (Greater)</a></u>, <u><a href="Equipment.aspx-ID=2886.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2886">Eagle-Eye Elixir (Lesser)</a></u>, <u><a href="Equipment.aspx-ID=2886.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2886">Eagle-Eye Elixir (Major)</a></u>, <u><a href="Equipment.aspx-ID=2886.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2886">Eagle-Eye Elixir (Moderate)</a></u>, <u><a href="Equipment.aspx-ID=3081.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3081">Earthglide Cloak</a></u>, <u><a href="Equipment.aspx-ID=2971.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2971">Effervescent Ampoule</a></u>, <u><a href="Equipment.aspx-ID=2805.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2805">Electric Eelskin</a></u>, <u><a href="Equipment.aspx-ID=2887.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2887">Elixir of Life</a></u>, <u><a href="Equipment.aspx-ID=2887.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2887">Elixir of Life (Greater)</a></u>, <u><a href="Equipment.aspx-ID=2887.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2887">Elixir of Life (Lesser)</a></u>, <u><a href="Equipment.aspx-ID=2887.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2887">Elixir of Life (Major)</a></u>, <u><a href="Equipment.aspx-ID=2887.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2887">Elixir of Life (Minor)</a></u>, <u><a href="Equipment.aspx-ID=2887.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2887">Elixir of Life (Moderate)</a></u>, <u><a href="Equipment.aspx-ID=2887.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2887">Elixir of Life (True)</a></u>, <u><a href="Equipment.aspx-ID=2801.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2801">Elven Chain</a></u>, <u><a href="Equipment.aspx-ID=2801.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2801">Elven Chain (High-Grade)</a></u>, <u><a href="Equipment.aspx-ID=2801.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2801">Elven Chain (Standard-Grade)</a></u>, <u><a href="Equipment.aspx-ID=2972.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2972">Emerald Grasshopper</a></u>, <u><a href="Equipment.aspx-ID=2972.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2972">Emerald Grasshopper (Greater)</a></u>, <u><a href="Equipment.aspx-ID=2941.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2941">Energy Breath Potion</a></u>, <u><a href="Equipment.aspx-ID=2941.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2941">Energy Breath Potion (Greater)</a></u>, <u><a href="Equipment.aspx-ID=2941.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2941">Energy Breath Potion (Lesser)</a></u>, <u><a href="Equipment.aspx-ID=2941.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2941">Energy Breath Potion (Moderate)</a></u>, <u><a href="Equipment.aspx-ID=2788.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2788">Energy-Resistant</a></u>, <u><a href="Equipment.aspx-ID=2788.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2788">Energy-Resistant (Greater)</a></u>, <u><a href="Equipment.aspx-ID=3082.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3082">Entertainer's Cincture</a></u>, <u><a href="Equipment.aspx-ID=3082.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3082">Entertainer's Cincture (Greater)</a></u>, <u><a href="Equipment.aspx-ID=3020.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3020">Eternal Eruption</a></u>, <u><a href="Equipment.aspx-ID=3020.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3020">Eternal Eruption </a></u>, <u><a href="Equipment.aspx-ID=3020.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3020">Eternal Eruption of Barrowsiege</a></u>, <u><a href="Equipment.aspx-ID=3020.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3020">Eternal Eruption of Blackpeak</a></u>, <u><a href="Equipment.aspx-ID=3020.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3020">Eternal Eruption of Droskar's Crag</a></u>, <u><a href="Equipment.aspx-ID=3020.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3020">Eternal Eruption of Ka</a></u>, <u><a href="Equipment.aspx-ID=3020.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3020">Eternal Eruption of Mhar Massif</a></u>, <u><a href="Equipment.aspx-ID=3020.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3020">Eternal Eruption of Pale Mountain</a></u>, <u><a href="Equipment.aspx-ID=3020.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3020">Eternal Eruption of Sakalayo</a></u>, <u><a href="Equipment.aspx-ID=3021.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3021">Everlight Crystal</a></u>, <u><a href="Equipment.aspx-ID=3022.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3022">Explorer's Yurt</a></u>, <u><a href="Equipment.aspx-ID=2923.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2923">Explosive Ammunition</a></u>, <u><a href="Equipment.aspx-ID=2923.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2923">Explosive Ammunition (Greater)</a></u>, <u><a href="Equipment.aspx-ID=2963.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2963">Exquisite Alloy Orb (High-Grade)</a></u>, <u><a href="Equipment.aspx-ID=2963.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2963">Exquisite Alloy Orb (Standard-Grade)</a></u>, <u><a href="Equipment.aspx-ID=2836.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2836">Extending</a></u>, <u><a href="Equipment.aspx-ID=2836.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2836">Extending (Greater)</a></u>, <u><a href="Equipment.aspx-ID=2973.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2973">Eye of Apprehension</a></u>, <u><a href="Equipment.aspx-ID=3083.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3083">Eye of Fortune</a></u>, <u><a href="Equipment.aspx-ID=3084.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3084">Eyes of the Cat</a></u>, <u><a href="Equipment.aspx-ID=2974.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2974">Fade Band</a></u>, <u><a href="Equipment.aspx-ID=2975.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2975">Fear Gem</a></u>, <u><a href="Equipment.aspx-ID=2897.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2897">Fearflower Nectar</a></u>, <u><a href="Equipment.aspx-ID=2837.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2837">Fearsome</a></u>, <u><a href="Equipment.aspx-ID=2837.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2837">Fearsome (Greater)</a></u>, <u><a href="Equipment.aspx-ID=2976.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2976">Feather Step Stone</a></u>, <u><a href="Equipment.aspx-ID=2865.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2865">Fighter's Fork</a></u>, <u><a href="Equipment.aspx-ID=2838.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2838">Flaming</a></u>, <u><a href="Equipment.aspx-ID=2838.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2838">Flaming (Greater)</a></u>, <u><a href="Equipment.aspx-ID=2819.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2819">Floating Shield</a></u>, <u><a href="Equipment.aspx-ID=2819.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2819">Floating Shield (Greater)</a></u>, <u><a href="Equipment.aspx-ID=3036.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3036">Fluid Form Staff</a></u>, <u><a href="Equipment.aspx-ID=3036.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3036">Fluid Form Staff (Greater)</a></u>, <u><a href="Equipment.aspx-ID=3036.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3036">Fluid Form Staff (Major)</a></u>, <u><a href="Equipment.aspx-ID=3023.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3023">Flying Broomstick</a></u>, <u><a href="Equipment.aspx-ID=2820.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2820">Force Shield</a></u>, <u><a href="Equipment.aspx-ID=2821.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2821">Forge Warden</a></u>, <u><a href="Equipment.aspx-ID=3120.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3120">Forgefather's Seal</a></u>, <u><a href="Equipment.aspx-ID=2789.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2789">Fortification</a></u>, <u><a href="Equipment.aspx-ID=2789.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2789">Fortification (Greater)</a></u>, <u><a href="Equipment.aspx-ID=2839.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2839">Frost</a></u>, <u><a href="Equipment.aspx-ID=2839.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2839">Frost (Greater)</a></u>, <u><a href="Equipment.aspx-ID=3000.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3000">Frozen Lava</a></u>, <u><a href="Equipment.aspx-ID=3000.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3000">Frozen Lava of Barrowsiege</a></u>, <u><a href="Equipment.aspx-ID=3000.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3000">Frozen Lava of Blackpeak</a></u>, <u><a href="Equipment.aspx-ID=3000.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3000">Frozen Lava of Droskar's Crag</a></u>, <u><a href="Equipment.aspx-ID=3000.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3000">Frozen Lava of Ka</a></u>, <u><a href="Equipment.aspx-ID=3000.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3000">Frozen Lava of Mhar Massif</a></u>, <u><a href="Equipment.aspx-ID=3000.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3000">Frozen Lava of Pale Mountain</a></u>, <u><a href="Equipment.aspx-ID=3000.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3000">Frozen Lava of Sakalayo</a></u>, <u><a href="Equipment.aspx-ID=2977.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2977">Gallows Tooth</a></u>, <u><a href="Equipment.aspx-ID=2942.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2942">Gecko Potion</a></u>, <u><a href="Equipment.aspx-ID=3125.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3125">Genius Diadem</a></u>, <u><a href="Equipment.aspx-ID=2924.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2924">Ghost Ammunition</a></u>, <u><a href="Equipment.aspx-ID=2978.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2978">Ghost Dust</a></u>, <u><a href="Equipment.aspx-ID=2840.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2840">Ghost Touch</a></u>, <u><a href="Equipment.aspx-ID=2898.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2898">Giant Centipede Venom</a></u>, <u><a href="Equipment.aspx-ID=2899.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2899">Giant Scorpion Venom</a></u>, <u><a href="Equipment.aspx-ID=2866.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2866">Gloom Blade</a></u>, <u><a href="Equipment.aspx-ID=2910.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2910">Glow Rod</a></u>, <u><a href="Equipment.aspx-ID=2878.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2878">Glue Bomb</a></u>, <u><a href="Equipment.aspx-ID=2878.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2878">Glue Bomb (Greater)</a></u>, <u><a href="Equipment.aspx-ID=2878.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2878">Glue Bomb (Lesser)</a></u>, <u><a href="Equipment.aspx-ID=2878.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2878">Glue Bomb (Major)</a></u>, <u><a href="Equipment.aspx-ID=2878.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2878">Glue Bomb (Moderate)</a></u>, <u><a href="Equipment.aspx-ID=3085.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3085">Gorget of the Primal Roar</a></u>, <u><a href="Equipment.aspx-ID=2900.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2900">Graveroot</a></u>, <u><a href="Equipment.aspx-ID=3038.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3038">Greater Staff of Arcane Might</a></u>, <u><a href="Equipment.aspx-ID=2841.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2841">Grievous</a></u>, <u><a href="Equipment.aspx-ID=2979.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2979">Grim Trophy</a></u>, <u><a href="Equipment.aspx-ID=2979.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2979">Grim Trophy (Greater)</a></u>, <u><a href="Equipment.aspx-ID=3086.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3086">Handwraps of Mighty Blows</a></u>, <u><a href="Equipment.aspx-ID=3086.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3086">Handwraps of Mighty Blows (+1 striking)</a></u>, <u><a href="Equipment.aspx-ID=3086.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3086">Handwraps of Mighty Blows (+1)</a></u>, <u><a href="Equipment.aspx-ID=3086.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3086">Handwraps of Mighty Blows (+2 greater striking)</a></u>, <u><a href="Equipment.aspx-ID=3086.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3086">Handwraps of Mighty Blows (+2 striking)</a></u>, <u><a href="Equipment.aspx-ID=3086.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3086">Handwraps of Mighty Blows (+3 greater striking)</a></u>, <u><a href="Equipment.aspx-ID=3086.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3086">Handwraps of Mighty Blows (+3 major striking)</a></u>, <u><a href="Equipment.aspx-ID=3011.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3011">Headwrap of Wisdom</a></u>, <u><a href="Equipment.aspx-ID=3087.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3087">Healer's Gloves</a></u>, <u><a href="Equipment.aspx-ID=3087.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3087">Healer's Gloves (Greater)</a></u>, <u><a href="Equipment.aspx-ID=2943.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2943">Healing Potion</a></u>, <u><a href="Equipment.aspx-ID=2943.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2943">Healing Potion (Greater)</a></u>, <u><a href="Equipment.aspx-ID=2943.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2943">Healing Potion (Lesser)</a></u>, <u><a href="Equipment.aspx-ID=2943.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2943">Healing Potion (Major)</a></u>, <u><a href="Equipment.aspx-ID=2943.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2943">Healing Potion (Minor)</a></u>, <u><a href="Equipment.aspx-ID=2943.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2943">Healing Potion (Moderate)</a></u>, <u><a href="Equipment.aspx-ID=3088.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3088">Hellfire Boots</a></u>, <u><a href="Equipment.aspx-ID=2901.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2901">Hemlock</a></u>, <u><a href="Equipment.aspx-ID=2842.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2842">Holy</a></u>, <u><a href="Equipment.aspx-ID=3001.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3001">Holy Water</a></u>, <u><a href="Equipment.aspx-ID=3024.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3024">Horn of Exorcism</a></u>, <u><a href="Equipment.aspx-ID=3089.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3089">Humbug Pocket</a></u>, <u><a href="Equipment.aspx-ID=3089.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3089">Humbug Pocket (Greater)</a></u>, <u><a href="Equipment.aspx-ID=2867.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2867">Hunter's Anthem</a></u>, <u><a href="Equipment.aspx-ID=2868.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2868">Icicle</a></u>, <u><a href="Equipment.aspx-ID=2806.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2806">Impenetrable Scale</a></u>, <u><a href="Equipment.aspx-ID=2822.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2822">Indestructible Shield</a></u>, <u><a href="Equipment.aspx-ID=3090.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3090">Inexplicable Apparatus</a></u>, <u><a href="Equipment.aspx-ID=2790.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2790">Invisibility</a></u>, <u><a href="Equipment.aspx-ID=2790.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2790">Invisibility (Greater)</a></u>, <u><a href="Equipment.aspx-ID=2944.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2944">Invisibility Potion</a></u>, <u><a href="Equipment.aspx-ID=2980.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2980">Iron Cube</a></u>, <u><a href="Equipment.aspx-ID=2981.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2981">Iron Medallion</a></u>, <u><a href="Equipment.aspx-ID=2982.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2982">Jade Cat</a></u>, <u><a href="Equipment.aspx-ID=2843.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2843">Keen</a></u>, <u><a href="Equipment.aspx-ID=2902.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2902">Lethargy Poison</a></u>, <u><a href="Equipment.aspx-ID=2808.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2808">Life-Saver Mail</a></u>, <u><a href="Equipment.aspx-ID=2808.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2808">Life-Saver Mail (Greater)</a></u>, <u><a href="Equipment.aspx-ID=3091.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3091">Lifting Belt</a></u>, <u><a href="Equipment.aspx-ID=2807.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2807">Lion's Armor</a></u>, <u><a href="Equipment.aspx-ID=2807.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2807">Lion's Armor (Greater)</a></u>, <u><a href="Equipment.aspx-ID=2823.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2823">Lion's Shield</a></u>, <u><a href="Equipment.aspx-ID=3092.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3092">Living Mantle</a></u>, <u><a href="Equipment.aspx-ID=3092.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3092">Living Mantle (Greater)</a></u>, <u><a href="Equipment.aspx-ID=2824.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2824">Lodestone Shield</a></u>, <u><a href="Equipment.aspx-ID=3093.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3093">Lover's Gloves</a></u>, <u><a href="Equipment.aspx-ID=3025.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3025">Madcap Top</a></u>, <u><a href="Equipment.aspx-ID=3026.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3026">Maestro's Instrument</a></u>, <u><a href="Equipment.aspx-ID=3026.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3026">Maestro's Instrument (Greater)</a></u>, <u><a href="Equipment.aspx-ID=3026.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3026">Maestro's Instrument (Lesser)</a></u>, <u><a href="Equipment.aspx-ID=3026.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3026">Maestro's Instrument (Moderate)</a></u>, <u><a href="Equipment.aspx-ID=3094.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3094">Mage's Hat</a></u>, <u><a href="Equipment.aspx-ID=3094.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3094">Mage's Hat (Greater)</a></u>, <u><a href="Equipment.aspx-ID=2804.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2804">Magic Armor</a></u>, <u><a href="Equipment.aspx-ID=2804.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2804">Magic Armor (+1 Resilient)</a></u>, <u><a href="Equipment.aspx-ID=2804.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2804">Magic Armor (+1)</a></u>, <u><a href="Equipment.aspx-ID=2804.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2804">Magic Armor (+2 Greater Resilient)</a></u>, <u><a href="Equipment.aspx-ID=2804.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2804">Magic Armor (+2 Resilient)</a></u>, <u><a href="Equipment.aspx-ID=2804.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2804">Magic Armor (+3 Greater Resilient)</a></u>, <u><a href="Equipment.aspx-ID=2804.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2804">Magic Armor (+3 Major Resilient)</a></u>, <u><a href="Equipment.aspx-ID=2962.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2962">Magic Scroll</a></u>, <u><a href="Equipment.aspx-ID=3050.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3050">Magic Wand</a></u>, <u><a href="Equipment.aspx-ID=3050.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3050">Magic Wand (1st-rank Spell)</a></u>, <u><a href="Equipment.aspx-ID=3050.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3050">Magic Wand (2nd-rank Spell)</a></u>, <u><a href="Equipment.aspx-ID=3050.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3050">Magic Wand (3rd-rank Spell)</a></u>, <u><a href="Equipment.aspx-ID=3050.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3050">Magic Wand (4th-rank Spell)</a></u>, <u><a href="Equipment.aspx-ID=3050.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3050">Magic Wand (5th-rank Spell)</a></u>, <u><a href="Equipment.aspx-ID=3050.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3050">Magic Wand (6th-rank Spell)</a></u>, <u><a href="Equipment.aspx-ID=3050.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3050">Magic Wand (7th-rank Spell)</a></u>, <u><a href="Equipment.aspx-ID=3050.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3050">Magic Wand (8th-rank Spell)</a></u>, <u><a href="Equipment.aspx-ID=3050.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3050">Magic Wand (9th-rank Spell)</a></u>, <u><a href="Equipment.aspx-ID=2861.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2861">Magic Weapon</a></u>, <u><a href="Equipment.aspx-ID=2861.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2861">Magic Weapon (+1 Striking)</a></u>, <u><a href="Equipment.aspx-ID=2861.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2861">Magic Weapon (+1)</a></u>, <u><a href="Equipment.aspx-ID=2861.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2861">Magic Weapon (+2 Greater Striking)</a></u>, <u><a href="Equipment.aspx-ID=2861.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2861">Magic Weapon (+2 Striking)</a></u>, <u><a href="Equipment.aspx-ID=2861.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2861">Magic Weapon (+3 Greater Striking)</a></u>, <u><a href="Equipment.aspx-ID=2861.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2861">Magic Weapon (+3 Major Striking)</a></u>, <u><a href="Equipment.aspx-ID=3038.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3038">Major Staff of Arcane Might</a></u>, <u><a href="Equipment.aspx-ID=3126.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3126">Martyr's Shield</a></u>, <u><a href="Equipment.aspx-ID=3027.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3027">Marvelous Medicines</a></u>, <u><a href="Equipment.aspx-ID=3027.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3027">Marvelous Medicines (Greater)</a></u>, <u><a href="Equipment.aspx-ID=3002.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3002">Marvelous Miniature</a></u>, <u><a href="Equipment.aspx-ID=3002.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3002">Marvelous Miniature (Boat)</a></u>, <u><a href="Equipment.aspx-ID=3002.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3002">Marvelous Miniature (Campfire)</a></u>, <u><a href="Equipment.aspx-ID=3002.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3002">Marvelous Miniature (Chest)</a></u>, <u><a href="Equipment.aspx-ID=3002.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3002">Marvelous Miniature (Horse)</a></u>, <u><a href="Equipment.aspx-ID=3002.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3002">Marvelous Miniature (Ladder)</a></u>, <u><a href="Equipment.aspx-ID=3095.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3095">Masquerade Scarf</a></u>, <u><a href="Equipment.aspx-ID=3095.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3095">Masquerade Scarf (Greater)</a></u>, <u><a href="Equipment.aspx-ID=2911.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2911">Matchstick</a></u>, <u><a href="Equipment.aspx-ID=3130.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3130">Medusa Armor</a></u>, <u><a href="Equipment.aspx-ID=2983.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2983">Mending Lattice</a></u>, <u><a href="Equipment.aspx-ID=3037.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3037">Mentalist's Staff</a></u>, <u><a href="Equipment.aspx-ID=3037.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3037">Mentalist's Staff (Greater)</a></u>, <u><a href="Equipment.aspx-ID=3037.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3037">Mentalist's Staff (Major)</a></u>, <u><a href="Equipment.aspx-ID=2984.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2984">Mesmerizing Opal</a></u>, <u><a href="Equipment.aspx-ID=3096.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3096">Messenger's Ring</a></u>, <u><a href="Equipment.aspx-ID=3096.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3096">Messenger's Ring (Greater)</a></u>, <u><a href="Equipment.aspx-ID=2903.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2903">Mindfog Mist</a></u>, <u><a href="Equipment.aspx-ID=3121.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3121">Mirror of Sorshen</a></u>, <u><a href="Equipment.aspx-ID=2888.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2888">Mistform Elixir</a></u>, <u><a href="Equipment.aspx-ID=2888.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2888">Mistform Elixir (Greater)</a></u>, <u><a href="Equipment.aspx-ID=2888.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2888">Mistform Elixir (Lesser)</a></u>, <u><a href="Equipment.aspx-ID=2888.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2888">Mistform Elixir (Moderate)</a></u>, <u><a href="Equipment.aspx-ID=2985.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2985">Monkey Pin</a></u>, <u><a href="Equipment.aspx-ID=3131.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3131">Monkey's Paw</a></u>, <u><a href="Equipment.aspx-ID=2809.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2809">Moonlit Chain</a></u>, <u><a href="Equipment.aspx-ID=2986.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2986">Mummified Bat</a></u>, <u><a href="Equipment.aspx-ID=2987.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2987">Murderer's Knot</a></u>, <u><a href="Equipment.aspx-ID=3012.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3012">Necklace of Allure</a></u>, <u><a href="Equipment.aspx-ID=2931.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2931">Nectar of Purification</a></u>, <u><a href="Equipment.aspx-ID=2945.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2945">Oak Potion</a></u>, <u><a href="Equipment.aspx-ID=2932.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2932">Obfuscation Oil</a></u>, <u><a href="Equipment.aspx-ID=3097.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3097">Obsidian Goggles</a></u>, <u><a href="Equipment.aspx-ID=3097.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3097">Obsidian Goggles (Greater)</a></u>, <u><a href="Equipment.aspx-ID=3097.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3097">Obsidian Goggles (Major)</a></u>, <u><a href="Equipment.aspx-ID=2933.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2933">Oil of Animation</a></u>, <u><a href="Equipment.aspx-ID=2934.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2934">Oil of Keen Edges</a></u>, <u><a href="Equipment.aspx-ID=2935.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2935">Oil of Mending</a></u>, <u><a href="Equipment.aspx-ID=2936.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2936">Oil of Potency</a></u>, <u><a href="Equipment.aspx-ID=2936.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2936">Oil of Potency (Greater)</a></u>, <u><a href="Equipment.aspx-ID=2936.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2936">Oil of Potency (Major)</a></u>, <u><a href="Equipment.aspx-ID=2937.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2937">Oil of Repulsion</a></u>, <u><a href="Equipment.aspx-ID=2938.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2938">Oil of Unlife</a></u>, <u><a href="Equipment.aspx-ID=2938.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2938">Oil of Unlife (Greater)</a></u>, <u><a href="Equipment.aspx-ID=2938.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2938">Oil of Unlife (Lesser)</a></u>, <u><a href="Equipment.aspx-ID=2938.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2938">Oil of Unlife (Major)</a></u>, <u><a href="Equipment.aspx-ID=2938.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2938">Oil of Unlife (Minor)</a></u>, <u><a href="Equipment.aspx-ID=2938.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2938">Oil of Unlife (Moderate)</a></u>, <u><a href="Equipment.aspx-ID=2939.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2939">Oil of Weightlessness</a></u>, <u><a href="Equipment.aspx-ID=2939.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2939">Oil of Weightlessness (Greater)</a></u>, <u><a href="Equipment.aspx-ID=2988.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2988">Onyx Panther</a></u>, <u><a href="Equipment.aspx-ID=2919.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2919">Orichalcum</a></u>, <u><a href="Equipment.aspx-ID=2802.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2802">Orichalcum Armor</a></u>, <u><a href="Equipment.aspx-ID=2802.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2802">Orichalcum Armor (High-Grade)</a></u>, <u><a href="Equipment.aspx-ID=2816.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2816">Orichalcum Buckler (High-Grade)</a></u>, <u><a href="Equipment.aspx-ID=2919.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2919">Orichalcum Chunk</a></u>, <u><a href="Equipment.aspx-ID=2919.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2919">Orichalcum Ingot</a></u>, <u><a href="Equipment.aspx-ID=2919.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2919">Orichalcum Object (High-Grade)</a></u>, <u><a href="Equipment.aspx-ID=2816.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2816">Orichalcum Shield</a></u>, <u><a href="Equipment.aspx-ID=2816.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2816">Orichalcum Shield (High-Grade)</a></u>, <u><a href="Equipment.aspx-ID=2859.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2859">Orichalcum Weapon</a></u>, <u><a href="Equipment.aspx-ID=2859.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2859">Orichalcum Weapon (High-Grade)</a></u>, <u><a href="Equipment.aspx-ID=2946.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2946">Panacea</a></u>, <u><a href="Equipment.aspx-ID=3098.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3098">Pendant of the Occult</a></u>, <u><a href="Equipment.aspx-ID=3098.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3098">Pendant of the Occult (Greater)</a></u>, <u><a href="Equipment.aspx-ID=2925.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2925">Penetrating Ammunition</a></u>, <u><a href="Equipment.aspx-ID=3099.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3099">Persona Mask</a></u>, <u><a href="Equipment.aspx-ID=3099.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3099">Persona Mask (Greater)</a></u>, <u><a href="Equipment.aspx-ID=3122.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3122">Philosopher's Extractor</a></u>, <u><a href="Equipment.aspx-ID=3028.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3028">Pocket Stage</a></u>, <u><a href="Equipment.aspx-ID=3029.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3029">Possibility Tome</a></u>, <u><a href="Equipment.aspx-ID=2989.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2989">Potency Crystal</a></u>, <u><a href="Equipment.aspx-ID=2989.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2989">Potency Crystal (Greater)</a></u>, <u><a href="Equipment.aspx-ID=2989.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2989">Potency Crystal (Major)</a></u>, <u><a href="Equipment.aspx-ID=2947.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2947">Potion of Emergency Escape</a></u>, <u><a href="Equipment.aspx-ID=2948.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2948">Potion of Flying</a></u>, <u><a href="Equipment.aspx-ID=2948.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2948">Potion of Flying (Greater)</a></u>, <u><a href="Equipment.aspx-ID=2949.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2949">Potion of Leaping</a></u>, <u><a href="Equipment.aspx-ID=2950.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2950">Potion of Quickness</a></u>, <u><a href="Equipment.aspx-ID=2951.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2951">Potion of Resistance</a></u>, <u><a href="Equipment.aspx-ID=2951.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2951">Potion of Resistance (Greater)</a></u>, <u><a href="Equipment.aspx-ID=2951.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2951">Potion of Resistance (Lesser)</a></u>, <u><a href="Equipment.aspx-ID=2951.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2951">Potion of Resistance (Moderate)</a></u>, <u><a href="Equipment.aspx-ID=2952.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2952">Potion of Shared Memories</a></u>, <u><a href="Equipment.aspx-ID=2953.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2953">Potion of Swimming</a></u>, <u><a href="Equipment.aspx-ID=2953.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2953">Potion of Swimming (Greater)</a></u>, <u><a href="Equipment.aspx-ID=2954.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2954">Potion of Truespeech</a></u>, <u><a href="Equipment.aspx-ID=2955.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2955">Potion of Undetectability</a></u>, <u><a href="Equipment.aspx-ID=2956.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2956">Potion of Water Breathing</a></u>, <u><a href="Equipment.aspx-ID=2990.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2990">Predator's Claw</a></u>, <u><a href="Equipment.aspx-ID=3100.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3100">Primeval Mistletoe</a></u>, <u><a href="Equipment.aspx-ID=3100.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3100">Primeval Mistletoe (Greater)</a></u>, <u><a href="Equipment.aspx-ID=3101.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3101">Propulsive Boots</a></u>, <u><a href="Equipment.aspx-ID=2844.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2844">Quickstrike</a></u>, <u><a href="Equipment.aspx-ID=2791.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2791">Raiment</a></u>, <u><a href="Equipment.aspx-ID=2792.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2792">Ready</a></u>, <u><a href="Equipment.aspx-ID=2792.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2792">Ready (Greater)</a></u>, <u><a href="Equipment.aspx-ID=2825.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2825">Reflecting Shield</a></u>, <u><a href="Equipment.aspx-ID=2811.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2811">Reinforcing Rune</a></u>, <u><a href="Equipment.aspx-ID=2811.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2811">Reinforcing Rune (Greater)</a></u>, <u><a href="Equipment.aspx-ID=2811.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2811">Reinforcing Rune (Lesser)</a></u>, <u><a href="Equipment.aspx-ID=2811.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2811">Reinforcing Rune (Major)</a></u>, <u><a href="Equipment.aspx-ID=2811.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2811">Reinforcing Rune (Minor)</a></u>, <u><a href="Equipment.aspx-ID=2811.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2811">Reinforcing Rune (Moderate)</a></u>, <u><a href="Equipment.aspx-ID=2811.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2811">Reinforcing Rune (Supreme)</a></u>, <u><a href="Equipment.aspx-ID=2786.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2786">Resilient</a></u>, <u><a href="Equipment.aspx-ID=2786.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2786">Resilient (Greater)</a></u>, <u><a href="Equipment.aspx-ID=2786.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2786">Resilient (Major)</a></u>, <u><a href="Equipment.aspx-ID=2869.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2869">Retribution Axe</a></u>, <u><a href="Equipment.aspx-ID=3102.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3102">Retrieval Belt</a></u>, <u><a href="Equipment.aspx-ID=3102.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3102">Retrieval Belt (Greater)</a></u>, <u><a href="Equipment.aspx-ID=3102.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3102">Retrieval Belt (Major)</a></u>, <u><a href="Equipment.aspx-ID=2845.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2845">Returning</a></u>, <u><a href="Equipment.aspx-ID=3103.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3103">Ring of Climbing</a></u>, <u><a href="Equipment.aspx-ID=3104.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3104">Ring of Lies</a></u>, <u><a href="Equipment.aspx-ID=3105.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3105">Ring of Sigils</a></u>, <u><a href="Equipment.aspx-ID=3105.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3105">Ring of Sigils (Greater)</a></u>, <u><a href="Equipment.aspx-ID=3106.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3106">Ring of Sustenance</a></u>, <u><a href="Equipment.aspx-ID=3107.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3107">Ring of Swimming</a></u>, <u><a href="Equipment.aspx-ID=3003.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3003">Runestone</a></u>, <u><a href="Equipment.aspx-ID=2940.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2940">Salve of Antiparalysis</a></u>, <u><a href="Equipment.aspx-ID=2940.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2940">Salve of Antiparalysis (Greater)</a></u>, <u><a href="Equipment.aspx-ID=2991.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2991">Savior Spike</a></u>, <u><a href="Equipment.aspx-ID=2889.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2889">Sea Touch Elixir</a></u>, <u><a href="Equipment.aspx-ID=2889.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2889">Sea Touch Elixir (Greater)</a></u>, <u><a href="Equipment.aspx-ID=2889.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2889">Sea Touch Elixir (Lesser)</a></u>, <u><a href="Equipment.aspx-ID=2889.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2889">Sea Touch Elixir (Moderate)</a></u>, <u><a href="Equipment.aspx-ID=2870.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2870">Searing Blade</a></u>, <u><a href="Equipment.aspx-ID=2870.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2870">Searing Blade (Greater)</a></u>, <u><a href="Equipment.aspx-ID=3123.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3123">Serithtial</a></u>, <u><a href="Equipment.aspx-ID=2871.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2871">Serpent Dagger</a></u>, <u><a href="Equipment.aspx-ID=2957.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2957">Serum of Sex Shift</a></u>, <u><a href="Equipment.aspx-ID=2793.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2793">Shadow</a></u>, <u><a href="Equipment.aspx-ID=2793.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2793">Shadow (Greater)</a></u>, <u><a href="Equipment.aspx-ID=2793.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2793">Shadow (Major)</a></u>, <u><a href="Equipment.aspx-ID=3108.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3108">Shadow Signet</a></u>, <u><a href="Equipment.aspx-ID=2992.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2992">Shark Tooth Charm</a></u>, <u><a href="Equipment.aspx-ID=2846.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2846">Shifting</a></u>, <u><a href="Equipment.aspx-ID=2926.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2926">Shining Ammunition</a></u>, <u><a href="Equipment.aspx-ID=3109.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3109">Shining Symbol</a></u>, <u><a href="Equipment.aspx-ID=3109.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3109">Shining Symbol (Greater)</a></u>, <u><a href="Equipment.aspx-ID=3109.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3109">Shining Symbol (Major)</a></u>, <u><a href="Equipment.aspx-ID=2847.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2847">Shock</a></u>, <u><a href="Equipment.aspx-ID=2847.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2847">Shock (Greater)</a></u>, <u><a href="Equipment.aspx-ID=2848.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2848">Shockwave</a></u>, <u><a href="Equipment.aspx-ID=3124.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3124">Shot of the First Vault</a></u>, <u><a href="Equipment.aspx-ID=2958.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2958">Shrinking Potion</a></u>, <u><a href="Equipment.aspx-ID=2958.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2958">Shrinking Potion (Greater)</a></u>, <u><a href="Equipment.aspx-ID=2920.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2920">Silver</a></u>, <u><a href="Equipment.aspx-ID=2803.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2803">Silver Armor</a></u>, <u><a href="Equipment.aspx-ID=2803.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2803">Silver Armor (High-Grade)</a></u>, <u><a href="Equipment.aspx-ID=2803.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2803">Silver Armor (Low-Grade)</a></u>, <u><a href="Equipment.aspx-ID=2803.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2803">Silver Armor (Standard-Grade)</a></u>, <u><a href="Equipment.aspx-ID=2817.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2817">Silver Buckler (High-Grade)</a></u>, <u><a href="Equipment.aspx-ID=2817.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2817">Silver Buckler (Low-Grade)</a></u>, <u><a href="Equipment.aspx-ID=2817.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2817">Silver Buckler (Standard-Grade)</a></u>, <u><a href="Equipment.aspx-ID=2920.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2920">Silver Chunk</a></u>, <u><a href="Equipment.aspx-ID=2920.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2920">Silver Ingot</a></u>, <u><a href="Equipment.aspx-ID=2920.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2920">Silver Object (High-Grade)</a></u>, <u><a href="Equipment.aspx-ID=2920.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2920">Silver Object (Low-Grade)</a></u>, <u><a href="Equipment.aspx-ID=2920.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2920">Silver Object (Standard-Grade)</a></u>, <u><a href="Equipment.aspx-ID=2912.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2912">Silver Salve</a></u>, <u><a href="Equipment.aspx-ID=2817.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2817">Silver Shield</a></u>, <u><a href="Equipment.aspx-ID=2817.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2817">Silver Shield (High-Grade)</a></u>, <u><a href="Equipment.aspx-ID=2817.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2817">Silver Shield (Low-Grade)</a></u>, <u><a href="Equipment.aspx-ID=2817.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2817">Silver Shield (Standard-Grade)</a></u>, <u><a href="Equipment.aspx-ID=2860.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2860">Silver Weapon</a></u>, <u><a href="Equipment.aspx-ID=2860.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2860">Silver Weapon (High-Grade)</a></u>, <u><a href="Equipment.aspx-ID=2860.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2860">Silver Weapon (Low-Grade)</a></u>, <u><a href="Equipment.aspx-ID=2860.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2860">Silver Weapon (Standard-Grade)</a></u>, <u><a href="Equipment.aspx-ID=3127.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3127">Singing Sword</a></u>, <u><a href="Equipment.aspx-ID=2795.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2795">Size-Changing</a></u>, <u><a href="Equipment.aspx-ID=3030.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3030">Skeleton Key</a></u>, <u><a href="Equipment.aspx-ID=3030.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3030">Skeleton Key (Greater)</a></u>, <u><a href="Equipment.aspx-ID=2872.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2872">Sky Hammer</a></u>, <u><a href="Equipment.aspx-ID=3031.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3031">Slates of Distant Letters</a></u>, <u><a href="Equipment.aspx-ID=3110.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3110">Sleeves of Storage</a></u>, <u><a href="Equipment.aspx-ID=3110.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3110">Sleeves of Storage (Greater)</a></u>, <u><a href="Equipment.aspx-ID=2794.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2794">Slick</a></u>, <u><a href="Equipment.aspx-ID=2794.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2794">Slick (Greater)</a></u>, <u><a href="Equipment.aspx-ID=2794.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2794">Slick (Major)</a></u>, <u><a href="Equipment.aspx-ID=2904.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2904">Slumber Wine</a></u>, <u><a href="Equipment.aspx-ID=2913.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2913">Smoke Ball</a></u>, <u><a href="Equipment.aspx-ID=2913.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2913">Smoke Ball (Greater)</a></u>, <u><a href="Equipment.aspx-ID=2913.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2913">Smoke Ball (Lesser)</a></u>, <u><a href="Equipment.aspx-ID=2914.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2914">Snake Oil</a></u>, <u><a href="Equipment.aspx-ID=2993.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2993">Sneaky Key</a></u>, <u><a href="Equipment.aspx-ID=3032.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3032">Spacious Pouch</a></u>, <u><a href="Equipment.aspx-ID=3032.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3032">Spacious Pouch (Type I)</a></u>, <u><a href="Equipment.aspx-ID=3032.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3032">Spacious Pouch (Type II)</a></u>, <u><a href="Equipment.aspx-ID=3032.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3032">Spacious Pouch (Type III)</a></u>, <u><a href="Equipment.aspx-ID=3032.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3032">Spacious Pouch (Type IV)</a></u>, <u><a href="Equipment.aspx-ID=2849.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2849">Spell Reservoir</a></u>, <u><a href="Equipment.aspx-ID=2826.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2826">Spellguard Shield</a></u>, <u><a href="Equipment.aspx-ID=2927.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2927">Spellstrike Ammunition</a></u>, <u><a href="Equipment.aspx-ID=2927.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2927">Spellstrike Ammunition (Type I)</a></u>, <u><a href="Equipment.aspx-ID=2927.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2927">Spellstrike Ammunition (Type II)</a></u>, <u><a href="Equipment.aspx-ID=2927.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2927">Spellstrike Ammunition (Type III)</a></u>, <u><a href="Equipment.aspx-ID=2927.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2927">Spellstrike Ammunition (Type IV)</a></u>, <u><a href="Equipment.aspx-ID=2927.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2927">Spellstrike Ammunition (Type IX)</a></u>, <u><a href="Equipment.aspx-ID=2927.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2927">Spellstrike Ammunition (Type V)</a></u>, <u><a href="Equipment.aspx-ID=2927.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2927">Spellstrike Ammunition (Type VI)</a></u>, <u><a href="Equipment.aspx-ID=2927.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2927">Spellstrike Ammunition (Type VII)</a></u>, <u><a href="Equipment.aspx-ID=2927.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2927">Spellstrike Ammunition (Type VIII)</a></u>, <u><a href="Equipment.aspx-ID=2905.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2905">Spider Root</a></u>, <u><a href="Equipment.aspx-ID=2906.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2906">Spider Venom</a></u>, <u><a href="Equipment.aspx-ID=2827.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2827">Spined Shield</a></u>, <u><a href="Equipment.aspx-ID=3004.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3004">Spirit Bulb</a></u>, <u><a href="Equipment.aspx-ID=3004.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3004">Spirit Bulb (Greater)</a></u>, <u><a href="Equipment.aspx-ID=3004.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3004">Spirit Bulb (Major)</a></u>, <u><a href="Equipment.aspx-ID=3038.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3038">Staff of Arcane Might</a></u>, <u><a href="Equipment.aspx-ID=3039.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3039">Staff of Control</a></u>, <u><a href="Equipment.aspx-ID=3039.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3039">Staff of Control (Greater)</a></u>, <u><a href="Equipment.aspx-ID=3039.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3039">Staff of Control (Major)</a></u>, <u><a href="Equipment.aspx-ID=3040.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3040">Staff of Elemental Power</a></u>, <u><a href="Equipment.aspx-ID=3040.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3040">Staff of Elemental Power (Greater)</a></u>, <u><a href="Equipment.aspx-ID=3040.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3040">Staff of Elemental Power (Major)</a></u>, <u><a href="Equipment.aspx-ID=3041.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3041">Staff of Fire</a></u>, <u><a href="Equipment.aspx-ID=3041.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3041">Staff of Fire (Greater)</a></u>, <u><a href="Equipment.aspx-ID=3041.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3041">Staff of Fire (Major)</a></u>, <u><a href="Equipment.aspx-ID=3042.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3042">Staff of Healing</a></u>, <u><a href="Equipment.aspx-ID=3042.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3042">Staff of Healing (Greater)</a></u>, <u><a href="Equipment.aspx-ID=3042.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3042">Staff of Healing (Major)</a></u>, <u><a href="Equipment.aspx-ID=3042.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3042">Staff of Healing (True)</a></u>, <u><a href="Equipment.aspx-ID=3043.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3043">Staff of Illumination</a></u>, <u><a href="Equipment.aspx-ID=3044.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3044">Staff of Phantasms</a></u>, <u><a href="Equipment.aspx-ID=3044.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3044">Staff of Phantasms (Greater)</a></u>, <u><a href="Equipment.aspx-ID=3044.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3044">Staff of Phantasms (Major)</a></u>, <u><a href="Equipment.aspx-ID=3045.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3045">Staff of Protection</a></u>, <u><a href="Equipment.aspx-ID=3045.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3045">Staff of Protection (Greater)</a></u>, <u><a href="Equipment.aspx-ID=3045.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3045">Staff of Protection (Major)</a></u>, <u><a href="Equipment.aspx-ID=3046.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3046">Staff of Summoning</a></u>, <u><a href="Equipment.aspx-ID=3046.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3046">Staff of Summoning (Greater)</a></u>, <u><a href="Equipment.aspx-ID=3046.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3046">Staff of Summoning (Major)</a></u>, <u><a href="Equipment.aspx-ID=3047.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3047">Staff of the Dead</a></u>, <u><a href="Equipment.aspx-ID=3047.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3047">Staff of the Dead (Greater)</a></u>, <u><a href="Equipment.aspx-ID=3047.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3047">Staff of the Dead (Major)</a></u>, <u><a href="Equipment.aspx-ID=3048.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3048">Staff of the Unblinking Eye</a></u>, <u><a href="Equipment.aspx-ID=3048.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3048">Staff of the Unblinking Eye (Greater)</a></u>, <u><a href="Equipment.aspx-ID=3048.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3048">Staff of the Unblinking Eye (Major)</a></u>, <u><a href="Equipment.aspx-ID=2928.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2928">Stone Bullet</a></u>, <u><a href="Equipment.aspx-ID=2890.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2890">Stone Fist Elixir</a></u>, <u><a href="Equipment.aspx-ID=2873.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2873">Storm Flash</a></u>, <u><a href="Equipment.aspx-ID=2873.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2873">Storm Flash (Greater)</a></u>, <u><a href="Equipment.aspx-ID=2829.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2829">Striking</a></u>, <u><a href="Equipment.aspx-ID=2829.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2829">Striking (Greater)</a></u>, <u><a href="Equipment.aspx-ID=2829.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2829">Striking (Major)</a></u>, <u><a href="Equipment.aspx-ID=2828.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2828">Sturdy Shield</a></u>, <u><a href="Equipment.aspx-ID=2828.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2828">Sturdy Shield (Greater)</a></u>, <u><a href="Equipment.aspx-ID=2828.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2828">Sturdy Shield (Lesser)</a></u>, <u><a href="Equipment.aspx-ID=2828.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2828">Sturdy Shield (Major)</a></u>, <u><a href="Equipment.aspx-ID=2828.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2828">Sturdy Shield (Minor)</a></u>, <u><a href="Equipment.aspx-ID=2828.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2828">Sturdy Shield (Moderate)</a></u>, <u><a href="Equipment.aspx-ID=2828.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2828">Sturdy Shield (Supreme)</a></u>, <u><a href="Equipment.aspx-ID=2994.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2994">Swift Block Cabochon</a></u>, <u><a href="Equipment.aspx-ID=3111.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3111">Symbol of Conflict</a></u>, <u><a href="Equipment.aspx-ID=3111.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3111">Symbol of Conflict (Greater)</a></u>, <u><a href="Equipment.aspx-ID=3111.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3111">Symbol of Conflict (Major)</a></u>, <u><a href="Equipment.aspx-ID=2907.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2907">Tears of Death</a></u>, <u><a href="Equipment.aspx-ID=3112.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3112">Third Eye</a></u>, <u><a href="Equipment.aspx-ID=2850.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2850">Thundering</a></u>, <u><a href="Equipment.aspx-ID=2850.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2850">Thundering (Greater)</a></u>, <u><a href="Equipment.aspx-ID=3033.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3033">Thurible of Revelation</a></u>, <u><a href="Equipment.aspx-ID=3033.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3033">Thurible of Revelation (Greater)</a></u>, <u><a href="Equipment.aspx-ID=3033.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3033">Thurible of Revelation (Lesser)</a></u>, <u><a href="Equipment.aspx-ID=3033.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3033">Thurible of Revelation (Moderate)</a></u>, <u><a href="Equipment.aspx-ID=2810.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2810">Tideplate</a></u>, <u><a href="Equipment.aspx-ID=2995.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2995">Tiger Menuki</a></u>, <u><a href="Equipment.aspx-ID=2959.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2959">Time Shield Potion</a></u>, <u><a href="Equipment.aspx-ID=3113.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3113">Tracker's Goggles</a></u>, <u><a href="Equipment.aspx-ID=3113.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3113">Tracker's Goggles (Greater)</a></u>, <u><a href="Equipment.aspx-ID=3034.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3034">Traveler's Any-Tool</a></u>, <u><a href="Equipment.aspx-ID=3005.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3005">Trident of Lightning</a></u>, <u><a href="Equipment.aspx-ID=2960.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2960">Truesight Potion</a></u>, <u><a href="Equipment.aspx-ID=2961.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2961">Truth Potion</a></u>, <u><a href="Equipment.aspx-ID=2874.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2874">Twining Staff</a></u>, <u><a href="Equipment.aspx-ID=2851.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2851">Unholy</a></u>, <u><a href="Equipment.aspx-ID=3006.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3006">Unholy Water</a></u>, <u><a href="Equipment.aspx-ID=2996.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2996">Vanishing Coin</a></u>, <u><a href="Equipment.aspx-ID=3114.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3114">Ventriloquist's Ring</a></u>, <u><a href="Equipment.aspx-ID=3114.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3114">Ventriloquist's Ring (Greater)</a></u>, <u><a href="Equipment.aspx-ID=3049.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3049">Verdant Staff</a></u>, <u><a href="Equipment.aspx-ID=3049.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3049">Verdant Staff (Greater)</a></u>, <u><a href="Equipment.aspx-ID=2929.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2929">Vine Arrow</a></u>, <u><a href="Equipment.aspx-ID=2997.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2997">Viper's Fang</a></u>, <u><a href="Equipment.aspx-ID=2852.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2852">Vitalizing</a></u>, <u><a href="Equipment.aspx-ID=2852.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2852">Vitalizing (Greater)</a></u>, <u><a href="Equipment.aspx-ID=2853.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2853">Vorpal</a></u>, <u><a href="Equipment.aspx-ID=3115.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3115">Voyager's Pack</a></u>, <u><a href="Equipment.aspx-ID=3116.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3116">Walking Cauldron</a></u>, <u><a href="Equipment.aspx-ID=3051.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3051">Wand of Continuation</a></u>, <u><a href="Equipment.aspx-ID=3051.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3051">Wand of Continuation (1st-rank Spell)</a></u>, <u><a href="Equipment.aspx-ID=3051.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3051">Wand of Continuation (2nd-rank Spell)</a></u>, <u><a href="Equipment.aspx-ID=3051.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3051">Wand of Continuation (3rd-rank Spell)</a></u>, <u><a href="Equipment.aspx-ID=3051.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3051">Wand of Continuation (4th-rank Spell)</a></u>, <u><a href="Equipment.aspx-ID=3051.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3051">Wand of Continuation (5th-rank Spell)</a></u>, <u><a href="Equipment.aspx-ID=3051.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3051">Wand of Continuation (6th-rank Spell)</a></u>, <u><a href="Equipment.aspx-ID=3051.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3051">Wand of Continuation (7th-rank Spell)</a></u>, <u><a href="Equipment.aspx-ID=3051.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3051">Wand of Continuation (8th-rank Spell)</a></u>, <u><a href="Equipment.aspx-ID=3052.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3052">Wand of Shardstorm</a></u>, <u><a href="Equipment.aspx-ID=3052.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3052">Wand of Shardstorm (1st-rank Spell)</a></u>, <u><a href="Equipment.aspx-ID=3052.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3052">Wand of Shardstorm (3rd-rank Spell)</a></u>, <u><a href="Equipment.aspx-ID=3052.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3052">Wand of Shardstorm (5th-rank Spell)</a></u>, <u><a href="Equipment.aspx-ID=3052.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3052">Wand of Shardstorm (7th-rank Spell)</a></u>, <u><a href="Equipment.aspx-ID=3053.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3053">Wand of Widening</a></u>, <u><a href="Equipment.aspx-ID=3053.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3053">Wand of Widening (1st-rank Spell)</a></u>, <u><a href="Equipment.aspx-ID=3053.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3053">Wand of Widening (2nd-rank Spell)</a></u>, <u><a href="Equipment.aspx-ID=3053.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3053">Wand of Widening (3rd-rank Spell)</a></u>, <u><a href="Equipment.aspx-ID=3053.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3053">Wand of Widening (4th-rank Spell)</a></u>, <u><a href="Equipment.aspx-ID=3053.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3053">Wand of Widening (5th-rank Spell)</a></u>, <u><a href="Equipment.aspx-ID=3053.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3053">Wand of Widening (6th-rank Spell)</a></u>, <u><a href="Equipment.aspx-ID=3053.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3053">Wand of Widening (7th-rank Spell)</a></u>, <u><a href="Equipment.aspx-ID=3053.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3053">Wand of Widening (8th-rank Spell)</a></u>, <u><a href="Equipment.aspx-ID=3053.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3053">Wand of Widening (9th-rank Spell)</a></u>, <u><a href="Equipment.aspx-ID=3117.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3117">Wayfinder</a></u>, <u><a href="Equipment.aspx-ID=2830.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2830">Weapon Potency</a></u>, <u><a href="Equipment.aspx-ID=2830.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2830">Weapon Potency (+1)</a></u>, <u><a href="Equipment.aspx-ID=2830.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2830">Weapon Potency (+2)</a></u>, <u><a href="Equipment.aspx-ID=2830.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2830">Weapon Potency (+3)</a></u>, <u><a href="Equipment.aspx-ID=3118.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3118">Whisper of the First Lie</a></u>, <u><a href="Equipment.aspx-ID=2796.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2796">Winged</a></u>, <u><a href="Equipment.aspx-ID=2796.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2796">Winged (Greater)</a></u>, <u><a href="Equipment.aspx-ID=3119.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=3119">Winged Sandals</a></u>, <u><a href="Equipment.aspx-ID=2998.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2998">Wolf Fang</a></u>, <u><a href="Equipment.aspx-ID=2908.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2908">Wolfsbane</a></u>, <u><a href="Equipment.aspx-ID=2854.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2854">Wounding</a></u>, <u><a href="Equipment.aspx-ID=2909.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2909">Wyvern Poison</a></u><h2 class="title">Hazards [32]</h2><u><a href="Hazards.aspx-ID=465.htm" tppabs="https://2e.aonprd.com/Hazards.aspx?ID=465">Armageddon Orb</a></u>, <u><a href="Hazards.aspx-ID=466.htm" tppabs="https://2e.aonprd.com/Hazards.aspx?ID=466">Bloodthirsty Urge</a></u>, <u><a href="Hazards.aspx-ID=467.htm" tppabs="https://2e.aonprd.com/Hazards.aspx?ID=467">Bottomless Pit</a></u>, <u><a href="Hazards.aspx-ID=487.htm" tppabs="https://2e.aonprd.com/Hazards.aspx?ID=487">Confounding Betrayal</a></u>, <u><a href="Hazards.aspx-ID=488.htm" tppabs="https://2e.aonprd.com/Hazards.aspx?ID=488">Dance of Death</a></u>, <u><a href="Hazards.aspx-ID=489.htm" tppabs="https://2e.aonprd.com/Hazards.aspx?ID=489">Drowning Pit</a></u>, <u><a href="Hazards.aspx-ID=468.htm" tppabs="https://2e.aonprd.com/Hazards.aspx?ID=468">Electric Latch Rune</a></u>, <u><a href="Hazards.aspx-ID=490.htm" tppabs="https://2e.aonprd.com/Hazards.aspx?ID=490">Eternal Flame</a></u>, <u><a href="Hazards.aspx-ID=469.htm" tppabs="https://2e.aonprd.com/Hazards.aspx?ID=469">Fireball Rune</a></u>, <u><a href="Hazards.aspx-ID=491.htm" tppabs="https://2e.aonprd.com/Hazards.aspx?ID=491">Flensing Blades</a></u>, <u><a href="Hazards.aspx-ID=470.htm" tppabs="https://2e.aonprd.com/Hazards.aspx?ID=470">Ghostly Choir</a></u>, <u><a href="Hazards.aspx-ID=471.htm" tppabs="https://2e.aonprd.com/Hazards.aspx?ID=471">Hallucination Powder Trap</a></u>, <u><a href="Hazards.aspx-ID=472.htm" tppabs="https://2e.aonprd.com/Hazards.aspx?ID=472">Hammer Of Forbiddance</a></u>, <u><a href="Hazards.aspx-ID=473.htm" tppabs="https://2e.aonprd.com/Hazards.aspx?ID=473">Hampering Web</a></u>, <u><a href="Hazards.aspx-ID=474.htm" tppabs="https://2e.aonprd.com/Hazards.aspx?ID=474">Hidden Pit</a></u>, <u><a href="Hazards.aspx-ID=475.htm" tppabs="https://2e.aonprd.com/Hazards.aspx?ID=475">Pharaoh's Ward</a></u>, <u><a href="Hazards.aspx-ID=476.htm" tppabs="https://2e.aonprd.com/Hazards.aspx?ID=476">Planar Rift</a></u>, <u><a href="Hazards.aspx-ID=492.htm" tppabs="https://2e.aonprd.com/Hazards.aspx?ID=492">Poisoned Dart Gallery</a></u>, <u><a href="Hazards.aspx-ID=477.htm" tppabs="https://2e.aonprd.com/Hazards.aspx?ID=477">Poisoned Lock</a></u>, <u><a href="Hazards.aspx-ID=478.htm" tppabs="https://2e.aonprd.com/Hazards.aspx?ID=478">Poisonous Mold</a></u>, <u><a href="Hazards.aspx-ID=479.htm" tppabs="https://2e.aonprd.com/Hazards.aspx?ID=479">Polymorph Trap</a></u>, <u><a href="Hazards.aspx-ID=493.htm" tppabs="https://2e.aonprd.com/Hazards.aspx?ID=493">Quicksand</a></u>, <u><a href="Hazards.aspx-ID=480.htm" tppabs="https://2e.aonprd.com/Hazards.aspx?ID=480">Scythe Blades</a></u>, <u><a href="Hazards.aspx-ID=481.htm" tppabs="https://2e.aonprd.com/Hazards.aspx?ID=481">Slamming Door</a></u>, <u><a href="Hazards.aspx-ID=482.htm" tppabs="https://2e.aonprd.com/Hazards.aspx?ID=482">Snowfall</a></u>, <u><a href="Hazards.aspx-ID=483.htm" tppabs="https://2e.aonprd.com/Hazards.aspx?ID=483">Spear Launcher</a></u>, <u><a href="Hazards.aspx-ID=484.htm" tppabs="https://2e.aonprd.com/Hazards.aspx?ID=484">Spectral Reflection</a></u>, <u><a href="Hazards.aspx-ID=494.htm" tppabs="https://2e.aonprd.com/Hazards.aspx?ID=494">Spinning Blade Pillar</a></u>, <u><a href="Hazards.aspx-ID=495.htm" tppabs="https://2e.aonprd.com/Hazards.aspx?ID=495">Summoning Rune</a></u>, <u><a href="Hazards.aspx-ID=485.htm" tppabs="https://2e.aonprd.com/Hazards.aspx?ID=485">Titanic Flytrap</a></u>, <u><a href="Hazards.aspx-ID=486.htm" tppabs="https://2e.aonprd.com/Hazards.aspx?ID=486">Vorpal Executioner</a></u>, <u><a href="Hazards.aspx-ID=496.htm" tppabs="https://2e.aonprd.com/Hazards.aspx?ID=496">Wheel of Misery</a></u><h2 class="title">Item Curses [7]</h2><u><a href="ItemCurses.aspx-ID=53.htm" tppabs="https://2e.aonprd.com/ItemCurses.aspx?ID=53">Arsonous</a></u>, <u><a href="ItemCurses.aspx-ID=54.htm" tppabs="https://2e.aonprd.com/ItemCurses.aspx?ID=54">Bloodbiter</a></u>, <u><a href="ItemCurses.aspx-ID=55.htm" tppabs="https://2e.aonprd.com/ItemCurses.aspx?ID=55">Degenerating</a></u>, <u><a href="ItemCurses.aspx-ID=56.htm" tppabs="https://2e.aonprd.com/ItemCurses.aspx?ID=56">Grandstanding</a></u>, <u><a href="ItemCurses.aspx-ID=57.htm" tppabs="https://2e.aonprd.com/ItemCurses.aspx?ID=57">Raucous</a></u>, <u><a href="ItemCurses.aspx-ID=58.htm" tppabs="https://2e.aonprd.com/ItemCurses.aspx?ID=58">Ravenous</a></u>, <u><a href="ItemCurses.aspx-ID=59.htm" tppabs="https://2e.aonprd.com/ItemCurses.aspx?ID=59">Staining</a></u><h2 class="title">Languages [9]</h2><u><a href="Languages.aspx-ID=167.htm" tppabs="https://2e.aonprd.com/Languages.aspx?ID=167">Hallit</a></u>, <u><a href="Languages.aspx-ID=168.htm" tppabs="https://2e.aonprd.com/Languages.aspx?ID=168">Kelish</a></u>, <u><a href="Languages.aspx-ID=169.htm" tppabs="https://2e.aonprd.com/Languages.aspx?ID=169">Mwangi</a></u>, <u><a href="Languages.aspx-ID=170.htm" tppabs="https://2e.aonprd.com/Languages.aspx?ID=170">Osiriani</a></u>, <u><a href="Languages.aspx-ID=171.htm" tppabs="https://2e.aonprd.com/Languages.aspx?ID=171">Shoanti</a></u>, <u><a href="Languages.aspx-ID=172.htm" tppabs="https://2e.aonprd.com/Languages.aspx?ID=172">Skald</a></u>, <u><a href="Languages.aspx-ID=173.htm" tppabs="https://2e.aonprd.com/Languages.aspx?ID=173">Tien</a></u>, <u><a href="Languages.aspx-ID=174.htm" tppabs="https://2e.aonprd.com/Languages.aspx?ID=174">Varisian</a></u>, <u><a href="Languages.aspx-ID=175.htm" tppabs="https://2e.aonprd.com/Languages.aspx?ID=175">Vudrani</a></u><h2 class="title">Planes [24]</h2><u><a href="Planes.aspx-ID=37.htm" tppabs="https://2e.aonprd.com/Planes.aspx?ID=37">Abaddon</a></u>, <u><a href="Planes.aspx-ID=33.htm" tppabs="https://2e.aonprd.com/Planes.aspx?ID=33">Astral Plane</a></u>, <u><a href="Planes.aspx-ID=38.htm" tppabs="https://2e.aonprd.com/Planes.aspx?ID=38">Axis</a></u>, <u><a href="Planes.aspx-ID=39.htm" tppabs="https://2e.aonprd.com/Planes.aspx?ID=39">Boneyard</a></u>, <u><a href="Planes.aspx-ID=27.htm" tppabs="https://2e.aonprd.com/Planes.aspx?ID=27">Creation's Forge</a></u>, <u><a href="Planes.aspx-ID=46.htm" tppabs="https://2e.aonprd.com/Planes.aspx?ID=46">Dimension of Time</a></u>, <u><a href="Planes.aspx-ID=47.htm" tppabs="https://2e.aonprd.com/Planes.aspx?ID=47">Dreamlands</a></u>, <u><a href="Planes.aspx-ID=40.htm" tppabs="https://2e.aonprd.com/Planes.aspx?ID=40">Elysium</a></u>, <u><a href="Planes.aspx-ID=34.htm" tppabs="https://2e.aonprd.com/Planes.aspx?ID=34">Ethereal Plane</a></u>, <u><a href="Planes.aspx-ID=35.htm" tppabs="https://2e.aonprd.com/Planes.aspx?ID=35">First World</a></u>, <u><a href="Planes.aspx-ID=41.htm" tppabs="https://2e.aonprd.com/Planes.aspx?ID=41">Heaven</a></u>, <u><a href="Planes.aspx-ID=42.htm" tppabs="https://2e.aonprd.com/Planes.aspx?ID=42">Hell</a></u>, <u><a href="Planes.aspx-ID=43.htm" tppabs="https://2e.aonprd.com/Planes.aspx?ID=43">Maelstrom</a></u>, <u><a href="Planes.aspx-ID=44.htm" tppabs="https://2e.aonprd.com/Planes.aspx?ID=44">Nirvana</a></u>, <u><a href="Planes.aspx-ID=45.htm" tppabs="https://2e.aonprd.com/Planes.aspx?ID=45">Outer Rifts</a></u>, <u><a href="Planes.aspx-ID=29.htm" tppabs="https://2e.aonprd.com/Planes.aspx?ID=29">Plane of Air</a></u>, <u><a href="Planes.aspx-ID=30.htm" tppabs="https://2e.aonprd.com/Planes.aspx?ID=30">Plane of Earth</a></u>, <u><a href="Planes.aspx-ID=31.htm" tppabs="https://2e.aonprd.com/Planes.aspx?ID=31">Plane of Fire</a></u>, <u><a href="Planes.aspx-ID=24.htm" tppabs="https://2e.aonprd.com/Planes.aspx?ID=24">Plane of Metal</a></u>, <u><a href="Planes.aspx-ID=32.htm" tppabs="https://2e.aonprd.com/Planes.aspx?ID=32">Plane of Water</a></u>, <u><a href="Planes.aspx-ID=25.htm" tppabs="https://2e.aonprd.com/Planes.aspx?ID=25">Plane of Wood</a></u>, <u><a href="Planes.aspx-ID=36.htm" tppabs="https://2e.aonprd.com/Planes.aspx?ID=36">The Netherworld</a></u>, <u><a href="Planes.aspx-ID=26.htm" tppabs="https://2e.aonprd.com/Planes.aspx?ID=26">The Universe</a></u>, <u><a href="Planes.aspx-ID=28.htm" tppabs="https://2e.aonprd.com/Planes.aspx?ID=28">The Void</a></u><h2 class="title">Relic Gifts [72]</h2><u><a href="Relics.aspx-ID=141.htm" tppabs="https://2e.aonprd.com/Relics.aspx?ID=141">Angelic Vessel</a></u>, <u><a href="Relics.aspx-ID=178.htm" tppabs="https://2e.aonprd.com/Relics.aspx?ID=178">Apothecary's Garden</a></u>, <u><a href="Relics.aspx-ID=130.htm" tppabs="https://2e.aonprd.com/Relics.aspx?ID=130">Beast Senses</a></u>, <u><a href="Relics.aspx-ID=166.htm" tppabs="https://2e.aonprd.com/Relics.aspx?ID=166">Bestow Life</a></u>, <u><a href="Relics.aspx-ID=165.htm" tppabs="https://2e.aonprd.com/Relics.aspx?ID=165">Blazing Soul</a></u>, <u><a href="Relics.aspx-ID=193.htm" tppabs="https://2e.aonprd.com/Relics.aspx?ID=193">Bottomless Reservoir</a></u>, <u><a href="Relics.aspx-ID=131.htm" tppabs="https://2e.aonprd.com/Relics.aspx?ID=131">Call of the Wild</a></u>, <u><a href="Relics.aspx-ID=159.htm" tppabs="https://2e.aonprd.com/Relics.aspx?ID=159">Command Legion</a></u>, <u><a href="Relics.aspx-ID=154.htm" tppabs="https://2e.aonprd.com/Relics.aspx?ID=154">Curse Wound</a></u>, <u><a href="Relics.aspx-ID=187.htm" tppabs="https://2e.aonprd.com/Relics.aspx?ID=187">Dancing Shadow</a></u>, <u><a href="Relics.aspx-ID=188.htm" tppabs="https://2e.aonprd.com/Relics.aspx?ID=188">Dark Roads</a></u>, <u><a href="Relics.aspx-ID=124.htm" tppabs="https://2e.aonprd.com/Relics.aspx?ID=124">Deadly Spark</a></u>, <u><a href="Relics.aspx-ID=142.htm" tppabs="https://2e.aonprd.com/Relics.aspx?ID=142">Death Gaze</a></u>, <u><a href="Relics.aspx-ID=136.htm" tppabs="https://2e.aonprd.com/Relics.aspx?ID=136">Divine Retribution</a></u>, <u><a href="Relics.aspx-ID=148.htm" tppabs="https://2e.aonprd.com/Relics.aspx?ID=148">Ease Burden</a></u>, <u><a href="Relics.aspx-ID=184.htm" tppabs="https://2e.aonprd.com/Relics.aspx?ID=184">Encompassing Darkness</a></u>, <u><a href="Relics.aspx-ID=125.htm" tppabs="https://2e.aonprd.com/Relics.aspx?ID=125">Feather Steps</a></u>, <u><a href="Relics.aspx-ID=132.htm" tppabs="https://2e.aonprd.com/Relics.aspx?ID=132">Feral Claws</a></u>, <u><a href="Relics.aspx-ID=157.htm" tppabs="https://2e.aonprd.com/Relics.aspx?ID=157">Fiendish Bargain</a></u>, <u><a href="Relics.aspx-ID=155.htm" tppabs="https://2e.aonprd.com/Relics.aspx?ID=155">Fiendish Defiance</a></u>, <u><a href="Relics.aspx-ID=160.htm" tppabs="https://2e.aonprd.com/Relics.aspx?ID=160">Flare Bolt</a></u>, <u><a href="Relics.aspx-ID=194.htm" tppabs="https://2e.aonprd.com/Relics.aspx?ID=194">Flowing Footsteps</a></u>, <u><a href="Relics.aspx-ID=133.htm" tppabs="https://2e.aonprd.com/Relics.aspx?ID=133">Form of Fury</a></u>, <u><a href="Relics.aspx-ID=135.htm" tppabs="https://2e.aonprd.com/Relics.aspx?ID=135">Form of Vengeance</a></u>, <u><a href="Relics.aspx-ID=181.htm" tppabs="https://2e.aonprd.com/Relics.aspx?ID=181">Grappling Vine</a></u>, <u><a href="Relics.aspx-ID=147.htm" tppabs="https://2e.aonprd.com/Relics.aspx?ID=147">Grim Specter</a></u>, <u><a href="Relics.aspx-ID=167.htm" tppabs="https://2e.aonprd.com/Relics.aspx?ID=167">Healing Wave</a></u>, <u><a href="Relics.aspx-ID=161.htm" tppabs="https://2e.aonprd.com/Relics.aspx?ID=161">Heat Haze</a></u>, <u><a href="Relics.aspx-ID=137.htm" tppabs="https://2e.aonprd.com/Relics.aspx?ID=137">Heaven's Grace</a></u>, <u><a href="Relics.aspx-ID=162.htm" tppabs="https://2e.aonprd.com/Relics.aspx?ID=162">Incandescent Sight</a></u>, <u><a href="Relics.aspx-ID=169.htm" tppabs="https://2e.aonprd.com/Relics.aspx?ID=169">Inextinguishable</a></u>, <u><a href="Relics.aspx-ID=163.htm" tppabs="https://2e.aonprd.com/Relics.aspx?ID=163">Jet Propulsion</a></u>, <u><a href="Relics.aspx-ID=190.htm" tppabs="https://2e.aonprd.com/Relics.aspx?ID=190">Lashing Currents</a></u>, <u><a href="Relics.aspx-ID=171.htm" tppabs="https://2e.aonprd.com/Relics.aspx?ID=171">Life Everlasting</a></u>, <u><a href="Relics.aspx-ID=127.htm" tppabs="https://2e.aonprd.com/Relics.aspx?ID=127">Lightning Storm</a></u>, <u><a href="Relics.aspx-ID=172.htm" tppabs="https://2e.aonprd.com/Relics.aspx?ID=172">Linguistic Nexus</a></u>, <u><a href="Relics.aspx-ID=156.htm" tppabs="https://2e.aonprd.com/Relics.aspx?ID=156">Little Helper</a></u>, <u><a href="Relics.aspx-ID=143.htm" tppabs="https://2e.aonprd.com/Relics.aspx?ID=143">Living Death</a></u>, <u><a href="Relics.aspx-ID=153.htm" tppabs="https://2e.aonprd.com/Relics.aspx?ID=153">Living Statue</a></u>, <u><a href="Relics.aspx-ID=129.htm" tppabs="https://2e.aonprd.com/Relics.aspx?ID=129">Living Storm</a></u>, <u><a href="Relics.aspx-ID=183.htm" tppabs="https://2e.aonprd.com/Relics.aspx?ID=183">Megaflora</a></u>, <u><a href="Relics.aspx-ID=177.htm" tppabs="https://2e.aonprd.com/Relics.aspx?ID=177">Mental Bastion</a></u>, <u><a href="Relics.aspx-ID=191.htm" tppabs="https://2e.aonprd.com/Relics.aspx?ID=191">Monsoon Curtain</a></u>, <u><a href="Relics.aspx-ID=185.htm" tppabs="https://2e.aonprd.com/Relics.aspx?ID=185">Obscure</a></u>, <u><a href="Relics.aspx-ID=168.htm" tppabs="https://2e.aonprd.com/Relics.aspx?ID=168">Overflowing Life</a></u>, <u><a href="Relics.aspx-ID=175.htm" tppabs="https://2e.aonprd.com/Relics.aspx?ID=175">Perception Filter</a></u>, <u><a href="Relics.aspx-ID=182.htm" tppabs="https://2e.aonprd.com/Relics.aspx?ID=182">Petal Dance</a></u>, <u><a href="Relics.aspx-ID=145.htm" tppabs="https://2e.aonprd.com/Relics.aspx?ID=145">Pierce the Veil</a></u>, <u><a href="Relics.aspx-ID=179.htm" tppabs="https://2e.aonprd.com/Relics.aspx?ID=179">Pollen Spray</a></u>, <u><a href="Relics.aspx-ID=158.htm" tppabs="https://2e.aonprd.com/Relics.aspx?ID=158">Profane Fervor</a></u>, <u><a href="Relics.aspx-ID=128.htm" tppabs="https://2e.aonprd.com/Relics.aspx?ID=128">Propelling Winds</a></u>, <u><a href="Relics.aspx-ID=176.htm" tppabs="https://2e.aonprd.com/Relics.aspx?ID=176">Psychic Scream</a></u>, <u><a href="Relics.aspx-ID=151.htm" tppabs="https://2e.aonprd.com/Relics.aspx?ID=151">Raise Ramparts</a></u>, <u><a href="Relics.aspx-ID=173.htm" tppabs="https://2e.aonprd.com/Relics.aspx?ID=173">Recalculate</a></u>, <u><a href="Relics.aspx-ID=174.htm" tppabs="https://2e.aonprd.com/Relics.aspx?ID=174">Repository of Knowledge</a></u>, <u><a href="Relics.aspx-ID=139.htm" tppabs="https://2e.aonprd.com/Relics.aspx?ID=139">Righteous Call</a></u>, <u><a href="Relics.aspx-ID=195.htm" tppabs="https://2e.aonprd.com/Relics.aspx?ID=195">Ripples and Waves</a></u>, <u><a href="Relics.aspx-ID=149.htm" tppabs="https://2e.aonprd.com/Relics.aspx?ID=149">Rolling Geode</a></u>, <u><a href="Relics.aspx-ID=140.htm" tppabs="https://2e.aonprd.com/Relics.aspx?ID=140">Sacred Glow</a></u>, <u><a href="Relics.aspx-ID=164.htm" tppabs="https://2e.aonprd.com/Relics.aspx?ID=164">Searing Wave</a></u>, <u><a href="Relics.aspx-ID=186.htm" tppabs="https://2e.aonprd.com/Relics.aspx?ID=186">Shadow Smith</a></u>, <u><a href="Relics.aspx-ID=150.htm" tppabs="https://2e.aonprd.com/Relics.aspx?ID=150">Shattered Earth</a></u>, <u><a href="Relics.aspx-ID=144.htm" tppabs="https://2e.aonprd.com/Relics.aspx?ID=144">Shroud of the Afterlife</a></u>, <u><a href="Relics.aspx-ID=180.htm" tppabs="https://2e.aonprd.com/Relics.aspx?ID=180">Sprout Ally</a></u>, <u><a href="Relics.aspx-ID=192.htm" tppabs="https://2e.aonprd.com/Relics.aspx?ID=192">Tidal Crash</a></u>, <u><a href="Relics.aspx-ID=146.htm" tppabs="https://2e.aonprd.com/Relics.aspx?ID=146">Tide of Death</a></u>, <u><a href="Relics.aspx-ID=134.htm" tppabs="https://2e.aonprd.com/Relics.aspx?ID=134">Track of the Beast</a></u>, <u><a href="Relics.aspx-ID=189.htm" tppabs="https://2e.aonprd.com/Relics.aspx?ID=189">Umbral Body</a></u>, <u><a href="Relics.aspx-ID=152.htm" tppabs="https://2e.aonprd.com/Relics.aspx?ID=152">Underground Bounty</a></u>, <u><a href="Relics.aspx-ID=170.htm" tppabs="https://2e.aonprd.com/Relics.aspx?ID=170">Vitality Siphon</a></u>, <u><a href="Relics.aspx-ID=126.htm" tppabs="https://2e.aonprd.com/Relics.aspx?ID=126">Wind Barrier</a></u>, <u><a href="Relics.aspx-ID=138.htm" tppabs="https://2e.aonprd.com/Relics.aspx?ID=138">Word of Faith</a></u><h2 class="title">Rules [6]</h2><u><a href="Rules.aspx-ID=2468.htm" tppabs="https://2e.aonprd.com/Rules.aspx?ID=2468">Chapter 1: Running the Game</a></u>, <u><a href="Rules.aspx-ID=2665.htm" tppabs="https://2e.aonprd.com/Rules.aspx?ID=2665">Chapter 2: Building Games</a></u>, <u><a href="Rules.aspx-ID=2989.htm" tppabs="https://2e.aonprd.com/Rules.aspx?ID=2989">Chapter 3: Age of Lost Omens</a></u>, <u><a href="Rules.aspx-ID=3026.htm" tppabs="https://2e.aonprd.com/Rules.aspx?ID=3026">Chapter 4: Subsystems</a></u>, <u><a href="Rules.aspx-ID=3135.htm" tppabs="https://2e.aonprd.com/Rules.aspx?ID=3135">Chapter 5: Treasure Trove</a></u>, <u><a href="Rules.aspx-ID=2460.htm" tppabs="https://2e.aonprd.com/Rules.aspx?ID=2460">Introduction</a></u><h2 class="title">Traits [50]</h2><u><a href="Traits.aspx-ID=525.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=525">Aeon (Monster)</a></u>, <u><a href="Traits.aspx-ID=532.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=532">Apex (Equipment)</a></u>, <u><a href="Traits.aspx-ID=537.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=537">Artifact (Equipment)</a></u>, <u><a href="Traits.aspx-ID=538.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=538">Astral (Creature Type)</a></u>, <u><a href="Traits.aspx-ID=553.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=553">City (Settlement)</a></u>, <u><a href="Traits.aspx-ID=558.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=558">Companion (Equipment)</a></u>, <u><a href="Traits.aspx-ID=565.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=565">Contact (Poison)</a></u>, <u><a href="Traits.aspx-ID=567.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=567">Cursed (Equipment)</a></u>, <u><a href="Traits.aspx-ID=582.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=582">Dream (Creature Type)</a></u>, <u><a href="Traits.aspx-ID=591.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=591">Environmental (Hazard)</a></u>, <u><a href="Traits.aspx-ID=592.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=592">Erratic (Planar)</a></u>, <u><a href="Traits.aspx-ID=475.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=475">Expandable (Equipment)</a></u>, <u><a href="Traits.aspx-ID=603.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=603">Finite (Planar)</a></u>, <u><a href="Traits.aspx-ID=607.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=607">Flowing (Planar)</a></u>, <u><a href="Traits.aspx-ID=609.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=609">Focused (Equipment)</a></u>, <u><a href="Traits.aspx-ID=622.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=622">Haunt (Hazard)</a></u>, <u><a href="Traits.aspx-ID=625.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=625">High Gravity (Planar)</a></u>, <u><a href="Traits.aspx-ID=630.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=630">Immeasurable (Planar)</a></u>, <u><a href="Traits.aspx-ID=632.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=632">Incorporeal (Monster)</a></u>, <u><a href="Traits.aspx-ID=633.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=633">Ingested (Poison)</a></u>, <u><a href="Traits.aspx-ID=634.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=634">Inhaled (Poison)</a></u>, <u><a href="Traits.aspx-ID=635.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=635">Injury (Poison)</a></u>, <u><a href="Traits.aspx-ID=636.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=636">Intelligent (Equipment)</a></u>, <u><a href="Traits.aspx-ID=637.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=637">Invested (Equipment)</a></u>, <u><a href="Traits.aspx-ID=643.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=643">Low Gravity (Planar)</a></u>, <u><a href="Traits.aspx-ID=649.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=649">Metamorphic (Planar)</a></u>, <u><a href="Traits.aspx-ID=650.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=650">Metropolis (Settlement)</a></u>, <u><a href="Traits.aspx-ID=651.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=651">Microgravity (Planar)</a></u>, <u><a href="Traits.aspx-ID=663.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=663">Oil (Equipment)</a></u>, <u><a href="Traits.aspx-ID=673.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=673">Precious (Equipment)</a></u>, <u><a href="Traits.aspx-ID=678.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=678">Protean (Monster)</a></u>, <u><a href="Traits.aspx-ID=679.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=679">Psychopomp (Monster)</a></u>, <u><a href="Traits.aspx-ID=685.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=685">Reckless (Mechanics)</a></u>, <u><a href="Traits.aspx-ID=688.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=688">Scroll (Equipment)</a></u>, <u><a href="Traits.aspx-ID=691.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=691">Sentient (Planar)</a></u>, <u><a href="Traits.aspx-ID=692.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=692">Shade (Creature Type)</a></u>, <u><a href="Traits.aspx-ID=699.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=699">Splash (Mechanics)</a></u>, <u><a href="Traits.aspx-ID=700.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=700">Staff (Equipment)</a></u>, <u><a href="Traits.aspx-ID=702.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=702">Static (Planar)</a></u>, <u><a href="Traits.aspx-ID=703.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=703">Strange Gravity (Planar)</a></u>, <u><a href="Traits.aspx-ID=705.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=705">Subjective Gravity (Planar)</a></u>, <u><a href="Traits.aspx-ID=707.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=707">Swarm (Monster)</a></u>, <u><a href="Traits.aspx-ID=709.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=709">Talisman (Equipment)</a></u>, <u><a href="Traits.aspx-ID=712.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=712">Time (Creature Type)</a></u>, <u><a href="Traits.aspx-ID=713.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=713">Timeless (Planar)</a></u>, <u><a href="Traits.aspx-ID=714.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=714">Town (Settlement)</a></u>, <u><a href="Traits.aspx-ID=720.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=720">Unbounded (Planar)</a></u>, <u><a href="Traits.aspx-ID=725.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=725">Village (Settlement)</a></u>, <u><a href="Traits.aspx-ID=726.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=726">Virulent (Affliction)</a></u>, <u><a href="Traits.aspx-ID=733.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=733">Werecreature (Monster)</a></u><h2 class="title">Vehicles [23]</h2><u><a href="Vehicles.aspx-ID=57.htm" tppabs="https://2e.aonprd.com/Vehicles.aspx?ID=57">Airship</a></u>, <u><a href="Vehicles.aspx-ID=73.htm" tppabs="https://2e.aonprd.com/Vehicles.aspx?ID=73">Bathysphere</a></u>, <u><a href="Vehicles.aspx-ID=63.htm" tppabs="https://2e.aonprd.com/Vehicles.aspx?ID=63">Carriage</a></u>, <u><a href="Vehicles.aspx-ID=64.htm" tppabs="https://2e.aonprd.com/Vehicles.aspx?ID=64">Cart</a></u>, <u><a href="Vehicles.aspx-ID=65.htm" tppabs="https://2e.aonprd.com/Vehicles.aspx?ID=65">Chariot, Heavy</a></u>, <u><a href="Vehicles.aspx-ID=66.htm" tppabs="https://2e.aonprd.com/Vehicles.aspx?ID=66">Chariot, Light</a></u>, <u><a href="Vehicles.aspx-ID=74.htm" tppabs="https://2e.aonprd.com/Vehicles.aspx?ID=74">Cutter</a></u>, <u><a href="Vehicles.aspx-ID=75.htm" tppabs="https://2e.aonprd.com/Vehicles.aspx?ID=75">Galley</a></u>, <u><a href="Vehicles.aspx-ID=58.htm" tppabs="https://2e.aonprd.com/Vehicles.aspx?ID=58">Glider</a></u>, <u><a href="Vehicles.aspx-ID=59.htm" tppabs="https://2e.aonprd.com/Vehicles.aspx?ID=59">Hot Air Balloon</a></u>, <u><a href="Vehicles.aspx-ID=76.htm" tppabs="https://2e.aonprd.com/Vehicles.aspx?ID=76">Longship</a></u>, <u><a href="Vehicles.aspx-ID=77.htm" tppabs="https://2e.aonprd.com/Vehicles.aspx?ID=77">Raft</a></u>, <u><a href="Vehicles.aspx-ID=78.htm" tppabs="https://2e.aonprd.com/Vehicles.aspx?ID=78">Rowboat</a></u>, <u><a href="Vehicles.aspx-ID=79.htm" tppabs="https://2e.aonprd.com/Vehicles.aspx?ID=79">Sailing Ship</a></u>, <u><a href="Vehicles.aspx-ID=62.htm" tppabs="https://2e.aonprd.com/Vehicles.aspx?ID=62">Sky Chariot, Heavy</a></u>, <u><a href="Vehicles.aspx-ID=60.htm" tppabs="https://2e.aonprd.com/Vehicles.aspx?ID=60">Sky Chariot, Light</a></u>, <u><a href="Vehicles.aspx-ID=61.htm" tppabs="https://2e.aonprd.com/Vehicles.aspx?ID=61">Sky Chariot, Medium</a></u>, <u><a href="Vehicles.aspx-ID=67.htm" tppabs="https://2e.aonprd.com/Vehicles.aspx?ID=67">Sled</a></u>, <u><a href="Vehicles.aspx-ID=68.htm" tppabs="https://2e.aonprd.com/Vehicles.aspx?ID=68">Sleigh</a></u>, <u><a href="Vehicles.aspx-ID=69.htm" tppabs="https://2e.aonprd.com/Vehicles.aspx?ID=69">Steam Giant</a></u>, <u><a href="Vehicles.aspx-ID=70.htm" tppabs="https://2e.aonprd.com/Vehicles.aspx?ID=70">Strider</a></u>, <u><a href="Vehicles.aspx-ID=71.htm" tppabs="https://2e.aonprd.com/Vehicles.aspx?ID=71">Velocipede</a></u>, <u><a href="Vehicles.aspx-ID=72.htm" tppabs="https://2e.aonprd.com/Vehicles.aspx?ID=72">Wagon</a></u></span>
+
+                </div>
+                <div class="clear">
+            </div>
+
+            <div class="footer" id="footer" >
+				<div id="et-al" >
+                    <a href="mailto:nethys@archivesofnethys.com">Site Owner: Rose-Winds LLC (Blake Davis)</a>
+                    <div id="footer-social"><a href="https://twitter.com/NethysArchives"  target="_blank"><span class="k-icon k-i-twitter" style="font-size:2.5rem"></span></a></div>
+				</div>
+                <div style="text-align:center"><script type="text/javascript" async="true" src="adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- Main Archives Page -->
+                    <ins class="adsbygoogle"
+                        style="display:inline-block;width:728px;height:90px"
+                        data-ad-client="ca-pub-4953734518316037"
+                        data-ad-slot="7738185508"></ins>
+                    <script type="text/javascript">
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                </script></div>
+			</div>
+            <nethys-search no-ui="true"></nethys-search>
+        </div>
+    </div>
+
+    <div class="modern-menu-container">
+        <div class="modern-menu">
+            <div class="modern-menu-nethys-logo"></div>
+            <div class="modern-menu-items">
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-player"></i></span>
+                    <span class="modern-menu-item-text">Character Creation +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Ancestries.aspx.htm" tppabs="https://2e.aonprd.com/Ancestries.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-hood"></i></span>
+                        <span class="modern-menu-item-text">Ancestries</span>
+                    </a>
+                    <a class="modern-menu-item" href="Archetypes.aspx.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-nodular"></i></span>
+                        <span class="modern-menu-item-text">Archetypes</span>
+                    </a>
+                    <a class="modern-menu-item" href="Backgrounds.aspx.htm" tppabs="https://2e.aonprd.com/Backgrounds.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-guarded-tower"></i></span>
+                        <span class="modern-menu-item-text">Backgrounds</span>
+                    </a>
+                    <a class="modern-menu-item" href="Classes.aspx.htm" tppabs="https://2e.aonprd.com/Classes.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-player-lift"></i></span>
+                        <span class="modern-menu-item-text">Classes</span>
+                    </a>
+                    <a class="modern-menu-item" href="Skills.aspx.htm" tppabs="https://2e.aonprd.com/Skills.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-hand"></i></span>
+                        <span class="modern-menu-item-text">Skills</span>
+                    </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-torch"></i></span>
+                    <span class="modern-menu-item-text">Equipment +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Equipment.aspx.htm" tppabs="https://2e.aonprd.com/Equipment.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-torch"></i></span>
+                        <span class="modern-menu-item-text">All Equipment</span>
+                    </a>
+                    <a class="modern-menu-item" href="Equipment.aspx-Category=1.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?Category=1">
+                        <span class="modern-menu-item-icon"><i class="ra ra-campfire"></i></span>
+                        <span class="modern-menu-item-text">Adventuring Gear</span>
+                    </a>
+                    <a class="modern-menu-item" href="Equipment.aspx-Category=6.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?Category=6">
+                        <span class="modern-menu-item-icon"><i class="ra ra-round-bottom-flask"></i></span>
+                        <span class="modern-menu-item-text">Alchemical Items</span>
+                    </a>
+                    <a class="modern-menu-item" href="Armor.aspx.htm" tppabs="https://2e.aonprd.com/Armor.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-helmet"></i></span>
+                        <span class="modern-menu-item-text">Armor</span>
+                    </a>
+                    <a class="modern-menu-item" href="Equipment.aspx-Category=21.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?Category=21">
+                        <span class="modern-menu-item-icon"><i class="ra ra-hand"></i></span>
+                        <span class="modern-menu-item-text">Held Items</span>
+                    </a>
+                    <a class="modern-menu-item" href="Equipment.aspx-Category=23.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?Category=23">
+                        <span class="modern-menu-item-icon"><i class="ra ra-rune-stone"></i></span>
+                        <span class="modern-menu-item-text">Runes</span>
+                    </a>
+                    <a class="modern-menu-item" href="Shields.aspx.htm" tppabs="https://2e.aonprd.com/Shields.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-shield"></i></span>
+                        <span class="modern-menu-item-text">Shields</span>
+                    </a>
+                    <a class="modern-menu-item" href="Weapons.aspx.htm" tppabs="https://2e.aonprd.com/Weapons.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-sword"></i></span>
+                        <span class="modern-menu-item-text">Weapons</span>
+                    </a>
+                    <a class="modern-menu-item" href="Equipment.aspx-Category=41.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?Category=41">
+                        <span class="modern-menu-item-icon"><i class="ra ra-crown-of-thorns"></i></span>
+                        <span class="modern-menu-item-text">Worn Items</span>
+                    </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-muscle-up"></i></span>
+                    <span class="modern-menu-item-text">Feats +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Feats.aspx.htm" tppabs="https://2e.aonprd.com/Feats.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-muscle-up"></i></span>
+                        <span class="modern-menu-item-text">All Feats</span>
+                    </a>
+                    <a class="modern-menu-item" href="Feats.aspx-Traits=78.htm" tppabs="https://2e.aonprd.com/Feats.aspx?Traits=78">
+                        <span class="modern-menu-item-icon"><i class="ra ra-aware"></i></span>
+                        <span class="modern-menu-item-text">General</span>
+                    </a>
+                    <a class="modern-menu-item" href="Feats.aspx-Traits=78&NoSkills=True.htm" tppabs="https://2e.aonprd.com/Feats.aspx?Traits=78&NoSkills=True">
+                        <span class="modern-menu-item-icon"><i class="ra ra-player-teleport"></i></span>
+                        <span class="modern-menu-item-text">General (No Skill)</span>
+                    </a>
+                    <a class="modern-menu-item" href="Feats.aspx-Traits=144.htm" tppabs="https://2e.aonprd.com/Feats.aspx?Traits=144">
+                        <span class="modern-menu-item-icon"><i class="ra ra-hand"></i></span>
+                        <span class="modern-menu-item-text">Skill</span>
+                    </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-emerald"></i></span>
+                    <span class="modern-menu-item-text">Game Mastery +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Afflictions.aspx.htm" tppabs="https://2e.aonprd.com/Afflictions.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-biohazard"></i></span>
+                        <span class="modern-menu-item-text">Afflictions</span>
+                    </a>
+                    <a class="modern-menu-item" href="Creatures.aspx.htm" tppabs="https://2e.aonprd.com/Creatures.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-dragon"></i></span>
+                        <span class="modern-menu-item-text">Creatures</span>
+                    </a>
+                    <a class="modern-menu-item" href="Hazards.aspx.htm" tppabs="https://2e.aonprd.com/Hazards.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-bear-trap"></i></span>
+                        <span class="modern-menu-item-text">Hazards</span>
+                    </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-book"></i></span>
+                    <span class="modern-menu-item-text">Rules +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Rules.aspx.htm" tppabs="https://2e.aonprd.com/Rules.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-book"></i></span>
+                        <span class="modern-menu-item-text">All Rules</span>
+                    </a>
+                    <a class="modern-menu-item" href="Actions.aspx.htm" tppabs="https://2e.aonprd.com/Actions.aspx">
+                        <span class="modern-menu-item-icon">
+                            <svg viewBox="0 0 30 30" preserveAspectRatio="xMidYMid meet" stroke="null" style="fill:inherit;">
+                                <path d="M21.55532 8.015l7.07107 7.07106-7.07107 7.07107-7.07107-7.07107zM6.47996 10.07526l4.94975 4.94975-4.94975 4.94974-4.94974-4.94974z"></path>
+                                <path d="M15.00246 1.46211l8.48528 8.48528-7.07107 7.07107L7.9314 8.53318z"></path>
+                                <path d="M16.45563 13.11469l7.07107 7.07107-8.48529 8.48528-7.07106-7.07107z"></path>
+                            </svg>
+                        </span>
+                        <span class="modern-menu-item-text">Actions/Activities</span>
+                    </a>
+                    <a class="modern-menu-item" href="Conditions.aspx.htm" tppabs="https://2e.aonprd.com/Conditions.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-player-pain"></i></span>
+                        <span class="modern-menu-item-text">Conditions</span>
+                    </a>
+                    <a class="modern-menu-item" href="GMScreen.aspx.htm" tppabs="https://2e.aonprd.com/GMScreen.aspx">
+                        <span class="modern-menu-item-icon">
+                            <svg viewBox="0 0 30 30" preserveAspectRatio="xMidYMid meet" stroke="null" style="fill:inherit;">
+                                <path d="M5.72648 12.93117h9.17646v9.50588l-4.58823 2.37647-4.58823-2.37647.00001-9.50588z"></path>
+                                <path d="M5.96178 12.93118h9.17646v9.50587l-4.58823 2.37648-4.58824-2.37648.00001-9.50587z"></path>
+                                <path d="M15.0206 12.93118h9.17646v9.50587l-4.58823 2.37648-4.58824-2.37648.00001-9.50587z"></path>
+                                <path d="M16.70221 8.57471l7.52941-3.38823v16.94117h-7.52941V8.57471zM15.11765 8.69235L5.94118 5.30412v16.94117h9.17647V8.69235z"></path>
+                                <path d="M19.60883 17.75465h-9.17646V8.24878L15.0206 5.8723l4.58824 2.37648-.00001 9.50587z"></path>
+                            </svg>
+                        </span>
+                        <span class="modern-menu-item-text">GM Screen</span>
+                    </a>
+                    <a class="modern-menu-item" href="PlayersGuide.aspx.htm" tppabs="https://2e.aonprd.com/PlayersGuide.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-uncertainty"></i></span>
+                        <span class="modern-menu-item-text">Player's Guide</span>
+                    </a>
+                    <a class="modern-menu-item" href="Traits.aspx.htm" tppabs="https://2e.aonprd.com/Traits.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-uncertainty"></i></span>
+                        <span class="modern-menu-item-text">Traits</span>
+                    </a>
+                    <a class="modern-menu-item" href="Sources.aspx.htm" tppabs="https://2e.aonprd.com/Sources.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-book"></i></span>
+                        <span class="modern-menu-item-text">Sources</span>
+                    </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-sun"></i></span>
+                    <span class="modern-menu-item-text">Setting +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Setting.aspx-Adventure=true.htm" tppabs="https://2e.aonprd.com/Setting.aspx?Adventure=true">
+                        <span class="modern-menu-item-icon"><i class="ra ra-all-for-one"></i></span>
+                        <span class="modern-menu-item-text">Adventures</span>
+                    </a>
+                    <a class="modern-menu-item" href="Articles.aspx.htm" tppabs="https://2e.aonprd.com/Articles.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-book"></i></span>
+                        <span class="modern-menu-item-text">Articles</span>
+                    </a>
+                    <a class="modern-menu-item" href="Deities.aspx.htm" tppabs="https://2e.aonprd.com/Deities.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-angel-wings"></i></span>
+                        <span class="modern-menu-item-text">Deities</span>
+                    </a>
+                    <a class="modern-menu-item" href="Domains.aspx.htm" tppabs="https://2e.aonprd.com/Domains.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-kaleidoscope"></i></span>
+                        <span class="modern-menu-item-text">Domains</span>
+                    </a>
+                    <a class="modern-menu-item" href="Languages.aspx.htm" tppabs="https://2e.aonprd.com/Languages.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-speech-bubbles"></i></span>
+                        <span class="modern-menu-item-text">Languages</span>
+                    </a>
+                    <a class="modern-menu-item" href="Planes.aspx.htm" tppabs="https://2e.aonprd.com/Planes.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-circle-of-circles"></i></span>
+                        <span class="modern-menu-item-text">Planes</span>
+                    </a>
+                        <a class="modern-menu-item" href="Setting.aspx-Group=40.htm" tppabs="https://2e.aonprd.com/Setting.aspx?Group=40">
+                            <span class="modern-menu-item-icon"><i class="ra ra-mountains"></i></span>
+                            <span class="modern-menu-item-text">Scenarios</span>
+                        </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-crystal-wand"></i></span>
+                    <span class="modern-menu-item-text">Spells/Rituals +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Spells.aspx.htm" tppabs="https://2e.aonprd.com/Spells.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-scroll-unfurled"></i></span>
+                        <span class="modern-menu-item-text">All Spells</span>
+                    </a>
+                    <a class="modern-menu-item" href="Spells.aspx-Tradition=1.htm" tppabs="https://2e.aonprd.com/Spells.aspx?Tradition=1">
+                        <span class="modern-menu-item-icon"><i class="ra ra-scroll-unfurled"></i></span>
+                        <span class="modern-menu-item-text">Arcane</span>
+                    </a>
+                    <a class="modern-menu-item" href="Spells.aspx-Tradition=2.htm" tppabs="https://2e.aonprd.com/Spells.aspx?Tradition=2">
+                        <span class="modern-menu-item-icon"><i class="ra ra-ankh"></i></span>
+                        <span class="modern-menu-item-text">Divine</span>
+                    </a>
+                    <a class="modern-menu-item" href="Spells.aspx-Tradition=3.htm" tppabs="https://2e.aonprd.com/Spells.aspx?Tradition=3">
+                        <span class="modern-menu-item-icon"><i class="ra ra-burning-eye"></i></span>
+                        <span class="modern-menu-item-text">Occult</span>
+                    </a>
+                    <a class="modern-menu-item" href="Spells.aspx-Tradition=4.htm" tppabs="https://2e.aonprd.com/Spells.aspx?Tradition=4">
+                        <span class="modern-menu-item-icon"><i class="ra ra-leaf"></i></span>
+                        <span class="modern-menu-item-text">Primal</span>
+                    </a>
+                    <a class="modern-menu-item" href="Spells.aspx-Focus=true.htm" tppabs="https://2e.aonprd.com/Spells.aspx?Focus=true">
+                        <span class="modern-menu-item-icon"><i class="ra ra-aura"></i></span>
+                        <span class="modern-menu-item-text">Focus Spells</span>
+                    </a>
+                    <a class="modern-menu-item" href="Rituals.aspx.htm" tppabs="https://2e.aonprd.com/Rituals.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-rune-stone"></i></span>
+                        <span class="modern-menu-item-text">Rituals</span>
+                    </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-player-thunder-struck"></i></span>
+                    <span class="modern-menu-item-text">Mythic +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Rules.aspx-ID=3320.htm" tppabs="https://2e.aonprd.com/Rules.aspx?ID=3320">
+                        <span class="modern-menu-item-icon"><i class="ra ra-book"></i></span>
+                        <span class="modern-menu-item-text">Mythic Rules</span>
+                    </a>
+                    <a class="modern-menu-item" href="MythicCallings.aspx.htm" tppabs="https://2e.aonprd.com/MythicCallings.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-aware"></i></span>
+                        <span class="modern-menu-item-text">Callings</span>
+                    </a>
+                    <a class="modern-menu-item" href="MythicFeats.aspx.htm" tppabs="https://2e.aonprd.com/MythicFeats.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-muscle-up"></i></span>
+                        <span class="modern-menu-item-text">Mythic Feats</span>
+                    </a>
+                    <a class="modern-menu-item" href="MythicDestinies.aspx.htm" tppabs="https://2e.aonprd.com/MythicDestinies.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-aura"></i></span>
+                        <span class="modern-menu-item-text">Destinies</span>
+                    </a>
+                    <a class="modern-menu-item" href="MythicSpells.aspx.htm" tppabs="https://2e.aonprd.com/MythicSpells.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-lightning-trio"></i></span>
+                        <span class="modern-menu-item-text">Mythic Spells</span>
+                    </a>
+                    <a class="modern-menu-item" href="MythicRituals.aspx.htm" tppabs="https://2e.aonprd.com/MythicRituals.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-fire-ring"></i></span>
+                        <span class="modern-menu-item-text">Mythic Rituals</span>
+                    </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-help"></i></span>
+                    <span class="modern-menu-item-text">About the Archives +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="ContactUs.aspx.htm" tppabs="https://2e.aonprd.com/ContactUs.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-quill-ink"></i></span>
+                        <span class="modern-menu-item-text">Contact Us</span>
+                    </a>
+                    <a class="modern-menu-item" href="Contributors.aspx.htm" tppabs="https://2e.aonprd.com/Contributors.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-double-team"></i></span>
+                        <span class="modern-menu-item-text">Contributors</span>
+                    </a>
+                    <a class="modern-menu-item" href="Licenses.aspx.htm" tppabs="https://2e.aonprd.com/Licenses.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-book"></i></span>
+                        <span class="modern-menu-item-text">Licenses</span>
+                    </a>
+                </div>
+                <a class="modern-menu-item" href="Support.aspx.htm" tppabs="https://2e.aonprd.com/Support.aspx">
+                    <span class="modern-menu-item-icon"><i class="ra ra-diamond"></i></span>
+                    <span class="modern-menu-item-text">Support the Archives</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="shelyns-corner-wrapper">
+        <div class="shelyns-corner-overlay"></div>
+        <div class="shelyns-corner">
+            <div class="shelyns-corner-header">
+                <h2>Shelyn's Corner</h2>
+                <a href="javascript:void(0)" class="close-shelyns-corner">&times;</a>
+            </div>
+            <div class="shelyns-corner-content">
+                <div class="shelyns-corner-settings">
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-remaster">Prefer Pathfinder Remastered Core?</label>
+                        <input type="checkbox" id="shelyns-corner-setting-remaster" checked/>
+                    </div>
+                    <hr />
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-dyslexia">Dyslexia friendly fonts</label>
+                        <input type="checkbox" id="shelyns-corner-setting-dyslexia"/>
+                    </div>
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-sidebar-hover">Expand sidebar on hover</label>
+                        <input type="checkbox" id="shelyns-corner-setting-sidebar-hover" checked/>
+                    </div>
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-sidebar-shrink">Sidebar can be shrunk</label>
+                        <input type="checkbox" id="shelyns-corner-setting-sidebar-shrink" checked/>
+                    </div>
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-page-compress">Reduce page width</label>
+                        <input type="checkbox" id="shelyns-corner-setting-page-compress"/>
+                    </div>
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-modern-menu">Modern menu</label>
+                        <input type="checkbox" id="shelyns-corner-setting-modern-menu" checked/>
+                    </div>
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-link-previews">Link previews</label>
+                        <input type="checkbox" id="shelyns-corner-setting-link-previews" checked/>
+                    </div>
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-link-previews-search">Link previews in search bar</label>
+                        <input type="checkbox" id="shelyns-corner-setting-link-previews-search"/>
+                    </div>
+                </div>
+                <hr />
+                <div class="theme-gallery-wrapper"></div>
+                <hr />
+                <div class="feel-gallery">
+                    <div class="feel-example classic_feel" onclick="setFeel('classic_feel')">
+                        <h1 class="feel-title">Classic Feel</h1>
+                        <h2 class="feel-title">Classic Feel <span class="output"></span></h2>
+                        <h3 class="feel-title">Classic Feel</h3>
+                        <p>The classic look for the Archives of Nethys.</p>
+                        <table>
+                            <thead><td>Table</td></thead>
+                            <tr><td>Data</td></tr>
+                            <tr><td>More Data</td></tr>
+                        </table>
+                    </div>
+                    <div class="feel-example book_feel" onclick="setFeel('book_feel')">
+                        <h1 class="feel-title">Book Feel</h1>
+                        <h2 class="feel-title">Book Feel <span class="output"></span></h2>
+                        <h3 class="feel-title">Book Feel</h3>
+                        <p>An alternative feel, based on the Rulebooks.</p>
+                        <table>
+                            <thead><td>Table</td></thead>
+                            <tr><td>Data</td></tr>
+                            <tr><td>More Data</td></tr>
+                        </table>
+                    </div>
+                    <div class="feel-example round_feel" onclick="setFeel('round_feel')">
+                        <h1 class="feel-title">Round Feel</h1>
+                        <h2 class="feel-title">Round Feel<span class="output"></span></h2>
+                        <h3 class="feel-title">Round Feel</h3>
+                        <p>A rounded, modern look for the archives.</p>
+                        <table>
+                            <thead><td>Table</td></thead>
+                            <tr><td>Data</td></tr>
+                            <tr><td>More Data</td></tr>
+                        </table>
+                    </div>
+                    <div class="feel-example slim_feel" onclick="setFeel('slim_feel')">
+                        <h1 class="feel-title">Slim Feel</h1>
+                        <h2 class="feel-title">Slim Feel<span class="output"></span></h2>
+                        <h3 class="feel-title">Slim Feel</h3>
+                        <p>A variant of the Round feel, more compact.</p>
+                        <table>
+                            <thead><td>Table</td></thead>
+                            <tr><td>Data</td></tr>
+                            <tr><td>More Data</td></tr>
+                        </table>
+                    </div>
+                </div>
+                <hr />
+                <div class="shelyns-corner-settings">
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-orc">More Orc?</label>
+                        <input type="checkbox" id="shelyns-corner-setting-orc" />
+                    </div>
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-boar"><b>BOAR?</b></label>
+                        <input type="checkbox" id="shelyns-corner-setting-boar" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+      var legacyMode = getCore();
+
+      initializeMenuToggle(document.getElementById('minMaxMenu'));
+      initShelynsCorner();
+
+      window.nethysModernMenu.init();
+
+      initializeElasticSearch()
+      var initializeSearch = function (search) {
+          var button;
+          var text;
+          if (search.firstElementChild.classList.contains('search-input'))
+              text = search.firstElementChild;
+          if (search.lastElementChild.classList.contains('search-input'))
+              text = search.lastElementChild;
+          if (search.firstElementChild.classList.contains('search-button'))
+              button = search.firstElementChild;
+          if (search.lastElementChild.classList.contains('search-button'))
+              button = search.lastElementChild;
+
+          if (search) {
+              search.addEventListener('keypress', function (e) {
+                  if (e.keyCode == 13) {
+                      e.preventDefault();
+                      if (text.value != null && text.value.length > 0)
+                          window.location = window.location.origin + "/Search.aspx?q=" + encodeURIComponent(text.value);
+                  }
+              })
+          }
+          if (button) {
+              button.addEventListener('click', function (e) {
+                  window.location = window.location.origin + "/Search.aspx?q=" + encodeURIComponent(text.value);
+              });
+          }
+      };
+      var initializeExpand = function (toggle) {
+          var targetAttrString = "[data-target='" + toggle.dataset.toggle + "']";
+          //target = menu to be collapsed
+          var target = document.querySelector(targetAttrString);
+          toggle.addEventListener('click', function () {
+              var expanded = target.classList.contains('expanded');
+              expanded = !expanded;
+              if (expanded) {
+                  //hide other in group if exists
+                  if (target.dataset.group) {
+                      var otherExpanded = document.querySelector('.expanded[data-group="' + target.dataset.group + '"]');
+                      if (otherExpanded) {
+                          otherExpanded.classList.remove('expanded');
+                      }
+                  }
+                  target.classList.add('expanded');
+              } else {
+                  target.classList.remove('expanded');
+              }
+          });
+      };
+      (function () {
+          //toggles = link that expands/collapses target
+          var toggles = document.querySelectorAll('[data-toggle]');
+          toggles.forEach(function (toggle) {
+              initializeExpand(toggle);
+          });
+          //searches
+          var classicSearch = document.getElementById('classic-search');
+          initializeSearch(classicSearch);
+          var searches = document.querySelectorAll('.search');
+          searches.forEach(function (search) {
+              //initializeSearch(search);
+          });
+      })();
+
+      class NethysSearch extends HTMLElement {
+          constructor() {
+              super();
+
+              this.attachShadow({ mode: 'open' });
+
+              let container = document.createElement('div');
+              this.shadowRoot.append(container);
+
+              let fixedParams = this.getAttribute('fixed-params');
+
+              if (window.location.search.includes('Redirected=1')) {
+                  fixedParams = (fixedParams ? fixedParams + '&' : '') + 'Redirected=1';
+              }
+
+              if (window.location.search.includes('NoRedirect=1')) {
+                  fixedParams = (fixedParams ? fixedParams + '&' : '') + 'NoRedirect=1';
+              }
+
+              let fixedQueryString = this.getAttribute('fixed-query-string') ?? '';
+
+              if (!fixedQueryString.includes('category:item-bonus')) {
+                  fixedQueryString += ' !category:item-bonus';
+              }
+
+              let dataUrl = new URL(elasticUrl);
+              dataUrl.pathname = '/json-data';
+              dataUrl = dataUrl.toString();
+
+              let app = Elm.NethysSearch.init({
+                  node: container,
+                  flags: {
+                      autofocus: (this.getAttribute('autofocus') ?? 'true') == 'true',
+                      browserDateFormat: (new Date(2020, 9, 30).toLocaleDateString(navigator.language))
+                          .replace('2020', 'yyyy')
+                          .replace('10', 'MM')
+                          .replace('30', 'dd'),
+                      currentUrl: location.href,
+                      dataUrl: dataUrl,
+                      defaultQuery: this.getAttribute('default-query'),
+                      elasticUrl: elasticUrl,
+                      fixedParams: fixedParams,
+                      fixedQueryString: fixedQueryString,
+                      loadAll: this.getAttribute('load-all') == 'true',
+                      legacyMode: legacyMode,
+                      localStorage: { ...localStorage },
+                      noUi: this.getAttribute('no-ui') === 'true',
+                      pageDefaultDisplays: localStorage.getItem('page-default-displays'),
+                      pageId: this.getAttribute('page-id'),
+                      randomSeed: Math.floor(Math.random() * 2147483647),
+                      removeFilters: this.getAttribute('remove-filters')?.split(',') ?? [],
+                      resultBaseUrl: "/",
+                      showHeader: false,
+                      showQueryControls: this.getAttribute('show-query-controls') != 'false',
+                      windowHeight: window.innerHeight,
+                      windowWidth: window.innerWidth,
+                  }
+              });
+
+              app.ports.document_focusElement.subscribe(id => {
+                  window.requestAnimationFrame(() => {
+                      let element = this.shadowRoot.getElementById(id);
+
+                      if (element) {
+                          element.focus();
+                      }
+                  });
+              });
+
+              app.ports.document_scrollElementIntoView.subscribe(id => {
+                  window.requestAnimationFrame(() => {
+                      let element = this.shadowRoot.getElementById(id);
+
+                      if (element) {
+                          element.scrollIntoView({block: 'nearest'});
+                      }
+                  });
+              });
+
+              app.ports.localStorage_get && app.ports.localStorage_get.subscribe(function (key) {
+                  let value = localStorage.getItem(key);
+                  app.ports.localStorage_receive.send({ key: key, value: value });
+              });
+
+              app.ports.localStorage_set.subscribe(function (data) {
+                  localStorage.setItem(data.key, data.value);
+              });
+
+              window.addEventListener('popstate', function () {
+                  app.ports.navigation_urlChanged.send(location.href);
+              });
+
+              app.ports.navigation_pushUrl.subscribe(function (url) {
+                  history.pushState([], '', url);
+                  app.ports.navigation_urlChanged.send(location.href);
+              });
+
+              app.ports.navigation_loadUrl.subscribe(function (url) {
+                  location.href = url;
+              });
+
+              document.addEventListener('theme-changed', e => {
+                  app.ports.localStorage_receive.send({ key: 'theme', value: e.detail });
+              });
+
+              document.addEventListener('link-previews-changed', e => {
+                  app.ports.localStorage_receive.send({ key: 'link-previews-enabled', value: e.detail });
+              });
+
+              window.addEventListener('hashchange', e => {
+                  let url = new URL(e.newURL);
+                  if (url.hash != "#results") {
+                      return;
+                  }
+
+                  let results = this.shadowRoot.getElementById("results");
+                  if (!results) {
+                      return;
+                  }
+
+                  results.focus();
+                  results.scrollIntoView();
+                  window.location.hash = '';
+              });
+
+              if (this.getAttribute('no-ui') === 'true') {
+                  let linkPreviewTarget = null;
+
+                  document.addEventListener('mouseover', e => {
+                      const target = e.target.closest('a');
+                      const isSearchBar = e.target.closest('.searchBar') !== null;
+                      if (target && target != linkPreviewTarget) {
+                          let parent = getParentOffset(target.offsetParent);
+                          let data = {
+                              url: target.href,
+                              x: target.offsetLeft + parent.x,
+                              y: target.offsetTop + parent.y,
+                              height: target.offsetHeight,
+                              width: target.offsetWidth,
+                          }
+                          if (isSearchBar) {
+                              if (getFeature('search-bar-previews-enabled', '0') == '0') {
+                                  return;
+                              }
+                              data.x += window.scrollX;
+                              data.y += window.scrollY;
+                          }
+                          app.ports.document_linkEntered.send(data);
+                      } else if (!target && linkPreviewTarget) {
+                          app.ports.document_linkLeft.send("");
+                      }
+
+                      linkPreviewTarget = target;
+                  });
+              }
+
+              function getParentOffset(node) {
+                  if (!node) {
+                      return {
+                          x: 0,
+                          y: 0,
+                      };
+                  }
+                  let parent = getParentOffset(node.offsetParent);
+                  return {
+                      x: node.offsetLeft - node.scrollLeft + parent.x,
+                      y: node.offsetTop - node.scrollTop + parent.y,
+                  };
+              }
+
+              const resizeObserver = new ResizeObserver(entries => {
+                  app.ports.document_receiveBodySize.send({
+                      width: Math.round(entries[0].contentRect.width),
+                      height: Math.round(entries[0].contentRect.height),
+                  });
+              });
+
+              let relativeElement = document.getElementById('page');
+              resizeObserver.observe(relativeElement);
+
+              document.addEventListener('visibilitychange', () => {
+                  if (document.visibilityState === 'visible') {
+                      let rect = relativeElement.getBoundingClientRect();
+
+                      app.ports.document_receiveBodySize.send({
+                          width: Math.round(rect.width),
+                          height: Math.round(rect.height),
+                      });
+                  }
+              });
+          }
+      }
+
+      customElements.define('nethys-search', NethysSearch);
+    </script>
+</body>
+</html>

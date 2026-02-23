@@ -1,0 +1,1425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script type="text/javascript" async src="js-id=UA-137805785-3.js" tppabs="https://www.googletagmanager.com/gtag/js?id=UA-137805785-3"></script>
+    <script type="text/javascript">
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-137805785-3');
+    </script>
+    <title>
+        Adventure Design - Rules - Archives of Nethys: Pathfinder 2nd Edition Database
+    </title>
+    
+
+    <link href="Layout.css-v=EB6PS6lfpX6G1uwFu7uHcEh6oScz15hZHsXHCNMHzLg.css" tppabs="https://2e.aonprd.com/Styles/Layout.css?v=EB6PS6lfpX6G1uwFu7uHcEh6oScz15hZHsXHCNMHzLg" rel="stylesheet" type="text/css" />
+    <link href="rpg-awesome.min.css" tppabs="https://2e.aonprd.com/Styles/rpg-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="Typography.css-v=3et3D84VeOgcsPaSRyGH6nF1FfjjYgVpcGBq4HyG5vg.css" tppabs="https://2e.aonprd.com/Styles/Typography.css?v=3et3D84VeOgcsPaSRyGH6nF1FfjjYgVpcGBq4HyG5vg" rel="stylesheet" type="text/css" />
+    <link href="themes.css" tppabs="https://2e.aonprd.com/themes" rel="stylesheet" type="text/css" />
+    <link href="SitePrint.css-v=8wGbZVsBHNUZjW78tbaeVtZ_Jlm0ss-wjdlzy_jKlOY.css" tppabs="https://2e.aonprd.com/Styles/SitePrint.css?v=8wGbZVsBHNUZjW78tbaeVtZ_Jlm0ss-wjdlzy_jKlOY" rel="stylesheet" type="text/css" media="print" />
+
+    <link href="css-family=Julee.css" tppabs="https://fonts.googleapis.com/css?family=Julee" rel="stylesheet" type="text/css" />
+    <link href="css-family=Andika.css" tppabs="https://fonts.googleapis.com/css?family=Andika" rel="stylesheet" type="text/css" />
+    <link href="css2-family=Lato-ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap.css" tppabs="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="search" type="application/opensearchdescription+xml" title="Search the Archives of Nethys" href="https://2e.aonprd.com/opensearch.xml" />
+
+
+    <script type="text/javascript">
+        window.elasticUrl = 'https://elasticsearch.aonprd.com/aon-test';
+    </script>
+
+        <script src="nethys-search-9f2620f2bfdf2014fd0b0c157f03248921d02563.js" tppabs="https://elasticsearch.aonprd.com/js/nethys-search-9f2620f2bfdf2014fd0b0c157f03248921d02563.js"></script>
+
+    <script
+      src="jquery-3.6.0.min.js" tppabs="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"></script>
+    <script src="semantic.min.js" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/semantic.min.js" integrity="sha512-5cguXwRllb+6bcc2pogwIeQmQPXEzn2ddsqAexIBhh7FO1z5Hkek1J9mrK2+rmZCTU6b6pERxI7acnp1MpAg4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="search.min.css" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/search.min.css" integrity="sha512-1xyHOORqcJ80bareQ2TWmQE+WZ/TlsqjqILbLHeM3Urtw720aiFXE/N+Xm4MAJpcn42e3k4Z8ZpqZfsA2VVyNw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="transition.min.css" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/transition.min.css" integrity="sha512-zsEyDFFD+yPxc7Kq8c3byp2H3tfx4GgT4wvCDzDGiOlkk2hl454XOHzHfN/OsPilopfPEbRzVJ0wxlIa/9BOyg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="transition.min.js" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/transition.min.js" integrity="sha512-zPx44KLp+BP6OKcCIPQibTiLz0WAc2s9syi+7wOT+Ql2D1/kAX8y7K1rz8vuTtrhRS2dMZ7zVS5dQoHTvkXJCA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="icon.min.css" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/icon.min.css" integrity="sha512-cKaYuptKrUbQ4/r0qmxhpQDjPWb7/SYN6gQRYMOQqPJ2+S4Bmb1zZ1/SAuszp+E6yoakjQFpM+rAzuw+EwR+xw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="input.min.css" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/input.min.css" integrity="sha512-6+BQOwPqqk5AianROXkI3LKgnLcjZbEV3KbhO++sKXemybg0FugrODki+nBsg9FipqlKSMd4ppnpkqC6VEpFiA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="button.min.css" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/button.min.css" integrity="sha512-XMrByQiBPJwH350YvTKR/XTY1fOQX4lSQqeft++WcyY39l0eKoPXOgx1OJHEODhHCW1FfvVl/Bdr90QE08FG+Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="dropdown.min.css" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/dropdown.min.css" integrity="sha512-hDsG55Tp5IgyWKbBbNhOo0+bLTdIVVAGW09a7IFvgIkKg/xrjOdOA2lEPFkkgJQ3NuB7DxDFlSHX7/JYvFLYfA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="dropdown.min.js" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/dropdown.min.js" integrity="sha512-1SzBIESNYM3Y8JkQrS1Mu2dPnPaAqeQkCV9KfDA2eYXBEzdkhHWyqTP6P0OAsh1RSC4cDvr8DmYVTmb/YWGYpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="showdown.min.js" tppabs="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js" integrity="sha512-LhccdVNGe2QMEfI3x4DVV3ckMRe36TfydKss6mJpdHjNFiV07dFpS2xzeZedptKZrwxfICJpez09iNioiSZ3hA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="lodash.min.js" tppabs="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="modernMenu.js" tppabs="https://2e.aonprd.com/Scripts/modernMenu.js"></script>
+
+    <script type="text/javascript" src="tableState.js" tppabs="https://2e.aonprd.com/Scripts/tableState.js"></script>
+    <script type="text/javascript" src="drawerHandlers.js" tppabs="https://2e.aonprd.com/Scripts/drawerHandlers.js"></script>
+    <script type="text/javascript" src="hideFilter.js" tppabs="https://2e.aonprd.com/Scripts/hideFilter.js"></script>
+    <script type="text/javascript" src="searchBar.js" tppabs="https://2e.aonprd.com/Scripts/searchBar.js"></script>
+
+    <script type="text/javascript" src="previewModal.js" tppabs="https://2e.aonprd.com/Scripts/previewModal.js"></script>
+    
+    
+    <meta name="keywords" content="Archives, Nethys, Wiki, Archives of Nethys, Pathfinder, Official, AoN, AoNPRD, PRD, PFSRD, 2E, 2nd Edition, Rules, Adventure Design" />
+    <meta name="description" content="When making your own adventure, you get to choose the themes, play style, and NPCs that most appeal to you and your group. This section gives you tips for making your adventures exciting and memorable, and for creating them quickly and efficiently. Creating an adventure for your players can be one of the most fulfilling parts of being a GM. Get started with the basic tips on adventure building on page 487 of the Core Rulebook , then flesh out your adventure using the following adventure recipes to quickly outline an adventure based on your chosen theme. Reading other adventures is a great way to get ideas, whether they&#x2019;re published adventures or ones your friends have written. You can borrow ideas and structures if they work for your game, and tweak as needed." />
+
+
+    <meta charset="utf-8"/>
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="darkreader-lock" />
+    <style type="text/css">        
+        .nav-parent > * {
+            display: block;
+        }
+        .mobile-menu-toggle{
+            display:none;
+        }
+        #main-menu .nav-parent > .brand > .title{
+            display: none;
+        }
+    </style>
+</head>
+<body class="dark aon_dark_theme classic_feel">
+    <div id="wrapper" class="clearfix">
+
+
+        <script type="text/javascript" src="toggle.js" tppabs="https://2e.aonprd.com/Scripts/toggle.js"></script>
+
+
+        <div class="page clearfix" id="page">
+            <div class="header">
+                <div class="clear hideSkiplink" id="main-menu" >
+                    <a class="mobile-menu-toggle" id="mobile-menu-toggle" href="javascript:void(0);" data-toggle="mobile">|||</a>
+                    <div class="splash"></div>
+                    <div class="nav-parent" id="nav-parent">
+                        <a href="index.htm" tppabs="https://2e.aonprd.com/" style="font-size:larger" class="brand">
+                            <span class="home">
+                                Home
+                            </span>
+                        </a>
+                        <a href="Actions.aspx.htm" tppabs="https://2e.aonprd.com/Actions.aspx">Actions/Activities</a>
+                        <a href="Afflictions.aspx.htm" tppabs="https://2e.aonprd.com/Afflictions.aspx">Afflictions</a>
+                        <a href="Ancestries.aspx.htm" tppabs="https://2e.aonprd.com/Ancestries.aspx">Ancestries</a>
+                        <a href="Archetypes.aspx.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx">Archetypes</a>
+                        <a href="Backgrounds.aspx.htm" tppabs="https://2e.aonprd.com/Backgrounds.aspx">Backgrounds</a>
+                        <a href="Classes.aspx.htm" tppabs="https://2e.aonprd.com/Classes.aspx">Classes</a>
+                        <a href="Conditions.aspx.htm" tppabs="https://2e.aonprd.com/Conditions.aspx">Conditions</a>
+                        <a href="Creatures.aspx.htm" tppabs="https://2e.aonprd.com/Creatures.aspx">Creatures</a>
+                        <a href="Equipment.aspx.htm" tppabs="https://2e.aonprd.com/Equipment.aspx">Equipment</a>
+                        <a href="Feats.aspx.htm" tppabs="https://2e.aonprd.com/Feats.aspx">Feats</a>
+                        <a href="Hazards.aspx.htm" tppabs="https://2e.aonprd.com/Hazards.aspx">Hazards</a>
+                        <a href="MythicCallings.aspx.htm" tppabs="https://2e.aonprd.com/MythicCallings.aspx">Mythic</a>
+                        <a href="Rules.aspx.htm" tppabs="https://2e.aonprd.com/Rules.aspx">Rules</a>
+                        <a href="Setting.aspx.htm" tppabs="https://2e.aonprd.com/Setting.aspx">Setting</a>
+                        <a href="Skills.aspx.htm" tppabs="https://2e.aonprd.com/Skills.aspx">Skills</a>
+                        <a href="Spells.aspx.htm" tppabs="https://2e.aonprd.com/Spells.aspx">Spells/Rituals</a>
+                        <a href="Traits.aspx.htm" tppabs="https://2e.aonprd.com/Traits.aspx">Traits</a>
+                        <img src="heading_flourish.png" tppabs="https://2e.aonprd.com/Images/heading_flourish.png" alt="flourish" class="flourish" />
+                        <a href="Licenses.aspx.htm" tppabs="https://2e.aonprd.com/Licenses.aspx">Licenses</a>
+                        <a href="Sources.aspx.htm" tppabs="https://2e.aonprd.com/Sources.aspx">Sources</a>
+                        <img src="heading_flourish.png" tppabs="https://2e.aonprd.com/Images/heading_flourish.png" alt="flourish" class="flourish" />
+                        <a href="ContactUs.aspx.htm" tppabs="https://2e.aonprd.com/ContactUs.aspx">Contact Us</a>
+                        <a href="Contributors.aspx.htm" tppabs="https://2e.aonprd.com/Contributors.aspx">Contributors</a>
+                        <a href="Support.aspx.htm" tppabs="https://2e.aonprd.com/Support.aspx">Support the Archives</a>
+                        <div id="classic-search" class="search">
+                            <input type="text" class="search-input" placeholder="Search" />
+                            <button type="button" class="search-button">
+                                <svg class="Icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="height: 24px; width: 24px; fill: "><path d="M0 0h512v512H0z" fill="transparent" fill-opacity="0"></path><g class="" transform="translate(0,0)" style="touch-action: none;"><path d="M333.78 20.188c-39.97 0-79.96 15.212-110.405 45.656-58.667 58.667-60.796 152.72-6.406 213.97l-15.782 15.748 13.25 13.25 15.75-15.78c61.248 54.39 155.3 52.26 213.968-6.407 60.887-60.886 60.888-159.894 0-220.78C413.713 35.4 373.753 20.187 333.78 20.187zm0 18.562c35.15 0 70.285 13.44 97.158 40.313 53.745 53.745 53.744 140.6 0 194.343-51.526 51.526-133.46 53.643-187.5 6.375l.218-.217c-2.35-2.05-4.668-4.17-6.906-6.407-2.207-2.206-4.288-4.496-6.313-6.812l-.218.22c-47.27-54.04-45.152-135.976 6.374-187.502C263.467 52.19 298.63 38.75 333.78 38.75zm0 18.813c-30.31 0-60.63 11.6-83.81 34.78-46.362 46.362-46.362 121.234 0 167.594 10.14 10.142 21.632 18.077 33.905 23.782-24.91-19.087-40.97-49.133-40.97-82.94 0-15.323 3.292-29.888 9.22-43-4.165 20.485.44 40.88 14.47 54.907 24.583 24.585 68.744 20.318 98.624-9.562 29.88-29.88 34.146-74.04 9.56-98.625-2.375-2.376-4.943-4.473-7.655-6.313 45.13 8.648 79.954 46.345 84.25 92.876 4.44-35.07-6.82-71.726-33.813-98.72-23.18-23.18-53.47-34.78-83.78-34.78zM176.907 297.688L42.094 432.5l34.562 34.563L211.47 332.25l-34.564-34.563zM40 456.813L24 472.78 37.22 486l15.968-16L40 456.812z" fill-opacity="1"></path></g></svg>
+                            </button>
+                        </div>       
+                            <a id="minMaxMenu" onclick='setMenuState("min")'>Maximize Menu</a>
+                    </div>
+                    
+                    <div class="nav-parent expand-collapse" id="mobile-nav-parent" data-target="mobile">
+                        <a href="index.htm" tppabs="https://2e.aonprd.com/" style="font-size:larger" class="brand">
+                            <span class="title">
+                                Archives of Nethys
+                            </span>
+                        </a>
+                        <a href="Afflictions.aspx.htm" tppabs="https://2e.aonprd.com/Afflictions.aspx">Afflictions</a>
+                        <a href="javascript:void(0);" data-toggle="cc">Character Creation +</a>
+                        <div class="expand-collapse expand-collapse-group hide-when-collapsed expanded" data-target="cc" data-group="menus">
+                            <a href="Ancestries.aspx.htm" tppabs="https://2e.aonprd.com/Ancestries.aspx">Ancestries</a>
+                            <a href="Archetypes.aspx.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx">Archetypes</a>
+                            <a href="Backgrounds.aspx.htm" tppabs="https://2e.aonprd.com/Backgrounds.aspx">Backgrounds</a>
+                            <a href="Classes.aspx.htm" tppabs="https://2e.aonprd.com/Classes.aspx">Classes</a>
+                            <a href="Feats.aspx.htm" tppabs="https://2e.aonprd.com/Feats.aspx">Feats</a>
+                            <a href="Skills.aspx.htm" tppabs="https://2e.aonprd.com/Skills.aspx">Skills</a>
+                        </div>
+                        <a href="Creatures.aspx.htm" tppabs="https://2e.aonprd.com/Creatures.aspx">Creatures</a>
+                        <a href="Equipment.aspx.htm" tppabs="https://2e.aonprd.com/Equipment.aspx">Equipment</a>
+                        <a href="Setting.aspx.htm" tppabs="https://2e.aonprd.com/Setting.aspx">Setting</a>
+                        <a href="Spells.aspx.htm" tppabs="https://2e.aonprd.com/Spells.aspx">Spells/Rituals</a>
+                        <a href="javascript:void(0);" data-toggle="rules">Rules +</a>
+                        <div class="expand-collapse expand-collapse-group hide-when-collapsed" data-target="rules" data-group="menus">
+                            <a href="Actions.aspx.htm" tppabs="https://2e.aonprd.com/Actions.aspx">Actions/Activities</a>
+                            <a href="Conditions.aspx.htm" tppabs="https://2e.aonprd.com/Conditions.aspx">Conditions</a>
+                            <a href="Rules.aspx.htm" tppabs="https://2e.aonprd.com/Rules.aspx">Rules</a>
+                            <a href="Traits.aspx.htm" tppabs="https://2e.aonprd.com/Traits.aspx">Traits</a>
+                        </div>
+                        <a href="Hazards.aspx.htm" tppabs="https://2e.aonprd.com/Hazards.aspx">Hazards</a>
+                        <a href="javascript:void(0);" data-toggle="mythic" data-group="">Mythic +</a>
+                        <div class="expand-collapse expand-collapse-group hide-when-collapsed" data-target="mythic" data-group="menus">
+                            <a href="Rules.aspx-ID=3320.htm" tppabs="https://2e.aonprd.com/Rules.aspx?ID=3320">Mythic Rules</a>
+                            <a href="MythicCallings.aspx.htm" tppabs="https://2e.aonprd.com/MythicCallings.aspx">Callings</a>
+                            <a href="MythicFeats.aspx.htm" tppabs="https://2e.aonprd.com/MythicFeats.aspx">Mythic Feats</a>
+                            <a href="MythicDestinies.aspx.htm" tppabs="https://2e.aonprd.com/MythicDestinies.aspx">Destinies</a>
+                            <a href="MythicSpells.aspx.htm" tppabs="https://2e.aonprd.com/MythicSpells.aspx">Mythic Spells</a>
+                            <a href="MythicRituals.aspx.htm" tppabs="https://2e.aonprd.com/MythicRituals.aspx">Mythic Rituals</a>
+                        </div>
+                        <a href="Sources.aspx.htm" tppabs="https://2e.aonprd.com/Sources.aspx">Sources</a>
+                        <a href="javascript:void(0);" data-toggle="about" data-group="">About the Archives +</a>
+                        <div class="expand-collapse expand-collapse-group hide-when-collapsed" data-target="about" data-group="menus">
+                            <a href="Licenses.aspx.htm" tppabs="https://2e.aonprd.com/Licenses.aspx">Licenses</a>
+                            <a href="ContactUs.aspx.htm" tppabs="https://2e.aonprd.com/ContactUs.aspx">Contact Us</a>
+                            <a href="Contributors.aspx.htm" tppabs="https://2e.aonprd.com/Contributors.aspx">Contributors</a>
+                            <a href="Support.aspx.htm" tppabs="https://2e.aonprd.com/Support.aspx">Support the Archives</a>
+                        </div>
+                        <div id="mobileSearch" class="ui fluid search">
+                            <div class="ui action icon input" style="width:90%;height:100%">
+                                <input class="prompt" type="text" placeholder="Search..."/>
+                                <button class="ui icon button" onclick="jumpToSearch('#mobileSearch')">
+                                    <i class="search icon"></i>
+                                </button>
+                            </div>
+                            <div class="results"></div>
+                        </div>
+                        <a href="index.htm" tppabs="https://2e.aonprd.com/">
+                                <img src="PF2Logo_Nethys_400_Selected.png" tppabs="https://2e.aonprd.com/Images/PF2Logo_Nethys_400_Selected.png" alt="Pathfinder RPG (2nd Edition)" />
+                            </a>
+                        <a href="https://www.aonprd.com/"  >
+                            <img src="PF1Logo_Nethys_200.png" tppabs="https://2e.aonprd.com/Images/PF1Logo_Nethys_200.png" alt="Pathfinder RPG (1st Edition)" />
+                        </a> 
+                        <a href="https://www.aonsrd.com/" >
+                            <img src="SFLogo_Nethys_200.png" tppabs="https://2e.aonprd.com/Images/SFLogo_Nethys_200.png" alt="Starfinder RPG (1st Edition)" />
+                        </a>
+                        <a href="https://2e.aonsrd.com/" >
+                            <img src="starfinder_2_logo_200.webp" tppabs="https://2e.aonprd.com/Images/starfinder_2_logo_200.webp" alt="Starfinder RPG (2nd Edition)" />
+                        </a>
+                    </div>
+                </div>
+                <div class="theme-toggle-wrapper" title="Toggle Theme">
+                    <div class="theme-open" title="Change Theme"><i class="ra ra-flowers"></i></div>
+                </div>
+            </div>
+
+            <div class="new-navbar">
+                <div class="drawer-toggle" title="Expand Sidebar" onclick="switchDrawer()">
+                    <img src="NethysMask.png" tppabs="https://2e.aonprd.com/Images/NethysMask.png" alt="&#xe030" /></div>
+                    <a class="title" href="index.htm" tppabs="https://2e.aonprd.com/">Archives of Nethys</a>
+                    <div class="searchBar">
+                        <div id="desktopSearch" class="ui fluid search">
+                            <div class="ui action icon input" style="width:100%;height:100%">
+                                <input class="prompt" type="text" placeholder="Search..."/>
+                                <button class="ui icon button" onclick="jumpToSearch('#desktopSearch')">
+                                        <i class="search icon"></i>
+                                    </button>
+                            </div>
+                            <div class="results"></div>
+                        </div>                   
+                    </div>
+                    <div class="game-selector">
+                        <div class="game-selector-options">
+                            <a class="game-selector-option" href="https://aonprd.com/" >
+                                <img src="PF1Logo_Nethys.png" tppabs="https://2e.aonprd.com/Images/PF1Logo_Nethys.png" alt="Pathfinder 1e" />
+                            </a>
+                            <a class="game-selector-option" href="https://aonsrd.com/" >
+                                <img src="SFLogo_Nethys.png" tppabs="https://2e.aonprd.com/Images/SFLogo_Nethys.png" alt="Starfinder 1e" />
+                            </a>
+                            <a class="game-selector-option" href="https://2e.aonsrd.com/" >
+                                <img src="starfinder_2_logo.webp" tppabs="https://2e.aonprd.com/Images/starfinder_2_logo.webp" alt="Starfinder 2e" />
+                            </a>
+                        </div>
+                        <img class="game-selector-current" src="PF2Logo_Nethys.png" tppabs="https://2e.aonprd.com/Images/PF2Logo_Nethys.png" alt="Pathfinder 2e" />
+                    </div>
+                    <div class="theme-open" title="Change Theme"><i class="ra ra-flowers"></i></div>
+            </div>
+
+            <div class="main-wrapper" id="main-wrapper">
+                <div class="menutitle">
+                    <h1>
+                        Archives of Nethys
+                    </h1>
+                    <h2 class="game-titles">
+                        <a href="https://www.aonprd.com/"  >
+                            <img src="PF1Logo_Nethys.png" tppabs="https://2e.aonprd.com/Images/PF1Logo_Nethys.png" alt="Pathfinder RPG (1st Edition)" />
+                        </a> 
+                        <a href="index.htm" tppabs="https://2e.aonprd.com/" class="selected">
+                            <img src="PF2Logo_Nethys-Selected.png" tppabs="https://2e.aonprd.com/Images/PF2Logo_Nethys-Selected.png" alt="Pathfinder RPG (2nd Edition)" />
+                        </a>
+                        <a href="https://www.aonsrd.com/" >
+                            <img src="SFLogo_Nethys.png" tppabs="https://2e.aonprd.com/Images/SFLogo_Nethys.png" alt="Starfinder RPG (1st Edition)" />
+                        </a>
+                        <a href="https://2e.aonsrd.com/" >
+                            <img src="starfinder_2_logo.webp" tppabs="https://2e.aonprd.com/Images/starfinder_2_logo.webp" alt="Starfinder RPG (2nd Edition)" />
+                        </a>
+                    </h2>
+                </div>
+                <div class="main" id="main">
+                    
+
+<h1 style="text-align:center" class="hide-on-print"><a href="Rules.aspx.htm" tppabs="https://2e.aonprd.com/Rules.aspx"><u>Rules Index</u></a> | <a href="GMScreen.aspx.htm" tppabs="https://2e.aonprd.com/GMScreen.aspx">GM Screen</a> | <a href="PlayersGuide.aspx.htm" tppabs="https://2e.aonprd.com/PlayersGuide.aspx">Player's Guide</a></h1>
+
+<hr class="hide-on-print" />
+
+    <div class="rule-ancestors hide-on-print">
+        <span class="rule-ancestor">Gamemastery Guide</span>
+
+            <span class="rule-ancestor">
+                <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=813  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=813%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=813" class="link">Chapter 1: Gamemastery Basics</a>
+            </span>
+    </div>
+
+<div class="sibling-navigation hide-on-print">
+    <div class="sibling-navigation-previous">
+            <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=921  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=921%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=921" class="link">&lt;&lt; Campaign Structure</a>
+    </div>
+    <div class="sibling-navigation-next">
+            <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=969  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=969%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=969" class="link">Encounter Design &gt;&gt;</a>
+    </div>
+</div>
+
+
+<div class="rule">
+    <h1 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=944  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=944%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=944">Adventure Design</a> 
+    </h1>
+
+    
+
+        <div class="sources"><strong>Source</strong> <a href="javascript:if(confirm(%27https://2e.aonprd.com/Sources.aspx?ID=22  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Sources.aspx?ID=22%27" tppabs="https://2e.aonprd.com/Sources.aspx?ID=22" class="link link-source" target="_blank">Gamemastery Guide pg. 40</a></div>
+
+    <div>
+        When making your own adventure, you get to choose the themes, play style, and NPCs that most appeal to you and your group. This section gives you tips for making your adventures exciting and memorable, and for creating them quickly and efficiently.<br /><br /> Creating an adventure for your players can be one of the most fulfilling parts of being a GM. Get started with the basic tips on <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=493  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=493%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=493">adventure building</a> on page 487 of the <i>Core Rulebook</i>, then flesh out your adventure using the following adventure recipes to quickly outline an adventure based on your chosen theme. Reading other adventures is a great way to get ideas, whether they’re published adventures or ones your friends have written. You can borrow ideas and structures if they work for your game, and tweak as needed.
+    </div>
+
+    <div class="sidebars"><div class="sidebar-nofloat"><h2>Adventure Presentation</h2><div class="sidebar-content">When you’re writing up your own adventure, you don’t need to go into the same level of detail you’d see in a published adventure. You might be able to get by with just an outline, some bullet points for each NPC, a breakdown of encounters, and a few rough maps. Or maybe for your style of running games, you prefer to have some text written about each scene, or even particular lines of dialogue. If you’re creating your first adventure, it can be good to write out a little more than you need. Just keep in mind that things might change in play. If you prepared more than you actually used, that’s normal! Detailing NPCs or locations in particular can be useful, especially if they’re going to appear again. But in many of these cases, you’ll add details at the table and can jot down those notes for later.</div></div><div class="sidebar-nofloat"><h2>Running Your Own Adventure</h2><div class="sidebar-content">It’s often easier to run an adventure you made yourself, but that’s not true for everybody. If you notice as you run your adventure that your notes don’t have enough for you to go on, you can be more thorough next time. And if something ended up inconsistent, there’s nothing wrong with telling your players you want to revise something you previously said. Because this is your own creation, it’s closer to your heart. If the adventure doesn’t go well, it can sting. Sometimes this is because of random chance, sometimes due to unforeseen decisions, and occasionally because you made a mistake. Those are all normal parts of the game! One of the things you’ll internalize the more you run games is that you’re a part of the creative process and don’t need to be perfect.</div></div><div class="sidebar-nofloat"><h2>Building a Sandbox</h2><div class="sidebar-content">In a “sandbox” game, you give the players a sizable location to explore and let them decide how to go about it. A sandbox doesn’t have as many time-sensitive events as a directed adventure, and the flow of the game is driven more by the players than by the opposition. You can put self-contained dungeons or other locations within the sandbox, but it’s up to the players when and how to visit them or deal with them. To make a sandbox, create about triple the number of encounters and spread them out among multiple locations or factions. You can expect the PCs won’t deal with all of them. In most cases, you’ll want to determine where the PCs are headed next before the end of a session so you can prepare for the next session. Depending on the size and complexity of the location, the number of encounters might be much higher. Treat each sub-area as a kind of mini-adventure, and only loosely sketch it until you know what the PCs’ plans are.</div></div></div>
+
+        
+<div class="rule">
+    <h2 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=945  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=945%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=945">Player Motivations</a> 
+    </h2>
+
+    
+
+
+    <div>
+        One of your most important and rewarding tasks is getting to know your players and what makes them tick, then implementing plot hooks that speak to their motivations. If your players all like similar things (maybe they all like epic storylines, or all prefer tactical combat), your job will be a bit easier. But for most groups there’s a mix, and you’ll want to put in a detailed NPC who appeals to one player’s love of social scenes, a powerful villain to engage a player who loves stories of winning against overwhelming odds, and exotic animals that attract a player who’s into having animal friends. If you’re not sure what your players enjoy, ask them in advance what they’d like to see in the game!<br /><br /> Considering player motivations doesn’t mean assuming you know what the players or their characters will do! It can be risky to expect PCs to react in certain ways or take certain paths. Knowing their motivations gives you a way to put in elements you expect will appeal to your players, but their decisions will still take the adventure in unexpected directions. The important thing is getting the players engaged, not predicting the future.
+    </div>
+
+    
+
+
+</div>
+
+        
+<div class="rule">
+    <h2 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=946  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=946%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=946">Keeping it Varied</a> 
+    </h2>
+
+    
+
+
+    <div>
+        You can give players variety through the types of challenges the group faces (combat, social, problem-solving, and so on), the locations they explore, the NPCs they meet, the monsters they face, and the treasure they acquire. Even if you’re building an enclosed dungeon, you don’t want to place a combat in every room, or exploration will quickly become stale.<br /><br /> Think in terms of sessions. If your group gets through five scenes per session, how do you make one game session feel different from another? Maybe two of the scenes in each are fairly basic combat encounters, but if you make the other scenes significantly different, or even if you set the encounters in different environments, the sessions won’t feel repetitive. Also think about the tools used to solve each situation. Maybe one requires complex negotiations, another brute force, and a third sneaking about. Aim to give everybody something compelling, and ideally targeted at their motivations. This translates to mechanical details, too. Inching across a balance beam requires different skills than rebuilding a broken key.
+    </div>
+
+    
+
+
+</div>
+
+        
+<div class="rule">
+    <h2 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=947  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=947%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=947">Theme and Feeling</a> 
+    </h2>
+
+    
+
+
+    <div>
+        Think about the emotional and thematic touchstones you want to hit during play. Good games elicit strong emotions, and planning for them can give an emotional arc to an adventure in addition to the narrative arc. Consider what you want players to feel as they play. Is it triumph? Dread? Sadness? Optimism? None of these will be the <i>only</i> emotions to come out, but they will inform how you build the settings and NPCs. Adventure Recipes gives steps to effectively implement theme and feeling.
+    </div>
+
+    
+
+
+</div>
+
+        
+<div class="rule">
+    <h2 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=948  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=948%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=948">Adventure Recipes</a> 
+    </h2>
+
+    
+
+
+    <div>
+        These procedures help you build an adventure skeleton or outline. You'll then go through and flesh out the details of the adventure, including adversaries and locations. As you play, you'll keep adjusting to fit the events of the game. Anything you haven't already introduced can be changed as needed. Just like with any recipe, you're meant to adjust the details to fit your group's preferences. You might stray far from your starting point, and that's OK! These recipes use six steps. You might want to look ahead to your future steps and make choices out of order based on what's most important for you to convey. The catch-all term “opposition” refers to the various adversaries and obstacles the PCs will face. The opposition should be thematically consistent, but not necessarily monolithic. It might contain multiple individuals or groups, who might not get along with one another. <ul><li><b><a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=949  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=949%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=949">Styles</a></b>: The overall vibe of your game, such as a gritty game, dungeon crawl, or high adventure. These frameworks offer guidelines for the number of sessions and types of encounters that work best. </li><li><b><a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=959  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=959%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=959">Threats</a></b>: Thematic dangers to incorporate into your game, and ways to evoke them as you play. The style and threat are the core parts of your recipe. </li><li><b><a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=965  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=965%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=965">Motivations</a></b>: Determine more specifically what the opposition's goals and motivations are. </li><li><b><a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=966  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=966%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=966">Story Arcs</a></b>: This section gives you guidance on how to construct story arcs that will play out over your adventure and maybe beyond. </li><li><b><a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=967  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=967%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=967">NPCs and Organizations</a></b>: The characters and factions you include should fit the theme. </li><li><b><a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=968  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=968%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=968">Mechanics</a></b>: Your last step is adding in the individual creatures, hazards, treasure, and so on.</li></ul>
+    </div>
+
+    
+
+        
+<div class="rule">
+    <h3 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=949  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=949%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=949">Styles</a> 
+    </h3>
+
+    
+
+
+    <div>
+        These frameworks for building your adventure include some basic elements to get you started outlining an adventure. Slot ideas from the <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=959  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=959%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=959">threats</a> section into this structure, then customize as you see fit.
+    </div>
+
+    
+
+        
+<div class="rule">
+    <h4 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=950  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=950%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=950">Dungeon Crawl</a> 
+    </h4>
+
+    
+
+
+    <div>
+        <b>Number of Sessions</b> 3–4 <br /><b>Exploration Scenes</b> 1 long voyage to reach the dungeon; 3 voyages through long, trapped hallways or mazes; 1 secure cave or other staging area; 2 secret passages or rooms <br /><b>Combat Encounters</b> 2 trivial, 4 low, 6 moderate, 6 severe. Many encounters can be bypassed through secret routes. <br /><b>Roleplaying Encounters</b> 4 conversations with dungeon creatures; 1 negotiation to establish a truce <br /><b>Encounter Tropes</b> Cramped quarters, short lines of sight, and poor lighting conditions, with occasional vaulted chambers and flooded crypts. Traps and puzzles.
+    </div>
+
+    
+
+
+</div>
+
+        
+<div class="rule">
+    <h4 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=951  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=951%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=951">Gritty Adventure</a> 
+    </h4>
+
+    
+
+
+    <div>
+        <b>Number of Sessions</b> 5–7 <br /><b>Exploration Scenes</b> 1 long voyage, plagued by attacks; 2–3 voyages through urban environments; 1 prison break, heist, or other test of skill <br /><b>Combat Encounters</b> 2 trivial, 4 low, 7 moderate, 8 severe; possibly 1 extreme. Foes are often other humanoids. <br /><b>Roleplaying Encounters</b> 2 battles of wits, 2 chances to bypass opponents with deception or threats, 2 opportunities to gather information and rumors <br /><b>Encounter Tropes</b> Stakes are often more personal, such as the PCs clearing their names from a false accusation or being paid to eliminate a problem. Betrayal, ambushes, and other duplicity. Town fires, weather conditions, unfriendly crowds. The <i>Pathfinder Critical Hit Deck</i> is particularly appropriate.
+    </div>
+
+    
+
+
+</div>
+
+        
+<div class="rule">
+    <h4 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=952  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=952%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=952">High Adventure</a> 
+    </h4>
+
+    
+
+
+    <div>
+        <b>Number of Sessions</b> 6–8 <br /><b>Exploration Scenes</b> 2 long voyages, often by sea or air, punctuated with combat; 1 trapped dungeon, tournament, or other test of skill <br /><b>Combat Encounters</b> 16 moderate, 8 severe. Avoid low- and trivial-threat battles. <br /><b>Roleplaying Encounters</b> 2 battles of wits; 4 conversations with bizarre creatures <br /><b>Encounter Tropes</b> Unique environments and terrain for dynamic battles. Swinging from balconies on curtains, fighting atop high wires, racing chariots, and so on. Use difficult terrain sparingly, coupled with creative ways to get around it. Large groups of low-level troops the PCs can defeat with ease.
+    </div>
+
+    
+
+
+</div>
+
+        
+<div class="rule">
+    <h4 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=953  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=953%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=953">Horror</a> 
+    </h4>
+
+    
+
+
+    <div>
+        <b>Number of Sessions</b> 1–2 <br /><b>Exploration Scenes</b> 1 short voyage on foot; 2–4 creepy areas to investigate, like haunted mansions or dark forests <br /><b>Combat Encounters</b> 2 moderate, 1 severe, possibly 1 extreme. Avoid trivial- and low-threat encounters, except as moments of relief in a longer adventure. Extreme-threat encounters against overwhelming foes are excellent in horror one-shots. <br /><b>Roleplaying Encounters</b> 2 conversations with doubtful authority figures, 1 opportunity to gather information and rumors, 1 revelation of a horrible truth <br /><b>Encounter Tropes</b> Surprising and jarring encounters, making it hard for the PCs to feel safe. Encounters that feel overwhelming, even when they’re not. Retreat is often the right option (include a reasonable way for the PCs to escape).
+    </div>
+
+    
+
+
+</div>
+
+        
+<div class="rule">
+    <h4 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=954  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=954%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=954">Intrigue</a> 
+    </h4>
+
+    
+
+
+    <div>
+        <b>Number of Sessions</b> 2–3 <br /><b>Exploration Scenes</b> 1 long voyage, often by land or sea; 3–4 competitions, performances, or other test of skill; 1–2 infiltrations or escapes <br /><b>Combat Encounters</b> 2 trivial, 2 low, 4 moderate, 1 severe. Severethreat encounters should be reserved for major reveals of the ongoing intrigue—an ally is revealed to be a foe, a schemer is exposed and must call on his guard, and so on. <br /><b>Roleplaying Encounters</b> 2–3 battles of wits; 2 political or courtroom scenes; 1 conversation with a cryptic source; 2 opportunities to gather information and rumors <br /><b>Encounter Tropes</b> Urban environments, including fights atop runaway carriages, around (and atop) banquet tables, and running over rooftops. Ambushes in apparently safe social settings. Assassination attempts.
+    </div>
+
+    
+
+
+</div>
+
+        
+<div class="rule">
+    <h4 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=955  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=955%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=955">Military Adventure</a> 
+    </h4>
+
+    
+
+
+    <div>
+        <b>Number of Sessions</b> 2–3 <br /><b>Exploration</b> Scenes 1 long march and 2–3 short marches, or a tour of the defenses for a siege; 2–3 trapped enemy campsites and secret spy redoubts <br /><b>Combat Encounters</b> 4 low, 4 moderate, 1 severe. Most combat encounters should be made up of 2–4 foes, typically humanoid soldiers with a range of capabilities. <br /><b>Roleplaying Encounters</b> 1–2 skill challenges to convince neutral parties to become allies or raise troops’ morale <br /><b>Encounter Tropes</b> Fortified battlegrounds, with moats, walls, defensive towers, and siege weapons. Victory conditions that are goal or deadline oriented—holding a gate for 10 minutes while reserves rush to defend it, setting fire to an enemy catapult, rescuing prisoners, and so on.
+    </div>
+
+    
+
+
+</div>
+
+        
+<div class="rule">
+    <h4 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=956  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=956%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=956">Mystery</a> 
+    </h4>
+
+    
+
+
+    <div>
+        <b>Number of Sessions</b> 2–3 <br /><b>Exploration Scenes</b> 2–3 trapped rooms, concealed hideouts, or other tests of skill; 2 puzzles or investigations <br /><b>Combat Encounters</b> 2 trivial, 4 low, 6 moderate, 6 severe. Solving the mystery uncovers an advantage over the most powerful foe. <br /><b>Roleplaying Encounters</b> 1 battles of wits, 1 conversation with a bizarre creature, 1 opportunity to gather information and rumors, 1 gathering to reveal the answer to the mystery <br /><b>Encounter Tropes</b> Encounters come naturally during investigations or upon discovering some element of the mystery. Multiple clues can send PCs to the same locations; if the mystery stalls, some creature that doesn’t want the PCs to solve the mystery can attack to move the plot forward.
+    </div>
+
+    
+
+
+</div>
+
+        
+<div class="rule">
+    <h4 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=957  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=957%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=957">Planar Adventure</a> 
+    </h4>
+
+    
+
+
+    <div>
+        <b>Number of Sessions</b> 6–8 <br /><b>Exploration Scenes</b> 3–4 long voyages through different planes, often by gate, spells, or planar vessel, punctuated by combat; 1–2 scouting a demiplane, planar city or fortress, or other planar stronghold <br /><b>Combat Encounters</b> 12 moderate, 12 severe. Avoid trivial- and low-threat encounters, except as set dressing to introduce a new plane. <br /><b>Roleplaying Encounters</b> 6 conversations with bizarre creatures, including some with alien ways of thinking; 2 opportunities to gather information and rumors <br /><b>Encounter Tropes</b> Fights showcasing otherworldly environs— on the sides of glaciers, in limitless oceans, on chunks of rock floating along rivers of lava, atop bottomless pits, or on the chains of 100-foot-tall gates.
+    </div>
+
+    
+
+
+</div>
+
+        
+<div class="rule">
+    <h4 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=958  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=958%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=958">Romantic Adventure</a> 
+    </h4>
+
+    
+
+
+    <div>
+        <b>Number of Sessions</b> 4–6 <br /><b>Exploration Scenes</b> 1 tour of a kingdom or other central locale; 1 adventure into the wilds on a hunting trip or bandit hunt; 1 tournament to prove a PC’s love or worth <br /><b>Combat Encounters</b> 3 low, 6 moderate, 3 severe. Emphasize emotional stakes and battles that end with the loss of honor or pride, not life. <br /><b>Roleplaying Encounters</b> 2 battles of wits, 1 grand ball, 1 entreaty before a ruler, 2 scenes of relaxation or carousing with unexpected import <br /><b>Encounter Tropes</b> Duels—social or combat—against romantic rivals. PCs and their foes fight only for a purpose or cause. Savvy enemies have strong connections to the PCs.
+    </div>
+
+    
+
+
+</div>
+
+
+</div>
+
+        
+<div class="rule">
+    <h3 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=959  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=959%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=959">Threats</a> 
+    </h3>
+
+    
+
+
+    <div>
+        Think of each type of threat as the deep, visceral danger the enemies represent. NPCs should be avatars of the threat, whether they’re enemies who represent different aspects of the threat or allies and bystanders damaged by it. Each threat entry gives a brief description, followed by some bullet points you can use to guide you in expressing the consequences of the threat. This is followed by monsters that typify this theme. As always, you can come up with your own thematic threats too!
+    </div>
+
+    
+
+        
+<div class="rule">
+    <h4 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=960  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=960%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=960">Corruption</a> 
+    </h4>
+
+    
+
+
+    <div>
+        The opposition wants to weaken or even change the motivation of a place, person, institution, ideal, or group. <ul><li>Show the effects of corruption on people and places, especially those closely connected to the PCs. Once-safe areas become less friendly and present threats, allies become unable to help or even turn against the PCs. </li><li>Make enemies subtle; patient; and willing to allow rumors, lies, diseases, and poisons time to take effect. In battle, they may be satisfied to curse PCs and their allies or otherwise inflict long-term afflictions, then retreat. </li><li>Contrast the corruption with education, healing, and working towards betterment. </li><li>When the PCs make progress, allow them to expose agents of corruption, and inoculate allies and neutral parties against the growing threat or educate them about it.</li></ul> <b>Foes</b> alghollthu, fiends, undead
+    </div>
+
+    
+
+
+</div>
+
+        
+<div class="rule">
+    <h4 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=961  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=961%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=961">Devastation</a> 
+    </h4>
+
+    
+
+
+    <div>
+        The opposition wants to destroy or lay waste to a place, person, institution, ideal, or group. <ul><li>Show the effects of destruction on people and places, especially those the PCs hold dear. Show them desperate, devoid of resources, and psychologically changed. </li><li>Make enemies hard to reason with and overwhelming in number. In battle, they want not just to win, but to kill, maim, or devour. </li><li>Contrast devastation with forces of preservation and order. </li><li>When the PCs make progress, show the slow recovery from devastation.</li></ul> <b>Foes</b> chromatic dragons, demons, orcs
+    </div>
+
+    
+
+
+</div>
+
+        
+<div class="rule">
+    <h4 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=962  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=962%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=962">Extremism</a> 
+    </h4>
+
+    
+
+
+    <div>
+        The opposition seeks a massive change—one they think is for the better. Their violent means of achieving it put them in conflict with the PCs. <ul><li>Demonstrate the ruthlessness of the enemy, especially the discrepancy between their care for their cause and their ambivalence or hatred toward everything else. </li><li>Have enemies focus purely on their goal. Have them fall back on their rhetoric or dogma to justify themselves. </li><li>If something about the extremists’ cause is just—such as preserving the natural world or protecting their people— reveal the foes’ sympathetic side. Demonstrate the horror of what they’re fighting against in addition to the horror of the way they fight it. </li><li>When the PCs make progress, show uncertainty or demoralization in their foes, possibly even desertion.</li></ul> <b>Foes</b> cultists, revolutionaries
+    </div>
+
+    
+
+
+</div>
+
+        
+<div class="rule">
+    <h4 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=963  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=963%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=963">Mayhem</a> 
+    </h4>
+
+    
+
+
+    <div>
+        The opposition is a force for mayhem, without any greater plan or long-term goal. It may be a mindless force of violence such as a wounded beast, or a thinking foe that simply revels in causing chaos and damage. <ul><li>Mayhem is easy to track and find, often leaving a trail of destruction in its path. Show how the senseless violence causes uncertainty and fear, disrupting both settlements and the natural order of things. </li><li>A single powerful foe is a common source of mayhem, but a pack, herd, cult, or secret society could also be to blame. The source of the mayhem may be the result of the natural order being out of balance, or might be a distraction set off by a different foe looking to use it to further its own goals. </li><li>Emphasize the cascading effects of unchecked mayhem. Normal trade, farming, migration, and similar systems are disrupted, causing problems far from the immediate location of violence and disruption. </li><li>When the PCs make progress, show how resilient systems can recover from massive disruptions but may need additional help or protection.</li></ul> <b>Foes</b> beasts, dinosaurs, drakes, giants
+    </div>
+
+    
+
+
+</div>
+
+        
+<div class="rule">
+    <h4 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=964  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=964%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=964">Subjugation</a> 
+    </h4>
+
+    
+
+
+    <div>
+        The opposition wants to rule over a group, location, or even the world. Their ultimate objective is to control and rule. <ul><li>Show how groups submit to subjugation rather than suffer the consequences of resistance. The PCs see elements of culture destroyed to ensure subjugation—are religions and churches destroyed, subverted, or replaced? Are lackeys put in place to keep oppressed populations in line? </li><li>Make enemies self-righteous, focused, and in control of groups they have previously subjugated. Fights aren’t just for the sake of violence, but steps towards greater control. </li><li>Show opposition: open conflict, rebellion, secret groups, sabotage, and countercultural art. Give PCs the opportunity to support or participate in each. </li><li>When the PCs make progress, have previously cowed or neutral parties be moved to rebel.</li></ul> <b>Foes</b> chromatic dragons, devils, hags, hobgoblins, rakshasas
+    </div>
+
+    
+
+
+</div>
+
+
+</div>
+
+        
+<div class="rule">
+    <h3 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=965  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=965%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=965">Motivations</a> 
+    </h3>
+
+    
+
+
+    <div>
+        Think about your opposition, and what their goals and motivations are. The motivation of the opposition needs to match your threat. If you have multiple adversaries, their motivations should all work toward your theme, but they might have different goals and act more as rivals or enemies. Motivations should be more than one dimensional. There should be a reason for every action the opposition takes—not necessarily a good one or a smart one, but a believable one. Be true to each character! Consider these questions so you can use the answers when deciding what the opposition will do. <ul><li>What does the opposition want? </li><li>Who or what does the opposition fear? (And no, “the PCs” isn’t an answer.) </li><li>Why is the opposition sure to succeed? If the PCs don’t do anything, what makes the opposition unstoppable? </li><li>What are the opposition’s weaknesses? How can they be bribed or tricked? What’s something they ignore that might be used against them?</li></ul>
+    </div>
+
+    
+
+
+</div>
+
+        
+<div class="rule">
+    <h3 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=966  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=966%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=966">Story Arcs</a> 
+    </h3>
+
+    
+
+
+    <div>
+        Keep several story arcs in mind. Most of these will be driven by the opposition in the early going, but PCs might initiate their own story arcs. Think of what the beginning, middle, and end of each arc might look like. Imagine a logical end point the arc would reach if nothing else changes. Then, adjust it based on events in the game. As changes occur, revisit the end point you’ve imagined. If the adversary’s plan has been derailed, what might they do instead? Story arcs should reflect the theme of the adventure and be well-positioned to show off motivations.<br /><br /> Many arcs will last only for the duration of one adventure, but others build up and recur across the whole campaign. Include some of each so you have variety. This also provides closure, as the players can see some storylines wrapped up in the short term and others over a long period. Too many dangling plot threads can result in some being forgotten or make players feel overloaded.<br /><br /> Touchstones like the ones below make a story arc adaptable, not too restricted to specific scenes or characters. <ul><li><b>Use motifs</b>. Use repeated thematic elements, visuals, phrases, and items to reinforce the connection between one adventure or segment of the story and another. The motif can also build in complexity as you move further along in the overarching story. </li><li><b>Follow character</b> growth. Respond to how the PCs changed in previous adventures. Their next undertaking should reflect who they are now. </li><li><b>Escalate!</b> Build on the previous story and show that the next threat is scarier. The first adventure may endanger a village, the next a city, the next a whole nation, and so on. </li><li><b>Bring in recurring characters</b>. A recurring character is especially strong if they appear in similar circumstances each time. For instance, a merchant who travels the world might appear in the campaign only when she wants the PCs to undermine her rivals. </li><li><b>Make each adventure count</b>. While developing an arc, don’t diminish individual adventures by making what happened in them inconsequential compared to the larger story. Illustrate the consequences of such adventures so the players feel a sense of accomplishment for completing one before they move onto the next. Each adventure needs some sort of denouement to show immediate and lingering effects of the PCs’ victory or defeat.</li></ul>
+    </div>
+
+    
+
+
+</div>
+
+        
+<div class="rule">
+    <h3 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=967  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=967%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=967">NPCs and Organizations</a> 
+    </h3>
+
+    
+
+
+    <div>
+        Allied, neutral, and adversarial NPCs and organizations can all contribute to the theme. You’ll want most to follow the theme directly, like the examples in <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=959  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=959%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=959">Threats</a>. However, you can add a few counterpoints to the theme. For example, a horror game might include one or two NPCs who are more hopeful, either to grant respite from the dread or to kill off to show just how bad things are. Including NPCs who aren’t adversaries makes the world feel more real. It also increases the stakes, as PCs have people to care about, protect, and socialize with. You’ll often find that NPCs you create will become more or less important than you expected. You can “demote” an NPC if the players don’t find them interesting or “promote” them if the PCs like them more than expected.
+    </div>
+
+    
+
+
+</div>
+
+        
+<div class="rule">
+    <h3 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=968  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=968%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=968">Mechanics</a> 
+    </h3>
+
+    
+
+
+    <div>
+        Last of all, you’ll fill out specific encounters, NPCs, treasure hoards, maps, and so on. For many games, you can save most of this work for between later sessions, spreading out your preparations over the course of the game.<br /><br /> You can find more detail on these in the <i>Core Rulebook</i>: <ul><li><a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=580  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=580%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=580">Treasure guidelines</a> </li><li><a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=577  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=577%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=577">Accomplishment XP</a> </li><li><a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=590  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=590%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=590">Environments</a> </li><li><a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=2716&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=2716&Redirected=1%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=497">Building Encounters</a> </li><li><a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=668  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=668%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=668">Hazards</a></li></ul> You can also find more information on these in this book: <ul><li><a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=2874&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=2874&Redirected=1%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=995">Building your own creatures</a> </li><li><a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=2864&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=2864&Redirected=1%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=1043">Building your own hazards</a> </li><li><a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=969  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=969%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=969">Building encounters</a></li></ul>
+    </div>
+
+    
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+<div class="sibling-navigation hide-on-print">
+    <div class="sibling-navigation-previous">
+            <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=921  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=921%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=921" class="link">&lt;&lt; Campaign Structure</a>
+    </div>
+    <div class="sibling-navigation-next">
+            <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=969  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=969%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=969" class="link">Encounter Design &gt;&gt;</a>
+    </div>
+</div>
+                </div>
+                <div class="clear">
+            </div>
+
+            <div class="footer" id="footer" >
+				<div id="et-al" >
+                    <a href="mailto:nethys@archivesofnethys.com">Site Owner: Rose-Winds LLC (Blake Davis)</a>
+                    <div id="footer-social"><a href="https://twitter.com/NethysArchives"  target="_blank"><span class="k-icon k-i-twitter" style="font-size:2.5rem"></span></a></div>
+				</div>
+                <div style="text-align:center"><script type="text/javascript" async="true" src="adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- Main Archives Page -->
+                    <ins class="adsbygoogle"
+                        style="display:inline-block;width:728px;height:90px"
+                        data-ad-client="ca-pub-4953734518316037"
+                        data-ad-slot="7738185508"></ins>
+                    <script type="text/javascript">
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                </script></div>
+			</div>
+            <nethys-search no-ui="true"></nethys-search>
+        </div>
+    </div>
+
+    <div class="modern-menu-container">
+        <div class="modern-menu">
+            <div class="modern-menu-nethys-logo"></div>
+            <div class="modern-menu-items">
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-player"></i></span>
+                    <span class="modern-menu-item-text">Character Creation +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Ancestries.aspx.htm" tppabs="https://2e.aonprd.com/Ancestries.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-hood"></i></span>
+                        <span class="modern-menu-item-text">Ancestries</span>
+                    </a>
+                    <a class="modern-menu-item" href="Archetypes.aspx.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-nodular"></i></span>
+                        <span class="modern-menu-item-text">Archetypes</span>
+                    </a>
+                    <a class="modern-menu-item" href="Backgrounds.aspx.htm" tppabs="https://2e.aonprd.com/Backgrounds.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-guarded-tower"></i></span>
+                        <span class="modern-menu-item-text">Backgrounds</span>
+                    </a>
+                    <a class="modern-menu-item" href="Classes.aspx.htm" tppabs="https://2e.aonprd.com/Classes.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-player-lift"></i></span>
+                        <span class="modern-menu-item-text">Classes</span>
+                    </a>
+                    <a class="modern-menu-item" href="Skills.aspx.htm" tppabs="https://2e.aonprd.com/Skills.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-hand"></i></span>
+                        <span class="modern-menu-item-text">Skills</span>
+                    </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-torch"></i></span>
+                    <span class="modern-menu-item-text">Equipment +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Equipment.aspx.htm" tppabs="https://2e.aonprd.com/Equipment.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-torch"></i></span>
+                        <span class="modern-menu-item-text">All Equipment</span>
+                    </a>
+                    <a class="modern-menu-item" href="Equipment.aspx-Category=1.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?Category=1">
+                        <span class="modern-menu-item-icon"><i class="ra ra-campfire"></i></span>
+                        <span class="modern-menu-item-text">Adventuring Gear</span>
+                    </a>
+                    <a class="modern-menu-item" href="Equipment.aspx-Category=6.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?Category=6">
+                        <span class="modern-menu-item-icon"><i class="ra ra-round-bottom-flask"></i></span>
+                        <span class="modern-menu-item-text">Alchemical Items</span>
+                    </a>
+                    <a class="modern-menu-item" href="Armor.aspx.htm" tppabs="https://2e.aonprd.com/Armor.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-helmet"></i></span>
+                        <span class="modern-menu-item-text">Armor</span>
+                    </a>
+                    <a class="modern-menu-item" href="Equipment.aspx-Category=21.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?Category=21">
+                        <span class="modern-menu-item-icon"><i class="ra ra-hand"></i></span>
+                        <span class="modern-menu-item-text">Held Items</span>
+                    </a>
+                    <a class="modern-menu-item" href="Equipment.aspx-Category=23.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?Category=23">
+                        <span class="modern-menu-item-icon"><i class="ra ra-rune-stone"></i></span>
+                        <span class="modern-menu-item-text">Runes</span>
+                    </a>
+                    <a class="modern-menu-item" href="Shields.aspx.htm" tppabs="https://2e.aonprd.com/Shields.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-shield"></i></span>
+                        <span class="modern-menu-item-text">Shields</span>
+                    </a>
+                    <a class="modern-menu-item" href="Weapons.aspx.htm" tppabs="https://2e.aonprd.com/Weapons.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-sword"></i></span>
+                        <span class="modern-menu-item-text">Weapons</span>
+                    </a>
+                    <a class="modern-menu-item" href="Equipment.aspx-Category=41.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?Category=41">
+                        <span class="modern-menu-item-icon"><i class="ra ra-crown-of-thorns"></i></span>
+                        <span class="modern-menu-item-text">Worn Items</span>
+                    </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-muscle-up"></i></span>
+                    <span class="modern-menu-item-text">Feats +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Feats.aspx.htm" tppabs="https://2e.aonprd.com/Feats.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-muscle-up"></i></span>
+                        <span class="modern-menu-item-text">All Feats</span>
+                    </a>
+                    <a class="modern-menu-item" href="Feats.aspx-Traits=78.htm" tppabs="https://2e.aonprd.com/Feats.aspx?Traits=78">
+                        <span class="modern-menu-item-icon"><i class="ra ra-aware"></i></span>
+                        <span class="modern-menu-item-text">General</span>
+                    </a>
+                    <a class="modern-menu-item" href="Feats.aspx-Traits=78&NoSkills=True.htm" tppabs="https://2e.aonprd.com/Feats.aspx?Traits=78&NoSkills=True">
+                        <span class="modern-menu-item-icon"><i class="ra ra-player-teleport"></i></span>
+                        <span class="modern-menu-item-text">General (No Skill)</span>
+                    </a>
+                    <a class="modern-menu-item" href="Feats.aspx-Traits=144.htm" tppabs="https://2e.aonprd.com/Feats.aspx?Traits=144">
+                        <span class="modern-menu-item-icon"><i class="ra ra-hand"></i></span>
+                        <span class="modern-menu-item-text">Skill</span>
+                    </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-emerald"></i></span>
+                    <span class="modern-menu-item-text">Game Mastery +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Afflictions.aspx.htm" tppabs="https://2e.aonprd.com/Afflictions.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-biohazard"></i></span>
+                        <span class="modern-menu-item-text">Afflictions</span>
+                    </a>
+                    <a class="modern-menu-item" href="Creatures.aspx.htm" tppabs="https://2e.aonprd.com/Creatures.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-dragon"></i></span>
+                        <span class="modern-menu-item-text">Creatures</span>
+                    </a>
+                    <a class="modern-menu-item" href="Hazards.aspx.htm" tppabs="https://2e.aonprd.com/Hazards.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-bear-trap"></i></span>
+                        <span class="modern-menu-item-text">Hazards</span>
+                    </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-book"></i></span>
+                    <span class="modern-menu-item-text">Rules +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Rules.aspx.htm" tppabs="https://2e.aonprd.com/Rules.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-book"></i></span>
+                        <span class="modern-menu-item-text">All Rules</span>
+                    </a>
+                    <a class="modern-menu-item" href="Actions.aspx.htm" tppabs="https://2e.aonprd.com/Actions.aspx">
+                        <span class="modern-menu-item-icon">
+                            <svg viewBox="0 0 30 30" preserveAspectRatio="xMidYMid meet" stroke="null" style="fill:inherit;">
+                                <path d="M21.55532 8.015l7.07107 7.07106-7.07107 7.07107-7.07107-7.07107zM6.47996 10.07526l4.94975 4.94975-4.94975 4.94974-4.94974-4.94974z"></path>
+                                <path d="M15.00246 1.46211l8.48528 8.48528-7.07107 7.07107L7.9314 8.53318z"></path>
+                                <path d="M16.45563 13.11469l7.07107 7.07107-8.48529 8.48528-7.07106-7.07107z"></path>
+                            </svg>
+                        </span>
+                        <span class="modern-menu-item-text">Actions/Activities</span>
+                    </a>
+                    <a class="modern-menu-item" href="Conditions.aspx.htm" tppabs="https://2e.aonprd.com/Conditions.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-player-pain"></i></span>
+                        <span class="modern-menu-item-text">Conditions</span>
+                    </a>
+                    <a class="modern-menu-item" href="GMScreen.aspx.htm" tppabs="https://2e.aonprd.com/GMScreen.aspx">
+                        <span class="modern-menu-item-icon">
+                            <svg viewBox="0 0 30 30" preserveAspectRatio="xMidYMid meet" stroke="null" style="fill:inherit;">
+                                <path d="M5.72648 12.93117h9.17646v9.50588l-4.58823 2.37647-4.58823-2.37647.00001-9.50588z"></path>
+                                <path d="M5.96178 12.93118h9.17646v9.50587l-4.58823 2.37648-4.58824-2.37648.00001-9.50587z"></path>
+                                <path d="M15.0206 12.93118h9.17646v9.50587l-4.58823 2.37648-4.58824-2.37648.00001-9.50587z"></path>
+                                <path d="M16.70221 8.57471l7.52941-3.38823v16.94117h-7.52941V8.57471zM15.11765 8.69235L5.94118 5.30412v16.94117h9.17647V8.69235z"></path>
+                                <path d="M19.60883 17.75465h-9.17646V8.24878L15.0206 5.8723l4.58824 2.37648-.00001 9.50587z"></path>
+                            </svg>
+                        </span>
+                        <span class="modern-menu-item-text">GM Screen</span>
+                    </a>
+                    <a class="modern-menu-item" href="PlayersGuide.aspx.htm" tppabs="https://2e.aonprd.com/PlayersGuide.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-uncertainty"></i></span>
+                        <span class="modern-menu-item-text">Player's Guide</span>
+                    </a>
+                    <a class="modern-menu-item" href="Traits.aspx.htm" tppabs="https://2e.aonprd.com/Traits.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-uncertainty"></i></span>
+                        <span class="modern-menu-item-text">Traits</span>
+                    </a>
+                    <a class="modern-menu-item" href="Sources.aspx.htm" tppabs="https://2e.aonprd.com/Sources.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-book"></i></span>
+                        <span class="modern-menu-item-text">Sources</span>
+                    </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-sun"></i></span>
+                    <span class="modern-menu-item-text">Setting +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Setting.aspx-Adventure=true.htm" tppabs="https://2e.aonprd.com/Setting.aspx?Adventure=true">
+                        <span class="modern-menu-item-icon"><i class="ra ra-all-for-one"></i></span>
+                        <span class="modern-menu-item-text">Adventures</span>
+                    </a>
+                    <a class="modern-menu-item" href="Articles.aspx.htm" tppabs="https://2e.aonprd.com/Articles.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-book"></i></span>
+                        <span class="modern-menu-item-text">Articles</span>
+                    </a>
+                    <a class="modern-menu-item" href="Deities.aspx.htm" tppabs="https://2e.aonprd.com/Deities.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-angel-wings"></i></span>
+                        <span class="modern-menu-item-text">Deities</span>
+                    </a>
+                    <a class="modern-menu-item" href="Domains.aspx.htm" tppabs="https://2e.aonprd.com/Domains.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-kaleidoscope"></i></span>
+                        <span class="modern-menu-item-text">Domains</span>
+                    </a>
+                    <a class="modern-menu-item" href="Languages.aspx.htm" tppabs="https://2e.aonprd.com/Languages.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-speech-bubbles"></i></span>
+                        <span class="modern-menu-item-text">Languages</span>
+                    </a>
+                    <a class="modern-menu-item" href="Planes.aspx.htm" tppabs="https://2e.aonprd.com/Planes.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-circle-of-circles"></i></span>
+                        <span class="modern-menu-item-text">Planes</span>
+                    </a>
+                        <a class="modern-menu-item" href="Setting.aspx-Group=40.htm" tppabs="https://2e.aonprd.com/Setting.aspx?Group=40">
+                            <span class="modern-menu-item-icon"><i class="ra ra-mountains"></i></span>
+                            <span class="modern-menu-item-text">Scenarios</span>
+                        </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-crystal-wand"></i></span>
+                    <span class="modern-menu-item-text">Spells/Rituals +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Spells.aspx.htm" tppabs="https://2e.aonprd.com/Spells.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-scroll-unfurled"></i></span>
+                        <span class="modern-menu-item-text">All Spells</span>
+                    </a>
+                    <a class="modern-menu-item" href="Spells.aspx-Tradition=1.htm" tppabs="https://2e.aonprd.com/Spells.aspx?Tradition=1">
+                        <span class="modern-menu-item-icon"><i class="ra ra-scroll-unfurled"></i></span>
+                        <span class="modern-menu-item-text">Arcane</span>
+                    </a>
+                    <a class="modern-menu-item" href="Spells.aspx-Tradition=2.htm" tppabs="https://2e.aonprd.com/Spells.aspx?Tradition=2">
+                        <span class="modern-menu-item-icon"><i class="ra ra-ankh"></i></span>
+                        <span class="modern-menu-item-text">Divine</span>
+                    </a>
+                    <a class="modern-menu-item" href="Spells.aspx-Tradition=3.htm" tppabs="https://2e.aonprd.com/Spells.aspx?Tradition=3">
+                        <span class="modern-menu-item-icon"><i class="ra ra-burning-eye"></i></span>
+                        <span class="modern-menu-item-text">Occult</span>
+                    </a>
+                    <a class="modern-menu-item" href="Spells.aspx-Tradition=4.htm" tppabs="https://2e.aonprd.com/Spells.aspx?Tradition=4">
+                        <span class="modern-menu-item-icon"><i class="ra ra-leaf"></i></span>
+                        <span class="modern-menu-item-text">Primal</span>
+                    </a>
+                    <a class="modern-menu-item" href="Spells.aspx-Focus=true.htm" tppabs="https://2e.aonprd.com/Spells.aspx?Focus=true">
+                        <span class="modern-menu-item-icon"><i class="ra ra-aura"></i></span>
+                        <span class="modern-menu-item-text">Focus Spells</span>
+                    </a>
+                    <a class="modern-menu-item" href="Rituals.aspx.htm" tppabs="https://2e.aonprd.com/Rituals.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-rune-stone"></i></span>
+                        <span class="modern-menu-item-text">Rituals</span>
+                    </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-player-thunder-struck"></i></span>
+                    <span class="modern-menu-item-text">Mythic +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Rules.aspx-ID=3320.htm" tppabs="https://2e.aonprd.com/Rules.aspx?ID=3320">
+                        <span class="modern-menu-item-icon"><i class="ra ra-book"></i></span>
+                        <span class="modern-menu-item-text">Mythic Rules</span>
+                    </a>
+                    <a class="modern-menu-item" href="MythicCallings.aspx.htm" tppabs="https://2e.aonprd.com/MythicCallings.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-aware"></i></span>
+                        <span class="modern-menu-item-text">Callings</span>
+                    </a>
+                    <a class="modern-menu-item" href="MythicFeats.aspx.htm" tppabs="https://2e.aonprd.com/MythicFeats.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-muscle-up"></i></span>
+                        <span class="modern-menu-item-text">Mythic Feats</span>
+                    </a>
+                    <a class="modern-menu-item" href="MythicDestinies.aspx.htm" tppabs="https://2e.aonprd.com/MythicDestinies.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-aura"></i></span>
+                        <span class="modern-menu-item-text">Destinies</span>
+                    </a>
+                    <a class="modern-menu-item" href="MythicSpells.aspx.htm" tppabs="https://2e.aonprd.com/MythicSpells.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-lightning-trio"></i></span>
+                        <span class="modern-menu-item-text">Mythic Spells</span>
+                    </a>
+                    <a class="modern-menu-item" href="MythicRituals.aspx.htm" tppabs="https://2e.aonprd.com/MythicRituals.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-fire-ring"></i></span>
+                        <span class="modern-menu-item-text">Mythic Rituals</span>
+                    </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-help"></i></span>
+                    <span class="modern-menu-item-text">About the Archives +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="ContactUs.aspx.htm" tppabs="https://2e.aonprd.com/ContactUs.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-quill-ink"></i></span>
+                        <span class="modern-menu-item-text">Contact Us</span>
+                    </a>
+                    <a class="modern-menu-item" href="Contributors.aspx.htm" tppabs="https://2e.aonprd.com/Contributors.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-double-team"></i></span>
+                        <span class="modern-menu-item-text">Contributors</span>
+                    </a>
+                    <a class="modern-menu-item" href="Licenses.aspx.htm" tppabs="https://2e.aonprd.com/Licenses.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-book"></i></span>
+                        <span class="modern-menu-item-text">Licenses</span>
+                    </a>
+                </div>
+                <a class="modern-menu-item" href="Support.aspx.htm" tppabs="https://2e.aonprd.com/Support.aspx">
+                    <span class="modern-menu-item-icon"><i class="ra ra-diamond"></i></span>
+                    <span class="modern-menu-item-text">Support the Archives</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="shelyns-corner-wrapper">
+        <div class="shelyns-corner-overlay"></div>
+        <div class="shelyns-corner">
+            <div class="shelyns-corner-header">
+                <h2>Shelyn's Corner</h2>
+                <a href="javascript:void(0)" class="close-shelyns-corner">&times;</a>
+            </div>
+            <div class="shelyns-corner-content">
+                <div class="shelyns-corner-settings">
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-remaster">Prefer Pathfinder Remastered Core?</label>
+                        <input type="checkbox" id="shelyns-corner-setting-remaster" checked/>
+                    </div>
+                    <hr />
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-dyslexia">Dyslexia friendly fonts</label>
+                        <input type="checkbox" id="shelyns-corner-setting-dyslexia"/>
+                    </div>
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-sidebar-hover">Expand sidebar on hover</label>
+                        <input type="checkbox" id="shelyns-corner-setting-sidebar-hover" checked/>
+                    </div>
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-sidebar-shrink">Sidebar can be shrunk</label>
+                        <input type="checkbox" id="shelyns-corner-setting-sidebar-shrink" checked/>
+                    </div>
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-page-compress">Reduce page width</label>
+                        <input type="checkbox" id="shelyns-corner-setting-page-compress"/>
+                    </div>
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-modern-menu">Modern menu</label>
+                        <input type="checkbox" id="shelyns-corner-setting-modern-menu" checked/>
+                    </div>
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-link-previews">Link previews</label>
+                        <input type="checkbox" id="shelyns-corner-setting-link-previews" checked/>
+                    </div>
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-link-previews-search">Link previews in search bar</label>
+                        <input type="checkbox" id="shelyns-corner-setting-link-previews-search"/>
+                    </div>
+                </div>
+                <hr />
+                <div class="theme-gallery-wrapper"></div>
+                <hr />
+                <div class="feel-gallery">
+                    <div class="feel-example classic_feel" onclick="setFeel('classic_feel')">
+                        <h1 class="feel-title">Classic Feel</h1>
+                        <h2 class="feel-title">Classic Feel <span class="output"></span></h2>
+                        <h3 class="feel-title">Classic Feel</h3>
+                        <p>The classic look for the Archives of Nethys.</p>
+                        <table>
+                            <thead><td>Table</td></thead>
+                            <tr><td>Data</td></tr>
+                            <tr><td>More Data</td></tr>
+                        </table>
+                    </div>
+                    <div class="feel-example book_feel" onclick="setFeel('book_feel')">
+                        <h1 class="feel-title">Book Feel</h1>
+                        <h2 class="feel-title">Book Feel <span class="output"></span></h2>
+                        <h3 class="feel-title">Book Feel</h3>
+                        <p>An alternative feel, based on the Rulebooks.</p>
+                        <table>
+                            <thead><td>Table</td></thead>
+                            <tr><td>Data</td></tr>
+                            <tr><td>More Data</td></tr>
+                        </table>
+                    </div>
+                    <div class="feel-example round_feel" onclick="setFeel('round_feel')">
+                        <h1 class="feel-title">Round Feel</h1>
+                        <h2 class="feel-title">Round Feel<span class="output"></span></h2>
+                        <h3 class="feel-title">Round Feel</h3>
+                        <p>A rounded, modern look for the archives.</p>
+                        <table>
+                            <thead><td>Table</td></thead>
+                            <tr><td>Data</td></tr>
+                            <tr><td>More Data</td></tr>
+                        </table>
+                    </div>
+                    <div class="feel-example slim_feel" onclick="setFeel('slim_feel')">
+                        <h1 class="feel-title">Slim Feel</h1>
+                        <h2 class="feel-title">Slim Feel<span class="output"></span></h2>
+                        <h3 class="feel-title">Slim Feel</h3>
+                        <p>A variant of the Round feel, more compact.</p>
+                        <table>
+                            <thead><td>Table</td></thead>
+                            <tr><td>Data</td></tr>
+                            <tr><td>More Data</td></tr>
+                        </table>
+                    </div>
+                </div>
+                <hr />
+                <div class="shelyns-corner-settings">
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-orc">More Orc?</label>
+                        <input type="checkbox" id="shelyns-corner-setting-orc" />
+                    </div>
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-boar"><b>BOAR?</b></label>
+                        <input type="checkbox" id="shelyns-corner-setting-boar" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+      var legacyMode = getCore();
+
+      initializeMenuToggle(document.getElementById('minMaxMenu'));
+      initShelynsCorner();
+
+      window.nethysModernMenu.init();
+
+      initializeElasticSearch()
+      var initializeSearch = function (search) {
+          var button;
+          var text;
+          if (search.firstElementChild.classList.contains('search-input'))
+              text = search.firstElementChild;
+          if (search.lastElementChild.classList.contains('search-input'))
+              text = search.lastElementChild;
+          if (search.firstElementChild.classList.contains('search-button'))
+              button = search.firstElementChild;
+          if (search.lastElementChild.classList.contains('search-button'))
+              button = search.lastElementChild;
+
+          if (search) {
+              search.addEventListener('keypress', function (e) {
+                  if (e.keyCode == 13) {
+                      e.preventDefault();
+                      if (text.value != null && text.value.length > 0)
+                          window.location = window.location.origin + "/Search.aspx?q=" + encodeURIComponent(text.value);
+                  }
+              })
+          }
+          if (button) {
+              button.addEventListener('click', function (e) {
+                  window.location = window.location.origin + "/Search.aspx?q=" + encodeURIComponent(text.value);
+              });
+          }
+      };
+      var initializeExpand = function (toggle) {
+          var targetAttrString = "[data-target='" + toggle.dataset.toggle + "']";
+          //target = menu to be collapsed
+          var target = document.querySelector(targetAttrString);
+          toggle.addEventListener('click', function () {
+              var expanded = target.classList.contains('expanded');
+              expanded = !expanded;
+              if (expanded) {
+                  //hide other in group if exists
+                  if (target.dataset.group) {
+                      var otherExpanded = document.querySelector('.expanded[data-group="' + target.dataset.group + '"]');
+                      if (otherExpanded) {
+                          otherExpanded.classList.remove('expanded');
+                      }
+                  }
+                  target.classList.add('expanded');
+              } else {
+                  target.classList.remove('expanded');
+              }
+          });
+      };
+      (function () {
+          //toggles = link that expands/collapses target
+          var toggles = document.querySelectorAll('[data-toggle]');
+          toggles.forEach(function (toggle) {
+              initializeExpand(toggle);
+          });
+          //searches
+          var classicSearch = document.getElementById('classic-search');
+          initializeSearch(classicSearch);
+          var searches = document.querySelectorAll('.search');
+          searches.forEach(function (search) {
+              //initializeSearch(search);
+          });
+      })();
+
+      class NethysSearch extends HTMLElement {
+          constructor() {
+              super();
+
+              this.attachShadow({ mode: 'open' });
+
+              let container = document.createElement('div');
+              this.shadowRoot.append(container);
+
+              let fixedParams = this.getAttribute('fixed-params');
+
+              if (window.location.search.includes('Redirected=1')) {
+                  fixedParams = (fixedParams ? fixedParams + '&' : '') + 'Redirected=1';
+              }
+
+              if (window.location.search.includes('NoRedirect=1')) {
+                  fixedParams = (fixedParams ? fixedParams + '&' : '') + 'NoRedirect=1';
+              }
+
+              let fixedQueryString = this.getAttribute('fixed-query-string') ?? '';
+
+              if (!fixedQueryString.includes('category:item-bonus')) {
+                  fixedQueryString += ' !category:item-bonus';
+              }
+
+              let dataUrl = new URL(elasticUrl);
+              dataUrl.pathname = '/json-data';
+              dataUrl = dataUrl.toString();
+
+              let app = Elm.NethysSearch.init({
+                  node: container,
+                  flags: {
+                      autofocus: (this.getAttribute('autofocus') ?? 'true') == 'true',
+                      browserDateFormat: (new Date(2020, 9, 30).toLocaleDateString(navigator.language))
+                          .replace('2020', 'yyyy')
+                          .replace('10', 'MM')
+                          .replace('30', 'dd'),
+                      currentUrl: location.href,
+                      dataUrl: dataUrl,
+                      defaultQuery: this.getAttribute('default-query'),
+                      elasticUrl: elasticUrl,
+                      fixedParams: fixedParams,
+                      fixedQueryString: fixedQueryString,
+                      loadAll: this.getAttribute('load-all') == 'true',
+                      legacyMode: legacyMode,
+                      localStorage: { ...localStorage },
+                      noUi: this.getAttribute('no-ui') === 'true',
+                      pageDefaultDisplays: localStorage.getItem('page-default-displays'),
+                      pageId: this.getAttribute('page-id'),
+                      randomSeed: Math.floor(Math.random() * 2147483647),
+                      removeFilters: this.getAttribute('remove-filters')?.split(',') ?? [],
+                      resultBaseUrl: "/",
+                      showHeader: false,
+                      showQueryControls: this.getAttribute('show-query-controls') != 'false',
+                      windowHeight: window.innerHeight,
+                      windowWidth: window.innerWidth,
+                  }
+              });
+
+              app.ports.document_focusElement.subscribe(id => {
+                  window.requestAnimationFrame(() => {
+                      let element = this.shadowRoot.getElementById(id);
+
+                      if (element) {
+                          element.focus();
+                      }
+                  });
+              });
+
+              app.ports.document_scrollElementIntoView.subscribe(id => {
+                  window.requestAnimationFrame(() => {
+                      let element = this.shadowRoot.getElementById(id);
+
+                      if (element) {
+                          element.scrollIntoView({block: 'nearest'});
+                      }
+                  });
+              });
+
+              app.ports.localStorage_get && app.ports.localStorage_get.subscribe(function (key) {
+                  let value = localStorage.getItem(key);
+                  app.ports.localStorage_receive.send({ key: key, value: value });
+              });
+
+              app.ports.localStorage_set.subscribe(function (data) {
+                  localStorage.setItem(data.key, data.value);
+              });
+
+              window.addEventListener('popstate', function () {
+                  app.ports.navigation_urlChanged.send(location.href);
+              });
+
+              app.ports.navigation_pushUrl.subscribe(function (url) {
+                  history.pushState([], '', url);
+                  app.ports.navigation_urlChanged.send(location.href);
+              });
+
+              app.ports.navigation_loadUrl.subscribe(function (url) {
+                  location.href = url;
+              });
+
+              document.addEventListener('theme-changed', e => {
+                  app.ports.localStorage_receive.send({ key: 'theme', value: e.detail });
+              });
+
+              document.addEventListener('link-previews-changed', e => {
+                  app.ports.localStorage_receive.send({ key: 'link-previews-enabled', value: e.detail });
+              });
+
+              window.addEventListener('hashchange', e => {
+                  let url = new URL(e.newURL);
+                  if (url.hash != "#results") {
+                      return;
+                  }
+
+                  let results = this.shadowRoot.getElementById("results");
+                  if (!results) {
+                      return;
+                  }
+
+                  results.focus();
+                  results.scrollIntoView();
+                  window.location.hash = '';
+              });
+
+              if (this.getAttribute('no-ui') === 'true') {
+                  let linkPreviewTarget = null;
+
+                  document.addEventListener('mouseover', e => {
+                      const target = e.target.closest('a');
+                      const isSearchBar = e.target.closest('.searchBar') !== null;
+                      if (target && target != linkPreviewTarget) {
+                          let parent = getParentOffset(target.offsetParent);
+                          let data = {
+                              url: target.href,
+                              x: target.offsetLeft + parent.x,
+                              y: target.offsetTop + parent.y,
+                              height: target.offsetHeight,
+                              width: target.offsetWidth,
+                          }
+                          if (isSearchBar) {
+                              if (getFeature('search-bar-previews-enabled', '0') == '0') {
+                                  return;
+                              }
+                              data.x += window.scrollX;
+                              data.y += window.scrollY;
+                          }
+                          app.ports.document_linkEntered.send(data);
+                      } else if (!target && linkPreviewTarget) {
+                          app.ports.document_linkLeft.send("");
+                      }
+
+                      linkPreviewTarget = target;
+                  });
+              }
+
+              function getParentOffset(node) {
+                  if (!node) {
+                      return {
+                          x: 0,
+                          y: 0,
+                      };
+                  }
+                  let parent = getParentOffset(node.offsetParent);
+                  return {
+                      x: node.offsetLeft - node.scrollLeft + parent.x,
+                      y: node.offsetTop - node.scrollTop + parent.y,
+                  };
+              }
+
+              const resizeObserver = new ResizeObserver(entries => {
+                  app.ports.document_receiveBodySize.send({
+                      width: Math.round(entries[0].contentRect.width),
+                      height: Math.round(entries[0].contentRect.height),
+                  });
+              });
+
+              let relativeElement = document.getElementById('page');
+              resizeObserver.observe(relativeElement);
+
+              document.addEventListener('visibilitychange', () => {
+                  if (document.visibilityState === 'visible') {
+                      let rect = relativeElement.getBoundingClientRect();
+
+                      app.ports.document_receiveBodySize.send({
+                          width: Math.round(rect.width),
+                          height: Math.round(rect.height),
+                      });
+                  }
+              });
+          }
+      }
+
+      customElements.define('nethys-search', NethysSearch);
+    </script>
+</body>
+</html>

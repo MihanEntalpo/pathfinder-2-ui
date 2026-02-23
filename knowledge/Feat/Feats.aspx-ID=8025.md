@@ -1,0 +1,30 @@
+# Greater Awakened Power - Feats - Archives of Nethys: Pathfinder 2nd Edition Database
+
+Source HTML: `docs/aonprd/Feats.aspx-ID=8025.htm`
+
+# [General](./Feats.aspx-Traits=78.md) | [General (No Skill)](./Feats.aspx-Traits=78&NoSkills=True.md) | [All Feats](./Feats.aspx.md)[Aftermath](./Feats.aspx-Traits=424.md) | [Deviant](../DeviantFeats/DeviantFeats.aspx.md)
+
+## [All Skills](./Feats.aspx-Traits=144.md) | [Acrobatics](./Feats.aspx-Traits=144&Skill=Acrobatics.md) | [Arcana](./Feats.aspx-Traits=144&Skill=Arcana.md) | [Athletics](./Feats.aspx-Traits=144&Skill=Athletics.md) | [Crafting](./Feats.aspx-Traits=144&Skill=Crafting.md) | [Deception](./Feats.aspx-Traits=144&Skill=Deception.md) | [Diplomacy](./Feats.aspx-Traits=144&Skill=Diplomacy.md) | [Intimidation](./Feats.aspx-Traits=144&Skill=Intimidation.md) | [Lore](./Feats.aspx-Traits=144&Skill=Lore.md) | [Medicine](./Feats.aspx-Traits=144&Skill=Medicine.md) | [Nature](./Feats.aspx-Traits=144&Skill=Nature.md) | [Occultism](./Feats.aspx-Traits=144&Skill=Occultism.md) | [Performance](./Feats.aspx-Traits=144&Skill=Performance.md) | [Religion](./Feats.aspx-Traits=144&Skill=Religion.md) | [Society](./Feats.aspx-Traits=144&Skill=Society.md) | [Stealth](./Feats.aspx-Traits=144&Skill=Stealth.md) | [Survival](./Feats.aspx-Traits=144&Skill=Survival.md) | [Thievery](./Feats.aspx-Traits=144&Skill=Thievery.md)
+
+---
+
+There is a Legacy version here.
+
+# [Greater Awakened Power](./Feats.aspx-ID=8025.md) Feat 10
+
+## This Feat may contain spoilers from the Gatewalkers Adventure Path
+
+Rare Deviant
+Source [Gatewalkers Player's Guide (Remastered) pg. 9](../Source/Sources.aspx-ID=287.md), [Dark Archives (Remastered) pg. 100](../Source/Sources.aspx-ID=293.md)
+
+---
+
+Your power undergoes yet another awakening. You gain one awakening benefit for a deviant feat of 10th level or lower.
+
+Special You can take this feat multiple times. Each time you do, choose a different deviant feat of 10th level or lower, and gain one of its awakening benefits.
+
+## Traits
+
+Rare: This rarity indicates that a rules element is very difficult to find in the game world. A rare feat, spell, item or the like is available to players only if the GM decides to include it in the game, typically through discovery during play. Creatures with this trait are rare. They typically can't be summoned. The DC of Recall Knowledge checks related to these creatures is increased by 5.
+
+Deviant: This trait describes strange supernatural or paranormal abilities

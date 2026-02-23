@@ -1,0 +1,1672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script type="text/javascript" async src="js-id=UA-137805785-3.js" tppabs="https://www.googletagmanager.com/gtag/js?id=UA-137805785-3"></script>
+    <script type="text/javascript">
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-137805785-3');
+    </script>
+    <title>
+        Chapter 3: Classes - Rules - Archives of Nethys: Pathfinder 2nd Edition Database
+    </title>
+    
+
+    <link href="Layout.css-v=EB6PS6lfpX6G1uwFu7uHcEh6oScz15hZHsXHCNMHzLg.css" tppabs="https://2e.aonprd.com/Styles/Layout.css?v=EB6PS6lfpX6G1uwFu7uHcEh6oScz15hZHsXHCNMHzLg" rel="stylesheet" type="text/css" />
+    <link href="rpg-awesome.min.css" tppabs="https://2e.aonprd.com/Styles/rpg-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="Typography.css-v=3et3D84VeOgcsPaSRyGH6nF1FfjjYgVpcGBq4HyG5vg.css" tppabs="https://2e.aonprd.com/Styles/Typography.css?v=3et3D84VeOgcsPaSRyGH6nF1FfjjYgVpcGBq4HyG5vg" rel="stylesheet" type="text/css" />
+    <link href="themes.css" tppabs="https://2e.aonprd.com/themes" rel="stylesheet" type="text/css" />
+    <link href="SitePrint.css-v=8wGbZVsBHNUZjW78tbaeVtZ_Jlm0ss-wjdlzy_jKlOY.css" tppabs="https://2e.aonprd.com/Styles/SitePrint.css?v=8wGbZVsBHNUZjW78tbaeVtZ_Jlm0ss-wjdlzy_jKlOY" rel="stylesheet" type="text/css" media="print" />
+
+    <link href="css-family=Julee.css" tppabs="https://fonts.googleapis.com/css?family=Julee" rel="stylesheet" type="text/css" />
+    <link href="css-family=Andika.css" tppabs="https://fonts.googleapis.com/css?family=Andika" rel="stylesheet" type="text/css" />
+    <link href="css2-family=Lato-ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap.css" tppabs="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="search" type="application/opensearchdescription+xml" title="Search the Archives of Nethys" href="https://2e.aonprd.com/opensearch.xml" />
+
+
+    <script type="text/javascript">
+        window.elasticUrl = 'https://elasticsearch.aonprd.com/aon-test';
+    </script>
+
+        <script src="nethys-search-9f2620f2bfdf2014fd0b0c157f03248921d02563.js" tppabs="https://elasticsearch.aonprd.com/js/nethys-search-9f2620f2bfdf2014fd0b0c157f03248921d02563.js"></script>
+
+    <script
+      src="jquery-3.6.0.min.js" tppabs="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"></script>
+    <script src="semantic.min.js" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/semantic.min.js" integrity="sha512-5cguXwRllb+6bcc2pogwIeQmQPXEzn2ddsqAexIBhh7FO1z5Hkek1J9mrK2+rmZCTU6b6pERxI7acnp1MpAg4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="search.min.css" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/search.min.css" integrity="sha512-1xyHOORqcJ80bareQ2TWmQE+WZ/TlsqjqILbLHeM3Urtw720aiFXE/N+Xm4MAJpcn42e3k4Z8ZpqZfsA2VVyNw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="transition.min.css" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/transition.min.css" integrity="sha512-zsEyDFFD+yPxc7Kq8c3byp2H3tfx4GgT4wvCDzDGiOlkk2hl454XOHzHfN/OsPilopfPEbRzVJ0wxlIa/9BOyg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="transition.min.js" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/transition.min.js" integrity="sha512-zPx44KLp+BP6OKcCIPQibTiLz0WAc2s9syi+7wOT+Ql2D1/kAX8y7K1rz8vuTtrhRS2dMZ7zVS5dQoHTvkXJCA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="icon.min.css" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/icon.min.css" integrity="sha512-cKaYuptKrUbQ4/r0qmxhpQDjPWb7/SYN6gQRYMOQqPJ2+S4Bmb1zZ1/SAuszp+E6yoakjQFpM+rAzuw+EwR+xw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="input.min.css" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/input.min.css" integrity="sha512-6+BQOwPqqk5AianROXkI3LKgnLcjZbEV3KbhO++sKXemybg0FugrODki+nBsg9FipqlKSMd4ppnpkqC6VEpFiA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="button.min.css" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/button.min.css" integrity="sha512-XMrByQiBPJwH350YvTKR/XTY1fOQX4lSQqeft++WcyY39l0eKoPXOgx1OJHEODhHCW1FfvVl/Bdr90QE08FG+Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="dropdown.min.css" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/dropdown.min.css" integrity="sha512-hDsG55Tp5IgyWKbBbNhOo0+bLTdIVVAGW09a7IFvgIkKg/xrjOdOA2lEPFkkgJQ3NuB7DxDFlSHX7/JYvFLYfA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="dropdown.min.js" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/dropdown.min.js" integrity="sha512-1SzBIESNYM3Y8JkQrS1Mu2dPnPaAqeQkCV9KfDA2eYXBEzdkhHWyqTP6P0OAsh1RSC4cDvr8DmYVTmb/YWGYpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="showdown.min.js" tppabs="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js" integrity="sha512-LhccdVNGe2QMEfI3x4DVV3ckMRe36TfydKss6mJpdHjNFiV07dFpS2xzeZedptKZrwxfICJpez09iNioiSZ3hA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="lodash.min.js" tppabs="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="modernMenu.js" tppabs="https://2e.aonprd.com/Scripts/modernMenu.js"></script>
+
+    <script type="text/javascript" src="tableState.js" tppabs="https://2e.aonprd.com/Scripts/tableState.js"></script>
+    <script type="text/javascript" src="drawerHandlers.js" tppabs="https://2e.aonprd.com/Scripts/drawerHandlers.js"></script>
+    <script type="text/javascript" src="hideFilter.js" tppabs="https://2e.aonprd.com/Scripts/hideFilter.js"></script>
+    <script type="text/javascript" src="searchBar.js" tppabs="https://2e.aonprd.com/Scripts/searchBar.js"></script>
+
+    <script type="text/javascript" src="previewModal.js" tppabs="https://2e.aonprd.com/Scripts/previewModal.js"></script>
+    
+    
+    <meta name="keywords" content="Archives, Nethys, Wiki, Archives of Nethys, Pathfinder, Official, AoN, AoNPRD, PRD, PFSRD, 2E, 2nd Edition, Rules, Chapter 3: Classes" />
+    <meta name="description" content="Just as your character&#x27;s ancestry plays a key role in expressing their identity and worldview, their class indicates the training they have and will improve upon as an adventurer. Choosing your character&#x27;s class is perhaps the most important decision you will make for them. Groups of players often create characters whose skills and abilities complement each other mechanically&#x2014;for example, ensuring your party includes a healer, a combat-oriented character, a stealthy character, and someone with command over magic&#x2014;so you may wish to discuss options with your group before deciding. The rules within each class allow you to bring a wealth of character concepts to life. Perhaps you want to create a brilliant but scatterbrained wizard who can rattle off complex formulas for magic items but has trouble remembering his best friend&#x27;s birthday. Or perhaps you want your character to be a muscle?bound swordswoman who becomes as immovable as a mountain when she hoists a shield. Maybe they&#x27;ll be a hot?tempered witch whose gesticulating fingers pulse with power granted through dealings with a mysterious patron. The choices you make for your character within their class&#x2014;such as a cleric&#x27;s choice of deity, a fighter&#x27;s choice of weapon, or a school where a wizard studied&#x2014;bring these visions to life within the context of the rules and the world. The entries on the pages that follow describe 8 classes in Pathfinder. Each entry contains the information you need to play a character of that class, as well as how to develop them from their humble beginnings at 1st level to the dizzying heights of power at 20th level. In addition to the class entries, you might need to reference the following sections, which detail additional character options and how to advance your character in level. Leveling Up on page 29 tells you how to make your character stronger when you get enough Experience Points to reach a new level. Companions and Familiars on page 206 provides rules to create an animal companion or a familiar to share your adventures with. You must have a class feature or feat that grants you a companion or familiar to use these rules. Archetypes on page 215 gives you thematic options that allow you to further customize your character&#x27;s abilities. Though these rules are not recommended for beginners, the archetypes in this book allow you to gain abilities from other classes starting at 2nd level. " />
+
+
+    <meta charset="utf-8"/>
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="darkreader-lock" />
+    <style type="text/css">        
+        .nav-parent > * {
+            display: block;
+        }
+        .mobile-menu-toggle{
+            display:none;
+        }
+        #main-menu .nav-parent > .brand > .title{
+            display: none;
+        }
+    </style>
+</head>
+<body class="dark aon_dark_theme classic_feel">
+    <div id="wrapper" class="clearfix">
+
+
+        <script type="text/javascript" src="toggle.js" tppabs="https://2e.aonprd.com/Scripts/toggle.js"></script>
+
+
+        <div class="page clearfix" id="page">
+            <div class="header">
+                <div class="clear hideSkiplink" id="main-menu" >
+                    <a class="mobile-menu-toggle" id="mobile-menu-toggle" href="javascript:void(0);" data-toggle="mobile">|||</a>
+                    <div class="splash"></div>
+                    <div class="nav-parent" id="nav-parent">
+                        <a href="index.htm" tppabs="https://2e.aonprd.com/" style="font-size:larger" class="brand">
+                            <span class="home">
+                                Home
+                            </span>
+                        </a>
+                        <a href="Actions.aspx.htm" tppabs="https://2e.aonprd.com/Actions.aspx">Actions/Activities</a>
+                        <a href="Afflictions.aspx.htm" tppabs="https://2e.aonprd.com/Afflictions.aspx">Afflictions</a>
+                        <a href="Ancestries.aspx.htm" tppabs="https://2e.aonprd.com/Ancestries.aspx">Ancestries</a>
+                        <a href="Archetypes.aspx.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx">Archetypes</a>
+                        <a href="Backgrounds.aspx.htm" tppabs="https://2e.aonprd.com/Backgrounds.aspx">Backgrounds</a>
+                        <a href="Classes.aspx.htm" tppabs="https://2e.aonprd.com/Classes.aspx">Classes</a>
+                        <a href="Conditions.aspx.htm" tppabs="https://2e.aonprd.com/Conditions.aspx">Conditions</a>
+                        <a href="Creatures.aspx.htm" tppabs="https://2e.aonprd.com/Creatures.aspx">Creatures</a>
+                        <a href="Equipment.aspx.htm" tppabs="https://2e.aonprd.com/Equipment.aspx">Equipment</a>
+                        <a href="Feats.aspx.htm" tppabs="https://2e.aonprd.com/Feats.aspx">Feats</a>
+                        <a href="Hazards.aspx.htm" tppabs="https://2e.aonprd.com/Hazards.aspx">Hazards</a>
+                        <a href="MythicCallings.aspx.htm" tppabs="https://2e.aonprd.com/MythicCallings.aspx">Mythic</a>
+                        <a href="Rules.aspx.htm" tppabs="https://2e.aonprd.com/Rules.aspx">Rules</a>
+                        <a href="Setting.aspx.htm" tppabs="https://2e.aonprd.com/Setting.aspx">Setting</a>
+                        <a href="Skills.aspx.htm" tppabs="https://2e.aonprd.com/Skills.aspx">Skills</a>
+                        <a href="Spells.aspx.htm" tppabs="https://2e.aonprd.com/Spells.aspx">Spells/Rituals</a>
+                        <a href="Traits.aspx.htm" tppabs="https://2e.aonprd.com/Traits.aspx">Traits</a>
+                        <img src="heading_flourish.png" tppabs="https://2e.aonprd.com/Images/heading_flourish.png" alt="flourish" class="flourish" />
+                        <a href="Licenses.aspx.htm" tppabs="https://2e.aonprd.com/Licenses.aspx">Licenses</a>
+                        <a href="Sources.aspx.htm" tppabs="https://2e.aonprd.com/Sources.aspx">Sources</a>
+                        <img src="heading_flourish.png" tppabs="https://2e.aonprd.com/Images/heading_flourish.png" alt="flourish" class="flourish" />
+                        <a href="ContactUs.aspx.htm" tppabs="https://2e.aonprd.com/ContactUs.aspx">Contact Us</a>
+                        <a href="Contributors.aspx.htm" tppabs="https://2e.aonprd.com/Contributors.aspx">Contributors</a>
+                        <a href="Support.aspx.htm" tppabs="https://2e.aonprd.com/Support.aspx">Support the Archives</a>
+                        <div id="classic-search" class="search">
+                            <input type="text" class="search-input" placeholder="Search" />
+                            <button type="button" class="search-button">
+                                <svg class="Icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="height: 24px; width: 24px; fill: "><path d="M0 0h512v512H0z" fill="transparent" fill-opacity="0"></path><g class="" transform="translate(0,0)" style="touch-action: none;"><path d="M333.78 20.188c-39.97 0-79.96 15.212-110.405 45.656-58.667 58.667-60.796 152.72-6.406 213.97l-15.782 15.748 13.25 13.25 15.75-15.78c61.248 54.39 155.3 52.26 213.968-6.407 60.887-60.886 60.888-159.894 0-220.78C413.713 35.4 373.753 20.187 333.78 20.187zm0 18.562c35.15 0 70.285 13.44 97.158 40.313 53.745 53.745 53.744 140.6 0 194.343-51.526 51.526-133.46 53.643-187.5 6.375l.218-.217c-2.35-2.05-4.668-4.17-6.906-6.407-2.207-2.206-4.288-4.496-6.313-6.812l-.218.22c-47.27-54.04-45.152-135.976 6.374-187.502C263.467 52.19 298.63 38.75 333.78 38.75zm0 18.813c-30.31 0-60.63 11.6-83.81 34.78-46.362 46.362-46.362 121.234 0 167.594 10.14 10.142 21.632 18.077 33.905 23.782-24.91-19.087-40.97-49.133-40.97-82.94 0-15.323 3.292-29.888 9.22-43-4.165 20.485.44 40.88 14.47 54.907 24.583 24.585 68.744 20.318 98.624-9.562 29.88-29.88 34.146-74.04 9.56-98.625-2.375-2.376-4.943-4.473-7.655-6.313 45.13 8.648 79.954 46.345 84.25 92.876 4.44-35.07-6.82-71.726-33.813-98.72-23.18-23.18-53.47-34.78-83.78-34.78zM176.907 297.688L42.094 432.5l34.562 34.563L211.47 332.25l-34.564-34.563zM40 456.813L24 472.78 37.22 486l15.968-16L40 456.812z" fill-opacity="1"></path></g></svg>
+                            </button>
+                        </div>       
+                            <a id="minMaxMenu" onclick='setMenuState("min")'>Maximize Menu</a>
+                    </div>
+                    
+                    <div class="nav-parent expand-collapse" id="mobile-nav-parent" data-target="mobile">
+                        <a href="index.htm" tppabs="https://2e.aonprd.com/" style="font-size:larger" class="brand">
+                            <span class="title">
+                                Archives of Nethys
+                            </span>
+                        </a>
+                        <a href="Afflictions.aspx.htm" tppabs="https://2e.aonprd.com/Afflictions.aspx">Afflictions</a>
+                        <a href="javascript:void(0);" data-toggle="cc">Character Creation +</a>
+                        <div class="expand-collapse expand-collapse-group hide-when-collapsed expanded" data-target="cc" data-group="menus">
+                            <a href="Ancestries.aspx.htm" tppabs="https://2e.aonprd.com/Ancestries.aspx">Ancestries</a>
+                            <a href="Archetypes.aspx.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx">Archetypes</a>
+                            <a href="Backgrounds.aspx.htm" tppabs="https://2e.aonprd.com/Backgrounds.aspx">Backgrounds</a>
+                            <a href="Classes.aspx.htm" tppabs="https://2e.aonprd.com/Classes.aspx">Classes</a>
+                            <a href="Feats.aspx.htm" tppabs="https://2e.aonprd.com/Feats.aspx">Feats</a>
+                            <a href="Skills.aspx.htm" tppabs="https://2e.aonprd.com/Skills.aspx">Skills</a>
+                        </div>
+                        <a href="Creatures.aspx.htm" tppabs="https://2e.aonprd.com/Creatures.aspx">Creatures</a>
+                        <a href="Equipment.aspx.htm" tppabs="https://2e.aonprd.com/Equipment.aspx">Equipment</a>
+                        <a href="Setting.aspx.htm" tppabs="https://2e.aonprd.com/Setting.aspx">Setting</a>
+                        <a href="Spells.aspx.htm" tppabs="https://2e.aonprd.com/Spells.aspx">Spells/Rituals</a>
+                        <a href="javascript:void(0);" data-toggle="rules">Rules +</a>
+                        <div class="expand-collapse expand-collapse-group hide-when-collapsed" data-target="rules" data-group="menus">
+                            <a href="Actions.aspx.htm" tppabs="https://2e.aonprd.com/Actions.aspx">Actions/Activities</a>
+                            <a href="Conditions.aspx.htm" tppabs="https://2e.aonprd.com/Conditions.aspx">Conditions</a>
+                            <a href="Rules.aspx.htm" tppabs="https://2e.aonprd.com/Rules.aspx">Rules</a>
+                            <a href="Traits.aspx.htm" tppabs="https://2e.aonprd.com/Traits.aspx">Traits</a>
+                        </div>
+                        <a href="Hazards.aspx.htm" tppabs="https://2e.aonprd.com/Hazards.aspx">Hazards</a>
+                        <a href="javascript:void(0);" data-toggle="mythic" data-group="">Mythic +</a>
+                        <div class="expand-collapse expand-collapse-group hide-when-collapsed" data-target="mythic" data-group="menus">
+                            <a href="Rules.aspx-ID=3320.htm" tppabs="https://2e.aonprd.com/Rules.aspx?ID=3320">Mythic Rules</a>
+                            <a href="MythicCallings.aspx.htm" tppabs="https://2e.aonprd.com/MythicCallings.aspx">Callings</a>
+                            <a href="MythicFeats.aspx.htm" tppabs="https://2e.aonprd.com/MythicFeats.aspx">Mythic Feats</a>
+                            <a href="MythicDestinies.aspx.htm" tppabs="https://2e.aonprd.com/MythicDestinies.aspx">Destinies</a>
+                            <a href="MythicSpells.aspx.htm" tppabs="https://2e.aonprd.com/MythicSpells.aspx">Mythic Spells</a>
+                            <a href="MythicRituals.aspx.htm" tppabs="https://2e.aonprd.com/MythicRituals.aspx">Mythic Rituals</a>
+                        </div>
+                        <a href="Sources.aspx.htm" tppabs="https://2e.aonprd.com/Sources.aspx">Sources</a>
+                        <a href="javascript:void(0);" data-toggle="about" data-group="">About the Archives +</a>
+                        <div class="expand-collapse expand-collapse-group hide-when-collapsed" data-target="about" data-group="menus">
+                            <a href="Licenses.aspx.htm" tppabs="https://2e.aonprd.com/Licenses.aspx">Licenses</a>
+                            <a href="ContactUs.aspx.htm" tppabs="https://2e.aonprd.com/ContactUs.aspx">Contact Us</a>
+                            <a href="Contributors.aspx.htm" tppabs="https://2e.aonprd.com/Contributors.aspx">Contributors</a>
+                            <a href="Support.aspx.htm" tppabs="https://2e.aonprd.com/Support.aspx">Support the Archives</a>
+                        </div>
+                        <div id="mobileSearch" class="ui fluid search">
+                            <div class="ui action icon input" style="width:90%;height:100%">
+                                <input class="prompt" type="text" placeholder="Search..."/>
+                                <button class="ui icon button" onclick="jumpToSearch('#mobileSearch')">
+                                    <i class="search icon"></i>
+                                </button>
+                            </div>
+                            <div class="results"></div>
+                        </div>
+                        <a href="index.htm" tppabs="https://2e.aonprd.com/">
+                                <img src="PF2Logo_Nethys_400_Selected.png" tppabs="https://2e.aonprd.com/Images/PF2Logo_Nethys_400_Selected.png" alt="Pathfinder RPG (2nd Edition)" />
+                            </a>
+                        <a href="https://www.aonprd.com/"  >
+                            <img src="PF1Logo_Nethys_200.png" tppabs="https://2e.aonprd.com/Images/PF1Logo_Nethys_200.png" alt="Pathfinder RPG (1st Edition)" />
+                        </a> 
+                        <a href="https://www.aonsrd.com/" >
+                            <img src="SFLogo_Nethys_200.png" tppabs="https://2e.aonprd.com/Images/SFLogo_Nethys_200.png" alt="Starfinder RPG (1st Edition)" />
+                        </a>
+                        <a href="https://2e.aonsrd.com/" >
+                            <img src="starfinder_2_logo_200.webp" tppabs="https://2e.aonprd.com/Images/starfinder_2_logo_200.webp" alt="Starfinder RPG (2nd Edition)" />
+                        </a>
+                    </div>
+                </div>
+                <div class="theme-toggle-wrapper" title="Toggle Theme">
+                    <div class="theme-open" title="Change Theme"><i class="ra ra-flowers"></i></div>
+                </div>
+            </div>
+
+            <div class="new-navbar">
+                <div class="drawer-toggle" title="Expand Sidebar" onclick="switchDrawer()">
+                    <img src="NethysMask.png" tppabs="https://2e.aonprd.com/Images/NethysMask.png" alt="&#xe030" /></div>
+                    <a class="title" href="index.htm" tppabs="https://2e.aonprd.com/">Archives of Nethys</a>
+                    <div class="searchBar">
+                        <div id="desktopSearch" class="ui fluid search">
+                            <div class="ui action icon input" style="width:100%;height:100%">
+                                <input class="prompt" type="text" placeholder="Search..."/>
+                                <button class="ui icon button" onclick="jumpToSearch('#desktopSearch')">
+                                        <i class="search icon"></i>
+                                    </button>
+                            </div>
+                            <div class="results"></div>
+                        </div>                   
+                    </div>
+                    <div class="game-selector">
+                        <div class="game-selector-options">
+                            <a class="game-selector-option" href="https://aonprd.com/" >
+                                <img src="PF1Logo_Nethys.png" tppabs="https://2e.aonprd.com/Images/PF1Logo_Nethys.png" alt="Pathfinder 1e" />
+                            </a>
+                            <a class="game-selector-option" href="https://aonsrd.com/" >
+                                <img src="SFLogo_Nethys.png" tppabs="https://2e.aonprd.com/Images/SFLogo_Nethys.png" alt="Starfinder 1e" />
+                            </a>
+                            <a class="game-selector-option" href="https://2e.aonsrd.com/" >
+                                <img src="starfinder_2_logo.webp" tppabs="https://2e.aonprd.com/Images/starfinder_2_logo.webp" alt="Starfinder 2e" />
+                            </a>
+                        </div>
+                        <img class="game-selector-current" src="PF2Logo_Nethys.png" tppabs="https://2e.aonprd.com/Images/PF2Logo_Nethys.png" alt="Pathfinder 2e" />
+                    </div>
+                    <div class="theme-open" title="Change Theme"><i class="ra ra-flowers"></i></div>
+            </div>
+
+            <div class="main-wrapper" id="main-wrapper">
+                <div class="menutitle">
+                    <h1>
+                        Archives of Nethys
+                    </h1>
+                    <h2 class="game-titles">
+                        <a href="https://www.aonprd.com/"  >
+                            <img src="PF1Logo_Nethys.png" tppabs="https://2e.aonprd.com/Images/PF1Logo_Nethys.png" alt="Pathfinder RPG (1st Edition)" />
+                        </a> 
+                        <a href="index.htm" tppabs="https://2e.aonprd.com/" class="selected">
+                            <img src="PF2Logo_Nethys-Selected.png" tppabs="https://2e.aonprd.com/Images/PF2Logo_Nethys-Selected.png" alt="Pathfinder RPG (2nd Edition)" />
+                        </a>
+                        <a href="https://www.aonsrd.com/" >
+                            <img src="SFLogo_Nethys.png" tppabs="https://2e.aonprd.com/Images/SFLogo_Nethys.png" alt="Starfinder RPG (1st Edition)" />
+                        </a>
+                        <a href="https://2e.aonsrd.com/" >
+                            <img src="starfinder_2_logo.webp" tppabs="https://2e.aonprd.com/Images/starfinder_2_logo.webp" alt="Starfinder RPG (2nd Edition)" />
+                        </a>
+                    </h2>
+                </div>
+                <div class="main" id="main">
+                    
+
+<h1 style="text-align:center" class="hide-on-print"><a href="Rules.aspx.htm" tppabs="https://2e.aonprd.com/Rules.aspx"><u>Rules Index</u></a> | <a href="GMScreen.aspx.htm" tppabs="https://2e.aonprd.com/GMScreen.aspx">GM Screen</a> | <a href="PlayersGuide.aspx.htm" tppabs="https://2e.aonprd.com/PlayersGuide.aspx">Player's Guide</a></h1>
+
+<hr class="hide-on-print" />
+
+
+<div class="sibling-navigation hide-on-print">
+    <div class="sibling-navigation-previous">
+            <a href="Rules.aspx-ID=2074.htm" tppabs="https://2e.aonprd.com/Rules.aspx?ID=2074" class="link">&lt;&lt; Chapter 2: Ancestries & Backgrounds</a>
+    </div>
+    <div class="sibling-navigation-next">
+            <a href="Rules.aspx-ID=2134.htm" tppabs="https://2e.aonprd.com/Rules.aspx?ID=2134" class="link">Chapter 4: Skills &gt;&gt;</a>
+    </div>
+</div>
+
+
+<div class="rule">
+    <h1 class="title">
+        <a href="Rules.aspx-ID=2098.htm" tppabs="https://2e.aonprd.com/Rules.aspx?ID=2098">Chapter 3: Classes</a> 
+    </h1>
+
+    
+
+        <div class="sources"><strong>Source</strong> <a href="Sources.aspx-ID=216.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=216" class="link link-source" target="_blank">Player Core pg. 91</a></div>
+
+    <div>
+        Just as your character's ancestry plays a key role in expressing their identity and worldview, their class indicates the training they have and will improve upon as an adventurer. Choosing your character's class is perhaps the most important decision you will make for them. Groups of players often create characters whose skills and abilities complement each other mechanically—for example, ensuring your party includes a healer, a combat-oriented character, a stealthy character, and someone with command over magic—so you may wish to discuss options with your group before deciding.<br /><br />The rules within each class allow you to bring a wealth of character concepts to life. Perhaps you want to create a brilliant but scatterbrained wizard who can rattle off complex formulas for magic items but has trouble remembering his best friend's birthday. Or perhaps you want your character to be a muscle?bound swordswoman who becomes as immovable as a mountain when she hoists a shield. Maybe they'll be a hot?tempered witch whose gesticulating fingers pulse with power granted through dealings with a mysterious patron. The choices you make for your character within their class—such as a cleric's choice of deity, a fighter's choice of weapon, or a school where a wizard studied—bring these visions to life within the context of the rules and the world.<br /><br />The entries on the pages that follow describe 8 classes in Pathfinder. Each entry contains the information you need to play a character of that class, as well as how to develop them from their humble beginnings at 1st level to the dizzying heights of power at 20th level. In addition to the class entries, you might need to reference the following sections, which detail additional character options and how to advance your character in level.<br /><ul><li><b>Leveling Up</b> on page 29 tells you how to make your character stronger when you get enough Experience Points to reach a new level.</li><li><b>Companions and Familiars</b> on page 206 provides rules to create an animal companion or a familiar to share your adventures with. You must have a class feature or feat that grants you a companion or familiar to use these rules.</li><li><b>Archetypes</b> on page 215 gives you thematic options that allow you to further customize your character's abilities. Though these rules are not recommended for beginners, the archetypes in this book allow you to gain abilities from other classes starting at 2nd level.</li></ul>
+    </div>
+
+    
+
+        
+<div class="rule">
+    <h2 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=2099  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=2099%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=2099">Reading Class Entries</a> 
+    </h2>
+
+    
+
+
+    <div>
+        Every class entry includes information about typical members of the class, plus suggestions for roleplaying characters of that class and playing these characters in the game’s various modes. Each class provides your character with an attribute boost to a key attribute; a number of Hit Points they receive at each level; proficiency ranks for various abilities, equipment, and skills; special abilities from their class features; and more. Your character’s class entry also provides the information needed when they gain levels, so it will be a vital reference throughout the course of your campaign.
+    </div>
+
+    
+
+        
+<div class="rule">
+    <h3 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=2100  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=2100%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=2100">Playing the Class</a> 
+    </h3>
+
+    
+
+
+    <div>
+        The first section of each class describes the interests and tendencies typical of that class, as well as information on how others view them. This can help inspire you as you determine your character’s actions and define their personality, but you aren’t obligated to play your character as this section describes.
+    </div>
+
+    
+
+
+</div>
+
+        
+<div class="rule">
+    <h3 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=2101  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=2101%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=2101">Key Attribute</a> 
+    </h3>
+
+    
+
+
+    <div>
+        This is the attribute modifier that a member of your class cares about the most. Many of your most useful and powerful abilities are tied to this attribute in some way.<br /><br />For instance, this is the attribute modifier you'll use to determine the Difficulty Class (DC) associated with your character's class features and feats. This is called your class DC. If your character is a member of a spellcasting class, this key attribute is used to calculate spell DCs and similar values.<br /><br />Most classes are associated with one key attribute modifier, but some allow you to choose from two options. For instance, if you're a fighter, you can choose either Strength or Dexterity as your key attribute. A fighter who chooses Strength will excel in hand to hand combat, while those who choose Dexterity prefer ranged or finesse weapons.<br /><br />Additionally, when you choose your character's class, they gain an attribute boost to their key attribute modifier, increasing that attribute modifier by 1. For more about attribute boosts, see page 19.
+    </div>
+
+    
+
+
+</div>
+
+        
+<div class="rule">
+    <h3 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=2102  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=2102%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=2102">Hit Points</a> 
+    </h3>
+
+    
+
+
+    <div>
+        This section tells you how many Hit Points your character gains from their class at each level. To determine your character's starting Hit Points, add together the Hit Points they got when you chose their ancestry and the amount listed in this entry, which equals your Constitution modifier plus a fixed number. Classes that intend for characters to rush into battle with weapons bared gain a higher number of Hit Points each level, while those for characters who cast spells or engage in trickery gain fewer.<br /><br />Each time your character gains a level, they increase their maximum Hit Points by the amount listed in this entry. For more about calculating your character's Constitution modifier and determining their Hit Points, see page 24.
+    </div>
+
+    
+
+
+</div>
+
+        
+<div class="rule">
+    <h3 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=2103  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=2103%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=2103">Initial Proficiencies</a> 
+    </h3>
+
+    
+
+
+    <div>
+        When you choose your character's class, they gain a set of initial proficiencies. Proficiencies measure your character's ability to perform tasks, use abilities, and succeed at checks. Proficiency ranks range from trained to legendary. For instance, a character who is trained with a longbow can use it effectively, while a person who is legendary with the weapon might be able to split an arrow from 100 paces away!<br /><br />Each class entry specifies your character's initial proficiency rank in Perception, saving throws, attacks, defenses, and class DC. You gain the trained proficiency rank in several skills—the exact number depends on your class, and some classes specify certain additional skills that you're trained in. If your class would make you trained in a skill you're already trained in (typically due to your background), you can select another skill to become trained in.<br /><br />A proficiency rank can unlock various feats and class features, and it also helps determine the modifier for any check you roll or DC you calculate related to that statistic. If your character is trained in Perception, a saving throw, or another statistic, they gain a proficiency bonus equal to their level + 2, while if they have expert proficiency, they gain a proficiency bonus equal to their level + 4. For more about proficiency ranks, see page 11.<br /><br />Spellcasting classes grant a proficiency rank for spell attacks and DCs, which are further detailed in each class's entry. These classes rarely use their class DC.<br /><br />If something isn't listed in your character's class entry, their proficiency rank in that statistic is untrained unless they gain training from another source. If your character is untrained in something, you add a proficiency bonus of +0 when attempting a check or calculating a DC related to that statistic.
+    </div>
+
+    
+
+
+</div>
+
+        
+<div class="rule">
+    <h3 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=2104  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=2104%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=2104">Advancement Table</a> 
+    </h3>
+
+    
+
+
+    <div>
+        This table summarizes the feats, skill increases, attribute boosts, and other benefits your character gains as they advance in level. The first column of the class table indicates a level, and the second column lists each feature your character receives when they reach that level. The 1st-level entry includes a reminder to select your ancestry and background.
+    </div>
+
+    
+
+
+</div>
+
+        
+<div class="rule">
+    <h3 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=2105  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=2105%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=2105">Class Features</a> 
+    </h3>
+
+    
+
+
+    <div>
+        This section presents all the abilities the class grants your character. An ability gained at a higher level lists the required level next to the ability’s name. All classes include the class features detailed below, and each class also gets special class features specific to it. Many class features require you to choose between options. Unless the specific ability states otherwise, such decisions can’t be changed without retraining (as explained on page 440).
+    </div>
+
+    
+
+        
+<div class="rule">
+    <h4 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=2106  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=2106%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=2106">Class Feats</a> 
+    </h4>
+
+    
+
+
+    <div>
+        This section specifies the levels at which your character gains class feats—special feats that only members of that class can access. Class feats are granted beginning at 1st or 2nd level, depending on the class. Specific class feats are detailed at the end of each class entry.
+    </div>
+
+    
+
+
+</div>
+
+        
+<div class="rule">
+    <h4 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=2107  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=2107%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=2107">Skill Feats</a> 
+    </h4>
+
+    
+
+
+    <div>
+        This section specifies the levels at which your character gains feats with the skill trait, called skill feats. Skill feats can be found in Chapter 5: Feats, beginning on page 248. At 2nd level and every 2 levels thereafter, most classes gain a skill feat, though rogues gain them earlier and more often. Your character must be trained in the corresponding skill to take a skill feat.
+    </div>
+
+    
+
+
+</div>
+
+        
+<div class="rule">
+    <h4 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=2108  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=2108%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=2108">General Feats</a> 
+    </h4>
+
+    
+
+
+    <div>
+        This section specifies the levels at which your character gains general feats. Most classes grant a general feat at 3rd level and every 4 levels thereafter. At each of these levels, you can select any general feat (including skill feats) as long as your character qualifies for it. More information can be found in Chapter 5: Feats (page 248).
+    </div>
+
+    
+
+
+</div>
+
+        
+<div class="rule">
+    <h4 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=2109  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=2109%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=2109">Skill Increases</a> 
+    </h4>
+
+    
+
+
+    <div>
+        This section specifies the levels at which your character can increase their proficiency rank in a skill. At 3rd level and every 2 levels thereafter, most classes grant a skill increase, though rogues gain them earlier and more often. Your character can use a skill increase to either become trained in one skill in which they're untrained or become an expert in one skill in which they're already trained.<br /><br />If your character is at least 7th level, they can use a skill increase to become a master of a skill in which they're already an expert. If they're at least 15th level, they can use an increase to become legendary in a skill in which they're already a master.
+    </div>
+
+    
+
+
+</div>
+
+        
+<div class="rule">
+    <h4 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=2110  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=2110%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=2110">Attribute Boosts</a> 
+    </h4>
+
+    
+
+
+    <div>
+        At 5th level and every 5 levels thereafter, your character boosts four different attribute modifiers. This is described briefly in the class. For the full details on attribute modifiers and applying them during character creation, see page 19.
+    </div>
+
+    
+
+
+</div>
+
+        
+<div class="rule">
+    <h4 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=2111  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=2111%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=2111">Ancestry Feats</a> 
+    </h4>
+
+    
+
+
+    <div>
+        This section serves as a reminder of the ancestry feats your character gains at 5th, 9th, 13th, and 17th levels. Ancestry feats are detailed in each ancestry entry in Chapter 2, which begins on page 240.
+    </div>
+
+    
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+        
+<div class="rule">
+    <h2 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=2112  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=2112%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=2112">Companions</a> 
+    </h2>
+
+    
+
+
+    <div>
+        Some adventurers travel with loyal allies known as animal companions and familiars. The former begin as young animals but acquire impressive physical abilities as you level up, while the latter share a magical bond with you.<br /><br />Animal companions and familiars are special benefits for certain classes or class feats. If you simply want a pet regardless of your class, you can take the Pet feat (page 259). You can have a familiar or pet, but not both. Because animal companions function much differently, you can have both an animal companion and a familiar or pet.
+    </div>
+
+    
+
+        
+<div class="rule">
+    <h3 class="title">
+        <a href="Rules.aspx-ID=2113.htm" tppabs="https://2e.aonprd.com/Rules.aspx?ID=2113">Animal Companions</a> 
+    </h3>
+
+    
+
+
+    <div>
+        An animal companion is a loyal comrade who follows your orders. Your animal companion has the animal and minion traits, and it gains 2 actions during your turn if you use the Command an Animal action to command it; this replaces the usual effects of Command an Animal, and you don’t need to attempt a Nature check. If your companion dies, you can spend a week of downtime to replace it at no cost. You can have only one animal companion at a time. <br /><br />A list of available animal companions can be found <a style="text-decoration:underline" href="AnimalCompanions.aspx.htm" tppabs="https://2e.aonprd.com/AnimalCompanions.aspx">here</a>.
+    </div>
+
+    
+
+        
+<div class="rule">
+    <h4 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=2114  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=2114%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=2114">Young Animal Companions</a> 
+    </h4>
+
+    
+
+
+    <div>
+        The following are the base statistics for a young animal companion, the first animal companion most characters get. You adjust these statistics depending on the type of animal you choose. Animal companions calculate their modifiers and DCs just as you do with one difference: the only item bonuses they can benefit from are to Speed and AC (their maximum item bonus to AC is +3). As you gain levels, you might be able to make your companion stronger by <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=2116  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=2116%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=2116">advancing it</a>.<br />An animal companion's starting statistics are as follows.<br /><b>Level:</b> Your animal companion's level is equal to yours.<br /><b>Proficiencies:</b> Your animal companion is trained in its unarmed attacks, unarmored defense, barding (a type of armor for animals), all saving throws, Perception, Acrobatics, and Athletics. Animal companions can't use abilities that require greater Intelligence, such as Coerce or Decipher Writing, even if trained in the appropriate skill, unless they have a specialization that allows it. <b>Attribute Modifiers:</b> An animal companion begins with base attribute modifiers listed in its stat block.<br /><b>Hit Points:</b> Your animal companion has ancestry Hit Points from its type, plus a number of Hit Points equal to 6 plus its Constitution modifier for each level you have.
+    </div>
+
+    
+
+
+</div>
+
+        
+<div class="rule">
+    <h4 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=2115  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=2115%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=2115">Companion Types</a> 
+    </h4>
+
+    
+
+
+    <div>
+        The species of animal you choose is called your companion's type. Each companion type has its own statistics, as follows.<br /><b>Size</b> The companion's size<br /><b>Unarmed Attacks</b> One or more entries with the companion's unarmed attacks and their traits and damage<br /><b>Attribute Modifiers</b> Starting attribute modifiers<br /><b>Hit Points</b> The companion's ancestry Hit Points<br /><b>Skill</b> An additional trained skill your companion has<br /><b>Senses</b> Special senses your companion has<br /><b>Speed</b> Your companion's Speeds<br /><b>Special</b> If present, this lists any special ability your companion has, such as whether it often serves as a mount.<br /><b>Support Benefit</b> A special benefit you gain by Commanding the Animal to use the Support action (see below).<br /><b>Advanced Maneuver</b> A powerful new action your companion learns how to use if it becomes a nimble or savage animal companion.
+    </div>
+
+    <div class="sidebars"><div class="sidebar-nofloat"><h2>Riding Animal Companions</h2><div class="sidebar-content">You or an ally can ride your animal companion as long as it is at least one size larger than the rider. If it is carrying a rider, the animal companion can use only its land Speed, and it can’t move and Support you on the same turn. However, if your companion has the mount special ability, it’s especially suited for riding and ignores both of these restrictions.</div></div></div>
+
+
+</div>
+
+        
+<div class="rule">
+    <h4 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=2116  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=2116%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=2116">Companion Advancement</a> 
+    </h4>
+
+    
+
+
+    <div>
+        You can advance an animal companion, usually due to one of your class feat choices. Normally, you can advance a young animal companion to a mature animal companion, advance a mature companion to either a nimble or savage companion, and advance a nimble or savage companion into a specialized companion.
+    </div>
+
+    
+
+        
+<div class="rule">
+    <h5 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=2117  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=2117%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=2117">Mature Animal Companions</a> 
+    </h5>
+
+    
+
+
+    <div>
+        When you advance a young animal companion to a mature animal companion: <br /><ul><li>If your companion is Medium or smaller, it grows by one size.</li><li>Increase its Strength, Dexterity, Constitution, and Wisdom modifiers by 1.</li><li>Increase its proficiency rank for Perception and all saving throws to expert. Increase its proficiency ranks in Intimidation, Stealth, and Survival to trained, and if it was already trained in one of those skills from its type, increase its proficiency rank in that skill to expert.</li><li>Increase its unarmed attack damage from one die to two dice (for instance 1d8 to 2d8)</li></ul>
+    </div>
+
+    
+
+
+</div>
+
+        
+<div class="rule">
+    <h5 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=2118  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=2118%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=2118">Nimble Animal Companions</a> 
+    </h5>
+
+    
+
+
+    <div>
+        To advance a mature animal companion to a nimble animal companion:<br /><ul><li>Increase its Dexterity modifier by 2 and its Strength, Constitution, and Wisdom modifiers by 1.</li><li>Increase its proficiency ranks in Acrobatics to expert.</li><li>It deals 2 additional damage with its unarmed attacks. Its attacks become magical for the purpose of ignoring resistances.</li><li>It learns the advanced maneuver for its type.</li></ul>
+    </div>
+
+    
+
+
+</div>
+
+        
+<div class="rule">
+    <h5 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=2119  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=2119%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=2119">Savage Animal Companions</a> 
+    </h5>
+
+    
+
+
+    <div>
+        To advance a mature animal companion to a savage animal companion:<br /><ul><li>If your companion is Medium or smaller, it grows by one size.</li><li>Increase its Strength modifier by 2 and its Dexterity, Constitution, and Wisdom modifiers by 1.</li><li>Increase its proficiency rank in Athletics to expert.</li><li>It deals 3 additional damage with its unarmed attacks. Its attacks become magical for the purpose of ignoring resistances.</li><li>It learns the advanced maneuver for its type.</li></ul>
+    </div>
+
+    
+
+
+</div>
+
+        
+<div class="rule">
+    <h5 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=2120  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=2120%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=2120">Specialized Animal Companions</a> 
+    </h5>
+
+    
+
+
+    <div>
+        Specialized animal companions are more intelligent and engage in more complex behaviors. Most animal companions can have only one specialization. The first time an animal gains a specialization, it also gains the following.<br /><ul><li>Its proficiency rank for unarmed attacks increases to expert.</li><li>Its proficiency ranks for saving throws and Perception increase to master.</li><li>Increase its Dexterity modifier by 1 and its Intelligence modifier by 2.</li><li>Its unarmed attack damage increases from two dice to three dice, and it increases its additional damage with unarmed attacks from 2 to 4 or from 3 to 6.</li><li>The extra benefit of the specialization listed below.</li></ul><br /><b>Ambusher:</b> In your companion's natural environment, it can use a Sneak action even if it's currently observed. Its proficiency rank in Stealth increases to expert (or master if it was already an expert from its type), and its Dexterity modifier increases by 1. Its proficiency rank for unarmored defense increases to expert.<br /><br /><b>Bully:</b> Your companion terrorizes foes with dominance displays and pushes them around the battlefield. Its proficiency ranks for Athletics and Intimidation increase to expert (or master if it was already expert from its type), its Strength modifier increases by 1, and its Charisma modifier increases by 3.<br /><br /><b>Daredevil:</b> Your companion joins the fray with graceful leaps and dives. It gains the deny advantage ability, so it isn't off-guard to hidden, undetected, or flanking creatures unless such a creature's level is greater than yours. Its proficiency rank in Acrobatics increases to master, and its Dexterity modifier increases by 1. Its proficiency rank in unarmored defense increases to expert.<br /><br /><b>Racer:</b> Your companion races. It gains a +10-foot status bonus to its Speed, swim Speed, or fly Speed (your choice). Its proficiency in Fortitude saves increases to legendary, and its Constitution modifier increases by 1.<br /><br /><b>Tracker:</b> Your companion is an incredible tracker. It can move at full Speed while following tracks. Its proficiency rank in Survival increases to expert (or master if it was already an expert from its type), and its Wisdom modifier increases by 1.<br /><br /><b>Wrecker:</b> Your companion smashes things. Its unarmed attacks ignore half an object's Hardness. Its Athletics proficiency increases to master, and its Strength modifier increases by 1.
+    </div>
+
+    
+
+
+</div>
+
+
+</div>
+
+        
+<div class="rule">
+    <h4 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=3417  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=3417%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=3417">Riding Animal Companions</a> 
+    </h4>
+
+    
+
+
+    <div>
+        You or an ally can ride your animal companion as long as it is at least one size larger than the rider. If it is carrying a rider, the animal companion can use only its land Speed, and it can’t move and Support you on the same turn. However, if your companion has the mount special ability, it’s especially suited for riding and ignores both of these restrictions.
+    </div>
+
+    
+
+
+</div>
+
+
+</div>
+
+        
+<div class="rule">
+    <h3 class="title">
+        <a href="Rules.aspx-ID=2121.htm" tppabs="https://2e.aonprd.com/Rules.aspx?ID=2121">Familiars</a> 
+    </h3>
+
+    
+
+
+    <div>
+        Familiars are mystically bonded creatures tied to your magic. Most familiars were originally animals, though the ritual of becoming a familiar makes them something more. You gain the <a style="text-decoration:underline" href="Feats.aspx-ID=5186.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=5186">Pet</a> general feat, except that your pet has special abilities. Common choices for familiars include bats, cats, foxes, ravens, and snakes. Some familiars are different, usually described in the ability that granted you a familiar; for example, a druid’s leshy familiar has the plant or fungus trait instead of animal. You can replace a familiar or gain a new one as described in the Pet feat. A familiar is different from a basic pet in the following ways.
+    </div>
+
+    
+
+        
+<div class="rule">
+    <h4 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=2122  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=2122%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=2122">Modifiers and AC</a> 
+    </h4>
+
+    
+
+
+    <div>
+        For Perception, Acrobatics, and Stealth, you can have your familiar use your spellcasting attribute modifier + your level instead of 3 + your level if it’s higher.
+    </div>
+
+    
+
+
+</div>
+
+        
+<div class="rule">
+    <h4 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=2123  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=2123%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=2123">Communication</a> 
+    </h4>
+
+    
+
+
+    <div>
+        Your familiar can communicate empathically with you as long as it’s within 1 mile of you, sharing emotions. It doesn’t understand or speak languages normally, but it can gain speech from a familiar ability.
+    </div>
+
+    
+
+
+</div>
+
+        
+<div class="rule">
+    <h4 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=2124  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=2124%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=2124">Selecting Familiar and Master Abilities</a> 
+    </h4>
+
+    
+
+
+    <div>
+        Instead of choosing two abilities only when you gain your familiar as you do with a normal pet, you can choose the two abilities each day during your daily preparations. You can choose from familiar abilities and master abilities. You can choose the pet abilities from the feat as familiar abilities as well. You can’t swap out abilities that are innate to your familiar. For example, you couldn’t choose not to give a raven familiar flying.
+    </div>
+
+    
+
+
+</div>
+
+        
+<div class="rule">
+    <h4 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=2125  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=2125%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=2125">Familiar Abilities</a> 
+    </h4>
+
+    
+
+
+    <div>
+        Familiar abilities primarily affect the familiar itself. A familiar can have no more than one ability that changes its creature trait (such as construct or plant). You can choose a pet ability (from the Pet feat, page 259) as a familiar ability: amphibious, burrower, climber, darkvision, echolocation, fast movement, flier, manual dexterity, scent, or tough (see the sidebar).
+    </div>
+
+    <div class="sidebars"><div class="sidebar-nofloat"><h2>Pet Feat Abilities</h2><div class="sidebar-content">The following abilities you can choose from the Pet general feat (page 259) are repeated here for convenience.<br /><ul><li><b>Amphibious</b> It gains the amphibious trait, allowing it to breathe in both air and water, and has both a land Speed and a swim Speed, each equal to its highest land Speed or swim Speed.</li><li><b>Burrower</b> It gains a burrow Speed of 5 feet, allowing it to dig Tiny holes.</li><li><b>Climber</b> It gains a climb Speed of 25 feet.</li><li><b>Darkvision</b> It gains darkvision.</li><li><b>Echolocation</b> It can use hearing as a precise sense within 20 feet.</li><li><b>Fast Movement</b> Increase one of the pet's Speeds from 25 feet to 40 feet.</li><li><b>Flier</b> It gains a fly Speed of 25 feet.</li><li><b>Manual Dexterity</b> It can use up to two of its limbs as if they were hands to perform manipulate actions.</li><li><b>Scent</b> It can use scent as an imprecise sense within 30 feet</li><li><b>Tough</b> Your pet's max HP increase by 2 per level</li></ul></div></div><div class="sidebar-nofloat"><h2>Targeting Companions</h2><div class="sidebar-content">Some spells and abilities can affect your companion. When “companion” is used in a stat block, it refers to animal companions, familiars, and types of companions appearing in other books—such as elemental companions. Some spells are even more specific. For example, if the spell says, “<b>Targets</b> your familiar,” you could cast it only on a familiar, not other kinds of companions. If you Cast a Spell that can benefit only a type of creature you don't have, such as Casting a Spell that can target only a familiar when you don't have a familiar, the spell does nothing.<br /><br />If the spell would affect an ability the creature doesn't have, the spell doesn't give the creature that ability unless the spell says it does. For example, a spell that causes your companion to make a Strike wouldn't let a familiar make a Strike but would give it all other benefits of the spell.</div></div></div>
+
+
+</div>
+
+        
+<div class="rule">
+    <h4 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=2126  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=2126%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=2126">Master Abilities</a> 
+    </h4>
+
+    
+
+
+    <div>
+        Master abilities primarily affect you or the magic that passes between you and your familiar.
+    </div>
+
+    
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+        
+<div class="rule">
+    <h2 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=2127  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=2127%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=2127">Archetypes</a> 
+    </h2>
+
+    
+
+
+    <div>
+        Character concepts come in infinite possibilities, but you might find that the feats and skill choices from a single class aren't sufficient to fully realize your character. Archetypes allow you to expand the scope of your character's class.<br /><br />You gain an archetype by selecting archetype feats instead of your normal feats. First, find the archetype that best fits your character concept. Then select that archetype's dedication feat, using one of your class feat choices. Once you've taken the dedication feat, you can select any feat from that archetype, as long as you meet its prerequisites. Most archetype feats are taken in place of class feats, and so these are called archetype class feats.<br /><br />An archetype feat is subject to any restrictions on the class feat it replaces. For example, if you had an ability at 6th level that granted you a bonus class feat, but that class feat had to be 4th level or lower and have the dwarf trait, you could use that class feat to take an archetype class feat, but only one of 4th level or lower with the dwarf trait.
+    </div>
+
+    
+
+        
+<div class="rule">
+    <h3 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=2128  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=2128%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=2128">Dedication Details</a> 
+    </h3>
+
+    
+
+
+    <div>
+        Each archetype’s dedication feat represents your character’s dedicated effort learning a new set of abilities, making it impossible to split your focus and pursue another archetype at the same time. Once you take a dedication feat, you can’t select a different dedication feat until you complete your dedication by taking two other feats from your current archetype. You can’t retrain a dedication feat as long as you have any other feats from that archetype.
+    </div>
+
+    
+
+        
+<div class="rule">
+    <h4 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=2129  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=2129%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=2129">Multiclass Dedications</a> 
+    </h4>
+
+    
+
+
+    <div>
+        All archetypes in this book have the multiclass trait. These allow you to diversify your training into another class’s specialties. You can’t select a multiclass archetype’s dedication feat if you are already a member of that class.
+    </div>
+
+    
+
+
+</div>
+
+
+</div>
+
+        
+<div class="rule">
+    <h3 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=2130  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=2130%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=2130">Additional Feats</a> 
+    </h3>
+
+    
+
+
+    <div>
+        Some archetypes include a list of “Additional Feats” that appear in other sources. The list includes each feat’s level, which might be different than normal when gained from the archetype. You can take the feat as an archetype feat of that level, meaning it counts toward the number of feats required by the archetype’s dedication feat. When selected this way, a feat that normally has a class’s trait (such as the fighter trait) doesn’t have that class trait.
+    </div>
+
+    
+
+
+</div>
+
+        
+<div class="rule">
+    <h3 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=2131  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=2131%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=2131">Feats that Grant Feats</a> 
+    </h3>
+
+    
+
+
+    <div>
+        Sometimes an archetype feat lets you select another feat, such as a class feat of a lower level. You must always meet any prerequisites of the feat you gain in this way. These always count as only one feat for the purposes of your dedication; for example, taking the cleric archetype’s Basic Dogma feat to gain the Healing Hands class feat counts as only one feat, not two.
+    </div>
+
+    
+
+
+</div>
+
+        
+<div class="rule">
+    <h3 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=2132  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=2132%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=2132">Spellcasting Archetypes</a> 
+    </h3>
+
+    
+
+
+    <div>
+        Some archetypes grant you a substantial degree of spellcasting, albeit delayed compared to a character from a spellcasting class. The spellcasting ability from a spellcasting archetype also allows you to use <a style="text-decoration:underline" href="Actions.aspx-ID=2734.htm" tppabs="https://2e.aonprd.com/Actions.aspx?ID=2734">Cast a Spell</a> activations of items (such as scrolls, staves, and wands).<br /><br />Spellcasting archetypes always grant the ability to cast cantrips in their dedication, and then they have a basic spellcasting feat, an expert spellcasting feat, and a master spellcasting feat. These feats share their name with the archetype; for instance, the druid's master spellcasting feat is called <a style="text-decoration:underline" href="Feats.aspx-ID=5080.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=5080">Master Druid Spellcasting</a>. All spell slots you gain from spellcasting archetypes are subject to the restrictions within the archetype. For instance, the witch archetype allows you to pick a patron when you take its dedication feat. If you pick patron granting occult spells, the archetype then grants you spell slots you can use only to cast occult spells you prepare as a <a style="text-decoration:underline" href="Classes.aspx-ID=38.htm" tppabs="https://2e.aonprd.com/Classes.aspx?ID=38">witch</a>, even if you are a <a style="text-decoration:underline" href="Classes.aspx-ID=32.htm" tppabs="https://2e.aonprd.com/Classes.aspx?ID=32">bard</a> with occult spells in your repertoire. <br /><br /><b>Basic Spellcasting Feat:</b> Usually available at 4th level, these feats grant a 1st-rank spell slot. At 6th level, they grant you a 2nd-rank spell slot, and if you have a spell repertoire, you can select one spell from your repertoire as a signature spell. At 8th level, they grant you a 3rd-rank spell slot. Archetypes refer to these benefits as the “basic spellcasting benefits.”<br /><br /><b>Expert Spellcasting Feat:</b> Typically taken at 12th level, these feats make you an expert in spell attack modifiers and spell DCs and grant you a 4th-rank spell slot. If you have a spell repertoire, you can select a second spell from your repertoire as a signature spell. At 14th level, they grant you a 5th-rank spell slot, and at 16th level, they grant you a 6th-rank spell slot. Archetypes refer to these benefits as the “expert spellcasting benefits.”<br /><br /><b>Master Spellcasting Feat:</b> Usually found at 18th level, these feats make you a master in spell attack modifiers and spell DCs and grant you a 7th-rank spell slot. If you have a spell repertoire, you can select a third spell from your repertoire as a signature spell. At 20th level, they grant you an 8th-rank spell slot. Archetypes refer to these benefits as the “master spellcasting benefits.”
+    </div>
+
+    
+
+
+</div>
+
+        
+<div class="rule">
+    <h3 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=2133  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=2133%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=2133">Special Archetypes</a> 
+    </h3>
+
+    
+
+
+    <div>
+        Some archetype feats in other books have the skill trait, allowing you to take them in place of a skill feat rather than a class feat. A skill feat still counts to satisfy the requirement of the dedication. There are also class archetypes that can modify your class’s abilities as soon as 1st level. You can never have more than one class archetype.
+    </div>
+
+    
+
+
+</div>
+
+        
+<div class="rule">
+    <h3 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=3282  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=3282%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=3282">Alchemical Archetypes</a> 
+    </h3>
+
+    
+
+        <div class="sources"><strong>Source</strong> <a href="Sources.aspx-ID=227.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=227" class="link link-source" target="_blank">Player Core 2 pg. 173</a></div>
+
+    <div>
+        Some archetypes give you the ability to use alchemy in a similar manner to an alchemist and say that you get the advanced alchemy benefits or Quick Alchemy benefits. <br /><br /><b>Advanced Alchemy Benefits:</b> You gain the <a style="text-decoration:underline" href="Feats.aspx-ID=5117.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=5117">Alchemical Crafting</a> feat if you don’t already have it. In addition, you gain advanced alchemy, which allows you to create a certain number of infused alchemical consumables each day during your daily preparations without the normal cost or time expenditure, as described on the <a style="text-decoration:underline" href="Classes.aspx-ID=56.htm" tppabs="https://2e.aonprd.com/Classes.aspx?ID=56">Alchemist</a> page. If you gain advanced alchemy from more than one source, use the highest number of alchemical consumables per day rather than adding them together, but you can make items of any type allowed by any of your advanced alchemy abilities. For instance, <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Feats.aspx?ID=6339  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Feats.aspx?ID=6339%27" tppabs="https://2e.aonprd.com/Feats.aspx?ID=6339">Herbalist Dedication</a> lets you create 4 alchemical consumables with the <a style="text-decoration:underline" href="Traits.aspx-ID=623.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=623">healing</a> trait, and <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Feats.aspx?ID=6382  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Feats.aspx?ID=6382%27" tppabs="https://2e.aonprd.com/Feats.aspx?ID=6382">Poisoner Dedication</a> lets you create four alchemical <a style="text-decoration:underline" href="Traits.aspx-ID=669.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=669">poison</a> consumables. If you had both feats, you could create 4 total consumables, but they could be any combination of healing and poison items. <br /><br /><b>Quick Alchemy Benefits:</b> You gain the Alchemical Crafting feat if you don’t already have it. In addition, you gain the <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Actions.aspx?ID=2801  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Actions.aspx?ID=2801%27" tppabs="https://2e.aonprd.com/Actions.aspx?ID=2801">Quick Alchemy</a> action, which lets you create short-lived alchemical consumables with a special action, and you can create a certain number of versatile vials during your daily preparations to fuel Quick Alchemy. Unless otherwise noted, you can’t regain versatile vials throughout the day the way alchemists can. The individual archetype tells you how many versatile vials you can create each day, and might impose special restrictions or benefits for how you can use them. If you gain versatile vials from more than one source, you use the highest number of vials to determine your maximum rather than adding them together, but you can use the vials for any Quick Alchemy option or other use of versatile vials you possess.
+    </div>
+
+    
+
+
+</div>
+
+        
+<div class="rule">
+    <h3 class="title">
+        <a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=3283  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=3283%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=3283">Temporary Items</a> 
+    </h3>
+
+    
+
+        <div class="sources"><strong>Source</strong> <a href="Sources.aspx-ID=227.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=227" class="link link-source" target="_blank">Player Core 2 pg. 174</a></div>
+
+    <div>
+        Several archetypes allow you to prepare temporary items. Much like the <a style="text-decoration:underline" href="Traits.aspx-ID=797.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=797">infused</a> items created by <a style="text-decoration:underline" href="Classes.aspx-ID=56.htm" tppabs="https://2e.aonprd.com/Classes.aspx?ID=56">alchemists</a>, these temporary items last only a short time before becoming useless. Examples include temporary scrolls created by the <a style="text-decoration:underline" href="Archetypes.aspx-ID=262.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=262">scroll trickster</a> and temporary weapons, armor, or adventuring gear created by the <a style="text-decoration:underline" href="Archetypes.aspx-ID=263.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=263">scrounger</a>.<br /><br />Temporary items are clearly not up to the same quality as other items, so they typically can’t be sold. If an ability doesn’t list how long a temporary item lasts, the item lasts until the next time you make your <a style="text-decoration:underline" href="Rules.aspx-ID=2575.htm" tppabs="https://2e.aonprd.com/Rules.aspx?ID=2575">daily preparations</a>. Any effect created by a temporary item also ends at that time if it hasn’t already (unless it’s a permanent effect).
+    </div>
+
+    
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+<div class="sibling-navigation hide-on-print">
+    <div class="sibling-navigation-previous">
+            <a href="Rules.aspx-ID=2074.htm" tppabs="https://2e.aonprd.com/Rules.aspx?ID=2074" class="link">&lt;&lt; Chapter 2: Ancestries & Backgrounds</a>
+    </div>
+    <div class="sibling-navigation-next">
+            <a href="Rules.aspx-ID=2134.htm" tppabs="https://2e.aonprd.com/Rules.aspx?ID=2134" class="link">Chapter 4: Skills &gt;&gt;</a>
+    </div>
+</div>
+                </div>
+                <div class="clear">
+            </div>
+
+            <div class="footer" id="footer" >
+				<div id="et-al" >
+                    <a href="mailto:nethys@archivesofnethys.com">Site Owner: Rose-Winds LLC (Blake Davis)</a>
+                    <div id="footer-social"><a href="https://twitter.com/NethysArchives"  target="_blank"><span class="k-icon k-i-twitter" style="font-size:2.5rem"></span></a></div>
+				</div>
+                <div style="text-align:center"><script type="text/javascript" async="true" src="adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- Main Archives Page -->
+                    <ins class="adsbygoogle"
+                        style="display:inline-block;width:728px;height:90px"
+                        data-ad-client="ca-pub-4953734518316037"
+                        data-ad-slot="7738185508"></ins>
+                    <script type="text/javascript">
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                </script></div>
+			</div>
+            <nethys-search no-ui="true"></nethys-search>
+        </div>
+    </div>
+
+    <div class="modern-menu-container">
+        <div class="modern-menu">
+            <div class="modern-menu-nethys-logo"></div>
+            <div class="modern-menu-items">
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-player"></i></span>
+                    <span class="modern-menu-item-text">Character Creation +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Ancestries.aspx.htm" tppabs="https://2e.aonprd.com/Ancestries.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-hood"></i></span>
+                        <span class="modern-menu-item-text">Ancestries</span>
+                    </a>
+                    <a class="modern-menu-item" href="Archetypes.aspx.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-nodular"></i></span>
+                        <span class="modern-menu-item-text">Archetypes</span>
+                    </a>
+                    <a class="modern-menu-item" href="Backgrounds.aspx.htm" tppabs="https://2e.aonprd.com/Backgrounds.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-guarded-tower"></i></span>
+                        <span class="modern-menu-item-text">Backgrounds</span>
+                    </a>
+                    <a class="modern-menu-item" href="Classes.aspx.htm" tppabs="https://2e.aonprd.com/Classes.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-player-lift"></i></span>
+                        <span class="modern-menu-item-text">Classes</span>
+                    </a>
+                    <a class="modern-menu-item" href="Skills.aspx.htm" tppabs="https://2e.aonprd.com/Skills.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-hand"></i></span>
+                        <span class="modern-menu-item-text">Skills</span>
+                    </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-torch"></i></span>
+                    <span class="modern-menu-item-text">Equipment +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Equipment.aspx.htm" tppabs="https://2e.aonprd.com/Equipment.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-torch"></i></span>
+                        <span class="modern-menu-item-text">All Equipment</span>
+                    </a>
+                    <a class="modern-menu-item" href="Equipment.aspx-Category=1.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?Category=1">
+                        <span class="modern-menu-item-icon"><i class="ra ra-campfire"></i></span>
+                        <span class="modern-menu-item-text">Adventuring Gear</span>
+                    </a>
+                    <a class="modern-menu-item" href="Equipment.aspx-Category=6.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?Category=6">
+                        <span class="modern-menu-item-icon"><i class="ra ra-round-bottom-flask"></i></span>
+                        <span class="modern-menu-item-text">Alchemical Items</span>
+                    </a>
+                    <a class="modern-menu-item" href="Armor.aspx.htm" tppabs="https://2e.aonprd.com/Armor.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-helmet"></i></span>
+                        <span class="modern-menu-item-text">Armor</span>
+                    </a>
+                    <a class="modern-menu-item" href="Equipment.aspx-Category=21.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?Category=21">
+                        <span class="modern-menu-item-icon"><i class="ra ra-hand"></i></span>
+                        <span class="modern-menu-item-text">Held Items</span>
+                    </a>
+                    <a class="modern-menu-item" href="Equipment.aspx-Category=23.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?Category=23">
+                        <span class="modern-menu-item-icon"><i class="ra ra-rune-stone"></i></span>
+                        <span class="modern-menu-item-text">Runes</span>
+                    </a>
+                    <a class="modern-menu-item" href="Shields.aspx.htm" tppabs="https://2e.aonprd.com/Shields.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-shield"></i></span>
+                        <span class="modern-menu-item-text">Shields</span>
+                    </a>
+                    <a class="modern-menu-item" href="Weapons.aspx.htm" tppabs="https://2e.aonprd.com/Weapons.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-sword"></i></span>
+                        <span class="modern-menu-item-text">Weapons</span>
+                    </a>
+                    <a class="modern-menu-item" href="Equipment.aspx-Category=41.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?Category=41">
+                        <span class="modern-menu-item-icon"><i class="ra ra-crown-of-thorns"></i></span>
+                        <span class="modern-menu-item-text">Worn Items</span>
+                    </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-muscle-up"></i></span>
+                    <span class="modern-menu-item-text">Feats +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Feats.aspx.htm" tppabs="https://2e.aonprd.com/Feats.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-muscle-up"></i></span>
+                        <span class="modern-menu-item-text">All Feats</span>
+                    </a>
+                    <a class="modern-menu-item" href="Feats.aspx-Traits=78.htm" tppabs="https://2e.aonprd.com/Feats.aspx?Traits=78">
+                        <span class="modern-menu-item-icon"><i class="ra ra-aware"></i></span>
+                        <span class="modern-menu-item-text">General</span>
+                    </a>
+                    <a class="modern-menu-item" href="Feats.aspx-Traits=78&NoSkills=True.htm" tppabs="https://2e.aonprd.com/Feats.aspx?Traits=78&NoSkills=True">
+                        <span class="modern-menu-item-icon"><i class="ra ra-player-teleport"></i></span>
+                        <span class="modern-menu-item-text">General (No Skill)</span>
+                    </a>
+                    <a class="modern-menu-item" href="Feats.aspx-Traits=144.htm" tppabs="https://2e.aonprd.com/Feats.aspx?Traits=144">
+                        <span class="modern-menu-item-icon"><i class="ra ra-hand"></i></span>
+                        <span class="modern-menu-item-text">Skill</span>
+                    </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-emerald"></i></span>
+                    <span class="modern-menu-item-text">Game Mastery +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Afflictions.aspx.htm" tppabs="https://2e.aonprd.com/Afflictions.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-biohazard"></i></span>
+                        <span class="modern-menu-item-text">Afflictions</span>
+                    </a>
+                    <a class="modern-menu-item" href="Creatures.aspx.htm" tppabs="https://2e.aonprd.com/Creatures.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-dragon"></i></span>
+                        <span class="modern-menu-item-text">Creatures</span>
+                    </a>
+                    <a class="modern-menu-item" href="Hazards.aspx.htm" tppabs="https://2e.aonprd.com/Hazards.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-bear-trap"></i></span>
+                        <span class="modern-menu-item-text">Hazards</span>
+                    </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-book"></i></span>
+                    <span class="modern-menu-item-text">Rules +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Rules.aspx.htm" tppabs="https://2e.aonprd.com/Rules.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-book"></i></span>
+                        <span class="modern-menu-item-text">All Rules</span>
+                    </a>
+                    <a class="modern-menu-item" href="Actions.aspx.htm" tppabs="https://2e.aonprd.com/Actions.aspx">
+                        <span class="modern-menu-item-icon">
+                            <svg viewBox="0 0 30 30" preserveAspectRatio="xMidYMid meet" stroke="null" style="fill:inherit;">
+                                <path d="M21.55532 8.015l7.07107 7.07106-7.07107 7.07107-7.07107-7.07107zM6.47996 10.07526l4.94975 4.94975-4.94975 4.94974-4.94974-4.94974z"></path>
+                                <path d="M15.00246 1.46211l8.48528 8.48528-7.07107 7.07107L7.9314 8.53318z"></path>
+                                <path d="M16.45563 13.11469l7.07107 7.07107-8.48529 8.48528-7.07106-7.07107z"></path>
+                            </svg>
+                        </span>
+                        <span class="modern-menu-item-text">Actions/Activities</span>
+                    </a>
+                    <a class="modern-menu-item" href="Conditions.aspx.htm" tppabs="https://2e.aonprd.com/Conditions.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-player-pain"></i></span>
+                        <span class="modern-menu-item-text">Conditions</span>
+                    </a>
+                    <a class="modern-menu-item" href="GMScreen.aspx.htm" tppabs="https://2e.aonprd.com/GMScreen.aspx">
+                        <span class="modern-menu-item-icon">
+                            <svg viewBox="0 0 30 30" preserveAspectRatio="xMidYMid meet" stroke="null" style="fill:inherit;">
+                                <path d="M5.72648 12.93117h9.17646v9.50588l-4.58823 2.37647-4.58823-2.37647.00001-9.50588z"></path>
+                                <path d="M5.96178 12.93118h9.17646v9.50587l-4.58823 2.37648-4.58824-2.37648.00001-9.50587z"></path>
+                                <path d="M15.0206 12.93118h9.17646v9.50587l-4.58823 2.37648-4.58824-2.37648.00001-9.50587z"></path>
+                                <path d="M16.70221 8.57471l7.52941-3.38823v16.94117h-7.52941V8.57471zM15.11765 8.69235L5.94118 5.30412v16.94117h9.17647V8.69235z"></path>
+                                <path d="M19.60883 17.75465h-9.17646V8.24878L15.0206 5.8723l4.58824 2.37648-.00001 9.50587z"></path>
+                            </svg>
+                        </span>
+                        <span class="modern-menu-item-text">GM Screen</span>
+                    </a>
+                    <a class="modern-menu-item" href="PlayersGuide.aspx.htm" tppabs="https://2e.aonprd.com/PlayersGuide.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-uncertainty"></i></span>
+                        <span class="modern-menu-item-text">Player's Guide</span>
+                    </a>
+                    <a class="modern-menu-item" href="Traits.aspx.htm" tppabs="https://2e.aonprd.com/Traits.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-uncertainty"></i></span>
+                        <span class="modern-menu-item-text">Traits</span>
+                    </a>
+                    <a class="modern-menu-item" href="Sources.aspx.htm" tppabs="https://2e.aonprd.com/Sources.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-book"></i></span>
+                        <span class="modern-menu-item-text">Sources</span>
+                    </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-sun"></i></span>
+                    <span class="modern-menu-item-text">Setting +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Setting.aspx-Adventure=true.htm" tppabs="https://2e.aonprd.com/Setting.aspx?Adventure=true">
+                        <span class="modern-menu-item-icon"><i class="ra ra-all-for-one"></i></span>
+                        <span class="modern-menu-item-text">Adventures</span>
+                    </a>
+                    <a class="modern-menu-item" href="Articles.aspx.htm" tppabs="https://2e.aonprd.com/Articles.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-book"></i></span>
+                        <span class="modern-menu-item-text">Articles</span>
+                    </a>
+                    <a class="modern-menu-item" href="Deities.aspx.htm" tppabs="https://2e.aonprd.com/Deities.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-angel-wings"></i></span>
+                        <span class="modern-menu-item-text">Deities</span>
+                    </a>
+                    <a class="modern-menu-item" href="Domains.aspx.htm" tppabs="https://2e.aonprd.com/Domains.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-kaleidoscope"></i></span>
+                        <span class="modern-menu-item-text">Domains</span>
+                    </a>
+                    <a class="modern-menu-item" href="Languages.aspx.htm" tppabs="https://2e.aonprd.com/Languages.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-speech-bubbles"></i></span>
+                        <span class="modern-menu-item-text">Languages</span>
+                    </a>
+                    <a class="modern-menu-item" href="Planes.aspx.htm" tppabs="https://2e.aonprd.com/Planes.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-circle-of-circles"></i></span>
+                        <span class="modern-menu-item-text">Planes</span>
+                    </a>
+                        <a class="modern-menu-item" href="Setting.aspx-Group=40.htm" tppabs="https://2e.aonprd.com/Setting.aspx?Group=40">
+                            <span class="modern-menu-item-icon"><i class="ra ra-mountains"></i></span>
+                            <span class="modern-menu-item-text">Scenarios</span>
+                        </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-crystal-wand"></i></span>
+                    <span class="modern-menu-item-text">Spells/Rituals +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Spells.aspx.htm" tppabs="https://2e.aonprd.com/Spells.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-scroll-unfurled"></i></span>
+                        <span class="modern-menu-item-text">All Spells</span>
+                    </a>
+                    <a class="modern-menu-item" href="Spells.aspx-Tradition=1.htm" tppabs="https://2e.aonprd.com/Spells.aspx?Tradition=1">
+                        <span class="modern-menu-item-icon"><i class="ra ra-scroll-unfurled"></i></span>
+                        <span class="modern-menu-item-text">Arcane</span>
+                    </a>
+                    <a class="modern-menu-item" href="Spells.aspx-Tradition=2.htm" tppabs="https://2e.aonprd.com/Spells.aspx?Tradition=2">
+                        <span class="modern-menu-item-icon"><i class="ra ra-ankh"></i></span>
+                        <span class="modern-menu-item-text">Divine</span>
+                    </a>
+                    <a class="modern-menu-item" href="Spells.aspx-Tradition=3.htm" tppabs="https://2e.aonprd.com/Spells.aspx?Tradition=3">
+                        <span class="modern-menu-item-icon"><i class="ra ra-burning-eye"></i></span>
+                        <span class="modern-menu-item-text">Occult</span>
+                    </a>
+                    <a class="modern-menu-item" href="Spells.aspx-Tradition=4.htm" tppabs="https://2e.aonprd.com/Spells.aspx?Tradition=4">
+                        <span class="modern-menu-item-icon"><i class="ra ra-leaf"></i></span>
+                        <span class="modern-menu-item-text">Primal</span>
+                    </a>
+                    <a class="modern-menu-item" href="Spells.aspx-Focus=true.htm" tppabs="https://2e.aonprd.com/Spells.aspx?Focus=true">
+                        <span class="modern-menu-item-icon"><i class="ra ra-aura"></i></span>
+                        <span class="modern-menu-item-text">Focus Spells</span>
+                    </a>
+                    <a class="modern-menu-item" href="Rituals.aspx.htm" tppabs="https://2e.aonprd.com/Rituals.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-rune-stone"></i></span>
+                        <span class="modern-menu-item-text">Rituals</span>
+                    </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-player-thunder-struck"></i></span>
+                    <span class="modern-menu-item-text">Mythic +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Rules.aspx-ID=3320.htm" tppabs="https://2e.aonprd.com/Rules.aspx?ID=3320">
+                        <span class="modern-menu-item-icon"><i class="ra ra-book"></i></span>
+                        <span class="modern-menu-item-text">Mythic Rules</span>
+                    </a>
+                    <a class="modern-menu-item" href="MythicCallings.aspx.htm" tppabs="https://2e.aonprd.com/MythicCallings.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-aware"></i></span>
+                        <span class="modern-menu-item-text">Callings</span>
+                    </a>
+                    <a class="modern-menu-item" href="MythicFeats.aspx.htm" tppabs="https://2e.aonprd.com/MythicFeats.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-muscle-up"></i></span>
+                        <span class="modern-menu-item-text">Mythic Feats</span>
+                    </a>
+                    <a class="modern-menu-item" href="MythicDestinies.aspx.htm" tppabs="https://2e.aonprd.com/MythicDestinies.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-aura"></i></span>
+                        <span class="modern-menu-item-text">Destinies</span>
+                    </a>
+                    <a class="modern-menu-item" href="MythicSpells.aspx.htm" tppabs="https://2e.aonprd.com/MythicSpells.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-lightning-trio"></i></span>
+                        <span class="modern-menu-item-text">Mythic Spells</span>
+                    </a>
+                    <a class="modern-menu-item" href="MythicRituals.aspx.htm" tppabs="https://2e.aonprd.com/MythicRituals.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-fire-ring"></i></span>
+                        <span class="modern-menu-item-text">Mythic Rituals</span>
+                    </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-help"></i></span>
+                    <span class="modern-menu-item-text">About the Archives +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="ContactUs.aspx.htm" tppabs="https://2e.aonprd.com/ContactUs.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-quill-ink"></i></span>
+                        <span class="modern-menu-item-text">Contact Us</span>
+                    </a>
+                    <a class="modern-menu-item" href="Contributors.aspx.htm" tppabs="https://2e.aonprd.com/Contributors.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-double-team"></i></span>
+                        <span class="modern-menu-item-text">Contributors</span>
+                    </a>
+                    <a class="modern-menu-item" href="Licenses.aspx.htm" tppabs="https://2e.aonprd.com/Licenses.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-book"></i></span>
+                        <span class="modern-menu-item-text">Licenses</span>
+                    </a>
+                </div>
+                <a class="modern-menu-item" href="Support.aspx.htm" tppabs="https://2e.aonprd.com/Support.aspx">
+                    <span class="modern-menu-item-icon"><i class="ra ra-diamond"></i></span>
+                    <span class="modern-menu-item-text">Support the Archives</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="shelyns-corner-wrapper">
+        <div class="shelyns-corner-overlay"></div>
+        <div class="shelyns-corner">
+            <div class="shelyns-corner-header">
+                <h2>Shelyn's Corner</h2>
+                <a href="javascript:void(0)" class="close-shelyns-corner">&times;</a>
+            </div>
+            <div class="shelyns-corner-content">
+                <div class="shelyns-corner-settings">
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-remaster">Prefer Pathfinder Remastered Core?</label>
+                        <input type="checkbox" id="shelyns-corner-setting-remaster" checked/>
+                    </div>
+                    <hr />
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-dyslexia">Dyslexia friendly fonts</label>
+                        <input type="checkbox" id="shelyns-corner-setting-dyslexia"/>
+                    </div>
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-sidebar-hover">Expand sidebar on hover</label>
+                        <input type="checkbox" id="shelyns-corner-setting-sidebar-hover" checked/>
+                    </div>
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-sidebar-shrink">Sidebar can be shrunk</label>
+                        <input type="checkbox" id="shelyns-corner-setting-sidebar-shrink" checked/>
+                    </div>
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-page-compress">Reduce page width</label>
+                        <input type="checkbox" id="shelyns-corner-setting-page-compress"/>
+                    </div>
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-modern-menu">Modern menu</label>
+                        <input type="checkbox" id="shelyns-corner-setting-modern-menu" checked/>
+                    </div>
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-link-previews">Link previews</label>
+                        <input type="checkbox" id="shelyns-corner-setting-link-previews" checked/>
+                    </div>
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-link-previews-search">Link previews in search bar</label>
+                        <input type="checkbox" id="shelyns-corner-setting-link-previews-search"/>
+                    </div>
+                </div>
+                <hr />
+                <div class="theme-gallery-wrapper"></div>
+                <hr />
+                <div class="feel-gallery">
+                    <div class="feel-example classic_feel" onclick="setFeel('classic_feel')">
+                        <h1 class="feel-title">Classic Feel</h1>
+                        <h2 class="feel-title">Classic Feel <span class="output"></span></h2>
+                        <h3 class="feel-title">Classic Feel</h3>
+                        <p>The classic look for the Archives of Nethys.</p>
+                        <table>
+                            <thead><td>Table</td></thead>
+                            <tr><td>Data</td></tr>
+                            <tr><td>More Data</td></tr>
+                        </table>
+                    </div>
+                    <div class="feel-example book_feel" onclick="setFeel('book_feel')">
+                        <h1 class="feel-title">Book Feel</h1>
+                        <h2 class="feel-title">Book Feel <span class="output"></span></h2>
+                        <h3 class="feel-title">Book Feel</h3>
+                        <p>An alternative feel, based on the Rulebooks.</p>
+                        <table>
+                            <thead><td>Table</td></thead>
+                            <tr><td>Data</td></tr>
+                            <tr><td>More Data</td></tr>
+                        </table>
+                    </div>
+                    <div class="feel-example round_feel" onclick="setFeel('round_feel')">
+                        <h1 class="feel-title">Round Feel</h1>
+                        <h2 class="feel-title">Round Feel<span class="output"></span></h2>
+                        <h3 class="feel-title">Round Feel</h3>
+                        <p>A rounded, modern look for the archives.</p>
+                        <table>
+                            <thead><td>Table</td></thead>
+                            <tr><td>Data</td></tr>
+                            <tr><td>More Data</td></tr>
+                        </table>
+                    </div>
+                    <div class="feel-example slim_feel" onclick="setFeel('slim_feel')">
+                        <h1 class="feel-title">Slim Feel</h1>
+                        <h2 class="feel-title">Slim Feel<span class="output"></span></h2>
+                        <h3 class="feel-title">Slim Feel</h3>
+                        <p>A variant of the Round feel, more compact.</p>
+                        <table>
+                            <thead><td>Table</td></thead>
+                            <tr><td>Data</td></tr>
+                            <tr><td>More Data</td></tr>
+                        </table>
+                    </div>
+                </div>
+                <hr />
+                <div class="shelyns-corner-settings">
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-orc">More Orc?</label>
+                        <input type="checkbox" id="shelyns-corner-setting-orc" />
+                    </div>
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-boar"><b>BOAR?</b></label>
+                        <input type="checkbox" id="shelyns-corner-setting-boar" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+      var legacyMode = getCore();
+
+      initializeMenuToggle(document.getElementById('minMaxMenu'));
+      initShelynsCorner();
+
+      window.nethysModernMenu.init();
+
+      initializeElasticSearch()
+      var initializeSearch = function (search) {
+          var button;
+          var text;
+          if (search.firstElementChild.classList.contains('search-input'))
+              text = search.firstElementChild;
+          if (search.lastElementChild.classList.contains('search-input'))
+              text = search.lastElementChild;
+          if (search.firstElementChild.classList.contains('search-button'))
+              button = search.firstElementChild;
+          if (search.lastElementChild.classList.contains('search-button'))
+              button = search.lastElementChild;
+
+          if (search) {
+              search.addEventListener('keypress', function (e) {
+                  if (e.keyCode == 13) {
+                      e.preventDefault();
+                      if (text.value != null && text.value.length > 0)
+                          window.location = window.location.origin + "/Search.aspx?q=" + encodeURIComponent(text.value);
+                  }
+              })
+          }
+          if (button) {
+              button.addEventListener('click', function (e) {
+                  window.location = window.location.origin + "/Search.aspx?q=" + encodeURIComponent(text.value);
+              });
+          }
+      };
+      var initializeExpand = function (toggle) {
+          var targetAttrString = "[data-target='" + toggle.dataset.toggle + "']";
+          //target = menu to be collapsed
+          var target = document.querySelector(targetAttrString);
+          toggle.addEventListener('click', function () {
+              var expanded = target.classList.contains('expanded');
+              expanded = !expanded;
+              if (expanded) {
+                  //hide other in group if exists
+                  if (target.dataset.group) {
+                      var otherExpanded = document.querySelector('.expanded[data-group="' + target.dataset.group + '"]');
+                      if (otherExpanded) {
+                          otherExpanded.classList.remove('expanded');
+                      }
+                  }
+                  target.classList.add('expanded');
+              } else {
+                  target.classList.remove('expanded');
+              }
+          });
+      };
+      (function () {
+          //toggles = link that expands/collapses target
+          var toggles = document.querySelectorAll('[data-toggle]');
+          toggles.forEach(function (toggle) {
+              initializeExpand(toggle);
+          });
+          //searches
+          var classicSearch = document.getElementById('classic-search');
+          initializeSearch(classicSearch);
+          var searches = document.querySelectorAll('.search');
+          searches.forEach(function (search) {
+              //initializeSearch(search);
+          });
+      })();
+
+      class NethysSearch extends HTMLElement {
+          constructor() {
+              super();
+
+              this.attachShadow({ mode: 'open' });
+
+              let container = document.createElement('div');
+              this.shadowRoot.append(container);
+
+              let fixedParams = this.getAttribute('fixed-params');
+
+              if (window.location.search.includes('Redirected=1')) {
+                  fixedParams = (fixedParams ? fixedParams + '&' : '') + 'Redirected=1';
+              }
+
+              if (window.location.search.includes('NoRedirect=1')) {
+                  fixedParams = (fixedParams ? fixedParams + '&' : '') + 'NoRedirect=1';
+              }
+
+              let fixedQueryString = this.getAttribute('fixed-query-string') ?? '';
+
+              if (!fixedQueryString.includes('category:item-bonus')) {
+                  fixedQueryString += ' !category:item-bonus';
+              }
+
+              let dataUrl = new URL(elasticUrl);
+              dataUrl.pathname = '/json-data';
+              dataUrl = dataUrl.toString();
+
+              let app = Elm.NethysSearch.init({
+                  node: container,
+                  flags: {
+                      autofocus: (this.getAttribute('autofocus') ?? 'true') == 'true',
+                      browserDateFormat: (new Date(2020, 9, 30).toLocaleDateString(navigator.language))
+                          .replace('2020', 'yyyy')
+                          .replace('10', 'MM')
+                          .replace('30', 'dd'),
+                      currentUrl: location.href,
+                      dataUrl: dataUrl,
+                      defaultQuery: this.getAttribute('default-query'),
+                      elasticUrl: elasticUrl,
+                      fixedParams: fixedParams,
+                      fixedQueryString: fixedQueryString,
+                      loadAll: this.getAttribute('load-all') == 'true',
+                      legacyMode: legacyMode,
+                      localStorage: { ...localStorage },
+                      noUi: this.getAttribute('no-ui') === 'true',
+                      pageDefaultDisplays: localStorage.getItem('page-default-displays'),
+                      pageId: this.getAttribute('page-id'),
+                      randomSeed: Math.floor(Math.random() * 2147483647),
+                      removeFilters: this.getAttribute('remove-filters')?.split(',') ?? [],
+                      resultBaseUrl: "/",
+                      showHeader: false,
+                      showQueryControls: this.getAttribute('show-query-controls') != 'false',
+                      windowHeight: window.innerHeight,
+                      windowWidth: window.innerWidth,
+                  }
+              });
+
+              app.ports.document_focusElement.subscribe(id => {
+                  window.requestAnimationFrame(() => {
+                      let element = this.shadowRoot.getElementById(id);
+
+                      if (element) {
+                          element.focus();
+                      }
+                  });
+              });
+
+              app.ports.document_scrollElementIntoView.subscribe(id => {
+                  window.requestAnimationFrame(() => {
+                      let element = this.shadowRoot.getElementById(id);
+
+                      if (element) {
+                          element.scrollIntoView({block: 'nearest'});
+                      }
+                  });
+              });
+
+              app.ports.localStorage_get && app.ports.localStorage_get.subscribe(function (key) {
+                  let value = localStorage.getItem(key);
+                  app.ports.localStorage_receive.send({ key: key, value: value });
+              });
+
+              app.ports.localStorage_set.subscribe(function (data) {
+                  localStorage.setItem(data.key, data.value);
+              });
+
+              window.addEventListener('popstate', function () {
+                  app.ports.navigation_urlChanged.send(location.href);
+              });
+
+              app.ports.navigation_pushUrl.subscribe(function (url) {
+                  history.pushState([], '', url);
+                  app.ports.navigation_urlChanged.send(location.href);
+              });
+
+              app.ports.navigation_loadUrl.subscribe(function (url) {
+                  location.href = url;
+              });
+
+              document.addEventListener('theme-changed', e => {
+                  app.ports.localStorage_receive.send({ key: 'theme', value: e.detail });
+              });
+
+              document.addEventListener('link-previews-changed', e => {
+                  app.ports.localStorage_receive.send({ key: 'link-previews-enabled', value: e.detail });
+              });
+
+              window.addEventListener('hashchange', e => {
+                  let url = new URL(e.newURL);
+                  if (url.hash != "#results") {
+                      return;
+                  }
+
+                  let results = this.shadowRoot.getElementById("results");
+                  if (!results) {
+                      return;
+                  }
+
+                  results.focus();
+                  results.scrollIntoView();
+                  window.location.hash = '';
+              });
+
+              if (this.getAttribute('no-ui') === 'true') {
+                  let linkPreviewTarget = null;
+
+                  document.addEventListener('mouseover', e => {
+                      const target = e.target.closest('a');
+                      const isSearchBar = e.target.closest('.searchBar') !== null;
+                      if (target && target != linkPreviewTarget) {
+                          let parent = getParentOffset(target.offsetParent);
+                          let data = {
+                              url: target.href,
+                              x: target.offsetLeft + parent.x,
+                              y: target.offsetTop + parent.y,
+                              height: target.offsetHeight,
+                              width: target.offsetWidth,
+                          }
+                          if (isSearchBar) {
+                              if (getFeature('search-bar-previews-enabled', '0') == '0') {
+                                  return;
+                              }
+                              data.x += window.scrollX;
+                              data.y += window.scrollY;
+                          }
+                          app.ports.document_linkEntered.send(data);
+                      } else if (!target && linkPreviewTarget) {
+                          app.ports.document_linkLeft.send("");
+                      }
+
+                      linkPreviewTarget = target;
+                  });
+              }
+
+              function getParentOffset(node) {
+                  if (!node) {
+                      return {
+                          x: 0,
+                          y: 0,
+                      };
+                  }
+                  let parent = getParentOffset(node.offsetParent);
+                  return {
+                      x: node.offsetLeft - node.scrollLeft + parent.x,
+                      y: node.offsetTop - node.scrollTop + parent.y,
+                  };
+              }
+
+              const resizeObserver = new ResizeObserver(entries => {
+                  app.ports.document_receiveBodySize.send({
+                      width: Math.round(entries[0].contentRect.width),
+                      height: Math.round(entries[0].contentRect.height),
+                  });
+              });
+
+              let relativeElement = document.getElementById('page');
+              resizeObserver.observe(relativeElement);
+
+              document.addEventListener('visibilitychange', () => {
+                  if (document.visibilityState === 'visible') {
+                      let rect = relativeElement.getBoundingClientRect();
+
+                      app.ports.document_receiveBodySize.send({
+                          width: Math.round(rect.width),
+                          height: Math.round(rect.height),
+                      });
+                  }
+              });
+          }
+      }
+
+      customElements.define('nethys-search', NethysSearch);
+    </script>
+</body>
+</html>

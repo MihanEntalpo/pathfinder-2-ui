@@ -1,0 +1,12 @@
+# Structure - Traits - Archives of Nethys: Pathfinder 2nd Edition Database
+
+Source HTML: `docs/aonprd/Traits.aspx-ID=704.htm`
+
+There is a Legacy version here.
+
+# [Structure](./Traits.aspx-ID=704.md)
+
+Source [Player Core pg. 462](../Source/Sources.aspx-ID=216.md)
+A spell, item activation, or ability with the structure trait creates a magical building or other structure. The structure must be created on a plot of land free of other structures. The structure adapts to the natural terrain, adopting the structural requirements for being built there. The structure adjusts around small features such as ponds or spires of rock, but it can't be created on water or other nonsolid surfaces. If created on snow, sand dunes, or other soft surfaces with a solid surface underneath, the structure's foundation (if any) reaches the solid ground. If the structure is on a solid but unstable surface, such as a swamp or an area plagued by tremors, roll a DC 3 flat check each day; on a failure, the structure begins to sink or collapse.
+
+The structure doesn't harm creatures within the area when it appears, and it can't be created within a crowd or in a densely populated area. Any creature inadvertently caught inside the structure when it's created ends up unharmed inside the complete structure and always has a clear path of escape. A creature inside the structure when the effect ends isn't harmed, and it lands harmlessly on the ground if it was on an upper level of the structure.

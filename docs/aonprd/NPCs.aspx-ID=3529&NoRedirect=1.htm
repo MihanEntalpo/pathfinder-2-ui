@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script type="text/javascript" async src="js-id=UA-137805785-3.js" tppabs="https://www.googletagmanager.com/gtag/js?id=UA-137805785-3"></script>
+    <script type="text/javascript">
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-137805785-3');
+    </script>
+    <title>
+        Drill Sergeant - NPCs - Archives of Nethys: Pathfinder 2nd Edition Database
+    </title>
+    
+
+    <link href="Layout.css-v=EB6PS6lfpX6G1uwFu7uHcEh6oScz15hZHsXHCNMHzLg.css" tppabs="https://2e.aonprd.com/Styles/Layout.css?v=EB6PS6lfpX6G1uwFu7uHcEh6oScz15hZHsXHCNMHzLg" rel="stylesheet" type="text/css" />
+    <link href="rpg-awesome.min.css" tppabs="https://2e.aonprd.com/Styles/rpg-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="Typography.css-v=3et3D84VeOgcsPaSRyGH6nF1FfjjYgVpcGBq4HyG5vg.css" tppabs="https://2e.aonprd.com/Styles/Typography.css?v=3et3D84VeOgcsPaSRyGH6nF1FfjjYgVpcGBq4HyG5vg" rel="stylesheet" type="text/css" />
+    <link href="themes.css" tppabs="https://2e.aonprd.com/themes" rel="stylesheet" type="text/css" />
+    <link href="SitePrint.css-v=8wGbZVsBHNUZjW78tbaeVtZ_Jlm0ss-wjdlzy_jKlOY.css" tppabs="https://2e.aonprd.com/Styles/SitePrint.css?v=8wGbZVsBHNUZjW78tbaeVtZ_Jlm0ss-wjdlzy_jKlOY" rel="stylesheet" type="text/css" media="print" />
+
+    <link href="css-family=Julee.css" tppabs="https://fonts.googleapis.com/css?family=Julee" rel="stylesheet" type="text/css" />
+    <link href="css-family=Andika.css" tppabs="https://fonts.googleapis.com/css?family=Andika" rel="stylesheet" type="text/css" />
+    <link href="css2-family=Lato-ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap.css" tppabs="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="search" type="application/opensearchdescription+xml" title="Search the Archives of Nethys" href="https://2e.aonprd.com/opensearch.xml" />
+
+
+    <script type="text/javascript">
+        window.elasticUrl = 'https://elasticsearch.aonprd.com/aon-test';
+    </script>
+
+        <script src="nethys-search-9f2620f2bfdf2014fd0b0c157f03248921d02563.js" tppabs="https://elasticsearch.aonprd.com/js/nethys-search-9f2620f2bfdf2014fd0b0c157f03248921d02563.js"></script>
+
+    <script
+      src="jquery-3.6.0.min.js" tppabs="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"></script>
+    <script src="semantic.min.js" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/semantic.min.js" integrity="sha512-5cguXwRllb+6bcc2pogwIeQmQPXEzn2ddsqAexIBhh7FO1z5Hkek1J9mrK2+rmZCTU6b6pERxI7acnp1MpAg4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="search.min.css" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/search.min.css" integrity="sha512-1xyHOORqcJ80bareQ2TWmQE+WZ/TlsqjqILbLHeM3Urtw720aiFXE/N+Xm4MAJpcn42e3k4Z8ZpqZfsA2VVyNw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="transition.min.css" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/transition.min.css" integrity="sha512-zsEyDFFD+yPxc7Kq8c3byp2H3tfx4GgT4wvCDzDGiOlkk2hl454XOHzHfN/OsPilopfPEbRzVJ0wxlIa/9BOyg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="transition.min.js" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/transition.min.js" integrity="sha512-zPx44KLp+BP6OKcCIPQibTiLz0WAc2s9syi+7wOT+Ql2D1/kAX8y7K1rz8vuTtrhRS2dMZ7zVS5dQoHTvkXJCA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="icon.min.css" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/icon.min.css" integrity="sha512-cKaYuptKrUbQ4/r0qmxhpQDjPWb7/SYN6gQRYMOQqPJ2+S4Bmb1zZ1/SAuszp+E6yoakjQFpM+rAzuw+EwR+xw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="input.min.css" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/input.min.css" integrity="sha512-6+BQOwPqqk5AianROXkI3LKgnLcjZbEV3KbhO++sKXemybg0FugrODki+nBsg9FipqlKSMd4ppnpkqC6VEpFiA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="button.min.css" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/button.min.css" integrity="sha512-XMrByQiBPJwH350YvTKR/XTY1fOQX4lSQqeft++WcyY39l0eKoPXOgx1OJHEODhHCW1FfvVl/Bdr90QE08FG+Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="dropdown.min.css" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/dropdown.min.css" integrity="sha512-hDsG55Tp5IgyWKbBbNhOo0+bLTdIVVAGW09a7IFvgIkKg/xrjOdOA2lEPFkkgJQ3NuB7DxDFlSHX7/JYvFLYfA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="dropdown.min.js" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/dropdown.min.js" integrity="sha512-1SzBIESNYM3Y8JkQrS1Mu2dPnPaAqeQkCV9KfDA2eYXBEzdkhHWyqTP6P0OAsh1RSC4cDvr8DmYVTmb/YWGYpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="showdown.min.js" tppabs="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js" integrity="sha512-LhccdVNGe2QMEfI3x4DVV3ckMRe36TfydKss6mJpdHjNFiV07dFpS2xzeZedptKZrwxfICJpez09iNioiSZ3hA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="lodash.min.js" tppabs="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="modernMenu.js" tppabs="https://2e.aonprd.com/Scripts/modernMenu.js"></script>
+
+    <script type="text/javascript" src="tableState.js" tppabs="https://2e.aonprd.com/Scripts/tableState.js"></script>
+    <script type="text/javascript" src="drawerHandlers.js" tppabs="https://2e.aonprd.com/Scripts/drawerHandlers.js"></script>
+    <script type="text/javascript" src="hideFilter.js" tppabs="https://2e.aonprd.com/Scripts/hideFilter.js"></script>
+    <script type="text/javascript" src="searchBar.js" tppabs="https://2e.aonprd.com/Scripts/searchBar.js"></script>
+
+    <script type="text/javascript" src="previewModal.js" tppabs="https://2e.aonprd.com/Scripts/previewModal.js"></script>
+    
+    
+        <meta name="keywords" content="Archives, Nethys, Wiki, Archives of Nethys, Pathfinder, Official, AoN, AoNPRD, PRD, PFSRD, 2E, 2nd Edition, NPCs, Drill Sergeant" />
+        <meta name="description" content="Maintaining discipline is of the utmost importance when conducting a military campaign. Often elevated from veteran soldiers, drill sergeants are responsible for training common troops, ensuring they can follow orders and fight well in the thick of battle. Though drill sergeants can be brash and hard-nosed, harsh discipline is often crucial to maintaining order and keeping soldiers alive." />
+
+
+    <meta charset="utf-8"/>
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="darkreader-lock" />
+    <style type="text/css">        
+        .nav-parent > * {
+            display: block;
+        }
+        .mobile-menu-toggle{
+            display:none;
+        }
+        #main-menu .nav-parent > .brand > .title{
+            display: none;
+        }
+    </style>
+</head>
+<body class="dark aon_dark_theme classic_feel">
+    <div id="wrapper" class="clearfix">
+
+
+        <script type="text/javascript" src="toggle.js" tppabs="https://2e.aonprd.com/Scripts/toggle.js"></script>
+
+
+        <div class="page clearfix" id="page">
+            <div class="header">
+                <div class="clear hideSkiplink" id="main-menu" >
+                    <a class="mobile-menu-toggle" id="mobile-menu-toggle" href="javascript:void(0);" data-toggle="mobile">|||</a>
+                    <div class="splash"></div>
+                    <div class="nav-parent" id="nav-parent">
+                        <a href="index.htm" tppabs="https://2e.aonprd.com/" style="font-size:larger" class="brand">
+                            <span class="home">
+                                Home
+                            </span>
+                        </a>
+                        <a href="Actions.aspx.htm" tppabs="https://2e.aonprd.com/Actions.aspx">Actions/Activities</a>
+                        <a href="Afflictions.aspx.htm" tppabs="https://2e.aonprd.com/Afflictions.aspx">Afflictions</a>
+                        <a href="Ancestries.aspx.htm" tppabs="https://2e.aonprd.com/Ancestries.aspx">Ancestries</a>
+                        <a href="Archetypes.aspx.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx">Archetypes</a>
+                        <a href="Backgrounds.aspx.htm" tppabs="https://2e.aonprd.com/Backgrounds.aspx">Backgrounds</a>
+                        <a href="Classes.aspx.htm" tppabs="https://2e.aonprd.com/Classes.aspx">Classes</a>
+                        <a href="Conditions.aspx.htm" tppabs="https://2e.aonprd.com/Conditions.aspx">Conditions</a>
+                        <a href="Creatures.aspx.htm" tppabs="https://2e.aonprd.com/Creatures.aspx">Creatures</a>
+                        <a href="Equipment.aspx.htm" tppabs="https://2e.aonprd.com/Equipment.aspx">Equipment</a>
+                        <a href="Feats.aspx.htm" tppabs="https://2e.aonprd.com/Feats.aspx">Feats</a>
+                        <a href="Hazards.aspx.htm" tppabs="https://2e.aonprd.com/Hazards.aspx">Hazards</a>
+                        <a href="MythicCallings.aspx.htm" tppabs="https://2e.aonprd.com/MythicCallings.aspx">Mythic</a>
+                        <a href="Rules.aspx.htm" tppabs="https://2e.aonprd.com/Rules.aspx">Rules</a>
+                        <a href="Setting.aspx.htm" tppabs="https://2e.aonprd.com/Setting.aspx">Setting</a>
+                        <a href="Skills.aspx.htm" tppabs="https://2e.aonprd.com/Skills.aspx">Skills</a>
+                        <a href="Spells.aspx.htm" tppabs="https://2e.aonprd.com/Spells.aspx">Spells/Rituals</a>
+                        <a href="Traits.aspx.htm" tppabs="https://2e.aonprd.com/Traits.aspx">Traits</a>
+                        <img src="heading_flourish.png" tppabs="https://2e.aonprd.com/Images/heading_flourish.png" alt="flourish" class="flourish" />
+                        <a href="Licenses.aspx.htm" tppabs="https://2e.aonprd.com/Licenses.aspx">Licenses</a>
+                        <a href="Sources.aspx.htm" tppabs="https://2e.aonprd.com/Sources.aspx">Sources</a>
+                        <img src="heading_flourish.png" tppabs="https://2e.aonprd.com/Images/heading_flourish.png" alt="flourish" class="flourish" />
+                        <a href="ContactUs.aspx.htm" tppabs="https://2e.aonprd.com/ContactUs.aspx">Contact Us</a>
+                        <a href="Contributors.aspx.htm" tppabs="https://2e.aonprd.com/Contributors.aspx">Contributors</a>
+                        <a href="Support.aspx.htm" tppabs="https://2e.aonprd.com/Support.aspx">Support the Archives</a>
+                        <div id="classic-search" class="search">
+                            <input type="text" class="search-input" placeholder="Search" />
+                            <button type="button" class="search-button">
+                                <svg class="Icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="height: 24px; width: 24px; fill: "><path d="M0 0h512v512H0z" fill="transparent" fill-opacity="0"></path><g class="" transform="translate(0,0)" style="touch-action: none;"><path d="M333.78 20.188c-39.97 0-79.96 15.212-110.405 45.656-58.667 58.667-60.796 152.72-6.406 213.97l-15.782 15.748 13.25 13.25 15.75-15.78c61.248 54.39 155.3 52.26 213.968-6.407 60.887-60.886 60.888-159.894 0-220.78C413.713 35.4 373.753 20.187 333.78 20.187zm0 18.562c35.15 0 70.285 13.44 97.158 40.313 53.745 53.745 53.744 140.6 0 194.343-51.526 51.526-133.46 53.643-187.5 6.375l.218-.217c-2.35-2.05-4.668-4.17-6.906-6.407-2.207-2.206-4.288-4.496-6.313-6.812l-.218.22c-47.27-54.04-45.152-135.976 6.374-187.502C263.467 52.19 298.63 38.75 333.78 38.75zm0 18.813c-30.31 0-60.63 11.6-83.81 34.78-46.362 46.362-46.362 121.234 0 167.594 10.14 10.142 21.632 18.077 33.905 23.782-24.91-19.087-40.97-49.133-40.97-82.94 0-15.323 3.292-29.888 9.22-43-4.165 20.485.44 40.88 14.47 54.907 24.583 24.585 68.744 20.318 98.624-9.562 29.88-29.88 34.146-74.04 9.56-98.625-2.375-2.376-4.943-4.473-7.655-6.313 45.13 8.648 79.954 46.345 84.25 92.876 4.44-35.07-6.82-71.726-33.813-98.72-23.18-23.18-53.47-34.78-83.78-34.78zM176.907 297.688L42.094 432.5l34.562 34.563L211.47 332.25l-34.564-34.563zM40 456.813L24 472.78 37.22 486l15.968-16L40 456.812z" fill-opacity="1"></path></g></svg>
+                            </button>
+                        </div>       
+                            <a id="minMaxMenu" onclick='setMenuState("min")'>Maximize Menu</a>
+                    </div>
+                    
+                    <div class="nav-parent expand-collapse" id="mobile-nav-parent" data-target="mobile">
+                        <a href="index.htm" tppabs="https://2e.aonprd.com/" style="font-size:larger" class="brand">
+                            <span class="title">
+                                Archives of Nethys
+                            </span>
+                        </a>
+                        <a href="Afflictions.aspx.htm" tppabs="https://2e.aonprd.com/Afflictions.aspx">Afflictions</a>
+                        <a href="javascript:void(0);" data-toggle="cc">Character Creation +</a>
+                        <div class="expand-collapse expand-collapse-group hide-when-collapsed expanded" data-target="cc" data-group="menus">
+                            <a href="Ancestries.aspx.htm" tppabs="https://2e.aonprd.com/Ancestries.aspx">Ancestries</a>
+                            <a href="Archetypes.aspx.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx">Archetypes</a>
+                            <a href="Backgrounds.aspx.htm" tppabs="https://2e.aonprd.com/Backgrounds.aspx">Backgrounds</a>
+                            <a href="Classes.aspx.htm" tppabs="https://2e.aonprd.com/Classes.aspx">Classes</a>
+                            <a href="Feats.aspx.htm" tppabs="https://2e.aonprd.com/Feats.aspx">Feats</a>
+                            <a href="Skills.aspx.htm" tppabs="https://2e.aonprd.com/Skills.aspx">Skills</a>
+                        </div>
+                        <a href="Creatures.aspx.htm" tppabs="https://2e.aonprd.com/Creatures.aspx">Creatures</a>
+                        <a href="Equipment.aspx.htm" tppabs="https://2e.aonprd.com/Equipment.aspx">Equipment</a>
+                        <a href="Setting.aspx.htm" tppabs="https://2e.aonprd.com/Setting.aspx">Setting</a>
+                        <a href="Spells.aspx.htm" tppabs="https://2e.aonprd.com/Spells.aspx">Spells/Rituals</a>
+                        <a href="javascript:void(0);" data-toggle="rules">Rules +</a>
+                        <div class="expand-collapse expand-collapse-group hide-when-collapsed" data-target="rules" data-group="menus">
+                            <a href="Actions.aspx.htm" tppabs="https://2e.aonprd.com/Actions.aspx">Actions/Activities</a>
+                            <a href="Conditions.aspx.htm" tppabs="https://2e.aonprd.com/Conditions.aspx">Conditions</a>
+                            <a href="Rules.aspx.htm" tppabs="https://2e.aonprd.com/Rules.aspx">Rules</a>
+                            <a href="Traits.aspx.htm" tppabs="https://2e.aonprd.com/Traits.aspx">Traits</a>
+                        </div>
+                        <a href="Hazards.aspx.htm" tppabs="https://2e.aonprd.com/Hazards.aspx">Hazards</a>
+                        <a href="javascript:void(0);" data-toggle="mythic" data-group="">Mythic +</a>
+                        <div class="expand-collapse expand-collapse-group hide-when-collapsed" data-target="mythic" data-group="menus">
+                            <a href="Rules.aspx-ID=3320.htm" tppabs="https://2e.aonprd.com/Rules.aspx?ID=3320">Mythic Rules</a>
+                            <a href="MythicCallings.aspx.htm" tppabs="https://2e.aonprd.com/MythicCallings.aspx">Callings</a>
+                            <a href="MythicFeats.aspx.htm" tppabs="https://2e.aonprd.com/MythicFeats.aspx">Mythic Feats</a>
+                            <a href="MythicDestinies.aspx.htm" tppabs="https://2e.aonprd.com/MythicDestinies.aspx">Destinies</a>
+                            <a href="MythicSpells.aspx.htm" tppabs="https://2e.aonprd.com/MythicSpells.aspx">Mythic Spells</a>
+                            <a href="MythicRituals.aspx.htm" tppabs="https://2e.aonprd.com/MythicRituals.aspx">Mythic Rituals</a>
+                        </div>
+                        <a href="Sources.aspx.htm" tppabs="https://2e.aonprd.com/Sources.aspx">Sources</a>
+                        <a href="javascript:void(0);" data-toggle="about" data-group="">About the Archives +</a>
+                        <div class="expand-collapse expand-collapse-group hide-when-collapsed" data-target="about" data-group="menus">
+                            <a href="Licenses.aspx.htm" tppabs="https://2e.aonprd.com/Licenses.aspx">Licenses</a>
+                            <a href="ContactUs.aspx.htm" tppabs="https://2e.aonprd.com/ContactUs.aspx">Contact Us</a>
+                            <a href="Contributors.aspx.htm" tppabs="https://2e.aonprd.com/Contributors.aspx">Contributors</a>
+                            <a href="Support.aspx.htm" tppabs="https://2e.aonprd.com/Support.aspx">Support the Archives</a>
+                        </div>
+                        <div id="mobileSearch" class="ui fluid search">
+                            <div class="ui action icon input" style="width:90%;height:100%">
+                                <input class="prompt" type="text" placeholder="Search..."/>
+                                <button class="ui icon button" onclick="jumpToSearch('#mobileSearch')">
+                                    <i class="search icon"></i>
+                                </button>
+                            </div>
+                            <div class="results"></div>
+                        </div>
+                        <a href="index.htm" tppabs="https://2e.aonprd.com/">
+                                <img src="PF2Logo_Nethys_400_Selected.png" tppabs="https://2e.aonprd.com/Images/PF2Logo_Nethys_400_Selected.png" alt="Pathfinder RPG (2nd Edition)" />
+                            </a>
+                        <a href="https://www.aonprd.com/"  >
+                            <img src="PF1Logo_Nethys_200.png" tppabs="https://2e.aonprd.com/Images/PF1Logo_Nethys_200.png" alt="Pathfinder RPG (1st Edition)" />
+                        </a> 
+                        <a href="https://www.aonsrd.com/" >
+                            <img src="SFLogo_Nethys_200.png" tppabs="https://2e.aonprd.com/Images/SFLogo_Nethys_200.png" alt="Starfinder RPG (1st Edition)" />
+                        </a>
+                        <a href="https://2e.aonsrd.com/" >
+                            <img src="starfinder_2_logo_200.webp" tppabs="https://2e.aonprd.com/Images/starfinder_2_logo_200.webp" alt="Starfinder RPG (2nd Edition)" />
+                        </a>
+                    </div>
+                </div>
+                <div class="theme-toggle-wrapper" title="Toggle Theme">
+                    <div class="theme-open" title="Change Theme"><i class="ra ra-flowers"></i></div>
+                </div>
+            </div>
+
+            <div class="new-navbar">
+                <div class="drawer-toggle" title="Expand Sidebar" onclick="switchDrawer()">
+                    <img src="NethysMask.png" tppabs="https://2e.aonprd.com/Images/NethysMask.png" alt="&#xe030" /></div>
+                    <a class="title" href="index.htm" tppabs="https://2e.aonprd.com/">Archives of Nethys</a>
+                    <div class="searchBar">
+                        <div id="desktopSearch" class="ui fluid search">
+                            <div class="ui action icon input" style="width:100%;height:100%">
+                                <input class="prompt" type="text" placeholder="Search..."/>
+                                <button class="ui icon button" onclick="jumpToSearch('#desktopSearch')">
+                                        <i class="search icon"></i>
+                                    </button>
+                            </div>
+                            <div class="results"></div>
+                        </div>                   
+                    </div>
+                    <div class="game-selector">
+                        <div class="game-selector-options">
+                            <a class="game-selector-option" href="https://aonprd.com/" >
+                                <img src="PF1Logo_Nethys.png" tppabs="https://2e.aonprd.com/Images/PF1Logo_Nethys.png" alt="Pathfinder 1e" />
+                            </a>
+                            <a class="game-selector-option" href="https://aonsrd.com/" >
+                                <img src="SFLogo_Nethys.png" tppabs="https://2e.aonprd.com/Images/SFLogo_Nethys.png" alt="Starfinder 1e" />
+                            </a>
+                            <a class="game-selector-option" href="https://2e.aonsrd.com/" >
+                                <img src="starfinder_2_logo.webp" tppabs="https://2e.aonprd.com/Images/starfinder_2_logo.webp" alt="Starfinder 2e" />
+                            </a>
+                        </div>
+                        <img class="game-selector-current" src="PF2Logo_Nethys.png" tppabs="https://2e.aonprd.com/Images/PF2Logo_Nethys.png" alt="Pathfinder 2e" />
+                    </div>
+                    <div class="theme-open" title="Change Theme"><i class="ra ra-flowers"></i></div>
+            </div>
+
+            <div class="main-wrapper" id="main-wrapper">
+                <div class="menutitle">
+                    <h1>
+                        Archives of Nethys
+                    </h1>
+                    <h2 class="game-titles">
+                        <a href="https://www.aonprd.com/"  >
+                            <img src="PF1Logo_Nethys.png" tppabs="https://2e.aonprd.com/Images/PF1Logo_Nethys.png" alt="Pathfinder RPG (1st Edition)" />
+                        </a> 
+                        <a href="index.htm" tppabs="https://2e.aonprd.com/" class="selected">
+                            <img src="PF2Logo_Nethys-Selected.png" tppabs="https://2e.aonprd.com/Images/PF2Logo_Nethys-Selected.png" alt="Pathfinder RPG (2nd Edition)" />
+                        </a>
+                        <a href="https://www.aonsrd.com/" >
+                            <img src="SFLogo_Nethys.png" tppabs="https://2e.aonprd.com/Images/SFLogo_Nethys.png" alt="Starfinder RPG (1st Edition)" />
+                        </a>
+                        <a href="https://2e.aonsrd.com/" >
+                            <img src="starfinder_2_logo.webp" tppabs="https://2e.aonprd.com/Images/starfinder_2_logo.webp" alt="Starfinder RPG (2nd Edition)" />
+                        </a>
+                    </h2>
+                </div>
+                <div class="main" id="main">
+                    
+
+<span class="hide-on-print"><h1 style="text-align:center"><a href="Creatures.aspx.htm" tppabs="https://2e.aonprd.com/Creatures.aspx">All Creatures</a><br /><a href="MonsterAbilities.aspx.htm" tppabs="https://2e.aonprd.com/MonsterAbilities.aspx">Abilities</a> | <a href="Monsters.aspx.htm" tppabs="https://2e.aonprd.com/Monsters.aspx">Monsters</a> | <u><a href="NPCs.aspx.htm" tppabs="https://2e.aonprd.com/NPCs.aspx">NPCs</a></u><hr /><a href="NPCs.aspx.htm" tppabs="https://2e.aonprd.com/NPCs.aspx">All</a> | <a href="javascript:if(confirm(%27https://2e.aonprd.com/MonsterFamilies.aspx?Type=N  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/MonsterFamilies.aspx?Type=N%27" tppabs="https://2e.aonprd.com/MonsterFamilies.aspx?Type=N">Families</a> | <a href="javascript:if(confirm(%27https://2e.aonprd.com/NPCThemeTemplates.aspx  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/NPCThemeTemplates.aspx%27" tppabs="https://2e.aonprd.com/NPCThemeTemplates.aspx">Theme Templates</a><hr /><a href="javascript:if(confirm(%27https://2e.aonprd.com/NPCs.aspx?Letter=A  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/NPCs.aspx?Letter=A%27" tppabs="https://2e.aonprd.com/NPCs.aspx?Letter=A">A</a> | <a href="javascript:if(confirm(%27https://2e.aonprd.com/NPCs.aspx?Letter=B  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/NPCs.aspx?Letter=B%27" tppabs="https://2e.aonprd.com/NPCs.aspx?Letter=B">B</a> | <a href="javascript:if(confirm(%27https://2e.aonprd.com/NPCs.aspx?Letter=C  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/NPCs.aspx?Letter=C%27" tppabs="https://2e.aonprd.com/NPCs.aspx?Letter=C">C</a> | <a href="javascript:if(confirm(%27https://2e.aonprd.com/NPCs.aspx?Letter=D  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/NPCs.aspx?Letter=D%27" tppabs="https://2e.aonprd.com/NPCs.aspx?Letter=D">D</a> | <a href="javascript:if(confirm(%27https://2e.aonprd.com/NPCs.aspx?Letter=E  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/NPCs.aspx?Letter=E%27" tppabs="https://2e.aonprd.com/NPCs.aspx?Letter=E">E</a> | <a href="javascript:if(confirm(%27https://2e.aonprd.com/NPCs.aspx?Letter=F  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/NPCs.aspx?Letter=F%27" tppabs="https://2e.aonprd.com/NPCs.aspx?Letter=F">F</a> | <a href="javascript:if(confirm(%27https://2e.aonprd.com/NPCs.aspx?Letter=G  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/NPCs.aspx?Letter=G%27" tppabs="https://2e.aonprd.com/NPCs.aspx?Letter=G">G</a> | <a href="javascript:if(confirm(%27https://2e.aonprd.com/NPCs.aspx?Letter=H  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/NPCs.aspx?Letter=H%27" tppabs="https://2e.aonprd.com/NPCs.aspx?Letter=H">H</a> | <a href="javascript:if(confirm(%27https://2e.aonprd.com/NPCs.aspx?Letter=I  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/NPCs.aspx?Letter=I%27" tppabs="https://2e.aonprd.com/NPCs.aspx?Letter=I">I</a> | <a href="javascript:if(confirm(%27https://2e.aonprd.com/NPCs.aspx?Letter=J  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/NPCs.aspx?Letter=J%27" tppabs="https://2e.aonprd.com/NPCs.aspx?Letter=J">J</a> | <a href="javascript:if(confirm(%27https://2e.aonprd.com/NPCs.aspx?Letter=K  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/NPCs.aspx?Letter=K%27" tppabs="https://2e.aonprd.com/NPCs.aspx?Letter=K">K</a> | <a href="javascript:if(confirm(%27https://2e.aonprd.com/NPCs.aspx?Letter=L  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/NPCs.aspx?Letter=L%27" tppabs="https://2e.aonprd.com/NPCs.aspx?Letter=L">L</a> | <a href="javascript:if(confirm(%27https://2e.aonprd.com/NPCs.aspx?Letter=M  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/NPCs.aspx?Letter=M%27" tppabs="https://2e.aonprd.com/NPCs.aspx?Letter=M">M</a> | <a href="javascript:if(confirm(%27https://2e.aonprd.com/NPCs.aspx?Letter=N  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/NPCs.aspx?Letter=N%27" tppabs="https://2e.aonprd.com/NPCs.aspx?Letter=N">N</a> | <a href="javascript:if(confirm(%27https://2e.aonprd.com/NPCs.aspx?Letter=O  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/NPCs.aspx?Letter=O%27" tppabs="https://2e.aonprd.com/NPCs.aspx?Letter=O">O</a> | <a href="javascript:if(confirm(%27https://2e.aonprd.com/NPCs.aspx?Letter=P  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/NPCs.aspx?Letter=P%27" tppabs="https://2e.aonprd.com/NPCs.aspx?Letter=P">P</a> | <a href="javascript:if(confirm(%27https://2e.aonprd.com/NPCs.aspx?Letter=R  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/NPCs.aspx?Letter=R%27" tppabs="https://2e.aonprd.com/NPCs.aspx?Letter=R">R</a> | <a href="javascript:if(confirm(%27https://2e.aonprd.com/NPCs.aspx?Letter=S  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/NPCs.aspx?Letter=S%27" tppabs="https://2e.aonprd.com/NPCs.aspx?Letter=S">S</a> | <a href="javascript:if(confirm(%27https://2e.aonprd.com/NPCs.aspx?Letter=T  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/NPCs.aspx?Letter=T%27" tppabs="https://2e.aonprd.com/NPCs.aspx?Letter=T">T</a> | <a href="javascript:if(confirm(%27https://2e.aonprd.com/NPCs.aspx?Letter=U  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/NPCs.aspx?Letter=U%27" tppabs="https://2e.aonprd.com/NPCs.aspx?Letter=U">U</a> | <a href="javascript:if(confirm(%27https://2e.aonprd.com/NPCs.aspx?Letter=V  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/NPCs.aspx?Letter=V%27" tppabs="https://2e.aonprd.com/NPCs.aspx?Letter=V">V</a> | <a href="javascript:if(confirm(%27https://2e.aonprd.com/NPCs.aspx?Letter=W  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/NPCs.aspx?Letter=W%27" tppabs="https://2e.aonprd.com/NPCs.aspx?Letter=W">W</a> | <a href="javascript:if(confirm(%27https://2e.aonprd.com/NPCs.aspx?Letter=X  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/NPCs.aspx?Letter=X%27" tppabs="https://2e.aonprd.com/NPCs.aspx?Letter=X">X</a> | <a href="javascript:if(confirm(%27https://2e.aonprd.com/NPCs.aspx?Letter=Z  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/NPCs.aspx?Letter=Z%27" tppabs="https://2e.aonprd.com/NPCs.aspx?Letter=Z">Z</a> </h1></span>
+<span class="hide-on-print"></span>
+
+    <hr class="hide-on-print" />
+
+<span></span>
+<span></span>
+<span><span class="monster-page"><span class="hide-on-print"><h1 class="title">Drill Sergeant</h1>Maintaining discipline is of the utmost importance when conducting a military campaign. Often elevated from veteran soldiers, drill sergeants are responsible for training common troops, ensuring they can follow orders and fight well in the thick of battle. Though drill sergeants can be brash and hard-nosed, harsh discipline is often crucial to maintaining order and keeping soldiers alive.</span><h2 class="hide-on-print"><a href="javascript:if(confirm(%27https://2e.aonprd.com/NPCs.aspx?ID=3529&Elite=true&NoRedirect=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/NPCs.aspx?ID=3529&Elite=true&NoRedirect=1%27" tppabs="https://2e.aonprd.com/NPCs.aspx?ID=3529&Elite=true&NoRedirect=1"><b>Elite</b></a> | <a href="NPCs.aspx-ID=3529&NoRedirect=1.htm" tppabs="https://2e.aonprd.com/NPCs.aspx?ID=3529&NoRedirect=1"><u><b>Normal</b></a></u> | <a href="javascript:if(confirm(%27https://2e.aonprd.com/NPCs.aspx?ID=3529&Weak=true&NoRedirect=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/NPCs.aspx?ID=3529&Weak=true&NoRedirect=1%27" tppabs="https://2e.aonprd.com/NPCs.aspx?ID=3529&Weak=true&NoRedirect=1"><b>Weak</b></a><br /><a class="monster-pwl-link" href="javascript:if(confirm(%27https://2e.aonprd.com/NPCs.aspx?ID=3529&PWL=true&NoRedirect=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/NPCs.aspx?ID=3529&PWL=true&NoRedirect=1%27" tppabs="https://2e.aonprd.com/NPCs.aspx?ID=3529&PWL=true&NoRedirect=1"><b>Proficiency without Level</b></a></h2><h3 class="hide-on-print print-stat-block"><a href="javascript:print()"><u>Print Stat Block</u></a></h3><h1 class="title monster-statblock-name"><a href="javascript:if(confirm(%27https://2e.aonprd.com/NPCs.aspx?ID=3529  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/NPCs.aspx?ID=3529%27" tppabs="https://2e.aonprd.com/NPCs.aspx?ID=3529">Drill Sergeant</a><span style="margin-left:auto; margin-right:0">Creature 8</span></h1><a class="monster-art-link" target="_blank" href="javascript:if(confirm(%27https://2e.aonprd.com/Images/Monsters/Drill_Sergeant.webp  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Images/Monsters/Drill_Sergeant.webp%27" tppabs="https://2e.aonprd.com/Images/Monsters/Drill_Sergeant.webp"><img class="thumbnail" src="Drill_Sergeant.webp" tppabs="https://2e.aonprd.com/Images/Monsters/Drill_Sergeant.webp"></a><span class="traitsize"><a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=2359&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=2359&Redirected=1%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=445">Medium</a></span><span style="letter-spacing: -.4em">&nbsp;</span><span class="trait"><a href="Traits.aspx-ID=627.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=627">Human</a></span><span style="letter-spacing: -.4em">&nbsp;</span><span class="trait"><a href="Traits.aspx-ID=628.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=628">Humanoid</a></span><span style="letter-spacing: -.4em">&nbsp;</span><br /><b>Source</b> <a href="javascript:if(confirm(%27https://2e.aonprd.com/Sources.aspx?ID=236  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Sources.aspx?ID=236%27" tppabs="https://2e.aonprd.com/Sources.aspx?ID=236" target="_blank" class="external-link"><i>NPC Core pg. 93</i></a><br /><b><u><a href="Rules.aspx-ID=2638.htm" tppabs="https://2e.aonprd.com/Rules.aspx?ID=2638">Recall Knowledge</a></u></b> DC 24 &bull; Humanoid (<u><a href="Skills.aspx-ID=47.htm" tppabs="https://2e.aonprd.com/Skills.aspx?ID=47">Society</a></u>)<br /><b>Perception</b> +16<br /><b>Languages</b> <a href="Languages.aspx-ID=1.htm" tppabs="https://2e.aonprd.com/Languages.aspx?ID=1"><u>Common</a></u><br /><b>Skills</b> <a href="Skills.aspx-ID=36.htm" tppabs="https://2e.aonprd.com/Skills.aspx?ID=36"><u>Athletics</a></u> +18, <a href="Skills.aspx-ID=40.htm" tppabs="https://2e.aonprd.com/Skills.aspx?ID=40"><u>Intimidation</a></u> +20, <a href="Skills.aspx-ID=41.htm" tppabs="https://2e.aonprd.com/Skills.aspx?ID=41"><u>Warfare Lore</a></u> +18<br /><b>Str</b> +4, <b>Dex</b> +3, <b>Con</b> +2, <b>Int</b> +2, <b>Wis</b> +2, <b>Cha</b> +4<br /><b>Items</b> <i>+1 <a style="text-decoration:underline" href="Equipment.aspx-ID=2829.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=2829">striking</a> <a style="text-decoration:underline" href="Weapons.aspx-ID=386.htm" tppabs="https://2e.aonprd.com/Weapons.aspx?ID=386">longsword</a></i>, <a href="javascript:if(confirm(%27https://2e.aonprd.com/Armor.aspx?ID=43&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Armor.aspx?ID=43&Redirected=1%27" tppabs="https://2e.aonprd.com/Armor.aspx?ID=6"><u>chain shirt</u></a>, <a href="javascript:if(confirm(%27https://2e.aonprd.com/Weapons.aspx?ID=71  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Weapons.aspx?ID=71%27" tppabs="https://2e.aonprd.com/Weapons.aspx?ID=71"><u>javelin (6)</u></a><hr /><b>AC</b> 25; <b>Fort</b> +14, <b>Ref</b> +15, <b>Will</b> +20<br /><b>HP</b> 120<br /><span class="hanging-indent"><b>Commanding Aura</b> (<a style="text-decoration:underline" href="Traits.aspx-ID=542.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=542">aura</a>, <a style="text-decoration:underline" href="Traits.aspx-ID=590.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=590">emotion</a>, <a style="text-decoration:underline" href="Traits.aspx-ID=647.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=647">mental</a>, <a style="text-decoration:underline" href="Traits.aspx-ID=727.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=727">visual</a>) 60 feet. An ally that starts its turn in the aura gains 8 temporary Hit Points. These last until the start of the creature's next turn.</span><span class="hanging-indent"><b>You Don't Have My Permission to Die!  <span class='action' title='Reaction' role='img' aria-label='Reaction'>[reaction]</span> </b> (<a style="text-decoration:underline" href="Traits.aspx-ID=541.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=541">auditory</a>, <a style="text-decoration:underline" href="Traits.aspx-ID=590.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=590">emotion</a>, <a style="text-decoration:underline" href="Traits.aspx-ID=598.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=598">fear</a>, <a style="text-decoration:underline" href="Traits.aspx-ID=642.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=642">linguistic</a>, <a style="text-decoration:underline" href="Traits.aspx-ID=647.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=647">mental</a>) <b>Trigger</b> An allied creature within 30 feet would be reduced to 0 Hit Points; <b>Effect</b> With a stern rebuke, the drill sergeant berates the target for their failure. The creature avoids being <a style="text-decoration:underline" href="Conditions.aspx-ID=95.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=95">knocked out</a> and remains at 1 HP. The creature is then temporarily immune for 24 hours.</span><hr /><b>Speed</b> 25 feet<br /><span class="hanging-indent"><b>Melee</b>  <span class='action' title='Single Action' role='img' aria-label='Single Action'>[one-action]</span>  <i>longsword</i> +21 [<a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=2289&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=2289&Redirected=1%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=322"><u>+16/+11</u></a>] (<a href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=644&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=644&Redirected=1%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=103"><u>magical</a></u>, <a href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=724&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=724&Redirected=1%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=200"><u>versatile P</a></u>), <b>Damage</b> 2d8+12 slashing</span><span class="hanging-indent"><b>Melee</b>  <span class='action' title='Single Action' role='img' aria-label='Single Action'>[one-action]</span>  fist +20 [<a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=2289&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=2289&Redirected=1%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=322"><u>+16/+12</u></a>] (<a href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=526&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=526&Redirected=1%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=170"><u>agile</a></u>, <a href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=661&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=661&Redirected=1%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=188"><u>nonlethal</a></u>, <a href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=199  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=199%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=199"><u>unarmed</a></u>), <b>Damage</b> 1d4+12 bludgeoning</span><span class="hanging-indent"><b>Ranged</b>  <span class='action' title='Single Action' role='img' aria-label='Single Action'>[one-action]</span>  javelin +19 [<a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=2289&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=2289&Redirected=1%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=322"><u>+14/+9</u></a>] (<a href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=711&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=711&Redirected=1%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=195"><u>thrown 30 feet</a></u>), <b>Damage</b> 1d6+12 piercing</span><span class="hanging-indent"><b>Chastising Enforcement</b>  <span class='action' title='Single Action' role='img' aria-label='Single Action'>[one-action]</span>   (<a href="Traits.aspx-ID=541&Redirected=1.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=16"><u>auditory</a></u>, <a href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=60  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=60%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=60"><u>emotion</a></u>, <a href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=101  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=101%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=101"><u>linguistic</a></u>, <a href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=106  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=106%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=106"><u>mental</a></u>) The drill sergeant exhorts a faltering comrade with a stern word and attempts an <a style="text-decoration:underline" href="Skills.aspx-ID=40.htm" tppabs="https://2e.aonprd.com/Skills.aspx?ID=40">Intimidation</a> check against the Will DC of one ally within 30 feet. On a success, the target's <a style="text-decoration:underline" href="Conditions.aspx-ID=76.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=76">frightened</a> condition is reduced by 2 and the drill sergeant can attempt to <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=3280&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=3280&Redirected=1%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=371">counteract</a> one <a style="text-decoration:underline" href="Traits.aspx-ID=647.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=647">mental</a> effect that ally is suffering from with a +18 counteract modifier. On a critical success, the drill sergeant also reduces the frightened condition of each other ally in a 10-foot emanation around the target by 1.</span><span class="hanging-indent"><b>Keep Up With Me!</b>  <span class='action' title='Single Action' role='img' aria-label='Single Action'>[one-action]</span>   (<a href="Traits.aspx-ID=541&Redirected=1.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=16"><u>auditory</a></u>, <a href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=60  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=60%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=60"><u>emotion</a></u>, <a href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=101  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=101%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=101"><u>linguistic</a></u>, <a href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=106  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=106%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=106"><u>mental</a></u>) <b>Requirements</b> The drill sergeant's last action was a Strike that hit; <b>Effect</b> The drill sergeant shouts that one ally within 30 feet can't keep up with them. That ally gains a +3 status bonus to their attack roll on the next Strike they make before the start of the drill sergeant's next turn. If the ally is a <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=367  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=367%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=367">troop</a>, this bonus instead applies to the DC of their next offensive activity (such as Join the Fray for <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/NPCs.aspx?ID=3528  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/NPCs.aspx?ID=3528%27" tppabs="https://2e.aonprd.com/NPCs.aspx?ID=3528">heavy cavalry</a>).</span><div class="monster-family hide-on-print"><h2 class="title">All Monsters in "<a href="javascript:if(confirm(%27https://2e.aonprd.com/MonsterFamilies.aspx?ID=543  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/MonsterFamilies.aspx?ID=543%27" tppabs="https://2e.aonprd.com/MonsterFamilies.aspx?ID=543">Military</a>"</h2><table class="inner"><tr><td><b>Name</b></td><td><b>Level</b></td></tr><tr><td><a href="javascript:if(confirm(%27https://2e.aonprd.com/Monsters.aspx?ID=3902  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Monsters.aspx?ID=3902%27" tppabs="https://2e.aonprd.com/Monsters.aspx?ID=3902">Archer Regiment</a></td><td>12</td></tr><tr><td><a href="javascript:if(confirm(%27https://2e.aonprd.com/NPCs.aspx?ID=3521  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/NPCs.aspx?ID=3521%27" tppabs="https://2e.aonprd.com/NPCs.aspx?ID=3521">Combat Engineer</a></td><td>1</td></tr><tr><td><a href="javascript:if(confirm(%27https://2e.aonprd.com/NPCs.aspx?ID=3523  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/NPCs.aspx?ID=3523%27" tppabs="https://2e.aonprd.com/NPCs.aspx?ID=3523">Conscript Squad</a></td><td>3</td></tr><tr><td><a href="javascript:if(confirm(%27https://2e.aonprd.com/NPCs.aspx?ID=3529  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/NPCs.aspx?ID=3529%27" tppabs="https://2e.aonprd.com/NPCs.aspx?ID=3529">Drill Sergeant</a></td><td>8</td></tr><tr><td><a href="javascript:if(confirm(%27https://2e.aonprd.com/Monsters.aspx?ID=3915  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Monsters.aspx?ID=3915%27" tppabs="https://2e.aonprd.com/Monsters.aspx?ID=3915">First-Class Infantry</a></td><td>13</td></tr><tr><td><a href="javascript:if(confirm(%27https://2e.aonprd.com/NPCs.aspx?ID=3528  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/NPCs.aspx?ID=3528%27" tppabs="https://2e.aonprd.com/NPCs.aspx?ID=3528">Heavy Cavalry</a></td><td>7</td></tr><tr><td><a href="NPCs.aspx-ID=3530.htm" tppabs="https://2e.aonprd.com/NPCs.aspx?ID=3530">Hellknight Cavalry Brigade</a></td><td>8</td></tr><tr><td><a href="javascript:if(confirm(%27https://2e.aonprd.com/NPCs.aspx?ID=3522  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/NPCs.aspx?ID=3522%27" tppabs="https://2e.aonprd.com/NPCs.aspx?ID=3522">Infantry Soldier</a></td><td>2</td></tr><tr><td><a href="javascript:if(confirm(%27https://2e.aonprd.com/NPCs.aspx?ID=3526  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/NPCs.aspx?ID=3526%27" tppabs="https://2e.aonprd.com/NPCs.aspx?ID=3526">Line Infantry</a></td><td>6</td></tr><tr><td><a href="javascript:if(confirm(%27https://2e.aonprd.com/NPCs.aspx?ID=3531  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/NPCs.aspx?ID=3531%27" tppabs="https://2e.aonprd.com/NPCs.aspx?ID=3531">Mage Knight</a></td><td>10</td></tr><tr><td><a href="javascript:if(confirm(%27https://2e.aonprd.com/NPCs.aspx?ID=3527  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/NPCs.aspx?ID=3527%27" tppabs="https://2e.aonprd.com/NPCs.aspx?ID=3527">Phalanx Formation</a></td><td>6</td></tr><tr><td><a href="javascript:if(confirm(%27https://2e.aonprd.com/NPCs.aspx?ID=3525  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/NPCs.aspx?ID=3525%27" tppabs="https://2e.aonprd.com/NPCs.aspx?ID=3525">Sniper</a></td><td>5</td></tr><tr><td><a href="javascript:if(confirm(%27https://2e.aonprd.com/NPCs.aspx?ID=3524  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/NPCs.aspx?ID=3524%27" tppabs="https://2e.aonprd.com/NPCs.aspx?ID=3524">Standard Bearer</a></td><td>4</td></tr></table><h1 class="title"><a href="javascript:if(confirm(%27https://2e.aonprd.com/MonsterFamilies.aspx?ID=543  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/MonsterFamilies.aspx?ID=543%27" tppabs="https://2e.aonprd.com/MonsterFamilies.aspx?ID=543">Military</a></h1><b>Source</b> <a href="javascript:if(confirm(%27https://2e.aonprd.com/Sources.aspx?ID=236  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Sources.aspx?ID=236%27" tppabs="https://2e.aonprd.com/Sources.aspx?ID=236" target="_blank" class="external-link"><i>NPC Core pg. 88</i></a><br />A military serves to defend and fight on behalf of nations and can be trained and deployed in various ways.<h2 class="title">Guerrilla Adjustments</h2> Most military engagements take place in large areas, such as plains or cities, where there is the most territory or resources to be gained. However, guerrilla units fight in forests, swamps, and other tough locations, where they set up traps, ambushes, and use other surprise tactics. You can use these adjustments to turn a military NPC or troop into a guerrilla. These can also be useful for mercenaries or other non-military NPCs. <ul><li>Give the creature a <a style="text-decoration:underline" href="Skills.aspx-ID=48.htm" tppabs="https://2e.aonprd.com/Skills.aspx?ID=48">Stealth</a> modifier equal to the <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=2885  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=2885%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=2885">high skill value for its level</a>. If you're in a hurry, use the creature's highest skill modifier.</li><li>If the creature has the <a style="text-decoration:underline" href="Skills.aspx-ID=36.htm" tppabs="https://2e.aonprd.com/Skills.aspx?ID=36">Athletics</a> skill, reduce its modifier by 2.</li><li>Reduce the damage of the creature's Strikes by 2, but give it the Sneak Attack ability.<br /> <b>Sneak Attack</b> The creature deals 1d6 extra precision damage to <a style="text-decoration:underline" href="Conditions.aspx-ID=58.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=58">off-guard</a> creatures.</li><li>Add the Pounce ability.<br /> <b>Pounce</b>  <span class='action' title='Single Action' role='img' aria-label='Single Action'>[one-action]</span>  The creature Strides and makes a Strike at the end of that movement. If the creature began this action <a style="text-decoration:underline" href="Conditions.aspx-ID=79.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=79">hidden</a>, they remain hidden until after this ability's Strike.</li></ul> <h2 class="title">Troop Formations</h2> Battle can be a complicated affair. Different situations call for varied arrangement of soldiers. You can add the Change Formation ability to a troop to give it more options, typically choosing two or three of the possible formations listed here. Troops with <a style="text-decoration:underline" href="Traits.aspx-ID=531.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=531">animal</a> Intelligence (–4 or lower) or that aren't battle trained are typically unable to change formation without an outside force commanding them.<br /><br /> <b>Change Formation</b>  <span class='action' title='Two Actions' role='img' aria-label='Two Actions'>[two-actions]</span>  (<a style="text-decoration:underline" href="Traits.aspx-ID=561.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=561">concentrate</a>, <a style="text-decoration:underline" href="Traits.aspx-ID=658.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=658">move</a>) The troop reconfigures to assume one of the formations below they know. Using this action again ends any previous formation, and the troop can also use this action to revert to its default formation, ending any benefits and drawbacks. <ul><li><b>Loose</b> Members of the troop fan out to cover more ground. <b>Benefit</b> Any weaknesses the troop has to area and <a style="text-decoration:underline" href="Traits.aspx-ID=699.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=699">splash</a> damage are suppressed. <b>Drawback</b> Enemies' saving throws against the troop's damaging effects are one degree of success better than they roll. </li><li><b>Marching Column</b> This formation traverses long distances more rapidly. <b>Benefit</b> The troop gains a +10 foot circumstance bonus to all its Speeds. <b>Drawback</b> The troop is <a style="text-decoration:underline" href="Conditions.aspx-ID=58.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=58">off-guard</a> and takes a –2 penalty to Reflex saves. </li><li><b>Turtle Shell</b> The troop interlocks their shields. Only a group with shields can use this formation. <b>Benefit</b> The troop gains a +2 circumstance bonus to AC against ranged attacks and to Reflex saves. <b>Drawback</b> The troop takes a –10-foot penalty to all its Speeds. </li><li><b>Wedge</b> The troop aligns itself behind a powerful commander. <b>Benefit</b> The troop chooses an adjacent allied creature without the <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=367  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=367%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=367">troop</a> trait to fall in behind. Each time the chosen creature Strides, the troop follows as a free action, Striding to keep the chosen creature adjacent. <b>Drawback</b> The troop loses some of their autonomy. They're <a style="text-decoration:underline" href="Conditions.aspx-ID=92.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=92">slowed 1</a> and can't voluntarily move away from their leader.</li></ul><h3 class="title"><img alt="Sidebar - Related Creatures" title="Sidebar - Related Creatures" style="height:18px; padding:2px 10px 0px 2px" src="Sidebar_4_RelatedCreatures.png" tppabs="https://2e.aonprd.com/Images/Icons/Sidebar_4_RelatedCreatures.png"> Crossover Ancestry NPCs</h3>Several of the NPCs elsewhere in NPC Core can fit well in this group: <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/NPCs.aspx?ID=3658  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/NPCs.aspx?ID=3658%27" tppabs="https://2e.aonprd.com/NPCs.aspx?ID=3658">Corn leshy throng</a> (level 4), <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/NPCs.aspx?ID=3632  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/NPCs.aspx?ID=3632%27" tppabs="https://2e.aonprd.com/NPCs.aspx?ID=3632">demonbane warrior</a> (level 5), <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/NPCs.aspx?ID=3628  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/NPCs.aspx?ID=3628%27" tppabs="https://2e.aonprd.com/NPCs.aspx?ID=3628">dwarf battalion</a> (level 6), <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/NPCs.aspx?ID=3629  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/NPCs.aspx?ID=3629%27" tppabs="https://2e.aonprd.com/NPCs.aspx?ID=3629">dwarf general</a> (level 8), <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/NPCs.aspx?ID=3649  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/NPCs.aspx?ID=3649%27" tppabs="https://2e.aonprd.com/NPCs.aspx?ID=3649">hobgoblin battalion</a> (level 5), <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/NPCs.aspx?ID=3648  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/NPCs.aspx?ID=3648%27" tppabs="https://2e.aonprd.com/NPCs.aspx?ID=3648">hobgoblin spellbreaker</a> (level 3), <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/NPCs.aspx?ID=3650  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/NPCs.aspx?ID=3650%27" tppabs="https://2e.aonprd.com/NPCs.aspx?ID=3650">hobgoblin vanguard</a> (level 8), <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/NPCs.aspx?ID=3665  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/NPCs.aspx?ID=3665%27" tppabs="https://2e.aonprd.com/NPCs.aspx?ID=3665">orc skullcrushers</a> (level 7)<h3 class="title"><img alt="Sidebar - Additional Lore" title="Sidebar - Additional Lore" style="height:18px; padding:2px 10px 0px 2px" src="Sidebar_2_AdditionalLore.png" tppabs="https://2e.aonprd.com/Images/Icons/Sidebar_2_AdditionalLore.png"> Military Nomenclature</h3>Various cultures see war differently. Some see it as a game to be won, some as an art, and still others as the ultimate form of glory. These different perspectives can be reflected in the names used to describe military units and formations. Some militaries go to elaborate lengths to mislead their foes by bestowing ever-changing code names on various divisions and strategies. Others may borrow the names of beautiful animals or simply name units after favored weapons.<h3 class="title"><img alt="Sidebar - Related Creatures" title="Sidebar - Related Creatures" style="height:18px; padding:2px 10px 0px 2px" src="Sidebar_4_RelatedCreatures.png" tppabs="https://2e.aonprd.com/Images/Icons/Sidebar_4_RelatedCreatures.png"> Mounted Warfare</h3>Individual military NPCs who find themselves in open terrain might need to close the distance to their opponents. Consider giving an NPC like standard bearer or sniper a <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Monsters.aspx?ID=3060  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Monsters.aspx?ID=3060%27" tppabs="https://2e.aonprd.com/Monsters.aspx?ID=3060">war horse</a>, or having a drill sergeant or mage knight ride a veteran war horse.<h3 class="title"><img alt="Sidebar - Advice and Rules" title="Sidebar - Advice and Rules" style="height:18px; padding:2px 10px 0px 2px" src="Sidebar_1_AdviceAndRules.png" tppabs="https://2e.aonprd.com/Images/Icons/Sidebar_1_AdviceAndRules.png"> Signature Weapons</h3>Phalanx formations are classically seen using a <a style="text-decoration:underline" href="Weapons.aspx-ID=365.htm" tppabs="https://2e.aonprd.com/Weapons.aspx?ID=365">spear</a> as their weapon of choice. However, feel free to swap out this weapon for something more appropriate to the local culture. For example, a phalanx comprised of worshippers of <a style="text-decoration:underline" href="Deities.aspx-ID=284.htm" tppabs="https://2e.aonprd.com/Deities.aspx?ID=284">Gozreh</a> might wield <a style="text-decoration:underline" href="Weapons.aspx-ID=401.htm" tppabs="https://2e.aonprd.com/Weapons.aspx?ID=401">tridents</a> instead of spears.<h3 class="title"><img alt="Sidebar - Treasure and Rewards" title="Sidebar - Treasure and Rewards" style="height:18px; padding:2px 10px 0px 2px" src="Sidebar_5_TreasureAndRewards.png" tppabs="https://2e.aonprd.com/Images/Icons/Sidebar_5_TreasureAndRewards.png"> Spoils Of War</h3>War is rarely a profitable venture for either side. Each battle wins little more than a better strategic position and, potentially, glory. Occasionally, a particularly potent enemy may have some magical gear, but most soldiers do not. An adventuring party should seek to leverage the army they fight for, as that is where they will often find the highest rewards, both in terms of gold and favors.<h3 class="title"><img alt="Sidebar - Treasure and Rewards" title="Sidebar - Treasure and Rewards" style="height:18px; padding:2px 10px 0px 2px" src="Sidebar_5_TreasureAndRewards.png" tppabs="https://2e.aonprd.com/Images/Icons/Sidebar_5_TreasureAndRewards.png"> Troop Gear</h3>Since the component members of a troop are individually much less powerful than the troop as a whole, a troop's gear is typically of negligible utility or value. However, the Hellknight cavalry brigade wear valuable <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Armor.aspx?ID=25  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Armor.aspx?ID=25%27" tppabs="https://2e.aonprd.com/Armor.aspx?ID=25">Hellknight plate</a> (worth 35 gp), and a party might be able to salvage a suit or two from their defeated foes—if they're willing to risk the wrath of the Order of the Nail!</div></span></span>
+
+                </div>
+                <div class="clear">
+            </div>
+
+            <div class="footer" id="footer" >
+				<div id="et-al" >
+                    <a href="mailto:nethys@archivesofnethys.com">Site Owner: Rose-Winds LLC (Blake Davis)</a>
+                    <div id="footer-social"><a href="https://twitter.com/NethysArchives"  target="_blank"><span class="k-icon k-i-twitter" style="font-size:2.5rem"></span></a></div>
+				</div>
+                <div style="text-align:center"><script type="text/javascript" async="true" src="adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- Main Archives Page -->
+                    <ins class="adsbygoogle"
+                        style="display:inline-block;width:728px;height:90px"
+                        data-ad-client="ca-pub-4953734518316037"
+                        data-ad-slot="7738185508"></ins>
+                    <script type="text/javascript">
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                </script></div>
+			</div>
+            <nethys-search no-ui="true"></nethys-search>
+        </div>
+    </div>
+
+    <div class="modern-menu-container">
+        <div class="modern-menu">
+            <div class="modern-menu-nethys-logo"></div>
+            <div class="modern-menu-items">
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-player"></i></span>
+                    <span class="modern-menu-item-text">Character Creation +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Ancestries.aspx.htm" tppabs="https://2e.aonprd.com/Ancestries.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-hood"></i></span>
+                        <span class="modern-menu-item-text">Ancestries</span>
+                    </a>
+                    <a class="modern-menu-item" href="Archetypes.aspx.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-nodular"></i></span>
+                        <span class="modern-menu-item-text">Archetypes</span>
+                    </a>
+                    <a class="modern-menu-item" href="Backgrounds.aspx.htm" tppabs="https://2e.aonprd.com/Backgrounds.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-guarded-tower"></i></span>
+                        <span class="modern-menu-item-text">Backgrounds</span>
+                    </a>
+                    <a class="modern-menu-item" href="Classes.aspx.htm" tppabs="https://2e.aonprd.com/Classes.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-player-lift"></i></span>
+                        <span class="modern-menu-item-text">Classes</span>
+                    </a>
+                    <a class="modern-menu-item" href="Skills.aspx.htm" tppabs="https://2e.aonprd.com/Skills.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-hand"></i></span>
+                        <span class="modern-menu-item-text">Skills</span>
+                    </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-torch"></i></span>
+                    <span class="modern-menu-item-text">Equipment +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Equipment.aspx.htm" tppabs="https://2e.aonprd.com/Equipment.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-torch"></i></span>
+                        <span class="modern-menu-item-text">All Equipment</span>
+                    </a>
+                    <a class="modern-menu-item" href="Equipment.aspx-Category=1.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?Category=1">
+                        <span class="modern-menu-item-icon"><i class="ra ra-campfire"></i></span>
+                        <span class="modern-menu-item-text">Adventuring Gear</span>
+                    </a>
+                    <a class="modern-menu-item" href="Equipment.aspx-Category=6.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?Category=6">
+                        <span class="modern-menu-item-icon"><i class="ra ra-round-bottom-flask"></i></span>
+                        <span class="modern-menu-item-text">Alchemical Items</span>
+                    </a>
+                    <a class="modern-menu-item" href="Armor.aspx.htm" tppabs="https://2e.aonprd.com/Armor.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-helmet"></i></span>
+                        <span class="modern-menu-item-text">Armor</span>
+                    </a>
+                    <a class="modern-menu-item" href="Equipment.aspx-Category=21.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?Category=21">
+                        <span class="modern-menu-item-icon"><i class="ra ra-hand"></i></span>
+                        <span class="modern-menu-item-text">Held Items</span>
+                    </a>
+                    <a class="modern-menu-item" href="Equipment.aspx-Category=23.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?Category=23">
+                        <span class="modern-menu-item-icon"><i class="ra ra-rune-stone"></i></span>
+                        <span class="modern-menu-item-text">Runes</span>
+                    </a>
+                    <a class="modern-menu-item" href="Shields.aspx.htm" tppabs="https://2e.aonprd.com/Shields.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-shield"></i></span>
+                        <span class="modern-menu-item-text">Shields</span>
+                    </a>
+                    <a class="modern-menu-item" href="Weapons.aspx.htm" tppabs="https://2e.aonprd.com/Weapons.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-sword"></i></span>
+                        <span class="modern-menu-item-text">Weapons</span>
+                    </a>
+                    <a class="modern-menu-item" href="Equipment.aspx-Category=41.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?Category=41">
+                        <span class="modern-menu-item-icon"><i class="ra ra-crown-of-thorns"></i></span>
+                        <span class="modern-menu-item-text">Worn Items</span>
+                    </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-muscle-up"></i></span>
+                    <span class="modern-menu-item-text">Feats +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Feats.aspx.htm" tppabs="https://2e.aonprd.com/Feats.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-muscle-up"></i></span>
+                        <span class="modern-menu-item-text">All Feats</span>
+                    </a>
+                    <a class="modern-menu-item" href="Feats.aspx-Traits=78.htm" tppabs="https://2e.aonprd.com/Feats.aspx?Traits=78">
+                        <span class="modern-menu-item-icon"><i class="ra ra-aware"></i></span>
+                        <span class="modern-menu-item-text">General</span>
+                    </a>
+                    <a class="modern-menu-item" href="Feats.aspx-Traits=78&NoSkills=True.htm" tppabs="https://2e.aonprd.com/Feats.aspx?Traits=78&NoSkills=True">
+                        <span class="modern-menu-item-icon"><i class="ra ra-player-teleport"></i></span>
+                        <span class="modern-menu-item-text">General (No Skill)</span>
+                    </a>
+                    <a class="modern-menu-item" href="Feats.aspx-Traits=144.htm" tppabs="https://2e.aonprd.com/Feats.aspx?Traits=144">
+                        <span class="modern-menu-item-icon"><i class="ra ra-hand"></i></span>
+                        <span class="modern-menu-item-text">Skill</span>
+                    </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-emerald"></i></span>
+                    <span class="modern-menu-item-text">Game Mastery +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Afflictions.aspx.htm" tppabs="https://2e.aonprd.com/Afflictions.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-biohazard"></i></span>
+                        <span class="modern-menu-item-text">Afflictions</span>
+                    </a>
+                    <a class="modern-menu-item" href="Creatures.aspx.htm" tppabs="https://2e.aonprd.com/Creatures.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-dragon"></i></span>
+                        <span class="modern-menu-item-text">Creatures</span>
+                    </a>
+                    <a class="modern-menu-item" href="Hazards.aspx.htm" tppabs="https://2e.aonprd.com/Hazards.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-bear-trap"></i></span>
+                        <span class="modern-menu-item-text">Hazards</span>
+                    </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-book"></i></span>
+                    <span class="modern-menu-item-text">Rules +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Rules.aspx.htm" tppabs="https://2e.aonprd.com/Rules.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-book"></i></span>
+                        <span class="modern-menu-item-text">All Rules</span>
+                    </a>
+                    <a class="modern-menu-item" href="Actions.aspx.htm" tppabs="https://2e.aonprd.com/Actions.aspx">
+                        <span class="modern-menu-item-icon">
+                            <svg viewBox="0 0 30 30" preserveAspectRatio="xMidYMid meet" stroke="null" style="fill:inherit;">
+                                <path d="M21.55532 8.015l7.07107 7.07106-7.07107 7.07107-7.07107-7.07107zM6.47996 10.07526l4.94975 4.94975-4.94975 4.94974-4.94974-4.94974z"></path>
+                                <path d="M15.00246 1.46211l8.48528 8.48528-7.07107 7.07107L7.9314 8.53318z"></path>
+                                <path d="M16.45563 13.11469l7.07107 7.07107-8.48529 8.48528-7.07106-7.07107z"></path>
+                            </svg>
+                        </span>
+                        <span class="modern-menu-item-text">Actions/Activities</span>
+                    </a>
+                    <a class="modern-menu-item" href="Conditions.aspx.htm" tppabs="https://2e.aonprd.com/Conditions.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-player-pain"></i></span>
+                        <span class="modern-menu-item-text">Conditions</span>
+                    </a>
+                    <a class="modern-menu-item" href="GMScreen.aspx.htm" tppabs="https://2e.aonprd.com/GMScreen.aspx">
+                        <span class="modern-menu-item-icon">
+                            <svg viewBox="0 0 30 30" preserveAspectRatio="xMidYMid meet" stroke="null" style="fill:inherit;">
+                                <path d="M5.72648 12.93117h9.17646v9.50588l-4.58823 2.37647-4.58823-2.37647.00001-9.50588z"></path>
+                                <path d="M5.96178 12.93118h9.17646v9.50587l-4.58823 2.37648-4.58824-2.37648.00001-9.50587z"></path>
+                                <path d="M15.0206 12.93118h9.17646v9.50587l-4.58823 2.37648-4.58824-2.37648.00001-9.50587z"></path>
+                                <path d="M16.70221 8.57471l7.52941-3.38823v16.94117h-7.52941V8.57471zM15.11765 8.69235L5.94118 5.30412v16.94117h9.17647V8.69235z"></path>
+                                <path d="M19.60883 17.75465h-9.17646V8.24878L15.0206 5.8723l4.58824 2.37648-.00001 9.50587z"></path>
+                            </svg>
+                        </span>
+                        <span class="modern-menu-item-text">GM Screen</span>
+                    </a>
+                    <a class="modern-menu-item" href="PlayersGuide.aspx.htm" tppabs="https://2e.aonprd.com/PlayersGuide.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-uncertainty"></i></span>
+                        <span class="modern-menu-item-text">Player's Guide</span>
+                    </a>
+                    <a class="modern-menu-item" href="Traits.aspx.htm" tppabs="https://2e.aonprd.com/Traits.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-uncertainty"></i></span>
+                        <span class="modern-menu-item-text">Traits</span>
+                    </a>
+                    <a class="modern-menu-item" href="Sources.aspx.htm" tppabs="https://2e.aonprd.com/Sources.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-book"></i></span>
+                        <span class="modern-menu-item-text">Sources</span>
+                    </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-sun"></i></span>
+                    <span class="modern-menu-item-text">Setting +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Setting.aspx-Adventure=true.htm" tppabs="https://2e.aonprd.com/Setting.aspx?Adventure=true">
+                        <span class="modern-menu-item-icon"><i class="ra ra-all-for-one"></i></span>
+                        <span class="modern-menu-item-text">Adventures</span>
+                    </a>
+                    <a class="modern-menu-item" href="Articles.aspx.htm" tppabs="https://2e.aonprd.com/Articles.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-book"></i></span>
+                        <span class="modern-menu-item-text">Articles</span>
+                    </a>
+                    <a class="modern-menu-item" href="Deities.aspx.htm" tppabs="https://2e.aonprd.com/Deities.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-angel-wings"></i></span>
+                        <span class="modern-menu-item-text">Deities</span>
+                    </a>
+                    <a class="modern-menu-item" href="Domains.aspx.htm" tppabs="https://2e.aonprd.com/Domains.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-kaleidoscope"></i></span>
+                        <span class="modern-menu-item-text">Domains</span>
+                    </a>
+                    <a class="modern-menu-item" href="Languages.aspx.htm" tppabs="https://2e.aonprd.com/Languages.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-speech-bubbles"></i></span>
+                        <span class="modern-menu-item-text">Languages</span>
+                    </a>
+                    <a class="modern-menu-item" href="Planes.aspx.htm" tppabs="https://2e.aonprd.com/Planes.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-circle-of-circles"></i></span>
+                        <span class="modern-menu-item-text">Planes</span>
+                    </a>
+                        <a class="modern-menu-item" href="Setting.aspx-Group=40.htm" tppabs="https://2e.aonprd.com/Setting.aspx?Group=40">
+                            <span class="modern-menu-item-icon"><i class="ra ra-mountains"></i></span>
+                            <span class="modern-menu-item-text">Scenarios</span>
+                        </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-crystal-wand"></i></span>
+                    <span class="modern-menu-item-text">Spells/Rituals +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Spells.aspx.htm" tppabs="https://2e.aonprd.com/Spells.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-scroll-unfurled"></i></span>
+                        <span class="modern-menu-item-text">All Spells</span>
+                    </a>
+                    <a class="modern-menu-item" href="Spells.aspx-Tradition=1.htm" tppabs="https://2e.aonprd.com/Spells.aspx?Tradition=1">
+                        <span class="modern-menu-item-icon"><i class="ra ra-scroll-unfurled"></i></span>
+                        <span class="modern-menu-item-text">Arcane</span>
+                    </a>
+                    <a class="modern-menu-item" href="Spells.aspx-Tradition=2.htm" tppabs="https://2e.aonprd.com/Spells.aspx?Tradition=2">
+                        <span class="modern-menu-item-icon"><i class="ra ra-ankh"></i></span>
+                        <span class="modern-menu-item-text">Divine</span>
+                    </a>
+                    <a class="modern-menu-item" href="Spells.aspx-Tradition=3.htm" tppabs="https://2e.aonprd.com/Spells.aspx?Tradition=3">
+                        <span class="modern-menu-item-icon"><i class="ra ra-burning-eye"></i></span>
+                        <span class="modern-menu-item-text">Occult</span>
+                    </a>
+                    <a class="modern-menu-item" href="Spells.aspx-Tradition=4.htm" tppabs="https://2e.aonprd.com/Spells.aspx?Tradition=4">
+                        <span class="modern-menu-item-icon"><i class="ra ra-leaf"></i></span>
+                        <span class="modern-menu-item-text">Primal</span>
+                    </a>
+                    <a class="modern-menu-item" href="Spells.aspx-Focus=true.htm" tppabs="https://2e.aonprd.com/Spells.aspx?Focus=true">
+                        <span class="modern-menu-item-icon"><i class="ra ra-aura"></i></span>
+                        <span class="modern-menu-item-text">Focus Spells</span>
+                    </a>
+                    <a class="modern-menu-item" href="Rituals.aspx.htm" tppabs="https://2e.aonprd.com/Rituals.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-rune-stone"></i></span>
+                        <span class="modern-menu-item-text">Rituals</span>
+                    </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-player-thunder-struck"></i></span>
+                    <span class="modern-menu-item-text">Mythic +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Rules.aspx-ID=3320.htm" tppabs="https://2e.aonprd.com/Rules.aspx?ID=3320">
+                        <span class="modern-menu-item-icon"><i class="ra ra-book"></i></span>
+                        <span class="modern-menu-item-text">Mythic Rules</span>
+                    </a>
+                    <a class="modern-menu-item" href="MythicCallings.aspx.htm" tppabs="https://2e.aonprd.com/MythicCallings.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-aware"></i></span>
+                        <span class="modern-menu-item-text">Callings</span>
+                    </a>
+                    <a class="modern-menu-item" href="MythicFeats.aspx.htm" tppabs="https://2e.aonprd.com/MythicFeats.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-muscle-up"></i></span>
+                        <span class="modern-menu-item-text">Mythic Feats</span>
+                    </a>
+                    <a class="modern-menu-item" href="MythicDestinies.aspx.htm" tppabs="https://2e.aonprd.com/MythicDestinies.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-aura"></i></span>
+                        <span class="modern-menu-item-text">Destinies</span>
+                    </a>
+                    <a class="modern-menu-item" href="MythicSpells.aspx.htm" tppabs="https://2e.aonprd.com/MythicSpells.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-lightning-trio"></i></span>
+                        <span class="modern-menu-item-text">Mythic Spells</span>
+                    </a>
+                    <a class="modern-menu-item" href="MythicRituals.aspx.htm" tppabs="https://2e.aonprd.com/MythicRituals.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-fire-ring"></i></span>
+                        <span class="modern-menu-item-text">Mythic Rituals</span>
+                    </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-help"></i></span>
+                    <span class="modern-menu-item-text">About the Archives +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="ContactUs.aspx.htm" tppabs="https://2e.aonprd.com/ContactUs.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-quill-ink"></i></span>
+                        <span class="modern-menu-item-text">Contact Us</span>
+                    </a>
+                    <a class="modern-menu-item" href="Contributors.aspx.htm" tppabs="https://2e.aonprd.com/Contributors.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-double-team"></i></span>
+                        <span class="modern-menu-item-text">Contributors</span>
+                    </a>
+                    <a class="modern-menu-item" href="Licenses.aspx.htm" tppabs="https://2e.aonprd.com/Licenses.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-book"></i></span>
+                        <span class="modern-menu-item-text">Licenses</span>
+                    </a>
+                </div>
+                <a class="modern-menu-item" href="Support.aspx.htm" tppabs="https://2e.aonprd.com/Support.aspx">
+                    <span class="modern-menu-item-icon"><i class="ra ra-diamond"></i></span>
+                    <span class="modern-menu-item-text">Support the Archives</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="shelyns-corner-wrapper">
+        <div class="shelyns-corner-overlay"></div>
+        <div class="shelyns-corner">
+            <div class="shelyns-corner-header">
+                <h2>Shelyn's Corner</h2>
+                <a href="javascript:void(0)" class="close-shelyns-corner">&times;</a>
+            </div>
+            <div class="shelyns-corner-content">
+                <div class="shelyns-corner-settings">
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-remaster">Prefer Pathfinder Remastered Core?</label>
+                        <input type="checkbox" id="shelyns-corner-setting-remaster" checked/>
+                    </div>
+                    <hr />
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-dyslexia">Dyslexia friendly fonts</label>
+                        <input type="checkbox" id="shelyns-corner-setting-dyslexia"/>
+                    </div>
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-sidebar-hover">Expand sidebar on hover</label>
+                        <input type="checkbox" id="shelyns-corner-setting-sidebar-hover" checked/>
+                    </div>
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-sidebar-shrink">Sidebar can be shrunk</label>
+                        <input type="checkbox" id="shelyns-corner-setting-sidebar-shrink" checked/>
+                    </div>
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-page-compress">Reduce page width</label>
+                        <input type="checkbox" id="shelyns-corner-setting-page-compress"/>
+                    </div>
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-modern-menu">Modern menu</label>
+                        <input type="checkbox" id="shelyns-corner-setting-modern-menu" checked/>
+                    </div>
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-link-previews">Link previews</label>
+                        <input type="checkbox" id="shelyns-corner-setting-link-previews" checked/>
+                    </div>
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-link-previews-search">Link previews in search bar</label>
+                        <input type="checkbox" id="shelyns-corner-setting-link-previews-search"/>
+                    </div>
+                </div>
+                <hr />
+                <div class="theme-gallery-wrapper"></div>
+                <hr />
+                <div class="feel-gallery">
+                    <div class="feel-example classic_feel" onclick="setFeel('classic_feel')">
+                        <h1 class="feel-title">Classic Feel</h1>
+                        <h2 class="feel-title">Classic Feel <span class="output"></span></h2>
+                        <h3 class="feel-title">Classic Feel</h3>
+                        <p>The classic look for the Archives of Nethys.</p>
+                        <table>
+                            <thead><td>Table</td></thead>
+                            <tr><td>Data</td></tr>
+                            <tr><td>More Data</td></tr>
+                        </table>
+                    </div>
+                    <div class="feel-example book_feel" onclick="setFeel('book_feel')">
+                        <h1 class="feel-title">Book Feel</h1>
+                        <h2 class="feel-title">Book Feel <span class="output"></span></h2>
+                        <h3 class="feel-title">Book Feel</h3>
+                        <p>An alternative feel, based on the Rulebooks.</p>
+                        <table>
+                            <thead><td>Table</td></thead>
+                            <tr><td>Data</td></tr>
+                            <tr><td>More Data</td></tr>
+                        </table>
+                    </div>
+                    <div class="feel-example round_feel" onclick="setFeel('round_feel')">
+                        <h1 class="feel-title">Round Feel</h1>
+                        <h2 class="feel-title">Round Feel<span class="output"></span></h2>
+                        <h3 class="feel-title">Round Feel</h3>
+                        <p>A rounded, modern look for the archives.</p>
+                        <table>
+                            <thead><td>Table</td></thead>
+                            <tr><td>Data</td></tr>
+                            <tr><td>More Data</td></tr>
+                        </table>
+                    </div>
+                    <div class="feel-example slim_feel" onclick="setFeel('slim_feel')">
+                        <h1 class="feel-title">Slim Feel</h1>
+                        <h2 class="feel-title">Slim Feel<span class="output"></span></h2>
+                        <h3 class="feel-title">Slim Feel</h3>
+                        <p>A variant of the Round feel, more compact.</p>
+                        <table>
+                            <thead><td>Table</td></thead>
+                            <tr><td>Data</td></tr>
+                            <tr><td>More Data</td></tr>
+                        </table>
+                    </div>
+                </div>
+                <hr />
+                <div class="shelyns-corner-settings">
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-orc">More Orc?</label>
+                        <input type="checkbox" id="shelyns-corner-setting-orc" />
+                    </div>
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-boar"><b>BOAR?</b></label>
+                        <input type="checkbox" id="shelyns-corner-setting-boar" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+      var legacyMode = getCore();
+
+      initializeMenuToggle(document.getElementById('minMaxMenu'));
+      initShelynsCorner();
+
+      window.nethysModernMenu.init();
+
+      initializeElasticSearch()
+      var initializeSearch = function (search) {
+          var button;
+          var text;
+          if (search.firstElementChild.classList.contains('search-input'))
+              text = search.firstElementChild;
+          if (search.lastElementChild.classList.contains('search-input'))
+              text = search.lastElementChild;
+          if (search.firstElementChild.classList.contains('search-button'))
+              button = search.firstElementChild;
+          if (search.lastElementChild.classList.contains('search-button'))
+              button = search.lastElementChild;
+
+          if (search) {
+              search.addEventListener('keypress', function (e) {
+                  if (e.keyCode == 13) {
+                      e.preventDefault();
+                      if (text.value != null && text.value.length > 0)
+                          window.location = window.location.origin + "/Search.aspx?q=" + encodeURIComponent(text.value);
+                  }
+              })
+          }
+          if (button) {
+              button.addEventListener('click', function (e) {
+                  window.location = window.location.origin + "/Search.aspx?q=" + encodeURIComponent(text.value);
+              });
+          }
+      };
+      var initializeExpand = function (toggle) {
+          var targetAttrString = "[data-target='" + toggle.dataset.toggle + "']";
+          //target = menu to be collapsed
+          var target = document.querySelector(targetAttrString);
+          toggle.addEventListener('click', function () {
+              var expanded = target.classList.contains('expanded');
+              expanded = !expanded;
+              if (expanded) {
+                  //hide other in group if exists
+                  if (target.dataset.group) {
+                      var otherExpanded = document.querySelector('.expanded[data-group="' + target.dataset.group + '"]');
+                      if (otherExpanded) {
+                          otherExpanded.classList.remove('expanded');
+                      }
+                  }
+                  target.classList.add('expanded');
+              } else {
+                  target.classList.remove('expanded');
+              }
+          });
+      };
+      (function () {
+          //toggles = link that expands/collapses target
+          var toggles = document.querySelectorAll('[data-toggle]');
+          toggles.forEach(function (toggle) {
+              initializeExpand(toggle);
+          });
+          //searches
+          var classicSearch = document.getElementById('classic-search');
+          initializeSearch(classicSearch);
+          var searches = document.querySelectorAll('.search');
+          searches.forEach(function (search) {
+              //initializeSearch(search);
+          });
+      })();
+
+      class NethysSearch extends HTMLElement {
+          constructor() {
+              super();
+
+              this.attachShadow({ mode: 'open' });
+
+              let container = document.createElement('div');
+              this.shadowRoot.append(container);
+
+              let fixedParams = this.getAttribute('fixed-params');
+
+              if (window.location.search.includes('Redirected=1')) {
+                  fixedParams = (fixedParams ? fixedParams + '&' : '') + 'Redirected=1';
+              }
+
+              if (window.location.search.includes('NoRedirect=1')) {
+                  fixedParams = (fixedParams ? fixedParams + '&' : '') + 'NoRedirect=1';
+              }
+
+              let fixedQueryString = this.getAttribute('fixed-query-string') ?? '';
+
+              if (!fixedQueryString.includes('category:item-bonus')) {
+                  fixedQueryString += ' !category:item-bonus';
+              }
+
+              let dataUrl = new URL(elasticUrl);
+              dataUrl.pathname = '/json-data';
+              dataUrl = dataUrl.toString();
+
+              let app = Elm.NethysSearch.init({
+                  node: container,
+                  flags: {
+                      autofocus: (this.getAttribute('autofocus') ?? 'true') == 'true',
+                      browserDateFormat: (new Date(2020, 9, 30).toLocaleDateString(navigator.language))
+                          .replace('2020', 'yyyy')
+                          .replace('10', 'MM')
+                          .replace('30', 'dd'),
+                      currentUrl: location.href,
+                      dataUrl: dataUrl,
+                      defaultQuery: this.getAttribute('default-query'),
+                      elasticUrl: elasticUrl,
+                      fixedParams: fixedParams,
+                      fixedQueryString: fixedQueryString,
+                      loadAll: this.getAttribute('load-all') == 'true',
+                      legacyMode: legacyMode,
+                      localStorage: { ...localStorage },
+                      noUi: this.getAttribute('no-ui') === 'true',
+                      pageDefaultDisplays: localStorage.getItem('page-default-displays'),
+                      pageId: this.getAttribute('page-id'),
+                      randomSeed: Math.floor(Math.random() * 2147483647),
+                      removeFilters: this.getAttribute('remove-filters')?.split(',') ?? [],
+                      resultBaseUrl: "/",
+                      showHeader: false,
+                      showQueryControls: this.getAttribute('show-query-controls') != 'false',
+                      windowHeight: window.innerHeight,
+                      windowWidth: window.innerWidth,
+                  }
+              });
+
+              app.ports.document_focusElement.subscribe(id => {
+                  window.requestAnimationFrame(() => {
+                      let element = this.shadowRoot.getElementById(id);
+
+                      if (element) {
+                          element.focus();
+                      }
+                  });
+              });
+
+              app.ports.document_scrollElementIntoView.subscribe(id => {
+                  window.requestAnimationFrame(() => {
+                      let element = this.shadowRoot.getElementById(id);
+
+                      if (element) {
+                          element.scrollIntoView({block: 'nearest'});
+                      }
+                  });
+              });
+
+              app.ports.localStorage_get && app.ports.localStorage_get.subscribe(function (key) {
+                  let value = localStorage.getItem(key);
+                  app.ports.localStorage_receive.send({ key: key, value: value });
+              });
+
+              app.ports.localStorage_set.subscribe(function (data) {
+                  localStorage.setItem(data.key, data.value);
+              });
+
+              window.addEventListener('popstate', function () {
+                  app.ports.navigation_urlChanged.send(location.href);
+              });
+
+              app.ports.navigation_pushUrl.subscribe(function (url) {
+                  history.pushState([], '', url);
+                  app.ports.navigation_urlChanged.send(location.href);
+              });
+
+              app.ports.navigation_loadUrl.subscribe(function (url) {
+                  location.href = url;
+              });
+
+              document.addEventListener('theme-changed', e => {
+                  app.ports.localStorage_receive.send({ key: 'theme', value: e.detail });
+              });
+
+              document.addEventListener('link-previews-changed', e => {
+                  app.ports.localStorage_receive.send({ key: 'link-previews-enabled', value: e.detail });
+              });
+
+              window.addEventListener('hashchange', e => {
+                  let url = new URL(e.newURL);
+                  if (url.hash != "#results") {
+                      return;
+                  }
+
+                  let results = this.shadowRoot.getElementById("results");
+                  if (!results) {
+                      return;
+                  }
+
+                  results.focus();
+                  results.scrollIntoView();
+                  window.location.hash = '';
+              });
+
+              if (this.getAttribute('no-ui') === 'true') {
+                  let linkPreviewTarget = null;
+
+                  document.addEventListener('mouseover', e => {
+                      const target = e.target.closest('a');
+                      const isSearchBar = e.target.closest('.searchBar') !== null;
+                      if (target && target != linkPreviewTarget) {
+                          let parent = getParentOffset(target.offsetParent);
+                          let data = {
+                              url: target.href,
+                              x: target.offsetLeft + parent.x,
+                              y: target.offsetTop + parent.y,
+                              height: target.offsetHeight,
+                              width: target.offsetWidth,
+                          }
+                          if (isSearchBar) {
+                              if (getFeature('search-bar-previews-enabled', '0') == '0') {
+                                  return;
+                              }
+                              data.x += window.scrollX;
+                              data.y += window.scrollY;
+                          }
+                          app.ports.document_linkEntered.send(data);
+                      } else if (!target && linkPreviewTarget) {
+                          app.ports.document_linkLeft.send("");
+                      }
+
+                      linkPreviewTarget = target;
+                  });
+              }
+
+              function getParentOffset(node) {
+                  if (!node) {
+                      return {
+                          x: 0,
+                          y: 0,
+                      };
+                  }
+                  let parent = getParentOffset(node.offsetParent);
+                  return {
+                      x: node.offsetLeft - node.scrollLeft + parent.x,
+                      y: node.offsetTop - node.scrollTop + parent.y,
+                  };
+              }
+
+              const resizeObserver = new ResizeObserver(entries => {
+                  app.ports.document_receiveBodySize.send({
+                      width: Math.round(entries[0].contentRect.width),
+                      height: Math.round(entries[0].contentRect.height),
+                  });
+              });
+
+              let relativeElement = document.getElementById('page');
+              resizeObserver.observe(relativeElement);
+
+              document.addEventListener('visibilitychange', () => {
+                  if (document.visibilityState === 'visible') {
+                      let rect = relativeElement.getBoundingClientRect();
+
+                      app.ports.document_receiveBodySize.send({
+                          width: Math.round(rect.width),
+                          height: Math.round(rect.height),
+                      });
+                  }
+              });
+          }
+      }
+
+      customElements.define('nethys-search', NethysSearch);
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+# Building a Deviant Ability - Rules - Archives of Nethys: Pathfinder 2nd Edition Database
+
+Source HTML: `docs/aonprd/Rules.aspx-ID=3504&NoRedirect=1.htm`
+
+# [Rules Index](./Rules.aspx.md) | [GM Screen](../GMScreen/GMScreen.aspx.md) | [Player's Guide](../PlayersGuide/PlayersGuide.aspx.md)
+
+---
+
+Dark Archives (Remastered)
+
+[Deviant Abilities](./Rules.aspx-ID=3500.md)
+
+>
+
+# Building a Deviant Ability
+
+Source [Dark Archives (Remastered) pg. 99](../Source/Sources.aspx-ID=293.md)
+
+Decide what deviant ability you want to build, and what event led to the deviant ability or awoke it. Each ability comprises a main classification—grouping energy projection or enhanced physiology together—with an attendant backlash effect that can occur when the unstable power is pushed too far, and finally, one or more strange quirks that personalize the deviant ability further. If building a background deviant ability, take a feat from the classification that best matches the power you want— these ability classifications determine the general theme of your ability, as well as what type of backlash can happen if your ability runs rampant. For instance, if your power is to breathe blasts of electricity, you could take the [Storming Breath](../Feat/Feats.aspx-ID=8028.md) feat from the dragon classification, which covers energy manipulation. Once you have gained a feat in a given classification, you can take only feats from that classification, as well as universal deviant ability feats. If you are playing with campaign deviant abilities, simply grant your player the abilities that best fit the story, ignoring the split between classifications if needed.
+
+>

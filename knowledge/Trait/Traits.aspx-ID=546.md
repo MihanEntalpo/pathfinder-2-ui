@@ -1,0 +1,10 @@
+# Bard - Traits - Archives of Nethys: Pathfinder 2nd Edition Database
+
+Source HTML: `docs/aonprd/Traits.aspx-ID=546.htm`
+
+There is a Legacy version here.
+
+# [Bard](./Traits.aspx-ID=546.md)
+
+Source [Player Core pg. 453](../Source/Sources.aspx-ID=216.md)
+This indicates abilities from the bard class.

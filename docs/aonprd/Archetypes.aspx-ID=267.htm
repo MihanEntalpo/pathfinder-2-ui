@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script type="text/javascript" async src="js-id=UA-137805785-3.js" tppabs="https://www.googletagmanager.com/gtag/js?id=UA-137805785-3"></script>
+    <script type="text/javascript">
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-137805785-3');
+    </script>
+    <title>
+        Vigilante - Archetypes - Archives of Nethys: Pathfinder 2nd Edition Database
+    </title>
+    
+
+    <link href="Layout.css-v=EB6PS6lfpX6G1uwFu7uHcEh6oScz15hZHsXHCNMHzLg.css" tppabs="https://2e.aonprd.com/Styles/Layout.css?v=EB6PS6lfpX6G1uwFu7uHcEh6oScz15hZHsXHCNMHzLg" rel="stylesheet" type="text/css" />
+    <link href="rpg-awesome.min.css" tppabs="https://2e.aonprd.com/Styles/rpg-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="Typography.css-v=3et3D84VeOgcsPaSRyGH6nF1FfjjYgVpcGBq4HyG5vg.css" tppabs="https://2e.aonprd.com/Styles/Typography.css?v=3et3D84VeOgcsPaSRyGH6nF1FfjjYgVpcGBq4HyG5vg" rel="stylesheet" type="text/css" />
+    <link href="themes.css" tppabs="https://2e.aonprd.com/themes" rel="stylesheet" type="text/css" />
+    <link href="SitePrint.css-v=8wGbZVsBHNUZjW78tbaeVtZ_Jlm0ss-wjdlzy_jKlOY.css" tppabs="https://2e.aonprd.com/Styles/SitePrint.css?v=8wGbZVsBHNUZjW78tbaeVtZ_Jlm0ss-wjdlzy_jKlOY" rel="stylesheet" type="text/css" media="print" />
+
+    <link href="css-family=Julee.css" tppabs="https://fonts.googleapis.com/css?family=Julee" rel="stylesheet" type="text/css" />
+    <link href="css-family=Andika.css" tppabs="https://fonts.googleapis.com/css?family=Andika" rel="stylesheet" type="text/css" />
+    <link href="css2-family=Lato-ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap.css" tppabs="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="search" type="application/opensearchdescription+xml" title="Search the Archives of Nethys" href="https://2e.aonprd.com/opensearch.xml" />
+
+
+    <script type="text/javascript">
+        window.elasticUrl = 'https://elasticsearch.aonprd.com/aon-test';
+    </script>
+
+        <script src="nethys-search-9f2620f2bfdf2014fd0b0c157f03248921d02563.js" tppabs="https://elasticsearch.aonprd.com/js/nethys-search-9f2620f2bfdf2014fd0b0c157f03248921d02563.js"></script>
+
+    <script
+      src="jquery-3.6.0.min.js" tppabs="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"></script>
+    <script src="semantic.min.js" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/semantic.min.js" integrity="sha512-5cguXwRllb+6bcc2pogwIeQmQPXEzn2ddsqAexIBhh7FO1z5Hkek1J9mrK2+rmZCTU6b6pERxI7acnp1MpAg4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="search.min.css" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/search.min.css" integrity="sha512-1xyHOORqcJ80bareQ2TWmQE+WZ/TlsqjqILbLHeM3Urtw720aiFXE/N+Xm4MAJpcn42e3k4Z8ZpqZfsA2VVyNw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="transition.min.css" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/transition.min.css" integrity="sha512-zsEyDFFD+yPxc7Kq8c3byp2H3tfx4GgT4wvCDzDGiOlkk2hl454XOHzHfN/OsPilopfPEbRzVJ0wxlIa/9BOyg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="transition.min.js" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/transition.min.js" integrity="sha512-zPx44KLp+BP6OKcCIPQibTiLz0WAc2s9syi+7wOT+Ql2D1/kAX8y7K1rz8vuTtrhRS2dMZ7zVS5dQoHTvkXJCA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="icon.min.css" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/icon.min.css" integrity="sha512-cKaYuptKrUbQ4/r0qmxhpQDjPWb7/SYN6gQRYMOQqPJ2+S4Bmb1zZ1/SAuszp+E6yoakjQFpM+rAzuw+EwR+xw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="input.min.css" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/input.min.css" integrity="sha512-6+BQOwPqqk5AianROXkI3LKgnLcjZbEV3KbhO++sKXemybg0FugrODki+nBsg9FipqlKSMd4ppnpkqC6VEpFiA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="button.min.css" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/button.min.css" integrity="sha512-XMrByQiBPJwH350YvTKR/XTY1fOQX4lSQqeft++WcyY39l0eKoPXOgx1OJHEODhHCW1FfvVl/Bdr90QE08FG+Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="dropdown.min.css" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/dropdown.min.css" integrity="sha512-hDsG55Tp5IgyWKbBbNhOo0+bLTdIVVAGW09a7IFvgIkKg/xrjOdOA2lEPFkkgJQ3NuB7DxDFlSHX7/JYvFLYfA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="dropdown.min.js" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/dropdown.min.js" integrity="sha512-1SzBIESNYM3Y8JkQrS1Mu2dPnPaAqeQkCV9KfDA2eYXBEzdkhHWyqTP6P0OAsh1RSC4cDvr8DmYVTmb/YWGYpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="showdown.min.js" tppabs="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js" integrity="sha512-LhccdVNGe2QMEfI3x4DVV3ckMRe36TfydKss6mJpdHjNFiV07dFpS2xzeZedptKZrwxfICJpez09iNioiSZ3hA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="lodash.min.js" tppabs="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="modernMenu.js" tppabs="https://2e.aonprd.com/Scripts/modernMenu.js"></script>
+
+    <script type="text/javascript" src="tableState.js" tppabs="https://2e.aonprd.com/Scripts/tableState.js"></script>
+    <script type="text/javascript" src="drawerHandlers.js" tppabs="https://2e.aonprd.com/Scripts/drawerHandlers.js"></script>
+    <script type="text/javascript" src="hideFilter.js" tppabs="https://2e.aonprd.com/Scripts/hideFilter.js"></script>
+    <script type="text/javascript" src="searchBar.js" tppabs="https://2e.aonprd.com/Scripts/searchBar.js"></script>
+
+    <script type="text/javascript" src="previewModal.js" tppabs="https://2e.aonprd.com/Scripts/previewModal.js"></script>
+    
+    
+        <meta name="keywords" content="Archives, Nethys, Wiki, Archives of Nethys, Pathfinder, Official, AoN, AoNPRD, PRD, PFSRD, 2E, 2nd Edition, Archetypes, Vigilante" />
+        <meta name="description" content="As a vigilante, you have two faces: a public persona, and a secret identity that lets you hide your extralegal actions from polite society. Your secret identity lets you adventure and carry out clandestine missions while keeping the civilians you care about safe. Whatever your purpose&#x2014;fighting crime, inciting rebellion, sowing chaos&#x2014;your vigilante identity makes you both hard to pin down and a mysterious, intriguing subject of gossip. While many adventurers prefer to bask in the glory or infamy of their actions, you keep that part of your life a secret. There are various reasons why you might do this. Perhaps you have something or someone in your life that you want to protect from the dangers and threats that your other life. Perhaps you are a public figure, and your alternate life could draw undue attention from your community. It could also be that you don&#x27;t like attention and wish to retain the ability to step away from it all and relax in peace. Regardless of your reasons, you have a secret identity and will go to great lengths to keep it secret. Vigilantes can have many goals and agendas. Some see them as glory seekers, but more often than not, they are working towards some lofty goal. Perhaps they are trying to inspire a people to fight back against their oppressors. They could be hunting down a crime lord they have a personal vendetta against. Maybe they seek to rebalance the wealth of a nation, stealing from the rich to give to those in need. You are one such vigilante, living a hidden life so you can fight in secrecy. What will you do to keep your secret and continue down your path?" />
+
+
+    <meta charset="utf-8"/>
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="darkreader-lock" />
+    <style type="text/css">        
+        .nav-parent > * {
+            display: block;
+        }
+        .mobile-menu-toggle{
+            display:none;
+        }
+        #main-menu .nav-parent > .brand > .title{
+            display: none;
+        }
+    </style>
+</head>
+<body class="dark aon_dark_theme classic_feel">
+    <div id="wrapper" class="clearfix">
+
+
+        <script type="text/javascript" src="toggle.js" tppabs="https://2e.aonprd.com/Scripts/toggle.js"></script>
+
+
+        <div class="page clearfix" id="page">
+            <div class="header">
+                <div class="clear hideSkiplink" id="main-menu" >
+                    <a class="mobile-menu-toggle" id="mobile-menu-toggle" href="javascript:void(0);" data-toggle="mobile">|||</a>
+                    <div class="splash"></div>
+                    <div class="nav-parent" id="nav-parent">
+                        <a href="index.htm" tppabs="https://2e.aonprd.com/" style="font-size:larger" class="brand">
+                            <span class="home">
+                                Home
+                            </span>
+                        </a>
+                        <a href="Actions.aspx.htm" tppabs="https://2e.aonprd.com/Actions.aspx">Actions/Activities</a>
+                        <a href="Afflictions.aspx.htm" tppabs="https://2e.aonprd.com/Afflictions.aspx">Afflictions</a>
+                        <a href="Ancestries.aspx.htm" tppabs="https://2e.aonprd.com/Ancestries.aspx">Ancestries</a>
+                        <a href="Archetypes.aspx.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx">Archetypes</a>
+                        <a href="Backgrounds.aspx.htm" tppabs="https://2e.aonprd.com/Backgrounds.aspx">Backgrounds</a>
+                        <a href="Classes.aspx.htm" tppabs="https://2e.aonprd.com/Classes.aspx">Classes</a>
+                        <a href="Conditions.aspx.htm" tppabs="https://2e.aonprd.com/Conditions.aspx">Conditions</a>
+                        <a href="Creatures.aspx.htm" tppabs="https://2e.aonprd.com/Creatures.aspx">Creatures</a>
+                        <a href="Equipment.aspx.htm" tppabs="https://2e.aonprd.com/Equipment.aspx">Equipment</a>
+                        <a href="Feats.aspx.htm" tppabs="https://2e.aonprd.com/Feats.aspx">Feats</a>
+                        <a href="Hazards.aspx.htm" tppabs="https://2e.aonprd.com/Hazards.aspx">Hazards</a>
+                        <a href="MythicCallings.aspx.htm" tppabs="https://2e.aonprd.com/MythicCallings.aspx">Mythic</a>
+                        <a href="Rules.aspx.htm" tppabs="https://2e.aonprd.com/Rules.aspx">Rules</a>
+                        <a href="Setting.aspx.htm" tppabs="https://2e.aonprd.com/Setting.aspx">Setting</a>
+                        <a href="Skills.aspx.htm" tppabs="https://2e.aonprd.com/Skills.aspx">Skills</a>
+                        <a href="Spells.aspx.htm" tppabs="https://2e.aonprd.com/Spells.aspx">Spells/Rituals</a>
+                        <a href="Traits.aspx.htm" tppabs="https://2e.aonprd.com/Traits.aspx">Traits</a>
+                        <img src="heading_flourish.png" tppabs="https://2e.aonprd.com/Images/heading_flourish.png" alt="flourish" class="flourish" />
+                        <a href="Licenses.aspx.htm" tppabs="https://2e.aonprd.com/Licenses.aspx">Licenses</a>
+                        <a href="Sources.aspx.htm" tppabs="https://2e.aonprd.com/Sources.aspx">Sources</a>
+                        <img src="heading_flourish.png" tppabs="https://2e.aonprd.com/Images/heading_flourish.png" alt="flourish" class="flourish" />
+                        <a href="ContactUs.aspx.htm" tppabs="https://2e.aonprd.com/ContactUs.aspx">Contact Us</a>
+                        <a href="Contributors.aspx.htm" tppabs="https://2e.aonprd.com/Contributors.aspx">Contributors</a>
+                        <a href="Support.aspx.htm" tppabs="https://2e.aonprd.com/Support.aspx">Support the Archives</a>
+                        <div id="classic-search" class="search">
+                            <input type="text" class="search-input" placeholder="Search" />
+                            <button type="button" class="search-button">
+                                <svg class="Icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="height: 24px; width: 24px; fill: "><path d="M0 0h512v512H0z" fill="transparent" fill-opacity="0"></path><g class="" transform="translate(0,0)" style="touch-action: none;"><path d="M333.78 20.188c-39.97 0-79.96 15.212-110.405 45.656-58.667 58.667-60.796 152.72-6.406 213.97l-15.782 15.748 13.25 13.25 15.75-15.78c61.248 54.39 155.3 52.26 213.968-6.407 60.887-60.886 60.888-159.894 0-220.78C413.713 35.4 373.753 20.187 333.78 20.187zm0 18.562c35.15 0 70.285 13.44 97.158 40.313 53.745 53.745 53.744 140.6 0 194.343-51.526 51.526-133.46 53.643-187.5 6.375l.218-.217c-2.35-2.05-4.668-4.17-6.906-6.407-2.207-2.206-4.288-4.496-6.313-6.812l-.218.22c-47.27-54.04-45.152-135.976 6.374-187.502C263.467 52.19 298.63 38.75 333.78 38.75zm0 18.813c-30.31 0-60.63 11.6-83.81 34.78-46.362 46.362-46.362 121.234 0 167.594 10.14 10.142 21.632 18.077 33.905 23.782-24.91-19.087-40.97-49.133-40.97-82.94 0-15.323 3.292-29.888 9.22-43-4.165 20.485.44 40.88 14.47 54.907 24.583 24.585 68.744 20.318 98.624-9.562 29.88-29.88 34.146-74.04 9.56-98.625-2.375-2.376-4.943-4.473-7.655-6.313 45.13 8.648 79.954 46.345 84.25 92.876 4.44-35.07-6.82-71.726-33.813-98.72-23.18-23.18-53.47-34.78-83.78-34.78zM176.907 297.688L42.094 432.5l34.562 34.563L211.47 332.25l-34.564-34.563zM40 456.813L24 472.78 37.22 486l15.968-16L40 456.812z" fill-opacity="1"></path></g></svg>
+                            </button>
+                        </div>       
+                            <a id="minMaxMenu" onclick='setMenuState("min")'>Maximize Menu</a>
+                    </div>
+                    
+                    <div class="nav-parent expand-collapse" id="mobile-nav-parent" data-target="mobile">
+                        <a href="index.htm" tppabs="https://2e.aonprd.com/" style="font-size:larger" class="brand">
+                            <span class="title">
+                                Archives of Nethys
+                            </span>
+                        </a>
+                        <a href="Afflictions.aspx.htm" tppabs="https://2e.aonprd.com/Afflictions.aspx">Afflictions</a>
+                        <a href="javascript:void(0);" data-toggle="cc">Character Creation +</a>
+                        <div class="expand-collapse expand-collapse-group hide-when-collapsed expanded" data-target="cc" data-group="menus">
+                            <a href="Ancestries.aspx.htm" tppabs="https://2e.aonprd.com/Ancestries.aspx">Ancestries</a>
+                            <a href="Archetypes.aspx.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx">Archetypes</a>
+                            <a href="Backgrounds.aspx.htm" tppabs="https://2e.aonprd.com/Backgrounds.aspx">Backgrounds</a>
+                            <a href="Classes.aspx.htm" tppabs="https://2e.aonprd.com/Classes.aspx">Classes</a>
+                            <a href="Feats.aspx.htm" tppabs="https://2e.aonprd.com/Feats.aspx">Feats</a>
+                            <a href="Skills.aspx.htm" tppabs="https://2e.aonprd.com/Skills.aspx">Skills</a>
+                        </div>
+                        <a href="Creatures.aspx.htm" tppabs="https://2e.aonprd.com/Creatures.aspx">Creatures</a>
+                        <a href="Equipment.aspx.htm" tppabs="https://2e.aonprd.com/Equipment.aspx">Equipment</a>
+                        <a href="Setting.aspx.htm" tppabs="https://2e.aonprd.com/Setting.aspx">Setting</a>
+                        <a href="Spells.aspx.htm" tppabs="https://2e.aonprd.com/Spells.aspx">Spells/Rituals</a>
+                        <a href="javascript:void(0);" data-toggle="rules">Rules +</a>
+                        <div class="expand-collapse expand-collapse-group hide-when-collapsed" data-target="rules" data-group="menus">
+                            <a href="Actions.aspx.htm" tppabs="https://2e.aonprd.com/Actions.aspx">Actions/Activities</a>
+                            <a href="Conditions.aspx.htm" tppabs="https://2e.aonprd.com/Conditions.aspx">Conditions</a>
+                            <a href="Rules.aspx.htm" tppabs="https://2e.aonprd.com/Rules.aspx">Rules</a>
+                            <a href="Traits.aspx.htm" tppabs="https://2e.aonprd.com/Traits.aspx">Traits</a>
+                        </div>
+                        <a href="Hazards.aspx.htm" tppabs="https://2e.aonprd.com/Hazards.aspx">Hazards</a>
+                        <a href="javascript:void(0);" data-toggle="mythic" data-group="">Mythic +</a>
+                        <div class="expand-collapse expand-collapse-group hide-when-collapsed" data-target="mythic" data-group="menus">
+                            <a href="Rules.aspx-ID=3320.htm" tppabs="https://2e.aonprd.com/Rules.aspx?ID=3320">Mythic Rules</a>
+                            <a href="MythicCallings.aspx.htm" tppabs="https://2e.aonprd.com/MythicCallings.aspx">Callings</a>
+                            <a href="MythicFeats.aspx.htm" tppabs="https://2e.aonprd.com/MythicFeats.aspx">Mythic Feats</a>
+                            <a href="MythicDestinies.aspx.htm" tppabs="https://2e.aonprd.com/MythicDestinies.aspx">Destinies</a>
+                            <a href="MythicSpells.aspx.htm" tppabs="https://2e.aonprd.com/MythicSpells.aspx">Mythic Spells</a>
+                            <a href="MythicRituals.aspx.htm" tppabs="https://2e.aonprd.com/MythicRituals.aspx">Mythic Rituals</a>
+                        </div>
+                        <a href="Sources.aspx.htm" tppabs="https://2e.aonprd.com/Sources.aspx">Sources</a>
+                        <a href="javascript:void(0);" data-toggle="about" data-group="">About the Archives +</a>
+                        <div class="expand-collapse expand-collapse-group hide-when-collapsed" data-target="about" data-group="menus">
+                            <a href="Licenses.aspx.htm" tppabs="https://2e.aonprd.com/Licenses.aspx">Licenses</a>
+                            <a href="ContactUs.aspx.htm" tppabs="https://2e.aonprd.com/ContactUs.aspx">Contact Us</a>
+                            <a href="Contributors.aspx.htm" tppabs="https://2e.aonprd.com/Contributors.aspx">Contributors</a>
+                            <a href="Support.aspx.htm" tppabs="https://2e.aonprd.com/Support.aspx">Support the Archives</a>
+                        </div>
+                        <div id="mobileSearch" class="ui fluid search">
+                            <div class="ui action icon input" style="width:90%;height:100%">
+                                <input class="prompt" type="text" placeholder="Search..."/>
+                                <button class="ui icon button" onclick="jumpToSearch('#mobileSearch')">
+                                    <i class="search icon"></i>
+                                </button>
+                            </div>
+                            <div class="results"></div>
+                        </div>
+                        <a href="index.htm" tppabs="https://2e.aonprd.com/">
+                                <img src="PF2Logo_Nethys_400_Selected.png" tppabs="https://2e.aonprd.com/Images/PF2Logo_Nethys_400_Selected.png" alt="Pathfinder RPG (2nd Edition)" />
+                            </a>
+                        <a href="https://www.aonprd.com/"  >
+                            <img src="PF1Logo_Nethys_200.png" tppabs="https://2e.aonprd.com/Images/PF1Logo_Nethys_200.png" alt="Pathfinder RPG (1st Edition)" />
+                        </a> 
+                        <a href="https://www.aonsrd.com/" >
+                            <img src="SFLogo_Nethys_200.png" tppabs="https://2e.aonprd.com/Images/SFLogo_Nethys_200.png" alt="Starfinder RPG (1st Edition)" />
+                        </a>
+                        <a href="https://2e.aonsrd.com/" >
+                            <img src="starfinder_2_logo_200.webp" tppabs="https://2e.aonprd.com/Images/starfinder_2_logo_200.webp" alt="Starfinder RPG (2nd Edition)" />
+                        </a>
+                    </div>
+                </div>
+                <div class="theme-toggle-wrapper" title="Toggle Theme">
+                    <div class="theme-open" title="Change Theme"><i class="ra ra-flowers"></i></div>
+                </div>
+            </div>
+
+            <div class="new-navbar">
+                <div class="drawer-toggle" title="Expand Sidebar" onclick="switchDrawer()">
+                    <img src="NethysMask.png" tppabs="https://2e.aonprd.com/Images/NethysMask.png" alt="&#xe030" /></div>
+                    <a class="title" href="index.htm" tppabs="https://2e.aonprd.com/">Archives of Nethys</a>
+                    <div class="searchBar">
+                        <div id="desktopSearch" class="ui fluid search">
+                            <div class="ui action icon input" style="width:100%;height:100%">
+                                <input class="prompt" type="text" placeholder="Search..."/>
+                                <button class="ui icon button" onclick="jumpToSearch('#desktopSearch')">
+                                        <i class="search icon"></i>
+                                    </button>
+                            </div>
+                            <div class="results"></div>
+                        </div>                   
+                    </div>
+                    <div class="game-selector">
+                        <div class="game-selector-options">
+                            <a class="game-selector-option" href="https://aonprd.com/" >
+                                <img src="PF1Logo_Nethys.png" tppabs="https://2e.aonprd.com/Images/PF1Logo_Nethys.png" alt="Pathfinder 1e" />
+                            </a>
+                            <a class="game-selector-option" href="https://aonsrd.com/" >
+                                <img src="SFLogo_Nethys.png" tppabs="https://2e.aonprd.com/Images/SFLogo_Nethys.png" alt="Starfinder 1e" />
+                            </a>
+                            <a class="game-selector-option" href="https://2e.aonsrd.com/" >
+                                <img src="starfinder_2_logo.webp" tppabs="https://2e.aonprd.com/Images/starfinder_2_logo.webp" alt="Starfinder 2e" />
+                            </a>
+                        </div>
+                        <img class="game-selector-current" src="PF2Logo_Nethys.png" tppabs="https://2e.aonprd.com/Images/PF2Logo_Nethys.png" alt="Pathfinder 2e" />
+                    </div>
+                    <div class="theme-open" title="Change Theme"><i class="ra ra-flowers"></i></div>
+            </div>
+
+            <div class="main-wrapper" id="main-wrapper">
+                <div class="menutitle">
+                    <h1>
+                        Archives of Nethys
+                    </h1>
+                    <h2 class="game-titles">
+                        <a href="https://www.aonprd.com/"  >
+                            <img src="PF1Logo_Nethys.png" tppabs="https://2e.aonprd.com/Images/PF1Logo_Nethys.png" alt="Pathfinder RPG (1st Edition)" />
+                        </a> 
+                        <a href="index.htm" tppabs="https://2e.aonprd.com/" class="selected">
+                            <img src="PF2Logo_Nethys-Selected.png" tppabs="https://2e.aonprd.com/Images/PF2Logo_Nethys-Selected.png" alt="Pathfinder RPG (2nd Edition)" />
+                        </a>
+                        <a href="https://www.aonsrd.com/" >
+                            <img src="SFLogo_Nethys.png" tppabs="https://2e.aonprd.com/Images/SFLogo_Nethys.png" alt="Starfinder RPG (1st Edition)" />
+                        </a>
+                        <a href="https://2e.aonsrd.com/" >
+                            <img src="starfinder_2_logo.webp" tppabs="https://2e.aonprd.com/Images/starfinder_2_logo.webp" alt="Starfinder RPG (2nd Edition)" />
+                        </a>
+                    </h2>
+                </div>
+                <div class="main" id="main">
+                    
+
+<span class="hide-on-print"><h1 style="text-align:center"><a href="Archetypes.aspx.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx">All Archetypes</a><br /><a href="Archetypes.aspx-Category=9.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?Category=9">Artifact</a> | <a href="Archetypes.aspx-Category=7.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?Category=7">Class</a> | <a href="Archetypes.aspx-Category=1.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?Category=1">Combat Style</a> | <a href="Archetypes.aspx-Category=2.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?Category=2">Core</a> | <a href="Archetypes.aspx-Category=3.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?Category=3">Faction</a> | <a href="Archetypes.aspx-Category=4.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?Category=4">Multiclass</a> | <a href="Archetypes.aspx-Category=5.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?Category=5">Mystical</a> | <a href="Archetypes.aspx-Category=10.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?Category=10">Mythic</a> | <a href="Archetypes.aspx-Category=6.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?Category=6">Profession</a> | <a href="Archetypes.aspx-Category=8.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?Category=8">Undead</a></h1></span>
+<span class="hide-on-print"></span>
+
+    <hr class="hide-on-print" />
+
+<span></span>
+<span></span>
+<span><div class="siderbarlook hide-on-print">There is a Legacy version <a href="javascript:if(confirm(%27https://2e.aonprd.com/Archetypes.aspx?ID=80&NoRedirect=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Archetypes.aspx?ID=80&NoRedirect=1%27" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=80&NoRedirect=1" style="text-decoration:underline">here</a>.</div><h1 class="title"><a href ="PFS.aspx.htm" tppabs="https://2e.aonprd.com/PFS.aspx"><span style="float:left;"><img alt="PFS Standard" title="PFS Standard" style="height:25px; padding:2px 10px 0px 2px" src="PFS_Standard-2.png" tppabs="https://2e.aonprd.com/Images/Icons/PFS_Standard.png"></a></span><a href="Archetypes.aspx-ID=267.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=267">Vigilante</a></h1><a target="_blank" href="javascript:if(confirm(%27https://2e.aonprd.com/Images/Archetypes/Archetype_Vigilante.webp  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Images/Archetypes/Archetype_Vigilante.webp%27" tppabs="https://2e.aonprd.com/Images/Archetypes/Archetype_Vigilante.webp"><img class="thumbnail" src="Archetype_Vigilante.webp" tppabs="https://2e.aonprd.com/Images/Archetypes/Archetype_Vigilante.webp"></a><b>Source</b> <a href="Sources.aspx-ID=227.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=227" target="_blank" class="external-link"><i>Player Core 2 pg. 218</i></a><br /><u><a href="PFS.aspx.htm" tppabs="https://2e.aonprd.com/PFS.aspx"><b><i>PFS Note</b></u></a> All characters have access to the vigilante archetype.</i><br /><br />As a vigilante, you have two faces: a public persona, and a secret identity that lets you hide your extralegal actions from polite society. Your secret identity lets you adventure and carry out clandestine missions while keeping the civilians you care about safe. Whatever your purpose—fighting crime, inciting rebellion, sowing chaos—your vigilante identity makes you both hard to pin down and a mysterious, intriguing subject of gossip. While many adventurers prefer to bask in the glory or infamy of their actions, you keep that part of your life a secret. There are various reasons why you might do this. Perhaps you have something or someone in your life that you want to protect from the dangers and threats that your other life. Perhaps you are a public figure, and your alternate life could draw undue attention from your community. It could also be that you don't like attention and wish to retain the ability to step away from it all and relax in peace. Regardless of your reasons, you have a secret identity and will go to great lengths to keep it secret.<br /><br /> Vigilantes can have many goals and agendas. Some see them as glory seekers, but more often than not, they are working towards some lofty goal. Perhaps they are trying to inspire a people to fight back against their oppressors. They could be hunting down a crime lord they have a personal vendetta against. Maybe they seek to rebalance the wealth of a nation, stealing from the rich to give to those in need. You are one such vigilante, living a hidden life so you can fight in secrecy. What will you do to keep your secret and continue down your path?<br /><h3 class="title">Gray Gardener</h3>The Vigilante Dedication can also provide access to the <a style="text-decoration:underline" href="Archetypes.aspx-ID=124.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=124">Gray Gardener</a> set of feats, if you are a member of the Gray Gardener organization. The Gray Gardener archetype contains spoilers for the Night of the Gray Death adventure.<h1 class="title">Additional Feats</h1><b>Source</b> <a href="Sources.aspx-ID=216.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=216" target="_blank" class="external-link"><i>Player Core pg. 215</i></a><br />Some archetypes include a list of “Additional Feats” that appear in other sources. The list includes each feat’s level, which might be different than normal when gained from the archetype. You can take the feat as an archetype feat of that level, meaning it counts toward the number of feats required by the archetype’s dedication feat. When selected this way, a feat that normally has a class’s trait (such as the fighter trait) doesn’t have that class trait.<br /><br /><a href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=2130  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=2130%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=2130"><u>Click here for the full rules on Additional Feats</a></u>.<br /><br /><br /><h2 class="title"><a href ="PFS.aspx.htm" tppabs="https://2e.aonprd.com/PFS.aspx"><span style="float:left;"><img alt="PFS Standard" title="PFS Standard" style="height:18px; padding:2px 10px 0px 2px" src="PFS_Standard-2.png" tppabs="https://2e.aonprd.com/Images/Icons/PFS_Standard.png"></a></span><a href="javascript:if(confirm(%27https://2e.aonprd.com/Feats.aspx?ID=6424  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Feats.aspx?ID=6424%27" tppabs="https://2e.aonprd.com/Feats.aspx?ID=6424">Vigilante Dedication</a> <span style="margin-left:auto; margin-right:0">Feat 2</span></h2><span class="traituncommon"><a href="Traits.aspx-ID=721.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=721">Uncommon</a></span><span style="letter-spacing: -.4em">&nbsp;</span><span class="trait"><a href="Traits.aspx-ID=535.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=535">Archetype</a></span><span style="letter-spacing: -.4em">&nbsp;</span><span class="trait"><a href="Traits.aspx-ID=572.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=572">Dedication</a></span><span style="letter-spacing: -.4em">&nbsp;</span><br /><b>Source</b> <a href="Sources.aspx-ID=227.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=227" target="_blank" class="external-link"><i>Player Core 2 pg. 218</i></a><br /><b>Archetypes</b> <u><a href="Archetypes.aspx-ID=267.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=267">Vigilante</a></u>, <u><a href="Archetypes.aspx-ID=124.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=124">Gray Gardener</a></u><br /><b>Prerequisites</b> trained in <u><a href="Skills.aspx-ID=38.htm" tppabs="https://2e.aonprd.com/Skills.aspx?ID=38">Deception</a></u><br /><hr />You have two identities, each with its own name and abilities. Your social identity is an upstanding member of society, while your vigilante identity is a skilled and cunning warrior. Neither of these identities is a false front; you really are both of these people. If someone attempts to discern your other identity, they must use a <a style="text-decoration:underline" href="Actions.aspx-ID=2301.htm" tppabs="https://2e.aonprd.com/Actions.aspx?ID=2301">Seek</a> action to attempt a Perception check against your Deception DC, as if you were using the <a style="text-decoration:underline" href="Actions.aspx-ID=2388.htm" tppabs="https://2e.aonprd.com/Actions.aspx?ID=2388">Impersonate</a> action. Your Deception DC against such attempts is 20 + your proficiency modifier instead of the normal DC. Unlike with Impersonate, you don't have to attempt a Deception check to interact with someone to conceal your other identity—a check happens only if someone else specifically tries to uncover your other identity. <br /><br />Changing from one identity to the other takes 1 minute and must be done out of sight from other creatures. As this process involves both physical changes such as clothing and makeup, along with an altered state of mind, other effects that change your appearance don't reduce the time required to change identities. <br /><br />Your two identities are completely distinct. Checks to <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Actions.aspx?ID=2367  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Actions.aspx?ID=2367%27" tppabs="https://2e.aonprd.com/Actions.aspx?ID=2367">Recall Knowledge</a> about one of your identities don't reveal information about the other unless the person attempting the check knows both identities are the same person. Effects that detect you based on your identity work only if you are currently in the identity the effect is trying to detect; otherwise, the effect fails as if the target didn't exist. <br /><br />To maintain the separation between your identities, some of your abilities have the <a style="text-decoration:underline" href="Traits.aspx-ID=803.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=803">vigilante</a> trait. Your class feats and vigilante feats are associated with your vigilante identity, and using them while in your social identity may risk exposing you as a vigilante. If your identity is exposed to the public, you lose the benefits of Vigilante Dedication to disguising yourself, but you can spend 1 week of downtime to create a new social identity.<br /><h2 class="title"><a href ="PFS.aspx.htm" tppabs="https://2e.aonprd.com/PFS.aspx"><span style="float:left;"><img alt="PFS Standard" title="PFS Standard" style="height:18px; padding:2px 10px 0px 2px" src="PFS_Standard-2.png" tppabs="https://2e.aonprd.com/Images/Icons/PFS_Standard.png"></a></span><a href="javascript:if(confirm(%27https://2e.aonprd.com/Feats.aspx?ID=6425  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Feats.aspx?ID=6425%27" tppabs="https://2e.aonprd.com/Feats.aspx?ID=6425">Hidden Magic</a> <span style="margin-left:auto; margin-right:0">Feat 4</span></h2><span class="trait"><a href="Traits.aspx-ID=535.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=535">Archetype</a></span><span style="letter-spacing: -.4em">&nbsp;</span><span class="trait"><a href="Traits.aspx-ID=695.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=695">Skill</a></span><span style="letter-spacing: -.4em">&nbsp;</span><br /><b>Source</b> <a href="Sources.aspx-ID=227.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=227" target="_blank" class="external-link"><i>Player Core 2 pg. 219</i></a><br /><b>Archetype</b> <u><a href="Archetypes.aspx-ID=267.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=267">Vigilante</a></u><br /><b>Prerequisites</b> <u><a href="javascript:if(confirm(%27https://2e.aonprd.com/Feats.aspx?ID=6424  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Feats.aspx?ID=6424%27" tppabs="https://2e.aonprd.com/Feats.aspx?ID=6424">Vigilante Dedication</a></u>; expert in <u><a href="Skills.aspx-ID=35.htm" tppabs="https://2e.aonprd.com/Skills.aspx?ID=35">Arcana</a></u>, <u><a href="Skills.aspx-ID=43.htm" tppabs="https://2e.aonprd.com/Skills.aspx?ID=43">Nature</a></u>, <u><a href="Skills.aspx-ID=44.htm" tppabs="https://2e.aonprd.com/Skills.aspx?ID=44">Occultism</a></u>, or <u><a href="Skills.aspx-ID=46.htm" tppabs="https://2e.aonprd.com/Skills.aspx?ID=46">Religion</a></u><br /><hr />You've learned to hide the magical auras of your gear. During your daily preparations, you carefully tweak any or all of your magic items to appear non-magical. Objects adjusted in this way remain so until your next preparations. A spellcaster using <a style="text-decoration:underline" href="Spells.aspx-ID=1485.htm" tppabs="https://2e.aonprd.com/Spells.aspx?ID=1485"><i>detect magic</i></a> or <a style="text-decoration:underline" href="Spells.aspx-ID=1646.htm" tppabs="https://2e.aonprd.com/Spells.aspx?ID=1646"><i>read aura</i></a> must succeed at a Perception check against your <a style="text-decoration:underline" href="Skills.aspx-ID=38.htm" tppabs="https://2e.aonprd.com/Skills.aspx?ID=38">Deception</a> DC to see through your obfuscations.<br /><h2 class="title"><a href ="PFS.aspx.htm" tppabs="https://2e.aonprd.com/PFS.aspx"><span style="float:left;"><img alt="PFS Standard" title="PFS Standard" style="height:18px; padding:2px 10px 0px 2px" src="PFS_Standard-2.png" tppabs="https://2e.aonprd.com/Images/Icons/PFS_Standard.png"></a></span><a href="javascript:if(confirm(%27https://2e.aonprd.com/Feats.aspx?ID=6426  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Feats.aspx?ID=6426%27" tppabs="https://2e.aonprd.com/Feats.aspx?ID=6426">Minion Guise</a> <span style="margin-left:auto; margin-right:0">Feat 4</span></h2><span class="trait"><a href="Traits.aspx-ID=535.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=535">Archetype</a></span><span style="letter-spacing: -.4em">&nbsp;</span><span class="trait"><a href="Traits.aspx-ID=695.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=695">Skill</a></span><span style="letter-spacing: -.4em">&nbsp;</span><br /><b>Source</b> <a href="Sources.aspx-ID=227.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=227" target="_blank" class="external-link"><i>Player Core 2 pg. 219</i></a><br /><b>Archetype</b> <u><a href="Archetypes.aspx-ID=267.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=267">Vigilante</a></u><br /><b>Prerequisites</b> <u><a href="javascript:if(confirm(%27https://2e.aonprd.com/Feats.aspx?ID=6424  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Feats.aspx?ID=6424%27" tppabs="https://2e.aonprd.com/Feats.aspx?ID=6424">Vigilante Dedication</a></u>; expert in <u><a href="Skills.aspx-ID=38.htm" tppabs="https://2e.aonprd.com/Skills.aspx?ID=38">Deception</a></u>; animal companion or familiar<br /><hr />When you are in your social identity, you can also grant a social identity to an animal companion, familiar, pet, or other minion you gained from a class feature or feat. When changing to your social identity, you also change your minion's appearance to that of a socially acceptable creature of its type, such as grooming a wolf to appear as a large dog or disguising a familiar to appear as an exotic pet. Commanding your minion to use unusual magical or combat abilities it gained from your class features or feats while in this social identity risks exposing your vigilante identity.<br /><h2 class="title"><a href ="PFS.aspx.htm" tppabs="https://2e.aonprd.com/PFS.aspx"><span style="float:left;"><img alt="PFS Standard" title="PFS Standard" style="height:18px; padding:2px 10px 0px 2px" src="PFS_Standard-2.png" tppabs="https://2e.aonprd.com/Images/Icons/PFS_Standard.png"></a></span><a href="javascript:if(confirm(%27https://2e.aonprd.com/Feats.aspx?ID=4869&ArchLevel=4  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Feats.aspx?ID=4869&ArchLevel=4%27" tppabs="https://2e.aonprd.com/Feats.aspx?ID=4869&ArchLevel=4">Quick Draw</a>  <span class='action' title='Single Action' role='img' aria-label='Single Action'>[one-action]</span> <span style="margin-left:auto; margin-right:0">Feat 4</span></h2><span class="trait"><a href="Traits.aspx-ID=406.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=406">Gunslinger</a></span><span style="letter-spacing: -.4em">&nbsp;</span><span class="trait"><a href="Traits.aspx-ID=682.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=682">Ranger</a></span><span style="letter-spacing: -.4em">&nbsp;</span><span class="trait"><a href="Traits.aspx-ID=687.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=687">Rogue</a></span><span style="letter-spacing: -.4em">&nbsp;</span><br /><b>Source</b> <a href="Sources.aspx-ID=216.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=216" target="_blank" class="external-link"><i>Player Core pg. 159</i></a><br /><b>Archetypes</b> <u><a href="Archetypes.aspx-ID=183.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=183">Alkenstar Agent</a></u>, <u><a href="Archetypes.aspx-ID=91.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=91">Butterfly Blade</a></u>, <u><a href="Archetypes.aspx-ID=247.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=247">Dual-Weapon Warrior</a></u>, <u><a href="Archetypes.aspx-ID=314.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=314">Eagle Knight</a></u>, <u><a href="Archetypes.aspx-ID=271.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=271">Red Mantis Assassin</a></u>, <u><a href="Archetypes.aspx-ID=267.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=267">Vigilante</a></u><br /><hr />You draw your weapon and attack with the same motion. You Interact to draw a weapon, then Strike with that weapon.<br /><h2 class="title"><a href ="PFS.aspx.htm" tppabs="https://2e.aonprd.com/PFS.aspx"><span style="float:left;"><img alt="PFS Standard" title="PFS Standard" style="height:18px; padding:2px 10px 0px 2px" src="PFS_Standard-2.png" tppabs="https://2e.aonprd.com/Images/Icons/PFS_Standard.png"></a></span><a href="javascript:if(confirm(%27https://2e.aonprd.com/Feats.aspx?ID=6427  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Feats.aspx?ID=6427%27" tppabs="https://2e.aonprd.com/Feats.aspx?ID=6427">Safe House</a> <span style="margin-left:auto; margin-right:0">Feat 4</span></h2><span class="trait"><a href="Traits.aspx-ID=535.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=535">Archetype</a></span><span style="letter-spacing: -.4em">&nbsp;</span><br /><b>Source</b> <a href="Sources.aspx-ID=227.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=227" target="_blank" class="external-link"><i>Player Core 2 pg. 219</i></a><br /><b>Archetype</b> <u><a href="Archetypes.aspx-ID=267.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=267">Vigilante</a></u><br /><b>Prerequisites</b> <u><a href="javascript:if(confirm(%27https://2e.aonprd.com/Feats.aspx?ID=6424  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Feats.aspx?ID=6424%27" tppabs="https://2e.aonprd.com/Feats.aspx?ID=6424">Vigilante Dedication</a></u><br /><hr />You establish a safe house—a secure space in which to hide your secrets from the outside world. This safe house is roughly the size of two 10-foot cubes. It's in a location you have access to, and it can be part of a larger building or structure, like a hidden room or an underground cave. The safe house protects objects and people inside it from magical detection. This has the effects of <a style="text-decoration:underline" href="Spells.aspx-ID=1739.htm" tppabs="https://2e.aonprd.com/Spells.aspx?ID=1739"><i>veil of privacy</i></a>, using your <a style="text-decoration:underline" href="Skills.aspx-ID=38.htm" tppabs="https://2e.aonprd.com/Skills.aspx?ID=38">Deception</a> modifier for the <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=2250  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=2250%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=2250">counteract</a> DC and half your level rounded up for the counteract rank. Setting up or moving your safe house takes a week of downtime. The size of the safe house expands to four 10-foot cubes if you're an expert in <a style="text-decoration:underline" href="Skills.aspx-ID=38.htm" tppabs="https://2e.aonprd.com/Skills.aspx?ID=38">Deception</a>, eight cubes if you're a master, and 16 cubes if you're legendary.<br /><h2 class="title"><a href ="PFS.aspx.htm" tppabs="https://2e.aonprd.com/PFS.aspx"><span style="float:left;"><img alt="PFS Restricted" title="PFS Restricted" style="height:18px; padding:2px 10px 0px 2px" src="PFS_Restricted-2.png" tppabs="https://2e.aonprd.com/Images/Icons/PFS_Restricted.png"></a></span><a href="javascript:if(confirm(%27https://2e.aonprd.com/Feats.aspx?ID=6428  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Feats.aspx?ID=6428%27" tppabs="https://2e.aonprd.com/Feats.aspx?ID=6428">Social Purview</a> <span style="margin-left:auto; margin-right:0">Feat 4</span></h2><span class="trait"><a href="Traits.aspx-ID=535.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=535">Archetype</a></span><span style="letter-spacing: -.4em">&nbsp;</span><span class="trait"><a href="Traits.aspx-ID=695.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=695">Skill</a></span><span style="letter-spacing: -.4em">&nbsp;</span><br /><b>Source</b> <a href="Sources.aspx-ID=227.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=227" target="_blank" class="external-link"><i>Player Core 2 pg. 219</i></a><br /><b>Archetype</b> <u><a href="Archetypes.aspx-ID=267.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=267">Vigilante</a></u><br /><b>Prerequisites</b> <u><a href="javascript:if(confirm(%27https://2e.aonprd.com/Feats.aspx?ID=6424  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Feats.aspx?ID=6424%27" tppabs="https://2e.aonprd.com/Feats.aspx?ID=6424">Vigilante Dedication</a></u><br /><hr />You have built a reputation for yourself in your social identity. Choose one archetype that you meet the prerequisites for. You gain that archetype's dedication feat and can select feats from that archetype, even if you haven't yet gained enough feats in the vigilante archetype to take another dedication feat. These feats become part of your social identity—for instance, a <a style="text-decoration:underline" href="Traits.aspx-ID=601.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=601">fighter</a> vigilante could take the <a style="text-decoration:underline" href="Feats.aspx-ID=5106.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=5106">wizard dedication</a> feat and have a wizard social identity. Using these feats in your social identity doesn't risk exposing your vigilante identity, but using them in your vigilante identity could put you at risk for exposure.<br /><h2 class="title"><a href ="PFS.aspx.htm" tppabs="https://2e.aonprd.com/PFS.aspx"><span style="float:left;"><img alt="PFS Standard" title="PFS Standard" style="height:18px; padding:2px 10px 0px 2px" src="PFS_Standard-2.png" tppabs="https://2e.aonprd.com/Images/Icons/PFS_Standard.png"></a></span><a href="javascript:if(confirm(%27https://2e.aonprd.com/Feats.aspx?ID=6429  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Feats.aspx?ID=6429%27" tppabs="https://2e.aonprd.com/Feats.aspx?ID=6429">Startling Appearance</a>  <span class='action' title='Single Action' role='img' aria-label='Single Action'>[one-action]</span> <span style="margin-left:auto; margin-right:0">Feat 6</span></h2><span class="trait"><a href="Traits.aspx-ID=535.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=535">Archetype</a></span><span style="letter-spacing: -.4em">&nbsp;</span><span class="trait"><a href="Traits.aspx-ID=590.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=590">Emotion</a></span><span style="letter-spacing: -.4em">&nbsp;</span><span class="trait"><a href="Traits.aspx-ID=598.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=598">Fear</a></span><span style="letter-spacing: -.4em">&nbsp;</span><span class="trait"><a href="Traits.aspx-ID=647.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=647">Mental</a></span><span style="letter-spacing: -.4em">&nbsp;</span><span class="trait"><a href="Traits.aspx-ID=803.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=803">Vigilante</a></span><span style="letter-spacing: -.4em">&nbsp;</span><br /><b>Source</b> <a href="Sources.aspx-ID=227.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=227" target="_blank" class="external-link"><i>Player Core 2 pg. 219</i></a><br /><b>Archetype</b> <u><a href="Archetypes.aspx-ID=267.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=267">Vigilante</a></u><br /><b>Prerequisites</b> <u><a href="javascript:if(confirm(%27https://2e.aonprd.com/Feats.aspx?ID=6424  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Feats.aspx?ID=6424%27" tppabs="https://2e.aonprd.com/Feats.aspx?ID=6424">Vigilante Dedication</a></u><br /><b>Requirements</b> You are <a style="text-decoration:underline" href="Conditions.aspx-ID=98.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=98">unnoticed</a> by the target creature.<br /><hr />You can startle foes who are unaware of your presence. Make a <a style="text-decoration:underline" href="Actions.aspx-ID=2306.htm" tppabs="https://2e.aonprd.com/Actions.aspx?ID=2306">Strike</a> against your target. That creature is <a style="text-decoration:underline" href="Conditions.aspx-ID=58.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=58">off-guard</a> against this Strike, as normal. If your Strike hits, the target remains off-guard for the rest of your turn and is <a style="text-decoration:underline" href="Conditions.aspx-ID=76.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=76">frightened</a> 1 (frightened 2 on a critical hit).<br /><h2 class="title"><a href ="PFS.aspx.htm" tppabs="https://2e.aonprd.com/PFS.aspx"><span style="float:left;"><img alt="PFS Standard" title="PFS Standard" style="height:18px; padding:2px 10px 0px 2px" src="PFS_Standard-2.png" tppabs="https://2e.aonprd.com/Images/Icons/PFS_Standard.png"></a></span><a href="javascript:if(confirm(%27https://2e.aonprd.com/Feats.aspx?ID=6430  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Feats.aspx?ID=6430%27" tppabs="https://2e.aonprd.com/Feats.aspx?ID=6430">Quick Change</a> <span style="margin-left:auto; margin-right:0">Feat 7</span></h2><span class="trait"><a href="Traits.aspx-ID=535.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=535">Archetype</a></span><span style="letter-spacing: -.4em">&nbsp;</span><br /><b>Source</b> <a href="Sources.aspx-ID=227.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=227" target="_blank" class="external-link"><i>Player Core 2 pg. 219</i></a><br /><b>Archetypes</b> <u><a href="Archetypes.aspx-ID=267.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=267">Vigilante</a></u>, <u><a href="Archetypes.aspx-ID=311.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=311">Venture-Gossip</a></u><br /><b>Prerequisites</b> <u><a href="javascript:if(confirm(%27https://2e.aonprd.com/Feats.aspx?ID=6424  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Feats.aspx?ID=6424%27" tppabs="https://2e.aonprd.com/Feats.aspx?ID=6424">Vigilante Dedication</a></u>; master in <u><a href="Skills.aspx-ID=38.htm" tppabs="https://2e.aonprd.com/Skills.aspx?ID=38">Deception</a></u><br /><hr />You can shift between your identities with ease. Instead of spending 1 minute to change your identity, you can now do so as a 3-action activity. If you are legendary in <a style="text-decoration:underline" href="Skills.aspx-ID=38.htm" tppabs="https://2e.aonprd.com/Skills.aspx?ID=38">Deception</a>, you can perform this change as a single action.<br /><h2 class="title"><a href ="PFS.aspx.htm" tppabs="https://2e.aonprd.com/PFS.aspx"><span style="float:left;"><img alt="PFS Standard" title="PFS Standard" style="height:18px; padding:2px 10px 0px 2px" src="PFS_Standard-2.png" tppabs="https://2e.aonprd.com/Images/Icons/PFS_Standard.png"></a></span><a href="javascript:if(confirm(%27https://2e.aonprd.com/Feats.aspx?ID=6431  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Feats.aspx?ID=6431%27" tppabs="https://2e.aonprd.com/Feats.aspx?ID=6431">Subjective Truth</a> <span style="margin-left:auto; margin-right:0">Feat 7</span></h2><span class="trait"><a href="Traits.aspx-ID=535.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=535">Archetype</a></span><span style="letter-spacing: -.4em">&nbsp;</span><span class="trait"><a href="Traits.aspx-ID=695.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=695">Skill</a></span><span style="letter-spacing: -.4em">&nbsp;</span><br /><b>Source</b> <a href="Sources.aspx-ID=227.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=227" target="_blank" class="external-link"><i>Player Core 2 pg. 219</i></a><br /><b>Archetypes</b> <u><a href="Archetypes.aspx-ID=267.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=267">Vigilante</a></u>, <u><a href="Archetypes.aspx-ID=311.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=311">Venture-Gossip</a></u><br /><b>Prerequisites</b> <u><a href="javascript:if(confirm(%27https://2e.aonprd.com/Feats.aspx?ID=6424  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Feats.aspx?ID=6424%27" tppabs="https://2e.aonprd.com/Feats.aspx?ID=6424">Vigilante Dedication</a></u>; master in <u><a href="Skills.aspx-ID=38.htm" tppabs="https://2e.aonprd.com/Skills.aspx?ID=38">Deception</a></u><br /><hr />Your disparate identities allow you to defeat magic that detects lies. As long as what you say is true from the point of view of your current identity, you can deceive effects like <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Equipment.aspx?ID=607  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Equipment.aspx?ID=607%27" tppabs="https://2e.aonprd.com/Equipment.aspx?ID=607"><i>ring of truth</i></a> that reveal lies. <br /><h2 class="title"><a href ="PFS.aspx.htm" tppabs="https://2e.aonprd.com/PFS.aspx"><span style="float:left;"><img alt="PFS Standard" title="PFS Standard" style="height:18px; padding:2px 10px 0px 2px" src="PFS_Standard-2.png" tppabs="https://2e.aonprd.com/Images/Icons/PFS_Standard.png"></a></span><a href="javascript:if(confirm(%27https://2e.aonprd.com/Feats.aspx?ID=6432  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Feats.aspx?ID=6432%27" tppabs="https://2e.aonprd.com/Feats.aspx?ID=6432">Many Guises</a> <span style="margin-left:auto; margin-right:0">Feat 8</span></h2><span class="trait"><a href="Traits.aspx-ID=535.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=535">Archetype</a></span><span style="letter-spacing: -.4em">&nbsp;</span><br /><b>Source</b> <a href="Sources.aspx-ID=227.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=227" target="_blank" class="external-link"><i>Player Core 2 pg. 219</i></a><br /><b>Archetype</b> <u><a href="Archetypes.aspx-ID=267.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=267">Vigilante</a></u><br /><b>Prerequisites</b> <u><a href="javascript:if(confirm(%27https://2e.aonprd.com/Feats.aspx?ID=6424  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Feats.aspx?ID=6424%27" tppabs="https://2e.aonprd.com/Feats.aspx?ID=6424">Vigilante Dedication</a></u>; master in <u><a href="Skills.aspx-ID=38.htm" tppabs="https://2e.aonprd.com/Skills.aspx?ID=38">Deception</a></u><br /><hr />You can take on any number of mundane guises. Whenever you change your identity, instead of taking on your social or vigilante identity, you can become someone completely ordinary. This identity isn't a specific individual—rather, you become a nondescript member of your ancestry, of any gender, and from a mundane occupation such as common laborer, farmer, or peasant. Spells and abilities detect you as if you were this ordinary identity, rather than either of your two real identities, unless they succeed at a <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Rules.aspx?ID=2250  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Rules.aspx?ID=2250%27" tppabs="https://2e.aonprd.com/Rules.aspx?ID=2250">counteract</a> check against the same Deception DC used for Vigilante Dedication. Using class or dedication abilities ends this disguise.<br /><h2 class="title"><a href ="PFS.aspx.htm" tppabs="https://2e.aonprd.com/PFS.aspx"><span style="float:left;"><img alt="PFS Limited" title="PFS Limited" style="height:18px; padding:2px 10px 0px 2px" src="PFS_Limited-2.png" tppabs="https://2e.aonprd.com/Images/Icons/PFS_Limited.png"></a></span><a href="javascript:if(confirm(%27https://2e.aonprd.com/Feats.aspx?ID=3336  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Feats.aspx?ID=3336%27" tppabs="https://2e.aonprd.com/Feats.aspx?ID=3336">Reminder of the Greater Fear</a>  <span class='action' title='Reaction' role='img' aria-label='Reaction'>[reaction]</span> <span style="margin-left:auto; margin-right:0">Feat 8</span></h2><h3 class="title legacy-content-warning">Legacy Content</h3><span class="trait"><a href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=12  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=12%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=12">Archetype</a></span><span style="letter-spacing: -.4em">&nbsp;</span><span class="trait"><a href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=326  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=326%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=326">Vigilante</a></span><span style="letter-spacing: -.4em">&nbsp;</span><br /><b>Source</b> <a href="Sources.aspx-ID=99.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=99" target="_blank" class="external-link"><i>Night of the Gray Death pg. 65</i></a><br /><b>Archetype</b> <u><a href="javascript:if(confirm(%27https://2e.aonprd.com/Archetypes.aspx?ID=267&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Archetypes.aspx?ID=267&Redirected=1%27" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=80">Vigilante</a></u><br /><b>Prerequisites</b> master in <u><a href="javascript:if(confirm(%27https://2e.aonprd.com/Skills.aspx?ID=40&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Skills.aspx?ID=40&Redirected=1%27" tppabs="https://2e.aonprd.com/Skills.aspx?ID=7">Intimidation</a></u>; <u><a href="javascript:if(confirm(%27https://2e.aonprd.com/Feats.aspx?ID=2083  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Feats.aspx?ID=2083%27" tppabs="https://2e.aonprd.com/Feats.aspx?ID=2083">Vigilante Dedication</a></u><br /><b>Trigger</b> Another creature within 30 feet of you that can see you would gain the <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Conditions.aspx?ID=76&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Conditions.aspx?ID=76&Redirected=1%27" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=19">frightened</a> condition.<br /><hr />You give a target a stern glower to remind them that it is you, and no one else, they should truly fear. Reduce the value of the <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Conditions.aspx?ID=76&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Conditions.aspx?ID=76&Redirected=1%27" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=19">frightened</a> condition the creature would take by 1.<br /><h2 class="title"><a href ="PFS.aspx.htm" tppabs="https://2e.aonprd.com/PFS.aspx"><span style="float:left;"><img alt="PFS Standard" title="PFS Standard" style="height:18px; padding:2px 10px 0px 2px" src="PFS_Standard-2.png" tppabs="https://2e.aonprd.com/Images/Icons/PFS_Standard.png"></a></span><a href="javascript:if(confirm(%27https://2e.aonprd.com/Feats.aspx?ID=6433  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Feats.aspx?ID=6433%27" tppabs="https://2e.aonprd.com/Feats.aspx?ID=6433">Frightening Appearance</a> <span style="margin-left:auto; margin-right:0">Feat 12</span></h2><span class="trait"><a href="Traits.aspx-ID=535.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=535">Archetype</a></span><span style="letter-spacing: -.4em">&nbsp;</span><span class="trait"><a href="Traits.aspx-ID=803.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=803">Vigilante</a></span><span style="letter-spacing: -.4em">&nbsp;</span><br /><b>Source</b> <a href="Sources.aspx-ID=227.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=227" target="_blank" class="external-link"><i>Player Core 2 pg. 219</i></a><br /><b>Archetype</b> <u><a href="Archetypes.aspx-ID=267.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=267">Vigilante</a></u><br /><b>Prerequisites</b> <u><a href="javascript:if(confirm(%27https://2e.aonprd.com/Feats.aspx?ID=6429  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Feats.aspx?ID=6429%27" tppabs="https://2e.aonprd.com/Feats.aspx?ID=6429">Startling Appearance</a></u>; expert in <u><a href="Skills.aspx-ID=40.htm" tppabs="https://2e.aonprd.com/Skills.aspx?ID=40">Intimidation</a></u><br /><hr />Your dramatic appearances can frighten bystanders. When you make a Startling Appearance, you can also attempt to <a style="text-decoration:underline" href="Actions.aspx-ID=2395.htm" tppabs="https://2e.aonprd.com/Actions.aspx?ID=2395">Demoralize</a> each enemy in a 10-foot emanation you were <a style="text-decoration:underline" href="Conditions.aspx-ID=98.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=98">unnoticed</a> by before your <a style="text-decoration:underline" href="Actions.aspx-ID=2306.htm" tppabs="https://2e.aonprd.com/Actions.aspx?ID=2306">Strike</a>.<br /><h2 class="title"><a href ="PFS.aspx.htm" tppabs="https://2e.aonprd.com/PFS.aspx"><span style="float:left;"><img alt="PFS Standard" title="PFS Standard" style="height:18px; padding:2px 10px 0px 2px" src="PFS_Standard-2.png" tppabs="https://2e.aonprd.com/Images/Icons/PFS_Standard.png"></a></span><a href="javascript:if(confirm(%27https://2e.aonprd.com/Feats.aspx?ID=6434  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Feats.aspx?ID=6434%27" tppabs="https://2e.aonprd.com/Feats.aspx?ID=6434">Stunning Appearance</a> <span style="margin-left:auto; margin-right:0">Feat 16</span></h2><span class="trait"><a href="Traits.aspx-ID=535.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=535">Archetype</a></span><span style="letter-spacing: -.4em">&nbsp;</span><span class="trait"><a href="Traits.aspx-ID=803.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=803">Vigilante</a></span><span style="letter-spacing: -.4em">&nbsp;</span><br /><b>Source</b> <a href="Sources.aspx-ID=227.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=227" target="_blank" class="external-link"><i>Player Core 2 pg. 219</i></a><br /><b>Archetype</b> <u><a href="Archetypes.aspx-ID=267.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=267">Vigilante</a></u><br /><b>Prerequisites</b> <u><a href="javascript:if(confirm(%27https://2e.aonprd.com/Feats.aspx?ID=6429  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Feats.aspx?ID=6429%27" tppabs="https://2e.aonprd.com/Feats.aspx?ID=6429">Startling Appearance</a></u><br /><hr />Your sudden appearance leaves your foe unable to respond. When you use Startling Appearance and your <a style="text-decoration:underline" href="Actions.aspx-ID=2306.htm" tppabs="https://2e.aonprd.com/Actions.aspx?ID=2306">Strike</a> hits an enemy of your level or lower, the enemy is also <a style="text-decoration:underline" href="Conditions.aspx-ID=93.htm" tppabs="https://2e.aonprd.com/Conditions.aspx?ID=93">stunned</a> 1 on a hit, or stunned 2 on a critical hit.</span>
+
+                </div>
+                <div class="clear">
+            </div>
+
+            <div class="footer" id="footer" >
+				<div id="et-al" >
+                    <a href="mailto:nethys@archivesofnethys.com">Site Owner: Rose-Winds LLC (Blake Davis)</a>
+                    <div id="footer-social"><a href="https://twitter.com/NethysArchives"  target="_blank"><span class="k-icon k-i-twitter" style="font-size:2.5rem"></span></a></div>
+				</div>
+                <div style="text-align:center"><script type="text/javascript" async="true" src="adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- Main Archives Page -->
+                    <ins class="adsbygoogle"
+                        style="display:inline-block;width:728px;height:90px"
+                        data-ad-client="ca-pub-4953734518316037"
+                        data-ad-slot="7738185508"></ins>
+                    <script type="text/javascript">
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                </script></div>
+			</div>
+            <nethys-search no-ui="true"></nethys-search>
+        </div>
+    </div>
+
+    <div class="modern-menu-container">
+        <div class="modern-menu">
+            <div class="modern-menu-nethys-logo"></div>
+            <div class="modern-menu-items">
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-player"></i></span>
+                    <span class="modern-menu-item-text">Character Creation +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Ancestries.aspx.htm" tppabs="https://2e.aonprd.com/Ancestries.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-hood"></i></span>
+                        <span class="modern-menu-item-text">Ancestries</span>
+                    </a>
+                    <a class="modern-menu-item" href="Archetypes.aspx.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-nodular"></i></span>
+                        <span class="modern-menu-item-text">Archetypes</span>
+                    </a>
+                    <a class="modern-menu-item" href="Backgrounds.aspx.htm" tppabs="https://2e.aonprd.com/Backgrounds.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-guarded-tower"></i></span>
+                        <span class="modern-menu-item-text">Backgrounds</span>
+                    </a>
+                    <a class="modern-menu-item" href="Classes.aspx.htm" tppabs="https://2e.aonprd.com/Classes.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-player-lift"></i></span>
+                        <span class="modern-menu-item-text">Classes</span>
+                    </a>
+                    <a class="modern-menu-item" href="Skills.aspx.htm" tppabs="https://2e.aonprd.com/Skills.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-hand"></i></span>
+                        <span class="modern-menu-item-text">Skills</span>
+                    </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-torch"></i></span>
+                    <span class="modern-menu-item-text">Equipment +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Equipment.aspx.htm" tppabs="https://2e.aonprd.com/Equipment.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-torch"></i></span>
+                        <span class="modern-menu-item-text">All Equipment</span>
+                    </a>
+                    <a class="modern-menu-item" href="Equipment.aspx-Category=1.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?Category=1">
+                        <span class="modern-menu-item-icon"><i class="ra ra-campfire"></i></span>
+                        <span class="modern-menu-item-text">Adventuring Gear</span>
+                    </a>
+                    <a class="modern-menu-item" href="Equipment.aspx-Category=6.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?Category=6">
+                        <span class="modern-menu-item-icon"><i class="ra ra-round-bottom-flask"></i></span>
+                        <span class="modern-menu-item-text">Alchemical Items</span>
+                    </a>
+                    <a class="modern-menu-item" href="Armor.aspx.htm" tppabs="https://2e.aonprd.com/Armor.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-helmet"></i></span>
+                        <span class="modern-menu-item-text">Armor</span>
+                    </a>
+                    <a class="modern-menu-item" href="Equipment.aspx-Category=21.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?Category=21">
+                        <span class="modern-menu-item-icon"><i class="ra ra-hand"></i></span>
+                        <span class="modern-menu-item-text">Held Items</span>
+                    </a>
+                    <a class="modern-menu-item" href="Equipment.aspx-Category=23.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?Category=23">
+                        <span class="modern-menu-item-icon"><i class="ra ra-rune-stone"></i></span>
+                        <span class="modern-menu-item-text">Runes</span>
+                    </a>
+                    <a class="modern-menu-item" href="Shields.aspx.htm" tppabs="https://2e.aonprd.com/Shields.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-shield"></i></span>
+                        <span class="modern-menu-item-text">Shields</span>
+                    </a>
+                    <a class="modern-menu-item" href="Weapons.aspx.htm" tppabs="https://2e.aonprd.com/Weapons.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-sword"></i></span>
+                        <span class="modern-menu-item-text">Weapons</span>
+                    </a>
+                    <a class="modern-menu-item" href="Equipment.aspx-Category=41.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?Category=41">
+                        <span class="modern-menu-item-icon"><i class="ra ra-crown-of-thorns"></i></span>
+                        <span class="modern-menu-item-text">Worn Items</span>
+                    </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-muscle-up"></i></span>
+                    <span class="modern-menu-item-text">Feats +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Feats.aspx.htm" tppabs="https://2e.aonprd.com/Feats.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-muscle-up"></i></span>
+                        <span class="modern-menu-item-text">All Feats</span>
+                    </a>
+                    <a class="modern-menu-item" href="Feats.aspx-Traits=78.htm" tppabs="https://2e.aonprd.com/Feats.aspx?Traits=78">
+                        <span class="modern-menu-item-icon"><i class="ra ra-aware"></i></span>
+                        <span class="modern-menu-item-text">General</span>
+                    </a>
+                    <a class="modern-menu-item" href="Feats.aspx-Traits=78&NoSkills=True.htm" tppabs="https://2e.aonprd.com/Feats.aspx?Traits=78&NoSkills=True">
+                        <span class="modern-menu-item-icon"><i class="ra ra-player-teleport"></i></span>
+                        <span class="modern-menu-item-text">General (No Skill)</span>
+                    </a>
+                    <a class="modern-menu-item" href="Feats.aspx-Traits=144.htm" tppabs="https://2e.aonprd.com/Feats.aspx?Traits=144">
+                        <span class="modern-menu-item-icon"><i class="ra ra-hand"></i></span>
+                        <span class="modern-menu-item-text">Skill</span>
+                    </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-emerald"></i></span>
+                    <span class="modern-menu-item-text">Game Mastery +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Afflictions.aspx.htm" tppabs="https://2e.aonprd.com/Afflictions.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-biohazard"></i></span>
+                        <span class="modern-menu-item-text">Afflictions</span>
+                    </a>
+                    <a class="modern-menu-item" href="Creatures.aspx.htm" tppabs="https://2e.aonprd.com/Creatures.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-dragon"></i></span>
+                        <span class="modern-menu-item-text">Creatures</span>
+                    </a>
+                    <a class="modern-menu-item" href="Hazards.aspx.htm" tppabs="https://2e.aonprd.com/Hazards.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-bear-trap"></i></span>
+                        <span class="modern-menu-item-text">Hazards</span>
+                    </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-book"></i></span>
+                    <span class="modern-menu-item-text">Rules +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Rules.aspx.htm" tppabs="https://2e.aonprd.com/Rules.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-book"></i></span>
+                        <span class="modern-menu-item-text">All Rules</span>
+                    </a>
+                    <a class="modern-menu-item" href="Actions.aspx.htm" tppabs="https://2e.aonprd.com/Actions.aspx">
+                        <span class="modern-menu-item-icon">
+                            <svg viewBox="0 0 30 30" preserveAspectRatio="xMidYMid meet" stroke="null" style="fill:inherit;">
+                                <path d="M21.55532 8.015l7.07107 7.07106-7.07107 7.07107-7.07107-7.07107zM6.47996 10.07526l4.94975 4.94975-4.94975 4.94974-4.94974-4.94974z"></path>
+                                <path d="M15.00246 1.46211l8.48528 8.48528-7.07107 7.07107L7.9314 8.53318z"></path>
+                                <path d="M16.45563 13.11469l7.07107 7.07107-8.48529 8.48528-7.07106-7.07107z"></path>
+                            </svg>
+                        </span>
+                        <span class="modern-menu-item-text">Actions/Activities</span>
+                    </a>
+                    <a class="modern-menu-item" href="Conditions.aspx.htm" tppabs="https://2e.aonprd.com/Conditions.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-player-pain"></i></span>
+                        <span class="modern-menu-item-text">Conditions</span>
+                    </a>
+                    <a class="modern-menu-item" href="GMScreen.aspx.htm" tppabs="https://2e.aonprd.com/GMScreen.aspx">
+                        <span class="modern-menu-item-icon">
+                            <svg viewBox="0 0 30 30" preserveAspectRatio="xMidYMid meet" stroke="null" style="fill:inherit;">
+                                <path d="M5.72648 12.93117h9.17646v9.50588l-4.58823 2.37647-4.58823-2.37647.00001-9.50588z"></path>
+                                <path d="M5.96178 12.93118h9.17646v9.50587l-4.58823 2.37648-4.58824-2.37648.00001-9.50587z"></path>
+                                <path d="M15.0206 12.93118h9.17646v9.50587l-4.58823 2.37648-4.58824-2.37648.00001-9.50587z"></path>
+                                <path d="M16.70221 8.57471l7.52941-3.38823v16.94117h-7.52941V8.57471zM15.11765 8.69235L5.94118 5.30412v16.94117h9.17647V8.69235z"></path>
+                                <path d="M19.60883 17.75465h-9.17646V8.24878L15.0206 5.8723l4.58824 2.37648-.00001 9.50587z"></path>
+                            </svg>
+                        </span>
+                        <span class="modern-menu-item-text">GM Screen</span>
+                    </a>
+                    <a class="modern-menu-item" href="PlayersGuide.aspx.htm" tppabs="https://2e.aonprd.com/PlayersGuide.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-uncertainty"></i></span>
+                        <span class="modern-menu-item-text">Player's Guide</span>
+                    </a>
+                    <a class="modern-menu-item" href="Traits.aspx.htm" tppabs="https://2e.aonprd.com/Traits.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-uncertainty"></i></span>
+                        <span class="modern-menu-item-text">Traits</span>
+                    </a>
+                    <a class="modern-menu-item" href="Sources.aspx.htm" tppabs="https://2e.aonprd.com/Sources.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-book"></i></span>
+                        <span class="modern-menu-item-text">Sources</span>
+                    </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-sun"></i></span>
+                    <span class="modern-menu-item-text">Setting +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Setting.aspx-Adventure=true.htm" tppabs="https://2e.aonprd.com/Setting.aspx?Adventure=true">
+                        <span class="modern-menu-item-icon"><i class="ra ra-all-for-one"></i></span>
+                        <span class="modern-menu-item-text">Adventures</span>
+                    </a>
+                    <a class="modern-menu-item" href="Articles.aspx.htm" tppabs="https://2e.aonprd.com/Articles.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-book"></i></span>
+                        <span class="modern-menu-item-text">Articles</span>
+                    </a>
+                    <a class="modern-menu-item" href="Deities.aspx.htm" tppabs="https://2e.aonprd.com/Deities.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-angel-wings"></i></span>
+                        <span class="modern-menu-item-text">Deities</span>
+                    </a>
+                    <a class="modern-menu-item" href="Domains.aspx.htm" tppabs="https://2e.aonprd.com/Domains.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-kaleidoscope"></i></span>
+                        <span class="modern-menu-item-text">Domains</span>
+                    </a>
+                    <a class="modern-menu-item" href="Languages.aspx.htm" tppabs="https://2e.aonprd.com/Languages.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-speech-bubbles"></i></span>
+                        <span class="modern-menu-item-text">Languages</span>
+                    </a>
+                    <a class="modern-menu-item" href="Planes.aspx.htm" tppabs="https://2e.aonprd.com/Planes.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-circle-of-circles"></i></span>
+                        <span class="modern-menu-item-text">Planes</span>
+                    </a>
+                        <a class="modern-menu-item" href="Setting.aspx-Group=40.htm" tppabs="https://2e.aonprd.com/Setting.aspx?Group=40">
+                            <span class="modern-menu-item-icon"><i class="ra ra-mountains"></i></span>
+                            <span class="modern-menu-item-text">Scenarios</span>
+                        </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-crystal-wand"></i></span>
+                    <span class="modern-menu-item-text">Spells/Rituals +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Spells.aspx.htm" tppabs="https://2e.aonprd.com/Spells.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-scroll-unfurled"></i></span>
+                        <span class="modern-menu-item-text">All Spells</span>
+                    </a>
+                    <a class="modern-menu-item" href="Spells.aspx-Tradition=1.htm" tppabs="https://2e.aonprd.com/Spells.aspx?Tradition=1">
+                        <span class="modern-menu-item-icon"><i class="ra ra-scroll-unfurled"></i></span>
+                        <span class="modern-menu-item-text">Arcane</span>
+                    </a>
+                    <a class="modern-menu-item" href="Spells.aspx-Tradition=2.htm" tppabs="https://2e.aonprd.com/Spells.aspx?Tradition=2">
+                        <span class="modern-menu-item-icon"><i class="ra ra-ankh"></i></span>
+                        <span class="modern-menu-item-text">Divine</span>
+                    </a>
+                    <a class="modern-menu-item" href="Spells.aspx-Tradition=3.htm" tppabs="https://2e.aonprd.com/Spells.aspx?Tradition=3">
+                        <span class="modern-menu-item-icon"><i class="ra ra-burning-eye"></i></span>
+                        <span class="modern-menu-item-text">Occult</span>
+                    </a>
+                    <a class="modern-menu-item" href="Spells.aspx-Tradition=4.htm" tppabs="https://2e.aonprd.com/Spells.aspx?Tradition=4">
+                        <span class="modern-menu-item-icon"><i class="ra ra-leaf"></i></span>
+                        <span class="modern-menu-item-text">Primal</span>
+                    </a>
+                    <a class="modern-menu-item" href="Spells.aspx-Focus=true.htm" tppabs="https://2e.aonprd.com/Spells.aspx?Focus=true">
+                        <span class="modern-menu-item-icon"><i class="ra ra-aura"></i></span>
+                        <span class="modern-menu-item-text">Focus Spells</span>
+                    </a>
+                    <a class="modern-menu-item" href="Rituals.aspx.htm" tppabs="https://2e.aonprd.com/Rituals.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-rune-stone"></i></span>
+                        <span class="modern-menu-item-text">Rituals</span>
+                    </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-player-thunder-struck"></i></span>
+                    <span class="modern-menu-item-text">Mythic +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Rules.aspx-ID=3320.htm" tppabs="https://2e.aonprd.com/Rules.aspx?ID=3320">
+                        <span class="modern-menu-item-icon"><i class="ra ra-book"></i></span>
+                        <span class="modern-menu-item-text">Mythic Rules</span>
+                    </a>
+                    <a class="modern-menu-item" href="MythicCallings.aspx.htm" tppabs="https://2e.aonprd.com/MythicCallings.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-aware"></i></span>
+                        <span class="modern-menu-item-text">Callings</span>
+                    </a>
+                    <a class="modern-menu-item" href="MythicFeats.aspx.htm" tppabs="https://2e.aonprd.com/MythicFeats.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-muscle-up"></i></span>
+                        <span class="modern-menu-item-text">Mythic Feats</span>
+                    </a>
+                    <a class="modern-menu-item" href="MythicDestinies.aspx.htm" tppabs="https://2e.aonprd.com/MythicDestinies.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-aura"></i></span>
+                        <span class="modern-menu-item-text">Destinies</span>
+                    </a>
+                    <a class="modern-menu-item" href="MythicSpells.aspx.htm" tppabs="https://2e.aonprd.com/MythicSpells.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-lightning-trio"></i></span>
+                        <span class="modern-menu-item-text">Mythic Spells</span>
+                    </a>
+                    <a class="modern-menu-item" href="MythicRituals.aspx.htm" tppabs="https://2e.aonprd.com/MythicRituals.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-fire-ring"></i></span>
+                        <span class="modern-menu-item-text">Mythic Rituals</span>
+                    </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-help"></i></span>
+                    <span class="modern-menu-item-text">About the Archives +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="ContactUs.aspx.htm" tppabs="https://2e.aonprd.com/ContactUs.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-quill-ink"></i></span>
+                        <span class="modern-menu-item-text">Contact Us</span>
+                    </a>
+                    <a class="modern-menu-item" href="Contributors.aspx.htm" tppabs="https://2e.aonprd.com/Contributors.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-double-team"></i></span>
+                        <span class="modern-menu-item-text">Contributors</span>
+                    </a>
+                    <a class="modern-menu-item" href="Licenses.aspx.htm" tppabs="https://2e.aonprd.com/Licenses.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-book"></i></span>
+                        <span class="modern-menu-item-text">Licenses</span>
+                    </a>
+                </div>
+                <a class="modern-menu-item" href="Support.aspx.htm" tppabs="https://2e.aonprd.com/Support.aspx">
+                    <span class="modern-menu-item-icon"><i class="ra ra-diamond"></i></span>
+                    <span class="modern-menu-item-text">Support the Archives</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="shelyns-corner-wrapper">
+        <div class="shelyns-corner-overlay"></div>
+        <div class="shelyns-corner">
+            <div class="shelyns-corner-header">
+                <h2>Shelyn's Corner</h2>
+                <a href="javascript:void(0)" class="close-shelyns-corner">&times;</a>
+            </div>
+            <div class="shelyns-corner-content">
+                <div class="shelyns-corner-settings">
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-remaster">Prefer Pathfinder Remastered Core?</label>
+                        <input type="checkbox" id="shelyns-corner-setting-remaster" checked/>
+                    </div>
+                    <hr />
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-dyslexia">Dyslexia friendly fonts</label>
+                        <input type="checkbox" id="shelyns-corner-setting-dyslexia"/>
+                    </div>
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-sidebar-hover">Expand sidebar on hover</label>
+                        <input type="checkbox" id="shelyns-corner-setting-sidebar-hover" checked/>
+                    </div>
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-sidebar-shrink">Sidebar can be shrunk</label>
+                        <input type="checkbox" id="shelyns-corner-setting-sidebar-shrink" checked/>
+                    </div>
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-page-compress">Reduce page width</label>
+                        <input type="checkbox" id="shelyns-corner-setting-page-compress"/>
+                    </div>
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-modern-menu">Modern menu</label>
+                        <input type="checkbox" id="shelyns-corner-setting-modern-menu" checked/>
+                    </div>
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-link-previews">Link previews</label>
+                        <input type="checkbox" id="shelyns-corner-setting-link-previews" checked/>
+                    </div>
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-link-previews-search">Link previews in search bar</label>
+                        <input type="checkbox" id="shelyns-corner-setting-link-previews-search"/>
+                    </div>
+                </div>
+                <hr />
+                <div class="theme-gallery-wrapper"></div>
+                <hr />
+                <div class="feel-gallery">
+                    <div class="feel-example classic_feel" onclick="setFeel('classic_feel')">
+                        <h1 class="feel-title">Classic Feel</h1>
+                        <h2 class="feel-title">Classic Feel <span class="output"></span></h2>
+                        <h3 class="feel-title">Classic Feel</h3>
+                        <p>The classic look for the Archives of Nethys.</p>
+                        <table>
+                            <thead><td>Table</td></thead>
+                            <tr><td>Data</td></tr>
+                            <tr><td>More Data</td></tr>
+                        </table>
+                    </div>
+                    <div class="feel-example book_feel" onclick="setFeel('book_feel')">
+                        <h1 class="feel-title">Book Feel</h1>
+                        <h2 class="feel-title">Book Feel <span class="output"></span></h2>
+                        <h3 class="feel-title">Book Feel</h3>
+                        <p>An alternative feel, based on the Rulebooks.</p>
+                        <table>
+                            <thead><td>Table</td></thead>
+                            <tr><td>Data</td></tr>
+                            <tr><td>More Data</td></tr>
+                        </table>
+                    </div>
+                    <div class="feel-example round_feel" onclick="setFeel('round_feel')">
+                        <h1 class="feel-title">Round Feel</h1>
+                        <h2 class="feel-title">Round Feel<span class="output"></span></h2>
+                        <h3 class="feel-title">Round Feel</h3>
+                        <p>A rounded, modern look for the archives.</p>
+                        <table>
+                            <thead><td>Table</td></thead>
+                            <tr><td>Data</td></tr>
+                            <tr><td>More Data</td></tr>
+                        </table>
+                    </div>
+                    <div class="feel-example slim_feel" onclick="setFeel('slim_feel')">
+                        <h1 class="feel-title">Slim Feel</h1>
+                        <h2 class="feel-title">Slim Feel<span class="output"></span></h2>
+                        <h3 class="feel-title">Slim Feel</h3>
+                        <p>A variant of the Round feel, more compact.</p>
+                        <table>
+                            <thead><td>Table</td></thead>
+                            <tr><td>Data</td></tr>
+                            <tr><td>More Data</td></tr>
+                        </table>
+                    </div>
+                </div>
+                <hr />
+                <div class="shelyns-corner-settings">
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-orc">More Orc?</label>
+                        <input type="checkbox" id="shelyns-corner-setting-orc" />
+                    </div>
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-boar"><b>BOAR?</b></label>
+                        <input type="checkbox" id="shelyns-corner-setting-boar" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+      var legacyMode = getCore();
+
+      initializeMenuToggle(document.getElementById('minMaxMenu'));
+      initShelynsCorner();
+
+      window.nethysModernMenu.init();
+
+      initializeElasticSearch()
+      var initializeSearch = function (search) {
+          var button;
+          var text;
+          if (search.firstElementChild.classList.contains('search-input'))
+              text = search.firstElementChild;
+          if (search.lastElementChild.classList.contains('search-input'))
+              text = search.lastElementChild;
+          if (search.firstElementChild.classList.contains('search-button'))
+              button = search.firstElementChild;
+          if (search.lastElementChild.classList.contains('search-button'))
+              button = search.lastElementChild;
+
+          if (search) {
+              search.addEventListener('keypress', function (e) {
+                  if (e.keyCode == 13) {
+                      e.preventDefault();
+                      if (text.value != null && text.value.length > 0)
+                          window.location = window.location.origin + "/Search.aspx?q=" + encodeURIComponent(text.value);
+                  }
+              })
+          }
+          if (button) {
+              button.addEventListener('click', function (e) {
+                  window.location = window.location.origin + "/Search.aspx?q=" + encodeURIComponent(text.value);
+              });
+          }
+      };
+      var initializeExpand = function (toggle) {
+          var targetAttrString = "[data-target='" + toggle.dataset.toggle + "']";
+          //target = menu to be collapsed
+          var target = document.querySelector(targetAttrString);
+          toggle.addEventListener('click', function () {
+              var expanded = target.classList.contains('expanded');
+              expanded = !expanded;
+              if (expanded) {
+                  //hide other in group if exists
+                  if (target.dataset.group) {
+                      var otherExpanded = document.querySelector('.expanded[data-group="' + target.dataset.group + '"]');
+                      if (otherExpanded) {
+                          otherExpanded.classList.remove('expanded');
+                      }
+                  }
+                  target.classList.add('expanded');
+              } else {
+                  target.classList.remove('expanded');
+              }
+          });
+      };
+      (function () {
+          //toggles = link that expands/collapses target
+          var toggles = document.querySelectorAll('[data-toggle]');
+          toggles.forEach(function (toggle) {
+              initializeExpand(toggle);
+          });
+          //searches
+          var classicSearch = document.getElementById('classic-search');
+          initializeSearch(classicSearch);
+          var searches = document.querySelectorAll('.search');
+          searches.forEach(function (search) {
+              //initializeSearch(search);
+          });
+      })();
+
+      class NethysSearch extends HTMLElement {
+          constructor() {
+              super();
+
+              this.attachShadow({ mode: 'open' });
+
+              let container = document.createElement('div');
+              this.shadowRoot.append(container);
+
+              let fixedParams = this.getAttribute('fixed-params');
+
+              if (window.location.search.includes('Redirected=1')) {
+                  fixedParams = (fixedParams ? fixedParams + '&' : '') + 'Redirected=1';
+              }
+
+              if (window.location.search.includes('NoRedirect=1')) {
+                  fixedParams = (fixedParams ? fixedParams + '&' : '') + 'NoRedirect=1';
+              }
+
+              let fixedQueryString = this.getAttribute('fixed-query-string') ?? '';
+
+              if (!fixedQueryString.includes('category:item-bonus')) {
+                  fixedQueryString += ' !category:item-bonus';
+              }
+
+              let dataUrl = new URL(elasticUrl);
+              dataUrl.pathname = '/json-data';
+              dataUrl = dataUrl.toString();
+
+              let app = Elm.NethysSearch.init({
+                  node: container,
+                  flags: {
+                      autofocus: (this.getAttribute('autofocus') ?? 'true') == 'true',
+                      browserDateFormat: (new Date(2020, 9, 30).toLocaleDateString(navigator.language))
+                          .replace('2020', 'yyyy')
+                          .replace('10', 'MM')
+                          .replace('30', 'dd'),
+                      currentUrl: location.href,
+                      dataUrl: dataUrl,
+                      defaultQuery: this.getAttribute('default-query'),
+                      elasticUrl: elasticUrl,
+                      fixedParams: fixedParams,
+                      fixedQueryString: fixedQueryString,
+                      loadAll: this.getAttribute('load-all') == 'true',
+                      legacyMode: legacyMode,
+                      localStorage: { ...localStorage },
+                      noUi: this.getAttribute('no-ui') === 'true',
+                      pageDefaultDisplays: localStorage.getItem('page-default-displays'),
+                      pageId: this.getAttribute('page-id'),
+                      randomSeed: Math.floor(Math.random() * 2147483647),
+                      removeFilters: this.getAttribute('remove-filters')?.split(',') ?? [],
+                      resultBaseUrl: "/",
+                      showHeader: false,
+                      showQueryControls: this.getAttribute('show-query-controls') != 'false',
+                      windowHeight: window.innerHeight,
+                      windowWidth: window.innerWidth,
+                  }
+              });
+
+              app.ports.document_focusElement.subscribe(id => {
+                  window.requestAnimationFrame(() => {
+                      let element = this.shadowRoot.getElementById(id);
+
+                      if (element) {
+                          element.focus();
+                      }
+                  });
+              });
+
+              app.ports.document_scrollElementIntoView.subscribe(id => {
+                  window.requestAnimationFrame(() => {
+                      let element = this.shadowRoot.getElementById(id);
+
+                      if (element) {
+                          element.scrollIntoView({block: 'nearest'});
+                      }
+                  });
+              });
+
+              app.ports.localStorage_get && app.ports.localStorage_get.subscribe(function (key) {
+                  let value = localStorage.getItem(key);
+                  app.ports.localStorage_receive.send({ key: key, value: value });
+              });
+
+              app.ports.localStorage_set.subscribe(function (data) {
+                  localStorage.setItem(data.key, data.value);
+              });
+
+              window.addEventListener('popstate', function () {
+                  app.ports.navigation_urlChanged.send(location.href);
+              });
+
+              app.ports.navigation_pushUrl.subscribe(function (url) {
+                  history.pushState([], '', url);
+                  app.ports.navigation_urlChanged.send(location.href);
+              });
+
+              app.ports.navigation_loadUrl.subscribe(function (url) {
+                  location.href = url;
+              });
+
+              document.addEventListener('theme-changed', e => {
+                  app.ports.localStorage_receive.send({ key: 'theme', value: e.detail });
+              });
+
+              document.addEventListener('link-previews-changed', e => {
+                  app.ports.localStorage_receive.send({ key: 'link-previews-enabled', value: e.detail });
+              });
+
+              window.addEventListener('hashchange', e => {
+                  let url = new URL(e.newURL);
+                  if (url.hash != "#results") {
+                      return;
+                  }
+
+                  let results = this.shadowRoot.getElementById("results");
+                  if (!results) {
+                      return;
+                  }
+
+                  results.focus();
+                  results.scrollIntoView();
+                  window.location.hash = '';
+              });
+
+              if (this.getAttribute('no-ui') === 'true') {
+                  let linkPreviewTarget = null;
+
+                  document.addEventListener('mouseover', e => {
+                      const target = e.target.closest('a');
+                      const isSearchBar = e.target.closest('.searchBar') !== null;
+                      if (target && target != linkPreviewTarget) {
+                          let parent = getParentOffset(target.offsetParent);
+                          let data = {
+                              url: target.href,
+                              x: target.offsetLeft + parent.x,
+                              y: target.offsetTop + parent.y,
+                              height: target.offsetHeight,
+                              width: target.offsetWidth,
+                          }
+                          if (isSearchBar) {
+                              if (getFeature('search-bar-previews-enabled', '0') == '0') {
+                                  return;
+                              }
+                              data.x += window.scrollX;
+                              data.y += window.scrollY;
+                          }
+                          app.ports.document_linkEntered.send(data);
+                      } else if (!target && linkPreviewTarget) {
+                          app.ports.document_linkLeft.send("");
+                      }
+
+                      linkPreviewTarget = target;
+                  });
+              }
+
+              function getParentOffset(node) {
+                  if (!node) {
+                      return {
+                          x: 0,
+                          y: 0,
+                      };
+                  }
+                  let parent = getParentOffset(node.offsetParent);
+                  return {
+                      x: node.offsetLeft - node.scrollLeft + parent.x,
+                      y: node.offsetTop - node.scrollTop + parent.y,
+                  };
+              }
+
+              const resizeObserver = new ResizeObserver(entries => {
+                  app.ports.document_receiveBodySize.send({
+                      width: Math.round(entries[0].contentRect.width),
+                      height: Math.round(entries[0].contentRect.height),
+                  });
+              });
+
+              let relativeElement = document.getElementById('page');
+              resizeObserver.observe(relativeElement);
+
+              document.addEventListener('visibilitychange', () => {
+                  if (document.visibilityState === 'visible') {
+                      let rect = relativeElement.getBoundingClientRect();
+
+                      app.ports.document_receiveBodySize.send({
+                          width: Math.round(rect.width),
+                          height: Math.round(rect.height),
+                      });
+                  }
+              });
+          }
+      }
+
+      customElements.define('nethys-search', NethysSearch);
+    </script>
+</body>
+</html>

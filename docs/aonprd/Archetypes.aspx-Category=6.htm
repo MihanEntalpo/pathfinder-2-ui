@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script type="text/javascript" async src="js-id=UA-137805785-3.js" tppabs="https://www.googletagmanager.com/gtag/js?id=UA-137805785-3"></script>
+    <script type="text/javascript">
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-137805785-3');
+    </script>
+    <title>
+        Archetypes - Archives of Nethys: Pathfinder 2nd Edition Database
+    </title>
+    
+
+    <link href="Layout.css-v=EB6PS6lfpX6G1uwFu7uHcEh6oScz15hZHsXHCNMHzLg.css" tppabs="https://2e.aonprd.com/Styles/Layout.css?v=EB6PS6lfpX6G1uwFu7uHcEh6oScz15hZHsXHCNMHzLg" rel="stylesheet" type="text/css" />
+    <link href="rpg-awesome.min.css" tppabs="https://2e.aonprd.com/Styles/rpg-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="Typography.css-v=3et3D84VeOgcsPaSRyGH6nF1FfjjYgVpcGBq4HyG5vg.css" tppabs="https://2e.aonprd.com/Styles/Typography.css?v=3et3D84VeOgcsPaSRyGH6nF1FfjjYgVpcGBq4HyG5vg" rel="stylesheet" type="text/css" />
+    <link href="themes.css" tppabs="https://2e.aonprd.com/themes" rel="stylesheet" type="text/css" />
+    <link href="SitePrint.css-v=8wGbZVsBHNUZjW78tbaeVtZ_Jlm0ss-wjdlzy_jKlOY.css" tppabs="https://2e.aonprd.com/Styles/SitePrint.css?v=8wGbZVsBHNUZjW78tbaeVtZ_Jlm0ss-wjdlzy_jKlOY" rel="stylesheet" type="text/css" media="print" />
+
+    <link href="css-family=Julee.css" tppabs="https://fonts.googleapis.com/css?family=Julee" rel="stylesheet" type="text/css" />
+    <link href="css-family=Andika.css" tppabs="https://fonts.googleapis.com/css?family=Andika" rel="stylesheet" type="text/css" />
+    <link href="css2-family=Lato-ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap.css" tppabs="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="search" type="application/opensearchdescription+xml" title="Search the Archives of Nethys" href="https://2e.aonprd.com/opensearch.xml" />
+
+
+    <script type="text/javascript">
+        window.elasticUrl = 'https://elasticsearch.aonprd.com/aon-test';
+    </script>
+
+        <script src="nethys-search-9f2620f2bfdf2014fd0b0c157f03248921d02563.js" tppabs="https://elasticsearch.aonprd.com/js/nethys-search-9f2620f2bfdf2014fd0b0c157f03248921d02563.js"></script>
+
+    <script
+      src="jquery-3.6.0.min.js" tppabs="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"></script>
+    <script src="semantic.min.js" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/semantic.min.js" integrity="sha512-5cguXwRllb+6bcc2pogwIeQmQPXEzn2ddsqAexIBhh7FO1z5Hkek1J9mrK2+rmZCTU6b6pERxI7acnp1MpAg4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="search.min.css" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/search.min.css" integrity="sha512-1xyHOORqcJ80bareQ2TWmQE+WZ/TlsqjqILbLHeM3Urtw720aiFXE/N+Xm4MAJpcn42e3k4Z8ZpqZfsA2VVyNw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="transition.min.css" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/transition.min.css" integrity="sha512-zsEyDFFD+yPxc7Kq8c3byp2H3tfx4GgT4wvCDzDGiOlkk2hl454XOHzHfN/OsPilopfPEbRzVJ0wxlIa/9BOyg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="transition.min.js" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/transition.min.js" integrity="sha512-zPx44KLp+BP6OKcCIPQibTiLz0WAc2s9syi+7wOT+Ql2D1/kAX8y7K1rz8vuTtrhRS2dMZ7zVS5dQoHTvkXJCA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="icon.min.css" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/icon.min.css" integrity="sha512-cKaYuptKrUbQ4/r0qmxhpQDjPWb7/SYN6gQRYMOQqPJ2+S4Bmb1zZ1/SAuszp+E6yoakjQFpM+rAzuw+EwR+xw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="input.min.css" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/input.min.css" integrity="sha512-6+BQOwPqqk5AianROXkI3LKgnLcjZbEV3KbhO++sKXemybg0FugrODki+nBsg9FipqlKSMd4ppnpkqC6VEpFiA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="button.min.css" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/button.min.css" integrity="sha512-XMrByQiBPJwH350YvTKR/XTY1fOQX4lSQqeft++WcyY39l0eKoPXOgx1OJHEODhHCW1FfvVl/Bdr90QE08FG+Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="dropdown.min.css" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/dropdown.min.css" integrity="sha512-hDsG55Tp5IgyWKbBbNhOo0+bLTdIVVAGW09a7IFvgIkKg/xrjOdOA2lEPFkkgJQ3NuB7DxDFlSHX7/JYvFLYfA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="dropdown.min.js" tppabs="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.2/components/dropdown.min.js" integrity="sha512-1SzBIESNYM3Y8JkQrS1Mu2dPnPaAqeQkCV9KfDA2eYXBEzdkhHWyqTP6P0OAsh1RSC4cDvr8DmYVTmb/YWGYpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="showdown.min.js" tppabs="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js" integrity="sha512-LhccdVNGe2QMEfI3x4DVV3ckMRe36TfydKss6mJpdHjNFiV07dFpS2xzeZedptKZrwxfICJpez09iNioiSZ3hA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="lodash.min.js" tppabs="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="modernMenu.js" tppabs="https://2e.aonprd.com/Scripts/modernMenu.js"></script>
+
+    <script type="text/javascript" src="tableState.js" tppabs="https://2e.aonprd.com/Scripts/tableState.js"></script>
+    <script type="text/javascript" src="drawerHandlers.js" tppabs="https://2e.aonprd.com/Scripts/drawerHandlers.js"></script>
+    <script type="text/javascript" src="hideFilter.js" tppabs="https://2e.aonprd.com/Scripts/hideFilter.js"></script>
+    <script type="text/javascript" src="searchBar.js" tppabs="https://2e.aonprd.com/Scripts/searchBar.js"></script>
+
+    <script type="text/javascript" src="previewModal.js" tppabs="https://2e.aonprd.com/Scripts/previewModal.js"></script>
+    
+    
+        <meta name="keywords" content="Archives, Nethys, Wiki, Archives of Nethys, Pathfinder, Official, AoN, AoNPRD, PRD, PFSRD, 2E, 2nd Edition, Archetypes" />
+
+
+    <meta charset="utf-8"/>
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="darkreader-lock" />
+    <style type="text/css">        
+        .nav-parent > * {
+            display: block;
+        }
+        .mobile-menu-toggle{
+            display:none;
+        }
+        #main-menu .nav-parent > .brand > .title{
+            display: none;
+        }
+    </style>
+</head>
+<body class="dark aon_dark_theme classic_feel">
+    <div id="wrapper" class="clearfix">
+
+
+        <script type="text/javascript" src="toggle.js" tppabs="https://2e.aonprd.com/Scripts/toggle.js"></script>
+
+
+        <div class="page clearfix" id="page">
+            <div class="header">
+                <div class="clear hideSkiplink" id="main-menu" >
+                    <a class="mobile-menu-toggle" id="mobile-menu-toggle" href="javascript:void(0);" data-toggle="mobile">|||</a>
+                    <div class="splash"></div>
+                    <div class="nav-parent" id="nav-parent">
+                        <a href="index.htm" tppabs="https://2e.aonprd.com/" style="font-size:larger" class="brand">
+                            <span class="home">
+                                Home
+                            </span>
+                        </a>
+                        <a href="Actions.aspx.htm" tppabs="https://2e.aonprd.com/Actions.aspx">Actions/Activities</a>
+                        <a href="Afflictions.aspx.htm" tppabs="https://2e.aonprd.com/Afflictions.aspx">Afflictions</a>
+                        <a href="Ancestries.aspx.htm" tppabs="https://2e.aonprd.com/Ancestries.aspx">Ancestries</a>
+                        <a href="Archetypes.aspx.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx">Archetypes</a>
+                        <a href="Backgrounds.aspx.htm" tppabs="https://2e.aonprd.com/Backgrounds.aspx">Backgrounds</a>
+                        <a href="Classes.aspx.htm" tppabs="https://2e.aonprd.com/Classes.aspx">Classes</a>
+                        <a href="Conditions.aspx.htm" tppabs="https://2e.aonprd.com/Conditions.aspx">Conditions</a>
+                        <a href="Creatures.aspx.htm" tppabs="https://2e.aonprd.com/Creatures.aspx">Creatures</a>
+                        <a href="Equipment.aspx.htm" tppabs="https://2e.aonprd.com/Equipment.aspx">Equipment</a>
+                        <a href="Feats.aspx.htm" tppabs="https://2e.aonprd.com/Feats.aspx">Feats</a>
+                        <a href="Hazards.aspx.htm" tppabs="https://2e.aonprd.com/Hazards.aspx">Hazards</a>
+                        <a href="MythicCallings.aspx.htm" tppabs="https://2e.aonprd.com/MythicCallings.aspx">Mythic</a>
+                        <a href="Rules.aspx.htm" tppabs="https://2e.aonprd.com/Rules.aspx">Rules</a>
+                        <a href="Setting.aspx.htm" tppabs="https://2e.aonprd.com/Setting.aspx">Setting</a>
+                        <a href="Skills.aspx.htm" tppabs="https://2e.aonprd.com/Skills.aspx">Skills</a>
+                        <a href="Spells.aspx.htm" tppabs="https://2e.aonprd.com/Spells.aspx">Spells/Rituals</a>
+                        <a href="Traits.aspx.htm" tppabs="https://2e.aonprd.com/Traits.aspx">Traits</a>
+                        <img src="heading_flourish.png" tppabs="https://2e.aonprd.com/Images/heading_flourish.png" alt="flourish" class="flourish" />
+                        <a href="Licenses.aspx.htm" tppabs="https://2e.aonprd.com/Licenses.aspx">Licenses</a>
+                        <a href="Sources.aspx.htm" tppabs="https://2e.aonprd.com/Sources.aspx">Sources</a>
+                        <img src="heading_flourish.png" tppabs="https://2e.aonprd.com/Images/heading_flourish.png" alt="flourish" class="flourish" />
+                        <a href="ContactUs.aspx.htm" tppabs="https://2e.aonprd.com/ContactUs.aspx">Contact Us</a>
+                        <a href="Contributors.aspx.htm" tppabs="https://2e.aonprd.com/Contributors.aspx">Contributors</a>
+                        <a href="Support.aspx.htm" tppabs="https://2e.aonprd.com/Support.aspx">Support the Archives</a>
+                        <div id="classic-search" class="search">
+                            <input type="text" class="search-input" placeholder="Search" />
+                            <button type="button" class="search-button">
+                                <svg class="Icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="height: 24px; width: 24px; fill: "><path d="M0 0h512v512H0z" fill="transparent" fill-opacity="0"></path><g class="" transform="translate(0,0)" style="touch-action: none;"><path d="M333.78 20.188c-39.97 0-79.96 15.212-110.405 45.656-58.667 58.667-60.796 152.72-6.406 213.97l-15.782 15.748 13.25 13.25 15.75-15.78c61.248 54.39 155.3 52.26 213.968-6.407 60.887-60.886 60.888-159.894 0-220.78C413.713 35.4 373.753 20.187 333.78 20.187zm0 18.562c35.15 0 70.285 13.44 97.158 40.313 53.745 53.745 53.744 140.6 0 194.343-51.526 51.526-133.46 53.643-187.5 6.375l.218-.217c-2.35-2.05-4.668-4.17-6.906-6.407-2.207-2.206-4.288-4.496-6.313-6.812l-.218.22c-47.27-54.04-45.152-135.976 6.374-187.502C263.467 52.19 298.63 38.75 333.78 38.75zm0 18.813c-30.31 0-60.63 11.6-83.81 34.78-46.362 46.362-46.362 121.234 0 167.594 10.14 10.142 21.632 18.077 33.905 23.782-24.91-19.087-40.97-49.133-40.97-82.94 0-15.323 3.292-29.888 9.22-43-4.165 20.485.44 40.88 14.47 54.907 24.583 24.585 68.744 20.318 98.624-9.562 29.88-29.88 34.146-74.04 9.56-98.625-2.375-2.376-4.943-4.473-7.655-6.313 45.13 8.648 79.954 46.345 84.25 92.876 4.44-35.07-6.82-71.726-33.813-98.72-23.18-23.18-53.47-34.78-83.78-34.78zM176.907 297.688L42.094 432.5l34.562 34.563L211.47 332.25l-34.564-34.563zM40 456.813L24 472.78 37.22 486l15.968-16L40 456.812z" fill-opacity="1"></path></g></svg>
+                            </button>
+                        </div>       
+                            <a id="minMaxMenu" onclick='setMenuState("min")'>Maximize Menu</a>
+                    </div>
+                    
+                    <div class="nav-parent expand-collapse" id="mobile-nav-parent" data-target="mobile">
+                        <a href="index.htm" tppabs="https://2e.aonprd.com/" style="font-size:larger" class="brand">
+                            <span class="title">
+                                Archives of Nethys
+                            </span>
+                        </a>
+                        <a href="Afflictions.aspx.htm" tppabs="https://2e.aonprd.com/Afflictions.aspx">Afflictions</a>
+                        <a href="javascript:void(0);" data-toggle="cc">Character Creation +</a>
+                        <div class="expand-collapse expand-collapse-group hide-when-collapsed expanded" data-target="cc" data-group="menus">
+                            <a href="Ancestries.aspx.htm" tppabs="https://2e.aonprd.com/Ancestries.aspx">Ancestries</a>
+                            <a href="Archetypes.aspx.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx">Archetypes</a>
+                            <a href="Backgrounds.aspx.htm" tppabs="https://2e.aonprd.com/Backgrounds.aspx">Backgrounds</a>
+                            <a href="Classes.aspx.htm" tppabs="https://2e.aonprd.com/Classes.aspx">Classes</a>
+                            <a href="Feats.aspx.htm" tppabs="https://2e.aonprd.com/Feats.aspx">Feats</a>
+                            <a href="Skills.aspx.htm" tppabs="https://2e.aonprd.com/Skills.aspx">Skills</a>
+                        </div>
+                        <a href="Creatures.aspx.htm" tppabs="https://2e.aonprd.com/Creatures.aspx">Creatures</a>
+                        <a href="Equipment.aspx.htm" tppabs="https://2e.aonprd.com/Equipment.aspx">Equipment</a>
+                        <a href="Setting.aspx.htm" tppabs="https://2e.aonprd.com/Setting.aspx">Setting</a>
+                        <a href="Spells.aspx.htm" tppabs="https://2e.aonprd.com/Spells.aspx">Spells/Rituals</a>
+                        <a href="javascript:void(0);" data-toggle="rules">Rules +</a>
+                        <div class="expand-collapse expand-collapse-group hide-when-collapsed" data-target="rules" data-group="menus">
+                            <a href="Actions.aspx.htm" tppabs="https://2e.aonprd.com/Actions.aspx">Actions/Activities</a>
+                            <a href="Conditions.aspx.htm" tppabs="https://2e.aonprd.com/Conditions.aspx">Conditions</a>
+                            <a href="Rules.aspx.htm" tppabs="https://2e.aonprd.com/Rules.aspx">Rules</a>
+                            <a href="Traits.aspx.htm" tppabs="https://2e.aonprd.com/Traits.aspx">Traits</a>
+                        </div>
+                        <a href="Hazards.aspx.htm" tppabs="https://2e.aonprd.com/Hazards.aspx">Hazards</a>
+                        <a href="javascript:void(0);" data-toggle="mythic" data-group="">Mythic +</a>
+                        <div class="expand-collapse expand-collapse-group hide-when-collapsed" data-target="mythic" data-group="menus">
+                            <a href="Rules.aspx-ID=3320.htm" tppabs="https://2e.aonprd.com/Rules.aspx?ID=3320">Mythic Rules</a>
+                            <a href="MythicCallings.aspx.htm" tppabs="https://2e.aonprd.com/MythicCallings.aspx">Callings</a>
+                            <a href="MythicFeats.aspx.htm" tppabs="https://2e.aonprd.com/MythicFeats.aspx">Mythic Feats</a>
+                            <a href="MythicDestinies.aspx.htm" tppabs="https://2e.aonprd.com/MythicDestinies.aspx">Destinies</a>
+                            <a href="MythicSpells.aspx.htm" tppabs="https://2e.aonprd.com/MythicSpells.aspx">Mythic Spells</a>
+                            <a href="MythicRituals.aspx.htm" tppabs="https://2e.aonprd.com/MythicRituals.aspx">Mythic Rituals</a>
+                        </div>
+                        <a href="Sources.aspx.htm" tppabs="https://2e.aonprd.com/Sources.aspx">Sources</a>
+                        <a href="javascript:void(0);" data-toggle="about" data-group="">About the Archives +</a>
+                        <div class="expand-collapse expand-collapse-group hide-when-collapsed" data-target="about" data-group="menus">
+                            <a href="Licenses.aspx.htm" tppabs="https://2e.aonprd.com/Licenses.aspx">Licenses</a>
+                            <a href="ContactUs.aspx.htm" tppabs="https://2e.aonprd.com/ContactUs.aspx">Contact Us</a>
+                            <a href="Contributors.aspx.htm" tppabs="https://2e.aonprd.com/Contributors.aspx">Contributors</a>
+                            <a href="Support.aspx.htm" tppabs="https://2e.aonprd.com/Support.aspx">Support the Archives</a>
+                        </div>
+                        <div id="mobileSearch" class="ui fluid search">
+                            <div class="ui action icon input" style="width:90%;height:100%">
+                                <input class="prompt" type="text" placeholder="Search..."/>
+                                <button class="ui icon button" onclick="jumpToSearch('#mobileSearch')">
+                                    <i class="search icon"></i>
+                                </button>
+                            </div>
+                            <div class="results"></div>
+                        </div>
+                        <a href="index.htm" tppabs="https://2e.aonprd.com/">
+                                <img src="PF2Logo_Nethys_400_Selected.png" tppabs="https://2e.aonprd.com/Images/PF2Logo_Nethys_400_Selected.png" alt="Pathfinder RPG (2nd Edition)" />
+                            </a>
+                        <a href="https://www.aonprd.com/"  >
+                            <img src="PF1Logo_Nethys_200.png" tppabs="https://2e.aonprd.com/Images/PF1Logo_Nethys_200.png" alt="Pathfinder RPG (1st Edition)" />
+                        </a> 
+                        <a href="https://www.aonsrd.com/" >
+                            <img src="SFLogo_Nethys_200.png" tppabs="https://2e.aonprd.com/Images/SFLogo_Nethys_200.png" alt="Starfinder RPG (1st Edition)" />
+                        </a>
+                        <a href="https://2e.aonsrd.com/" >
+                            <img src="starfinder_2_logo_200.webp" tppabs="https://2e.aonprd.com/Images/starfinder_2_logo_200.webp" alt="Starfinder RPG (2nd Edition)" />
+                        </a>
+                    </div>
+                </div>
+                <div class="theme-toggle-wrapper" title="Toggle Theme">
+                    <div class="theme-open" title="Change Theme"><i class="ra ra-flowers"></i></div>
+                </div>
+            </div>
+
+            <div class="new-navbar">
+                <div class="drawer-toggle" title="Expand Sidebar" onclick="switchDrawer()">
+                    <img src="NethysMask.png" tppabs="https://2e.aonprd.com/Images/NethysMask.png" alt="&#xe030" /></div>
+                    <a class="title" href="index.htm" tppabs="https://2e.aonprd.com/">Archives of Nethys</a>
+                    <div class="searchBar">
+                        <div id="desktopSearch" class="ui fluid search">
+                            <div class="ui action icon input" style="width:100%;height:100%">
+                                <input class="prompt" type="text" placeholder="Search..."/>
+                                <button class="ui icon button" onclick="jumpToSearch('#desktopSearch')">
+                                        <i class="search icon"></i>
+                                    </button>
+                            </div>
+                            <div class="results"></div>
+                        </div>                   
+                    </div>
+                    <div class="game-selector">
+                        <div class="game-selector-options">
+                            <a class="game-selector-option" href="https://aonprd.com/" >
+                                <img src="PF1Logo_Nethys.png" tppabs="https://2e.aonprd.com/Images/PF1Logo_Nethys.png" alt="Pathfinder 1e" />
+                            </a>
+                            <a class="game-selector-option" href="https://aonsrd.com/" >
+                                <img src="SFLogo_Nethys.png" tppabs="https://2e.aonprd.com/Images/SFLogo_Nethys.png" alt="Starfinder 1e" />
+                            </a>
+                            <a class="game-selector-option" href="https://2e.aonsrd.com/" >
+                                <img src="starfinder_2_logo.webp" tppabs="https://2e.aonprd.com/Images/starfinder_2_logo.webp" alt="Starfinder 2e" />
+                            </a>
+                        </div>
+                        <img class="game-selector-current" src="PF2Logo_Nethys.png" tppabs="https://2e.aonprd.com/Images/PF2Logo_Nethys.png" alt="Pathfinder 2e" />
+                    </div>
+                    <div class="theme-open" title="Change Theme"><i class="ra ra-flowers"></i></div>
+            </div>
+
+            <div class="main-wrapper" id="main-wrapper">
+                <div class="menutitle">
+                    <h1>
+                        Archives of Nethys
+                    </h1>
+                    <h2 class="game-titles">
+                        <a href="https://www.aonprd.com/"  >
+                            <img src="PF1Logo_Nethys.png" tppabs="https://2e.aonprd.com/Images/PF1Logo_Nethys.png" alt="Pathfinder RPG (1st Edition)" />
+                        </a> 
+                        <a href="index.htm" tppabs="https://2e.aonprd.com/" class="selected">
+                            <img src="PF2Logo_Nethys-Selected.png" tppabs="https://2e.aonprd.com/Images/PF2Logo_Nethys-Selected.png" alt="Pathfinder RPG (2nd Edition)" />
+                        </a>
+                        <a href="https://www.aonsrd.com/" >
+                            <img src="SFLogo_Nethys.png" tppabs="https://2e.aonprd.com/Images/SFLogo_Nethys.png" alt="Starfinder RPG (1st Edition)" />
+                        </a>
+                        <a href="https://2e.aonsrd.com/" >
+                            <img src="starfinder_2_logo.webp" tppabs="https://2e.aonprd.com/Images/starfinder_2_logo.webp" alt="Starfinder RPG (2nd Edition)" />
+                        </a>
+                    </h2>
+                </div>
+                <div class="main" id="main">
+                    
+
+<span class="hide-on-print"><h1 style="text-align:center"><a href="Archetypes.aspx.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx">All Archetypes</a><br /><a href="Archetypes.aspx-Category=9.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?Category=9">Artifact</a> | <a href="Archetypes.aspx-Category=7.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?Category=7">Class</a> | <a href="Archetypes.aspx-Category=1.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?Category=1">Combat Style</a> | <a href="Archetypes.aspx-Category=2.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?Category=2">Core</a> | <a href="Archetypes.aspx-Category=3.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?Category=3">Faction</a> | <a href="Archetypes.aspx-Category=4.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?Category=4">Multiclass</a> | <a href="Archetypes.aspx-Category=5.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?Category=5">Mystical</a> | <a href="Archetypes.aspx-Category=10.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?Category=10">Mythic</a> | <a href="Archetypes.aspx-Category=6.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?Category=6"><u>Profession</u></a> | <a href="Archetypes.aspx-Category=8.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?Category=8">Undead</a></h1></span>
+<span class="hide-on-print"></span>
+
+    <hr class="hide-on-print" />
+
+<span><h1 class="title">Profession Archetypes</h1>These archetypes represent jobs and roles all throughout Golarion.<br /><br /></span>
+<span></span>
+<span><h2 class="title"><img alt="PFS Standard" title="PFS Standard" style="height:18px; padding:2px 10px 0px 2px" src="PFS_Standard-2.png" tppabs="https://2e.aonprd.com/Images/Icons/PFS_Standard.png"><a href="Archetypes.aspx-ID=236.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=236">Acrobat</a><span style="margin-left:auto; margin-right:0">Dedication Feat 2</span></h2><b>Source</b> <a href="Sources.aspx-ID=227.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=227" target="_blank" class="external-link"><i>Player Core 2 pg. 183</i></a><br /><b>Prerequisites</b> trained in <u><a href="Skills.aspx-ID=34.htm" tppabs="https://2e.aonprd.com/Skills.aspx?ID=34">Acrobatics</a></u><br />You have trained your body to perform incredible, seemingly superhuman feats of grace and agility. You move in ways that leave your opponents fumbling for a response, turning every fight into a nimble piece of performance art.<br /><br /> Often underestimated, such mastery over the body is useful both on a stage and a battlefield. In fact, acrobatics is an often-practiced art among thieves, assassins, and explorers.<h2 class="title"><img alt="PFS Limited" title="PFS Limited" style="height:18px; padding:2px 10px 0px 2px" src="PFS_Limited-2.png" tppabs="https://2e.aonprd.com/Images/Icons/PFS_Limited.png"><a href="Archetypes.aspx-ID=183.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=183">Alkenstar Agent</a><span style="margin-left:auto; margin-right:0">Dedication Feat 2</span></h2><h3 class="title legacy-content-warning">Legacy Content</h3><span class="traituncommon"><a href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=721&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=721&Redirected=1%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=159">Uncommon</a></span><span style="letter-spacing: -.4em">&nbsp;</span><br /><b>Source</b> <a href="Sources.aspx-ID=119.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=119" target="_blank" class="external-link"><i>Pathfinder #178: Punks in a Powderkeg pg. 78</i></a><br /><b>Prerequisites</b> trained at least one <u><a href="WeaponGroups.aspx-ID=16.htm" tppabs="https://2e.aonprd.com/WeaponGroups.aspx?ID=16">firearm</a></u>; trained in <u><a href="Skills.aspx-ID=38&Redirected=1.htm" tppabs="https://2e.aonprd.com/Skills.aspx?ID=5">Deception</a></u><br />Outwardly dashing outlaws or silent, deadly bravos, these masters of combat and culture must hone a variety of skills to serve as secret agents and informants for the leader of Alkenstar, Grand Duchess Trietta Ricia.<h2 class="title"><img alt="PFS Standard" title="PFS Standard" style="height:18px; padding:2px 10px 0px 2px" src="PFS_Standard-2.png" tppabs="https://2e.aonprd.com/Images/Icons/PFS_Standard.png"><a href="Archetypes.aspx-ID=344.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=344">Alter Ego</a><span style="margin-left:auto; margin-right:0">Dedication Feat 2</span></h2><span class="traituncommon"><a href="Traits.aspx-ID=721.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=721">Uncommon</a></span><span style="letter-spacing: -.4em">&nbsp;</span><br /><b>Source</b> <a href="Sources.aspx-ID=293.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=293" target="_blank" class="external-link"><i>Dark Archives (Remastered) pg. 126</i></a><br /><b>Prerequisites</b> trained in <u><a href="Skills.aspx-ID=38.htm" tppabs="https://2e.aonprd.com/Skills.aspx?ID=38">Deception</a></u> and <u><a href="Skills.aspx-ID=48.htm" tppabs="https://2e.aonprd.com/Skills.aspx?ID=48">Stealth</a></u><br />A highly guarded castle in the middle of an extravagant ball, the headquarters of a city's infamous thieves' guild, the locked room in the back of a cultist hideout—all perfect targets for you to use your expertise at blending in. Rather than skulking through the shadows, you use your training and latent supernatural abilities to become a mirror, playing on the perceptions of others and taking on whatever role necessary to get in and out of your destination before anyone has a chance to think something is amiss.<br /><br /> Performing as an alter ego means going unregarded. Passing as just a face in the crowd is crucial, and accolades come as the gratitude from your leaders or coin from your clients, rather than the awed adoration from a crowd. This arrangement might suit you fine, as you thrive in a job well done and subsist on the thrill of walking flagrantly past your duped adversaries. Or you might find your lack of acclaim festers, a knot of pent- up underappreciation that grows until you can't resist a dramatic reveal or a signature calling card that shows you were there. One final word before speeding away from the castle, a gloating message left behind, or some other sign reveals your skill—usually too late for your victims to do anything about it.<h2 class="title"><img alt="PFS Limited" title="PFS Limited" style="height:18px; padding:2px 10px 0px 2px" src="PFS_Limited-2.png" tppabs="https://2e.aonprd.com/Images/Icons/PFS_Limited.png"><a href="Archetypes.aspx-ID=38.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=38">Animal Trainer
+</a><span style="margin-left:auto; margin-right:0">Dedication Feat 2</span></h2><h3 class="title legacy-content-warning">Legacy Content</h3><span class="traituncommon"><a href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=721&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=721&Redirected=1%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=159">Uncommon</a></span><span style="letter-spacing: -.4em">&nbsp;</span><br /><b>Source</b> <a href="Sources.aspx-ID=23.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=23" target="_blank" class="external-link"><i>Pathfinder #152: Legacy of the Lost God pg. 76</i></a><br /><b>Prerequisites</b> trained in <u><a href="javascript:if(confirm(%27https://2e.aonprd.com/Skills.aspx?ID=43&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Skills.aspx?ID=43&Redirected=1%27" tppabs="https://2e.aonprd.com/Skills.aspx?ID=10">Nature</a></u><br />You have befriended an animal to serve as an able assistant and loyal guardian.
+<h2 class="title"><img alt="PFS Standard" title="PFS Standard" style="height:18px; padding:2px 10px 0px 2px" src="PFS_Standard-2.png" tppabs="https://2e.aonprd.com/Images/Icons/PFS_Standard.png"><a href="Archetypes.aspx-ID=237.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=237">Archaeologist</a><span style="margin-left:auto; margin-right:0">Dedication Feat 2</span></h2><b>Source</b> <a href="Sources.aspx-ID=227.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=227" target="_blank" class="external-link"><i>Player Core 2 pg. 184</i></a><br /><b>Prerequisites</b> trained in <u><a href="Skills.aspx-ID=47.htm" tppabs="https://2e.aonprd.com/Skills.aspx?ID=47">Society</a></u> and <u><a href="Skills.aspx-ID=50.htm" tppabs="https://2e.aonprd.com/Skills.aspx?ID=50">Thievery</a></u><br />Adventurers raid tombs for material gain, but true archaeologists treasure the knowledge attained from such sites. You might accomplish your goals with scholarly learning, by training to overcome the tricks and traps set by ancient peoples and rivals, through magical training, or even with a bit of inexplicable luck. Many archaeologists practice a combination of all these approaches. Regardless of method, all archaeologists possess a deep desire to learn more about sapient history and prehistory. Adventuring through tombs, dodging traps, and studying magic are all means to better understand ancient sites, analyze artifacts, and decipher the meaning of any remains that can be found from previous inhabitants. You decide how you will uncover the secrets of the past and what to do with the answers you find.<h2 class="title"><img alt="PFS Limited" title="PFS Limited" style="height:18px; padding:2px 10px 0px 2px" src="PFS_Limited-2.png" tppabs="https://2e.aonprd.com/Images/Icons/PFS_Limited.png"><a href="Archetypes.aspx-ID=115.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=115">Artillerist</a><span style="margin-left:auto; margin-right:0">Dedication Feat 2</span></h2><b>Source</b> <a href="Sources.aspx-ID=98.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=98" target="_blank" class="external-link"><i>Guns & Gears pg. 128</i></a><br /><b>Prerequisites</b> trained in martial weapons<br />The artillerist's maxim holds that while fights might be won with swords, battles are won with cannons. Or in a pinch, with trebuchets, siege towers, catapults, hwachas, and all other lethal miscellanea of a combat engineers' corp. As a true artillerist, you leave the penny-ante pistols and knives to those who only need to operate on a small scale. You're a consummate professional in the art of big guns, a maestro at merging mathematics and manpower to transform whatever castle wall, infantry battalion, or rampaging dragon offends you into a smoking crater in the ground.<br /><br /> You're not just some daredevil demolitionist, though. You're part of a team, accustomed to coordinating with your unit to maximize your time and effectiveness. Whether jumping in to help your crew load the next round, quickly calculating the trajectory of the engine's next shot, or taking the shot yourself, your presence on the team ensures their chances of success are maximized, creating a whole that is greater than the sum of its parts.<h2 class="title"><img alt="PFS Standard" title="PFS Standard" style="height:18px; padding:2px 10px 0px 2px" src="PFS_Standard-2.png" tppabs="https://2e.aonprd.com/Images/Icons/PFS_Standard.png"><a href="Archetypes.aspx-ID=243.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=243">Bounty Hunter</a><span style="margin-left:auto; margin-right:0">Dedication Feat 2</span></h2><b>Source</b> <a href="Sources.aspx-ID=227.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=227" target="_blank" class="external-link"><i>Player Core 2 pg. 191</i></a><br />Whether for coin, glory, or justice, you know how to track, defeat, and capture dangerous individuals. You're accustomed to perusing wanted posters, following up on leads, and pursuing your quarry to hell and back. Once you locate your prey's trail, you're unshakable. Additionally, you have the skills and experience to subdue even the most troublesome mark and bring them in to secure your reward.<h2 class="title"><img alt="PFS Standard" title="PFS Standard" style="height:18px; padding:2px 10px 0px 2px" src="PFS_Standard-2.png" tppabs="https://2e.aonprd.com/Images/Icons/PFS_Standard.png"><a href="Archetypes.aspx-ID=244.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=244">Cavalier</a><span style="margin-left:auto; margin-right:0">Dedication Feat 2</span></h2><b>Source</b> <a href="Sources.aspx-ID=227.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=227" target="_blank" class="external-link"><i>Player Core 2 pg. 192</i></a><br /><b>Prerequisites</b> trained in <u><a href="Skills.aspx-ID=43.htm" tppabs="https://2e.aonprd.com/Skills.aspx?ID=43">Nature</a></u> or <u><a href="Skills.aspx-ID=47.htm" tppabs="https://2e.aonprd.com/Skills.aspx?ID=47">Society</a></u><br />You are a skilled and dedicated warrior on the battlefield who specializes in fighting astride a powerful animal companion that serves as your mount. You and your mount are an unparalleled team, moving with shared intent to become a powerful force in combat. You might wield a banner in the name of an order of which you're a member, a liege to whom you've sworn your service, or an ideal you uphold. Or you might fight solely to further enrich your own prestige, reputation, and coffers. Traditionally, cavaliers are envisioned riding atop majestic or fearsome horses, but in reality, all kinds of animals can serve this honorable role, from riding dogs to dinosaurs. What's important is not the type of mount but the connection between the cavalier and their companion. This bond is their true strength.<h2 class="title"><img alt="PFS Standard" title="PFS Standard" style="height:18px; padding:2px 10px 0px 2px" src="PFS_Standard-2.png" tppabs="https://2e.aonprd.com/Images/Icons/PFS_Standard.png"><a href="Archetypes.aspx-ID=245.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=245">Celebrity</a><span style="margin-left:auto; margin-right:0">Dedication Feat 2</span></h2><b>Source</b> <a href="Sources.aspx-ID=227.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=227" target="_blank" class="external-link"><i>Player Core 2 pg. 194</i></a><br />You're a special personality... and you know it. You're not merely comfortable in the spotlight, you crave it. While the traditional celebrity is a musician or another type of performer, you could be known for any occupation. You know how to use your position to command the attention of others or steal it away from those around you. While you're in a room all eyes are on you, and you love it. Your life is a show, and you are here to steal the love and admiration of everyone watching.<h2 class="title"><a href="Archetypes.aspx-ID=196.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=196">Corpse Tender</a><span style="margin-left:auto; margin-right:0">Dedication Feat 2</span></h2><h3 class="title legacy-content-warning">Legacy Content</h3><span class="traituncommon"><a href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=721&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=721&Redirected=1%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=159">Uncommon</a></span><span style="letter-spacing: -.4em">&nbsp;</span><br /><b>Source</b> <a href="Sources.aspx-ID=139.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=139" target="_blank" class="external-link"><i>Pathfinder #181: Zombie Feast pg. 81</i></a><br /><b>Prerequisites</b> evil alignment; trained in <u><a href="javascript:if(confirm(%27https://2e.aonprd.com/Skills.aspx?ID=46&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Skills.aspx?ID=46&Redirected=1%27" tppabs="https://2e.aonprd.com/Skills.aspx?ID=13">Religion</a></u><br />You tend to <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=652&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=652&Redirected=1%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=108">mindless</a> <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=722&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=722&Redirected=1%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=160">undead</a>, such as the <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/MonsterFamilies.aspx?ID=487&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/MonsterFamilies.aspx?ID=487&Redirected=1%27" tppabs="https://2e.aonprd.com/MonsterFamilies.aspx?ID=103">zombie</a> farmhands and farm animals throughout Geb.<h2 class="title"><img alt="PFS Standard" title="PFS Standard" style="height:18px; padding:2px 10px 0px 2px" src="PFS_Standard-2.png" tppabs="https://2e.aonprd.com/Images/Icons/PFS_Standard.png"><a href="Archetypes.aspx-ID=246.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=246">Dandy</a><span style="margin-left:auto; margin-right:0">Dedication Feat 2</span></h2><b>Source</b> <a href="Sources.aspx-ID=227.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=227" target="_blank" class="external-link"><i>Player Core 2 pg. 195</i></a><br /><b>Prerequisites</b> trained in <u><a href="Skills.aspx-ID=39.htm" tppabs="https://2e.aonprd.com/Skills.aspx?ID=39">Diplomacy</a></u><br />You are a genteel master of style, culture, and decorum, aware of even the subtlest rules of etiquette.<h2 class="title"><img alt="PFS Standard" title="PFS Standard" style="height:18px; padding:2px 10px 0px 2px" src="PFS_Standard-2.png" tppabs="https://2e.aonprd.com/Images/Icons/PFS_Standard.png"><a href="Archetypes.aspx-ID=171.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=171">Exorcist</a><span style="margin-left:auto; margin-right:0">Dedication Feat 4</span></h2><h3 class="title legacy-content-warning">Legacy Content</h3><b>Source</b> <a href="Sources.aspx-ID=118.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=118" target="_blank" class="external-link"><i>Book of the Dead pg. 22</i></a><br /><b>Prerequisites</b> trained in <u><a href="javascript:if(confirm(%27https://2e.aonprd.com/Skills.aspx?ID=44&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Skills.aspx?ID=44&Redirected=1%27" tppabs="https://2e.aonprd.com/Skills.aspx?ID=11">Occultism</a></u> or <u><a href="javascript:if(confirm(%27https://2e.aonprd.com/Skills.aspx?ID=46&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Skills.aspx?ID=46&Redirected=1%27" tppabs="https://2e.aonprd.com/Skills.aspx?ID=13">Religion</a></u><br />You pacify restless <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=737&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=737&Redirected=1%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=149">spirits</a>, <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/MonsterFamilies.aspx?ID=418&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/MonsterFamilies.aspx?ID=418&Redirected=1%27" tppabs="https://2e.aonprd.com/MonsterFamilies.aspx?ID=51">ghosts</a>, and <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=622&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=622&Redirected=1%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=88">haunts</a>, capturing fragments of them and using their vengeful energies to fuel your own powers while purifying the spirit. You store these ghosts within a magical vessel called a <i>spirit dwelling</i>. This <i>spirit dwelling</i> might be a treasured family heirloom, an item you crafted expressly to help with exorcisms, or even just an odd trinket you found that happens to do the job.<br /><br /> While the motivations of exorcists run the gamut, most are compassionate individuals who believe that every ghost, haunt, and spirit is simply a lost soul in need of rest. They collect spirits expressly for the purposes of offering them comfort, guidance, and absolution. After an exorcist's ministrations, these spirits are freed of their burdens, emotion, and regrets and are reabsorbed into the River of Souls. Although exorcists rarely gather in one place, many different religions employ them to deal with spiritual threats.<br /><br /> Exorcists are most commonly found among the faithful of <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Deities.aspx?ID=466&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Deities.aspx?ID=466&Redirected=1%27" tppabs="https://2e.aonprd.com/Deities.aspx?ID=114">Ashava</a> the True Spark (the empyreal lord of dancers), but among the major deities of the Inner Sea region, <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Deities.aspx?ID=292&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Deities.aspx?ID=292&Redirected=1%27" tppabs="https://2e.aonprd.com/Deities.aspx?ID=16">Sarenrae</a>, <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Deities.aspx?ID=290&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Deities.aspx?ID=290&Redirected=1%27" tppabs="https://2e.aonprd.com/Deities.aspx?ID=14">Pharasma</a>, and even <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Deities.aspx?ID=293&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Deities.aspx?ID=293&Redirected=1%27" tppabs="https://2e.aonprd.com/Deities.aspx?ID=17">Shelyn</a> count a fair number of exorcists among their faithful. Exorcists can come from any walk of life, but many are <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Causes.aspx?ID=14&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Causes.aspx?ID=14&Redirected=1%27" tppabs="https://2e.aonprd.com/Causes.aspx?ID=2">redeemer</a> <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Classes.aspx?ID=58&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Classes.aspx?ID=58&Redirected=1%27" tppabs="https://2e.aonprd.com/Classes.aspx?ID=4">champions</a>, <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Classes.aspx?ID=33&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Classes.aspx?ID=33&Redirected=1%27" tppabs="https://2e.aonprd.com/Classes.aspx?ID=5">clerics</a>, or <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Classes.aspx?ID=60&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Classes.aspx?ID=60&Redirected=1%27" tppabs="https://2e.aonprd.com/Classes.aspx?ID=8">monks</a>. Apart from the role of the <i>spirit dwelling</i>, exorcism practices can vary. For example, a <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Classes.aspx?ID=32&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Classes.aspx?ID=32&Redirected=1%27" tppabs="https://2e.aonprd.com/Classes.aspx?ID=3">bard</a> or <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Classes.aspx?ID=37&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Classes.aspx?ID=37&Redirected=1%27" tppabs="https://2e.aonprd.com/Classes.aspx?ID=10">rogue</a> might attract spirits with trickery, charm, or empty promises. In contrast, a cleric of Pharasma could take a more severe route, demanding the spirits return to the natural order of things.<h2 class="title"><img alt="PFS Standard" title="PFS Standard" style="height:18px; padding:2px 10px 0px 2px" src="PFS_Standard-2.png" tppabs="https://2e.aonprd.com/Images/Icons/PFS_Standard.png"><a href="Archetypes.aspx-ID=119.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=119">Firework Technician</a><span style="margin-left:auto; margin-right:0">Dedication Feat 2</span></h2><span class="traituncommon"><a href="Traits.aspx-ID=721.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=721">Uncommon</a></span><span style="letter-spacing: -.4em">&nbsp;</span><br /><b>Source</b> <a href="Sources.aspx-ID=98.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=98" target="_blank" class="external-link"><i>Guns & Gears pg. 134</i></a><br /><b>Prerequisites</b> trained in <u><a href="Skills.aspx-ID=37.htm" tppabs="https://2e.aonprd.com/Skills.aspx?ID=37">Crafting</a></u><br />The brilliant display of cascading lights and flickering aerial flowers, the thunderous boom, the sizzling crackle, and piercing screech—these are the stock and trade of your craft. You know how to perfectly pair light and sound to create fireworks displays that can amaze children and adults, comfort friends, and even confound your foes.<br /><br /> As a fireworks technician, you might be an itinerant wanderer, roaming from town to town and developing your craft on your own. In that case, you make a living on the road, selling fireworks to the townsfolk, setting up public displays upon request and receipt of payment, and even tailoring individualized performances to those wealthy or interesting enough to be worthy of receiving their own private show.<br /><br />  On the other hand, you might be part of an established fireworks house from Tian Xia or Vudra and rely on teamwork to perfect your various formulas and displays. Hoping to produce the next great innovation in fireworks technology, you often send back the notes from your studies and field demonstrations to esteemed colleagues from your fireworks house, seeking their opinions on your next big idea.<h2 class="title"><img alt="PFS Limited" title="PFS Limited" style="height:18px; padding:2px 10px 0px 2px" src="PFS_Limited-2.png" tppabs="https://2e.aonprd.com/Images/Icons/PFS_Limited.png"><a href="Archetypes.aspx-ID=105.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=105">Folklorist</a><span style="margin-left:auto; margin-right:0">Dedication Feat 2</span></h2><h3 class="title legacy-content-warning">Legacy Content</h3><span class="traituncommon"><a href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=721&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=721&Redirected=1%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=159">Uncommon</a></span><span style="letter-spacing: -.4em">&nbsp;</span><br /><b>Source</b> <a href="Sources.aspx-ID=97.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=97" target="_blank" class="external-link"><i>Pathfinder #170: Spoken on the Song Wind pg. 78</i></a><br /><b>Prerequisites</b> trained in <u><a href="javascript:if(confirm(%27https://2e.aonprd.com/Skills.aspx?ID=45&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Skills.aspx?ID=45&Redirected=1%27" tppabs="https://2e.aonprd.com/Skills.aspx?ID=12">Performance</a></u><br />Folklorists are welcome across the Mwangi Expanse for the entertaining stories they tell and the counsel they impart. However, those who take the art of storytelling to the next level can produce magical effects based on their understanding of stories and their firm belief that life conforms to the contours of these tales. While many such folklorists are benevolent, terms like hero and villain are notoriously relative, changing to fit the perspective of the storyteller.
+<h2 class="title"><img alt="PFS Limited" title="PFS Limited" style="height:18px; padding:2px 10px 0px 2px" src="PFS_Limited-2.png" tppabs="https://2e.aonprd.com/Images/Icons/PFS_Limited.png"><a href="Archetypes.aspx-ID=169.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=169">Game Hunter</a><span style="margin-left:auto; margin-right:0">Dedication Feat 2</span></h2><h3 class="title legacy-content-warning">Legacy Content</h3><span class="traituncommon"><a href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=721&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=721&Redirected=1%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=159">Uncommon</a></span><span style="letter-spacing: -.4em">&nbsp;</span><br /><b>Source</b> <a href="Sources.aspx-ID=112.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=112" target="_blank" class="external-link"><i>Pathfinder #175: Broken Tusk Moon pg. 81</i></a><br /><b>Prerequisites</b> trained in <u><a href="javascript:if(confirm(%27https://2e.aonprd.com/Skills.aspx?ID=49&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Skills.aspx?ID=49&Redirected=1%27" tppabs="https://2e.aonprd.com/Skills.aspx?ID=16">Survival</a></u><br />Game hunters find, follow, and slay game animals, then honor their fallen rivals by securing and preserving a trophy of the kill. Many game hunters show a reverential respect for their prey bordering on the sacred. The finest game hunters engage only in a fair chase, strive for painless kills, and use every part of the animal's carcass.<h2 class="title"><img alt="PFS Limited" title="PFS Limited" style="height:18px; padding:2px 10px 0px 2px" src="PFS_Limited-2.png" tppabs="https://2e.aonprd.com/Images/Icons/PFS_Limited.png"><a href="Archetypes.aspx-ID=88.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=88">Ghost Hunter</a><span style="margin-left:auto; margin-right:0">Dedication Feat 2</span></h2><h3 class="title legacy-content-warning">Legacy Content</h3><span class="traituncommon"><a href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=721&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=721&Redirected=1%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=159">Uncommon</a></span><span style="letter-spacing: -.4em">&nbsp;</span><br /><b>Source</b> <a href="Sources.aspx-ID=71.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=71" target="_blank" class="external-link"><i>Pathfinder #163: Ruins of Gauntlight pg. 81</i></a><br /><b>Prerequisites</b> trained in <u><a href="javascript:if(confirm(%27https://2e.aonprd.com/Skills.aspx?ID=44&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Skills.aspx?ID=44&Redirected=1%27" tppabs="https://2e.aonprd.com/Skills.aspx?ID=11">Occultism</a></u> or <u><a href="javascript:if(confirm(%27https://2e.aonprd.com/Skills.aspx?ID=46&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Skills.aspx?ID=46&Redirected=1%27" tppabs="https://2e.aonprd.com/Skills.aspx?ID=13">Religion</a></u><br /><a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/MonsterFamilies.aspx?ID=418&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/MonsterFamilies.aspx?ID=418&Redirected=1%27" tppabs="https://2e.aonprd.com/MonsterFamilies.aspx?ID=51">Ghosts</a> have a wide range of capabilities and features— no two ghosts are exactly alike, as the nature of their abilities depends as much upon who they were in life as on how they died. <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=622&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=622&Redirected=1%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=88">Haunts</a>, the spectral phenomena remaining in a site of death or powerful emotions, are related to but distinct from ghosts.<br /><br /> The ghost hunter knows that ghosts and haunts share many features. By focusing on these similarities, they can track down, confront, and defeat all manner of unquiet souls, helping them to find peace and move on to the afterlife.<h2 class="title"><img alt="PFS Standard" title="PFS Standard" style="height:18px; padding:2px 10px 0px 2px" src="PFS_Standard-2.png" tppabs="https://2e.aonprd.com/Images/Icons/PFS_Standard.png"><a href="Archetypes.aspx-ID=251.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=251">Gladiator</a><span style="margin-left:auto; margin-right:0">Dedication Feat 2</span></h2><b>Source</b> <a href="Sources.aspx-ID=227.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=227" target="_blank" class="external-link"><i>Player Core 2 pg. 201</i></a><br /><b>Prerequisites</b> <u><a href="Feats.aspx-ID=5159.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=5159">Impressive Performance</a></u><br />The roar of the crowd and thrill of competitive combat drive you to become the best—and the fame isn't bad either. You always do your best work under the fervent gaze of spectators, and by work, you of course mean violence.<h2 class="title"><img alt="PFS Standard" title="PFS Standard" style="height:18px; padding:2px 10px 0px 2px" src="PFS_Standard-2.png" tppabs="https://2e.aonprd.com/Images/Icons/PFS_Standard.png"><a href="Archetypes.aspx-ID=252.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=252">Herbalist</a><span style="margin-left:auto; margin-right:0">Dedication Feat 2</span></h2><b>Source</b> <a href="Sources.aspx-ID=227.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=227" target="_blank" class="external-link"><i>Player Core 2 pg. 202</i></a><br /><b>Prerequisites</b> <u><a href="Feats.aspx-ID=5182.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=5182">Natural Medicine</a></u>; trained in <u><a href="Skills.aspx-ID=43.htm" tppabs="https://2e.aonprd.com/Skills.aspx?ID=43">Nature</a></u><br />The plants around you can provide more remedies than the finest hospital or temple, and you are skilled in their use. Nature always provides to those who know how to look, and you have always had a talent for seeing these gifts before you. You can put it to good use, healing those around you with nothing more than what the world provides.<h2 class="title"><img alt="PFS Limited" title="PFS Limited" style="height:18px; padding:2px 10px 0px 2px" src="PFS_Limited-2.png" tppabs="https://2e.aonprd.com/Images/Icons/PFS_Limited.png"><a href="Archetypes.aspx-ID=36.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=36">Juggler</a><span style="margin-left:auto; margin-right:0">Dedication Feat 2</span></h2><h3 class="title legacy-content-warning">Legacy Content</h3><span class="traituncommon"><a href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=721&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=721&Redirected=1%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=159">Uncommon</a></span><span style="letter-spacing: -.4em">&nbsp;</span><br /><b>Source</b> <a href="Sources.aspx-ID=21.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=21" target="_blank" class="external-link"><i>Pathfinder #151: The Show Must Go On pg. 74</i></a><br /><b>Prerequisites</b> Dexterity 14<br />You’re a skilled performer, with impressive balance and coordination that help you greatly in battle.<h2 class="title"><img alt="PFS Standard" title="PFS Standard" style="height:18px; padding:2px 10px 0px 2px" src="PFS_Standard-2.png" tppabs="https://2e.aonprd.com/Images/Icons/PFS_Standard.png"><a href="Archetypes.aspx-ID=301.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=301">Kitharodian Actor</a><span style="margin-left:auto; margin-right:0">Dedication Feat 2</span></h2><span class="traitrare"><a href="Traits.aspx-ID=683.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=683">Rare</a></span><span style="letter-spacing: -.4em">&nbsp;</span><br /><b>Source</b> <a href="Sources.aspx-ID=235.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=235" target="_blank" class="external-link"><i>Rival Academies pg. 58</i></a><br /><b>Prerequisites</b> trained in <u><a href="Skills.aspx-ID=45.htm" tppabs="https://2e.aonprd.com/Skills.aspx?ID=45">Performance</a></u><br />Some performers at Kitharodian Academy are so dedicated to method acting that they can completely disappear into roles in a manner that’s almost magical. These thespians are capable of mimicking Taldor’s vast array of stage-immortalized luminaries via vivid impressions, awe-inspiring vocal performances, and wild stunts that defy all expectations. The Academy’s foremost instructors and senior Lion Blades agents keep a close eye on all prodigies who show a sliver of this potential, helping them harness their talents for use in both the acting world and the world of spycraft.<br /><br /> Through Taldor’s long history, a handful of classic roles have been repeated and hammered into shape until they became icons and metaphors that define the art of Taldor. Although some of these are symbols of national strength, like First Emperor Taldaris, many are tragic or even comedic figures like Emperor Beldam I. Accepting any one of these roles in a high-profile production can be the highlight of an actor’s career, but the best of the best gather these roles like trophies.<br /><br /> Newer roles are added to the canon very slowly, with modern figures like Grand Princess Eutropia usually alluded to with references from other roles. Many performances with Cyricas and his animal friends now feature a dog at his side, for example, as a reference to the grand princess’s beloved pet.<br /><br /> Although the most famous internationally, Kitharodian Academy is not the sole repository of Taldor’s stories. Many other schools in Taldor, like the nearby Rhapsodic College, teach the classics. But these plays and songs are such a deeply rooted part of Taldor’s culture that prodigies arise from the soldiers of Zimar to the dwarven enclaves in Maheto.<h2 class="title"><img alt="PFS Standard" title="PFS Standard" style="height:18px; padding:2px 10px 0px 2px" src="PFS_Standard-2.png" tppabs="https://2e.aonprd.com/Images/Icons/PFS_Standard.png"><a href="Archetypes.aspx-ID=302.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=302">Lepidstadt Surgeon</a><span style="margin-left:auto; margin-right:0">Dedication Feat 2</span></h2><span class="traituncommon"><a href="Traits.aspx-ID=721.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=721">Uncommon</a></span><span style="letter-spacing: -.4em">&nbsp;</span><br /><b>Source</b> <a href="Sources.aspx-ID=235.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=235" target="_blank" class="external-link"><i>Rival Academies pg. 94</i></a><br /><b>Prerequisites</b> trained in <u><a href="Skills.aspx-ID=42.htm" tppabs="https://2e.aonprd.com/Skills.aspx?ID=42">Medicine</a></u>; attended the University of Lepidstadt<br />To be a surgeon is to be akin to a god. In your hands is the power of life and death. With a flick of a knife, you can excise a tumor. With another, you can sever an artery. Everything comes down to your skill, to the steadiness of your hand, the keenness of your eye, and the knowledge of your mind. Little wonder, then, that in Lepidstadt, surrounded by powers and temptations, surgeons sometimes go a few steps further. With the right reagents, with the proper equipment, even death is only a temporary inconvenience, a shadow to be chased from the door with kicks and shouts. Just imagine the possibilities.<h2 class="title"><img alt="PFS Standard" title="PFS Standard" style="height:18px; padding:2px 10px 0px 2px" src="PFS_Standard-2.png" tppabs="https://2e.aonprd.com/Images/Icons/PFS_Standard.png"><a href="Archetypes.aspx-ID=253.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=253">Linguist</a><span style="margin-left:auto; margin-right:0">Dedication Feat 2</span></h2><b>Source</b> <a href="Sources.aspx-ID=227.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=227" target="_blank" class="external-link"><i>Player Core 2 pg. 203</i></a><br /><b>Prerequisites</b> You speak at least 3 languages<br />Whether you study to further your own ambitions or simply out of fascination with the intricacies of language, your way with words is unparalleled.<h2 class="title"><img alt="PFS Standard" title="PFS Standard" style="height:18px; padding:2px 10px 0px 2px" src="PFS_Standard-2.png" tppabs="https://2e.aonprd.com/Images/Icons/PFS_Standard.png"><a href="Archetypes.aspx-ID=65.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=65">Loremaster</a><span style="margin-left:auto; margin-right:0">Dedication Feat 2</span></h2><h3 class="title legacy-content-warning">Legacy Content</h3><b>Source</b> <a href="Sources.aspx-ID=39.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=39" target="_blank" class="external-link"><i>Advanced Player's Guide pg. 179</i></a><br /><b>Prerequisites</b> trained in at least one skill to <u><a href="javascript:if(confirm(%27https://2e.aonprd.com/Actions.aspx?ID=2363&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Actions.aspx?ID=2363&Redirected=1%27" tppabs="https://2e.aonprd.com/Actions.aspx?ID=22">Decipher Writing</a></u><br />Knowledge is power, and you labor in pursuit of that power. No matter the situation, you can usually procure some tidbit of knowledge to inform your actions. You specialize in secrets, both uncovering them and hiding them away, and your command of the written word borders on the supernatural. As you discover deeper secrets of lore, you might develop a power over knowledge that becomes outright magical, allowing you to understand and disguise information even more effectively.<h2 class="title"><img alt="PFS Standard" title="PFS Standard" style="height:18px; padding:2px 10px 0px 2px" src="PFS_Standard-2.png" tppabs="https://2e.aonprd.com/Images/Icons/PFS_Standard.png"><a href="Archetypes.aspx-ID=254.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=254">Marshal</a><span style="margin-left:auto; margin-right:0">Dedication Feat 2</span></h2><b>Source</b> <a href="Sources.aspx-ID=227.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=227" target="_blank" class="external-link"><i>Player Core 2 pg. 204</i></a><br /><b>Prerequisites</b> trained in <u><a href="Skills.aspx-ID=39.htm" tppabs="https://2e.aonprd.com/Skills.aspx?ID=39">Diplomacy</a></u> or <u><a href="Skills.aspx-ID=40.htm" tppabs="https://2e.aonprd.com/Skills.aspx?ID=40">Intimidation</a></u>; trained in martial weapons<br />Marshals are leaders, first and foremost. Marshals can come from any class or background, though they all share a willingness to sacrifice their own glory for the greater good of the team. Some marshals lead from the front, sword and shield raised, while others may call instructions and encouragements from the rear while providing allied spellcasters with skilled support. Regardless of their preferred method of combat, marshals' ability to bring the best out in every ally is a valuable addition to any group. Though not every marshal is seen by their allies as a source of encouragement. Such marshals strike fear both in enemies and allies alike to inspire competence in battle and ensure that cowardice will not be tolerated. Such tactics are often seen as more practical than cruel, and the results speak for themselves. Quick action and the necessity to fight drive these leaders and their allies forward into the fray of battle. Regardless of what kind of marshal you wish to become, you will lead your allies to glory and victory.<br /><br /> While many see marshals as traditionally warriors of martial prowess, anyone could make for a potent marshal. Not every such leader charges into the thick of battle. While doing so may inspire bravery in desperate times, many leaders lead from the safety of the back lines. Spellcaster marshals often lead in this manner. In their mind, the practicality of their own survival outweighs the powerful yet fleeting courage a charge inspires. After all, more battles await in the future, and their skills may very well be needed again.<h2 class="title"><img alt="PFS Standard" title="PFS Standard" style="height:18px; padding:2px 10px 0px 2px" src="PFS_Standard-2.png" tppabs="https://2e.aonprd.com/Images/Icons/PFS_Standard.png"><a href="Archetypes.aspx-ID=257.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=257">Medic</a><span style="margin-left:auto; margin-right:0">Dedication Feat 2</span></h2><b>Source</b> <a href="Sources.aspx-ID=227.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=227" target="_blank" class="external-link"><i>Player Core 2 pg. 208</i></a><br /><b>Prerequisites</b> <u><a href="Feats.aspx-ID=5125.htm" tppabs="https://2e.aonprd.com/Feats.aspx?ID=5125">Battle Medicine</a></u>; trained in <u><a href="Skills.aspx-ID=42.htm" tppabs="https://2e.aonprd.com/Skills.aspx?ID=42">Medicine</a></u><br />You've studied countless techniques for providing medical aid, making you a peerless doctor and healer. While many healers happily practice the art of medicine in the safety and serenity of stationary buildings, few are in more dire need of medicinal aid than adventurers. Such an occupation comes with frequent injuries that need constant attention. Few parties would ever turn down help from a practicing medic. In fact, the need for medicine is so great that many medics started as adventurers and took up medicine as a necessity. While patching up injuries is the most common practice of medics, they are also invaluable for their ability to help fight diseases and ailments inflicted by all kinds of creatures and traps. The adaptability and utility of the medic are undeniable. Whether you studied medicine for most of your life or picked it up on the road, you are who people turn to for aid.<h2 class="title"><img alt="PFS Standard" title="PFS Standard" style="height:18px; padding:2px 10px 0px 2px" src="PFS_Standard-2.png" tppabs="https://2e.aonprd.com/Images/Icons/PFS_Standard.png"><a href="Archetypes.aspx-ID=306.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=306">Palatine Detective</a><span style="margin-left:auto; margin-right:0">Dedication Feat 2</span></h2><span class="traituncommon"><a href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=721&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=721&Redirected=1%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=159">Uncommon</a></span><span style="letter-spacing: -.4em">&nbsp;</span><br /><b>Source</b> <a href="Sources.aspx-ID=234.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=234" target="_blank" class="external-link"><i>Divine Mysteries pg. 288</i></a><br /><b>Prerequisites</b> <u><a href="Classes.aspx-ID=59.htm" tppabs="https://2e.aonprd.com/Classes.aspx?ID=59">investigator</a></u><br />You are an elite agent of the <a style="text-decoration:underline" href="Deities.aspx-ID=362.htm" tppabs="https://2e.aonprd.com/Deities.aspx?ID=362">Esoteric Order of the Palatine Eye</a>. Separated from the regular members of this obscure league of scholars and academics, you have attained divine and occult abilities through methods kept secret to outsiders. The air of mystery that surrounds you and your organization only serves to aid you in your cases, which can often be dangerous investigations into cultists and supernatural threats. However, you might have earned the suspicion or ire of others within the Order of the Palatine Eye due to your near-constant field work and the fact that initiates and lower-order members are kept in the dark about your provenance.<br /><br /> You are likely unclear as to the exact source of your abilities. Depending on your understanding of your Order’s teachings, you could have gained this power from the knowledge you gained through <i>The Lost Gospels of Tabris</i>. This knowledge seems to hint at greater mysteries underlying existence and the cosmos, as well as mysteries hidden between the veils of morality that suffuse the planes, which could have unlocked your potential. It could also be that you gained your abilities due to your connection to the various artifacts and relics that the Order of the Palatine Eye has collected over its lifetime. The nature of many of these items remains unclear even after decades of study, but your proximity to these relics could have triggered an awakening of abilities. Your abilities might simply function because you believe they must. It would be disastrous for you to lose access to these abilities, so you believe them to function and considerations otherwise are something you refuse to acknowledge.<br /><br /> Regardless, you’ve learned to make use of your abilities to work against magical forces. These abilities allow you to tap into greater magical potential, create wards to protect yourself from magical attacks, and even grant you esoteric insight to better harm your foes. While these abilities are potent, you must also make sure to not let your Order training lapse. You make use of your mind, your canny insight, and deductive skills to deal with the various mysteries of existence that you encounter and the supernatural foes that you find along the way.<h2 class="title"><img alt="PFS Standard" title="PFS Standard" style="height:18px; padding:2px 10px 0px 2px" src="PFS_Standard-2.png" tppabs="https://2e.aonprd.com/Images/Icons/PFS_Standard.png"><a href="Archetypes.aspx-ID=258.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=258">Pirate</a><span style="margin-left:auto; margin-right:0">Dedication Feat 2</span></h2><b>Source</b> <a href="Sources.aspx-ID=227.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=227" target="_blank" class="external-link"><i>Player Core 2 pg. 209</i></a><br /><b>Prerequisites</b> trained in <u><a href="Skills.aspx-ID=40.htm" tppabs="https://2e.aonprd.com/Skills.aspx?ID=40">Intimidation</a></u><br />You live a life of freedom, taking by force and intimidation all that you could possibly desire. You may be a privateer, raiding and plundering on behalf of a particular nation or another authority, or you may answer to no one but your own capricious whims. Either way, you rely on intimidation, wits, and combat prowess to take what you want from those you deem less deserving.<br /><br /> Pirates have much in common with swashbucklers, and many pirates have the swashbuckler class or archetype. Much like a swashbuckler's daring deeds, classic pirate maneuvers are often showy feats intended to impress, intimidate, and gain panache. For example, if you have the panache class feature, Boarding Assault gains the bravado trait.<h2 class="title"><img alt="PFS Standard" title="PFS Standard" style="height:18px; padding:2px 10px 0px 2px" src="PFS_Standard-2.png" tppabs="https://2e.aonprd.com/Images/Icons/PFS_Standard.png"><a href="Archetypes.aspx-ID=259.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=259">Poisoner</a><span style="margin-left:auto; margin-right:0">Dedication Feat 2</span></h2><b>Source</b> <a href="Sources.aspx-ID=227.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=227" target="_blank" class="external-link"><i>Player Core 2 pg. 210</i></a><br /><b>Prerequisites</b> trained in <u><a href="Skills.aspx-ID=37.htm" tppabs="https://2e.aonprd.com/Skills.aspx?ID=37">Crafting</a></u><br />People are so delightfully fragile when exposed to the insidious power of nature. The bite of a certain serpent makes the blood congeal to jelly. A particular stone, suitably powdered, induces powerful hallucinations and delirium. The sap of a rare tree inflicts such agony that death seems preferable. The deadly medicines of nature have been molded to create concoctions capable of both killing and debilitating. Neither option is pleasant for the unfortunate recipient. You are a student of such dark wonders, making you a dangerous foe indeed.<h2 class="title"><img alt="PFS Standard" title="PFS Standard" style="height:18px; padding:2px 10px 0px 2px" src="PFS_Standard-2.png" tppabs="https://2e.aonprd.com/Images/Icons/PFS_Standard.png"><a href="Archetypes.aspx-ID=261.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=261">Scout</a><span style="margin-left:auto; margin-right:0">Dedication Feat 2</span></h2><b>Source</b> <a href="Sources.aspx-ID=227.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=227" target="_blank" class="external-link"><i>Player Core 2 pg. 212</i></a><br /><b>Prerequisites</b> trained in <u><a href="Skills.aspx-ID=48.htm" tppabs="https://2e.aonprd.com/Skills.aspx?ID=48">Stealth</a></u> and <u><a href="Skills.aspx-ID=49.htm" tppabs="https://2e.aonprd.com/Skills.aspx?ID=49">Survival</a></u><br />You're an expert in espionage and reconnaissance, able to skulk silently through the wilderness to gather intelligence, sneak through enemy lines and report back to your comrades, or suddenly and decisively take down your foes. Your skills ease the difficulty of travel for you and your companions and keep you all alert to approaching danger. It's not just enemies that you scout out; you also survey the land. You're able to discover the easiest routes as safely as possible and remain watchful while moving with speed and subtlety. The responsibility of the party's safe passage depends on you performing your scouting duties with constant and consistent effort. You take pride in your vigilance, and your allies trust your guidance to ensure the safety of everyone traveling.<h2 class="title"><img alt="PFS Standard" title="PFS Standard" style="height:18px; padding:2px 10px 0px 2px" src="PFS_Standard-2.png" tppabs="https://2e.aonprd.com/Images/Icons/PFS_Standard.png"><a href="Archetypes.aspx-ID=263.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=263">Scrounger</a><span style="margin-left:auto; margin-right:0">Dedication Feat 2</span></h2><span class="traituncommon"><a href="Traits.aspx-ID=721.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=721">Uncommon</a></span><span style="letter-spacing: -.4em">&nbsp;</span><br /><b>Source</b> <a href="Sources.aspx-ID=227.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=227" target="_blank" class="external-link"><i>Player Core 2 pg. 214</i></a><br /><b>Prerequisites</b> trained in <u><a href="Skills.aspx-ID=37.htm" tppabs="https://2e.aonprd.com/Skills.aspx?ID=37">Crafting</a></u><br />You have spent countless hours disassembling and rebuilding complex items to learn how they work, giving you the skill to create just about anything from the most unlikely materials. While your improvised items don't last long, they tend to be just what you need in a pinch, and your enemies find that while they might be able to disarm you, the real challenge is keeping you that way. Locked rooms, diabolical traps, and desperate situations are each their own sort of puzzle to you, and the mundane objects around you are the pieces you use to improvise your own solutions. Few are more resourceful. Given time and a handful of gears, bits, and widgets, you can create the perfect tool for just about any situation. Your ingenuity is extremely valuable while adventuring. Adventurers never truly know what's in store for them and often find themselves ill-prepared for the task at hand. Bringing along a scrounger such as you is like bringing any tool that could possibly be needed, provided your constant attempts to break down and reassemble everything aren't a bother. You never know what you may need in the future.<h2 class="title"><img alt="PFS Standard" title="PFS Standard" style="height:18px; padding:2px 10px 0px 2px" src="PFS_Standard-2.png" tppabs="https://2e.aonprd.com/Images/Icons/PFS_Standard.png"><a href="Archetypes.aspx-ID=264.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=264">Sentinel</a><span style="margin-left:auto; margin-right:0">Dedication Feat 2</span></h2><b>Source</b> <a href="Sources.aspx-ID=227.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=227" target="_blank" class="external-link"><i>Player Core 2 pg. 215</i></a><br />Armor offers solid, reassuring protection in combat, and as someone who faces danger on a regular basis, you have made it your business to get the most out of your defenses. You stand solid on any battlefield, encased in the sturdiest armor you can find. When danger threatens, your solid defenses will safely get you, and hopefully your companions, home again. As a sentinel, you might be part of an order of knights or bodyguards who trained you how best to take advantage of heavy armor. On the other hand, you might just be an adventurer who took one too many grievous injuries and decided enough was enough, so you trained yourself to wear the heaviest plate you could get your hands on. Some witches or sorcerers have chosen to follow the path of the sentinel to increase their survivability. While this is less common, it's not less effective. Few will argue against stronger, heavier armor leading to a longer life, and as every turtle knows, it's always nice to have a nice hard shell to fall back on when threatened. No one has a tougher shell than a sentinel. Even in the midst of great battles, you know that your armor is your greatest ally. It won't abandon you, break, or falter as things get tough. You can rely on your armor to see you through whatever tough fights lie ahead, and the odds always seem better when you're protected.<h2 class="title"><img alt="PFS Standard" title="PFS Standard" style="height:18px; padding:2px 10px 0px 2px" src="PFS_Standard-2.png" tppabs="https://2e.aonprd.com/Images/Icons/PFS_Standard.png"><a href="Archetypes.aspx-ID=197.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=197">Shieldmarshal</a><span style="margin-left:auto; margin-right:0">Dedication Feat 2</span></h2><h3 class="title legacy-content-warning">Legacy Content</h3><span class="traituncommon"><a href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=721&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=721&Redirected=1%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=159">Uncommon</a></span><span style="letter-spacing: -.4em">&nbsp;</span><br /><b>Source</b> <a href="Sources.aspx-ID=146.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=146" target="_blank" class="external-link"><i>Impossible Lands pg. 108</i></a><br />Gunplay isn't enough to uphold Alkenstar's laws; when firearms are readily available to criminals and the corrupt, relying solely on firepower isn't always the best approach to law enforcement. To stay ahead in their never-ending war against crime and espionage, Alkenstar's elite shieldmarshals instead refine their skills of marksmanship and situational awareness into a potent blend of operational acumen and special tactics. Shieldmarshals study forensics, engineering, law, and etiquette to navigate the city's volatile conditions and politics; advanced lessons include specialized training to deal with criminals using technology as well as tactical analysis for maneuvering in congested urban environments.<br /><br /> You've undergone specialized training to help you keep the peace in Alkenstar's sprawling streets. Urban operations are dreadfully complex endeavors; closed doors and high walls conceal suspects and belligerents, while every alley and corridor could be a fatal funnel. As a shieldmarshal, you overcome these complexities by reducing and adapting to uncertain elements. You methodically observe your surroundings, make swift decisions, and actualize best practices to pacify hostiles, rescue hostages, and otherwise meet overall mission objectives. <h2 class="title"><img alt="PFS Standard" title="PFS Standard" style="height:18px; padding:2px 10px 0px 2px" src="PFS_Standard-2.png" tppabs="https://2e.aonprd.com/Images/Icons/PFS_Standard.png"><a href="Archetypes.aspx-ID=265.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=265">Snarecrafter</a><span style="margin-left:auto; margin-right:0">Dedication Feat 2</span></h2><b>Source</b> <a href="Sources.aspx-ID=227.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=227" target="_blank" class="external-link"><i>Player Core 2 pg. 216</i></a><br /><b>Prerequisites</b> trained in <u><a href="Skills.aspx-ID=37.htm" tppabs="https://2e.aonprd.com/Skills.aspx?ID=37">Crafting</a></u><br />You're able to take ordinary materials and use them to create deadly snares—special traps that you can rig up quickly when the situation demands. While traps might grant you less brute force to apply in a fair fight than weapons would, you rarely allow your fights to be fair. Instead, when combat takes place at a location of your choosing, you have a major advantage thanks to your well-placed snares. Once your foes realize that you may have trapped any location on a battlefield, their fear of accidentally setting one off can help you corral them toward the waiting blades of your allies, or even make them too paranoid to move at all, locking them in place. Fearless enemies face their own disadvantage: they run a greater risk of setting off the many traps youve deployed. Even if they somehow avoid them, some cunning snare crafters have the skills to set a trap right under their foes' feet. Others have found they can trigger dangerous snares from a safe distance due to years of practice. Truly, snare crafters make for a dangerous foe and handy ally.<h2 class="title"><img alt="PFS Limited" title="PFS Limited" style="height:18px; padding:2px 10px 0px 2px" src="PFS_Limited-2.png" tppabs="https://2e.aonprd.com/Images/Icons/PFS_Limited.png"><a href="Archetypes.aspx-ID=313.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=313">Tattooed Historian</a><span style="margin-left:auto; margin-right:0">Dedication Feat 2</span></h2><span class="traituncommon"><a href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=721&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=721&Redirected=1%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=159">Uncommon</a></span><span style="letter-spacing: -.4em">&nbsp;</span><br /><b>Source</b> <a href="Sources.aspx-ID=249.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=249" target="_blank" class="external-link"><i>Pathfinder #207: Resurrection Flood pg. 80</i></a><br /><b>Prerequisites</b> Constitution +1; trained in <u><a href="Skills.aspx-ID=41.htm" tppabs="https://2e.aonprd.com/Skills.aspx?ID=41">Orc Lore</a></u>, <u><a href="Skills.aspx-ID=41.htm" tppabs="https://2e.aonprd.com/Skills.aspx?ID=41">Orc Pantheon Lore</a></u>, or <u><a href="Skills.aspx-ID=41.htm" tppabs="https://2e.aonprd.com/Skills.aspx?ID=41">Belkzen Lore</a></u>, or (at the GM's discretion) a related <u><a href="Skills.aspx-ID=41.htm" tppabs="https://2e.aonprd.com/Skills.aspx?ID=41">Lore</a></u> skill<br />In Belkzen, an important part of a storyteller’s arsenal is body art—anything from depictions of past events to illustrate a legend to gruesome scars that prove the bearer faced real danger and survived. Belkzen <a style="text-decoration:underline" href="Ancestries.aspx-ID=66.htm" tppabs="https://2e.aonprd.com/Ancestries.aspx?ID=66">orcs</a> with extensive body art and scars are often dubbed historians for the stories they carry. The greatest of them can unlock these stories’ intrinsic magic to perform supernatural feats. A tattooed historian commands respect and reverence, often allowing them to travel safely among Belkzen’s holds. <br /><br />This archetype represents the Belkzen version of a tattooed historian; other cultures might have developed variations of this tradition with different prerequisites.<h2 class="title"><img alt="PFS Standard" title="PFS Standard" style="height:18px; padding:2px 10px 0px 2px" src="PFS_Standard-2.png" tppabs="https://2e.aonprd.com/Images/Icons/PFS_Standard.png"><a href="Archetypes.aspx-ID=224.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=224">Thlipit Contestant</a><span style="margin-left:auto; margin-right:0">Dedication Feat 2</span></h2><b>Source</b> <a href="Sources.aspx-ID=226.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=226" target="_blank" class="external-link"><i>Howl of the Wild pg. 74</i></a><br /><b>Prerequisites</b> You have a long prehensile tongue or a tail. At the GM’s discretion, similar flexible appendages, such as tentacles, can be used to qualify instead.<br />According to folklore, the thlipit martial art began with a wager. A group of bored tripkees looking for a little sport devised a game of using their tongues to gather fruit out of nearby trees. As the competition wore on and the bets escalated, the contestants began snatching falling fruit in midair and even using their tongues to push away the competition. While the names of the original competitors vary between tellings, all agree that the contest ended with a particularly magnificent tongue flick, landing an overripe mango squarely upon a losing bettor’s head.<br /><br />No matter the origin, variants of the game and the martial art it spawned have become mainstays in tripkee society. In contrast to other fighting styles, thlipit doesn’t stand on ceremony or rigid discipline. Practitioners refer to themselves as contestants and play off the forms and moves as mere exercises or games. Despite this veneer of frivolity, thlipit can be just as dangerous in the mouth of an adept as any other weapon.<br /><br />Thlipit combines fluid movements reminiscent of whip fighting with the leverage of a wrestler’s stance. It favors quick smacks, brief grabs, and short throws. Friend, foe, and the contestant themselves always remain in motion. Moves are often exaggerated to play up stylish elements for spectators or lure brash opponents into attacking early.<br /><br />No formal schools exist to teach thlipit. Many tripkees are familiar with the style from childhood games, even if they haven’t developed the physicality to be considered a true contestant. Self-directed instruction remains common, though aspiring contestants will seek out veterans and ask to be taken on as apprentices. Even though this sort of self-directed instruction happens frequently, a veteran contestant will still occasionally take on a student or two to pass along particular forms or styles.<br /><br />Though thlipit originated with tripkees, tripkee migration to Vidrian and other population centers has exposed other peoples to the sport. Most notably, thlipit has become popular with the recent generation of iruxi youth, who have adapted it for use with a tail rather than a tongue. Though not every move is possible with a tail, they have added their own innovations to the style.<h2 class="title"><img alt="PFS Standard" title="PFS Standard" style="height:18px; padding:2px 10px 0px 2px" src="PFS_Standard-2.png" tppabs="https://2e.aonprd.com/Images/Icons/PFS_Standard.png"><a href="Archetypes.aspx-ID=112.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=112">Trick Driver</a><span style="margin-left:auto; margin-right:0">Dedication Feat 2</span></h2><span class="traituncommon"><a href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=721&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=721&Redirected=1%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=159">Uncommon</a></span><span style="letter-spacing: -.4em">&nbsp;</span><br /><b>Source</b> <a href="Sources.aspx-ID=98.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=98" target="_blank" class="external-link"><i>Guns & Gears pg. 55</i></a><br />While <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Archetypes.aspx?ID=244&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Archetypes.aspx?ID=244&Redirected=1%27" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=53">cavaliers</a> follow an old and tired tradition of mounted combat, you take a more modern road. Through aggressive use of <a style="text-decoration:underline" href="Vehicles.aspx.htm" tppabs="https://2e.aonprd.com/Vehicles.aspx">vehicles</a>, you roll across the battlefield, taking down your opponents. You go beyond simply operating a vehicle, pushing it to perform stunts that its builders never intended, transforming the vehicle into something much greater than a mere conveyance.<h2 class="title"><img alt="PFS Limited" title="PFS Limited" style="height:18px; padding:2px 10px 0px 2px" src="PFS_Limited-2.png" tppabs="https://2e.aonprd.com/Images/Icons/PFS_Limited.png"><a href="Archetypes.aspx-ID=40.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=40">Turpin Rowe Lumberjack</a><span style="margin-left:auto; margin-right:0">Dedication Feat 2</span></h2><h3 class="title legacy-content-warning">Legacy Content</h3><span class="traituncommon"><a href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=721&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=721&Redirected=1%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=159">Uncommon</a></span><span style="letter-spacing: -.4em">&nbsp;</span><br /><b>Source</b> <a href="Sources.aspx-ID=29.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=29" target="_blank" class="external-link"><i>Pathfinder #153: Life's Long Shadows pg. 75</i></a><br /><b>Prerequisites</b> trained in <u><a href="javascript:if(confirm(%27https://2e.aonprd.com/Skills.aspx?ID=49&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Skills.aspx?ID=49&Redirected=1%27" tppabs="https://2e.aonprd.com/Skills.aspx?ID=16">Survival</a></u><br />You are a feller of trees and a skilled axe wielder, trained in the art of forestry by the hard-working loggers of Turpin Rowe.
+<h2 class="title"><img alt="PFS Standard" title="PFS Standard" style="height:18px; padding:2px 10px 0px 2px" src="PFS_Standard-2.png" tppabs="https://2e.aonprd.com/Images/Icons/PFS_Standard.png"><a href="Archetypes.aspx-ID=337.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=337">Twilight Speaker</a><span style="margin-left:auto; margin-right:0">Dedication Feat 2</span></h2><span class="traituncommon"><a href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=721&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=721&Redirected=1%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=159">Uncommon</a></span><span style="letter-spacing: -.4em">&nbsp;</span><br /><b>Source</b> <a href="Sources.aspx-ID=290.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=290" target="_blank" class="external-link"><i>Gatewalkers (Hardcover) pg. 242</i></a><br /><b>Prerequisites</b> trained in <u><a href="Skills.aspx-ID=47.htm" tppabs="https://2e.aonprd.com/Skills.aspx?ID=47">Society</a></u>; you are an Ilverani elf<br />As a religious and diplomatic representative of <a style="text-decoration:underline" href="Deities.aspx-ID=461.htm" tppabs="https://2e.aonprd.com/Deities.aspx?ID=461">Findeladlara</a>—and all Ilverani of the north—you see it as your duty to befriend shorter-lived peoples you encounter on your travels.<br /><br />Unlike other Ilverani, also called “snowcaster elves” by outsiders, you find outsiders interesting and believe there is much to learn from having conversations and relationships with others. Whether to watch them, teach them, or to keep would-be enemies close, you believe a broad smile, ageless learning, and a watchful eye are key. Some see this watchful and outwardly friendly nature as condescending, but they don’t understand the reason why worshipers of Findeladlara feel a duty to uphold this tradition. When Earthfall struck and most of the other elves on Golarion fled to Sovyrian or delved deep into the earth, the elves that would one day come to be known as Ilverani remained and sought to shelter others from catastrophe. They built refuges to protect others and helped guide people to safety during the Age of Darkness. While Twilight Seekers today don’t build safe structures, they do work to build bonds among people so that society can be protected against other catastrophic events should they come to pass.<br /><br />This calling brings you in contact with many different cultures, yet you seek to preserve the ways of your people. To this end, you are ever on your guard against the lure of “modern fads.” Unfortunately, some twilight speakers have succumbed to the allure of other ways of life and, for them, there is only one outcome: exile.<h2 class="title"><img alt="PFS Standard" title="PFS Standard" style="height:18px; padding:2px 10px 0px 2px" src="PFS_Standard-2.png" tppabs="https://2e.aonprd.com/Images/Icons/PFS_Standard.png"><a href="Archetypes.aspx-ID=113.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=113">Vehicle Mechanic</a><span style="margin-left:auto; margin-right:0">Dedication Feat 2</span></h2><span class="traituncommon"><a href="javascript:if(confirm(%27https://2e.aonprd.com/Traits.aspx?ID=721&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Traits.aspx?ID=721&Redirected=1%27" tppabs="https://2e.aonprd.com/Traits.aspx?ID=159">Uncommon</a></span><span style="letter-spacing: -.4em">&nbsp;</span><br /><b>Source</b> <a href="Sources.aspx-ID=98.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=98" target="_blank" class="external-link"><i>Guns & Gears pg. 56</i></a><br /><b>Prerequisites</b> Intelligence +2; trained in <u><a href="javascript:if(confirm(%27https://2e.aonprd.com/Skills.aspx?ID=37&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Skills.aspx?ID=37&Redirected=1%27" tppabs="https://2e.aonprd.com/Skills.aspx?ID=4">Crafting</a></u><br />You have always felt that vehicles are as much works of art as they are means of transportation. It doesn't matter if it's as common as a chariot or as complex as an airship, there's always some aspect of the vehicle you can improve upon. Pilots, drivers, and sailors alike value your expertise, and many seek you out to work on their vehicles. While you can make a great profit working on custom vehicles for wealthy clients, you still keep a vehicle of your own to tinker with as your personal passion project.<br /><br /> You might be part of a vehicle mechanic union, working with other mechanics and engineers to find fair jobs and support each other's labor. While some vehicle mechanic unions are secular, many realize the benefits of organizing alongside a sympathetic religion, and so they typically adopt the ideals of economically-focused gods like <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Deities.aspx?ID=277&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Deities.aspx?ID=277&Redirected=1%27" tppabs="https://2e.aonprd.com/Deities.aspx?ID=1">Abadar</a> or deities interested in crafting such as the goddess <a style="text-decoration:underline" href="javascript:if(confirm(%27https://2e.aonprd.com/Deities.aspx?ID=333&Redirected=1  \n\nThis file was not retrieved by Teleport Ultra, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?%27))window.location=%27https://2e.aonprd.com/Deities.aspx?ID=333&Redirected=1%27" tppabs="https://2e.aonprd.com/Deities.aspx?ID=33">Brigh</a>—the Whisper in Bronze—the goddess of invention. Whether religious or secular, vehicle mechanic unions take the bonds between fellow union members seriously. While this might mean your character becomes obligated to help a fellow union member who needs your help, it also means you have steadfast allies you can fall back on in your own time of need. In dire straits, such a connection can be worth its weight in gold.<h2 class="title"><img alt="PFS Standard" title="PFS Standard" style="height:18px; padding:2px 10px 0px 2px" src="PFS_Standard-2.png" tppabs="https://2e.aonprd.com/Images/Icons/PFS_Standard.png"><a href="Archetypes.aspx-ID=267.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=267">Vigilante</a><span style="margin-left:auto; margin-right:0">Dedication Feat 2</span></h2><span class="traituncommon"><a href="Traits.aspx-ID=721.htm" tppabs="https://2e.aonprd.com/Traits.aspx?ID=721">Uncommon</a></span><span style="letter-spacing: -.4em">&nbsp;</span><br /><b>Source</b> <a href="Sources.aspx-ID=227.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=227" target="_blank" class="external-link"><i>Player Core 2 pg. 218</i></a><br /><b>Prerequisites</b> trained in <u><a href="Skills.aspx-ID=38.htm" tppabs="https://2e.aonprd.com/Skills.aspx?ID=38">Deception</a></u><br />As a vigilante, you have two faces: a public persona, and a secret identity that lets you hide your extralegal actions from polite society. Your secret identity lets you adventure and carry out clandestine missions while keeping the civilians you care about safe. Whatever your purpose—fighting crime, inciting rebellion, sowing chaos—your vigilante identity makes you both hard to pin down and a mysterious, intriguing subject of gossip. While many adventurers prefer to bask in the glory or infamy of their actions, you keep that part of your life a secret. There are various reasons why you might do this. Perhaps you have something or someone in your life that you want to protect from the dangers and threats that your other life. Perhaps you are a public figure, and your alternate life could draw undue attention from your community. It could also be that you don't like attention and wish to retain the ability to step away from it all and relax in peace. Regardless of your reasons, you have a secret identity and will go to great lengths to keep it secret.<br /><br /> Vigilantes can have many goals and agendas. Some see them as glory seekers, but more often than not, they are working towards some lofty goal. Perhaps they are trying to inspire a people to fight back against their oppressors. They could be hunting down a crime lord they have a personal vendetta against. Maybe they seek to rebalance the wealth of a nation, stealing from the rich to give to those in need. You are one such vigilante, living a hidden life so you can fight in secrecy. What will you do to keep your secret and continue down your path?<h2 class="title"><img alt="PFS Standard" title="PFS Standard" style="height:18px; padding:2px 10px 0px 2px" src="PFS_Standard-2.png" tppabs="https://2e.aonprd.com/Images/Icons/PFS_Standard.png"><a href="Archetypes.aspx-ID=268.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=268">Viking</a><span style="margin-left:auto; margin-right:0">Dedication Feat 2</span></h2><b>Source</b> <a href="Sources.aspx-ID=227.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=227" target="_blank" class="external-link"><i>Player Core 2 pg. 220</i></a><br /><b>Prerequisites</b> trained in <u><a href="Skills.aspx-ID=36.htm" tppabs="https://2e.aonprd.com/Skills.aspx?ID=36">Athletics</a></u><br />To go “a-viking” is to raid by sea, and thus vikings have spread far and wide. Some have even settled in the very communities they once raided. Vikings traditionally travel in longboats; a score of these warriors might live aboard their ship for days at a time, sailing the seas (or, as they call it, the “whale-road”) to ambush coastal communities. Once they arrive at a settlement, they charge ashore, plundering and slaying anyone foolish enough to get in their way. The ferocity of viking raids is legendary.<h2 class="title"><img alt="PFS Standard" title="PFS Standard" style="height:18px; padding:2px 10px 0px 2px" src="PFS_Standard-2.png" tppabs="https://2e.aonprd.com/Images/Icons/PFS_Standard.png"><a href="Archetypes.aspx-ID=277.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx?ID=277">Wandering Chef</a><span style="margin-left:auto; margin-right:0">Dedication Feat 2</span></h2><b>Source</b> <a href="Sources.aspx-ID=230.htm" tppabs="https://2e.aonprd.com/Sources.aspx?ID=230" target="_blank" class="external-link"><i>Tian Xia Character Guide pg. 100</i></a><br />Cooking is important to every culture that requires food for sustenance. From the most gilded palace in Goka all the way to the most hidden campfire in the Valashmai Jungle, communities gather to prepare and consume food together. In a very real way, civilization is built around it. From the structure of cities around agriculture, to the calendars and their planting and harvest seasons, to the rise and fall of days around communal mealtimes, people must eat.</span>
+
+                </div>
+                <div class="clear">
+            </div>
+
+            <div class="footer" id="footer" >
+				<div id="et-al" >
+                    <a href="mailto:nethys@archivesofnethys.com">Site Owner: Rose-Winds LLC (Blake Davis)</a>
+                    <div id="footer-social"><a href="https://twitter.com/NethysArchives"  target="_blank"><span class="k-icon k-i-twitter" style="font-size:2.5rem"></span></a></div>
+				</div>
+                <div style="text-align:center"><script type="text/javascript" async="true" src="adsbygoogle.js" tppabs="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- Main Archives Page -->
+                    <ins class="adsbygoogle"
+                        style="display:inline-block;width:728px;height:90px"
+                        data-ad-client="ca-pub-4953734518316037"
+                        data-ad-slot="7738185508"></ins>
+                    <script type="text/javascript">
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                </script></div>
+			</div>
+            <nethys-search no-ui="true"></nethys-search>
+        </div>
+    </div>
+
+    <div class="modern-menu-container">
+        <div class="modern-menu">
+            <div class="modern-menu-nethys-logo"></div>
+            <div class="modern-menu-items">
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-player"></i></span>
+                    <span class="modern-menu-item-text">Character Creation +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Ancestries.aspx.htm" tppabs="https://2e.aonprd.com/Ancestries.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-hood"></i></span>
+                        <span class="modern-menu-item-text">Ancestries</span>
+                    </a>
+                    <a class="modern-menu-item" href="Archetypes.aspx.htm" tppabs="https://2e.aonprd.com/Archetypes.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-nodular"></i></span>
+                        <span class="modern-menu-item-text">Archetypes</span>
+                    </a>
+                    <a class="modern-menu-item" href="Backgrounds.aspx.htm" tppabs="https://2e.aonprd.com/Backgrounds.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-guarded-tower"></i></span>
+                        <span class="modern-menu-item-text">Backgrounds</span>
+                    </a>
+                    <a class="modern-menu-item" href="Classes.aspx.htm" tppabs="https://2e.aonprd.com/Classes.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-player-lift"></i></span>
+                        <span class="modern-menu-item-text">Classes</span>
+                    </a>
+                    <a class="modern-menu-item" href="Skills.aspx.htm" tppabs="https://2e.aonprd.com/Skills.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-hand"></i></span>
+                        <span class="modern-menu-item-text">Skills</span>
+                    </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-torch"></i></span>
+                    <span class="modern-menu-item-text">Equipment +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Equipment.aspx.htm" tppabs="https://2e.aonprd.com/Equipment.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-torch"></i></span>
+                        <span class="modern-menu-item-text">All Equipment</span>
+                    </a>
+                    <a class="modern-menu-item" href="Equipment.aspx-Category=1.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?Category=1">
+                        <span class="modern-menu-item-icon"><i class="ra ra-campfire"></i></span>
+                        <span class="modern-menu-item-text">Adventuring Gear</span>
+                    </a>
+                    <a class="modern-menu-item" href="Equipment.aspx-Category=6.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?Category=6">
+                        <span class="modern-menu-item-icon"><i class="ra ra-round-bottom-flask"></i></span>
+                        <span class="modern-menu-item-text">Alchemical Items</span>
+                    </a>
+                    <a class="modern-menu-item" href="Armor.aspx.htm" tppabs="https://2e.aonprd.com/Armor.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-helmet"></i></span>
+                        <span class="modern-menu-item-text">Armor</span>
+                    </a>
+                    <a class="modern-menu-item" href="Equipment.aspx-Category=21.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?Category=21">
+                        <span class="modern-menu-item-icon"><i class="ra ra-hand"></i></span>
+                        <span class="modern-menu-item-text">Held Items</span>
+                    </a>
+                    <a class="modern-menu-item" href="Equipment.aspx-Category=23.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?Category=23">
+                        <span class="modern-menu-item-icon"><i class="ra ra-rune-stone"></i></span>
+                        <span class="modern-menu-item-text">Runes</span>
+                    </a>
+                    <a class="modern-menu-item" href="Shields.aspx.htm" tppabs="https://2e.aonprd.com/Shields.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-shield"></i></span>
+                        <span class="modern-menu-item-text">Shields</span>
+                    </a>
+                    <a class="modern-menu-item" href="Weapons.aspx.htm" tppabs="https://2e.aonprd.com/Weapons.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-sword"></i></span>
+                        <span class="modern-menu-item-text">Weapons</span>
+                    </a>
+                    <a class="modern-menu-item" href="Equipment.aspx-Category=41.htm" tppabs="https://2e.aonprd.com/Equipment.aspx?Category=41">
+                        <span class="modern-menu-item-icon"><i class="ra ra-crown-of-thorns"></i></span>
+                        <span class="modern-menu-item-text">Worn Items</span>
+                    </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-muscle-up"></i></span>
+                    <span class="modern-menu-item-text">Feats +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Feats.aspx.htm" tppabs="https://2e.aonprd.com/Feats.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-muscle-up"></i></span>
+                        <span class="modern-menu-item-text">All Feats</span>
+                    </a>
+                    <a class="modern-menu-item" href="Feats.aspx-Traits=78.htm" tppabs="https://2e.aonprd.com/Feats.aspx?Traits=78">
+                        <span class="modern-menu-item-icon"><i class="ra ra-aware"></i></span>
+                        <span class="modern-menu-item-text">General</span>
+                    </a>
+                    <a class="modern-menu-item" href="Feats.aspx-Traits=78&NoSkills=True.htm" tppabs="https://2e.aonprd.com/Feats.aspx?Traits=78&NoSkills=True">
+                        <span class="modern-menu-item-icon"><i class="ra ra-player-teleport"></i></span>
+                        <span class="modern-menu-item-text">General (No Skill)</span>
+                    </a>
+                    <a class="modern-menu-item" href="Feats.aspx-Traits=144.htm" tppabs="https://2e.aonprd.com/Feats.aspx?Traits=144">
+                        <span class="modern-menu-item-icon"><i class="ra ra-hand"></i></span>
+                        <span class="modern-menu-item-text">Skill</span>
+                    </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-emerald"></i></span>
+                    <span class="modern-menu-item-text">Game Mastery +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Afflictions.aspx.htm" tppabs="https://2e.aonprd.com/Afflictions.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-biohazard"></i></span>
+                        <span class="modern-menu-item-text">Afflictions</span>
+                    </a>
+                    <a class="modern-menu-item" href="Creatures.aspx.htm" tppabs="https://2e.aonprd.com/Creatures.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-dragon"></i></span>
+                        <span class="modern-menu-item-text">Creatures</span>
+                    </a>
+                    <a class="modern-menu-item" href="Hazards.aspx.htm" tppabs="https://2e.aonprd.com/Hazards.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-bear-trap"></i></span>
+                        <span class="modern-menu-item-text">Hazards</span>
+                    </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-book"></i></span>
+                    <span class="modern-menu-item-text">Rules +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Rules.aspx.htm" tppabs="https://2e.aonprd.com/Rules.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-book"></i></span>
+                        <span class="modern-menu-item-text">All Rules</span>
+                    </a>
+                    <a class="modern-menu-item" href="Actions.aspx.htm" tppabs="https://2e.aonprd.com/Actions.aspx">
+                        <span class="modern-menu-item-icon">
+                            <svg viewBox="0 0 30 30" preserveAspectRatio="xMidYMid meet" stroke="null" style="fill:inherit;">
+                                <path d="M21.55532 8.015l7.07107 7.07106-7.07107 7.07107-7.07107-7.07107zM6.47996 10.07526l4.94975 4.94975-4.94975 4.94974-4.94974-4.94974z"></path>
+                                <path d="M15.00246 1.46211l8.48528 8.48528-7.07107 7.07107L7.9314 8.53318z"></path>
+                                <path d="M16.45563 13.11469l7.07107 7.07107-8.48529 8.48528-7.07106-7.07107z"></path>
+                            </svg>
+                        </span>
+                        <span class="modern-menu-item-text">Actions/Activities</span>
+                    </a>
+                    <a class="modern-menu-item" href="Conditions.aspx.htm" tppabs="https://2e.aonprd.com/Conditions.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-player-pain"></i></span>
+                        <span class="modern-menu-item-text">Conditions</span>
+                    </a>
+                    <a class="modern-menu-item" href="GMScreen.aspx.htm" tppabs="https://2e.aonprd.com/GMScreen.aspx">
+                        <span class="modern-menu-item-icon">
+                            <svg viewBox="0 0 30 30" preserveAspectRatio="xMidYMid meet" stroke="null" style="fill:inherit;">
+                                <path d="M5.72648 12.93117h9.17646v9.50588l-4.58823 2.37647-4.58823-2.37647.00001-9.50588z"></path>
+                                <path d="M5.96178 12.93118h9.17646v9.50587l-4.58823 2.37648-4.58824-2.37648.00001-9.50587z"></path>
+                                <path d="M15.0206 12.93118h9.17646v9.50587l-4.58823 2.37648-4.58824-2.37648.00001-9.50587z"></path>
+                                <path d="M16.70221 8.57471l7.52941-3.38823v16.94117h-7.52941V8.57471zM15.11765 8.69235L5.94118 5.30412v16.94117h9.17647V8.69235z"></path>
+                                <path d="M19.60883 17.75465h-9.17646V8.24878L15.0206 5.8723l4.58824 2.37648-.00001 9.50587z"></path>
+                            </svg>
+                        </span>
+                        <span class="modern-menu-item-text">GM Screen</span>
+                    </a>
+                    <a class="modern-menu-item" href="PlayersGuide.aspx.htm" tppabs="https://2e.aonprd.com/PlayersGuide.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-uncertainty"></i></span>
+                        <span class="modern-menu-item-text">Player's Guide</span>
+                    </a>
+                    <a class="modern-menu-item" href="Traits.aspx.htm" tppabs="https://2e.aonprd.com/Traits.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-uncertainty"></i></span>
+                        <span class="modern-menu-item-text">Traits</span>
+                    </a>
+                    <a class="modern-menu-item" href="Sources.aspx.htm" tppabs="https://2e.aonprd.com/Sources.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-book"></i></span>
+                        <span class="modern-menu-item-text">Sources</span>
+                    </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-sun"></i></span>
+                    <span class="modern-menu-item-text">Setting +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Setting.aspx-Adventure=true.htm" tppabs="https://2e.aonprd.com/Setting.aspx?Adventure=true">
+                        <span class="modern-menu-item-icon"><i class="ra ra-all-for-one"></i></span>
+                        <span class="modern-menu-item-text">Adventures</span>
+                    </a>
+                    <a class="modern-menu-item" href="Articles.aspx.htm" tppabs="https://2e.aonprd.com/Articles.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-book"></i></span>
+                        <span class="modern-menu-item-text">Articles</span>
+                    </a>
+                    <a class="modern-menu-item" href="Deities.aspx.htm" tppabs="https://2e.aonprd.com/Deities.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-angel-wings"></i></span>
+                        <span class="modern-menu-item-text">Deities</span>
+                    </a>
+                    <a class="modern-menu-item" href="Domains.aspx.htm" tppabs="https://2e.aonprd.com/Domains.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-kaleidoscope"></i></span>
+                        <span class="modern-menu-item-text">Domains</span>
+                    </a>
+                    <a class="modern-menu-item" href="Languages.aspx.htm" tppabs="https://2e.aonprd.com/Languages.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-speech-bubbles"></i></span>
+                        <span class="modern-menu-item-text">Languages</span>
+                    </a>
+                    <a class="modern-menu-item" href="Planes.aspx.htm" tppabs="https://2e.aonprd.com/Planes.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-circle-of-circles"></i></span>
+                        <span class="modern-menu-item-text">Planes</span>
+                    </a>
+                        <a class="modern-menu-item" href="Setting.aspx-Group=40.htm" tppabs="https://2e.aonprd.com/Setting.aspx?Group=40">
+                            <span class="modern-menu-item-icon"><i class="ra ra-mountains"></i></span>
+                            <span class="modern-menu-item-text">Scenarios</span>
+                        </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-crystal-wand"></i></span>
+                    <span class="modern-menu-item-text">Spells/Rituals +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Spells.aspx.htm" tppabs="https://2e.aonprd.com/Spells.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-scroll-unfurled"></i></span>
+                        <span class="modern-menu-item-text">All Spells</span>
+                    </a>
+                    <a class="modern-menu-item" href="Spells.aspx-Tradition=1.htm" tppabs="https://2e.aonprd.com/Spells.aspx?Tradition=1">
+                        <span class="modern-menu-item-icon"><i class="ra ra-scroll-unfurled"></i></span>
+                        <span class="modern-menu-item-text">Arcane</span>
+                    </a>
+                    <a class="modern-menu-item" href="Spells.aspx-Tradition=2.htm" tppabs="https://2e.aonprd.com/Spells.aspx?Tradition=2">
+                        <span class="modern-menu-item-icon"><i class="ra ra-ankh"></i></span>
+                        <span class="modern-menu-item-text">Divine</span>
+                    </a>
+                    <a class="modern-menu-item" href="Spells.aspx-Tradition=3.htm" tppabs="https://2e.aonprd.com/Spells.aspx?Tradition=3">
+                        <span class="modern-menu-item-icon"><i class="ra ra-burning-eye"></i></span>
+                        <span class="modern-menu-item-text">Occult</span>
+                    </a>
+                    <a class="modern-menu-item" href="Spells.aspx-Tradition=4.htm" tppabs="https://2e.aonprd.com/Spells.aspx?Tradition=4">
+                        <span class="modern-menu-item-icon"><i class="ra ra-leaf"></i></span>
+                        <span class="modern-menu-item-text">Primal</span>
+                    </a>
+                    <a class="modern-menu-item" href="Spells.aspx-Focus=true.htm" tppabs="https://2e.aonprd.com/Spells.aspx?Focus=true">
+                        <span class="modern-menu-item-icon"><i class="ra ra-aura"></i></span>
+                        <span class="modern-menu-item-text">Focus Spells</span>
+                    </a>
+                    <a class="modern-menu-item" href="Rituals.aspx.htm" tppabs="https://2e.aonprd.com/Rituals.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-rune-stone"></i></span>
+                        <span class="modern-menu-item-text">Rituals</span>
+                    </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-player-thunder-struck"></i></span>
+                    <span class="modern-menu-item-text">Mythic +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="Rules.aspx-ID=3320.htm" tppabs="https://2e.aonprd.com/Rules.aspx?ID=3320">
+                        <span class="modern-menu-item-icon"><i class="ra ra-book"></i></span>
+                        <span class="modern-menu-item-text">Mythic Rules</span>
+                    </a>
+                    <a class="modern-menu-item" href="MythicCallings.aspx.htm" tppabs="https://2e.aonprd.com/MythicCallings.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-aware"></i></span>
+                        <span class="modern-menu-item-text">Callings</span>
+                    </a>
+                    <a class="modern-menu-item" href="MythicFeats.aspx.htm" tppabs="https://2e.aonprd.com/MythicFeats.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-muscle-up"></i></span>
+                        <span class="modern-menu-item-text">Mythic Feats</span>
+                    </a>
+                    <a class="modern-menu-item" href="MythicDestinies.aspx.htm" tppabs="https://2e.aonprd.com/MythicDestinies.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-aura"></i></span>
+                        <span class="modern-menu-item-text">Destinies</span>
+                    </a>
+                    <a class="modern-menu-item" href="MythicSpells.aspx.htm" tppabs="https://2e.aonprd.com/MythicSpells.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-lightning-trio"></i></span>
+                        <span class="modern-menu-item-text">Mythic Spells</span>
+                    </a>
+                    <a class="modern-menu-item" href="MythicRituals.aspx.htm" tppabs="https://2e.aonprd.com/MythicRituals.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-fire-ring"></i></span>
+                        <span class="modern-menu-item-text">Mythic Rituals</span>
+                    </a>
+                </div>
+                <div class="modern-menu-item">
+                    <span class="modern-menu-item-icon"><i class="ra ra-help"></i></span>
+                    <span class="modern-menu-item-text">About the Archives +</span>
+                </div>
+                <div class="modern-menu-subitems">
+                    <a class="modern-menu-item" href="ContactUs.aspx.htm" tppabs="https://2e.aonprd.com/ContactUs.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-quill-ink"></i></span>
+                        <span class="modern-menu-item-text">Contact Us</span>
+                    </a>
+                    <a class="modern-menu-item" href="Contributors.aspx.htm" tppabs="https://2e.aonprd.com/Contributors.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-double-team"></i></span>
+                        <span class="modern-menu-item-text">Contributors</span>
+                    </a>
+                    <a class="modern-menu-item" href="Licenses.aspx.htm" tppabs="https://2e.aonprd.com/Licenses.aspx">
+                        <span class="modern-menu-item-icon"><i class="ra ra-book"></i></span>
+                        <span class="modern-menu-item-text">Licenses</span>
+                    </a>
+                </div>
+                <a class="modern-menu-item" href="Support.aspx.htm" tppabs="https://2e.aonprd.com/Support.aspx">
+                    <span class="modern-menu-item-icon"><i class="ra ra-diamond"></i></span>
+                    <span class="modern-menu-item-text">Support the Archives</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="shelyns-corner-wrapper">
+        <div class="shelyns-corner-overlay"></div>
+        <div class="shelyns-corner">
+            <div class="shelyns-corner-header">
+                <h2>Shelyn's Corner</h2>
+                <a href="javascript:void(0)" class="close-shelyns-corner">&times;</a>
+            </div>
+            <div class="shelyns-corner-content">
+                <div class="shelyns-corner-settings">
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-remaster">Prefer Pathfinder Remastered Core?</label>
+                        <input type="checkbox" id="shelyns-corner-setting-remaster" checked/>
+                    </div>
+                    <hr />
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-dyslexia">Dyslexia friendly fonts</label>
+                        <input type="checkbox" id="shelyns-corner-setting-dyslexia"/>
+                    </div>
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-sidebar-hover">Expand sidebar on hover</label>
+                        <input type="checkbox" id="shelyns-corner-setting-sidebar-hover" checked/>
+                    </div>
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-sidebar-shrink">Sidebar can be shrunk</label>
+                        <input type="checkbox" id="shelyns-corner-setting-sidebar-shrink" checked/>
+                    </div>
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-page-compress">Reduce page width</label>
+                        <input type="checkbox" id="shelyns-corner-setting-page-compress"/>
+                    </div>
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-modern-menu">Modern menu</label>
+                        <input type="checkbox" id="shelyns-corner-setting-modern-menu" checked/>
+                    </div>
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-link-previews">Link previews</label>
+                        <input type="checkbox" id="shelyns-corner-setting-link-previews" checked/>
+                    </div>
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-link-previews-search">Link previews in search bar</label>
+                        <input type="checkbox" id="shelyns-corner-setting-link-previews-search"/>
+                    </div>
+                </div>
+                <hr />
+                <div class="theme-gallery-wrapper"></div>
+                <hr />
+                <div class="feel-gallery">
+                    <div class="feel-example classic_feel" onclick="setFeel('classic_feel')">
+                        <h1 class="feel-title">Classic Feel</h1>
+                        <h2 class="feel-title">Classic Feel <span class="output"></span></h2>
+                        <h3 class="feel-title">Classic Feel</h3>
+                        <p>The classic look for the Archives of Nethys.</p>
+                        <table>
+                            <thead><td>Table</td></thead>
+                            <tr><td>Data</td></tr>
+                            <tr><td>More Data</td></tr>
+                        </table>
+                    </div>
+                    <div class="feel-example book_feel" onclick="setFeel('book_feel')">
+                        <h1 class="feel-title">Book Feel</h1>
+                        <h2 class="feel-title">Book Feel <span class="output"></span></h2>
+                        <h3 class="feel-title">Book Feel</h3>
+                        <p>An alternative feel, based on the Rulebooks.</p>
+                        <table>
+                            <thead><td>Table</td></thead>
+                            <tr><td>Data</td></tr>
+                            <tr><td>More Data</td></tr>
+                        </table>
+                    </div>
+                    <div class="feel-example round_feel" onclick="setFeel('round_feel')">
+                        <h1 class="feel-title">Round Feel</h1>
+                        <h2 class="feel-title">Round Feel<span class="output"></span></h2>
+                        <h3 class="feel-title">Round Feel</h3>
+                        <p>A rounded, modern look for the archives.</p>
+                        <table>
+                            <thead><td>Table</td></thead>
+                            <tr><td>Data</td></tr>
+                            <tr><td>More Data</td></tr>
+                        </table>
+                    </div>
+                    <div class="feel-example slim_feel" onclick="setFeel('slim_feel')">
+                        <h1 class="feel-title">Slim Feel</h1>
+                        <h2 class="feel-title">Slim Feel<span class="output"></span></h2>
+                        <h3 class="feel-title">Slim Feel</h3>
+                        <p>A variant of the Round feel, more compact.</p>
+                        <table>
+                            <thead><td>Table</td></thead>
+                            <tr><td>Data</td></tr>
+                            <tr><td>More Data</td></tr>
+                        </table>
+                    </div>
+                </div>
+                <hr />
+                <div class="shelyns-corner-settings">
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-orc">More Orc?</label>
+                        <input type="checkbox" id="shelyns-corner-setting-orc" />
+                    </div>
+                    <div class="shelyns-corner-setting">
+                        <label for="shelyns-corner-setting-boar"><b>BOAR?</b></label>
+                        <input type="checkbox" id="shelyns-corner-setting-boar" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+      var legacyMode = getCore();
+
+      initializeMenuToggle(document.getElementById('minMaxMenu'));
+      initShelynsCorner();
+
+      window.nethysModernMenu.init();
+
+      initializeElasticSearch()
+      var initializeSearch = function (search) {
+          var button;
+          var text;
+          if (search.firstElementChild.classList.contains('search-input'))
+              text = search.firstElementChild;
+          if (search.lastElementChild.classList.contains('search-input'))
+              text = search.lastElementChild;
+          if (search.firstElementChild.classList.contains('search-button'))
+              button = search.firstElementChild;
+          if (search.lastElementChild.classList.contains('search-button'))
+              button = search.lastElementChild;
+
+          if (search) {
+              search.addEventListener('keypress', function (e) {
+                  if (e.keyCode == 13) {
+                      e.preventDefault();
+                      if (text.value != null && text.value.length > 0)
+                          window.location = window.location.origin + "/Search.aspx?q=" + encodeURIComponent(text.value);
+                  }
+              })
+          }
+          if (button) {
+              button.addEventListener('click', function (e) {
+                  window.location = window.location.origin + "/Search.aspx?q=" + encodeURIComponent(text.value);
+              });
+          }
+      };
+      var initializeExpand = function (toggle) {
+          var targetAttrString = "[data-target='" + toggle.dataset.toggle + "']";
+          //target = menu to be collapsed
+          var target = document.querySelector(targetAttrString);
+          toggle.addEventListener('click', function () {
+              var expanded = target.classList.contains('expanded');
+              expanded = !expanded;
+              if (expanded) {
+                  //hide other in group if exists
+                  if (target.dataset.group) {
+                      var otherExpanded = document.querySelector('.expanded[data-group="' + target.dataset.group + '"]');
+                      if (otherExpanded) {
+                          otherExpanded.classList.remove('expanded');
+                      }
+                  }
+                  target.classList.add('expanded');
+              } else {
+                  target.classList.remove('expanded');
+              }
+          });
+      };
+      (function () {
+          //toggles = link that expands/collapses target
+          var toggles = document.querySelectorAll('[data-toggle]');
+          toggles.forEach(function (toggle) {
+              initializeExpand(toggle);
+          });
+          //searches
+          var classicSearch = document.getElementById('classic-search');
+          initializeSearch(classicSearch);
+          var searches = document.querySelectorAll('.search');
+          searches.forEach(function (search) {
+              //initializeSearch(search);
+          });
+      })();
+
+      class NethysSearch extends HTMLElement {
+          constructor() {
+              super();
+
+              this.attachShadow({ mode: 'open' });
+
+              let container = document.createElement('div');
+              this.shadowRoot.append(container);
+
+              let fixedParams = this.getAttribute('fixed-params');
+
+              if (window.location.search.includes('Redirected=1')) {
+                  fixedParams = (fixedParams ? fixedParams + '&' : '') + 'Redirected=1';
+              }
+
+              if (window.location.search.includes('NoRedirect=1')) {
+                  fixedParams = (fixedParams ? fixedParams + '&' : '') + 'NoRedirect=1';
+              }
+
+              let fixedQueryString = this.getAttribute('fixed-query-string') ?? '';
+
+              if (!fixedQueryString.includes('category:item-bonus')) {
+                  fixedQueryString += ' !category:item-bonus';
+              }
+
+              let dataUrl = new URL(elasticUrl);
+              dataUrl.pathname = '/json-data';
+              dataUrl = dataUrl.toString();
+
+              let app = Elm.NethysSearch.init({
+                  node: container,
+                  flags: {
+                      autofocus: (this.getAttribute('autofocus') ?? 'true') == 'true',
+                      browserDateFormat: (new Date(2020, 9, 30).toLocaleDateString(navigator.language))
+                          .replace('2020', 'yyyy')
+                          .replace('10', 'MM')
+                          .replace('30', 'dd'),
+                      currentUrl: location.href,
+                      dataUrl: dataUrl,
+                      defaultQuery: this.getAttribute('default-query'),
+                      elasticUrl: elasticUrl,
+                      fixedParams: fixedParams,
+                      fixedQueryString: fixedQueryString,
+                      loadAll: this.getAttribute('load-all') == 'true',
+                      legacyMode: legacyMode,
+                      localStorage: { ...localStorage },
+                      noUi: this.getAttribute('no-ui') === 'true',
+                      pageDefaultDisplays: localStorage.getItem('page-default-displays'),
+                      pageId: this.getAttribute('page-id'),
+                      randomSeed: Math.floor(Math.random() * 2147483647),
+                      removeFilters: this.getAttribute('remove-filters')?.split(',') ?? [],
+                      resultBaseUrl: "/",
+                      showHeader: false,
+                      showQueryControls: this.getAttribute('show-query-controls') != 'false',
+                      windowHeight: window.innerHeight,
+                      windowWidth: window.innerWidth,
+                  }
+              });
+
+              app.ports.document_focusElement.subscribe(id => {
+                  window.requestAnimationFrame(() => {
+                      let element = this.shadowRoot.getElementById(id);
+
+                      if (element) {
+                          element.focus();
+                      }
+                  });
+              });
+
+              app.ports.document_scrollElementIntoView.subscribe(id => {
+                  window.requestAnimationFrame(() => {
+                      let element = this.shadowRoot.getElementById(id);
+
+                      if (element) {
+                          element.scrollIntoView({block: 'nearest'});
+                      }
+                  });
+              });
+
+              app.ports.localStorage_get && app.ports.localStorage_get.subscribe(function (key) {
+                  let value = localStorage.getItem(key);
+                  app.ports.localStorage_receive.send({ key: key, value: value });
+              });
+
+              app.ports.localStorage_set.subscribe(function (data) {
+                  localStorage.setItem(data.key, data.value);
+              });
+
+              window.addEventListener('popstate', function () {
+                  app.ports.navigation_urlChanged.send(location.href);
+              });
+
+              app.ports.navigation_pushUrl.subscribe(function (url) {
+                  history.pushState([], '', url);
+                  app.ports.navigation_urlChanged.send(location.href);
+              });
+
+              app.ports.navigation_loadUrl.subscribe(function (url) {
+                  location.href = url;
+              });
+
+              document.addEventListener('theme-changed', e => {
+                  app.ports.localStorage_receive.send({ key: 'theme', value: e.detail });
+              });
+
+              document.addEventListener('link-previews-changed', e => {
+                  app.ports.localStorage_receive.send({ key: 'link-previews-enabled', value: e.detail });
+              });
+
+              window.addEventListener('hashchange', e => {
+                  let url = new URL(e.newURL);
+                  if (url.hash != "#results") {
+                      return;
+                  }
+
+                  let results = this.shadowRoot.getElementById("results");
+                  if (!results) {
+                      return;
+                  }
+
+                  results.focus();
+                  results.scrollIntoView();
+                  window.location.hash = '';
+              });
+
+              if (this.getAttribute('no-ui') === 'true') {
+                  let linkPreviewTarget = null;
+
+                  document.addEventListener('mouseover', e => {
+                      const target = e.target.closest('a');
+                      const isSearchBar = e.target.closest('.searchBar') !== null;
+                      if (target && target != linkPreviewTarget) {
+                          let parent = getParentOffset(target.offsetParent);
+                          let data = {
+                              url: target.href,
+                              x: target.offsetLeft + parent.x,
+                              y: target.offsetTop + parent.y,
+                              height: target.offsetHeight,
+                              width: target.offsetWidth,
+                          }
+                          if (isSearchBar) {
+                              if (getFeature('search-bar-previews-enabled', '0') == '0') {
+                                  return;
+                              }
+                              data.x += window.scrollX;
+                              data.y += window.scrollY;
+                          }
+                          app.ports.document_linkEntered.send(data);
+                      } else if (!target && linkPreviewTarget) {
+                          app.ports.document_linkLeft.send("");
+                      }
+
+                      linkPreviewTarget = target;
+                  });
+              }
+
+              function getParentOffset(node) {
+                  if (!node) {
+                      return {
+                          x: 0,
+                          y: 0,
+                      };
+                  }
+                  let parent = getParentOffset(node.offsetParent);
+                  return {
+                      x: node.offsetLeft - node.scrollLeft + parent.x,
+                      y: node.offsetTop - node.scrollTop + parent.y,
+                  };
+              }
+
+              const resizeObserver = new ResizeObserver(entries => {
+                  app.ports.document_receiveBodySize.send({
+                      width: Math.round(entries[0].contentRect.width),
+                      height: Math.round(entries[0].contentRect.height),
+                  });
+              });
+
+              let relativeElement = document.getElementById('page');
+              resizeObserver.observe(relativeElement);
+
+              document.addEventListener('visibilitychange', () => {
+                  if (document.visibilityState === 'visible') {
+                      let rect = relativeElement.getBoundingClientRect();
+
+                      app.ports.document_receiveBodySize.send({
+                          width: Math.round(rect.width),
+                          height: Math.round(rect.height),
+                      });
+                  }
+              });
+          }
+      }
+
+      customElements.define('nethys-search', NethysSearch);
+    </script>
+</body>
+</html>

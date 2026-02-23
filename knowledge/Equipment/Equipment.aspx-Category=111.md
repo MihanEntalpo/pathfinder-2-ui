@@ -1,0 +1,16 @@
+# Figurehead - Equipment - Archives of Nethys: Pathfinder 2nd Edition Database
+
+Source HTML: `docs/aonprd/Equipment.aspx-Category=111.htm`
+
+# [All Equipment](./Equipment.aspx.md) | [All Item Bonuses](../ItemBonuses/ItemBonuses.aspx.md)[Adjustments](./Equipment.aspx-Category=62.md) | [Adventuring Gear](./Equipment.aspx-Category=1.md) | [Alchemical Items](./Equipment.aspx-Category=6.md) | [Animals and Gear](./Equipment.aspx-Category=87.md) | [Apex Items](./Equipment.aspx-Category=42.md) | [Armor](../Armor/Armor.aspx.md) | [Artifacts](./Equipment.aspx-Category=45.md) | [Assistive Items](./Equipment.aspx-Category=72.md) | [Banners](./Equipment.aspx-Category=118.md) | [Blighted Boons](./Equipment.aspx-Category=104.md) | [Censer](./Equipment.aspx-Category=110.md) | [Consumables](./Equipment.aspx-Category=15.md) | [Contracts](./Equipment.aspx-Category=58.md) | [Cursed Items](./Equipment.aspx-Category=49.md) | [Customizations](./Equipment.aspx-Category=75.md) | [Figurehead](./Equipment.aspx-Category=111.md) | [Grafts](./Equipment.aspx-Category=114.md) | [Grimoires](./Equipment.aspx-Category=65.md) | [Held Items](./Equipment.aspx-Category=21.md) | [High-Tech](./Equipment.aspx-Category=90.md) | [Intelligent Items](./Equipment.aspx-Category=48.md) | [Materials](./Equipment.aspx-Category=22.md) | [Other](./Equipment.aspx-Category=53.md) | [Relics](./Equipment.aspx-Category=50.md) | [Runes](./Equipment.aspx-Category=23.md) | [Services](./Equipment.aspx-Category=2.md) | [Shields](../Shield/Shields.aspx.md) | [Siege Weapons](../SiegeWeapons/SiegeWeapons.aspx.md) | [Snares](./Equipment.aspx-Category=31.md) | [Spellhearts](./Equipment.aspx-Category=68.md) | [Staves](./Equipment.aspx-Category=32.md) | [Structures](./Equipment.aspx-Category=33.md) | [Tattoos](./Equipment.aspx-Category=46.md) | [Trade Goods](./Equipment.aspx-Category=91.md) | [Vehicles](../Vehicle/Vehicles.aspx.md) | [Wands](./Equipment.aspx-Category=34.md) | [Weapons](../Weapon/Weapons.aspx.md) | [Worn Items](./Equipment.aspx-Category=41.md)
+
+---
+
+# Figurehead
+
+Source [Rage of Elements pg. 177](../Source/Sources.aspx-ID=205.md)
+While many ships are adorned with decorative carvings, daring crews sometimes procure magical figureheads for their vessels. Installing an item with the figurehead trait takes 1 hour. The item then shifts slightly to match the vessel's purpose or crew as determined by the attuned creature, such as gaining avian features on a tengu vessel. A ship can have only one figurehead attached to it at a time; attaching another one suppresses all the figureheads.
+A figurehead can be activated only by a creature that's attuned to it, a process that takes 1 hour and can be performed while the creature is installing the figurehead. Only one creature can be attuned to the figurehead at a time unless otherwise noted. The attuned creature can activate the figurehead from anywhere aboard the vessel. Typically, the owner or captain of the vessel attunes to their vessel's figurehead.
+The figureheads presented here assume the vehicles they attach to are sailing ships or similar aquatic vessels, but figureheads might be modified or crafted to function on other vehicles instead.
+
+Quick display options: Short | Table

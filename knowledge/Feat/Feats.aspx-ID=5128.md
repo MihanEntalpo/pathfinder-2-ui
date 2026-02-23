@@ -1,0 +1,33 @@
+# Break Curse - Feats - Archives of Nethys: Pathfinder 2nd Edition Database
+
+Source HTML: `docs/aonprd/Feats.aspx-ID=5128.htm`
+
+# [General](./Feats.aspx-Traits=78.md) | [General (No Skill)](./Feats.aspx-Traits=78&NoSkills=True.md) | [All Feats](./Feats.aspx.md)[Aftermath](./Feats.aspx-Traits=424.md) | [Deviant](../DeviantFeats/DeviantFeats.aspx.md)
+
+## [All Skills](./Feats.aspx-Traits=144.md) | [Acrobatics](./Feats.aspx-Traits=144&Skill=Acrobatics.md) | [Arcana](./Feats.aspx-Traits=144&Skill=Arcana.md) | [Athletics](./Feats.aspx-Traits=144&Skill=Athletics.md) | [Crafting](./Feats.aspx-Traits=144&Skill=Crafting.md) | [Deception](./Feats.aspx-Traits=144&Skill=Deception.md) | [Diplomacy](./Feats.aspx-Traits=144&Skill=Diplomacy.md) | [Intimidation](./Feats.aspx-Traits=144&Skill=Intimidation.md) | [Lore](./Feats.aspx-Traits=144&Skill=Lore.md) | [Medicine](./Feats.aspx-Traits=144&Skill=Medicine.md) | [Nature](./Feats.aspx-Traits=144&Skill=Nature.md) | [Occultism](./Feats.aspx-Traits=144&Skill=Occultism.md) | [Performance](./Feats.aspx-Traits=144&Skill=Performance.md) | [Religion](./Feats.aspx-Traits=144&Skill=Religion.md) | [Society](./Feats.aspx-Traits=144&Skill=Society.md) | [Stealth](./Feats.aspx-Traits=144&Skill=Stealth.md) | [Survival](./Feats.aspx-Traits=144&Skill=Survival.md) | [Thievery](./Feats.aspx-Traits=144&Skill=Thievery.md)
+
+---
+
+# [PFS.aspx.htm](../PFS/PFS.aspx.md)[Break Curse](./Feats.aspx-ID=5128.md) Feat 7
+
+[Concentrate](../Trait/Traits.aspx-ID=561&Redirected=1.md) Exploration General Healing Skill
+Source [Player Core pg. 253](../Source/Sources.aspx-ID=216.md)
+[PFS Note](../PFS/PFS.aspx.md) The Break Curse feat can be used once at the end of a scenario to remove a curse. Should it fail, the affected PC must use spellcasting services or a boon to remove the curse.
+
+Prerequisites master in Occultism or Religion
+
+---
+
+You spend 8 hours praying or performing occult rites over the target, weakening a curse's power over them. Attempt to counteract the curse, using Occultism or Religion for your counteract check and half your level rounded up for the counteract rank. Break Curse only takes 10 minutes of prayer and rites if you are legendary in Occultism or Religion.
+
+## Traits
+
+Concentrate: An action with this trait requires a degree of mental concentration and discipline.
+
+Exploration: An activity with this trait takes more than a turn to use, and can usually be used only during exploration mode.
+
+General: A type of feat that any character can select, regardless of ancestry and class, as long as they meet the prerequisites. You can select a feat with this trait when your class grants a general feat.
+
+Healing: A healing effect restores a creature’s body, typically by restoring Hit Points, but sometimes by removing diseases or other debilitating effects.
+
+Skill: A general feat with the skill trait improves your skills and their actions or gives you new actions for a skill. A feat with this trait can be selected when a class grants a skill feat or general feat. Archetype feats with the skill trait can be selected in place of a skill feat if you have that archetype’s dedication feat.

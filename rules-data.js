@@ -1,81 +1,80 @@
 const RULES_STORAGE_KEYS = {
   ancestries: "pf2_ancestries",
   ancestryFeats: "pf2_ancestry_feats",
+  dataMeta: "pf2_rules_data_meta",
 };
 
-const DEFAULT_ANCESTRIES = [
+const RULES_DEFAULTS_VERSION = 2;
+
+const FALLBACK_ANCESTRIES = [
   {
     id: "human",
-    name: "Human",
+    name: "Человек",
     hp: 8,
     size: "Средний",
     speed: 25,
     boosts: ["Свободный", "Свободный"],
     flaws: [],
     languages: ["Всеобщий", "Дополнительные по Интеллекту"],
-    trait: "Human",
-    heritage: "Versatile Heritage",
+    trait: "Человек",
+    heritage: "Разносторонний",
   },
   {
     id: "elf",
-    name: "Elf",
+    name: "Эльф",
     hp: 6,
     size: "Средний",
     speed: 30,
-    boosts: ["Dex", "Int", "Свободный"],
-    flaws: ["Con"],
+    boosts: ["DEX", "INT", "Свободный"],
+    flaws: ["CON"],
     languages: ["Всеобщий", "Эльфийский"],
-    trait: "Elf",
-    heritage: "Ancient Elf",
+    trait: "Эльф",
+    heritage: "Древний эльф",
   },
   {
     id: "dwarf",
-    name: "Dwarf",
+    name: "Дварф",
     hp: 10,
     size: "Средний",
     speed: 20,
-    boosts: ["Con", "Wis", "Свободный"],
-    flaws: ["Cha"],
+    boosts: ["CON", "WIS", "Свободный"],
+    flaws: ["CHA"],
     languages: ["Всеобщий", "Дварфийский"],
-    trait: "Dwarf",
-    heritage: "Rock Dwarf",
+    trait: "Дварф",
+    heritage: "Каменный дварф",
   },
   {
     id: "goblin",
-    name: "Goblin",
+    name: "Гоблин",
     hp: 6,
     size: "Маленький",
     speed: 25,
-    boosts: ["Dex", "Cha", "Свободный"],
-    flaws: ["Wis"],
+    boosts: ["DEX", "CHA", "Свободный"],
+    flaws: ["WIS"],
     languages: ["Всеобщий", "Гоблинский"],
-    trait: "Goblin",
-    heritage: "Charhide Goblin",
+    trait: "Гоблин",
+    heritage: "Углежог",
   }
 ];
 
-const DEFAULT_ANCESTRY_FEATS = [
-  { id: "natural-ambition", ancestryId: "human", name: "Natural Ambition", level: 1, description: "Получите дополнительный классовый фит 1 уровня." },
-  { id: "cooperative-nature", ancestryId: "human", name: "Cooperative Nature", level: 1, description: "+4 circumstance бонус к Aid." },
-  { id: "nimble-elf", ancestryId: "elf", name: "Nimble Elf", level: 1, description: "Скорость +5 футов." },
-  { id: "elven-lore", ancestryId: "elf", name: "Elven Lore", level: 1, description: "Тренирован в Arcana и Nature." },
-  { id: "dwarven-lore", ancestryId: "dwarf", name: "Dwarven Lore", level: 1, description: "Тренирован в Crafting и Dwarven Lore." },
-  { id: "rock-runner", ancestryId: "dwarf", name: "Rock Runner", level: 1, description: "Игнорируете сложную местность камня/щебня." },
-  { id: "goblin-scuttle", ancestryId: "goblin", name: "Goblin Scuttle", level: 1, description: "Реакцией шаг после перемещения союзника." },
-  { id: "burn-it", ancestryId: "goblin", name: "Burn It!", level: 1, description: "Усиление огненных заклинаний и алхимии." }
+const FALLBACK_ANCESTRY_FEATS = [
+  { id: "natural-ambition", ancestryId: "human", name: "Природные амбиции", level: 1, description: "Дополнительный классовый фит 1 уровня." },
+  { id: "cooperative-nature", ancestryId: "human", name: "Покладистый", level: 1, description: "Бонус к действию Aid." },
+  { id: "nimble-elf", ancestryId: "elf", name: "Проворный эльф", level: 1, description: "Скорость +5 футов." },
+  { id: "elven-lore", ancestryId: "elf", name: "Эльфийская ученость", level: 1, description: "Дополнительные тренировки навыков." },
+  { id: "dwarven-lore", ancestryId: "dwarf", name: "Дварфийская ученость", level: 1, description: "Дополнительные тренировки навыков." },
+  { id: "rock-runner", ancestryId: "dwarf", name: "Бег по камню", level: 1, description: "Легче движение по камням и щебню." },
+  { id: "goblin-scuttle", ancestryId: "goblin", name: "Гоблинская перебежка", level: 1, description: "Реакцией Step вслед за союзником." },
+  { id: "burn-it", ancestryId: "goblin", name: "Жги!", level: 1, description: "Усиление огненных эффектов." }
 ];
 
-function ensureRulesData() {
-  const ancestries = readStorage(RULES_STORAGE_KEYS.ancestries, null);
-  if (!Array.isArray(ancestries) || ancestries.length === 0) {
-    writeStorage(RULES_STORAGE_KEYS.ancestries, DEFAULT_ANCESTRIES);
-  }
+const DEFAULT_ANCESTRIES = Array.isArray(globalThis.PF2_DEFAULT_ANCESTRIES) && globalThis.PF2_DEFAULT_ANCESTRIES.length
+  ? globalThis.PF2_DEFAULT_ANCESTRIES
+  : FALLBACK_ANCESTRIES;
 
-  const feats = readStorage(RULES_STORAGE_KEYS.ancestryFeats, null);
-  if (!Array.isArray(feats) || feats.length === 0) {
-    writeStorage(RULES_STORAGE_KEYS.ancestryFeats, DEFAULT_ANCESTRY_FEATS);
-  }
-}
+const DEFAULT_ANCESTRY_FEATS = Array.isArray(globalThis.PF2_DEFAULT_ANCESTRY_FEATS) && globalThis.PF2_DEFAULT_ANCESTRY_FEATS.length
+  ? globalThis.PF2_DEFAULT_ANCESTRY_FEATS
+  : FALLBACK_ANCESTRY_FEATS;
 
 function toArray(value) {
   if (Array.isArray(value)) return value.map((v) => String(v).trim()).filter(Boolean);
@@ -110,10 +109,46 @@ function normalizeFeat(item, idx) {
   };
 }
 
+function mergeDefaults(defaults, existing, normalizeItem) {
+  const merged = new Map(defaults.map((item, idx) => {
+    const normalized = normalizeItem(item, idx);
+    return [normalized.id, normalized];
+  }));
+
+  existing.map(normalizeItem).forEach((item) => {
+    merged.set(item.id, item);
+  });
+
+  return [...merged.values()];
+}
+
+function ensureRulesData() {
+  const storedAncestries = readStorage(RULES_STORAGE_KEYS.ancestries, null);
+  const storedFeats = readStorage(RULES_STORAGE_KEYS.ancestryFeats, null);
+  const meta = readStorage(RULES_STORAGE_KEYS.dataMeta, { version: 0 });
+
+  const hasData = Array.isArray(storedAncestries) && storedAncestries.length > 0 && Array.isArray(storedFeats) && storedFeats.length > 0;
+  if (!hasData) {
+    writeStorage(RULES_STORAGE_KEYS.ancestries, DEFAULT_ANCESTRIES.map(normalizeAncestry));
+    writeStorage(RULES_STORAGE_KEYS.ancestryFeats, DEFAULT_ANCESTRY_FEATS.map(normalizeFeat));
+    writeStorage(RULES_STORAGE_KEYS.dataMeta, { version: RULES_DEFAULTS_VERSION });
+    return;
+  }
+
+  const currentVersion = Number(meta?.version) || 0;
+  if (currentVersion < RULES_DEFAULTS_VERSION) {
+    const mergedAncestries = mergeDefaults(DEFAULT_ANCESTRIES, storedAncestries, normalizeAncestry);
+    const mergedFeats = mergeDefaults(DEFAULT_ANCESTRY_FEATS, storedFeats, normalizeFeat);
+    writeStorage(RULES_STORAGE_KEYS.ancestries, mergedAncestries);
+    writeStorage(RULES_STORAGE_KEYS.ancestryFeats, mergedFeats);
+    writeStorage(RULES_STORAGE_KEYS.dataMeta, { version: RULES_DEFAULTS_VERSION });
+  }
+}
+
 function loadAncestries() {
   ensureRulesData();
   const ancestries = readStorage(RULES_STORAGE_KEYS.ancestries, []);
-  const normalized = Array.isArray(ancestries) ? ancestries.map(normalizeAncestry) : DEFAULT_ANCESTRIES;
+  const normalized = Array.isArray(ancestries) ? ancestries.map(normalizeAncestry) : DEFAULT_ANCESTRIES.map(normalizeAncestry);
   writeStorage(RULES_STORAGE_KEYS.ancestries, normalized);
   return normalized;
 }

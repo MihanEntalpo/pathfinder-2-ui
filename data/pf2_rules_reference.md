@@ -1,20 +1,15 @@
-# PF2 Rules Reference Snapshot
+# PF2 Rules Reference (Local Snapshot)
 
-Источник: https://pf2.ru/rules
+Источник правил: <https://pf2.ru/rules>
 
-## Примечание по загрузке
-В текущей среде прямое скачивание страницы блокируется ответом `403 CONNECT tunnel failed`.
+Актуальный локальный снапшот хранится в:
+- `data/pf2_ru/snapshots/rules/index.html` (оглавление `/rules`)
+- `data/pf2_ru/snapshots/rules/**` (страницы разделов правил)
+- `data/pf2_ru/snapshots/ancestries/**` (страницы ancestry)
+- `data/pf2_ru/manifest.json` (дата и счётчики файлов)
 
-Команда, которой выполнялась попытка:
-`curl -L https://pf2.ru/rules`
-
-## Локально предзаданные данные
-Для работы редактора персонажей и выбора происхождений добавлен локальный набор данных в `rules-data.js`:
-- Human
-- Elf
-- Dwarf
-- Goblin
-
-И примерные ancestry feats для каждого происхождения.
-
-Этот файл служит точкой привязки к источнику правил и местом, куда можно добавить полную выгрузку правил при доступе к сайту.
+Обновление снапшота и встроенных default-данных:
+```bash
+scripts/download_pf2_rules.sh
+node scripts/generate_pf2_defaults.js
+```

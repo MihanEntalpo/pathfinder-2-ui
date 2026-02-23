@@ -2,11 +2,46 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="refresh" content="0; url=ancestries.html" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Перенаправление</title>
+  <title>Снапшот правил — Pathfinder 2 Remaster</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <p>Страница перенесена. Перейдите в <a href="ancestries.html">Происхождения</a> или <a href="ancestry-feats.html">Черты происхождения</a>.</p>
+  <header class="container">
+    <h1>Локальный снапшот правил PF2</h1>
+    <nav class="nav">
+      <a href="index.html">Главная</a>
+      <a href="character.html">Персонажи</a>
+      <a href="ancestries.html">Происхождения</a>
+      <a href="ancestry-feats.html">Черты происхождения</a>
+      <a href="monster.html">Монстры</a>
+      <a href="game.html">Игры</a>
+      <a class="active" href="rules.html">Снапшот правил</a>
+    </nav>
+  </header>
+
+  <main class="container grid" style="grid-template-columns: 1fr 1fr;">
+    <section class="panel">
+      <h2>Основные ссылки</h2>
+      <div class="list">
+        <a class="list-item" href="data/pf2_ru/snapshots/rules/index.html">Оглавление правил (`/rules`)</a>
+        <a class="list-item" href="data/pf2_ru/snapshots/rules/player-core/ancestries-and-backgrounds.html">Player Core: Ancestries and Backgrounds</a>
+        <a class="list-item" href="data/pf2_ru/snapshots/ancestries/index.html">Справочник ancestry (index)</a>
+        <a class="list-item" href="data/pf2_ru/manifest.json">Manifest снапшота</a>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Обновление данных</h2>
+      <p class="muted small">
+        Чтобы обновить локальную копию правил и встроенные ancestry/feats, запустите в корне проекта:
+      </p>
+      <pre><code>scripts/download_pf2_rules.sh
+node scripts/generate_pf2_defaults.js</code></pre>
+      <p class="muted small">
+        После этого при первом открытии страниц данные в `localStorage` дополняются новыми записями из снапшота.
+      </p>
+    </section>
+  </main>
 </body>
 </html>

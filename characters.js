@@ -61,6 +61,9 @@ function renderAncestryFeats(selectedIds = []) {
   const level = Number(byId("level").value) || 1;
   const featLimit = featSlotsForLevel(level);
   const feats = loadAncestryFeats().filter((f) => f.ancestryId === ancestryId && f.level <= level);
+  const allowedIds = selectedIds
+    .filter((id) => feats.some((feat) => feat.id === id))
+    .slice(0, featLimit);
 
   featLimitHint.textContent = `На уровне ${level} можно выбрать ${featLimit} черт(ы) происхождения.`;
 
@@ -72,7 +75,7 @@ function renderAncestryFeats(selectedIds = []) {
   ancestryFeatList.innerHTML = feats.map((feat) => `
     <label class="list-item">
       <div class="row">
-        <input type="checkbox" name="ancestryFeat" value="${escapeHtml(feat.id)}" ${selectedIds.includes(feat.id) ? "checked" : ""} />
+        <input type="checkbox" name="ancestryFeat" value="${escapeHtml(feat.id)}" ${allowedIds.includes(feat.id) ? "checked" : ""} />
         <div>
           <strong>${escapeHtml(feat.name)}</strong> <span class="badge">${feat.level}</span>
           <div class="small muted">${escapeHtml(feat.description)}</div>
